@@ -1,0 +1,8 @@
+{
+  "name": "refuze-app",
+  "app_id": "d87ad12d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
