@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
+import { HttpClientModule } from '@angular/common/http';
 import { FindSellerPage } from './find-seller';
 
 @NgModule({
@@ -7,6 +8,7 @@ import { FindSellerPage } from './find-seller';
     FindSellerPage,
   ],
   imports: [
+    HttpClientModule,
     IonicPageModule.forChild(FindSellerPage),
   ],
 })
