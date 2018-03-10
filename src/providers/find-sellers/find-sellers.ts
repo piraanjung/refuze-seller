@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from "rxjs/Observable";
+import { API_URL } from '../api-urls';
 
 @Injectable()
 export class FindSellersProvider {
@@ -9,6 +11,6 @@ export class FindSellersProvider {
   }
 
   getBuyers() {
-    return this.http.get('/buyers')
+    return this.http.get(`${API_URL}/buyers`)
   }
 }
