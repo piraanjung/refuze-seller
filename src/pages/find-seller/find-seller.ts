@@ -26,15 +26,14 @@ export class FindSellerPage {
   }
 
   getItems(ev) {
-    this.getBuyers();
     let val = ev.target.value;
 
     if (val && val.trim() != '') {
       this.sellers = this.sellers.filter((seller) => {
-        console.log(seller.name.toLowerCase() + ' = ' + val.toLowerCase())
-        console.log(seller.name.indexOf(val) > -1)
         return (seller.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
+    } else {
+      this.getBuyers()
     }
   }
 
