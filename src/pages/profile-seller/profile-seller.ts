@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the ProfileSellerPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-profile-seller',
@@ -19,7 +12,7 @@ export class ProfileSellerPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfileSellerPage');
+    console.log(this.navParams.data.profile)
   }
 
 }

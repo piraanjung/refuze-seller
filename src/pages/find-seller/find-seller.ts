@@ -25,6 +25,13 @@ export class FindSellerPage {
     this.findSeller.getBuyers().subscribe((res) => this.sellers = res)
   }
 
+  goToProfileBuyer(profile) {
+    console.log(profile)
+    this.navCtrl.push('ProfileSellerPage', {
+      profile:profile
+    })
+  }
+
   getItems(ev) {
     let val = ev.target.value;
 
