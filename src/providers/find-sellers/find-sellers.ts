@@ -6,11 +6,10 @@ import { API_URL } from '../api-urls';
 @Injectable()
 export class FindSellersProvider {
 
-  constructor(private http: HttpClient) {
-    console.log('Hello FindSellersProvider Provider');
-  }
+  constructor(private http: HttpClient) { }
 
   getBuyers() {
+    console.log(API_URL)
     return this.http.get(`${API_URL}/buyers`)
   }
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
+import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
 
 @IonicPage()
 @Component({
@@ -10,12 +11,19 @@ import { Sellers } from '../../models/sellers';
 export class FindSellerPage {
   items;
   sellers: Sellers[];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    private findSeller: FindSellersProvider
+  ) { }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FindSellerPage');
+    this.getBuyers()
     this.initializeItems();
+  }
+
+  getBuyers() {
+    this.findSeller.getBuyers().subscribe((res)=> console.log(res))
   }
 
   initializeItems() {
