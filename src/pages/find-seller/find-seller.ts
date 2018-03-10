@@ -19,66 +19,21 @@ export class FindSellerPage {
 
   ionViewDidLoad() {
     this.getBuyers()
-    this.initializeItems();
   }
 
   getBuyers() {
-    this.findSeller.getBuyers().subscribe((res)=> console.log(res))
-  }
-
-  initializeItems() {
-    this.items = [
-      'Amsterdam',
-      'Bogota',
-      'Buenos Aires',
-      'Cairo',
-      'Dhaka',
-      'Edinburgh',
-      'Geneva',
-      'Genoa',
-      'Glasglow',
-      'Hanoi',
-      'Hong Kong',
-      'Islamabad',
-      'Istanbul',
-      'Jakarta',
-      'Kiel',
-      'Kyoto',
-      'Le Havre',
-      'Lebanon',
-      'Lhasa',
-      'Lima',
-      'London',
-      'Los Angeles',
-      'Madrid',
-      'Manila',
-      'New York',
-      'Olympia',
-      'Oslo',
-      'Panama City',
-      'Peking',
-      'Philadelphia',
-      'San Francisco',
-      'Seoul',
-      'Taipeh',
-      'Tel Aviv',
-      'Tokio',
-      'Uelzen',
-      'Washington'
-    ];
+    this.findSeller.getBuyers().subscribe((res) => this.sellers = res)
   }
 
   getItems(ev) {
-    // Reset items back to all of the items
-    this.initializeItems();
+    this.getBuyers();
+    let val = ev.target.value;
 
-    // set val to the value of the ev target
-    var val = ev.target.value;
-
-    // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
-      this.items = this.items.filter((item) => {
-        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      this.sellers = this.sellers.filter((seller) => {
+        console.log(seller.name.toLowerCase() + ' = ' + val.toLowerCase())
+        console.log(seller.name.indexOf(val) > -1)
+        return (seller.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
   }
