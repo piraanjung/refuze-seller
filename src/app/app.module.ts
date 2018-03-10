@@ -6,8 +6,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { FindSellerProvider } from '../providers/find-seller/find-seller';
-import { FindSellersProvider } from '../providers/find-sellers/find-sellers';
 
 @NgModule({
   declarations: [
@@ -27,8 +25,6 @@ import { FindSellersProvider } from '../providers/find-sellers/find-sellers';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FindSellerProvider,
-    FindSellersProvider
   ]
 })
 export class AppModule {}
