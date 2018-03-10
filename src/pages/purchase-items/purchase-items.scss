@@ -1,8 +1,12 @@
 page-purchase-items {
+  img {
+    height: 150px;
+  }
   .card-background-page {
     ion-card {
       position: relative;
       text-align: center;
+      height: 150px;
     }
     .card-title {
       position: absolute;
@@ -10,7 +14,7 @@ page-purchase-items {
       font-size: 2.0em;
       width: 100%;
       font-weight: bold;
-      color: #fff;
+      color: #000;
     }
     .card-subtitle {
       font-size: 1.0em;
