@@ -9,7 +9,7 @@
 
 <ion-content class="card-background-page">
 
-  <ion-card *ngFor="let card of cards">
+  <ion-card *ngFor="let card of cards" [navPush]="card.link">
     <img src="{{ card.img }}" />
     <div class="card-title">{{ card.name }}</div>
   </ion-card>
