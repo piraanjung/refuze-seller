@@ -14,7 +14,7 @@ export class MainMenuPurchaseItemsPage {
   cards: PurchaseItemsMenu[];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.cards = [
-      { img: './assets/imgs/logo.png', name: 'ค้นหาผู้ขายขยะ', link: 'find-buyers' },
+      { img: './assets/imgs/logo.png', name: 'ค้นหาผู้ขายขยะ', link: 'FindBuyersPage' },
       { img: './assets/imgs/logo.png', name: 'ประวัติรับซื้อขยะ', link: '#' },
     ]
   }
