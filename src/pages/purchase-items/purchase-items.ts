@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { PurchaseItemsMenu } from "../../models/purchase-items-menu";
 @IonicPage({
   name:'purchase-items',
   segment: 'purchase-items'
@@ -11,7 +11,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PurchaseItemsPage {
 
-  cards: Object[];
+  cards: PurchaseItemsMenu[];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.cards = [
       {img: './assets/imgs/logo.png', name:'ค้นหาผู้ขายขยะ', link: 'users'},
