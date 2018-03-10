@@ -14,12 +14,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'authentication.html',
 })
 export class AuthenticationPage {
+  login={};
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AuthenticationPage');
+  }
+
+  onLogin(){
+    console.log(this.login['username'])
+    if(this.login['password'] != ""){
+
+    }
   }
 
 }
