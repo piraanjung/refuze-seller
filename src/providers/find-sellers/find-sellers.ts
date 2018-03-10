@@ -4,8 +4,11 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class FindSellersProvider {
 
-  constructor(public http: HttpClient) {
+  constructor(private http: HttpClient) {
     console.log('Hello FindSellersProvider Provider');
   }
 
+  getBuyers() {
+    return this.http.get('/buyers')
+  }
 }
