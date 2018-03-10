@@ -14,3 +14,89 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.circle{
+    border-radius: 50%;
+    width:120px;
+    height: 120px;
+}
+._button{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+              0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+ion-content{
+    background-color: #05FFA2 !important
+}
+
+ion-header{
+    background-color: #47A27E !important
+}
+ion-img{
+    background-color: transparent !important
+}
+
+.logo{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.round-input {
+    border-radius: 64px;
+    padding: 0 2.6rem;
+    height: 2.8em;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .list-md {
+    margin: -1px 0 20px;
+  }
+  
+  .item-md.item-block .item-inner {
+    border-bottom: hidden;
+  }
+  
+  .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner {
+    border-bottom: hidden !important;
+    box-shadow: inset 0 -1px 0 0 #ffffff;
+  }
+  .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom: hidden !important;
+    box-shadow: inset 0 -1px 0 0 #ffffff;
+  }
+  
+  .list-md.item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child {
+    border-bottom: hidden !important;
+    box-shadow: inset 0 -1px 0 0 #ffffff;
+  }
+  .list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus):last-child {
+    border-bottom: hidden !important;        
+    box-shadow: inset 0 -1px 0 0 #ffffff;
+  }
+  .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom: hidden !important;
+    box-shadow: inset 0 -1px 0 0 #ffffff;
+  }
+  .list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child, .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {
+    border-bottom: hidden !important;
+    box-shadow: inset 0 -1px 0 0 #ffffff;
+  }
+  .segment-md .segment-button.segment-activated {
+    border-color: #2CC66C;
+    opacity: 1;
+  }
