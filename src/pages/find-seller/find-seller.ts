@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Buyers } from '../../models/buyers';
+import { Sellers } from '../../models/sellers';
+
 @IonicPage()
 @Component({
   selector: 'page-find-seller',
@@ -8,7 +9,7 @@ import { Buyers } from '../../models/buyers';
 })
 export class FindSellerPage {
   items;
-  buyers: Buyers[];
+  sellers: Sellers[];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
