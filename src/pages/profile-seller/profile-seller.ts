@@ -23,8 +23,8 @@ export class ProfileSellerPage {
   }
 
   ionViewDidLoad() {
-    this.seller = this.navParams.data.profile || {}
-    console.log(this.seller)
+    this.seller = JSON.parse(localStorage.getItem('sellerProfile')) 
+
     if (Object.keys(this.seller).length !== 0) {
       this.id = this.id
       this.fullname = `${this.seller.name} ${this.seller.last_name}`
@@ -38,7 +38,7 @@ export class ProfileSellerPage {
   }
 
   goToHistorySeller() {
-    
+
   }
 
 }

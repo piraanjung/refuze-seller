@@ -28,10 +28,7 @@ export class FindSellerPage {
 
   goToProfileSeller(profile) {
     localStorage.setItem('sellerProfile', JSON.stringify(profile))
-    
-    this.navCtrl.push('ProfileSellerPage', {
-      profile:profile
-    })
+    this.navCtrl.push('ProfileSellerPage')
   }
 
   getItems(ev) {
