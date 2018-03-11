@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ItemsProvider } from '../../providers/items/items';
 import { Item } from '../../models/item';
+import { PurchaseItemsModal } from '../purchase-items/purchase-item-modal';
+
 @IonicPage({
   name: 'find-items'
 })
