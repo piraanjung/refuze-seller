@@ -9,7 +9,7 @@ export class FindSellersProvider {
 
   constructor(private http: HttpClient) { }
 
-  getBuyers() {
-    return this.http.get<Sellers[]>(`${API_URL}/buyers`)
+  getSellers() {
+    return this.http.get<Sellers[]>(`${API_URL}/sellers`)
   }
 }
