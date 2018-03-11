@@ -25,16 +25,22 @@ export class FindItemsPage {
     this.itemsProvider.getFavorite().subscribe((res) => this.items = res)
   }
 
-  getItems(ev) {
+  filterItems(ev) {
     let val = ev.target.value;
 
     if (val && val.trim() != '') {
-      this.items = this.items.filter((item) => {
-        return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      })
+      this.getItems(val)
     } else {
       this.getFavorite()
     }
+  }
+
+  getItems(val) {
+    this.itemsProvider.getItems().subscribe((res) => {
+      this.items = res.filter((item) => {
+        return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    }, (err) => console.log(err))
   }
 
 }
