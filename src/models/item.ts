@@ -4,3 +4,11 @@ export interface Item {
   price: number
   unit_name: string
 }
+
+export interface addNewItem {
+  name: string
+  unit_name: string
+  item_id: number
+  amount: number
+  balance: number
+}

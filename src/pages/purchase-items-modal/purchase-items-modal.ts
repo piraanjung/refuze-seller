@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavParams, ViewController } from 'ionic-angular';
-import { Item } from '../../models/item/item';
+import { Item, addNewItem } from '../../models/item';
 
 @IonicPage({
   name: 'purchase-items-modal'
@@ -11,6 +11,7 @@ import { Item } from '../../models/item/item';
 })
 export class PurchaseItemsModalPage {
   item: Item
+  items: addNewItem[]
   id: number
   name: string
   price: number
@@ -29,6 +30,9 @@ export class PurchaseItemsModalPage {
     this.unit_name = this.item.unit_name
     this.price = this.item.price
     this.balance = (this.amount * this.price)
+    let items = JSON.parse(localStorage.getItem('purchaseItems')) || []
+    this.items = items
+
   }
 
   dismiss() {
@@ -44,8 +48,11 @@ export class PurchaseItemsModalPage {
       amount: this.amount,
       balance: this.balance
     }
-
-    console.log(item)
+    
+    console.log(this.items)
+    this.items.push(item)
+    localStorage.setItem('purchaseItems', JSON.stringify(this.items))
+    this.viewCtrl.dismiss('success');
 
   }
 
