@@ -24,17 +24,19 @@ export class PurchaseItemsModalPage {
 
   ionViewWillLoad() {
     this.item = this.navParams.get('data')
-    console.log(this.item)
     this.name = this.item.name
     this.unit_name = this.item.unit_name
     this.price = this.item.price
     this.balance = (this.amount * this.price)
-
-    console.log(this.balance)
   }
 
   dismiss() {
     this.viewCtrl.dismiss('close');
+  }
+
+  addNewItem() {
+    console.log(this.amount)
+    console.log(this.balance)
   }
 
 }
