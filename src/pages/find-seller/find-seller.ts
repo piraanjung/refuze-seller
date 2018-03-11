@@ -26,7 +26,6 @@ export class FindSellerPage {
   }
 
   goToProfileBuyer(profile) {
-    console.log(profile)
     this.navCtrl.push('ProfileSellerPage', {
       profile:profile
     })

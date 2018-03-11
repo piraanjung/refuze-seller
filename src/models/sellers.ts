@@ -7,9 +7,10 @@ export interface Sellers {
   name: string
   last_name: string
   image_url: string
-  user_cate_name:string
+  user_cate_name: string
+  address: string
   PROVINCE_NAME: string
   AMPHUR_NAME: string
   DISTRICT_NAME: string
-  zipcode:string
+  zipcode: string
 }
