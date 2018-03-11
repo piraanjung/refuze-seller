@@ -10,7 +10,8 @@ import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
 })
 export class FindSellerPage {
   items;
-  sellers: Sellers[];
+  sellers: Sellers[]
+
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -18,14 +19,16 @@ export class FindSellerPage {
   ) { }
 
   ionViewDidLoad() {
-    this.getBuyers()
+    this.getSellers()
   }
 
-  getBuyers() {
-    this.findSeller.getBuyers().subscribe((res) => this.sellers = res)
+  getSellers() {
+    this.findSeller.getSellers().subscribe((res) => this.sellers = res)
   }
 
-  goToProfileBuyer(profile) {
+  goToProfileSeller(profile) {
+    localStorage.setItem('sellerProfile', JSON.stringify(profile))
+    
     this.navCtrl.push('ProfileSellerPage', {
       profile:profile
     })
@@ -39,7 +42,7 @@ export class FindSellerPage {
         return (seller.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     } else {
-      this.getBuyers()
+      this.getSellers()
     }
   }
 
