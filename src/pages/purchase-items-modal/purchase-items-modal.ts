@@ -36,14 +36,16 @@ export class PurchaseItemsModalPage {
   }
 
   addNewItem() {
-    console.log(this.amount)
-    console.log(this.balance)
+    
     let item = {
-      item_id: this.id, 
-      amount, 
-      balance
+      name: this.name,
+      unit_name: this.unit_name,
+      item_id: this.id,
+      amount: this.amount,
+      balance: this.balance
     }
 
+    console.log(item)
 
   }
 
