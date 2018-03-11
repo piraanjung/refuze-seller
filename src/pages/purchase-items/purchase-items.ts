@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
+import { Item } from '../../models/item';
 
 @IonicPage({
   name: 'purchase-items',
@@ -12,6 +13,7 @@ import { Sellers } from '../../models/sellers';
 })
 export class PurchaseItemsPage {
   seller: Sellers
+  items: Item[]
   id: number
   address: string
   mobile: string
@@ -24,6 +26,7 @@ export class PurchaseItemsPage {
 
   ionViewDidLoad() {
     this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
+    this.items = JSON.parse(localStorage.getItem('purchaseItems'))
     if (Object.keys(this.seller).length !== 0) {
       this.id = this.id
       this.fullname = `${this.seller.name} ${this.seller.last_name}`
