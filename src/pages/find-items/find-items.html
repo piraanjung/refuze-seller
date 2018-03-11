@@ -15,7 +15,7 @@
     </ion-item>
   </ion-list>
 
-  <ion-fab bottom right>
+  <ion-fab bottom right [navPush]='PurchaseItems'>
     <button ion-fab>
       <ion-icon name="cart"></ion-icon>
       <ion-badge color="secondary" id="notifications-badge">{{ countItems }}</ion-badge>

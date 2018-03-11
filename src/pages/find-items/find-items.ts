@@ -13,6 +13,7 @@ import { Item } from '../../models/item';
 export class FindItemsPage {
   items: Item[]
   countItems: number
+  PurchaseItems:string
 
   constructor(
     public navCtrl: NavController,
@@ -20,6 +21,7 @@ export class FindItemsPage {
     private modalCtrl: ModalController,
     private itemsProvider: ItemsProvider) {
     this.countItems = 0
+    this.PurchaseItems = 'purchase-items'
   }
 
   ionViewDidLoad() {
