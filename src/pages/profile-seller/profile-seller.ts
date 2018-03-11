@@ -22,7 +22,6 @@ export class ProfileSellerPage {
 
   ionViewDidLoad() {
     this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
-
     if (Object.keys(this.seller).length !== 0) {
       this.id = this.id
       this.fullname = `${this.seller.name} ${this.seller.last_name}`
@@ -30,13 +29,4 @@ export class ProfileSellerPage {
       this.address = `บ้านเลขที่ ${this.seller.address} ตำบล ${this.seller.DISTRICT_NAME} อำเภอ ${this.seller.AMPHUR_NAME} จังหวัด ${this.seller.PROVINCE_NAME} ${this.seller.zipcode}`
     }
   }
-
-  goToFindItems() {
-
-  }
-
-  goToHistorySeller() {
-
-  }
-
 }
