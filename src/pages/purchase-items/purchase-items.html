@@ -7,7 +7,27 @@
 </ion-header>
 
 
-<ion-content class="card-background-page">
+<ion-content padding>
 
-  
+  <ion-card>
+
+    <ion-card-header>
+      ข้อมูลผู้ขาย
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>
+            <ion-img width="80" height="80" src="./assets/imgs/f_logo.png"></ion-img>
+          </ion-col>
+          <ion-col col-8>
+            <p>{{ fullname }}</p>
+            <p>{{ mobile }}</p>
+            <p>{{ address }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PurchaseItemsMenu } from "../../models/purchase-items-menu";
+import { Sellers } from '../../models/sellers';
+
 @IonicPage({
-  name:'purchase-items',
+  name: 'purchase-items',
   segment: 'purchase-items'
 })
 @Component({
@@ -10,17 +11,26 @@ import { PurchaseItemsMenu } from "../../models/purchase-items-menu";
   templateUrl: 'purchase-items.html',
 })
 export class PurchaseItemsPage {
-
-  cards: PurchaseItemsMenu[];
+  seller: Sellers
+  id: number
+  address: string
+  mobile: string
+  fullname: string
+  image_url: string
+  FindItemsPage: string
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.cards = [
-      {img: './assets/imgs/logo.png', name:'ค้นหาผู้ขายขยะ', link: 'find-buyers'},
-      {img: './assets/imgs/logo.png', name:'ประวัติรับซื้อขยะ', link: '#'},
-    ]
+
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PurchaseItemsPage');
+    this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
+    if (Object.keys(this.seller).length !== 0) {
+      this.id = this.id
+      this.fullname = `${this.seller.name} ${this.seller.last_name}`
+      this.mobile = `เบอร์ติดต่อ ${this.seller.mobile}`
+      this.address = `บ้านเลขที่ ${this.seller.address} ตำบล ${this.seller.DISTRICT_NAME} อำเภอ ${this.seller.AMPHUR_NAME} จังหวัด ${this.seller.PROVINCE_NAME} ${this.seller.zipcode}`
+    }
+
   }
 
 }
