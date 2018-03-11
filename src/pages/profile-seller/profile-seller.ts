@@ -31,7 +31,14 @@ export class ProfileSellerPage {
       this.mobile = `เบอร์ติดต่อ ${this.seller.mobile}`
       this.address = `บ้านเลขที่ ${this.seller.address} ตำบล ${this.seller.DISTRICT_NAME} อำเภอ ${this.seller.AMPHUR_NAME} จังหวัด ${this.seller.PROVINCE_NAME} ${this.seller.zipcode}`
     }
+  }
 
+  goToFindItems () {
+
+  }
+
+  goToHistorySeller() {
+    
   }
 
 }
