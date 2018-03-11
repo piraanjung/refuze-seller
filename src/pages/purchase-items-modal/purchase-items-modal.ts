@@ -23,7 +23,8 @@ export class PurchaseItemsModalPage {
   }
 
   ionViewWillLoad() {
-    this.item = this.navParams.get('data')
+    this.item = this.navParams.get('item')
+    this.id = this.item.id
     this.name = this.item.name
     this.unit_name = this.item.unit_name
     this.price = this.item.price
@@ -37,6 +38,13 @@ export class PurchaseItemsModalPage {
   addNewItem() {
     console.log(this.amount)
     console.log(this.balance)
+    let item = {
+      item_id: this.id, 
+      amount, 
+      balance
+    }
+
+
   }
 
 }
