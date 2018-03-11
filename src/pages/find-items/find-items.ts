@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { ItemsProvider } from '../../providers/items/items';
 import { Item } from '../../models/item';
-import { PurchaseItemsModal } from '../purchase-items/purchase-item-modal';
 
 @IonicPage({
   name: 'find-items'
@@ -17,6 +16,7 @@ export class FindItemsPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
+    private modalCtrl: ModalController,
     private itemsProvider: ItemsProvider) { }
 
   ionViewDidLoad() {
@@ -44,5 +44,15 @@ export class FindItemsPage {
       })
     }, (err) => console.log(err))
   }
+
+  presentaddModalItem(item) {
+    let profileModal = this.modalCtrl.create('purchase-items-modal', item);
+    profileModal.onDidDismiss(data => {
+      console.log(data);
+    });
+
+    profileModal.present();
+  }
+ 
 
 }
