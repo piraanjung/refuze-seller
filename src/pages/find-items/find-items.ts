@@ -46,13 +46,13 @@ export class FindItemsPage {
   }
 
   presentaddModalItem(item) {
-    let profileModal = this.modalCtrl.create('purchase-items-modal', item);
+    let profileModal = this.modalCtrl.create('purchase-items-modal', { data: item });
     profileModal.onDidDismiss(data => {
       console.log(data);
     });
 
     profileModal.present();
   }
- 
+
 
 }
