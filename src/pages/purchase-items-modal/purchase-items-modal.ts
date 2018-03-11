@@ -40,7 +40,7 @@ export class PurchaseItemsModalPage {
   }
 
   addNewItem() {
-    
+
     let item = {
       name: this.name,
       unit_name: this.unit_name,
@@ -51,8 +51,7 @@ export class PurchaseItemsModalPage {
 
     this.items.push(item)
     localStorage.setItem('purchaseItems', JSON.stringify(this.items))
-    this.viewCtrl.dismiss('success');
-
+    this.viewCtrl.dismiss({ status: 'status', countItems: this.items.length });
   }
 
 }

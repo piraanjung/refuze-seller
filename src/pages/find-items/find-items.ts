@@ -52,10 +52,10 @@ export class FindItemsPage {
     let profileModal = this.modalCtrl.create('purchase-items-modal', { item: item });
     profileModal.onDidDismiss(data => {
       console.log(data);
+      this.countItems = data['countItems']
     });
 
     profileModal.present();
   }
-
 
 }
