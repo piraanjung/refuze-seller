@@ -11,21 +11,19 @@ export class ProfileSellerPage {
   seller: Sellers
   id: number
   address: string
-  email: string
   mobile: string
-  id_card: string
   fullname: string
   image_url: string
-  user_cate_name: string
+  FindItemsPage: string
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+    this.FindItemsPage = 'find-items'
   }
 
   ionViewDidLoad() {
-    this.seller = JSON.parse(localStorage.getItem('sellerProfile')) 
+    this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
 
-    if (Object.keys(this.seller).length !== 0) {  
+    if (Object.keys(this.seller).length !== 0) {
       this.id = this.id
       this.fullname = `${this.seller.name} ${this.seller.last_name}`
       this.mobile = `เบอร์ติดต่อ ${this.seller.mobile}`
@@ -33,7 +31,7 @@ export class ProfileSellerPage {
     }
   }
 
-  goToFindItems () {
+  goToFindItems() {
 
   }
 

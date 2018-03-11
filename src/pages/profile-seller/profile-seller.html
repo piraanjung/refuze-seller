@@ -31,7 +31,7 @@
   </ion-card>
 
   <br>
-  <button ion-button block round (click)="goToFindItems()">รับซื้อขยะ</button>
+  <button ion-button block round [navPush]="FindItemsPage">รับซื้อขยะ</button>
   <br>
   <button ion-button block round (click)="goToHistorySeller()">ประวัติรับซื้อขยะ</button>
 </ion-content>
