@@ -10,8 +10,8 @@
 <ion-content>
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list>
-    <ion-item *ngFor="let seller of sellers" (click)="goToProfileSeller(seller)">
-      {{ seller.name }}
+    <ion-item *ngFor="let item of items" (click)="goToProfileSeller(item)">
+      {{ item.name }}
     </ion-item>
   </ion-list>
 </ion-content>

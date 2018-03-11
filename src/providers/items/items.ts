@@ -7,9 +7,7 @@ import { Item } from '../../models/item';
 @Injectable()
 export class ItemsProvider {
 
-  constructor(public http: HttpClient) {
-    console.log('Hello ItemsProvider Provider');
-  }
+  constructor(private http: HttpClient) { }
 
   getFavorite() {
     return this.http.get<Item[]>(`${API_URL}/items-favorite`)
