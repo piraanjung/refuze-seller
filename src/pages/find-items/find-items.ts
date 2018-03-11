@@ -25,6 +25,16 @@ export class FindItemsPage {
     this.itemsProvider.getFavorite().subscribe((res) => this.items = res)
   }
 
+  getItems(ev) {
+    let val = ev.target.value;
 
+    if (val && val.trim() != '') {
+      this.items = this.items.filter((item) => {
+        return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    } else {
+      this.getFavorite()
+    }
+  }
 
 }
