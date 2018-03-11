@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavParams, ViewController } from 'ionic-angular';
-import { Item } from '../../models/item';
+import { Item } from '../../models/item/item';
 
 @IonicPage({
   name: 'purchase-items-modal'
@@ -11,12 +11,26 @@ import { Item } from '../../models/item';
 })
 export class PurchaseItemsModalPage {
   item: Item
-  constructor(private viewCtrl: ViewController, public navParams: NavParams) { }
+  id: number
+  name: string
+  price: number
+  amount: number
+  unit_name: string
+  balance: number
+
+  constructor(private viewCtrl: ViewController, public navParams: NavParams) {
+    this.amount = 1
+  }
 
   ionViewWillLoad() {
     this.item = this.navParams.get('data')
-    console.log(this.navParams.get('data'))
-    console.log('ionViewDidLoad PurchaseItemsModalPage');
+    console.log(this.item)
+    this.name = this.item.name
+    this.unit_name = this.item.unit_name
+    this.price = this.item.price
+    this.balance = (this.amount * this.price)
+
+    console.log(this.balance)
   }
 
   dismiss() {
