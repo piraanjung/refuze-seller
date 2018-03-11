@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { AuthenProvider } from '../../providers/authen/authen';
 /**
  * Generated class for the AuthenticationPage page.
  *
@@ -16,18 +16,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class AuthenticationPage {
   login={};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, 
+    private authen:AuthenProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AuthenticationPage');
+  
   }
 
-  onLogin(){
-    console.log(this.login['username'])
-    if(this.login['password'] != ""){
 
-    }
+  onLogin(){
+    // console.log(this.login['username'])
+    this.authen.resAuthen(this.login).subscribe(
+      data => {
+        // data=data
+        console.log(data)
+      },
+      error =>{
+        console.log('authen error')
+      }
+    );
   }
 
 }
