@@ -1,3 +1,9 @@
 page-find-items {
-
+  #notifications-badge {
+    background-color: red;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    border-radius: 100%;
+  }
 }

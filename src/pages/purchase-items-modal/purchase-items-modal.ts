@@ -48,8 +48,7 @@ export class PurchaseItemsModalPage {
       amount: this.amount,
       balance: this.balance
     }
-    
-    console.log(this.items)
+
     this.items.push(item)
     localStorage.setItem('purchaseItems', JSON.stringify(this.items))
     this.viewCtrl.dismiss('success');

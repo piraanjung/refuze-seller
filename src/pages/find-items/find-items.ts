@@ -12,12 +12,15 @@ import { Item } from '../../models/item';
 })
 export class FindItemsPage {
   items: Item[]
+  countItems: number
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     private modalCtrl: ModalController,
-    private itemsProvider: ItemsProvider) { }
+    private itemsProvider: ItemsProvider) {
+    this.countItems = 0
+  }
 
   ionViewDidLoad() {
     this.getFavorite()

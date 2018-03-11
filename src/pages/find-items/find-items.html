@@ -14,4 +14,11 @@
       {{ item.name }}
     </ion-item>
   </ion-list>
+
+  <ion-fab bottom right>
+    <button ion-fab>
+      <ion-icon name="cart"></ion-icon>
+      <ion-badge color="secondary" id="notifications-badge">{{ countItems }}</ion-badge>
+    </button>
+  </ion-fab>
 </ion-content>
