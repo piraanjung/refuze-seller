@@ -12,4 +12,8 @@ export class ItemsProvider {
   getFavorite() {
     return this.http.get<Item[]>(`${API_URL}/items-favorite`)
   }
+
+  getItems() {
+    return this.http.get<Item[]>(`${API_URL}/items`)
+  }
 }
