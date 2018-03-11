@@ -6,4 +6,10 @@ export interface Sellers {
   id_card: string
   name: string
   last_name: string
+  image_url: string
+  user_cate_name:string
+  PROVINCE_NAME: string
+  AMPHUR_NAME: string
+  DISTRICT_NAME: string
+  zipcode:string
 }
