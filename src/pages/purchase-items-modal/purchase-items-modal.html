@@ -11,5 +11,22 @@
 
 
 <ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-8>{{ name }}</ion-col>
+      <ion-col col-4>{{ price }}&nbsp;บาท&nbsp;/&nbsp;{{ unit_name }}</ion-col>
+    </ion-row>
+  </ion-grid>
 
+  <ion-item>
+    <ion-label fixed>จำนวน</ion-label>
+    <ion-input type="number" value="" [(ngModel)]="amount"></ion-input>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-8>เป็นเงิน</ion-col>
+      <ion-col col-4>{{ price * amount }}&nbsp;บาท</ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
