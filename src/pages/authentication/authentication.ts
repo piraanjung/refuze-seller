@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { AuthenProvider } from '../../providers/authen/authen';
 /**
  * Generated class for the AuthenticationPage page.
@@ -14,9 +14,12 @@ import { AuthenProvider } from '../../providers/authen/authen';
   templateUrl: 'authentication.html',
 })
 export class AuthenticationPage {
-  login={};
+  login={}
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, 
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams, 
+    public alertCtrl: AlertController,
     private authen:AuthenProvider) {
   }
 
@@ -27,16 +30,28 @@ export class AuthenticationPage {
 
 
   onLogin(){
-    // console.log(this.login['username'])
     this.authen.resAuthen(this.login).subscribe(
       data => {
-        // data=data
-        console.log(data)
+        if(data['status'] ==1 ){
+          this.navCtrl.push('main-menu-purchase-items')
+        }else{
+          this.presentAlert('','ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+        }
       },
       error =>{
-        console.log('authen error')
+        this.presentAlert('','คุณยังไม่ได้ใส่ username และ password');
       }
     );
+  }
+
+
+  presentAlert(title, subtitle) {
+    let alert = this.alertCtrl.create({
+      title: title,
+      subTitle: subtitle,
+      buttons: ['Dismiss']
+    });
+    alert.present();
   }
 
 }
