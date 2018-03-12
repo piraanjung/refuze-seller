@@ -31,15 +31,34 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-list *ngFor="let item of items">
+  <ion-list *ngFor="let item of items; let i = index">
     <ion-item>
       <ion-thumbnail item-start>
         <img src="./assets/imgs/f_logo.png">
       </ion-thumbnail>
       <h2>{{ item.name }}</h2>
-      <p>Hayao Miyazaki • 1988</p>
-      <button ion-button clear item-end><ion-icon name="trash" style="font-size:30px; color:red;"></ion-icon></button>
+      <p>{{ item.amount }}&nbsp;X&nbsp;{{ item.price }}&nbsp;รวม&nbsp;{{ item.balance }}&nbsp;บาท</p>
+      <button ion-button clear item-end (click)="removeItem(i)">
+        <ion-icon name="trash" style="font-size:30px; color:red;"></ion-icon>
+      </button>
     </ion-item>
   </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>
+            <h1>รวม</h1>
+          </ion-col>
+          <ion-col col-4 style="text-align: right;">
+            <h1>{{total}}&nbsp;บาท</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+
 
 </ion-content>

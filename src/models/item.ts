@@ -2,6 +2,7 @@ export interface Item {
   id: number
   name: string
   price: number
+  balance: number
   unit_name: string
 }
 
