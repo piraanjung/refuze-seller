@@ -52,9 +52,13 @@ export class PurchaseItemsPage {
   createPurchaseProfile() {
     console.log(this.seller)
     let params = {
-      items:this.items,
-
+      buyer_id: 2,
+      seller_id: this.seller.id,
+      balance: this.total,
+      items: this.items
     }
+
+    
 
   }
 
