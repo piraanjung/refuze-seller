@@ -40,7 +40,8 @@ export class PurchaseItemsModalPage {
   }
 
   addNewItem() {
-
+    this.balance = (this.amount * this.price)
+    
     let item = {
       name: this.name,
       unit_name: this.unit_name,
