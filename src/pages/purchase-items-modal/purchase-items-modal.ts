@@ -45,6 +45,7 @@ export class PurchaseItemsModalPage {
       name: this.name,
       unit_name: this.unit_name,
       item_id: this.id,
+      price: this.price,
       amount: this.amount,
       balance: this.balance
     }

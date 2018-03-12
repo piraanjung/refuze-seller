@@ -26,6 +26,7 @@ export class FindItemsPage {
 
   ionViewDidLoad() {
     this.getFavorite()
+    // localStorage.removeItem('purchaseItems')
   }
 
   getFavorite() {
@@ -53,7 +54,6 @@ export class FindItemsPage {
   presentaddModalItem(item) {
     let profileModal = this.modalCtrl.create('purchase-items-modal', { item: item });
     profileModal.onDidDismiss(data => {
-      console.log(data);
       this.countItems = data['countItems']
     });
 
