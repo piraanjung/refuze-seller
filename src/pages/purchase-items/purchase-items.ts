@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { Item } from '../../models/item';
+import { PurchaseItemsProvider } from '../../providers/purchase-items/purchase-items';
 
 @IonicPage({
   name: 'purchase-items',
@@ -22,7 +23,11 @@ export class PurchaseItemsPage {
   total: number
   FindItemsPage: string
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    private purchaseItemsProvider: PurchaseItemsProvider
+  ) {
     this.total = 0
   }
 
@@ -58,7 +63,10 @@ export class PurchaseItemsPage {
       items: this.items
     }
 
-    
+    this.purchaseItemsProvider.createPurchaseProfile(params)
+      .subscribe((res) => {
+        console.log(res)
+      })
 
   }
 
