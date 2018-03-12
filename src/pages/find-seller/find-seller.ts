@@ -25,7 +25,10 @@ export class FindSellerPage {
   }
 
   getSellers() {
-    this.findSeller.getSellers().subscribe((res) => this.sellers = res)
+    this.findSeller.getSellers().subscribe((res) => {
+      this.sellers = res
+      console.log(this.sellers)
+    })
   }
 
   goToProfileSeller(profile) {
