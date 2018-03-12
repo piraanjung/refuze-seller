@@ -21,13 +21,14 @@ export class FindSellerPage {
   ) { }
 
   ionViewDidLoad() {
+    localStorage.removeItem('purchaseItems')
+    localStorage.removeItem('sellerProfile')
     this.getSellers()
   }
 
   getSellers() {
     this.findSeller.getSellers().subscribe((res) => {
       this.sellers = res
-      console.log(this.sellers)
     })
   }
 

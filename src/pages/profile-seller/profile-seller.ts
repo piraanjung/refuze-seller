@@ -21,6 +21,7 @@ export class ProfileSellerPage {
   }
 
   ionViewDidLoad() {
+    localStorage.removeItem('purchaseItems')
     this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
     if (Object.keys(this.seller).length !== 0) {
       this.id = this.id

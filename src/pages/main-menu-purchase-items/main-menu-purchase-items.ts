@@ -20,7 +20,8 @@ export class MainMenuPurchaseItemsPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MainMenuPurchaseItemsPage');
+    localStorage.removeItem('purchaseItems')
+    localStorage.removeItem('sellerProfile')
   }
 
 }
