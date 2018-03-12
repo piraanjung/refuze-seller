@@ -59,7 +59,7 @@
     </ion-item>
   </ion-list>
 
-  <button ion-button block large round (click)="createPurchaseProfile()" *ngIf="!isHide">บันทึกรายการซื้อขยะ</button>
+  <button ion-button block large round (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>
   <button ion-button block large round *ngIf="isHide">ปริ้นใบเสร็จ</button>
   <button ion-button block large round *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>
   <button ion-button block large round *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>

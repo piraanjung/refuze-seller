@@ -22,6 +22,7 @@ export class PurchaseItemsPage {
   image_url: string
   total: number
   isHide: boolean
+  isDisabled: boolean
   FindSellerPage: string
   MainMenuPage: string
   constructor(
@@ -31,6 +32,7 @@ export class PurchaseItemsPage {
   ) {
     this.total = 0
     this.isHide = false
+    this.isDisabled = true
     this.FindSellerPage ='find-seller'
     this.MainMenuPage ='main-menu-purchase-items'
   }
@@ -39,6 +41,7 @@ export class PurchaseItemsPage {
     this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
     this.items = JSON.parse(localStorage.getItem('purchaseItems')) || []
     this.total = this.calTotal(this.items)
+    this.DisabledPurchaseButton(this.total)
 
     if (Object.keys(this.seller).length !== 0 && Object.keys(this.items).length) {
       this.id = this.id
@@ -52,6 +55,7 @@ export class PurchaseItemsPage {
   removeItem(index) {
     this.items.splice(index, 1)
     this.total = this.calTotal(this.items)
+    this.DisabledPurchaseButton(this.total)
   }
 
   calTotal(items) {
@@ -66,13 +70,18 @@ export class PurchaseItemsPage {
       balance: this.total,
       items: this.items
     }
-
+    
     this.purchaseItemsProvider.createPurchaseProfile(params)
       .subscribe((res) => {
         console.log(res)
         this.isHide = true
       })
+  }
 
+  DisabledPurchaseButton(total) {
+    console.log(total)
+    if (total <= 0) this.isDisabled = false
+    console.log(this.isDisabled)
   }
 
 }
