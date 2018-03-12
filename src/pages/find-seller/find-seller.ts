@@ -3,7 +3,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
 
-@IonicPage()
+@IonicPage({
+  name: 'find-seller'
+})
 @Component({
   selector: 'page-find-seller',
   templateUrl: 'find-seller.html',

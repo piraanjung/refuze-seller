@@ -21,14 +21,18 @@ export class PurchaseItemsPage {
   fullname: string
   image_url: string
   total: number
-  FindItemsPage: string
-
+  isHide: boolean
+  FindSellerPage: string
+  MainMenuPage: string
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     private purchaseItemsProvider: PurchaseItemsProvider
   ) {
     this.total = 0
+    this.isHide = false
+    this.FindSellerPage ='find-seller'
+    this.MainMenuPage ='main-menu-purchase-items'
   }
 
   ionViewDidLoad() {
@@ -55,7 +59,6 @@ export class PurchaseItemsPage {
   }
 
   createPurchaseProfile() {
-    console.log(this.seller)
     let params = {
       buyer_id: 2,
       seller_id: this.seller.id,
@@ -66,6 +69,7 @@ export class PurchaseItemsPage {
     this.purchaseItemsProvider.createPurchaseProfile(params)
       .subscribe((res) => {
         console.log(res)
+        this.isHide = true
       })
 
   }
