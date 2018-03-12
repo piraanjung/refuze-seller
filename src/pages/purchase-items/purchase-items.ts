@@ -46,11 +46,7 @@ export class PurchaseItemsPage {
   }
 
   calTotal(items) {
-    return this.items.reduce(
-      (pre, cur) => {
-        console.log(cur)
-        return pre += cur.balance;
-      }, 0);
+    return this.items.reduce((pre, cur) => pre += cur.balance, 0);
   }
 
 }
