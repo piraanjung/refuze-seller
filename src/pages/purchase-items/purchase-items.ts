@@ -62,6 +62,7 @@ export class PurchaseItemsPage {
     let params = {
       buyer_id: 2,
       seller_id: this.seller.id,
+      account_saving_id: this.seller.account_saving_id,
       balance: this.total,
       items: this.items
     }
