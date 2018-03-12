@@ -1,3 +1,63 @@
 page-home {
-
+    $bg-white: #ffffff;
+    %color-white{
+        color: $bg-white !important;
+    }
+    ion-content{
+        background:$bg-white !important;
+        color: $bg-white !important;
+        ion-avatar{
+            img{
+                border-radius: 50% 50% !important;
+            }
+            
+        }
+    }
+    ion-card{
+        -webkit-box-shadow:none !important;
+        box-shadow:none !important;
+        
+        ion-card-content{
+            background: #5DD7D0 !important;
+            border-radius: 10px;
+            
+            .title{
+                @extend %color-white;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .subtitle{
+                @extend %color-white;
+                font-size: 17px;
+            }
+            .price{
+                color:#9B2334;
+                font-size: 21px;
+                font-weight: bold;
+                border-left: #ffffff 1px solid;
+                line-height: 140%;
+                .price-number{
+                    padding-top: 8px;
+                    -webkit-transform: scaleY(2);
+                    transform: scaleY(2);
+                }
+                span{
+                    font-size: 17px;
+                    @extend %color-white;
+                    margin-left: 50%
+                }
+            }
+        }
+        .item-md{
+            background:none !important;
+        }
+        .card-footer{
+            background: #E7F9F9 !important;
+            width: 90%;
+            margin-left: 5%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+    
 }
