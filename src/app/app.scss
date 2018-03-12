@@ -30,6 +30,9 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+$font-family-base: 'Prompt', sans-serif !important;
+
 .circle{
     border-radius: 50%;
     width:120px;
@@ -40,11 +43,13 @@
               0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 ion-content{
-    background-color: #05FFA2 !important
+    background-color: #05FFA2 !important;
+    font-family: $font-family-base
 }
 
 ion-header{
-    background-color: #47A27E !important
+    background-color: #47A27E !important;
+    font-family: $font-family-base
 }
 ion-img{
     background-color: transparent !important
