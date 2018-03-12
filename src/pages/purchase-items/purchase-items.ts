@@ -28,7 +28,7 @@ export class PurchaseItemsPage {
 
   ionViewDidLoad() {
     this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
-    this.items = JSON.parse(localStorage.getItem('purchaseItems'))
+    this.items = JSON.parse(localStorage.getItem('purchaseItems')) || []
     this.total = this.calTotal(this.items)
 
     if (Object.keys(this.seller).length !== 0 && Object.keys(this.items).length) {
@@ -47,6 +47,15 @@ export class PurchaseItemsPage {
 
   calTotal(items) {
     return this.items.reduce((pre, cur) => pre += cur.balance, 0);
+  }
+
+  createPurchaseProfile() {
+    console.log(this.seller)
+    let params = {
+      items:this.items,
+
+    }
+
   }
 
 }

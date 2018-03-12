@@ -13,4 +13,5 @@ export interface Sellers {
   AMPHUR_NAME: string
   DISTRICT_NAME: string
   zipcode: string
+  acc_id: number
 }
