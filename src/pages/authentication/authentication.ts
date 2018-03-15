@@ -25,8 +25,9 @@ export class AuthenticationPage {
   onLogin() {
     this.authen.resAuthen(this.login).subscribe(
       data => {
+        console.log(data)
         if (data['status'] == 1) {
-          this.navCtrl.push('main-menu-purchase-items')
+          // this.navCtrl.push('main-menu-purchase-items')
         } else {
           this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
         }
