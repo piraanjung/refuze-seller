@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, App } from 'ionic-angular';
 import { AuthenProvider } from '../../providers/authen/authen';
-/**
- * Generated class for the AuthenticationPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Buyer } from '../../models/buyer';
 
 @IonicPage()
 @Component({
@@ -14,32 +9,36 @@ import { AuthenProvider } from '../../providers/authen/authen';
   templateUrl: 'authentication.html',
 })
 export class AuthenticationPage {
-  login={}
+  login = {}
+  BuyerProfile: Buyer;
 
   constructor(
-    public navCtrl: NavController, 
-    public navParams: NavParams, 
+    public navCtrl: NavController,
+    public navParams: NavParams,
     public alertCtrl: AlertController,
-    private authen:AuthenProvider) {
+    private app: App,
+    private authen: AuthenProvider) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AuthenticationPage');
-  
+    localStorage.removeItem('BuyerProfile')
   }
 
 
-  onLogin(){
+  onLogin() {
     this.authen.resAuthen(this.login).subscribe(
-      data => {
-        if(data['status'] ==1 ){
-          this.navCtrl.push('main-menu-purchase-items')
-        }else{
-          this.presentAlert('','ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+      res => {
+        if (res.logged === true) {
+          this.BuyerProfile = res
+          localStorage.setItem('BuyerProfile', JSON.stringify(this.BuyerProfile))
+          // this.navCtrl.push('main-menu-purchase-items')
+          this.app.getRootNav().setRoot('main-menu-purchase-items');
+        } else {
+          this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
         }
       },
-      error =>{
-        this.presentAlert('','คุณยังไม่ได้ใส่ username และ password');
+      error => {
+        this.presentAlert('', 'คุณยังไม่ได้ใส่ username และ password');
       }
     );
   }
@@ -49,7 +48,7 @@ export class AuthenticationPage {
     let alert = this.alertCtrl.create({
       title: title,
       subTitle: subtitle,
-      buttons: ['Dismiss']
+      buttons: ['ปิด']
     });
     alert.present();
   }

@@ -13,6 +13,6 @@ import { AuthenProvider } from '../../providers/authen/authen';
     HttpClientModule,
     IonicPageModule.forChild(AuthenticationPage),
   ],
-  providers : [AuthenProvider]
+  providers: [AuthenProvider]
 })
-export class AuthenticationPageModule {}
+export class AuthenticationPageModule { }
