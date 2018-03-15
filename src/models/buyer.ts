@@ -1,4 +1,4 @@
-export interface Sellers {
+export interface Buyer {
   id: number
   username: string
   email: string
@@ -8,4 +8,6 @@ export interface Sellers {
   last_name: string
   image_url: string
   user_cate_name: string
+  status: number
+  logged: boolean
 }

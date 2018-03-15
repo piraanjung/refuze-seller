@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { AuthenProvider } from '../../providers/authen/authen';
+import { Buyer } from '../../models/buyer';
 
 @IonicPage()
 @Component({
@@ -9,6 +10,7 @@ import { AuthenProvider } from '../../providers/authen/authen';
 })
 export class AuthenticationPage {
   login = {}
+  BuyerProfile: Buyer;
 
   constructor(
     public navCtrl: NavController,
@@ -18,15 +20,17 @@ export class AuthenticationPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AuthenticationPage');
+    localStorage.removeItem('BuyerProfile')
   }
 
 
   onLogin() {
     this.authen.resAuthen(this.login).subscribe(
-      data => {
-        console.log(data)
-        if (data['status'] == 1) {
+      res => {
+        if (res.logged === true) {
+          this.BuyerProfile = res
+          console.log(this.BuyerProfile)
+          localStorage.setItem('BuyerProfile', JSON.stringify(this.BuyerProfile))
           // this.navCtrl.push('main-menu-purchase-items')
         } else {
           this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
@@ -43,7 +47,7 @@ export class AuthenticationPage {
     let alert = this.alertCtrl.create({
       title: title,
       subTitle: subtitle,
-      buttons: ['Dismiss']
+      buttons: ['ปิด']
     });
     alert.present();
   }
