@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController, App } from 'ionic-angular';
 import { AuthenProvider } from '../../providers/authen/authen';
 import { Buyer } from '../../models/buyer';
@@ -11,6 +11,13 @@ import { Buyer } from '../../models/buyer';
 export class AuthenticationPage {
   login = {}
   BuyerProfile: Buyer;
+  data: any ={
+    logo     : 'assets/images/logo/login.png',
+    username : 'username',
+    password : 'password',
+    login    : 'ล็อกอิน',
+    register : 'ลงทะเบียน'
+  }
 
   constructor(
     public navCtrl: NavController,

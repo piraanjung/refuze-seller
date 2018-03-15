@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -6,9 +6,20 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  @Input() data: any;
+  @Input() events: any;
 
-  constructor(public navCtrl: NavController) {
+  public username: string;
+  public password: string;
 
+  constructor() {}
+
+  onEvent = (event: string): void => {
+    if (this.events[event]) {
+        this.events[event]({
+            'username' : this.username,
+            'password' : this.password
+        });
+    }
   }
-
 }
