@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
+import { Buyer } from '../../models/buyer';
 import { Item } from '../../models/item';
 import { PurchaseItemsProvider } from '../../providers/purchase-items/purchase-items';
 
@@ -14,6 +15,7 @@ import { PurchaseItemsProvider } from '../../providers/purchase-items/purchase-i
 })
 export class PurchaseItemsPage {
   seller: Sellers
+  buyer: Buyer
   items: Item[]
   id: number
   address: string
@@ -39,6 +41,7 @@ export class PurchaseItemsPage {
 
   ionViewDidLoad() {
     this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
+    this.buyer = JSON.parse(localStorage.getItem('BuyerProfile'))
     this.items = JSON.parse(localStorage.getItem('purchaseItems')) || []
     this.total = this.calTotal(this.items)
     this.DisabledPurchaseButton(this.total)
@@ -64,24 +67,21 @@ export class PurchaseItemsPage {
 
   createPurchaseProfile() {
     let params = {
-      buyer_id: 2,
+      buyer_id: this.buyer.id,
       seller_id: this.seller.id,
       account_saving_id: this.seller.account_saving_id,
       balance: this.total,
       items: this.items
     }
-    
+
     this.purchaseItemsProvider.createPurchaseProfile(params)
       .subscribe((res) => {
-        console.log(res)
         this.isHide = true
       })
   }
 
   DisabledPurchaseButton(total) {
-    console.log(total)
     if (total <= 0) this.isDisabled = false
-    console.log(this.isDisabled)
   }
 
 }

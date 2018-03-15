@@ -29,9 +29,8 @@ export class AuthenticationPage {
       res => {
         if (res.logged === true) {
           this.BuyerProfile = res
-          console.log(this.BuyerProfile)
           localStorage.setItem('BuyerProfile', JSON.stringify(this.BuyerProfile))
-          // this.navCtrl.push('main-menu-purchase-items')
+          this.navCtrl.push('main-menu-purchase-items')
         } else {
           this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
         }
