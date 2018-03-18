@@ -9,8 +9,12 @@
     <ion-grid no-padding *ngIf="data != null">
       <ion-row>
         <ion-col col-12>
+          
           <ion-list no-margin>
+              
             <ion-list-header header-bcg no-padding no-lines>
+                <h1 header-title float-right text-wrap>Playlist Name</h1>
+                <br clearboth>
               <ion-icon white icon-large item-start>
                 <i class="icon {{data.iconPlay}}"></i>
               </ion-icon>
@@ -24,25 +28,23 @@
             <ion-grid no-padding *ngIf="data != null">
               <ion-row>
                 <ion-col col-12>
-                  <ion-list no-margin>
+                  
                     <ul no-margin no-padding class="collapsible">
                       <li *ngFor="let item of items">
                         <!-- List big image Header -->
                         <div class="collapsible-header" (click)="presentaddModalItem(item)">
-                          <ion-item no-padding no-lines>
-                            <ion-thumbnail item-start no-margin>
+                            <ion-list margin>
+                          <ion-item padding no-lines>
+                            <ion-avatar item-start no-margin>
                               <img src="assets/images/avatar/0.jpg" />
-                            </ion-thumbnail>
-                            <div title-block>
+                            </ion-avatar>
+                            
                               <h2 padding-left item-title>{{item.name}}</h2>
-                              <h3 padding-left item-subtitle>{{item.name}}</h3>
-                            </div>
-                            <div social>
-                                <ion-icon>
-                                    <i class="icon {{assets/fontello/icon-delet}}" (click)="onEvent('onLike', group, $event)"></i>
-                                </ion-icon>
-                            </div>
+                              <h3 padding-left item-subtitle>ขยะรีไซเคิล : 10บาท/กิโลกรัม</h3>
+                              
+                              <ion-icon  item-right name="ios-navigate"></ion-icon>
                           </ion-item>
+                        </ion-list>
                         </div>
                         <!-- List big image Body -->
                         <!-- <div class="item-accordion" [ngClass]="{'active': isGroupShown(item) }" [hidden]="!isGroupShown(item)">
@@ -69,7 +71,7 @@
                         <!--end-->
                       </li>
                     </ul>
-                  </ion-list>
+                  
                 </ion-col>
               </ion-row>
             </ion-grid>

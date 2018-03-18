@@ -30,6 +30,8 @@ export class FindSellerPage {
   fullname: string
   image_url: string
   FindItemsPage: string
+  animateItems = [];
+  animateClass: any;
 
   constructor(
     public navCtrl: NavController,
@@ -37,6 +39,7 @@ export class FindSellerPage {
     private findSeller: FindSellersProvider
   ) { 
     this.FindItemsPage = 'find-items'
+    this.animateClass = { 'zoom-in': true };
   }
 
   ionViewDidLoad() {
@@ -87,5 +90,24 @@ export class FindSellerPage {
   isGroupShown(group: any) {
     return group.show;
   }
+  ngOnChanges(changes: { [propKey: string]: any }) {
+    let that = this;
+    that.data = changes['data'].currentValue;
+    if (that.data && that.data.items) {
+        for (let i = 0; i < that.data.items.length; i++) {
+            setTimeout(function () {
+                that.animateItems.push(that.data.items[i]);
+            }, 200 * i);
+        }
+    }
+}
+onEvent(event: string, item: any, e: any) {
+  if (e) {
+      e.stopPropagation();
+  }
+  if (this.events[event]) {
+      this.events[event](item);
+  }
+}
 
 }
