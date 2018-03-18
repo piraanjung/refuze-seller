@@ -22,7 +22,9 @@ export class ListViewGoogleCardsService implements IService {
             { "title": "Full image cards", "theme": "layout3" }
         ];
     };
-
+    test =(): any=>{
+        console.log('ddd')
+    }
     getDataForLayout1 = (): any => {
         return {
             "title": "PlaylistName",

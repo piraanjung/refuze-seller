@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
+import { Content, FabButton } from 'ionic-angular';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PurchaseItemsMenu } from "../../models/purchase-items-menu";
-
+import {MainMenuPurchaseItemProvider } from "../../providers/main-menu-purchase-item/main-menu-purchase-item"
 @IonicPage({
   name: 'main-menu-purchase-items',
   segment: 'main-menu-purchase-items'
@@ -11,12 +12,22 @@ import { PurchaseItemsMenu } from "../../models/purchase-items-menu";
   templateUrl: 'main-menu-purchase-items.html',
 })
 export class MainMenuPurchaseItemsPage {
+    @Input() data;
+    @Input() events: any;
+    @ViewChild(Content)
+    content: Content;
+    @ViewChild(FabButton)
+    fabButton: FabButton;
+
+    animateItems = [];
+    animateClass: any;
+    
+
   cards: PurchaseItemsMenu[];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.cards = [
-      { img: './assets/imgs/logo.png', name: 'ค้นหาผู้ขายขยะ', link: 'find-seller' },
-      { img: './assets/imgs/logo.png', name: 'ประวัติรับซื้อขยะ', link: '#' },
-    ]
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+  private mainMenuPurchaseItemProvider : MainMenuPurchaseItemProvider ) {
+    this.animateClass = { 'fade-in-left-item': true };
+    this.data = mainMenuPurchaseItemProvider.getDataForLayout3();
   }
 
   ionViewDidLoad() {
@@ -24,4 +35,12 @@ export class MainMenuPurchaseItemsPage {
     localStorage.removeItem('sellerProfile')
   }
 
+  onEvent(event: string, item: any, e: any) {
+    if (e) {
+        e.stopPropagation();
+    }
+    if (item !="#") {
+        this.navCtrl.push(item);
+    }
+}
 }
