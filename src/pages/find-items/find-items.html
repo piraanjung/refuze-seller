@@ -1,53 +1,55 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>FindItems</ion-title>
+    <ion-row>
+      <ion-col col-4>
+          <ion-title>ค้นหารายการขยะ</ion-title>
+      </ion-col>
+      <ion-col col-8 style="text-align:right; color:#ffffff">
+          จาว แสงทองธรรม : 454544444
+      </ion-col>
+    </ion-row>
+    
+
   </ion-navbar>
 
 </ion-header>
-  <ion-content>
-    <ion-grid no-padding *ngIf="data != null">
-      <ion-row>
-        <ion-col col-12>
-          
-          <ion-list no-margin>
-              
-            <ion-list-header header-bcg no-padding no-lines>
-                <h1 header-title float-right text-wrap>Playlist Name</h1>
-                <br clearboth>
-              <ion-icon white icon-large item-start>
-                <i class="icon {{data.iconPlay}}"></i>
-              </ion-icon>
-              <h1 header-title>{{data.title}}</h1>
-              <h2 header-subtitle>{{data.description}}</h2>
+<ion-content>
+  <ion-grid no-padding *ngIf="data != null">
+    <ion-row>
+      <ion-col col-12>
+        <ion-list no-margin>
+          <ion-list-header header-bcg no-padding no-lines>
+            <ion-icon white icon-large item-start>
+              <i class="icon {{data.iconPlay}}"></i>
+            </ion-icon>
+            <h1 header-title>{{data.title}}</h1>
+            <h2 header-subtitle>{{data.description}}</h2>
 
-              <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-  
-            </ion-list-header>
-          
-            <ion-grid no-padding *ngIf="data != null">
-              <ion-row>
-                <ion-col col-12>
-                  
-                    <ul no-margin no-padding class="collapsible">
-                      <li *ngFor="let item of items">
-                        <!-- List big image Header -->
-                        <div class="collapsible-header" (click)="presentaddModalItem(item)">
-                            <ion-list margin>
-                          <ion-item padding no-lines>
-                            <ion-avatar item-start no-margin>
-                              <img src="assets/images/avatar/0.jpg" />
-                            </ion-avatar>
-                            
-                              <h2 padding-left item-title>{{item.name}}</h2>
-                              <h3 padding-left item-subtitle>ขยะรีไซเคิล : 10บาท/กิโลกรัม</h3>
-                              
-                              <ion-icon  item-right name="ios-navigate"></ion-icon>
-                          </ion-item>
-                        </ion-list>
-                        </div>
-                        <!-- List big image Body -->
-                        <!-- <div class="item-accordion" [ngClass]="{'active': isGroupShown(item) }" [hidden]="!isGroupShown(item)">
+            <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+          </ion-list-header>
+
+          <ion-grid no-padding *ngIf="data != null">
+            <ion-row>
+              <ion-col col-12>
+                <ion-list no-margin>
+                    <li *ngFor="let item of items">
+                      <!-- List big image Header -->
+                      <div class="collapsible-header" (click)="presentaddModalItem(item)">
+                        <ion-item padding no-lines margin-top>
+                          <ion-avatar item-start no-margin>
+                            <img src="assets/images/avatar/0.jpg" />
+                          </ion-avatar>
+                            <h2 padding-left item-title>{{item.name}}</h2>
+                            <h3 padding-left item-subtitle>{{item.name}}</h3>
+                            <h2 item-end> 2 บาท : กิโลกรัม  <ion-icon name="ios-cart" large></ion-icon>
+                            </h2>
+
+                        </ion-item>
+                      </div>
+                      <!-- List big image Body -->
+                      <!-- <div class="item-accordion" [ngClass]="{'active': isGroupShown(item) }" [hidden]="!isGroupShown(item)">
                           
                           
                                   <ion-row>
@@ -55,10 +57,10 @@
                                       <ion-img width="100" height="100" src="assets/imgs/f_logo.png"></ion-img>
                                     </ion-col>
                                     <ion-col col-8> -->
-                                      <!-- <h2 header-title>{{ fullname }}</h2>
+                      <!-- <h2 header-title>{{ fullname }}</h2>
                                       <h5 header-title>{{ mobile }}</h5>
                                       <h5 header-subtitle>{{ address }}</h5> -->
-                                    <!-- </ion-col>
+                      <!-- </ion-col>
                                   </ion-row>
                           
                           <ion-row> 
@@ -68,17 +70,22 @@
                               </ion-col>
                           </ion-row>  
                         </div> -->
-                        <!--end-->
-                      </li>
-                    </ul>
-                  
-                </ion-col>
-              </ion-row>
-            </ion-grid>
-            <!-- </ion-item-sliding> -->
-          </ion-list>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>
-  
+                      <!--end-->
+                    </li>
+                </ion-list>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <!-- </ion-item-sliding> -->
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab bottom right [navPush]='PurchaseItems'>
+    <button ion-fab>
+      <ion-icon name="cart"></ion-icon>
+      <ion-badge color="secondary" id="notifications-badge">{{ countItems }}</ion-badge>
+    </button>
+  </ion-fab>
+</ion-content>
