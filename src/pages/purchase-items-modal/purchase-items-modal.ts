@@ -18,6 +18,7 @@ export class PurchaseItemsModalPage {
   amount: number
   unit_name: string
   balance: number
+  _img : './assets/images/background/7.jpg'
 
   constructor(private viewCtrl: ViewController, public navParams: NavParams) {
     this.amount = 1

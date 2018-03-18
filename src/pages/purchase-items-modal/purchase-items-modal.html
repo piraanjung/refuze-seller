@@ -8,28 +8,76 @@
   </ion-navbar>
 
 </ion-header>
+<!--- Theme Parallax Product -->
+<!--- Header Big Image-->
+<ion-content elastic-header>
+  <div padding background-size id="elastic-header" [ngStyle]="{'background-image': 'url(assets/images/background/7.jpg)'}">
+    <div class="title">
+      <h2 parallax-title>{{name}}</h2>
+      <h1 parallax-subtitle>{{ price }}&nbsp;บาท&nbsp;/&nbsp;{{ unit_name }}</h1>
+    </div>
+  </div>
+  <!--Content-->
+  <ion-grid class="grid" no-padding>
+
+    <ion-row class="row">
+
+      <ion-col  col-7 col-lg-4 col-md-7 col-sm-7 col-xl-4>
+
+        <ion-card padding text-center class="card card-md">
+
+          <div card-content>
+
+            <img images-filter src="assets/images/background/0.jpg">
+
+            <div card-title>จำนวน</div>
+
+            <div  class="amount_input">
+                <ion-input required type="number" class="" [(ngModel)]="amount"></ion-input>            
+            </div>
+
+          </div>
+
+        </ion-card>
+
+      </ion-col>
+      <ion-col col-5 col-lg-4 col-md-5 col-sm-5 col-xl-4>
+
+        <ion-card padding text-center class="card card-md">
+
+          <div card-content>
+
+            <img images-filter src="assets/images/background/10.jpg">
+
+            <div card-title>เป็นเงิน</div>
+
+            <div>
+                <div class="total">{{ price * amount }}</div>
+                <div card-subtitle>บาท</div>
+            </div>
+
+          </div>
+
+        </ion-card>
+
+      </ion-col>
 
 
-<ion-content padding>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-8>{{ name }}</ion-col>
-      <ion-col col-4>{{ price }}&nbsp;บาท&nbsp;/&nbsp;{{ unit_name }}</ion-col>
     </ion-row>
+
   </ion-grid>
-
-  <ion-item>
-    <ion-label fixed>จำนวน</ion-label>
-    <ion-input type="number" value="" [(ngModel)]="amount"></ion-input>
-  </ion-item>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col col-8>เป็นเงิน</ion-col>
-      <ion-col col-4>{{ price * amount }}&nbsp;บาท</ion-col>
-    </ion-row>
+  <ion-grid no-padding>
+    <ion-item no-padding transparent>
+      <ion-label floating>จำนวน</ion-label>
+      
+    </ion-item>
   </ion-grid>
-
-  <br>
-  <button ion-button block round (click)="addNewItem()">บันทึกข้อมูล</button>
+  <ion-col offset-4>
+      <button  ion-button large round color="secondary" (click)="addNewItem()" >
+            บันทึกข้อมูล
+        </button>
+  </ion-col>
+  
 </ion-content>
+
+

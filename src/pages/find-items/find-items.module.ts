@@ -3,6 +3,7 @@ import { IonicPageModule } from 'ionic-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { FindItemsPage } from './find-items';
 import { ItemsProvider } from '../../providers/items/items';
+import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,6 @@ import { ItemsProvider } from '../../providers/items/items';
     HttpClientModule,
     IonicPageModule.forChild(FindItemsPage),
   ],
-  providers: [ItemsProvider]
+  providers: [ItemsProvider, FindSellersProvider]
 })
 export class FindItemsPageModule { }

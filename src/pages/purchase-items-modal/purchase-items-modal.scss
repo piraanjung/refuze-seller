@@ -1,3 +1,51 @@
 page-purchase-items-modal {
-
+    [background-size] {
+        @include darkening-blend-mode;
+        width: 100%;
+        height: 250px;
+        display: table;
+        position: relative;
+        z-index: 999;
+        [social] {
+            @include social;
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+            z-index: 9;
+        }
+        .title {
+            display: table-cell;
+            text-align: left;
+            vertical-align: bottom;
+            [parallax-title] {
+                position: relative;
+                z-index: 9;
+                margin-top: 0;
+            }
+            [parallax-subtitle] {
+                margin-bottom: 0;
+                position: relative;
+                z-index: 9;
+            }
+        }
+    }
+    .amount_input{
+        background:#00bee4 !important;
+        border-radius: 20px 20px;
+        ion-input{
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+        .text-input-md{
+            margin:8px 8px !important;
+            text-align: center !important
+        }
+    }
+    .total{
+        color: #00bee4 !important;
+        font-weight: bold !important;
+        font-size: 35px !important; 
+    }
 }

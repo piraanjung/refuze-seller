@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { ItemsProvider } from '../../providers/items/items';
 import { Item } from '../../models/item';
+import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
+import { Sellers } from '../../models/sellers';
+
 
 @IonicPage({
   name: 'find-items'
@@ -14,18 +17,29 @@ export class FindItemsPage {
   items: Item[]
   countItems: number
   PurchaseItems:string
-
+  seller: Sellers
+  @Input() data: any={
+    "title": "ค้นหาชนิดขยะ",
+    "description": "ทำการพิมพ์ชื่อขยะเพื่อทำการค้นหา",
+    "shortDescription": "35:72",
+    "iconLike": "icon-thumb-up",
+    "iconFavorite": "icon-heart",
+    "iconShare": "icon-share-variant",
+    "iconPlay": "icon-play-circle-outline",
+  };
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     private modalCtrl: ModalController,
-    private itemsProvider: ItemsProvider) {
+    private itemsProvider: ItemsProvider,
+    private findSeller: FindSellersProvider) {
     this.countItems = 0
     this.PurchaseItems = 'purchase-items'
   }
 
   ionViewDidLoad() {
     this.getFavorite()
+    console.log(this.data)
     // localStorage.removeItem('purchaseItems')
   }
 
@@ -59,5 +73,22 @@ export class FindItemsPage {
 
     profileModal.present();
   }
+
+  // toggleGroup(group: any,profile) {
+  //   console.log(profile)
+  //   group.show = !group.show;
+  //   localStorage.setItem('sellerProfile', JSON.stringify(profile))
+  //   this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
+  //   if (Object.keys(this.seller).length !== 0) {
+      // this.id = this.id
+      // this.fullname = `${this.seller.name} ${this.seller.last_name}`
+      // this.mobile = `เบอร์ติดต่อ ${this.seller.mobile}`
+      // this.address = `บ้านเลขที่ ${this.seller.address} ตำบล ${this.seller.DISTRICT_NAME} อำเภอ ${this.seller.AMPHUR_NAME} จังหวัด ${this.seller.PROVINCE_NAME} ${this.seller.zipcode}`
+  //   }
+  // }
+
+  // isGroupShown(group: any) {
+  //   return group.show;
+  // }
 
 }
