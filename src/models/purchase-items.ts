@@ -5,7 +5,8 @@ export interface PurchaseTransactionHistory {
   buyer_name: string
   seller_name: string
   bought_date: string
-  transactions: PurchaseTransaction[]
+  transactions: any
+  // transactions: PurchaseTransaction[]
 }
 
 export interface PurchaseTransaction {
