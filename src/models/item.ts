@@ -4,6 +4,8 @@ export interface Item {
   price: number
   balance: number
   unit_name: string
+  item_categories_name: string
+  image_url: string
 }
 
 export interface addNewItem {
