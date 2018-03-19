@@ -1,31 +1,88 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>PurchaseItems</ion-title>
+    <ion-title>บันทึกรายการซื้อขยะ</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-<!--Theme Appearance animation (Zoom In)-->
-<ion-content has-header>
-    <ion-grid no-padding *ngIf="data != null">
-        <ion-row>
-            <ion-col col-12>
-                <ion-list no-margin>
-                    <ion-item no-lines [ngClass]="animateClass" *ngFor="let item of data.items; let i = index;" (click)="onEvent('onItemClick', item.title, $event)">
-                        <ion-avatar item-start>
-                            <img [src]="item.image" alt="{{item.title}}" />
-                        </ion-avatar>
-                        <h2 item-title padding-left>{{item.title}}</h2>
-                        <ion-icon icon-small item-right (click)="onEvent('onFavorite', item, $event)">
-                            <i class="icon" [ngClass]="{'icon-heart': item.favorite, 'icon-heart-outline': !item.favorite}"></i>
-                        </ion-icon>
-                    </ion-item>
-                </ion-list>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
+
+<ion-content>
+  <ion-grid>
+
+    <ion-row header-bcg padding>
+      <ion-col col-2>
+        <ion-img width="40" height="40" src="./assets/imgs/f_logo.png"></ion-img>
+      </ion-col>
+      <ion-col col-5 text-left>
+        <h1 header-title no-margin text-wrap>{{ fullname }}</h1>
+        <h2 header-subtitle no-margin>{{ mobile }}</h2>
+      </ion-col>
+      <ion-col col-5 text-right>
+        <span header-subtitle no-margin>{{ address }}</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid no-padding *ngIf="data != null">
+    <ion-row>
+      <ion-col col-12 col-md-12 col-lg-6 *ngFor="let item of items;let i = index">
+
+        <ion-card padding text-right class="card">
+          <div float-left class="card-img">
+            <img images-filter src="assets/images/avatar-small/0.jpg" />
+          </div>
+          <ion-icon name="close-circle" icon-del (click)="removeItem(i)" *ngIf="!isHide"> </ion-icon>
+          <!--Card-content-->
+          <ion-card-content>
+            <ion-card-title no-padding>
+              <h2 card-title>{{item.name}}</h2>
+            </ion-card-title>
+            <h3 card-subtitle>{{item.price}} : {{item.unit_name}}</h3>
+
+            <p card-body-text>จำนวน : {{item.amount}} {{item.unit_name}}</p>
+            <!---Social share-->
+            <div social>
+              เป็นเงิน {{item.price * item.amount}} บาท
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-grid no-padding background-size container-hearder-image style="background-image: url(assets/images/background-small/10.jpg)">
+    <ion-row padding >
+      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>
+        <h1 header-title>รวมเป็นเงิน</h1>
+
+      </ion-col>
+      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>
+        <span span-large>{{total}} </span>
+        <h2 header-subtitle>บาท</h2>
+
+        <button ion-button button-clear-outline round outline (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-4>
+          <button ion-button button-clear-outline round outline *ngIf="isHide">ปริ้นใบเสร็จ</button>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button button-clear-outline round outline class="my-col-4" *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button button-clear-outline round outline *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>
+        </ion-col>
+
+      </ion-row>
+    <!--Content-->
+
+  </ion-grid>
+
 </ion-content>
+
 <!-- Fab Button -->
 
 
