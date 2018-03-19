@@ -3,6 +3,8 @@ page-main-menu-purchase-items {
     [card-title] {
       position: absolute;
       top: 36%;
+      font-size: 23px !important;
+      font-weight: bold;
       width: 90%;
       left: 5%;
       z-index: 9;
@@ -24,5 +26,11 @@ page-main-menu-purchase-items {
     &:before {
       z-index: 3;
     }
+  }
+  .zoom-in {
+    -webkit-animation: zoomIn 500ms;
+    -moz-animation: zoomIn 500ms;
+    -o-animation: zoomIn 500ms;
+    animation: zoomIn 500ms;
   }
 }

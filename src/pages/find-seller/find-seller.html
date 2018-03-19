@@ -36,7 +36,8 @@
                                   <ion-avatar item-start>
                                       <img src="assets/images/avatar/1.jpg" />
                                   </ion-avatar>
-                                  <h2 item-title padding-left>{{seller.name}}  ใส่นามสกุล</h2>
+                                  <h2 item-title padding-left>{{seller.name}}  {{seller.last_name}}</h2>
+                                  <h2 item-subtitle padding-left>{{seller.id_card}} </h2>
                                       <ion-icon name="ios-arrow-dropdown-outline"  item-right></ion-icon>
                               </ion-item>
                           </ion-list>
@@ -46,7 +47,7 @@
                         
                                 <ion-row>
                                   <ion-col col-4>
-                                    <ion-img width="100" height="100" src="assets/imgs/f_logo.png"></ion-img>
+                                    <ion-img width="80" height="80" src="assets/imgs/f_logo.png"></ion-img>
                                   </ion-col>
                                   <ion-col col-8>
                                     <h2 header-title>{{ fullname }}</h2>

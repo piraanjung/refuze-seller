@@ -27,7 +27,7 @@ export class MainMenuPurchaseItemsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,
   private mainMenuPurchaseItemProvider : MainMenuPurchaseItemProvider ) {
     this.animateClass = { 'fade-in-left-item': true };
-    this.data = mainMenuPurchaseItemProvider.getDataForLayout3();
+    this.data = mainMenuPurchaseItemProvider.data();
   }
 
   ionViewDidLoad() {
@@ -43,4 +43,5 @@ export class MainMenuPurchaseItemsPage {
         this.navCtrl.push(item);
     }
 }
+
 }

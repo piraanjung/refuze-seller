@@ -14,7 +14,7 @@ export class MainMenuPurchaseItemProvider {
     console.log('Hello MainMenuPurchaseItemProvider Provider');
   }
 
-  getDataForLayout3 = (): any => {
+  data = (): any => {
     return {
         "refreshMessage": "Pull to refresh...",
         "items": [
