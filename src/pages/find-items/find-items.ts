@@ -14,7 +14,7 @@ import { Sellers } from '../../models/sellers';
   templateUrl: 'find-items.html',
 })
 export class FindItemsPage {
-  items: Item[]
+  items: any
   countItems: number
   PurchaseItems:string
   seller: Sellers
@@ -44,7 +44,9 @@ export class FindItemsPage {
   }
 
   getFavorite() {
-    this.itemsProvider.getFavorite().subscribe((res) => this.items = res)
+    this.itemsProvider.getFavorite().subscribe((res) =>{ this.items =res
+      console.log(this.items)
+    })
   }
 
   filterItems(ev) {

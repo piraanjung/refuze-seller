@@ -11,8 +11,18 @@ page-find-items {
     margin-top: 80px !important;
   }
   [item-title] {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
+  [item-unit]{
+    font-size: 13px !important;
+    text-align: center !important;
+    
+  }
+
+  [padding-left]{
+    padding: 10px !important
+  }
+
   .label-md{
     min-height: 60px !important;
   }
@@ -90,5 +100,10 @@ page-find-items {
   }
   [clearboth]{
     clear: both;
+  }
+
+  [ion-fab]{
+    font-size: 18px;
+    font-weight: bold
   }
 }

@@ -1,16 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-row>
-      <ion-col col-4>
           <ion-title>ค้นหารายการขยะ</ion-title>
-      </ion-col>
-      <ion-col col-8 style="text-align:right; color:#ffffff">
-          จาว แสงทองธรรม : 454544444
-      </ion-col>
-    </ion-row>
-    
-
   </ion-navbar>
 
 </ion-header>
@@ -26,7 +17,7 @@
             <h1 header-title>{{data.title}}</h1>
             <h2 header-subtitle>{{data.description}}</h2>
 
-            <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+            <ion-searchbar (ionInput)="filterItems($event)"></ion-searchbar>
 
           </ion-list-header>
 
@@ -39,38 +30,17 @@
                       <div class="collapsible-header" (click)="presentaddModalItem(item)">
                         <ion-item padding no-lines margin-top>
                           <ion-avatar item-start no-margin>
-                            <img src="assets/images/avatar/0.jpg" />
+                            <img src="assets/images/logo/login.png"/>
                           </ion-avatar>
                             <h2 padding-left item-title>{{item.name}}</h2>
                             <h3 padding-left item-subtitle>{{item.name}}</h3>
-                            <h2 item-end> 2 บาท : กิโลกรัม  <ion-icon name="ios-cart" large></ion-icon>
+                            <h2 item-end item-unit> 
+                              <div>{{item.price}} บาท</div><div>{{ item.unit_name }}</div> 
                             </h2>
 
                         </ion-item>
                       </div>
-                      <!-- List big image Body -->
-                      <!-- <div class="item-accordion" [ngClass]="{'active': isGroupShown(item) }" [hidden]="!isGroupShown(item)">
-                          
-                          
-                                  <ion-row>
-                                    <ion-col col-4>
-                                      <ion-img width="100" height="100" src="assets/imgs/f_logo.png"></ion-img>
-                                    </ion-col>
-                                    <ion-col col-8> -->
-                      <!-- <h2 header-title>{{ fullname }}</h2>
-                                      <h5 header-title>{{ mobile }}</h5>
-                                      <h5 header-subtitle>{{ address }}</h5> -->
-                      <!-- </ion-col>
-                                  </ion-row>
-                          
-                          <ion-row> 
-                              <ion-col col-12 col-sm-12 col-md-12 offset-4 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
-                                  <button ion-button round color="facebook"  [navPush]="FindItemsPage">รับซื้อขยะ</button>
-                                  <button ion-button round  color="tweetter"   (click)="goToHistorySeller()">ประวัติรับซื้อขยะ</button>
-                              </ion-col>
-                          </ion-row>  
-                        </div> -->
-                      <!--end-->
+                     
                     </li>
                 </ion-list>
               </ion-col>
@@ -82,10 +52,11 @@
     </ion-row>
   </ion-grid>
 
-  <ion-fab bottom right [navPush]='PurchaseItems'>
-    <button ion-fab>
-      <ion-icon name="cart"></ion-icon>
-      <ion-badge color="secondary" id="notifications-badge">{{ countItems }}</ion-badge>
+ 
+  <ion-fab #fab bottom right [navPush]='PurchaseItems'>
+    <button ion-fab color="twitter">
+      <!-- <ion-icon name="add"></ion-icon> -->
+      {{ countItems }}
     </button>
   </ion-fab>
 </ion-content>
