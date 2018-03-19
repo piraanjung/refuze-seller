@@ -12,4 +12,8 @@ export class PurchaseItemsProvider {
     return this.http.post(`${API_URL}/purchase-items/create`, params)
   }
 
+  getPurchaseTransactionsHistoryBySellerId(id) {
+    return this.http.get(`${API_URL}/purchases-items/history/seller/${id}`)
+  }
+
 }
