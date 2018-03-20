@@ -1,10 +1,33 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
-import { Input, ViewChild } from '@angular/core';
-import { Content, FabButton, ItemSliding } from 'ionic-angular';
-import { Sellers } from '../../models/sellers';
-import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
-import { ProfileSellerPage } from '../profile-seller/profile-seller';
+import {
+  Component
+} from '@angular/core';
+import {
+  IonicPage,
+  NavController,
+  NavParams,
+  LoadingController
+} from 'ionic-angular';
+import {
+  Input,
+  ViewChild
+} from '@angular/core';
+import {
+  Content,
+  FabButton,
+  ItemSliding
+} from 'ionic-angular';
+import {
+  Sellers
+} from '../../models/sellers';
+import {
+  FindSellersProvider
+} from '../../providers/find-sellers/find-sellers';
+import {
+  ProfileSellerPage
+} from '../profile-seller/profile-seller';
+import{
+  PurchaseHistoryPage
+} from '../purchase-history/purchase-history';
 
 @IonicPage({
   name: 'find-seller'
@@ -20,7 +43,7 @@ export class FindSellerPage {
   content: Content;
   @ViewChild(FabButton)
   fabButton: FabButton;
-  path : string;
+  path: string;
 
 
   items;
@@ -40,9 +63,11 @@ export class FindSellerPage {
     public navParams: NavParams,
     private findSeller: FindSellersProvider,
     public loadingCtrl: LoadingController
-  ) { 
+  ) {
     this.FindItemsPage = 'find-items'
-    this.animateClass = { 'zoom-in': true };
+    this.animateClass = {
+      'zoom-in': true
+    };
     this.path = "assets/svg/bars.svg";
 
   }
@@ -56,22 +81,22 @@ export class FindSellerPage {
   }
 
   getSellers() {
-      let loading = this.loadingCtrl.create({
-        content: '<ion-spinner name="lines"></ion-spinner>',
-      });
-    
-      loading.present();
-    
-      setTimeout(() => {
+    let loading = this.loadingCtrl.create({
+      content: '<ion-spinner name="lines"></ion-spinner>',
+    });
 
-        loading.dismiss();
-      }, 2000);
-    
-      this.findSeller.getSellers().subscribe((res) => {
-        this.sellers = res
-        console.log(this.sellers)
-  
-      })
+    loading.present();
+
+    setTimeout(() => {
+
+      loading.dismiss();
+    }, 2000);
+
+    this.findSeller.getSellers().subscribe((res) => {
+      this.sellers = res
+      console.log(this.sellers)
+
+    })
   }
 
   goToProfileSeller(profile) {
@@ -91,7 +116,7 @@ export class FindSellerPage {
     }
   }
 
-  toggleGroup(group: any,profile) {
+  toggleGroup(group: any, profile) {
     console.log(profile)
     group.show = !group.show;
     localStorage.setItem('sellerProfile', JSON.stringify(profile))
@@ -107,24 +132,24 @@ export class FindSellerPage {
   isGroupShown(group: any) {
     return group.show;
   }
-  ngOnChanges(changes: { [propKey: string]: any }) {
+  ngOnChanges(changes: {
+    [propKey: string]: any
+  }) {
     let that = this;
     that.data = changes['data'].currentValue;
     if (that.data && that.data.items) {
-        for (let i = 0; i < that.data.items.length; i++) {
-            setTimeout(function () {
-                that.animateItems.push(that.data.items[i]);
-            }, 200 * i);
-        }
+      for (let i = 0; i < that.data.items.length; i++) {
+        setTimeout(function () {
+          that.animateItems.push(that.data.items[i]);
+        }, 200 * i);
+      }
     }
-}
-// onEvent(event: string, item: any, e: any) {
-//   if (e) {
-//       e.stopPropagation();
-//   }
-//   if (this.events[event]) {
-//       this.events[event](item);
-//   }
-// }
+  }
+  goToHistorySeller(seller) {
+    console.log(seller)
+    this.navCtrl.push('PurchaseHistoryPage',{
+      seller : seller
+    })
+  }
 
 }
