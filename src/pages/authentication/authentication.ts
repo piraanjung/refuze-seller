@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController, App } from 'ionic-angular';
 import { AuthenProvider } from '../../providers/authen/authen';
 import { Buyer } from '../../models/buyer';
@@ -45,7 +45,7 @@ export class AuthenticationPage {
         }
       },
       error => {
-        this.presentAlert('', 'คุณยังไม่ได้ใส่ username และ password');
+        this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
       }
     );
   }
