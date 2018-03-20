@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { Input, ViewChild } from '@angular/core';
 import { Content, FabButton, ItemSliding } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
@@ -20,6 +20,8 @@ export class FindSellerPage {
   content: Content;
   @ViewChild(FabButton)
   fabButton: FabButton;
+  path : string;
+
 
   items;
   sellers: Sellers[];
@@ -36,10 +38,13 @@ export class FindSellerPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private findSeller: FindSellersProvider
+    private findSeller: FindSellersProvider,
+    public loadingCtrl: LoadingController
   ) { 
     this.FindItemsPage = 'find-items'
     this.animateClass = { 'zoom-in': true };
+    this.path = "assets/svg/bars.svg";
+
   }
 
   ionViewDidLoad() {
@@ -51,10 +56,22 @@ export class FindSellerPage {
   }
 
   getSellers() {
-    this.findSeller.getSellers().subscribe((res) => {
-      this.sellers = res
-      console.log(this.sellers)
-    })
+      let loading = this.loadingCtrl.create({
+        content: '<ion-spinner name="lines"></ion-spinner>',
+      });
+    
+      loading.present();
+    
+      setTimeout(() => {
+
+        loading.dismiss();
+      }, 2000);
+    
+      this.findSeller.getSellers().subscribe((res) => {
+        this.sellers = res
+        console.log(this.sellers)
+  
+      })
   }
 
   goToProfileSeller(profile) {
