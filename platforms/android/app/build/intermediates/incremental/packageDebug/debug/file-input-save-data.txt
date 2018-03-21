@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Mar 21 07:19:18 ICT 2018
+#Wed Mar 21 07:52:02 ICT 2018
 20.base=/Users/piraan/Desktop/refuze-app/refuze-app/platforms/android/app/build/intermediates/assets/debug
 143.base=/Users/piraan/Desktop/refuze-app/refuze-app/platforms/android/app/build/intermediates/assets/debug
 439.set=ASSET
