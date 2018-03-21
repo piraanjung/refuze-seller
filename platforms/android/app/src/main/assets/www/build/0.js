@@ -1,1 +1,3358 @@
-webpackJsonp([0],{258:function(n,t,e){"use strict";function i(n){return s._20(0,[(n()(),s._0(0,0,null,null,14,"agm-map",[],[[2,"sebm-google-map-container",null]],null,null,C.b,C.a)),s._16(4608,null,w.a,w.a,[O.a,s.u,M.a]),s._16(4608,null,E.a,E.a,[O.a,s.u]),s._16(4608,null,I.a,I.a,[O.a,s.u]),s._16(4608,null,W.a,W.a,[O.a,s.u]),s._16(4608,null,A.a,A.a,[O.a,s.u]),s._16(4608,null,P.a,P.a,[O.a,s.u]),s._16(512,null,O.a,O.a,[T.a,s.u]),s.Z(8,770048,null,0,S.a,[s.j,O.a],{longitude:[0,"longitude"],latitude:[1,"latitude"],zoom:[2,"zoom"],streetViewControl:[3,"streetViewControl"],mapTypeControl:[4,"mapTypeControl"]},null),s._16(512,null,M.a,M.a,[O.a,s.u]),(n()(),s._19(-1,0,["\n            "])),(n()(),s._0(11,0,null,0,2,"agm-marker",[],null,null,null,null,null)),s.Z(12,1720320,null,1,L.a,[M.a],{latitude:[0,"latitude"],longitude:[1,"longitude"]},null),s._17(603979776,1,{infoWindow:1}),(n()(),s._19(-1,0,["\n        "]))],function(n,t){var e=t.component;n(t,8,0,e.data.map.lng,e.data.map.lat,e.data.map.zoom,e.data.map.streetViewControl,e.data.map.mapTypeControl);n(t,12,0,e.data.map.lat,e.data.map.lng)},function(n,t){n(t,0,0,!0)})}function o(n){return s._20(0,[(n()(),s._0(0,0,null,null,0,"i",[["icon-medium",""]],[[8,"className",0]],null,null,null,null))],null,function(n,t){n(t,0,0,s._3(1,"icon ",t.parent.context.$implicit.iconActive,""))})}function l(n){return s._20(0,[(n()(),s._0(0,0,null,null,0,"i",[["icon-medium",""]],[[8,"className",0]],null,null,null,null))],null,function(n,t){n(t,0,0,s._3(1,"icon ",t.parent.context.$implicit.iconInactive,""))})}function r(n){return s._20(0,[(n()(),s._0(0,0,null,null,8,"ion-icon",[["role","img"],["white",""]],[[2,"hide",null]],[[null,"click"]],function(n,t,e){var i=!0,o=n.component;if("click"===t){i=!1!==o.onStarClass(o.data.iconsStars,n.context.index,e)&&i}return i},null,null)),s.Z(1,147456,[[4,4]],0,x.a,[z.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n                        "])),(n()(),s.V(16777216,null,null,1,null,o)),s.Z(4,16384,null,0,D.i,[s.J,s.G],{ngIf:[0,"ngIf"]},null),(n()(),s._19(-1,null,["\n                        "])),(n()(),s.V(16777216,null,null,1,null,l)),s.Z(7,16384,null,0,D.i,[s.J,s.G],{ngIf:[0,"ngIf"]},null),(n()(),s._19(-1,null,["\n                    "]))],function(n,t){n(t,4,0,t.context.$implicit.isActive);n(t,7,0,!t.context.$implicit.isActive)},function(n,t){n(t,0,0,s._14(t,1)._hidden)})}function u(n){return s._20(0,[(n()(),s._0(0,0,null,null,165,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),s.Z(1,16384,null,0,Z.a,[],null,null),(n()(),s._19(-1,null,["\n        "])),(n()(),s._0(3,0,null,null,161,"ion-row",[["class","row"]],null,null,null,null,null)),s.Z(4,16384,null,0,V.a,[],null,null),(n()(),s._19(-1,null,["\n            "])),(n()(),s._0(6,0,null,null,44,"ion-col",[["class","col"],["col-12",""],["map-header",""]],null,null,null,null,null)),s.Z(7,16384,null,0,j.a,[],null,null),(n()(),s._19(-1,null,["\n                "])),(n()(),s._0(9,0,null,null,40,"ion-item",[["class","item item-block"],["no-lines",""],["transparent",""]],null,null,null,B.b,B.a)),s.Z(10,1097728,null,3,R.a,[N.a,z.a,s.j,s.A,[2,H.a]],null,null),s._17(335544320,2,{contentLabel:0}),s._17(603979776,3,{_buttons:1}),s._17(603979776,4,{_icons:1}),s.Z(14,16384,null,0,U.a,[],null,null),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s.V(16777216,null,2,1,null,r)),s.Z(18,802816,null,0,D.h,[s.J,s.G,s.p],{ngForOf:[0,"ngForOf"]},null),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._0(20,0,null,2,1,"p",[],null,null,null,null,null)),(n()(),s._19(21,null,["",""])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._0(23,0,null,2,1,"h1",[["maps-title",""],["margin-top",""]],null,null,null,null,null)),(n()(),s._19(24,null,["",""])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._0(26,0,null,2,1,"h2",[["maps-subtitle",""]],null,null,null,null,null)),(n()(),s._19(27,null,["",""])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._0(29,0,null,2,19,"div",[["float-right",""],["social",""],["white",""]],null,null,null,null,null)),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._0(31,0,null,null,4,"ion-icon",[["role","img"]],[[2,"hide",null]],[[null,"click"]],function(n,t,e){var i=!0,o=n.component;if("click"===t){i=!1!==o.onEvent("onLike",o.data)&&i}return i},null,null)),s.Z(32,147456,[[4,4]],0,x.a,[z.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n                            "])),(n()(),s._0(34,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._0(37,0,null,null,4,"ion-icon",[["role","img"]],[[2,"hide",null]],[[null,"click"]],function(n,t,e){var i=!0,o=n.component;if("click"===t){i=!1!==o.onEvent("onFavorite",o.data)&&i}return i},null,null)),s.Z(38,147456,[[4,4]],0,x.a,[z.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n                            "])),(n()(),s._0(40,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._0(43,0,null,null,4,"ion-icon",[["role","img"]],[[2,"hide",null]],[[null,"click"]],function(n,t,e){var i=!0,o=n.component;if("click"===t){i=!1!==o.onEvent("onShare",o.data)&&i}return i},null,null)),s.Z(44,147456,[[4,4]],0,x.a,[z.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n                            "])),(n()(),s._0(46,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._19(-1,null,["\n                    "])),(n()(),s._19(-1,2,["\n                "])),(n()(),s._19(-1,null,["\n            "])),(n()(),s._19(-1,null,["\n            "])),(n()(),s._19(-1,null,["\n            "])),(n()(),s._0(53,0,null,null,16,"ion-col",[["class","col"],["col-12",""],["map-content",""],["transparent",""]],null,null,null,null,null)),s.Z(54,16384,null,0,j.a,[],null,null),(n()(),s._19(-1,null,["\n                "])),(n()(),s._0(56,0,null,null,12,"ion-item",[["class","item item-block"],["no-lines",""],["padding",""],["padding-left",""]],null,null,null,B.b,B.a)),s.Z(57,1097728,null,3,R.a,[N.a,z.a,s.j,s.A,[2,H.a]],null,null),s._17(335544320,5,{contentLabel:0}),s._17(603979776,6,{_buttons:1}),s._17(603979776,7,{_icons:1}),s.Z(61,16384,null,0,U.a,[],null,null),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._0(63,0,null,2,1,"h2",[["title",""]],null,null,null,null,null)),(n()(),s._19(64,null,["",""])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._0(66,0,null,2,1,"p",[["maps-description",""],["text-wrap",""]],null,null,null,null,null)),(n()(),s._19(67,null,["",""])),(n()(),s._19(-1,2,["\n                "])),(n()(),s._19(-1,null,["\n            "])),(n()(),s._19(-1,null,["\n            "])),(n()(),s._19(-1,null,["\n            "])),(n()(),s._0(72,0,null,null,91,"ion-col",[["class","col"],["col-12",""],["map-content",""]],null,null,null,null,null)),s.Z(73,16384,null,0,j.a,[],null,null),(n()(),s._19(-1,null,["\n                "])),(n()(),s._0(75,0,null,null,87,"ion-list",[["info",""]],null,null,null,null,null)),s.Z(76,16384,null,0,J.a,[z.a,s.j,s.A,F.a,G.l,K.a],null,null),(n()(),s._19(-1,null,["\n                    "])),(n()(),s._0(78,0,null,null,15,"ion-item",[["class","item item-block"],["no-lines",""],["padding-left",""]],null,null,null,B.b,B.a)),s.Z(79,1097728,null,3,R.a,[N.a,z.a,s.j,s.A,[2,H.a]],null,null),s._17(335544320,8,{contentLabel:0}),s._17(603979776,9,{_buttons:1}),s._17(603979776,10,{_icons:1}),s.Z(83,16384,null,0,U.a,[],null,null),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(85,0,null,0,4,"ion-icon",[["icon-small",""],["item-left",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Z(86,147456,[[10,4]],0,x.a,[z.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n                            "])),(n()(),s._0(88,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(91,0,null,2,1,"p",[["maps-description",""],["no-margin",""]],null,null,null,null,null)),(n()(),s._19(92,null,["",""])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._19(-1,null,["\n                    "])),(n()(),s._0(95,0,null,null,15,"ion-item",[["class","item item-block"],["no-lines",""],["padding-left",""]],null,null,null,B.b,B.a)),s.Z(96,1097728,null,3,R.a,[N.a,z.a,s.j,s.A,[2,H.a]],null,null),s._17(335544320,11,{contentLabel:0}),s._17(603979776,12,{_buttons:1}),s._17(603979776,13,{_icons:1}),s.Z(100,16384,null,0,U.a,[],null,null),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(102,0,null,0,4,"ion-icon",[["icon-small",""],["item-left",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Z(103,147456,[[13,4]],0,x.a,[z.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n                            "])),(n()(),s._0(105,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(108,0,null,2,1,"p",[["maps-description",""],["no-margin",""]],null,null,null,null,null)),(n()(),s._19(109,null,["",""])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._19(-1,null,["\n                    "])),(n()(),s._0(112,0,null,null,15,"ion-item",[["class","item item-block"],["no-lines",""],["padding-left",""]],null,null,null,B.b,B.a)),s.Z(113,1097728,null,3,R.a,[N.a,z.a,s.j,s.A,[2,H.a]],null,null),s._17(335544320,14,{contentLabel:0}),s._17(603979776,15,{_buttons:1}),s._17(603979776,16,{_icons:1}),s.Z(117,16384,null,0,U.a,[],null,null),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(119,0,null,0,4,"ion-icon",[["icon-small",""],["item-left",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Z(120,147456,[[16,4]],0,x.a,[z.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n                            "])),(n()(),s._0(122,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(125,0,null,2,1,"p",[["maps-description",""],["no-margin",""]],null,null,null,null,null)),(n()(),s._19(126,null,["",""])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._19(-1,null,["\n                    "])),(n()(),s._0(129,0,null,null,15,"ion-item",[["class","item item-block"],["no-lines",""],["padding-left",""]],null,null,null,B.b,B.a)),s.Z(130,1097728,null,3,R.a,[N.a,z.a,s.j,s.A,[2,H.a]],null,null),s._17(335544320,17,{contentLabel:0}),s._17(603979776,18,{_buttons:1}),s._17(603979776,19,{_icons:1}),s.Z(134,16384,null,0,U.a,[],null,null),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(136,0,null,0,4,"ion-icon",[["icon-small",""],["item-left",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Z(137,147456,[[19,4]],0,x.a,[z.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n                            "])),(n()(),s._0(139,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(142,0,null,2,1,"p",[["maps-description",""],["no-margin",""]],null,null,null,null,null)),(n()(),s._19(143,null,["",""])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._19(-1,null,["\n                    "])),(n()(),s._0(146,0,null,null,15,"ion-item",[["class","item item-block"],["no-lines",""],["padding-left",""]],null,null,null,B.b,B.a)),s.Z(147,1097728,null,3,R.a,[N.a,z.a,s.j,s.A,[2,H.a]],null,null),s._17(335544320,20,{contentLabel:0}),s._17(603979776,21,{_buttons:1}),s._17(603979776,22,{_icons:1}),s.Z(151,16384,null,0,U.a,[],null,null),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(153,0,null,0,4,"ion-icon",[["icon-small",""],["item-left",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Z(154,147456,[[22,4]],0,x.a,[z.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n                            "])),(n()(),s._0(156,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._19(-1,2,["\n                        "])),(n()(),s._0(159,0,null,2,1,"p",[["maps-description",""],["no-margin",""]],null,null,null,null,null)),(n()(),s._19(160,null,["",""])),(n()(),s._19(-1,2,["\n                    "])),(n()(),s._19(-1,null,["\n                "])),(n()(),s._19(-1,null,["\n            "])),(n()(),s._19(-1,null,["\n        "])),(n()(),s._19(-1,null,["\n    "]))],function(n,t){n(t,18,0,t.component.data.iconsStars)},function(n,t){var e=t.component;n(t,21,0,e.data.reviews);n(t,24,0,e.data.title);n(t,27,0,e.data.titleDescription);n(t,31,0,s._14(t,32)._hidden);n(t,34,0,s._3(1,"icon ",e.data.iconLike,""));n(t,37,0,s._14(t,38)._hidden);n(t,40,0,s._3(1,"icon ",e.data.iconFavorite,""));n(t,43,0,s._14(t,44)._hidden);n(t,46,0,s._3(1,"icon ",e.data.iconShare,""));n(t,64,0,e.data.contentTitle);n(t,67,0,e.data.contentDescription);n(t,85,0,s._14(t,86)._hidden);n(t,88,0,s._3(1,"icon ",e.data.iconLoacation,""));n(t,92,0,e.data.iconLoacationText);n(t,102,0,s._14(t,103)._hidden);n(t,105,0,s._3(1,"icon ",e.data.iconWatch,""));n(t,109,0,e.data.iconWatchText);n(t,119,0,s._14(t,120)._hidden);n(t,122,0,s._3(1,"icon ",e.data.iconPhone,""));n(t,126,0,e.data.iconPhoneText);n(t,136,0,s._14(t,137)._hidden);n(t,139,0,s._3(1,"icon ",e.data.iconEarth,""));n(t,143,0,e.data.iconEarthText);n(t,153,0,s._14(t,154)._hidden);n(t,156,0,s._3(1,"icon ",e.data.iconEmail,""));n(t,160,0,e.data.iconEmailText)})}function a(n){return s._20(0,[(n()(),s._19(-1,null,["\n"])),(n()(),s._19(-1,null,["\n"])),(n()(),s._0(2,0,null,null,12,"ion-content",[["elastic-header",""],["has-header",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Y.b,Y.a)),s.Z(3,81920,null,0,q.a,[s.j,s.A],null,null),s.Z(4,4374528,null,0,$.a,[z.a,F.a,K.a,s.j,s.A,Q.a,X.a,s.u,[2,nn.a],[2,tn.a]],null,null),(n()(),s._19(-1,1,["\n    "])),(n()(),s._0(6,0,null,1,4,"div",[["id","elastic-header"]],null,null,null,null,null)),(n()(),s._19(-1,null,["\n        "])),(n()(),s.V(16777216,null,null,1,null,i)),s.Z(9,16384,null,0,D.i,[s.J,s.G],{ngIf:[0,"ngIf"]},null),(n()(),s._19(-1,null,["\n    "])),(n()(),s._19(-1,1,["\n    "])),(n()(),s.V(16777216,null,1,1,null,u)),s.Z(13,16384,null,0,D.i,[s.J,s.G],{ngIf:[0,"ngIf"]},null),(n()(),s._19(-1,1,["\n"])),(n()(),s._19(-1,null,["\n"]))],function(n,t){var e=t.component;n(t,3,0);n(t,9,0,null!=e.data);n(t,13,0,null!=e.data)},function(n,t){n(t,2,0,s._14(t,4).statusbarPadding,s._14(t,4)._hasRefresher)})}Object.defineProperty(t,"__esModule",{value:!0});var s=e(0),c=(e(5),e(109),function(){function n(){}return n.prototype.onEvent=function(n,t,e){this.events[n]&&this.events[n](t)},n.prototype.onStarClass=function(n,t,e){for(var i=0;i<n.length;i++)n[i].isActive=i<=t;this.onEvent("onRates",t,e)},n}()),p=e(315),h=(e(353),e(354),function(){return function(){}}()),d=e(184),f=e(185),g=e(186),_=e(187),m=e(188),b=e(189),y=e(190),v=e(191),k=e(192),C=e(355),w=e(320),O=e(311),M=e(317),E=e(319),I=e(322),W=e(321),A=e(323),P=e(324),T=e(312),S=e(325),L=e(329),x=e(38),z=e(1),D=e(16),Z=e(111),V=e(112),j=e(113),B=e(193),R=e(18),N=e(14),H=e(39),U=e(70),J=e(52),F=e(3),G=e(7),K=e(8),Y=e(308),q=e(316),$=e(21),Q=e(9),X=e(34),nn=e(4),tn=e(20),en=s.Y({encapsulation:2,styles:[],data:{}}),on=s.W("maps-layout-1",c,function(n){return s._20(0,[(n()(),s._0(0,0,null,null,1,"maps-layout-1",[],null,null,null,a,en)),s.Z(1,49152,null,0,c,[],null,null)],null,null)},{data:"data",events:"events"},{},[]),ln=e(17),rn=e(331),un=e(326),an=e(347),sn=e(110),cn=e(35);e.d(t,"MapsLayout1ModuleNgFactory",function(){return pn});var pn=s.X(h,[],function(n){return s._11([s._12(512,s.i,s.T,[[8,[d.a,f.a,g.a,_.a,m.a,b.a,y.a,v.a,k.a,on]],[3,s.i],s.s]),s._12(4608,D.k,D.j,[s.r,[2,D.s]]),s._12(4608,ln.n,ln.n,[]),s._12(4608,ln.c,ln.c,[]),s._12(4608,rn.c,rn.c,[]),s._12(4608,rn.b,rn.b,[]),s._12(4608,T.a,un.b,[un.a,rn.c,rn.b]),s._12(512,p.a,p.a,[]),s._12(512,an.a,an.a,[]),s._12(512,D.b,D.b,[]),s._12(512,ln.m,ln.m,[]),s._12(512,ln.d,ln.d,[]),s._12(512,ln.k,ln.k,[]),s._12(512,sn.a,sn.a,[]),s._12(512,sn.b,sn.b,[]),s._12(512,h,h,[]),s._12(256,un.a,void 0,[]),s._12(256,cn.a,c,[])])})},308:function(n,t,e){"use strict";function i(n){return o._20(2,[o._17(402653184,1,{_fixedContent:0}),o._17(402653184,2,{_scrollContent:0}),(n()(),o._0(2,0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),o._13(null,0),(n()(),o._0(4,0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),o._13(null,1),o._13(null,2)],null,null)}e.d(t,"a",function(){return l}),t.b=i;var o=e(0),l=(e(1),e(3),e(8),e(34),e(4),e(20),o.Y({encapsulation:2,styles:[],data:{}}))},311:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(11),o=(e.n(i),e(312),function(){function n(n,t){var e=this;this._loader=n,this._zone=t,this._map=new Promise(function(n){e._mapResolver=n})}return n.prototype.createMap=function(n,t){var e=this;return this._loader.load().then(function(){var i=new google.maps.Map(n,t);e._mapResolver(i)})},n.prototype.setMapOptions=function(n){this._map.then(function(t){t.setOptions(n)})},n.prototype.createMarker=function(n,t){return void 0===n&&(n={}),void 0===t&&(t=!0),this._map.then(function(e){return t&&(n.map=e),new google.maps.Marker(n)})},n.prototype.createInfoWindow=function(n){return this._map.then(function(){return new google.maps.InfoWindow(n)})},n.prototype.createCircle=function(n){return this._map.then(function(t){return n.map=t,new google.maps.Circle(n)})},n.prototype.createPolyline=function(n){return this.getNativeMap().then(function(t){var e=new google.maps.Polyline(n);return e.setMap(t),e})},n.prototype.createPolygon=function(n){return this.getNativeMap().then(function(t){var e=new google.maps.Polygon(n);return e.setMap(t),e})},n.prototype.createDataLayer=function(n){return this._map.then(function(t){var e=new google.maps.Data(n);return e.setMap(t),e})},n.prototype.containsLocation=function(n,t){return google.maps.geometry.poly.containsLocation(n,t)},n.prototype.subscribeToMapEvent=function(n){var t=this;return i.Observable.create(function(e){t._map.then(function(i){i.addListener(n,function(n){t._zone.run(function(){return e.next(n)})})})})},n.prototype.setCenter=function(n){return this._map.then(function(t){return t.setCenter(n)})},n.prototype.getZoom=function(){return this._map.then(function(n){return n.getZoom()})},n.prototype.getBounds=function(){return this._map.then(function(n){return n.getBounds()})},n.prototype.setZoom=function(n){return this._map.then(function(t){return t.setZoom(n)})},n.prototype.getCenter=function(){return this._map.then(function(n){return n.getCenter()})},n.prototype.panTo=function(n){return this._map.then(function(t){return t.panTo(n)})},n.prototype.panBy=function(n,t){return this._map.then(function(e){return e.panBy(n,t)})},n.prototype.fitBounds=function(n){return this._map.then(function(t){return t.fitBounds(n)})},n.prototype.panToBounds=function(n){return this._map.then(function(t){return t.panToBounds(n)})},n.prototype.getNativeMap=function(){return this._map},n.prototype.triggerMapEvent=function(n){return this._map.then(function(t){return google.maps.event.trigger(t,n)})},n}())},312:function(n,t,e){"use strict";e.d(t,"a",function(){return i});var i=function(){return function(){}}()},315:function(n,t,e){"use strict";e.d(t,"a",function(){return i});e(5),e(316);var i=function(){return function(){}}()},316:function(n,t,e){"use strict";e.d(t,"a",function(){return i});e(5);var i=function(){function n(n,t){this.element=n,this.renderer=t}return n.prototype.ngOnInit=function(){var n=this;this.scrollerHandle=this.element.nativeElement.getElementsByClassName("scroll-content")[0],this.header=this.scrollerHandle.firstElementChild,this.headerHeight=this.scrollerHandle.clientHeight,this.ticking=!1,this.renderer.setElementStyle(this.header,"webkitTransformOrigin","center bottom"),window.addEventListener("resize",function(){n.headerHeight=n.scrollerHandle.clientHeight},!1),this.scrollerHandle.addEventListener("scroll",function(){n.ticking||window.requestAnimationFrame(function(){n.updateElasticHeader()}),n.ticking=!0})},n.prototype.updateElasticHeader=function(){this.scrollTop=this.scrollerHandle.scrollTop,this.scrollTop>=0?(this.translateAmt=this.scrollTop/2,this.scaleAmt=1):(this.translateAmt=0,this.scaleAmt=-this.scrollTop/this.headerHeight+1),this.renderer.setElementStyle(this.header,"webkitTransform","translate3d(0,"+this.translateAmt+"px,0) scale("+this.scaleAmt+","+this.scaleAmt+")"),this.ticking=!1},n}()},317:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(11),o=(e.n(i),e(311),function(){function n(n,t){this._mapsWrapper=n,this._zone=t,this._markers=new Map}return n.prototype.deleteMarker=function(n){var t=this,e=this._markers.get(n);return null==e?Promise.resolve():e.then(function(e){return t._zone.run(function(){e.setMap(null),t._markers.delete(n)})})},n.prototype.updateMarkerPosition=function(n){return this._markers.get(n).then(function(t){return t.setPosition({lat:n.latitude,lng:n.longitude})})},n.prototype.updateTitle=function(n){return this._markers.get(n).then(function(t){return t.setTitle(n.title)})},n.prototype.updateLabel=function(n){return this._markers.get(n).then(function(t){t.setLabel(n.label)})},n.prototype.updateDraggable=function(n){return this._markers.get(n).then(function(t){return t.setDraggable(n.draggable)})},n.prototype.updateIcon=function(n){return this._markers.get(n).then(function(t){return t.setIcon(n.iconUrl)})},n.prototype.updateOpacity=function(n){return this._markers.get(n).then(function(t){return t.setOpacity(n.opacity)})},n.prototype.updateVisible=function(n){return this._markers.get(n).then(function(t){return t.setVisible(n.visible)})},n.prototype.updateZIndex=function(n){return this._markers.get(n).then(function(t){return t.setZIndex(n.zIndex)})},n.prototype.updateClickable=function(n){return this._markers.get(n).then(function(t){return t.setClickable(n.clickable)})},n.prototype.addMarker=function(n){var t=this._mapsWrapper.createMarker({position:{lat:n.latitude,lng:n.longitude},label:n.label,draggable:n.draggable,icon:n.iconUrl,opacity:n.opacity,visible:n.visible,zIndex:n.zIndex,title:n.title,clickable:n.clickable});this._markers.set(n,t)},n.prototype.getNativeMarker=function(n){return this._markers.get(n)},n.prototype.createEventObservable=function(n,t){var e=this;return i.Observable.create(function(i){e._markers.get(t).then(function(t){t.addListener(n,function(n){return e._zone.run(function(){return i.next(n)})})})})},n}())},319:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(11),o=(e.n(i),e(311),function(){function n(n,t){this._apiWrapper=n,this._zone=t,this._circles=new Map}return n.prototype.addCircle=function(n){this._circles.set(n,this._apiWrapper.createCircle({center:{lat:n.latitude,lng:n.longitude},clickable:n.clickable,draggable:n.draggable,editable:n.editable,fillColor:n.fillColor,fillOpacity:n.fillOpacity,radius:n.radius,strokeColor:n.strokeColor,strokeOpacity:n.strokeOpacity,strokePosition:n.strokePosition,strokeWeight:n.strokeWeight,visible:n.visible,zIndex:n.zIndex}))},n.prototype.removeCircle=function(n){var t=this;return this._circles.get(n).then(function(e){e.setMap(null),t._circles.delete(n)})},n.prototype.setOptions=function(n,t){return this._circles.get(n).then(function(n){return n.setOptions(t)})},n.prototype.getBounds=function(n){return this._circles.get(n).then(function(n){return n.getBounds()})},n.prototype.getCenter=function(n){return this._circles.get(n).then(function(n){return n.getCenter()})},n.prototype.getRadius=function(n){return this._circles.get(n).then(function(n){return n.getRadius()})},n.prototype.setCenter=function(n){return this._circles.get(n).then(function(t){return t.setCenter({lat:n.latitude,lng:n.longitude})})},n.prototype.setEditable=function(n){return this._circles.get(n).then(function(t){return t.setEditable(n.editable)})},n.prototype.setDraggable=function(n){return this._circles.get(n).then(function(t){return t.setDraggable(n.draggable)})},n.prototype.setVisible=function(n){return this._circles.get(n).then(function(t){return t.setVisible(n.visible)})},n.prototype.setRadius=function(n){return this._circles.get(n).then(function(t){return t.setRadius(n.radius)})},n.prototype.createEventObservable=function(n,t){var e=this;return i.Observable.create(function(i){var o=null;return e._circles.get(t).then(function(t){o=t.addListener(n,function(n){return e._zone.run(function(){return i.next(n)})})}),function(){null!==o&&o.remove()}})},n}())},320:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(11),o=(e.n(i),e(311),e(317),function(){function n(n,t,e){this._mapsWrapper=n,this._zone=t,this._markerManager=e,this._infoWindows=new Map}return n.prototype.deleteInfoWindow=function(n){var t=this,e=this._infoWindows.get(n);return null==e?Promise.resolve():e.then(function(e){return t._zone.run(function(){e.close(),t._infoWindows.delete(n)})})},n.prototype.setPosition=function(n){return this._infoWindows.get(n).then(function(t){return t.setPosition({lat:n.latitude,lng:n.longitude})})},n.prototype.setZIndex=function(n){return this._infoWindows.get(n).then(function(t){return t.setZIndex(n.zIndex)})},n.prototype.open=function(n){var t=this;return this._infoWindows.get(n).then(function(e){return null!=n.hostMarker?t._markerManager.getNativeMarker(n.hostMarker).then(function(n){return t._mapsWrapper.getNativeMap().then(function(t){return e.open(t,n)})}):t._mapsWrapper.getNativeMap().then(function(n){return e.open(n)})})},n.prototype.close=function(n){return this._infoWindows.get(n).then(function(n){return n.close()})},n.prototype.setOptions=function(n,t){return this._infoWindows.get(n).then(function(n){return n.setOptions(t)})},n.prototype.addInfoWindow=function(n){var t={content:n.content,maxWidth:n.maxWidth,zIndex:n.zIndex,disableAutoPan:n.disableAutoPan};"number"==typeof n.latitude&&"number"==typeof n.longitude&&(t.position={lat:n.latitude,lng:n.longitude});var e=this._mapsWrapper.createInfoWindow(t);this._infoWindows.set(n,e)},n.prototype.createEventObservable=function(n,t){var e=this;return i.Observable.create(function(i){e._infoWindows.get(t).then(function(t){t.addListener(n,function(n){return e._zone.run(function(){return i.next(n)})})})})},n}())},321:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(11),o=(e.n(i),e(311),function(){function n(n,t){this._mapsWrapper=n,this._zone=t,this._polygons=new Map}return n.prototype.addPolygon=function(n){var t=this._mapsWrapper.createPolygon({clickable:n.clickable,draggable:n.draggable,editable:n.editable,fillColor:n.fillColor,fillOpacity:n.fillOpacity,geodesic:n.geodesic,paths:n.paths,strokeColor:n.strokeColor,strokeOpacity:n.strokeOpacity,strokeWeight:n.strokeWeight,visible:n.visible,zIndex:n.zIndex});this._polygons.set(n,t)},n.prototype.updatePolygon=function(n){var t=this,e=this._polygons.get(n);return null==e?Promise.resolve():e.then(function(e){return t._zone.run(function(){e.setPaths(n.paths)})})},n.prototype.setPolygonOptions=function(n,t){return this._polygons.get(n).then(function(n){n.setOptions(t)})},n.prototype.deletePolygon=function(n){var t=this,e=this._polygons.get(n);return null==e?Promise.resolve():e.then(function(e){return t._zone.run(function(){e.setMap(null),t._polygons.delete(n)})})},n.prototype.createEventObservable=function(n,t){var e=this;return i.Observable.create(function(i){e._polygons.get(t).then(function(t){t.addListener(n,function(n){return e._zone.run(function(){return i.next(n)})})})})},n}())},322:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(11),o=(e.n(i),e(311),function(){function n(n,t){this._mapsWrapper=n,this._zone=t,this._polylines=new Map}return n._convertPoints=function(n){return n._getPoints().map(function(n){return{lat:n.latitude,lng:n.longitude}})},n.prototype.addPolyline=function(t){var e=n._convertPoints(t),i=this._mapsWrapper.createPolyline({clickable:t.clickable,draggable:t.draggable,editable:t.editable,geodesic:t.geodesic,strokeColor:t.strokeColor,strokeOpacity:t.strokeOpacity,strokeWeight:t.strokeWeight,visible:t.visible,zIndex:t.zIndex,path:e});this._polylines.set(t,i)},n.prototype.updatePolylinePoints=function(t){var e=this,i=n._convertPoints(t),o=this._polylines.get(t);return null==o?Promise.resolve():o.then(function(n){return e._zone.run(function(){n.setPath(i)})})},n.prototype.setPolylineOptions=function(n,t){return this._polylines.get(n).then(function(n){n.setOptions(t)})},n.prototype.deletePolyline=function(n){var t=this,e=this._polylines.get(n);return null==e?Promise.resolve():e.then(function(e){return t._zone.run(function(){e.setMap(null),t._polylines.delete(n)})})},n.prototype.createEventObservable=function(n,t){var e=this;return i.Observable.create(function(i){e._polylines.get(t).then(function(t){t.addListener(n,function(n){return e._zone.run(function(){return i.next(n)})})})})},n}())},323:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(11),o=(e.n(i),e(311),function(){function n(n,t){this._wrapper=n,this._zone=t,this._layers=new Map}return n.prototype.addKmlLayer=function(n){var t=this._wrapper.getNativeMap().then(function(t){return new google.maps.KmlLayer({clickable:n.clickable,map:t,preserveViewport:n.preserveViewport,screenOverlays:n.screenOverlays,suppressInfoWindows:n.suppressInfoWindows,url:n.url,zIndex:n.zIndex})});this._layers.set(n,t)},n.prototype.setOptions=function(n,t){this._layers.get(n).then(function(n){return n.setOptions(t)})},n.prototype.deleteKmlLayer=function(n){var t=this;this._layers.get(n).then(function(e){e.setMap(null),t._layers.delete(n)})},n.prototype.createEventObservable=function(n,t){var e=this;return i.Observable.create(function(i){e._layers.get(t).then(function(t){t.addListener(n,function(n){return e._zone.run(function(){return i.next(n)})})})})},n}())},324:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(11),o=(e.n(i),e(311),function(){function n(n,t){this._wrapper=n,this._zone=t,this._layers=new Map}return n.prototype.addDataLayer=function(n){var t=this,e=this._wrapper.createDataLayer({style:n.style}).then(function(e){return n.geoJson&&t.getDataFeatures(e,n.geoJson).then(function(n){return e.features=n}),e});this._layers.set(n,e)},n.prototype.deleteDataLayer=function(n){var t=this;this._layers.get(n).then(function(e){e.setMap(null),t._layers.delete(n)})},n.prototype.updateGeoJson=function(n,t){var e=this;this._layers.get(n).then(function(n){n.forEach(function(t){n.remove(t);var e=n.features.indexOf(t,0);e>-1&&n.features.splice(e,1)}),e.getDataFeatures(n,t).then(function(t){return n.features=t})})},n.prototype.setDataOptions=function(n,t){this._layers.get(n).then(function(n){n.setControlPosition(t.controlPosition),n.setControls(t.controls),n.setDrawingMode(t.drawingMode),n.setStyle(t.style)})},n.prototype.createEventObservable=function(n,t){var e=this;return i.Observable.create(function(i){e._layers.get(t).then(function(t){t.addListener(n,function(n){return e._zone.run(function(){return i.next(n)})})})})},n.prototype.getDataFeatures=function(n,t){return new Promise(function(e,i){if("object"==typeof t)try{e(n.addGeoJson(t))}catch(n){i(n)}else"string"==typeof t?n.loadGeoJson(t,null,e):i("Impossible to extract features from geoJson: wrong argument type")})},n}())},325:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(0),o=function(){function n(n,t){this._elem=n,this._mapsWrapper=t,this.longitude=0,this.latitude=0,this.zoom=8,this.draggable=!0,this.disableDoubleClickZoom=!1,this.disableDefaultUI=!1,this.scrollwheel=!0,this.keyboardShortcuts=!0,this.zoomControl=!0,this.styles=[],this.usePanning=!1,this.streetViewControl=!0,this.fitBounds=null,this.scaleControl=!1,this.mapTypeControl=!1,this.panControl=!1,this.rotateControl=!1,this.fullscreenControl=!1,this.mapTypeId="roadmap",this.clickableIcons=!0,this.gestureHandling="auto",this._observableSubscriptions=[],this.mapClick=new i.l,this.mapRightClick=new i.l,this.mapDblClick=new i.l,this.centerChange=new i.l,this.boundsChange=new i.l,this.idle=new i.l,this.zoomChange=new i.l,this.mapReady=new i.l}return n.prototype.ngOnInit=function(){var n=this._elem.nativeElement.querySelector(".agm-map-container-inner");this._initMapInstance(n)},n.prototype._initMapInstance=function(n){var t=this;this._mapsWrapper.createMap(n,{center:{lat:this.latitude||0,lng:this.longitude||0},zoom:this.zoom,minZoom:this.minZoom,maxZoom:this.maxZoom,disableDefaultUI:this.disableDefaultUI,disableDoubleClickZoom:this.disableDoubleClickZoom,scrollwheel:this.scrollwheel,backgroundColor:this.backgroundColor,draggable:this.draggable,draggableCursor:this.draggableCursor,draggingCursor:this.draggingCursor,keyboardShortcuts:this.keyboardShortcuts,styles:this.styles,zoomControl:this.zoomControl,zoomControlOptions:this.zoomControlOptions,streetViewControl:this.streetViewControl,streetViewControlOptions:this.streetViewControlOptions,scaleControl:this.scaleControl,scaleControlOptions:this.scaleControlOptions,mapTypeControl:this.mapTypeControl,mapTypeControlOptions:this.mapTypeControlOptions,panControl:this.panControl,panControlOptions:this.panControlOptions,rotateControl:this.rotateControl,rotateControlOptions:this.rotateControlOptions,fullscreenControl:this.fullscreenControl,fullscreenControlOptions:this.fullscreenControlOptions,mapTypeId:this.mapTypeId,clickableIcons:this.clickableIcons,gestureHandling:this.gestureHandling}).then(function(){return t._mapsWrapper.getNativeMap()}).then(function(n){return t.mapReady.emit(n)}),this._handleMapCenterChange(),this._handleMapZoomChange(),this._handleMapMouseEvents(),this._handleBoundsChange(),this._handleIdleEvent()},n.prototype.ngOnDestroy=function(){this._observableSubscriptions.forEach(function(n){return n.unsubscribe()})},n.prototype.ngOnChanges=function(n){this._updateMapOptionsChanges(n),this._updatePosition(n)},n.prototype._updateMapOptionsChanges=function(t){var e={};Object.keys(t).filter(function(t){return-1!==n._mapOptionsAttributes.indexOf(t)}).forEach(function(n){e[n]=t[n].currentValue}),this._mapsWrapper.setMapOptions(e)},n.prototype.triggerResize=function(n){var t=this;return void 0===n&&(n=!0),new Promise(function(e){setTimeout(function(){return t._mapsWrapper.triggerMapEvent("resize").then(function(){n&&(null!=t.fitBounds?t._fitBounds():t._setCenter()),e()})})})},n.prototype._updatePosition=function(n){null==n.latitude&&null==n.longitude&&null==n.fitBounds||(n.fitBounds&&null!=this.fitBounds?this._fitBounds():"number"==typeof this.latitude&&"number"==typeof this.longitude&&this._setCenter())},n.prototype._setCenter=function(){var n={lat:this.latitude,lng:this.longitude};this.usePanning?this._mapsWrapper.panTo(n):this._mapsWrapper.setCenter(n)},n.prototype._fitBounds=function(){this.usePanning?this._mapsWrapper.panToBounds(this.fitBounds):this._mapsWrapper.fitBounds(this.fitBounds)},n.prototype._handleMapCenterChange=function(){var n=this,t=this._mapsWrapper.subscribeToMapEvent("center_changed").subscribe(function(){n._mapsWrapper.getCenter().then(function(t){n.latitude=t.lat(),n.longitude=t.lng(),n.centerChange.emit({lat:n.latitude,lng:n.longitude})})});this._observableSubscriptions.push(t)},n.prototype._handleBoundsChange=function(){var n=this,t=this._mapsWrapper.subscribeToMapEvent("bounds_changed").subscribe(function(){n._mapsWrapper.getBounds().then(function(t){n.boundsChange.emit(t)})});this._observableSubscriptions.push(t)},n.prototype._handleMapZoomChange=function(){var n=this,t=this._mapsWrapper.subscribeToMapEvent("zoom_changed").subscribe(function(){n._mapsWrapper.getZoom().then(function(t){n.zoom=t,n.zoomChange.emit(t)})});this._observableSubscriptions.push(t)},n.prototype._handleIdleEvent=function(){var n=this,t=this._mapsWrapper.subscribeToMapEvent("idle").subscribe(function(){n.idle.emit(void 0)});this._observableSubscriptions.push(t)},n.prototype._handleMapMouseEvents=function(){var n=this;[{name:"click",emitter:this.mapClick},{name:"rightclick",emitter:this.mapRightClick},{name:"dblclick",emitter:this.mapDblClick}].forEach(function(t){var e=n._mapsWrapper.subscribeToMapEvent(t.name).subscribe(function(n){var e={coords:{lat:n.latLng.lat(),lng:n.latLng.lng()}};t.emitter.emit(e)});n._observableSubscriptions.push(e)})},n._mapOptionsAttributes=["disableDoubleClickZoom","scrollwheel","draggable","draggableCursor","draggingCursor","keyboardShortcuts","zoomControl","zoomControlOptions","styles","streetViewControl","streetViewControlOptions","zoom","mapTypeControl","mapTypeControlOptions","minZoom","maxZoom","panControl","panControlOptions","rotateControl","rotateControlOptions","fullscreenControl","fullscreenControlOptions","scaleControl","scaleControlOptions","mapTypeId","clickableIcons","gestureHandling"],n}()},326:function(n,t,e){"use strict";e.d(t,"a",function(){return u}),e.d(t,"b",function(){return a});var i,o=e(0),l=(e(331),e(312)),r=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,t){n.__proto__=t}||function(n,t){for(var e in t)t.hasOwnProperty(e)&&(n[e]=t[e])};return function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}}();!function(n){n[n.HTTP=1]="HTTP",n[n.HTTPS=2]="HTTPS",n[n.AUTO=3]="AUTO"}(i||(i={}));var u=new o.n("angular-google-maps LAZY_MAPS_API_CONFIG"),a=function(n){function t(t,e,i){var o=n.call(this)||this;return o._config=t||{},o._windowRef=e,o._documentRef=i,o}return r(t,n),t.prototype.load=function(){var n=this;if(this._scriptLoadingPromise)return this._scriptLoadingPromise;var t=this._documentRef.getNativeDocument().createElement("script");t.type="text/javascript",t.async=!0,t.defer=!0;var e="angular2GoogleMapsLazyMapsAPILoader";return t.src=this._getScriptSrc(e),this._scriptLoadingPromise=new Promise(function(i,o){n._windowRef.getNativeWindow()[e]=function(){i()},t.onerror=function(n){o(n)}}),this._documentRef.getNativeDocument().body.appendChild(t),this._scriptLoadingPromise},t.prototype._getScriptSrc=function(n){var t;switch(this._config&&this._config.protocol||i.HTTPS){case i.AUTO:t="";break;case i.HTTP:t="http:";break;case i.HTTPS:t="https:"}var e={v:this._config.apiVersion||"3",callback:n,key:this._config.apiKey,client:this._config.clientId,channel:this._config.channel,libraries:this._config.libraries,region:this._config.region,language:this._config.language};return t+"//"+(this._config.hostAndPath||"maps.googleapis.com/maps/api/js")+"?"+Object.keys(e).filter(function(n){return null!=e[n]}).filter(function(n){return!Array.isArray(e[n])||Array.isArray(e[n])&&e[n].length>0}).map(function(n){var t=e[n];return Array.isArray(t)?{key:n,value:t.join(",")}:{key:n,value:e[n]}}).map(function(n){return n.key+"="+n.value}).join("&")},t}(l.a)},328:function(n,t,e){"use strict";e.d(t,"a",function(){return l});var i=e(0),o=0,l=function(){function n(n,t){this._infoWindowManager=n,this._el=t,this.isOpen=!1,this.infoWindowClose=new i.l,this._infoWindowAddedToManager=!1,this._id=(o++).toString()}return n.prototype.ngOnInit=function(){this.content=this._el.nativeElement.querySelector(".agm-info-window-content"),this._infoWindowManager.addInfoWindow(this),this._infoWindowAddedToManager=!0,this._updateOpenState(),this._registerEventListeners()},n.prototype.ngOnChanges=function(n){this._infoWindowAddedToManager&&((n.latitude||n.longitude)&&"number"==typeof this.latitude&&"number"==typeof this.longitude&&this._infoWindowManager.setPosition(this),n.zIndex&&this._infoWindowManager.setZIndex(this),n.isOpen&&this._updateOpenState(),this._setInfoWindowOptions(n))},n.prototype._registerEventListeners=function(){var n=this;this._infoWindowManager.createEventObservable("closeclick",this).subscribe(function(){n.isOpen=!1,n.infoWindowClose.emit()})},n.prototype._updateOpenState=function(){this.isOpen?this.open():this.close()},n.prototype._setInfoWindowOptions=function(t){var e={};Object.keys(t).filter(function(t){return-1!==n._infoWindowOptionsInputs.indexOf(t)}).forEach(function(n){e[n]=t[n].currentValue}),this._infoWindowManager.setOptions(this,e)},n.prototype.open=function(){return this._infoWindowManager.open(this)},n.prototype.close=function(){var n=this;return this._infoWindowManager.close(this).then(function(){n.infoWindowClose.emit()})},n.prototype.id=function(){return this._id},n.prototype.toString=function(){return"AgmInfoWindow-"+this._id.toString()},n.prototype.ngOnDestroy=function(){this._infoWindowManager.deleteInfoWindow(this)},n._infoWindowOptionsInputs=["disableAutoPan","maxWidth"],n}()},329:function(n,t,e){"use strict";e.d(t,"a",function(){return l});var i=e(0),o=(e(328),0),l=function(){function n(n){this._markerManager=n,this.draggable=!1,this.visible=!0,this.openInfoWindow=!0,this.opacity=1,this.zIndex=1,this.clickable=!0,this.markerClick=new i.l,this.dragEnd=new i.l,this.mouseOver=new i.l,this.mouseOut=new i.l,this.infoWindow=new i.y,this._markerAddedToManger=!1,this._observableSubscriptions=[],this._id=(o++).toString()}return n.prototype.ngAfterContentInit=function(){var n=this;this.handleInfoWindowUpdate(),this.infoWindow.changes.subscribe(function(){return n.handleInfoWindowUpdate()})},n.prototype.handleInfoWindowUpdate=function(){var n=this;if(this.infoWindow.length>1)throw new Error("Expected no more than one info window.");this.infoWindow.forEach(function(t){t.hostMarker=n})},n.prototype.ngOnChanges=function(n){if("number"==typeof this.latitude&&"number"==typeof this.longitude){if(!this._markerAddedToManger)return this._markerManager.addMarker(this),this._markerAddedToManger=!0,void this._addEventListeners();(n.latitude||n.longitude)&&this._markerManager.updateMarkerPosition(this),n.title&&this._markerManager.updateTitle(this),n.label&&this._markerManager.updateLabel(this),n.draggable&&this._markerManager.updateDraggable(this),n.iconUrl&&this._markerManager.updateIcon(this),n.opacity&&this._markerManager.updateOpacity(this),n.visible&&this._markerManager.updateVisible(this),n.zIndex&&this._markerManager.updateZIndex(this),n.clickable&&this._markerManager.updateClickable(this)}},n.prototype._addEventListeners=function(){var n=this,t=this._markerManager.createEventObservable("click",this).subscribe(function(){n.openInfoWindow&&n.infoWindow.forEach(function(n){return n.open()}),n.markerClick.emit(null)});this._observableSubscriptions.push(t);var e=this._markerManager.createEventObservable("dragend",this).subscribe(function(t){n.dragEnd.emit({coords:{lat:t.latLng.lat(),lng:t.latLng.lng()}})});this._observableSubscriptions.push(e);var i=this._markerManager.createEventObservable("mouseover",this).subscribe(function(t){n.mouseOver.emit({coords:{lat:t.latLng.lat(),lng:t.latLng.lng()}})});this._observableSubscriptions.push(i);var o=this._markerManager.createEventObservable("mouseout",this).subscribe(function(t){n.mouseOut.emit({coords:{lat:t.latLng.lat(),lng:t.latLng.lng()}})});this._observableSubscriptions.push(o)},n.prototype.id=function(){return this._id},n.prototype.toString=function(){return"AgmMarker-"+this._id.toString()},n.prototype.ngOnDestroy=function(){this._markerManager.deleteMarker(this),this._observableSubscriptions.forEach(function(n){return n.unsubscribe()})},n}()},330:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(0),o=function(){function n(){this.positionChanged=new i.l}return n.prototype.ngOnChanges=function(n){if(n.latitude||n.longitude){this.positionChanged.emit({lat:n.latitude.currentValue,lng:n.longitude.currentValue})}},n}()},331:function(n,t,e){"use strict";e.d(t,"c",function(){return i}),e.d(t,"b",function(){return o}),e.d(t,"a",function(){return l});var i=function(){function n(){}return n.prototype.getNativeWindow=function(){return window},n}(),o=function(){function n(){}return n.prototype.getNativeDocument=function(){return document},n}(),l=[i,o]},342:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(0),o=function(){function n(n){this._manager=n,this.clickable=!0,this.draggable=!1,this.editable=!1,this.radius=0,this.strokePosition="CENTER",this.strokeWeight=0,this.visible=!0,this.centerChange=new i.l,this.circleClick=new i.l,this.circleDblClick=new i.l,this.drag=new i.l,this.dragEnd=new i.l,this.dragStart=new i.l,this.mouseDown=new i.l,this.mouseMove=new i.l,this.mouseOut=new i.l,this.mouseOver=new i.l,this.mouseUp=new i.l,this.radiusChange=new i.l,this.rightClick=new i.l,this._circleAddedToManager=!1,this._eventSubscriptions=[]}return n.prototype.ngOnInit=function(){this._manager.addCircle(this),this._circleAddedToManager=!0,this._registerEventListeners()},n.prototype.ngOnChanges=function(n){this._circleAddedToManager&&((n.latitude||n.longitude)&&this._manager.setCenter(this),n.editable&&this._manager.setEditable(this),n.draggable&&this._manager.setDraggable(this),n.visible&&this._manager.setVisible(this),n.radius&&this._manager.setRadius(this),this._updateCircleOptionsChanges(n))},n.prototype._updateCircleOptionsChanges=function(t){var e={},i=Object.keys(t).filter(function(t){return-1!==n._mapOptions.indexOf(t)});i.forEach(function(n){e[n]=t[n].currentValue}),i.length>0&&this._manager.setOptions(this,e)},n.prototype._registerEventListeners=function(){var n=this,t=new Map;t.set("center_changed",this.centerChange),t.set("click",this.circleClick),t.set("dblclick",this.circleDblClick),t.set("drag",this.drag),t.set("dragend",this.dragEnd),t.set("dragStart",this.dragStart),t.set("mousedown",this.mouseDown),t.set("mousemove",this.mouseMove),t.set("mouseout",this.mouseOut),t.set("mouseover",this.mouseOver),t.set("mouseup",this.mouseUp),t.set("radius_changed",this.radiusChange),t.set("rightclick",this.rightClick),t.forEach(function(t,e){n._eventSubscriptions.push(n._manager.createEventObservable(e,n).subscribe(function(i){switch(e){case"radius_changed":n._manager.getRadius(n).then(function(n){return t.emit(n)});break;case"center_changed":n._manager.getCenter(n).then(function(n){return t.emit({lat:n.lat(),lng:n.lng()})});break;default:t.emit({coords:{lat:i.latLng.lat(),lng:i.latLng.lng()}})}}))})},n.prototype.ngOnDestroy=function(){this._eventSubscriptions.forEach(function(n){n.unsubscribe()}),this._eventSubscriptions=null,this._manager.removeCircle(this)},n.prototype.getBounds=function(){return this._manager.getBounds(this)},n.prototype.getCenter=function(){return this._manager.getCenter(this)},n._mapOptions=["fillColor","fillOpacity","strokeColor","strokeOpacity","strokePosition","strokeWeight","visible","zIndex","clickable"],n}()},343:function(n,t,e){"use strict";e.d(t,"a",function(){return l});var i=e(0),o=0,l=function(){function n(n){this._manager=n,this._addedToManager=!1,this._id=(o++).toString(),this._subscriptions=[],this.clickable=!0,this.preserveViewport=!1,this.screenOverlays=!0,this.suppressInfoWindows=!1,this.url=null,this.zIndex=null,this.layerClick=new i.l,this.defaultViewportChange=new i.l,this.statusChange=new i.l}return n.prototype.ngOnInit=function(){this._addedToManager||(this._manager.addKmlLayer(this),this._addedToManager=!0,this._addEventListeners())},n.prototype.ngOnChanges=function(n){this._addedToManager&&this._updatePolygonOptions(n)},n.prototype._updatePolygonOptions=function(t){var e=Object.keys(t).filter(function(t){return-1!==n._kmlLayerOptions.indexOf(t)}).reduce(function(n,e){return n[e]=t[e].currentValue,n},{});Object.keys(e).length>0&&this._manager.setOptions(this,e)},n.prototype._addEventListeners=function(){var n=this;[{name:"click",handler:function(t){return n.layerClick.emit(t)}},{name:"defaultviewport_changed",handler:function(){return n.defaultViewportChange.emit()}},{name:"status_changed",handler:function(){return n.statusChange.emit()}}].forEach(function(t){var e=n._manager.createEventObservable(t.name,n).subscribe(t.handler);n._subscriptions.push(e)})},n.prototype.id=function(){return this._id},n.prototype.toString=function(){return"AgmKmlLayer-"+this._id.toString()},n.prototype.ngOnDestroy=function(){this._manager.deleteKmlLayer(this),this._subscriptions.forEach(function(n){return n.unsubscribe()})},n._kmlLayerOptions=["clickable","preserveViewport","screenOverlays","suppressInfoWindows","url","zIndex"],n}()},344:function(n,t,e){"use strict";e.d(t,"a",function(){return l});var i=e(0),o=0,l=function(){function n(n){this._manager=n,this._addedToManager=!1,this._id=(o++).toString(),this._subscriptions=[],this.layerClick=new i.l,this.geoJson=null}return n.prototype.ngOnInit=function(){this._addedToManager||(this._manager.addDataLayer(this),this._addedToManager=!0,this._addEventListeners())},n.prototype._addEventListeners=function(){var n=this;[{name:"click",handler:function(t){return n.layerClick.emit(t)}}].forEach(function(t){var e=n._manager.createEventObservable(t.name,n).subscribe(t.handler);n._subscriptions.push(e)})},n.prototype.id=function(){return this._id},n.prototype.toString=function(){return"AgmDataLayer-"+this._id.toString()},n.prototype.ngOnDestroy=function(){this._manager.deleteDataLayer(this),this._subscriptions.forEach(function(n){return n.unsubscribe()})},n.prototype.ngOnChanges=function(t){var e=this;if(this._addedToManager){var i=t.geoJson;i&&this._manager.updateGeoJson(this,i.currentValue);var o={};n._dataOptionsAttributes.forEach(function(n){return o[n]=t.hasOwnProperty(n)?t[n].currentValue:e[n]}),this._manager.setDataOptions(this,o)}},n._dataOptionsAttributes=["style"],n}()},345:function(n,t,e){"use strict";e.d(t,"a",function(){return o});var i=e(0),o=function(){function n(n){this._polygonManager=n,this.clickable=!0,this.draggable=!1,this.editable=!1,this.geodesic=!1,this.paths=[],this.polyClick=new i.l,this.polyDblClick=new i.l,this.polyDrag=new i.l,this.polyDragEnd=new i.l,this.polyDragStart=new i.l,this.polyMouseDown=new i.l,this.polyMouseMove=new i.l,this.polyMouseOut=new i.l,this.polyMouseOver=new i.l,this.polyMouseUp=new i.l,this.polyRightClick=new i.l,this._polygonAddedToManager=!1,this._subscriptions=[]}return n.prototype.ngAfterContentInit=function(){this._polygonAddedToManager||this._init()},n.prototype.ngOnChanges=function(n){this._polygonAddedToManager?this._polygonManager.setPolygonOptions(this,this._updatePolygonOptions(n)):this._init()},n.prototype._init=function(){this._polygonManager.addPolygon(this),this._polygonAddedToManager=!0,this._addEventListeners()},n.prototype._addEventListeners=function(){var n=this;[{name:"click",handler:function(t){return n.polyClick.emit(t)}},{name:"dbclick",handler:function(t){return n.polyDblClick.emit(t)}},{name:"drag",handler:function(t){return n.polyDrag.emit(t)}},{name:"dragend",handler:function(t){return n.polyDragEnd.emit(t)}},{name:"dragstart",handler:function(t){return n.polyDragStart.emit(t)}},{name:"mousedown",handler:function(t){return n.polyMouseDown.emit(t)}},{name:"mousemove",handler:function(t){return n.polyMouseMove.emit(t)}},{name:"mouseout",handler:function(t){return n.polyMouseOut.emit(t)}},{name:"mouseover",handler:function(t){return n.polyMouseOver.emit(t)}},{name:"mouseup",handler:function(t){return n.polyMouseUp.emit(t)}},{name:"rightclick",handler:function(t){return n.polyRightClick.emit(t)}}].forEach(function(t){var e=n._polygonManager.createEventObservable(t.name,n).subscribe(t.handler);n._subscriptions.push(e)})},n.prototype._updatePolygonOptions=function(t){return Object.keys(t).filter(function(t){return-1!==n._polygonOptionsAttributes.indexOf(t)}).reduce(function(n,e){return n[e]=t[e].currentValue,n},{})},n.prototype.id=function(){return this._id},n.prototype.ngOnDestroy=function(){this._polygonManager.deletePolygon(this),this._subscriptions.forEach(function(n){return n.unsubscribe()})},n._polygonOptionsAttributes=["clickable","draggable","editable","fillColor","fillOpacity","geodesic","icon","map","paths","strokeColor","strokeOpacity","strokeWeight","visible","zIndex","draggable","editable","visible"],n}()},346:function(n,t,e){"use strict";e.d(t,"a",function(){return l});var i=e(0),o=(e(330),0),l=function(){function n(n){this._polylineManager=n,this.clickable=!0,this.draggable=!1,this.editable=!1,this.geodesic=!1,this.visible=!0,this.lineClick=new i.l,this.lineDblClick=new i.l,this.lineDrag=new i.l,this.lineDragEnd=new i.l,this.lineDragStart=new i.l,this.lineMouseDown=new i.l,this.lineMouseMove=new i.l,this.lineMouseOut=new i.l,this.lineMouseOver=new i.l,this.lineMouseUp=new i.l,this.lineRightClick=new i.l,this._polylineAddedToManager=!1,this._subscriptions=[],this._id=(o++).toString()}return n.prototype.ngAfterContentInit=function(){var n=this;this.points.length&&this.points.forEach(function(t){var e=t.positionChanged.subscribe(function(){n._polylineManager.updatePolylinePoints(n)});n._subscriptions.push(e)}),this._polylineAddedToManager||this._init();var t=this.points.changes.subscribe(function(){return n._polylineManager.updatePolylinePoints(n)});this._subscriptions.push(t),this._polylineManager.updatePolylinePoints(this)},n.prototype.ngOnChanges=function(t){if(this._polylineAddedToManager){var e={};Object.keys(t).filter(function(t){return-1!==n._polylineOptionsAttributes.indexOf(t)}).forEach(function(n){return e[n]=t[n].currentValue}),this._polylineManager.setPolylineOptions(this,e)}else this._init()},n.prototype._init=function(){this._polylineManager.addPolyline(this),this._polylineAddedToManager=!0,this._addEventListeners()},n.prototype._addEventListeners=function(){var n=this;[{name:"click",handler:function(t){return n.lineClick.emit(t)}},{name:"dblclick",handler:function(t){return n.lineDblClick.emit(t)}},{name:"drag",handler:function(t){return n.lineDrag.emit(t)}},{name:"dragend",handler:function(t){return n.lineDragEnd.emit(t)}},{name:"dragstart",handler:function(t){return n.lineDragStart.emit(t)}},{name:"mousedown",handler:function(t){return n.lineMouseDown.emit(t)}},{name:"mousemove",handler:function(t){return n.lineMouseMove.emit(t)}},{name:"mouseout",handler:function(t){return n.lineMouseOut.emit(t)}},{name:"mouseover",handler:function(t){return n.lineMouseOver.emit(t)}},{name:"mouseup",handler:function(t){return n.lineMouseUp.emit(t)}},{name:"rightclick",handler:function(t){return n.lineRightClick.emit(t)}}].forEach(function(t){var e=n._polylineManager.createEventObservable(t.name,n).subscribe(t.handler);n._subscriptions.push(e)})},n.prototype._getPoints=function(){return this.points?this.points.toArray():[]},n.prototype.id=function(){return this._id},n.prototype.ngOnDestroy=function(){this._polylineManager.deletePolyline(this),this._subscriptions.forEach(function(n){return n.unsubscribe()})},n._polylineOptionsAttributes=["draggable","editable","visible","geodesic","strokeColor","strokeOpacity","strokeWeight","zIndex"],n}()},347:function(n,t,e){"use strict";e.d(t,"a",function(){return r});e(325),e(342),e(328),e(329),e(345),e(346),e(330),e(343),e(344);var i=e(326),o=e(312),l=e(331),r=function(){function n(){}return n.forRoot=function(t){return{ngModule:n,providers:l.a.concat([{provide:o.a,useClass:i.b},{provide:i.a,useValue:t}])}},n}()},353:function(n,t,e){"use strict";Object.freeze({IS_FIREBASE_ENABLED:!1,SHOW_START_WIZARD:!1,SUBSCRIBE:!1,TOAST:{duration:1e3,position:"buttom"},FIREBASE_CONFIG:{apiKey:"AIzaSyCYOVrRscQ26G5lAmOSfwrBFncNidaCSOE",authDomain:"ionic3-blue-light.firebaseapp.com",databaseURL:"https://ionic3-blue-light.firebaseio.com",projectId:"ionic3-blue-light",storageBucket:"ionic3-blue-light.appspot.com",messagingSenderId:"519928359775"},MAP_KEY:{apiKey:"AIzaSyA4-GoZzOqYTvxMe52YQZch5JaCFN6ACLg"}})},354:function(n,t,e){"use strict";var i=e(325),o=e(342),l=e(328),r=e(343),u=e(344),a=e(329),s=e(345),c=e(346),p=e(330),h=e(311),d=e(319),f=e(320),g=e(317),_=e(321),m=e(322),b=e(323),y=e(324),v=e(326),k=e(312),C=function(){function n(){}return n.prototype.load=function(){if(!window.google||!window.google.maps)throw new Error("Google Maps API not loaded on page. Make sure window.google.maps is available!");return Promise.resolve()},n}(),w=e(347);e.d(t,!1,function(){return i.a}),e.d(t,!1,function(){return o.a}),e.d(t,!1,function(){return l.a}),e.d(t,!1,function(){return r.a}),e.d(t,!1,function(){return u.a}),e.d(t,!1,function(){return a.a}),e.d(t,!1,function(){return s.a}),e.d(t,!1,function(){return c.a}),e.d(t,!1,function(){return p.a}),e.d(t,!1,function(){return h.a}),e.d(t,!1,function(){return d.a}),e.d(t,!1,function(){return f.a}),e.d(t,!1,function(){return g.a}),e.d(t,!1,function(){return _.a}),e.d(t,!1,function(){return m.a}),e.d(t,!1,function(){return b.a}),e.d(t,!1,function(){return y.a}),e.d(t,!1,function(){}),e.d(t,!1,function(){return v.a}),e.d(t,!1,function(){return v.b}),e.d(t,!1,function(){return k.a}),e.d(t,!1,function(){return C}),e.d(t,!1,function(){return w.a})},355:function(n,t,e){"use strict";function i(n){return o._20(0,[(n()(),o._19(-1,null,["\n    "])),(n()(),o._0(1,0,null,null,0,"div",[["class","agm-map-container-inner sebm-google-map-container-inner"]],null,null,null,null,null)),(n()(),o._19(-1,null,["\n    "])),(n()(),o._0(3,0,null,null,3,"div",[["class","agm-map-content"]],null,null,null,null,null)),(n()(),o._19(-1,null,["\n      "])),o._13(null,0),(n()(),o._19(-1,null,["\n    "])),(n()(),o._19(-1,null,["\n  "]))],null,null)}e.d(t,"a",function(){return l}),t.b=i;var o=e(0),l=o.Y({encapsulation:0,styles:[".agm-map-container-inner[_ngcontent-%COMP%] {\n      width: inherit;\n      height: inherit;\n    }\n    .agm-map-content[_ngcontent-%COMP%] {\n      display:none;\n    }"],data:{}})}});
+webpackJsonp([0],{
+
+/***/ 307:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapsLayout1Module", function() { return MapsLayout1Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__maps_layout_1__ = __webpack_require__(424);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__elastic_header_elastic_header_module__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_app_settings__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__agm_core__ = __webpack_require__(386);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+var MapsLayout1Module = (function () {
+    function MapsLayout1Module() {
+    }
+    MapsLayout1Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__maps_layout_1__["a" /* MapsLayout1 */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_3__elastic_header_elastic_header_module__["a" /* ElasticHeaderModule */],
+                __WEBPACK_IMPORTED_MODULE_5__agm_core__["a" /* AgmCoreModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__services_app_settings__["a" /* AppSettings */].MAP_KEY),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__maps_layout_1__["a" /* MapsLayout1 */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__maps_layout_1__["a" /* MapsLayout1 */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], MapsLayout1Module);
+    return MapsLayout1Module;
+}());
+
+//# sourceMappingURL=maps-layout-1.module.js.map
+
+/***/ }),
+
+/***/ 356:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoogleMapsAPIWrapper; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__maps_api_loader_maps_api_loader__ = __webpack_require__(358);
+
+
+
+/**
+ * Wrapper class that handles the communication with the Google Maps Javascript
+ * API v3
+ */
+var GoogleMapsAPIWrapper = (function () {
+    function GoogleMapsAPIWrapper(_loader, _zone) {
+        var _this = this;
+        this._loader = _loader;
+        this._zone = _zone;
+        this._map =
+            new Promise(function (resolve) { _this._mapResolver = resolve; });
+    }
+    GoogleMapsAPIWrapper.prototype.createMap = function (el, mapOptions) {
+        var _this = this;
+        return this._loader.load().then(function () {
+            var map = new google.maps.Map(el, mapOptions);
+            _this._mapResolver(map);
+            return;
+        });
+    };
+    GoogleMapsAPIWrapper.prototype.setMapOptions = function (options) {
+        this._map.then(function (m) { m.setOptions(options); });
+    };
+    /**
+     * Creates a google map marker with the map context
+     */
+    GoogleMapsAPIWrapper.prototype.createMarker = function (options, addToMap) {
+        if (options === void 0) { options = {}; }
+        if (addToMap === void 0) { addToMap = true; }
+        return this._map.then(function (map) {
+            if (addToMap) {
+                options.map = map;
+            }
+            return new google.maps.Marker(options);
+        });
+    };
+    GoogleMapsAPIWrapper.prototype.createInfoWindow = function (options) {
+        return this._map.then(function () { return new google.maps.InfoWindow(options); });
+    };
+    /**
+     * Creates a google.map.Circle for the current map.
+     */
+    GoogleMapsAPIWrapper.prototype.createCircle = function (options) {
+        return this._map.then(function (map) {
+            options.map = map;
+            return new google.maps.Circle(options);
+        });
+    };
+    GoogleMapsAPIWrapper.prototype.createPolyline = function (options) {
+        return this.getNativeMap().then(function (map) {
+            var line = new google.maps.Polyline(options);
+            line.setMap(map);
+            return line;
+        });
+    };
+    GoogleMapsAPIWrapper.prototype.createPolygon = function (options) {
+        return this.getNativeMap().then(function (map) {
+            var polygon = new google.maps.Polygon(options);
+            polygon.setMap(map);
+            return polygon;
+        });
+    };
+    /**
+     * Creates a new google.map.Data layer for the current map
+     */
+    GoogleMapsAPIWrapper.prototype.createDataLayer = function (options) {
+        return this._map.then(function (m) {
+            var data = new google.maps.Data(options);
+            data.setMap(m);
+            return data;
+        });
+    };
+    /**
+     * Determines if given coordinates are insite a Polygon path.
+     */
+    GoogleMapsAPIWrapper.prototype.containsLocation = function (latLng, polygon) {
+        return google.maps.geometry.poly.containsLocation(latLng, polygon);
+    };
+    GoogleMapsAPIWrapper.prototype.subscribeToMapEvent = function (eventName) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].create(function (observer) {
+            _this._map.then(function (m) {
+                m.addListener(eventName, function (arg) { _this._zone.run(function () { return observer.next(arg); }); });
+            });
+        });
+    };
+    GoogleMapsAPIWrapper.prototype.setCenter = function (latLng) {
+        return this._map.then(function (map) { return map.setCenter(latLng); });
+    };
+    GoogleMapsAPIWrapper.prototype.getZoom = function () { return this._map.then(function (map) { return map.getZoom(); }); };
+    GoogleMapsAPIWrapper.prototype.getBounds = function () {
+        return this._map.then(function (map) { return map.getBounds(); });
+    };
+    GoogleMapsAPIWrapper.prototype.setZoom = function (zoom) {
+        return this._map.then(function (map) { return map.setZoom(zoom); });
+    };
+    GoogleMapsAPIWrapper.prototype.getCenter = function () {
+        return this._map.then(function (map) { return map.getCenter(); });
+    };
+    GoogleMapsAPIWrapper.prototype.panTo = function (latLng) {
+        return this._map.then(function (map) { return map.panTo(latLng); });
+    };
+    GoogleMapsAPIWrapper.prototype.panBy = function (x, y) {
+        return this._map.then(function (map) { return map.panBy(x, y); });
+    };
+    GoogleMapsAPIWrapper.prototype.fitBounds = function (latLng) {
+        return this._map.then(function (map) { return map.fitBounds(latLng); });
+    };
+    GoogleMapsAPIWrapper.prototype.panToBounds = function (latLng) {
+        return this._map.then(function (map) { return map.panToBounds(latLng); });
+    };
+    /**
+     * Returns the native Google Maps Map instance. Be careful when using this instance directly.
+     */
+    GoogleMapsAPIWrapper.prototype.getNativeMap = function () { return this._map; };
+    /**
+     * Triggers the given event name on the map instance.
+     */
+    GoogleMapsAPIWrapper.prototype.triggerMapEvent = function (eventName) {
+        return this._map.then(function (m) { return google.maps.event.trigger(m, eventName); });
+    };
+    return GoogleMapsAPIWrapper;
+}());
+
+GoogleMapsAPIWrapper.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+GoogleMapsAPIWrapper.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__maps_api_loader_maps_api_loader__["a" /* MapsAPILoader */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* NgZone */], },
+]; };
+//# sourceMappingURL=google-maps-api-wrapper.js.map
+
+/***/ }),
+
+/***/ 358:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapsAPILoader; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+
+var MapsAPILoader = (function () {
+    function MapsAPILoader() {
+    }
+    return MapsAPILoader;
+}());
+
+MapsAPILoader.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+MapsAPILoader.ctorParameters = function () { return []; };
+//# sourceMappingURL=maps-api-loader.js.map
+
+/***/ }),
+
+/***/ 359:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MarkerManager; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__ = __webpack_require__(356);
+
+
+
+var MarkerManager = (function () {
+    function MarkerManager(_mapsWrapper, _zone) {
+        this._mapsWrapper = _mapsWrapper;
+        this._zone = _zone;
+        this._markers = new Map();
+    }
+    MarkerManager.prototype.deleteMarker = function (marker) {
+        var _this = this;
+        var m = this._markers.get(marker);
+        if (m == null) {
+            // marker already deleted
+            return Promise.resolve();
+        }
+        return m.then(function (m) {
+            return _this._zone.run(function () {
+                m.setMap(null);
+                _this._markers.delete(marker);
+            });
+        });
+    };
+    MarkerManager.prototype.updateMarkerPosition = function (marker) {
+        return this._markers.get(marker).then(function (m) { return m.setPosition({ lat: marker.latitude, lng: marker.longitude }); });
+    };
+    MarkerManager.prototype.updateTitle = function (marker) {
+        return this._markers.get(marker).then(function (m) { return m.setTitle(marker.title); });
+    };
+    MarkerManager.prototype.updateLabel = function (marker) {
+        return this._markers.get(marker).then(function (m) { m.setLabel(marker.label); });
+    };
+    MarkerManager.prototype.updateDraggable = function (marker) {
+        return this._markers.get(marker).then(function (m) { return m.setDraggable(marker.draggable); });
+    };
+    MarkerManager.prototype.updateIcon = function (marker) {
+        return this._markers.get(marker).then(function (m) { return m.setIcon(marker.iconUrl); });
+    };
+    MarkerManager.prototype.updateOpacity = function (marker) {
+        return this._markers.get(marker).then(function (m) { return m.setOpacity(marker.opacity); });
+    };
+    MarkerManager.prototype.updateVisible = function (marker) {
+        return this._markers.get(marker).then(function (m) { return m.setVisible(marker.visible); });
+    };
+    MarkerManager.prototype.updateZIndex = function (marker) {
+        return this._markers.get(marker).then(function (m) { return m.setZIndex(marker.zIndex); });
+    };
+    MarkerManager.prototype.updateClickable = function (marker) {
+        return this._markers.get(marker).then(function (m) { return m.setClickable(marker.clickable); });
+    };
+    MarkerManager.prototype.addMarker = function (marker) {
+        var markerPromise = this._mapsWrapper.createMarker({
+            position: { lat: marker.latitude, lng: marker.longitude },
+            label: marker.label,
+            draggable: marker.draggable,
+            icon: marker.iconUrl,
+            opacity: marker.opacity,
+            visible: marker.visible,
+            zIndex: marker.zIndex,
+            title: marker.title,
+            clickable: marker.clickable
+        });
+        this._markers.set(marker, markerPromise);
+    };
+    MarkerManager.prototype.getNativeMarker = function (marker) {
+        return this._markers.get(marker);
+    };
+    MarkerManager.prototype.createEventObservable = function (eventName, marker) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].create(function (observer) {
+            _this._markers.get(marker).then(function (m) {
+                m.addListener(eventName, function (e) { return _this._zone.run(function () { return observer.next(e); }); });
+            });
+        });
+    };
+    return MarkerManager;
+}());
+
+MarkerManager.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+MarkerManager.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__["a" /* GoogleMapsAPIWrapper */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* NgZone */], },
+]; };
+//# sourceMappingURL=marker-manager.js.map
+
+/***/ }),
+
+/***/ 360:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElasticHeaderModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__elastic_header__ = __webpack_require__(361);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var ElasticHeaderModule = (function () {
+    function ElasticHeaderModule() {
+    }
+    ElasticHeaderModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_1__elastic_header__["a" /* ElasticHeader */],
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_1__elastic_header__["a" /* ElasticHeader */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], ElasticHeaderModule);
+    return ElasticHeaderModule;
+}());
+
+//# sourceMappingURL=elastic-header.module.js.map
+
+/***/ }),
+
+/***/ 361:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElasticHeader; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ElasticHeader = (function () {
+    function ElasticHeader(element, renderer) {
+        this.element = element;
+        this.renderer = renderer;
+    }
+    ElasticHeader.prototype.ngOnInit = function () {
+        var _this = this;
+        this.scrollerHandle = this.element.nativeElement.getElementsByClassName('scroll-content')[0];
+        this.header = this.scrollerHandle.firstElementChild;
+        this.headerHeight = this.scrollerHandle.clientHeight;
+        this.ticking = false;
+        this.renderer.setElementStyle(this.header, 'webkitTransformOrigin', 'center bottom');
+        window.addEventListener('resize', function () {
+            _this.headerHeight = _this.scrollerHandle.clientHeight;
+        }, false);
+        this.scrollerHandle.addEventListener('scroll', function () {
+            if (!_this.ticking) {
+                window.requestAnimationFrame(function () {
+                    _this.updateElasticHeader();
+                });
+            }
+            _this.ticking = true;
+        });
+    };
+    ElasticHeader.prototype.updateElasticHeader = function () {
+        this.scrollTop = this.scrollerHandle.scrollTop;
+        if (this.scrollTop >= 0) {
+            this.translateAmt = this.scrollTop / 2;
+            this.scaleAmt = 1;
+        }
+        else {
+            this.translateAmt = 0;
+            this.scaleAmt = -this.scrollTop / this.headerHeight + 1;
+        }
+        this.renderer.setElementStyle(this.header, 'webkitTransform', 'translate3d(0,' + this.translateAmt + 'px,0) scale(' + this.scaleAmt + ',' + this.scaleAmt + ')');
+        this.ticking = false;
+    };
+    ElasticHeader = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */])({
+            selector: '[elastic-header]'
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer */]])
+    ], ElasticHeader);
+    return ElasticHeader;
+}());
+
+//# sourceMappingURL=elastic-header.js.map
+
+/***/ }),
+
+/***/ 362:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CircleManager; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__ = __webpack_require__(356);
+
+
+
+var CircleManager = (function () {
+    function CircleManager(_apiWrapper, _zone) {
+        this._apiWrapper = _apiWrapper;
+        this._zone = _zone;
+        this._circles = new Map();
+    }
+    CircleManager.prototype.addCircle = function (circle) {
+        this._circles.set(circle, this._apiWrapper.createCircle({
+            center: { lat: circle.latitude, lng: circle.longitude },
+            clickable: circle.clickable,
+            draggable: circle.draggable,
+            editable: circle.editable,
+            fillColor: circle.fillColor,
+            fillOpacity: circle.fillOpacity,
+            radius: circle.radius,
+            strokeColor: circle.strokeColor,
+            strokeOpacity: circle.strokeOpacity,
+            strokePosition: circle.strokePosition,
+            strokeWeight: circle.strokeWeight,
+            visible: circle.visible,
+            zIndex: circle.zIndex
+        }));
+    };
+    /**
+     * Removes the given circle from the map.
+     */
+    CircleManager.prototype.removeCircle = function (circle) {
+        var _this = this;
+        return this._circles.get(circle).then(function (c) {
+            c.setMap(null);
+            _this._circles.delete(circle);
+        });
+    };
+    CircleManager.prototype.setOptions = function (circle, options) {
+        return this._circles.get(circle).then(function (c) { return c.setOptions(options); });
+    };
+    CircleManager.prototype.getBounds = function (circle) {
+        return this._circles.get(circle).then(function (c) { return c.getBounds(); });
+    };
+    CircleManager.prototype.getCenter = function (circle) {
+        return this._circles.get(circle).then(function (c) { return c.getCenter(); });
+    };
+    CircleManager.prototype.getRadius = function (circle) {
+        return this._circles.get(circle).then(function (c) { return c.getRadius(); });
+    };
+    CircleManager.prototype.setCenter = function (circle) {
+        return this._circles.get(circle).then(function (c) { return c.setCenter({ lat: circle.latitude, lng: circle.longitude }); });
+    };
+    CircleManager.prototype.setEditable = function (circle) {
+        return this._circles.get(circle).then(function (c) { return c.setEditable(circle.editable); });
+    };
+    CircleManager.prototype.setDraggable = function (circle) {
+        return this._circles.get(circle).then(function (c) { return c.setDraggable(circle.draggable); });
+    };
+    CircleManager.prototype.setVisible = function (circle) {
+        return this._circles.get(circle).then(function (c) { return c.setVisible(circle.visible); });
+    };
+    CircleManager.prototype.setRadius = function (circle) {
+        return this._circles.get(circle).then(function (c) { return c.setRadius(circle.radius); });
+    };
+    CircleManager.prototype.createEventObservable = function (eventName, circle) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].create(function (observer) {
+            var listener = null;
+            _this._circles.get(circle).then(function (c) {
+                listener = c.addListener(eventName, function (e) { return _this._zone.run(function () { return observer.next(e); }); });
+            });
+            return function () {
+                if (listener !== null) {
+                    listener.remove();
+                }
+            };
+        });
+    };
+    return CircleManager;
+}());
+
+CircleManager.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+CircleManager.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__["a" /* GoogleMapsAPIWrapper */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* NgZone */], },
+]; };
+//# sourceMappingURL=circle-manager.js.map
+
+/***/ }),
+
+/***/ 363:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfoWindowManager; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__marker_manager__ = __webpack_require__(359);
+
+
+
+
+var InfoWindowManager = (function () {
+    function InfoWindowManager(_mapsWrapper, _zone, _markerManager) {
+        this._mapsWrapper = _mapsWrapper;
+        this._zone = _zone;
+        this._markerManager = _markerManager;
+        this._infoWindows = new Map();
+    }
+    InfoWindowManager.prototype.deleteInfoWindow = function (infoWindow) {
+        var _this = this;
+        var iWindow = this._infoWindows.get(infoWindow);
+        if (iWindow == null) {
+            // info window already deleted
+            return Promise.resolve();
+        }
+        return iWindow.then(function (i) {
+            return _this._zone.run(function () {
+                i.close();
+                _this._infoWindows.delete(infoWindow);
+            });
+        });
+    };
+    InfoWindowManager.prototype.setPosition = function (infoWindow) {
+        return this._infoWindows.get(infoWindow).then(function (i) { return i.setPosition({
+            lat: infoWindow.latitude,
+            lng: infoWindow.longitude
+        }); });
+    };
+    InfoWindowManager.prototype.setZIndex = function (infoWindow) {
+        return this._infoWindows.get(infoWindow)
+            .then(function (i) { return i.setZIndex(infoWindow.zIndex); });
+    };
+    InfoWindowManager.prototype.open = function (infoWindow) {
+        var _this = this;
+        return this._infoWindows.get(infoWindow).then(function (w) {
+            if (infoWindow.hostMarker != null) {
+                return _this._markerManager.getNativeMarker(infoWindow.hostMarker).then(function (marker) {
+                    return _this._mapsWrapper.getNativeMap().then(function (map) { return w.open(map, marker); });
+                });
+            }
+            return _this._mapsWrapper.getNativeMap().then(function (map) { return w.open(map); });
+        });
+    };
+    InfoWindowManager.prototype.close = function (infoWindow) {
+        return this._infoWindows.get(infoWindow).then(function (w) { return w.close(); });
+    };
+    InfoWindowManager.prototype.setOptions = function (infoWindow, options) {
+        return this._infoWindows.get(infoWindow).then(function (i) { return i.setOptions(options); });
+    };
+    InfoWindowManager.prototype.addInfoWindow = function (infoWindow) {
+        var options = {
+            content: infoWindow.content,
+            maxWidth: infoWindow.maxWidth,
+            zIndex: infoWindow.zIndex,
+            disableAutoPan: infoWindow.disableAutoPan
+        };
+        if (typeof infoWindow.latitude === 'number' && typeof infoWindow.longitude === 'number') {
+            options.position = { lat: infoWindow.latitude, lng: infoWindow.longitude };
+        }
+        var infoWindowPromise = this._mapsWrapper.createInfoWindow(options);
+        this._infoWindows.set(infoWindow, infoWindowPromise);
+    };
+    /**
+     * Creates a Google Maps event listener for the given InfoWindow as an Observable
+     */
+    InfoWindowManager.prototype.createEventObservable = function (eventName, infoWindow) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__["Observable"].create(function (observer) {
+            _this._infoWindows.get(infoWindow).then(function (i) {
+                i.addListener(eventName, function (e) { return _this._zone.run(function () { return observer.next(e); }); });
+            });
+        });
+    };
+    return InfoWindowManager;
+}());
+
+InfoWindowManager.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+InfoWindowManager.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__["a" /* GoogleMapsAPIWrapper */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* NgZone */], },
+    { type: __WEBPACK_IMPORTED_MODULE_3__marker_manager__["a" /* MarkerManager */], },
+]; };
+//# sourceMappingURL=info-window-manager.js.map
+
+/***/ }),
+
+/***/ 364:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PolygonManager; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__ = __webpack_require__(356);
+
+
+
+var PolygonManager = (function () {
+    function PolygonManager(_mapsWrapper, _zone) {
+        this._mapsWrapper = _mapsWrapper;
+        this._zone = _zone;
+        this._polygons = new Map();
+    }
+    PolygonManager.prototype.addPolygon = function (path) {
+        var polygonPromise = this._mapsWrapper.createPolygon({
+            clickable: path.clickable,
+            draggable: path.draggable,
+            editable: path.editable,
+            fillColor: path.fillColor,
+            fillOpacity: path.fillOpacity,
+            geodesic: path.geodesic,
+            paths: path.paths,
+            strokeColor: path.strokeColor,
+            strokeOpacity: path.strokeOpacity,
+            strokeWeight: path.strokeWeight,
+            visible: path.visible,
+            zIndex: path.zIndex,
+        });
+        this._polygons.set(path, polygonPromise);
+    };
+    PolygonManager.prototype.updatePolygon = function (polygon) {
+        var _this = this;
+        var m = this._polygons.get(polygon);
+        if (m == null) {
+            return Promise.resolve();
+        }
+        return m.then(function (l) { return _this._zone.run(function () { l.setPaths(polygon.paths); }); });
+    };
+    PolygonManager.prototype.setPolygonOptions = function (path, options) {
+        return this._polygons.get(path).then(function (l) { l.setOptions(options); });
+    };
+    PolygonManager.prototype.deletePolygon = function (paths) {
+        var _this = this;
+        var m = this._polygons.get(paths);
+        if (m == null) {
+            return Promise.resolve();
+        }
+        return m.then(function (l) {
+            return _this._zone.run(function () {
+                l.setMap(null);
+                _this._polygons.delete(paths);
+            });
+        });
+    };
+    PolygonManager.prototype.createEventObservable = function (eventName, path) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].create(function (observer) {
+            _this._polygons.get(path).then(function (l) {
+                l.addListener(eventName, function (e) { return _this._zone.run(function () { return observer.next(e); }); });
+            });
+        });
+    };
+    return PolygonManager;
+}());
+
+PolygonManager.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+PolygonManager.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__["a" /* GoogleMapsAPIWrapper */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* NgZone */], },
+]; };
+//# sourceMappingURL=polygon-manager.js.map
+
+/***/ }),
+
+/***/ 365:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PolylineManager; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__ = __webpack_require__(356);
+
+
+
+var PolylineManager = (function () {
+    function PolylineManager(_mapsWrapper, _zone) {
+        this._mapsWrapper = _mapsWrapper;
+        this._zone = _zone;
+        this._polylines = new Map();
+    }
+    PolylineManager._convertPoints = function (line) {
+        var path = line._getPoints().map(function (point) {
+            return { lat: point.latitude, lng: point.longitude };
+        });
+        return path;
+    };
+    PolylineManager.prototype.addPolyline = function (line) {
+        var path = PolylineManager._convertPoints(line);
+        var polylinePromise = this._mapsWrapper.createPolyline({
+            clickable: line.clickable,
+            draggable: line.draggable,
+            editable: line.editable,
+            geodesic: line.geodesic,
+            strokeColor: line.strokeColor,
+            strokeOpacity: line.strokeOpacity,
+            strokeWeight: line.strokeWeight,
+            visible: line.visible,
+            zIndex: line.zIndex,
+            path: path
+        });
+        this._polylines.set(line, polylinePromise);
+    };
+    PolylineManager.prototype.updatePolylinePoints = function (line) {
+        var _this = this;
+        var path = PolylineManager._convertPoints(line);
+        var m = this._polylines.get(line);
+        if (m == null) {
+            return Promise.resolve();
+        }
+        return m.then(function (l) { return _this._zone.run(function () { l.setPath(path); }); });
+    };
+    PolylineManager.prototype.setPolylineOptions = function (line, options) {
+        return this._polylines.get(line).then(function (l) { l.setOptions(options); });
+    };
+    PolylineManager.prototype.deletePolyline = function (line) {
+        var _this = this;
+        var m = this._polylines.get(line);
+        if (m == null) {
+            return Promise.resolve();
+        }
+        return m.then(function (l) {
+            return _this._zone.run(function () {
+                l.setMap(null);
+                _this._polylines.delete(line);
+            });
+        });
+    };
+    PolylineManager.prototype.createEventObservable = function (eventName, line) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].create(function (observer) {
+            _this._polylines.get(line).then(function (l) {
+                l.addListener(eventName, function (e) { return _this._zone.run(function () { return observer.next(e); }); });
+            });
+        });
+    };
+    return PolylineManager;
+}());
+
+PolylineManager.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+PolylineManager.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__["a" /* GoogleMapsAPIWrapper */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* NgZone */], },
+]; };
+//# sourceMappingURL=polyline-manager.js.map
+
+/***/ }),
+
+/***/ 366:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KmlLayerManager; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__ = __webpack_require__(356);
+
+
+
+/**
+ * Manages all KML Layers for a Google Map instance.
+ */
+var KmlLayerManager = (function () {
+    function KmlLayerManager(_wrapper, _zone) {
+        this._wrapper = _wrapper;
+        this._zone = _zone;
+        this._layers = new Map();
+    }
+    /**
+     * Adds a new KML Layer to the map.
+     */
+    KmlLayerManager.prototype.addKmlLayer = function (layer) {
+        var newLayer = this._wrapper.getNativeMap().then(function (m) {
+            return new google.maps.KmlLayer({
+                clickable: layer.clickable,
+                map: m,
+                preserveViewport: layer.preserveViewport,
+                screenOverlays: layer.screenOverlays,
+                suppressInfoWindows: layer.suppressInfoWindows,
+                url: layer.url,
+                zIndex: layer.zIndex
+            });
+        });
+        this._layers.set(layer, newLayer);
+    };
+    KmlLayerManager.prototype.setOptions = function (layer, options) {
+        this._layers.get(layer).then(function (l) { return l.setOptions(options); });
+    };
+    KmlLayerManager.prototype.deleteKmlLayer = function (layer) {
+        var _this = this;
+        this._layers.get(layer).then(function (l) {
+            l.setMap(null);
+            _this._layers.delete(layer);
+        });
+    };
+    /**
+     * Creates a Google Maps event listener for the given KmlLayer as an Observable
+     */
+    KmlLayerManager.prototype.createEventObservable = function (eventName, layer) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].create(function (observer) {
+            _this._layers.get(layer).then(function (m) {
+                m.addListener(eventName, function (e) { return _this._zone.run(function () { return observer.next(e); }); });
+            });
+        });
+    };
+    return KmlLayerManager;
+}());
+
+KmlLayerManager.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+KmlLayerManager.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__["a" /* GoogleMapsAPIWrapper */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* NgZone */], },
+]; };
+//# sourceMappingURL=kml-layer-manager.js.map
+
+/***/ }),
+
+/***/ 367:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataLayerManager; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__ = __webpack_require__(356);
+
+
+
+/**
+ * Manages all Data Layers for a Google Map instance.
+ */
+var DataLayerManager = (function () {
+    function DataLayerManager(_wrapper, _zone) {
+        this._wrapper = _wrapper;
+        this._zone = _zone;
+        this._layers = new Map();
+    }
+    /**
+     * Adds a new Data Layer to the map.
+     */
+    DataLayerManager.prototype.addDataLayer = function (layer) {
+        var _this = this;
+        var newLayer = this._wrapper.createDataLayer({
+            style: layer.style
+        })
+            .then(function (d) {
+            if (layer.geoJson) {
+                _this.getDataFeatures(d, layer.geoJson).then(function (features) { return d.features = features; });
+            }
+            return d;
+        });
+        this._layers.set(layer, newLayer);
+    };
+    DataLayerManager.prototype.deleteDataLayer = function (layer) {
+        var _this = this;
+        this._layers.get(layer).then(function (l) {
+            l.setMap(null);
+            _this._layers.delete(layer);
+        });
+    };
+    DataLayerManager.prototype.updateGeoJson = function (layer, geoJson) {
+        var _this = this;
+        this._layers.get(layer).then(function (l) {
+            l.forEach(function (feature) {
+                l.remove(feature);
+                var index = l.features.indexOf(feature, 0);
+                if (index > -1) {
+                    l.features.splice(index, 1);
+                }
+            });
+            _this.getDataFeatures(l, geoJson).then(function (features) { return l.features = features; });
+        });
+    };
+    DataLayerManager.prototype.setDataOptions = function (layer, options) {
+        this._layers.get(layer).then(function (l) {
+            l.setControlPosition(options.controlPosition);
+            l.setControls(options.controls);
+            l.setDrawingMode(options.drawingMode);
+            l.setStyle(options.style);
+        });
+    };
+    /**
+     * Creates a Google Maps event listener for the given DataLayer as an Observable
+     */
+    DataLayerManager.prototype.createEventObservable = function (eventName, layer) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].create(function (observer) {
+            _this._layers.get(layer).then(function (d) {
+                d.addListener(eventName, function (e) { return _this._zone.run(function () { return observer.next(e); }); });
+            });
+        });
+    };
+    /**
+     * Extract features from a geoJson using google.maps Data Class
+     * @param d : google.maps.Data class instance
+     * @param geoJson : url or geojson object
+     */
+    DataLayerManager.prototype.getDataFeatures = function (d, geoJson) {
+        return new Promise(function (resolve, reject) {
+            if (typeof geoJson === 'object') {
+                try {
+                    var features = d.addGeoJson(geoJson);
+                    resolve(features);
+                }
+                catch (e) {
+                    reject(e);
+                }
+            }
+            else if (typeof geoJson === 'string') {
+                d.loadGeoJson(geoJson, null, resolve);
+            }
+            else {
+                reject("Impossible to extract features from geoJson: wrong argument type");
+            }
+        });
+    };
+    return DataLayerManager;
+}());
+
+DataLayerManager.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+DataLayerManager.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__google_maps_api_wrapper__["a" /* GoogleMapsAPIWrapper */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* NgZone */], },
+]; };
+//# sourceMappingURL=data-layer-manager.js.map
+
+/***/ }),
+
+/***/ 368:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmInfoWindow; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_managers_info_window_manager__ = __webpack_require__(363);
+
+
+var infoWindowId = 0;
+/**
+ * AgmInfoWindow renders a info window inside a {@link AgmMarker} or standalone.
+ *
+ * ### Example
+ * ```typescript
+ * import { Component } from '@angular/core';
+ *
+ * @Component({
+ *  selector: 'my-map-cmp',
+ *  styles: [`
+ *    .agm-map-container {
+ *      height: 300px;
+ *    }
+ * `],
+ *  template: `
+ *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+ *      <agm-marker [latitude]="lat" [longitude]="lng" [label]="'M'">
+ *        <agm-info-window [disableAutoPan]="true">
+ *          Hi, this is the content of the <strong>info window</strong>
+ *        </agm-info-window>
+ *      </agm-marker>
+ *    </agm-map>
+ *  `
+ * })
+ * ```
+ */
+var AgmInfoWindow = (function () {
+    function AgmInfoWindow(_infoWindowManager, _el) {
+        this._infoWindowManager = _infoWindowManager;
+        this._el = _el;
+        /**
+         * Sets the open state for the InfoWindow. You can also call the open() and close() methods.
+         */
+        this.isOpen = false;
+        /**
+         * Emits an event when the info window is closed.
+         */
+        this.infoWindowClose = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this._infoWindowAddedToManager = false;
+        this._id = (infoWindowId++).toString();
+    }
+    AgmInfoWindow.prototype.ngOnInit = function () {
+        this.content = this._el.nativeElement.querySelector('.agm-info-window-content');
+        this._infoWindowManager.addInfoWindow(this);
+        this._infoWindowAddedToManager = true;
+        this._updateOpenState();
+        this._registerEventListeners();
+    };
+    /** @internal */
+    AgmInfoWindow.prototype.ngOnChanges = function (changes) {
+        if (!this._infoWindowAddedToManager) {
+            return;
+        }
+        if ((changes['latitude'] || changes['longitude']) && typeof this.latitude === 'number' &&
+            typeof this.longitude === 'number') {
+            this._infoWindowManager.setPosition(this);
+        }
+        if (changes['zIndex']) {
+            this._infoWindowManager.setZIndex(this);
+        }
+        if (changes['isOpen']) {
+            this._updateOpenState();
+        }
+        this._setInfoWindowOptions(changes);
+    };
+    AgmInfoWindow.prototype._registerEventListeners = function () {
+        var _this = this;
+        this._infoWindowManager.createEventObservable('closeclick', this).subscribe(function () {
+            _this.isOpen = false;
+            _this.infoWindowClose.emit();
+        });
+    };
+    AgmInfoWindow.prototype._updateOpenState = function () {
+        this.isOpen ? this.open() : this.close();
+    };
+    AgmInfoWindow.prototype._setInfoWindowOptions = function (changes) {
+        var options = {};
+        var optionKeys = Object.keys(changes).filter(function (k) { return AgmInfoWindow._infoWindowOptionsInputs.indexOf(k) !== -1; });
+        optionKeys.forEach(function (k) { options[k] = changes[k].currentValue; });
+        this._infoWindowManager.setOptions(this, options);
+    };
+    /**
+     * Opens the info window.
+     */
+    AgmInfoWindow.prototype.open = function () { return this._infoWindowManager.open(this); };
+    /**
+     * Closes the info window.
+     */
+    AgmInfoWindow.prototype.close = function () {
+        var _this = this;
+        return this._infoWindowManager.close(this).then(function () { _this.infoWindowClose.emit(); });
+    };
+    /** @internal */
+    AgmInfoWindow.prototype.id = function () { return this._id; };
+    /** @internal */
+    AgmInfoWindow.prototype.toString = function () { return 'AgmInfoWindow-' + this._id.toString(); };
+    /** @internal */
+    AgmInfoWindow.prototype.ngOnDestroy = function () { this._infoWindowManager.deleteInfoWindow(this); };
+    return AgmInfoWindow;
+}());
+
+AgmInfoWindow._infoWindowOptionsInputs = ['disableAutoPan', 'maxWidth'];
+AgmInfoWindow.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */], args: [{
+                selector: 'agm-info-window',
+                template: "<div class='agm-info-window-content'>\n      <ng-content></ng-content>\n    </div>\n  "
+            },] },
+];
+/** @nocollapse */
+AgmInfoWindow.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__services_managers_info_window_manager__["a" /* InfoWindowManager */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */], },
+]; };
+AgmInfoWindow.propDecorators = {
+    'latitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'longitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'disableAutoPan': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'zIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'maxWidth': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'isOpen': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'infoWindowClose': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+};
+//# sourceMappingURL=info-window.js.map
+
+/***/ }),
+
+/***/ 369:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmPolylinePoint; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+
+/**
+ * AgmPolylinePoint represents one element of a polyline within a  {@link
+ * SembGoogleMapPolyline}
+ */
+var AgmPolylinePoint = (function () {
+    function AgmPolylinePoint() {
+        /**
+         * This event emitter gets emitted when the position of the point changed.
+         */
+        this.positionChanged = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+    }
+    AgmPolylinePoint.prototype.ngOnChanges = function (changes) {
+        if (changes['latitude'] || changes['longitude']) {
+            var position = {
+                lat: changes['latitude'].currentValue,
+                lng: changes['longitude'].currentValue
+            };
+            this.positionChanged.emit(position);
+        }
+    };
+    return AgmPolylinePoint;
+}());
+
+AgmPolylinePoint.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */], args: [{ selector: 'agm-polyline-point' },] },
+];
+/** @nocollapse */
+AgmPolylinePoint.ctorParameters = function () { return []; };
+AgmPolylinePoint.propDecorators = {
+    'latitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'longitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'positionChanged': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+};
+//# sourceMappingURL=polyline-point.js.map
+
+/***/ }),
+
+/***/ 370:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export GoogleMapsScriptProtocol */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LAZY_MAPS_API_CONFIG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return LazyMapsAPILoader; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_browser_globals__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__maps_api_loader__ = __webpack_require__(358);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var GoogleMapsScriptProtocol;
+(function (GoogleMapsScriptProtocol) {
+    GoogleMapsScriptProtocol[GoogleMapsScriptProtocol["HTTP"] = 1] = "HTTP";
+    GoogleMapsScriptProtocol[GoogleMapsScriptProtocol["HTTPS"] = 2] = "HTTPS";
+    GoogleMapsScriptProtocol[GoogleMapsScriptProtocol["AUTO"] = 3] = "AUTO";
+})(GoogleMapsScriptProtocol || (GoogleMapsScriptProtocol = {}));
+/**
+ * Token for the config of the LazyMapsAPILoader. Please provide an object of type {@link
+ * LazyMapsAPILoaderConfig}.
+ */
+var LAZY_MAPS_API_CONFIG = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* InjectionToken */]('angular-google-maps LAZY_MAPS_API_CONFIG');
+var LazyMapsAPILoader = (function (_super) {
+    __extends(LazyMapsAPILoader, _super);
+    function LazyMapsAPILoader(config, w, d) {
+        var _this = _super.call(this) || this;
+        _this._config = config || {};
+        _this._windowRef = w;
+        _this._documentRef = d;
+        return _this;
+    }
+    LazyMapsAPILoader.prototype.load = function () {
+        var _this = this;
+        if (this._scriptLoadingPromise) {
+            return this._scriptLoadingPromise;
+        }
+        var script = this._documentRef.getNativeDocument().createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.defer = true;
+        var callbackName = "angular2GoogleMapsLazyMapsAPILoader";
+        script.src = this._getScriptSrc(callbackName);
+        this._scriptLoadingPromise = new Promise(function (resolve, reject) {
+            _this._windowRef.getNativeWindow()[callbackName] = function () {
+                resolve();
+            };
+            script.onerror = function (error) {
+                reject(error);
+            };
+        });
+        this._documentRef.getNativeDocument().body.appendChild(script);
+        return this._scriptLoadingPromise;
+    };
+    LazyMapsAPILoader.prototype._getScriptSrc = function (callbackName) {
+        var protocolType = (this._config && this._config.protocol) || GoogleMapsScriptProtocol.HTTPS;
+        var protocol;
+        switch (protocolType) {
+            case GoogleMapsScriptProtocol.AUTO:
+                protocol = '';
+                break;
+            case GoogleMapsScriptProtocol.HTTP:
+                protocol = 'http:';
+                break;
+            case GoogleMapsScriptProtocol.HTTPS:
+                protocol = 'https:';
+                break;
+        }
+        var hostAndPath = this._config.hostAndPath || 'maps.googleapis.com/maps/api/js';
+        var queryParams = {
+            v: this._config.apiVersion || '3',
+            callback: callbackName,
+            key: this._config.apiKey,
+            client: this._config.clientId,
+            channel: this._config.channel,
+            libraries: this._config.libraries,
+            region: this._config.region,
+            language: this._config.language
+        };
+        var params = Object.keys(queryParams)
+            .filter(function (k) { return queryParams[k] != null; })
+            .filter(function (k) {
+            // remove empty arrays
+            return !Array.isArray(queryParams[k]) ||
+                (Array.isArray(queryParams[k]) && queryParams[k].length > 0);
+        })
+            .map(function (k) {
+            // join arrays as comma seperated strings
+            var i = queryParams[k];
+            if (Array.isArray(i)) {
+                return { key: k, value: i.join(',') };
+            }
+            return { key: k, value: queryParams[k] };
+        })
+            .map(function (entry) {
+            return entry.key + "=" + entry.value;
+        })
+            .join('&');
+        return protocol + "//" + hostAndPath + "?" + params;
+    };
+    return LazyMapsAPILoader;
+}(__WEBPACK_IMPORTED_MODULE_2__maps_api_loader__["a" /* MapsAPILoader */]));
+
+LazyMapsAPILoader.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+];
+/** @nocollapse */
+LazyMapsAPILoader.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */], args: [LAZY_MAPS_API_CONFIG,] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_1__utils_browser_globals__["c" /* WindowRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__utils_browser_globals__["b" /* DocumentRef */], },
+]; };
+//# sourceMappingURL=lazy-maps-api-loader.js.map
+
+/***/ }),
+
+/***/ 377:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmMap; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_google_maps_api_wrapper__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_managers_circle_manager__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_managers_info_window_manager__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_managers_marker_manager__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_managers_polygon_manager__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_managers_polyline_manager__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_managers_kml_layer_manager__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_managers_data_layer_manager__ = __webpack_require__(367);
+
+
+
+
+
+
+
+
+
+/**
+ * AgmMap renders a Google Map.
+ * **Important note**: To be able see a map in the browser, you have to define a height for the
+ * element `agm-map`.
+ *
+ * ### Example
+ * ```typescript
+ * import { Component } from '@angular/core';
+ *
+ * @Component({
+ *  selector: 'my-map-cmp',
+ *  styles: [`
+ *    agm-map {
+ *      height: 300px;
+ *    }
+ * `],
+ *  template: `
+ *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+ *    </agm-map>
+ *  `
+ * })
+ * ```
+ */
+var AgmMap = (function () {
+    function AgmMap(_elem, _mapsWrapper) {
+        this._elem = _elem;
+        this._mapsWrapper = _mapsWrapper;
+        /**
+         * The longitude that defines the center of the map.
+         */
+        this.longitude = 0;
+        /**
+         * The latitude that defines the center of the map.
+         */
+        this.latitude = 0;
+        /**
+         * The zoom level of the map. The default zoom level is 8.
+         */
+        this.zoom = 8;
+        /**
+         * Enables/disables if map is draggable.
+         */
+        // tslint:disable-next-line:no-input-rename
+        this.draggable = true;
+        /**
+         * Enables/disables zoom and center on double click. Enabled by default.
+         */
+        this.disableDoubleClickZoom = false;
+        /**
+         * Enables/disables all default UI of the Google map. Please note: When the map is created, this
+         * value cannot get updated.
+         */
+        this.disableDefaultUI = false;
+        /**
+         * If false, disables scrollwheel zooming on the map. The scrollwheel is enabled by default.
+         */
+        this.scrollwheel = true;
+        /**
+         * If false, prevents the map from being controlled by the keyboard. Keyboard shortcuts are
+         * enabled by default.
+         */
+        this.keyboardShortcuts = true;
+        /**
+         * The enabled/disabled state of the Zoom control.
+         */
+        this.zoomControl = true;
+        /**
+         * Styles to apply to each of the default map types. Note that for Satellite/Hybrid and Terrain
+         * modes, these styles will only apply to labels and geometry.
+         */
+        this.styles = [];
+        /**
+         * When true and the latitude and/or longitude values changes, the Google Maps panTo method is
+         * used to
+         * center the map. See: https://developers.google.com/maps/documentation/javascript/reference#Map
+         */
+        this.usePanning = false;
+        /**
+         * The initial enabled/disabled state of the Street View Pegman control.
+         * This control is part of the default UI, and should be set to false when displaying a map type
+         * on which the Street View road overlay should not appear (e.g. a non-Earth map type).
+         */
+        this.streetViewControl = true;
+        /**
+         * Sets the viewport to contain the given bounds.
+         */
+        this.fitBounds = null;
+        /**
+         * The initial enabled/disabled state of the Scale control. This is disabled by default.
+         */
+        this.scaleControl = false;
+        /**
+         * The initial enabled/disabled state of the Map type control.
+         */
+        this.mapTypeControl = false;
+        /**
+         * The initial enabled/disabled state of the Pan control.
+         */
+        this.panControl = false;
+        /**
+         * The initial enabled/disabled state of the Rotate control.
+         */
+        this.rotateControl = false;
+        /**
+         * The initial enabled/disabled state of the Fullscreen control.
+         */
+        this.fullscreenControl = false;
+        /**
+         * The map mapTypeId. Defaults to 'roadmap'.
+         */
+        this.mapTypeId = 'roadmap';
+        /**
+         * When false, map icons are not clickable. A map icon represents a point of interest,
+         * also known as a POI. By default map icons are clickable.
+         */
+        this.clickableIcons = true;
+        /**
+         * This setting controls how gestures on the map are handled.
+         * Allowed values:
+         * - 'cooperative' (Two-finger touch gestures pan and zoom the map. One-finger touch gestures are not handled by the map.)
+         * - 'greedy'      (All touch gestures pan or zoom the map.)
+         * - 'none'        (The map cannot be panned or zoomed by user gestures.)
+         * - 'auto'        [default] (Gesture handling is either cooperative or greedy, depending on whether the page is scrollable or not.
+         */
+        this.gestureHandling = 'auto';
+        this._observableSubscriptions = [];
+        /**
+         * This event emitter gets emitted when the user clicks on the map (but not when they click on a
+         * marker or infoWindow).
+         */
+        this.mapClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event emitter gets emitted when the user right-clicks on the map (but not when they click
+         * on a marker or infoWindow).
+         */
+        this.mapRightClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event emitter gets emitted when the user double-clicks on the map (but not when they click
+         * on a marker or infoWindow).
+         */
+        this.mapDblClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event emitter is fired when the map center changes.
+         */
+        this.centerChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the viewport bounds have changed.
+         */
+        this.boundsChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the map becomes idle after panning or zooming.
+         */
+        this.idle = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the zoom level has changed.
+         */
+        this.zoomChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the google map is fully initialized.
+         * You get the google.maps.Map instance as a result of this EventEmitter.
+         */
+        this.mapReady = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+    }
+    /** @internal */
+    AgmMap.prototype.ngOnInit = function () {
+        // todo: this should be solved with a new component and a viewChild decorator
+        var container = this._elem.nativeElement.querySelector('.agm-map-container-inner');
+        this._initMapInstance(container);
+    };
+    AgmMap.prototype._initMapInstance = function (el) {
+        var _this = this;
+        this._mapsWrapper.createMap(el, {
+            center: { lat: this.latitude || 0, lng: this.longitude || 0 },
+            zoom: this.zoom,
+            minZoom: this.minZoom,
+            maxZoom: this.maxZoom,
+            disableDefaultUI: this.disableDefaultUI,
+            disableDoubleClickZoom: this.disableDoubleClickZoom,
+            scrollwheel: this.scrollwheel,
+            backgroundColor: this.backgroundColor,
+            draggable: this.draggable,
+            draggableCursor: this.draggableCursor,
+            draggingCursor: this.draggingCursor,
+            keyboardShortcuts: this.keyboardShortcuts,
+            styles: this.styles,
+            zoomControl: this.zoomControl,
+            zoomControlOptions: this.zoomControlOptions,
+            streetViewControl: this.streetViewControl,
+            streetViewControlOptions: this.streetViewControlOptions,
+            scaleControl: this.scaleControl,
+            scaleControlOptions: this.scaleControlOptions,
+            mapTypeControl: this.mapTypeControl,
+            mapTypeControlOptions: this.mapTypeControlOptions,
+            panControl: this.panControl,
+            panControlOptions: this.panControlOptions,
+            rotateControl: this.rotateControl,
+            rotateControlOptions: this.rotateControlOptions,
+            fullscreenControl: this.fullscreenControl,
+            fullscreenControlOptions: this.fullscreenControlOptions,
+            mapTypeId: this.mapTypeId,
+            clickableIcons: this.clickableIcons,
+            gestureHandling: this.gestureHandling
+        })
+            .then(function () { return _this._mapsWrapper.getNativeMap(); })
+            .then(function (map) { return _this.mapReady.emit(map); });
+        // register event listeners
+        this._handleMapCenterChange();
+        this._handleMapZoomChange();
+        this._handleMapMouseEvents();
+        this._handleBoundsChange();
+        this._handleIdleEvent();
+    };
+    /** @internal */
+    AgmMap.prototype.ngOnDestroy = function () {
+        // unsubscribe all registered observable subscriptions
+        this._observableSubscriptions.forEach(function (s) { return s.unsubscribe(); });
+    };
+    /* @internal */
+    AgmMap.prototype.ngOnChanges = function (changes) {
+        this._updateMapOptionsChanges(changes);
+        this._updatePosition(changes);
+    };
+    AgmMap.prototype._updateMapOptionsChanges = function (changes) {
+        var options = {};
+        var optionKeys = Object.keys(changes).filter(function (k) { return AgmMap._mapOptionsAttributes.indexOf(k) !== -1; });
+        optionKeys.forEach(function (k) { options[k] = changes[k].currentValue; });
+        this._mapsWrapper.setMapOptions(options);
+    };
+    /**
+     * Triggers a resize event on the google map instance.
+     * When recenter is true, the of the google map gets called with the current lat/lng values or fitBounds value to recenter the map.
+     * Returns a promise that gets resolved after the event was triggered.
+     */
+    AgmMap.prototype.triggerResize = function (recenter) {
+        var _this = this;
+        if (recenter === void 0) { recenter = true; }
+        // Note: When we would trigger the resize event and show the map in the same turn (which is a
+        // common case for triggering a resize event), then the resize event would not
+        // work (to show the map), so we trigger the event in a timeout.
+        return new Promise(function (resolve) {
+            setTimeout(function () {
+                return _this._mapsWrapper.triggerMapEvent('resize').then(function () {
+                    if (recenter) {
+                        _this.fitBounds != null ? _this._fitBounds() : _this._setCenter();
+                    }
+                    resolve();
+                });
+            });
+        });
+    };
+    AgmMap.prototype._updatePosition = function (changes) {
+        if (changes['latitude'] == null && changes['longitude'] == null &&
+            changes['fitBounds'] == null) {
+            // no position update needed
+            return;
+        }
+        // we prefer fitBounds in changes
+        if (changes['fitBounds'] && this.fitBounds != null) {
+            this._fitBounds();
+            return;
+        }
+        if (typeof this.latitude !== 'number' || typeof this.longitude !== 'number') {
+            return;
+        }
+        this._setCenter();
+    };
+    AgmMap.prototype._setCenter = function () {
+        var newCenter = {
+            lat: this.latitude,
+            lng: this.longitude,
+        };
+        if (this.usePanning) {
+            this._mapsWrapper.panTo(newCenter);
+        }
+        else {
+            this._mapsWrapper.setCenter(newCenter);
+        }
+    };
+    AgmMap.prototype._fitBounds = function () {
+        if (this.usePanning) {
+            this._mapsWrapper.panToBounds(this.fitBounds);
+            return;
+        }
+        this._mapsWrapper.fitBounds(this.fitBounds);
+    };
+    AgmMap.prototype._handleMapCenterChange = function () {
+        var _this = this;
+        var s = this._mapsWrapper.subscribeToMapEvent('center_changed').subscribe(function () {
+            _this._mapsWrapper.getCenter().then(function (center) {
+                _this.latitude = center.lat();
+                _this.longitude = center.lng();
+                _this.centerChange.emit({ lat: _this.latitude, lng: _this.longitude });
+            });
+        });
+        this._observableSubscriptions.push(s);
+    };
+    AgmMap.prototype._handleBoundsChange = function () {
+        var _this = this;
+        var s = this._mapsWrapper.subscribeToMapEvent('bounds_changed').subscribe(function () {
+            _this._mapsWrapper.getBounds().then(function (bounds) { _this.boundsChange.emit(bounds); });
+        });
+        this._observableSubscriptions.push(s);
+    };
+    AgmMap.prototype._handleMapZoomChange = function () {
+        var _this = this;
+        var s = this._mapsWrapper.subscribeToMapEvent('zoom_changed').subscribe(function () {
+            _this._mapsWrapper.getZoom().then(function (z) {
+                _this.zoom = z;
+                _this.zoomChange.emit(z);
+            });
+        });
+        this._observableSubscriptions.push(s);
+    };
+    AgmMap.prototype._handleIdleEvent = function () {
+        var _this = this;
+        var s = this._mapsWrapper.subscribeToMapEvent('idle').subscribe(function () { _this.idle.emit(void 0); });
+        this._observableSubscriptions.push(s);
+    };
+    AgmMap.prototype._handleMapMouseEvents = function () {
+        var _this = this;
+        var events = [
+            { name: 'click', emitter: this.mapClick },
+            { name: 'rightclick', emitter: this.mapRightClick },
+            { name: 'dblclick', emitter: this.mapDblClick },
+        ];
+        events.forEach(function (e) {
+            var s = _this._mapsWrapper.subscribeToMapEvent(e.name).subscribe(function (event) {
+                var value = { coords: { lat: event.latLng.lat(), lng: event.latLng.lng() } };
+                e.emitter.emit(value);
+            });
+            _this._observableSubscriptions.push(s);
+        });
+    };
+    return AgmMap;
+}());
+
+/**
+ * Map option attributes that can change over time
+ */
+AgmMap._mapOptionsAttributes = [
+    'disableDoubleClickZoom', 'scrollwheel', 'draggable', 'draggableCursor', 'draggingCursor',
+    'keyboardShortcuts', 'zoomControl', 'zoomControlOptions', 'styles', 'streetViewControl',
+    'streetViewControlOptions', 'zoom', 'mapTypeControl', 'mapTypeControlOptions', 'minZoom',
+    'maxZoom', 'panControl', 'panControlOptions', 'rotateControl', 'rotateControlOptions',
+    'fullscreenControl', 'fullscreenControlOptions', 'scaleControl', 'scaleControlOptions',
+    'mapTypeId', 'clickableIcons', 'gestureHandling'
+];
+AgmMap.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */], args: [{
+                selector: 'agm-map',
+                providers: [
+                    __WEBPACK_IMPORTED_MODULE_1__services_google_maps_api_wrapper__["a" /* GoogleMapsAPIWrapper */], __WEBPACK_IMPORTED_MODULE_4__services_managers_marker_manager__["a" /* MarkerManager */], __WEBPACK_IMPORTED_MODULE_3__services_managers_info_window_manager__["a" /* InfoWindowManager */], __WEBPACK_IMPORTED_MODULE_2__services_managers_circle_manager__["a" /* CircleManager */], __WEBPACK_IMPORTED_MODULE_6__services_managers_polyline_manager__["a" /* PolylineManager */],
+                    __WEBPACK_IMPORTED_MODULE_5__services_managers_polygon_manager__["a" /* PolygonManager */], __WEBPACK_IMPORTED_MODULE_7__services_managers_kml_layer_manager__["a" /* KmlLayerManager */], __WEBPACK_IMPORTED_MODULE_8__services_managers_data_layer_manager__["a" /* DataLayerManager */]
+                ],
+                host: {
+                    // todo: deprecated - we will remove it with the next version
+                    '[class.sebm-google-map-container]': 'true'
+                },
+                styles: ["\n    .agm-map-container-inner {\n      width: inherit;\n      height: inherit;\n    }\n    .agm-map-content {\n      display:none;\n    }\n  "],
+                template: "\n    <div class='agm-map-container-inner sebm-google-map-container-inner'></div>\n    <div class='agm-map-content'>\n      <ng-content></ng-content>\n    </div>\n  "
+            },] },
+];
+/** @nocollapse */
+AgmMap.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__services_google_maps_api_wrapper__["a" /* GoogleMapsAPIWrapper */], },
+]; };
+AgmMap.propDecorators = {
+    'longitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'latitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'zoom': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'minZoom': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'maxZoom': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'draggable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */], args: ['mapDraggable',] },],
+    'disableDoubleClickZoom': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'disableDefaultUI': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'scrollwheel': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'backgroundColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'draggableCursor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'draggingCursor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'keyboardShortcuts': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'zoomControl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'zoomControlOptions': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'styles': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'usePanning': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'streetViewControl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'streetViewControlOptions': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'fitBounds': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'scaleControl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'scaleControlOptions': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'mapTypeControl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'mapTypeControlOptions': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'panControl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'panControlOptions': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'rotateControl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'rotateControlOptions': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'fullscreenControl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'fullscreenControlOptions': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'mapTypeId': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'clickableIcons': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'gestureHandling': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'mapClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mapRightClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mapDblClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'centerChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'boundsChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'idle': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'zoomChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mapReady': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+};
+//# sourceMappingURL=map.js.map
+
+/***/ }),
+
+/***/ 378:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmCircle; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_managers_circle_manager__ = __webpack_require__(362);
+
+
+var AgmCircle = (function () {
+    function AgmCircle(_manager) {
+        this._manager = _manager;
+        /**
+         * Indicates whether this Circle handles mouse events. Defaults to true.
+         */
+        this.clickable = true;
+        /**
+         * If set to true, the user can drag this circle over the map. Defaults to false.
+         */
+        // tslint:disable-next-line:no-input-rename
+        this.draggable = false;
+        /**
+         * If set to true, the user can edit this circle by dragging the control points shown at
+         * the center and around the circumference of the circle. Defaults to false.
+         */
+        this.editable = false;
+        /**
+         * The radius in meters on the Earth's surface.
+         */
+        this.radius = 0;
+        /**
+         * The stroke position. Defaults to CENTER.
+         * This property is not supported on Internet Explorer 8 and earlier.
+         */
+        this.strokePosition = 'CENTER';
+        /**
+         * The stroke width in pixels.
+         */
+        this.strokeWeight = 0;
+        /**
+         * Whether this circle is visible on the map. Defaults to true.
+         */
+        this.visible = true;
+        /**
+         * This event is fired when the circle's center is changed.
+         */
+        this.centerChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event emitter gets emitted when the user clicks on the circle.
+         */
+        this.circleClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event emitter gets emitted when the user clicks on the circle.
+         */
+        this.circleDblClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is repeatedly fired while the user drags the circle.
+         */
+        this.drag = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the user stops dragging the circle.
+         */
+        this.dragEnd = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the user starts dragging the circle.
+         */
+        this.dragStart = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the DOM mousedown event is fired on the circle.
+         */
+        this.mouseDown = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the DOM mousemove event is fired on the circle.
+         */
+        this.mouseMove = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired on circle mouseout.
+         */
+        this.mouseOut = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired on circle mouseover.
+         */
+        this.mouseOver = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the DOM mouseup event is fired on the circle.
+         */
+        this.mouseUp = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the circle's radius is changed.
+         */
+        this.radiusChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the circle is right-clicked on.
+         */
+        this.rightClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this._circleAddedToManager = false;
+        this._eventSubscriptions = [];
+    }
+    /** @internal */
+    AgmCircle.prototype.ngOnInit = function () {
+        this._manager.addCircle(this);
+        this._circleAddedToManager = true;
+        this._registerEventListeners();
+    };
+    /** @internal */
+    AgmCircle.prototype.ngOnChanges = function (changes) {
+        if (!this._circleAddedToManager) {
+            return;
+        }
+        if (changes['latitude'] || changes['longitude']) {
+            this._manager.setCenter(this);
+        }
+        if (changes['editable']) {
+            this._manager.setEditable(this);
+        }
+        if (changes['draggable']) {
+            this._manager.setDraggable(this);
+        }
+        if (changes['visible']) {
+            this._manager.setVisible(this);
+        }
+        if (changes['radius']) {
+            this._manager.setRadius(this);
+        }
+        this._updateCircleOptionsChanges(changes);
+    };
+    AgmCircle.prototype._updateCircleOptionsChanges = function (changes) {
+        var options = {};
+        var optionKeys = Object.keys(changes).filter(function (k) { return AgmCircle._mapOptions.indexOf(k) !== -1; });
+        optionKeys.forEach(function (k) { options[k] = changes[k].currentValue; });
+        if (optionKeys.length > 0) {
+            this._manager.setOptions(this, options);
+        }
+    };
+    AgmCircle.prototype._registerEventListeners = function () {
+        var _this = this;
+        var events = new Map();
+        events.set('center_changed', this.centerChange);
+        events.set('click', this.circleClick);
+        events.set('dblclick', this.circleDblClick);
+        events.set('drag', this.drag);
+        events.set('dragend', this.dragEnd);
+        events.set('dragStart', this.dragStart);
+        events.set('mousedown', this.mouseDown);
+        events.set('mousemove', this.mouseMove);
+        events.set('mouseout', this.mouseOut);
+        events.set('mouseover', this.mouseOver);
+        events.set('mouseup', this.mouseUp);
+        events.set('radius_changed', this.radiusChange);
+        events.set('rightclick', this.rightClick);
+        events.forEach(function (eventEmitter, eventName) {
+            _this._eventSubscriptions.push(_this._manager.createEventObservable(eventName, _this).subscribe(function (value) {
+                switch (eventName) {
+                    case 'radius_changed':
+                        _this._manager.getRadius(_this).then(function (radius) { return eventEmitter.emit(radius); });
+                        break;
+                    case 'center_changed':
+                        _this._manager.getCenter(_this).then(function (center) {
+                            return eventEmitter.emit({ lat: center.lat(), lng: center.lng() });
+                        });
+                        break;
+                    default:
+                        eventEmitter.emit({ coords: { lat: value.latLng.lat(), lng: value.latLng.lng() } });
+                }
+            }));
+        });
+    };
+    /** @internal */
+    AgmCircle.prototype.ngOnDestroy = function () {
+        this._eventSubscriptions.forEach(function (s) { s.unsubscribe(); });
+        this._eventSubscriptions = null;
+        this._manager.removeCircle(this);
+    };
+    /**
+     * Gets the LatLngBounds of this Circle.
+     */
+    AgmCircle.prototype.getBounds = function () { return this._manager.getBounds(this); };
+    AgmCircle.prototype.getCenter = function () { return this._manager.getCenter(this); };
+    return AgmCircle;
+}());
+
+AgmCircle._mapOptions = [
+    'fillColor', 'fillOpacity', 'strokeColor', 'strokeOpacity', 'strokePosition', 'strokeWeight',
+    'visible', 'zIndex', 'clickable'
+];
+AgmCircle.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */], args: [{
+                selector: 'agm-circle'
+            },] },
+];
+/** @nocollapse */
+AgmCircle.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__services_managers_circle_manager__["a" /* CircleManager */], },
+]; };
+AgmCircle.propDecorators = {
+    'latitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'longitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'clickable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'draggable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */], args: ['circleDraggable',] },],
+    'editable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'fillColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'fillOpacity': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'radius': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokeColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokeOpacity': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokePosition': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokeWeight': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'visible': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'zIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'centerChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'circleClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'circleDblClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'drag': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'dragEnd': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'dragStart': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mouseDown': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mouseMove': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mouseOut': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mouseOver': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mouseUp': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'radiusChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'rightClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+};
+//# sourceMappingURL=circle.js.map
+
+/***/ }),
+
+/***/ 379:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmKmlLayer; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_managers_kml_layer_manager__ = __webpack_require__(366);
+
+
+var layerId = 0;
+var AgmKmlLayer = (function () {
+    function AgmKmlLayer(_manager) {
+        this._manager = _manager;
+        this._addedToManager = false;
+        this._id = (layerId++).toString();
+        this._subscriptions = [];
+        /**
+         * If true, the layer receives mouse events. Default value is true.
+         */
+        this.clickable = true;
+        /**
+         * By default, the input map is centered and zoomed to the bounding box of the contents of the
+         * layer.
+         * If this option is set to true, the viewport is left unchanged, unless the map's center and zoom
+         * were never set.
+         */
+        this.preserveViewport = false;
+        /**
+         * Whether to render the screen overlays. Default true.
+         */
+        this.screenOverlays = true;
+        /**
+         * Suppress the rendering of info windows when layer features are clicked.
+         */
+        this.suppressInfoWindows = false;
+        /**
+         * The URL of the KML document to display.
+         */
+        this.url = null;
+        /**
+         * The z-index of the layer.
+         */
+        this.zIndex = null;
+        /**
+         * This event is fired when a feature in the layer is clicked.
+         */
+        this.layerClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the KML layers default viewport has changed.
+         */
+        this.defaultViewportChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the KML layer has finished loading.
+         * At this point it is safe to read the status property to determine if the layer loaded
+         * successfully.
+         */
+        this.statusChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+    }
+    AgmKmlLayer.prototype.ngOnInit = function () {
+        if (this._addedToManager) {
+            return;
+        }
+        this._manager.addKmlLayer(this);
+        this._addedToManager = true;
+        this._addEventListeners();
+    };
+    AgmKmlLayer.prototype.ngOnChanges = function (changes) {
+        if (!this._addedToManager) {
+            return;
+        }
+        this._updatePolygonOptions(changes);
+    };
+    AgmKmlLayer.prototype._updatePolygonOptions = function (changes) {
+        var options = Object.keys(changes)
+            .filter(function (k) { return AgmKmlLayer._kmlLayerOptions.indexOf(k) !== -1; })
+            .reduce(function (obj, k) {
+            obj[k] = changes[k].currentValue;
+            return obj;
+        }, {});
+        if (Object.keys(options).length > 0) {
+            this._manager.setOptions(this, options);
+        }
+    };
+    AgmKmlLayer.prototype._addEventListeners = function () {
+        var _this = this;
+        var listeners = [
+            { name: 'click', handler: function (ev) { return _this.layerClick.emit(ev); } },
+            { name: 'defaultviewport_changed', handler: function () { return _this.defaultViewportChange.emit(); } },
+            { name: 'status_changed', handler: function () { return _this.statusChange.emit(); } },
+        ];
+        listeners.forEach(function (obj) {
+            var os = _this._manager.createEventObservable(obj.name, _this).subscribe(obj.handler);
+            _this._subscriptions.push(os);
+        });
+    };
+    /** @internal */
+    AgmKmlLayer.prototype.id = function () { return this._id; };
+    /** @internal */
+    AgmKmlLayer.prototype.toString = function () { return "AgmKmlLayer-" + this._id.toString(); };
+    /** @internal */
+    AgmKmlLayer.prototype.ngOnDestroy = function () {
+        this._manager.deleteKmlLayer(this);
+        // unsubscribe all registered observable subscriptions
+        this._subscriptions.forEach(function (s) { return s.unsubscribe(); });
+    };
+    return AgmKmlLayer;
+}());
+
+AgmKmlLayer._kmlLayerOptions = ['clickable', 'preserveViewport', 'screenOverlays', 'suppressInfoWindows', 'url', 'zIndex'];
+AgmKmlLayer.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */], args: [{
+                selector: 'agm-kml-layer'
+            },] },
+];
+/** @nocollapse */
+AgmKmlLayer.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__services_managers_kml_layer_manager__["a" /* KmlLayerManager */], },
+]; };
+AgmKmlLayer.propDecorators = {
+    'clickable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'preserveViewport': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'screenOverlays': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'suppressInfoWindows': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'url': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'zIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'layerClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'defaultViewportChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'statusChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+};
+//# sourceMappingURL=kml-layer.js.map
+
+/***/ }),
+
+/***/ 380:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmDataLayer; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_managers_data_layer_manager__ = __webpack_require__(367);
+
+
+var layerId = 0;
+/**
+ * AgmDataLayer enables the user to add data layers to the map.
+ *
+ * ### Example
+ * ```typescript
+ * import { Component } from 'angular2/core';
+ * import { AgmMap, AgmDataLayer } from
+ * 'angular-google-maps/core';
+ *
+ * @Component({
+ *  selector: 'my-map-cmp',
+ *  directives: [AgmMap, AgmDataLayer],
+ *  styles: [`
+ *    .agm-container {
+ *      height: 300px;
+ *    }
+ * `],
+ *  template: `
+ * <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+ * 	  <agm-data-layer [geoJson]="geoJsonObject" (layerClick)="clicked($event)" [style]="styleFunc">
+ * 	  </agm-data-layer>
+ * </agm-map>
+ *  `
+ * })
+ * export class MyMapCmp {
+ *   lat: number = -25.274449;
+ *   lng: number = 133.775060;
+ *   zoom: number = 5;
+ *
+ * clicked(clickEvent) {
+ *    console.log(clickEvent);
+ *  }
+ *
+ *  styleFunc(feature) {
+ *    return ({
+ *      clickable: false,
+ *      fillColor: feature.getProperty('color'),
+ *      strokeWeight: 1
+ *    });
+ *  }
+ *
+ *  geoJsonObject: Object = {
+ *    "type": "FeatureCollection",
+ *    "features": [
+ *      {
+ *        "type": "Feature",
+ *        "properties": {
+ *          "letter": "G",
+ *          "color": "blue",
+ *          "rank": "7",
+ *          "ascii": "71"
+ *        },
+ *        "geometry": {
+ *          "type": "Polygon",
+ *          "coordinates": [
+ *            [
+ *              [123.61, -22.14], [122.38, -21.73], [121.06, -21.69], [119.66, -22.22], [119.00, -23.40],
+ *              [118.65, -24.76], [118.43, -26.07], [118.78, -27.56], [119.22, -28.57], [120.23, -29.49],
+ *              [121.77, -29.87], [123.57, -29.64], [124.45, -29.03], [124.71, -27.95], [124.80, -26.70],
+ *              [124.80, -25.60], [123.61, -25.64], [122.56, -25.64], [121.72, -25.72], [121.81, -26.62],
+ *              [121.86, -26.98], [122.60, -26.90], [123.57, -27.05], [123.57, -27.68], [123.35, -28.18],
+ *              [122.51, -28.38], [121.77, -28.26], [121.02, -27.91], [120.49, -27.21], [120.14, -26.50],
+ *              [120.10, -25.64], [120.27, -24.52], [120.67, -23.68], [121.72, -23.32], [122.43, -23.48],
+ *              [123.04, -24.04], [124.54, -24.28], [124.58, -23.20], [123.61, -22.14]
+ *            ]
+ *          ]
+ *        }
+ *      },
+ *      {
+ *        "type": "Feature",
+ *        "properties": {
+ *          "letter": "o",
+ *          "color": "red",
+ *          "rank": "15",
+ *          "ascii": "111"
+ *        },
+ *        "geometry": {
+ *          "type": "Polygon",
+ *          "coordinates": [
+ *            [
+ *              [128.84, -25.76], [128.18, -25.60], [127.96, -25.52], [127.88, -25.52], [127.70, -25.60],
+ *              [127.26, -25.79], [126.60, -26.11], [126.16, -26.78], [126.12, -27.68], [126.21, -28.42],
+ *              [126.69, -29.49], [127.74, -29.80], [128.80, -29.72], [129.41, -29.03], [129.72, -27.95],
+ *              [129.68, -27.21], [129.33, -26.23], [128.84, -25.76]
+ *            ],
+ *            [
+ *              [128.45, -27.44], [128.32, -26.94], [127.70, -26.82], [127.35, -27.05], [127.17, -27.80],
+ *              [127.57, -28.22], [128.10, -28.42], [128.49, -27.80], [128.45, -27.44]
+ *            ]
+ *          ]
+ *        }
+ *      },
+ *      {
+ *        "type": "Feature",
+ *        "properties": {
+ *          "letter": "o",
+ *          "color": "yellow",
+ *          "rank": "15",
+ *          "ascii": "111"
+ *        },
+ *        "geometry": {
+ *          "type": "Polygon",
+ *          "coordinates": [
+ *            [
+ *              [131.87, -25.76], [131.35, -26.07], [130.95, -26.78], [130.82, -27.64], [130.86, -28.53],
+ *              [131.26, -29.22], [131.92, -29.76], [132.45, -29.87], [133.06, -29.76], [133.72, -29.34],
+ *              [134.07, -28.80], [134.20, -27.91], [134.07, -27.21], [133.81, -26.31], [133.37, -25.83],
+ *              [132.71, -25.64], [131.87, -25.76]
+ *            ],
+ *            [
+ *              [133.15, -27.17], [132.71, -26.86], [132.09, -26.90], [131.74, -27.56], [131.79, -28.26],
+ *              [132.36, -28.45], [132.93, -28.34], [133.15, -27.76], [133.15, -27.17]
+ *            ]
+ *          ]
+ *        }
+ *      },
+ *      {
+ *        "type": "Feature",
+ *        "properties": {
+ *          "letter": "g",
+ *          "color": "blue",
+ *          "rank": "7",
+ *          "ascii": "103"
+ *        },
+ *        "geometry": {
+ *          "type": "Polygon",
+ *          "coordinates": [
+ *            [
+ *              [138.12, -25.04], [136.84, -25.16], [135.96, -25.36], [135.26, -25.99], [135, -26.90],
+ *              [135.04, -27.91], [135.26, -28.88], [136.05, -29.45], [137.02, -29.49], [137.81, -29.49],
+ *              [137.94, -29.99], [137.90, -31.20], [137.85, -32.24], [136.88, -32.69], [136.45, -32.36],
+ *              [136.27, -31.80], [134.95, -31.84], [135.17, -32.99], [135.52, -33.43], [136.14, -33.76],
+ *              [137.06, -33.83], [138.12, -33.65], [138.86, -33.21], [139.30, -32.28], [139.30, -31.24],
+ *              [139.30, -30.14], [139.21, -28.96], [139.17, -28.22], [139.08, -27.41], [139.08, -26.47],
+ *              [138.99, -25.40], [138.73, -25.00], [138.12, -25.04]
+ *            ],
+ *            [
+ *              [137.50, -26.54], [136.97, -26.47], [136.49, -26.58], [136.31, -27.13], [136.31, -27.72],
+ *              [136.58, -27.99], [137.50, -28.03], [137.68, -27.68], [137.59, -26.78], [137.50, -26.54]
+ *            ]
+ *          ]
+ *        }
+ *      },
+ *      {
+ *        "type": "Feature",
+ *        "properties": {
+ *          "letter": "l",
+ *          "color": "green",
+ *          "rank": "12",
+ *          "ascii": "108"
+ *        },
+ *        "geometry": {
+ *          "type": "Polygon",
+ *          "coordinates": [
+ *            [
+ *              [140.14, -21.04], [140.31, -29.42], [141.67, -29.49], [141.59, -20.92], [140.14, -21.04]
+ *            ]
+ *          ]
+ *        }
+ *      },
+ *      {
+ *        "type": "Feature",
+ *        "properties": {
+ *          "letter": "e",
+ *          "color": "red",
+ *          "rank": "5",
+ *          "ascii": "101"
+ *        },
+ *        "geometry": {
+ *          "type": "Polygon",
+ *          "coordinates": [
+ *            [
+ *              [144.14, -27.41], [145.67, -27.52], [146.86, -27.09], [146.82, -25.64], [146.25, -25.04],
+ *              [145.45, -24.68], [144.66, -24.60], [144.09, -24.76], [143.43, -25.08], [142.99, -25.40],
+ *              [142.64, -26.03], [142.64, -27.05], [142.64, -28.26], [143.30, -29.11], [144.18, -29.57],
+ *              [145.41, -29.64], [146.46, -29.19], [146.64, -28.72], [146.82, -28.14], [144.84, -28.42],
+ *              [144.31, -28.26], [144.14, -27.41]
+ *            ],
+ *            [
+ *              [144.18, -26.39], [144.53, -26.58], [145.19, -26.62], [145.72, -26.35], [145.81, -25.91],
+ *              [145.41, -25.68], [144.97, -25.68], [144.49, -25.64], [144, -25.99], [144.18, -26.39]
+ *            ]
+ *          ]
+ *        }
+ *      }
+ *    ]
+ *  };
+ * }
+ * ```
+ */
+var AgmDataLayer = (function () {
+    function AgmDataLayer(_manager) {
+        this._manager = _manager;
+        this._addedToManager = false;
+        this._id = (layerId++).toString();
+        this._subscriptions = [];
+        /**
+         * This event is fired when a feature in the layer is clicked.
+         */
+        this.layerClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * The geoJson to be displayed
+         */
+        this.geoJson = null;
+    }
+    AgmDataLayer.prototype.ngOnInit = function () {
+        if (this._addedToManager) {
+            return;
+        }
+        this._manager.addDataLayer(this);
+        this._addedToManager = true;
+        this._addEventListeners();
+    };
+    AgmDataLayer.prototype._addEventListeners = function () {
+        var _this = this;
+        var listeners = [
+            { name: 'click', handler: function (ev) { return _this.layerClick.emit(ev); } },
+        ];
+        listeners.forEach(function (obj) {
+            var os = _this._manager.createEventObservable(obj.name, _this).subscribe(obj.handler);
+            _this._subscriptions.push(os);
+        });
+    };
+    /** @internal */
+    AgmDataLayer.prototype.id = function () { return this._id; };
+    /** @internal */
+    AgmDataLayer.prototype.toString = function () { return "AgmDataLayer-" + this._id.toString(); };
+    /** @internal */
+    AgmDataLayer.prototype.ngOnDestroy = function () {
+        this._manager.deleteDataLayer(this);
+        // unsubscribe all registered observable subscriptions
+        this._subscriptions.forEach(function (s) { return s.unsubscribe(); });
+    };
+    /** @internal */
+    AgmDataLayer.prototype.ngOnChanges = function (changes) {
+        var _this = this;
+        if (!this._addedToManager) {
+            return;
+        }
+        var geoJsonChange = changes['geoJson'];
+        if (geoJsonChange) {
+            this._manager.updateGeoJson(this, geoJsonChange.currentValue);
+        }
+        var dataOptions = {};
+        AgmDataLayer._dataOptionsAttributes.forEach(function (k) { return dataOptions[k] = changes.hasOwnProperty(k) ? changes[k].currentValue : _this[k]; });
+        this._manager.setDataOptions(this, dataOptions);
+    };
+    return AgmDataLayer;
+}());
+
+AgmDataLayer._dataOptionsAttributes = ['style'];
+AgmDataLayer.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */], args: [{
+                selector: 'agm-data-layer'
+            },] },
+];
+/** @nocollapse */
+AgmDataLayer.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__services_managers_data_layer_manager__["a" /* DataLayerManager */], },
+]; };
+AgmDataLayer.propDecorators = {
+    'layerClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'geoJson': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'style': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+};
+//# sourceMappingURL=data-layer.js.map
+
+/***/ }),
+
+/***/ 381:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmMarker; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_managers_marker_manager__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_window__ = __webpack_require__(368);
+
+
+
+var markerId = 0;
+/**
+ * AgmMarker renders a map marker inside a {@link AgmMap}.
+ *
+ * ### Example
+ * ```typescript
+ * import { Component } from '@angular/core';
+ *
+ * @Component({
+ *  selector: 'my-map-cmp',
+ *  styles: [`
+ *    .agm-map-container {
+ *      height: 300px;
+ *    }
+ * `],
+ *  template: `
+ *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+ *      <agm-marker [latitude]="lat" [longitude]="lng" [label]="'M'">
+ *      </agm-marker>
+ *    </agm-map>
+ *  `
+ * })
+ * ```
+ */
+var AgmMarker = (function () {
+    function AgmMarker(_markerManager) {
+        this._markerManager = _markerManager;
+        /**
+         * If true, the marker can be dragged. Default value is false.
+         */
+        // tslint:disable-next-line:no-input-rename
+        this.draggable = false;
+        /**
+         * If true, the marker is visible
+         */
+        this.visible = true;
+        /**
+         * Whether to automatically open the child info window when the marker is clicked.
+         */
+        this.openInfoWindow = true;
+        /**
+         * The marker's opacity between 0.0 and 1.0.
+         */
+        this.opacity = 1;
+        /**
+         * All markers are displayed on the map in order of their zIndex, with higher values displaying in
+         * front of markers with lower values. By default, markers are displayed according to their
+         * vertical position on screen, with lower markers appearing in front of markers further up the
+         * screen.
+         */
+        this.zIndex = 1;
+        /**
+         * If true, the marker can be clicked. Default value is true.
+         */
+        // tslint:disable-next-line:no-input-rename
+        this.clickable = true;
+        /**
+         * This event emitter gets emitted when the user clicks on the marker.
+         */
+        this.markerClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the user stops dragging the marker.
+         */
+        this.dragEnd = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the user mouses over the marker.
+         */
+        this.mouseOver = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the user mouses outside the marker.
+         */
+        this.mouseOut = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * @internal
+         */
+        this.infoWindow = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* QueryList */]();
+        this._markerAddedToManger = false;
+        this._observableSubscriptions = [];
+        this._id = (markerId++).toString();
+    }
+    /* @internal */
+    AgmMarker.prototype.ngAfterContentInit = function () {
+        var _this = this;
+        this.handleInfoWindowUpdate();
+        this.infoWindow.changes.subscribe(function () { return _this.handleInfoWindowUpdate(); });
+    };
+    AgmMarker.prototype.handleInfoWindowUpdate = function () {
+        var _this = this;
+        if (this.infoWindow.length > 1) {
+            throw new Error('Expected no more than one info window.');
+        }
+        this.infoWindow.forEach(function (marker) {
+            marker.hostMarker = _this;
+        });
+    };
+    /** @internal */
+    AgmMarker.prototype.ngOnChanges = function (changes) {
+        if (typeof this.latitude !== 'number' || typeof this.longitude !== 'number') {
+            return;
+        }
+        if (!this._markerAddedToManger) {
+            this._markerManager.addMarker(this);
+            this._markerAddedToManger = true;
+            this._addEventListeners();
+            return;
+        }
+        if (changes['latitude'] || changes['longitude']) {
+            this._markerManager.updateMarkerPosition(this);
+        }
+        if (changes['title']) {
+            this._markerManager.updateTitle(this);
+        }
+        if (changes['label']) {
+            this._markerManager.updateLabel(this);
+        }
+        if (changes['draggable']) {
+            this._markerManager.updateDraggable(this);
+        }
+        if (changes['iconUrl']) {
+            this._markerManager.updateIcon(this);
+        }
+        if (changes['opacity']) {
+            this._markerManager.updateOpacity(this);
+        }
+        if (changes['visible']) {
+            this._markerManager.updateVisible(this);
+        }
+        if (changes['zIndex']) {
+            this._markerManager.updateZIndex(this);
+        }
+        if (changes['clickable']) {
+            this._markerManager.updateClickable(this);
+        }
+    };
+    AgmMarker.prototype._addEventListeners = function () {
+        var _this = this;
+        var cs = this._markerManager.createEventObservable('click', this).subscribe(function () {
+            if (_this.openInfoWindow) {
+                _this.infoWindow.forEach(function (infoWindow) { return infoWindow.open(); });
+            }
+            _this.markerClick.emit(null);
+        });
+        this._observableSubscriptions.push(cs);
+        var ds = this._markerManager.createEventObservable('dragend', this)
+            .subscribe(function (e) {
+            _this.dragEnd.emit({ coords: { lat: e.latLng.lat(), lng: e.latLng.lng() } });
+        });
+        this._observableSubscriptions.push(ds);
+        var mover = this._markerManager.createEventObservable('mouseover', this)
+            .subscribe(function (e) {
+            _this.mouseOver.emit({ coords: { lat: e.latLng.lat(), lng: e.latLng.lng() } });
+        });
+        this._observableSubscriptions.push(mover);
+        var mout = this._markerManager.createEventObservable('mouseout', this)
+            .subscribe(function (e) {
+            _this.mouseOut.emit({ coords: { lat: e.latLng.lat(), lng: e.latLng.lng() } });
+        });
+        this._observableSubscriptions.push(mout);
+    };
+    /** @internal */
+    AgmMarker.prototype.id = function () { return this._id; };
+    /** @internal */
+    AgmMarker.prototype.toString = function () { return 'AgmMarker-' + this._id.toString(); };
+    /** @internal */
+    AgmMarker.prototype.ngOnDestroy = function () {
+        this._markerManager.deleteMarker(this);
+        // unsubscribe all registered observable subscriptions
+        this._observableSubscriptions.forEach(function (s) { return s.unsubscribe(); });
+    };
+    return AgmMarker;
+}());
+
+AgmMarker.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */], args: [{
+                selector: 'agm-marker'
+            },] },
+];
+/** @nocollapse */
+AgmMarker.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__services_managers_marker_manager__["a" /* MarkerManager */], },
+]; };
+AgmMarker.propDecorators = {
+    'latitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'longitude': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'title': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'label': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'draggable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */], args: ['markerDraggable',] },],
+    'iconUrl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'visible': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'openInfoWindow': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'opacity': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'zIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'clickable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */], args: ['markerClickable',] },],
+    'markerClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'dragEnd': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mouseOver': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'mouseOut': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'infoWindow': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ContentChildren */], args: [__WEBPACK_IMPORTED_MODULE_2__info_window__["a" /* AgmInfoWindow */],] },],
+};
+//# sourceMappingURL=marker.js.map
+
+/***/ }),
+
+/***/ 382:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmPolygon; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_managers_polygon_manager__ = __webpack_require__(364);
+
+
+/**
+ * AgmPolygon renders a polygon on a {@link AgmMap}
+ *
+ * ### Example
+ * ```typescript
+ * import { Component } from '@angular/core';
+ *
+ * @Component({
+ *  selector: 'my-map-cmp',
+ *  styles: [`
+ *    agm-map {
+ *      height: 300px;
+ *    }
+ * `],
+ *  template: `
+ *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+ *      <agm-polygon [paths]="paths">
+ *      </agm-polygon>
+ *    </agm-map>
+ *  `
+ * })
+ * export class MyMapCmp {
+ *   lat: number = 0;
+ *   lng: number = 0;
+ *   zoom: number = 10;
+ *   paths: Array<LatLngLiteral> = [
+ *     { lat: 0,  lng: 10 },
+ *     { lat: 0,  lng: 20 },
+ *     { lat: 10, lng: 20 },
+ *     { lat: 10, lng: 10 },
+ *     { lat: 0,  lng: 10 }
+ *   ]
+ *   // Nesting paths will create a hole where they overlap;
+ *   nestedPaths: Array<Array<LatLngLiteral>> = [[
+ *     { lat: 0,  lng: 10 },
+ *     { lat: 0,  lng: 20 },
+ *     { lat: 10, lng: 20 },
+ *     { lat: 10, lng: 10 },
+ *     { lat: 0,  lng: 10 }
+ *   ], [
+ *     { lat: 0, lng: 15 },
+ *     { lat: 0, lng: 20 },
+ *     { lat: 5, lng: 20 },
+ *     { lat: 5, lng: 15 },
+ *     { lat: 0, lng: 15 }
+ *   ]]
+ * }
+ * ```
+ */
+var AgmPolygon = (function () {
+    function AgmPolygon(_polygonManager) {
+        this._polygonManager = _polygonManager;
+        /**
+         * Indicates whether this Polygon handles mouse events. Defaults to true.
+         */
+        this.clickable = true;
+        /**
+         * If set to true, the user can drag this shape over the map. The geodesic
+         * property defines the mode of dragging. Defaults to false.
+         */
+        // tslint:disable-next-line:no-input-rename
+        this.draggable = false;
+        /**
+         * If set to true, the user can edit this shape by dragging the control
+         * points shown at the vertices and on each segment. Defaults to false.
+         */
+        this.editable = false;
+        /**
+         * When true, edges of the polygon are interpreted as geodesic and will
+         * follow the curvature of the Earth. When false, edges of the polygon are
+         * rendered as straight lines in screen space. Note that the shape of a
+         * geodesic polygon may appear to change when dragged, as the dimensions
+         * are maintained relative to the surface of the earth. Defaults to false.
+         */
+        this.geodesic = false;
+        /**
+         * The ordered sequence of coordinates that designates a closed loop.
+         * Unlike polylines, a polygon may consist of one or more paths.
+         *  As a result, the paths property may specify one or more arrays of
+         * LatLng coordinates. Paths are closed automatically; do not repeat the
+         * first vertex of the path as the last vertex. Simple polygons may be
+         * defined using a single array of LatLngs. More complex polygons may
+         * specify an array of arrays. Any simple arrays are converted into Arrays.
+         * Inserting or removing LatLngs from the Array will automatically update
+         * the polygon on the map.
+         */
+        this.paths = [];
+        /**
+         * This event is fired when the DOM click event is fired on the Polygon.
+         */
+        this.polyClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the DOM dblclick event is fired on the Polygon.
+         */
+        this.polyDblClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is repeatedly fired while the user drags the polygon.
+         */
+        this.polyDrag = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the user stops dragging the polygon.
+         */
+        this.polyDragEnd = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the user starts dragging the polygon.
+         */
+        this.polyDragStart = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the DOM mousedown event is fired on the Polygon.
+         */
+        this.polyMouseDown = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the DOM mousemove event is fired on the Polygon.
+         */
+        this.polyMouseMove = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired on Polygon mouseout.
+         */
+        this.polyMouseOut = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired on Polygon mouseover.
+         */
+        this.polyMouseOver = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired whe the DOM mouseup event is fired on the Polygon
+         */
+        this.polyMouseUp = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This even is fired when the Polygon is right-clicked on.
+         */
+        this.polyRightClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this._polygonAddedToManager = false;
+        this._subscriptions = [];
+    }
+    /** @internal */
+    AgmPolygon.prototype.ngAfterContentInit = function () {
+        if (!this._polygonAddedToManager) {
+            this._init();
+        }
+    };
+    AgmPolygon.prototype.ngOnChanges = function (changes) {
+        if (!this._polygonAddedToManager) {
+            this._init();
+            return;
+        }
+        this._polygonManager.setPolygonOptions(this, this._updatePolygonOptions(changes));
+    };
+    AgmPolygon.prototype._init = function () {
+        this._polygonManager.addPolygon(this);
+        this._polygonAddedToManager = true;
+        this._addEventListeners();
+    };
+    AgmPolygon.prototype._addEventListeners = function () {
+        var _this = this;
+        var handlers = [
+            { name: 'click', handler: function (ev) { return _this.polyClick.emit(ev); } },
+            { name: 'dbclick', handler: function (ev) { return _this.polyDblClick.emit(ev); } },
+            { name: 'drag', handler: function (ev) { return _this.polyDrag.emit(ev); } },
+            { name: 'dragend', handler: function (ev) { return _this.polyDragEnd.emit(ev); } },
+            { name: 'dragstart', handler: function (ev) { return _this.polyDragStart.emit(ev); } },
+            { name: 'mousedown', handler: function (ev) { return _this.polyMouseDown.emit(ev); } },
+            { name: 'mousemove', handler: function (ev) { return _this.polyMouseMove.emit(ev); } },
+            { name: 'mouseout', handler: function (ev) { return _this.polyMouseOut.emit(ev); } },
+            { name: 'mouseover', handler: function (ev) { return _this.polyMouseOver.emit(ev); } },
+            { name: 'mouseup', handler: function (ev) { return _this.polyMouseUp.emit(ev); } },
+            { name: 'rightclick', handler: function (ev) { return _this.polyRightClick.emit(ev); } },
+        ];
+        handlers.forEach(function (obj) {
+            var os = _this._polygonManager.createEventObservable(obj.name, _this).subscribe(obj.handler);
+            _this._subscriptions.push(os);
+        });
+    };
+    AgmPolygon.prototype._updatePolygonOptions = function (changes) {
+        return Object.keys(changes)
+            .filter(function (k) { return AgmPolygon._polygonOptionsAttributes.indexOf(k) !== -1; })
+            .reduce(function (obj, k) {
+            obj[k] = changes[k].currentValue;
+            return obj;
+        }, {});
+    };
+    /** @internal */
+    AgmPolygon.prototype.id = function () { return this._id; };
+    /** @internal */
+    AgmPolygon.prototype.ngOnDestroy = function () {
+        this._polygonManager.deletePolygon(this);
+        // unsubscribe all registered observable subscriptions
+        this._subscriptions.forEach(function (s) { return s.unsubscribe(); });
+    };
+    return AgmPolygon;
+}());
+
+AgmPolygon._polygonOptionsAttributes = [
+    'clickable', 'draggable', 'editable', 'fillColor', 'fillOpacity', 'geodesic', 'icon', 'map',
+    'paths', 'strokeColor', 'strokeOpacity', 'strokeWeight', 'visible', 'zIndex', 'draggable',
+    'editable', 'visible'
+];
+AgmPolygon.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */], args: [{
+                selector: 'agm-polygon'
+            },] },
+];
+/** @nocollapse */
+AgmPolygon.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__services_managers_polygon_manager__["a" /* PolygonManager */], },
+]; };
+AgmPolygon.propDecorators = {
+    'clickable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'draggable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */], args: ['polyDraggable',] },],
+    'editable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'fillColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'fillOpacity': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'geodesic': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'paths': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokeColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokeOpacity': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokeWeight': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'visible': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'zIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'polyClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyDblClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyDrag': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyDragEnd': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyDragStart': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyMouseDown': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyMouseMove': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyMouseOut': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyMouseOver': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyMouseUp': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'polyRightClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+};
+//# sourceMappingURL=polygon.js.map
+
+/***/ }),
+
+/***/ 383:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmPolyline; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_managers_polyline_manager__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polyline_point__ = __webpack_require__(369);
+
+
+
+var polylineId = 0;
+/**
+ * AgmPolyline renders a polyline on a {@link AgmMap}
+ *
+ * ### Example
+ * ```typescript
+ * import { Component } from '@angular/core';
+ *
+ * @Component({
+ *  selector: 'my-map-cmp',
+ *  styles: [`
+ *    .agm-map-container {
+ *      height: 300px;
+ *    }
+ * `],
+ *  template: `
+ *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+ *      <agm-polyline>
+ *          <agm-polyline-point [latitude]="latA" [longitude]="lngA">
+ *          </agm-polyline-point>
+ *          <agm-polyline-point [latitude]="latB" [longitude]="lngB">
+ *          </agm-polyline-point>
+ *      </agm-polyline>
+ *    </agm-map>
+ *  `
+ * })
+ * ```
+ */
+var AgmPolyline = (function () {
+    function AgmPolyline(_polylineManager) {
+        this._polylineManager = _polylineManager;
+        /**
+         * Indicates whether this Polyline handles mouse events. Defaults to true.
+         */
+        this.clickable = true;
+        /**
+         * If set to true, the user can drag this shape over the map. The geodesic property defines the
+         * mode of dragging. Defaults to false.
+         */
+        // tslint:disable-next-line:no-input-rename
+        this.draggable = false;
+        /**
+         * If set to true, the user can edit this shape by dragging the control points shown at the
+         * vertices and on each segment. Defaults to false.
+         */
+        this.editable = false;
+        /**
+         * When true, edges of the polygon are interpreted as geodesic and will follow the curvature of
+         * the Earth. When false, edges of the polygon are rendered as straight lines in screen space.
+         * Note that the shape of a geodesic polygon may appear to change when dragged, as the dimensions
+         * are maintained relative to the surface of the earth. Defaults to false.
+         */
+        this.geodesic = false;
+        /**
+         * Whether this polyline is visible on the map. Defaults to true.
+         */
+        this.visible = true;
+        /**
+         * This event is fired when the DOM click event is fired on the Polyline.
+         */
+        this.lineClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the DOM dblclick event is fired on the Polyline.
+         */
+        this.lineDblClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is repeatedly fired while the user drags the polyline.
+         */
+        this.lineDrag = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the user stops dragging the polyline.
+         */
+        this.lineDragEnd = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the user starts dragging the polyline.
+         */
+        this.lineDragStart = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the DOM mousedown event is fired on the Polyline.
+         */
+        this.lineMouseDown = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired when the DOM mousemove event is fired on the Polyline.
+         */
+        this.lineMouseMove = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired on Polyline mouseout.
+         */
+        this.lineMouseOut = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired on Polyline mouseover.
+         */
+        this.lineMouseOver = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This event is fired whe the DOM mouseup event is fired on the Polyline
+         */
+        this.lineMouseUp = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        /**
+         * This even is fired when the Polyline is right-clicked on.
+         */
+        this.lineRightClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this._polylineAddedToManager = false;
+        this._subscriptions = [];
+        this._id = (polylineId++).toString();
+    }
+    /** @internal */
+    AgmPolyline.prototype.ngAfterContentInit = function () {
+        var _this = this;
+        if (this.points.length) {
+            this.points.forEach(function (point) {
+                var s = point.positionChanged.subscribe(function () { _this._polylineManager.updatePolylinePoints(_this); });
+                _this._subscriptions.push(s);
+            });
+        }
+        if (!this._polylineAddedToManager) {
+            this._init();
+        }
+        var s = this.points.changes.subscribe(function () { return _this._polylineManager.updatePolylinePoints(_this); });
+        this._subscriptions.push(s);
+        this._polylineManager.updatePolylinePoints(this);
+    };
+    AgmPolyline.prototype.ngOnChanges = function (changes) {
+        if (!this._polylineAddedToManager) {
+            this._init();
+            return;
+        }
+        var options = {};
+        var optionKeys = Object.keys(changes).filter(function (k) { return AgmPolyline._polylineOptionsAttributes.indexOf(k) !== -1; });
+        optionKeys.forEach(function (k) { return options[k] = changes[k].currentValue; });
+        this._polylineManager.setPolylineOptions(this, options);
+    };
+    AgmPolyline.prototype._init = function () {
+        this._polylineManager.addPolyline(this);
+        this._polylineAddedToManager = true;
+        this._addEventListeners();
+    };
+    AgmPolyline.prototype._addEventListeners = function () {
+        var _this = this;
+        var handlers = [
+            { name: 'click', handler: function (ev) { return _this.lineClick.emit(ev); } },
+            { name: 'dblclick', handler: function (ev) { return _this.lineDblClick.emit(ev); } },
+            { name: 'drag', handler: function (ev) { return _this.lineDrag.emit(ev); } },
+            { name: 'dragend', handler: function (ev) { return _this.lineDragEnd.emit(ev); } },
+            { name: 'dragstart', handler: function (ev) { return _this.lineDragStart.emit(ev); } },
+            { name: 'mousedown', handler: function (ev) { return _this.lineMouseDown.emit(ev); } },
+            { name: 'mousemove', handler: function (ev) { return _this.lineMouseMove.emit(ev); } },
+            { name: 'mouseout', handler: function (ev) { return _this.lineMouseOut.emit(ev); } },
+            { name: 'mouseover', handler: function (ev) { return _this.lineMouseOver.emit(ev); } },
+            { name: 'mouseup', handler: function (ev) { return _this.lineMouseUp.emit(ev); } },
+            { name: 'rightclick', handler: function (ev) { return _this.lineRightClick.emit(ev); } },
+        ];
+        handlers.forEach(function (obj) {
+            var os = _this._polylineManager.createEventObservable(obj.name, _this).subscribe(obj.handler);
+            _this._subscriptions.push(os);
+        });
+    };
+    /** @internal */
+    AgmPolyline.prototype._getPoints = function () {
+        if (this.points) {
+            return this.points.toArray();
+        }
+        return [];
+    };
+    /** @internal */
+    AgmPolyline.prototype.id = function () { return this._id; };
+    /** @internal */
+    AgmPolyline.prototype.ngOnDestroy = function () {
+        this._polylineManager.deletePolyline(this);
+        // unsubscribe all registered observable subscriptions
+        this._subscriptions.forEach(function (s) { return s.unsubscribe(); });
+    };
+    return AgmPolyline;
+}());
+
+AgmPolyline._polylineOptionsAttributes = [
+    'draggable', 'editable', 'visible', 'geodesic', 'strokeColor', 'strokeOpacity', 'strokeWeight',
+    'zIndex'
+];
+AgmPolyline.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */], args: [{
+                selector: 'agm-polyline'
+            },] },
+];
+/** @nocollapse */
+AgmPolyline.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__services_managers_polyline_manager__["a" /* PolylineManager */], },
+]; };
+AgmPolyline.propDecorators = {
+    'clickable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'draggable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */], args: ['polylineDraggable',] },],
+    'editable': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'geodesic': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokeColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokeOpacity': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'strokeWeight': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'visible': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'zIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */] },],
+    'lineClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineDblClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineDrag': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineDragEnd': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineDragStart': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineMouseDown': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineMouseMove': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineMouseOut': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineMouseOver': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineMouseUp': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'lineRightClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Output */] },],
+    'points': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ContentChildren */], args: [__WEBPACK_IMPORTED_MODULE_2__polyline_point__["a" /* AgmPolylinePoint */],] },],
+};
+//# sourceMappingURL=polyline.js.map
+
+/***/ }),
+
+/***/ 384:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return WindowRef; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return DocumentRef; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BROWSER_GLOBALS_PROVIDERS; });
+var WindowRef = (function () {
+    function WindowRef() {
+    }
+    WindowRef.prototype.getNativeWindow = function () { return window; };
+    return WindowRef;
+}());
+
+var DocumentRef = (function () {
+    function DocumentRef() {
+    }
+    DocumentRef.prototype.getNativeDocument = function () { return document; };
+    return DocumentRef;
+}());
+
+var BROWSER_GLOBALS_PROVIDERS = [WindowRef, DocumentRef];
+//# sourceMappingURL=browser-globals.js.map
+
+/***/ }),
+
+/***/ 385:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppSettings; });
+var AppSettings = Object.freeze({
+    "IS_FIREBASE_ENABLED": false,
+    "SHOW_START_WIZARD": false,
+    "SUBSCRIBE": false,
+    "TOAST": {
+        "duration": 1000,
+        "position": "buttom"
+    },
+    "FIREBASE_CONFIG": {
+        "apiKey": "AIzaSyCYOVrRscQ26G5lAmOSfwrBFncNidaCSOE",
+        "authDomain": "ionic3-blue-light.firebaseapp.com",
+        "databaseURL": "https://ionic3-blue-light.firebaseio.com",
+        "projectId": "ionic3-blue-light",
+        "storageBucket": "ionic3-blue-light.appspot.com",
+        "messagingSenderId": "519928359775"
+    },
+    "MAP_KEY": {
+        "apiKey": 'AIzaSyA4-GoZzOqYTvxMe52YQZch5JaCFN6ACLg'
+    }
+});
+//# sourceMappingURL=app-settings.js.map
+
+/***/ }),
+
+/***/ 386:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__directives__ = __webpack_require__(387);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services__ = __webpack_require__(388);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_module__ = __webpack_require__(390);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__core_module__["a"]; });
+// main modules
+
+
+// core module
+// we explicitly export the module here to prevent this Ionic 2 bug:
+// http://stevemichelotti.com/integrate-angular-2-google-maps-into-ionic-2/
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 387:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__directives_map__ = __webpack_require__(377);
+/* unused harmony reexport AgmMap */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_circle__ = __webpack_require__(378);
+/* unused harmony reexport AgmCircle */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_info_window__ = __webpack_require__(368);
+/* unused harmony reexport AgmInfoWindow */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_kml_layer__ = __webpack_require__(379);
+/* unused harmony reexport AgmKmlLayer */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_data_layer__ = __webpack_require__(380);
+/* unused harmony reexport AgmDataLayer */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_marker__ = __webpack_require__(381);
+/* unused harmony reexport AgmMarker */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_polygon__ = __webpack_require__(382);
+/* unused harmony reexport AgmPolygon */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_polyline__ = __webpack_require__(383);
+/* unused harmony reexport AgmPolyline */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_polyline_point__ = __webpack_require__(369);
+/* unused harmony reexport AgmPolylinePoint */
+
+
+
+
+
+
+
+
+
+//# sourceMappingURL=directives.js.map
+
+/***/ }),
+
+/***/ 388:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__services_google_maps_api_wrapper__ = __webpack_require__(356);
+/* unused harmony reexport GoogleMapsAPIWrapper */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_managers_circle_manager__ = __webpack_require__(362);
+/* unused harmony reexport CircleManager */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_managers_info_window_manager__ = __webpack_require__(363);
+/* unused harmony reexport InfoWindowManager */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_managers_marker_manager__ = __webpack_require__(359);
+/* unused harmony reexport MarkerManager */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_managers_polygon_manager__ = __webpack_require__(364);
+/* unused harmony reexport PolygonManager */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_managers_polyline_manager__ = __webpack_require__(365);
+/* unused harmony reexport PolylineManager */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_managers_kml_layer_manager__ = __webpack_require__(366);
+/* unused harmony reexport KmlLayerManager */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_managers_data_layer_manager__ = __webpack_require__(367);
+/* unused harmony reexport DataLayerManager */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_maps_api_loader_lazy_maps_api_loader__ = __webpack_require__(370);
+/* unused harmony reexport GoogleMapsScriptProtocol */
+/* unused harmony reexport LAZY_MAPS_API_CONFIG */
+/* unused harmony reexport LazyMapsAPILoader */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_maps_api_loader_maps_api_loader__ = __webpack_require__(358);
+/* unused harmony reexport MapsAPILoader */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_maps_api_loader_noop_maps_api_loader__ = __webpack_require__(389);
+/* unused harmony reexport NoOpMapsAPILoader */
+
+
+
+
+
+
+
+
+
+
+
+//# sourceMappingURL=services.js.map
+
+/***/ }),
+
+/***/ 389:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export NoOpMapsAPILoader */
+/**
+ * When using the NoOpMapsAPILoader, the Google Maps API must be added to the page via a `<script>`
+ * Tag.
+ * It's important that the Google Maps API script gets loaded first on the page.
+ */
+var NoOpMapsAPILoader = (function () {
+    function NoOpMapsAPILoader() {
+    }
+    NoOpMapsAPILoader.prototype.load = function () {
+        if (!window.google || !window.google.maps) {
+            throw new Error('Google Maps API not loaded on page. Make sure window.google.maps is available!');
+        }
+        return Promise.resolve();
+    };
+    return NoOpMapsAPILoader;
+}());
+
+//# sourceMappingURL=noop-maps-api-loader.js.map
+
+/***/ }),
+
+/***/ 390:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export coreDirectives */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgmCoreModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_map__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_circle__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_info_window__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_marker__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_polygon__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_polyline__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_polyline_point__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_kml_layer__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_data_layer__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_maps_api_loader_lazy_maps_api_loader__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_maps_api_loader_maps_api_loader__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__utils_browser_globals__ = __webpack_require__(384);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * @internal
+ */
+function coreDirectives() {
+    return [
+        __WEBPACK_IMPORTED_MODULE_1__directives_map__["a" /* AgmMap */], __WEBPACK_IMPORTED_MODULE_4__directives_marker__["a" /* AgmMarker */], __WEBPACK_IMPORTED_MODULE_3__directives_info_window__["a" /* AgmInfoWindow */], __WEBPACK_IMPORTED_MODULE_2__directives_circle__["a" /* AgmCircle */],
+        __WEBPACK_IMPORTED_MODULE_5__directives_polygon__["a" /* AgmPolygon */], __WEBPACK_IMPORTED_MODULE_6__directives_polyline__["a" /* AgmPolyline */], __WEBPACK_IMPORTED_MODULE_7__directives_polyline_point__["a" /* AgmPolylinePoint */], __WEBPACK_IMPORTED_MODULE_8__directives_kml_layer__["a" /* AgmKmlLayer */],
+        __WEBPACK_IMPORTED_MODULE_9__directives_data_layer__["a" /* AgmDataLayer */]
+    ];
+}
+/**
+ * The angular-google-maps core module. Contains all Directives/Services/Pipes
+ * of the core module. Please use `AgmCoreModule.forRoot()` in your app module.
+ */
+var AgmCoreModule = (function () {
+    function AgmCoreModule() {
+    }
+    /**
+     * Please use this method when you register the module at the root level.
+     */
+    AgmCoreModule.forRoot = function (lazyMapsAPILoaderConfig) {
+        return {
+            ngModule: AgmCoreModule,
+            providers: __WEBPACK_IMPORTED_MODULE_12__utils_browser_globals__["a" /* BROWSER_GLOBALS_PROVIDERS */].concat([
+                { provide: __WEBPACK_IMPORTED_MODULE_11__services_maps_api_loader_maps_api_loader__["a" /* MapsAPILoader */], useClass: __WEBPACK_IMPORTED_MODULE_10__services_maps_api_loader_lazy_maps_api_loader__["b" /* LazyMapsAPILoader */] },
+                { provide: __WEBPACK_IMPORTED_MODULE_10__services_maps_api_loader_lazy_maps_api_loader__["a" /* LAZY_MAPS_API_CONFIG */], useValue: lazyMapsAPILoaderConfig }
+            ]),
+        };
+    };
+    return AgmCoreModule;
+}());
+
+AgmCoreModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */], args: [{ declarations: coreDirectives(), exports: coreDirectives() },] },
+];
+/** @nocollapse */
+AgmCoreModule.ctorParameters = function () { return []; };
+//# sourceMappingURL=core.module.js.map
+
+/***/ }),
+
+/***/ 424:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapsLayout1; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MapsLayout1 = (function () {
+    function MapsLayout1() {
+    }
+    MapsLayout1.prototype.onEvent = function (event, index, e) {
+        if (this.events[event]) {
+            this.events[event](index);
+        }
+    };
+    MapsLayout1.prototype.onStarClass = function (items, index, e) {
+        for (var i = 0; i < items.length; i++) {
+            items[i].isActive = i <= index;
+        }
+        this.onEvent("onRates", index, e);
+    };
+    ;
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], MapsLayout1.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], MapsLayout1.prototype, "events", void 0);
+    MapsLayout1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'maps-layout-1',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/maps/layout-1/maps.html"*/'<!--Theme GMAPS + Location  Details -->\n\n<!--Content -->\n\n<ion-content elastic-header has-header>\n\n    <div id="elastic-header">\n\n        <agm-map *ngIf="data != null" [latitude]="data.map.lat" [longitude]="data.map.lng" [zoom]="data.map.zoom" [mapTypeControl]="data.map.mapTypeControl" [streetViewControl]="data.map.streetViewControl">\n\n            <agm-marker [latitude]="data.map.lat" [longitude]="data.map.lng"></agm-marker>\n\n        </agm-map>\n\n    </div>\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <ion-row>\n\n            <ion-col col-12 map-header>\n\n                <ion-item no-lines transparent>\n\n                    <!--Parallax Rateing-->\n\n                    <ion-icon white *ngFor="let item of data.iconsStars;let i = index" (click)="onStarClass(data.iconsStars, i, $event)">\n\n                        <i icon-medium *ngIf="item.isActive" class="icon {{item.iconActive}}"></i>\n\n                        <i icon-medium *ngIf="!item.isActive" class="icon {{item.iconInactive}}"></i>\n\n                    </ion-icon>\n\n                    <p>{{data.reviews}}</p>\n\n                    <h1 maps-title margin-top>{{data.title}}</h1>\n\n                    <h2 maps-subtitle>{{data.titleDescription}}</h2>\n\n                    <div white social float-right>\n\n                        <ion-icon (click)="onEvent(\'onLike\', data)">\n\n                            <i class="icon {{data.iconLike}}"></i>\n\n                        </ion-icon>\n\n                        <ion-icon (click)="onEvent(\'onFavorite\', data)">\n\n                            <i class="icon {{data.iconFavorite}}"></i>\n\n                        </ion-icon>\n\n                        <ion-icon (click)="onEvent(\'onShare\', data)">\n\n                            <i class="icon {{data.iconShare}}"></i>\n\n                        </ion-icon>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-col>\n\n            <!---Content-->\n\n            <ion-col col-12 map-content transparent>\n\n                <ion-item padding no-lines padding-left>\n\n                    <h2 title>{{data.contentTitle}}</h2>\n\n                    <p maps-description text-wrap>{{data.contentDescription}}</p>\n\n                </ion-item>\n\n            </ion-col>\n\n            <!---Content Info-->\n\n            <ion-col col-12 map-content>\n\n                <ion-list info>\n\n                    <ion-item no-lines padding-left>\n\n                        <ion-icon item-left icon-small>\n\n                            <i class="icon {{data.iconLoacation}}"></i>\n\n                        </ion-icon>\n\n                        <p no-margin maps-description>{{data.iconLoacationText}}</p>\n\n                    </ion-item>\n\n                    <ion-item no-lines padding-left>\n\n                        <ion-icon item-left icon-small>\n\n                            <i class="icon {{data.iconWatch}}"></i>\n\n                        </ion-icon>\n\n                        <p no-margin maps-description>{{data.iconWatchText}}</p>\n\n                    </ion-item>\n\n                    <ion-item no-lines padding-left>\n\n                        <ion-icon item-left icon-small>\n\n                            <i class="icon {{data.iconPhone}}"></i>\n\n                        </ion-icon>\n\n                        <p no-margin maps-description>{{data.iconPhoneText}}</p>\n\n                    </ion-item>\n\n                    <ion-item no-lines padding-left>\n\n                        <ion-icon item-left icon-small>\n\n                            <i class="icon {{data.iconEarth}}"></i>\n\n                        </ion-icon>\n\n                        <p no-margin maps-description>{{data.iconEarthText}}</p>\n\n                    </ion-item>\n\n                    <ion-item no-lines padding-left>\n\n                        <ion-icon item-left icon-small>\n\n                            <i class="icon {{data.iconEmail}}"></i>\n\n                        </ion-icon>\n\n                        <p no-margin maps-description>{{data.iconEmailText}}</p>\n\n                    </ion-item>\n\n                </ion-list>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/maps/layout-1/maps.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], MapsLayout1);
+    return MapsLayout1;
+}());
+
+//# sourceMappingURL=maps-layout-1.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=0.js.map

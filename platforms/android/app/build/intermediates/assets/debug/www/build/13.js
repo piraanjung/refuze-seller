@@ -1,14 +1,15 @@
 webpackJsonp([13],{
 
-/***/ 345:
+/***/ 279:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PurchaseItemsModalPageModule", function() { return PurchaseItemsModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActionSheetLayout1Module", function() { return ActionSheetLayout1Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__purchase_items_modal__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__action_sheet_layout_1__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__elastic_header_elastic_header_module__ = __webpack_require__(360);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +19,141 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PurchaseItemsModalPageModule = (function () {
-    function PurchaseItemsModalPageModule() {
+
+var ActionSheetLayout1Module = (function () {
+    function ActionSheetLayout1Module() {
     }
-    PurchaseItemsModalPageModule = __decorate([
+    ActionSheetLayout1Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__purchase_items_modal__["a" /* PurchaseItemsModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__action_sheet_layout_1__["a" /* ActionSheetLayout1 */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__purchase_items_modal__["a" /* PurchaseItemsModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__action_sheet_layout_1__["a" /* ActionSheetLayout1 */]),
+                __WEBPACK_IMPORTED_MODULE_3__elastic_header_elastic_header_module__["a" /* ElasticHeaderModule */]
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__action_sheet_layout_1__["a" /* ActionSheetLayout1 */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
         })
-    ], PurchaseItemsModalPageModule);
-    return PurchaseItemsModalPageModule;
+    ], ActionSheetLayout1Module);
+    return ActionSheetLayout1Module;
 }());
 
-//# sourceMappingURL=purchase-items-modal.module.js.map
+//# sourceMappingURL=action-sheet-layout-1.module.js.map
 
 /***/ }),
 
-/***/ 460:
+/***/ 360:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseItemsModalPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElasticHeaderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__elastic_header__ = __webpack_require__(361);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var ElasticHeaderModule = (function () {
+    function ElasticHeaderModule() {
+    }
+    ElasticHeaderModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_1__elastic_header__["a" /* ElasticHeader */],
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_1__elastic_header__["a" /* ElasticHeader */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], ElasticHeaderModule);
+    return ElasticHeaderModule;
+}());
+
+//# sourceMappingURL=elastic-header.module.js.map
+
+/***/ }),
+
+/***/ 361:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElasticHeader; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ElasticHeader = (function () {
+    function ElasticHeader(element, renderer) {
+        this.element = element;
+        this.renderer = renderer;
+    }
+    ElasticHeader.prototype.ngOnInit = function () {
+        var _this = this;
+        this.scrollerHandle = this.element.nativeElement.getElementsByClassName('scroll-content')[0];
+        this.header = this.scrollerHandle.firstElementChild;
+        this.headerHeight = this.scrollerHandle.clientHeight;
+        this.ticking = false;
+        this.renderer.setElementStyle(this.header, 'webkitTransformOrigin', 'center bottom');
+        window.addEventListener('resize', function () {
+            _this.headerHeight = _this.scrollerHandle.clientHeight;
+        }, false);
+        this.scrollerHandle.addEventListener('scroll', function () {
+            if (!_this.ticking) {
+                window.requestAnimationFrame(function () {
+                    _this.updateElasticHeader();
+                });
+            }
+            _this.ticking = true;
+        });
+    };
+    ElasticHeader.prototype.updateElasticHeader = function () {
+        this.scrollTop = this.scrollerHandle.scrollTop;
+        if (this.scrollTop >= 0) {
+            this.translateAmt = this.scrollTop / 2;
+            this.scaleAmt = 1;
+        }
+        else {
+            this.translateAmt = 0;
+            this.scaleAmt = -this.scrollTop / this.headerHeight + 1;
+        }
+        this.renderer.setElementStyle(this.header, 'webkitTransform', 'translate3d(0,' + this.translateAmt + 'px,0) scale(' + this.scaleAmt + ',' + this.scaleAmt + ')');
+        this.ticking = false;
+    };
+    ElasticHeader = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */])({
+            selector: '[elastic-header]'
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer */]])
+    ], ElasticHeader);
+    return ElasticHeader;
+}());
+
+//# sourceMappingURL=elastic-header.js.map
+
+/***/ }),
+
+/***/ 396:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionSheetLayout1; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,49 +165,75 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var PurchaseItemsModalPage = (function () {
-    function PurchaseItemsModalPage(viewCtrl, navParams) {
-        this.viewCtrl = viewCtrl;
-        this.navParams = navParams;
-        this.amount = 1;
+var ActionSheetLayout1 = (function () {
+    function ActionSheetLayout1(actionSheetCtrl) {
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.headerImage = "";
     }
-    PurchaseItemsModalPage.prototype.ionViewWillLoad = function () {
-        this.item = this.navParams.get('item');
-        this.id = this.item.id;
-        this.name = this.item.name;
-        this.unit_name = this.item.unit_name;
-        this.price = this.item.price;
-        this.balance = (this.amount * this.price);
-        var items = JSON.parse(localStorage.getItem('purchaseItems')) || [];
-        this.items = items;
+    ActionSheetLayout1.prototype.onEvent = function (event, item, e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        if (this.events[event]) {
+            this.events[event](item);
+        }
     };
-    PurchaseItemsModalPage.prototype.dismiss = function () {
-        this.viewCtrl.dismiss('close');
+    ActionSheetLayout1.prototype.ngOnChanges = function (changes) {
+        if (changes.data && changes.data.currentValue) {
+            this.headerImage = changes.data.currentValue.headerImage;
+        }
+        this.subscribeToIonScroll();
     };
-    PurchaseItemsModalPage.prototype.addNewItem = function () {
-        this.balance = (this.amount * this.price);
-        var item = {
-            name: this.name,
-            unit_name: this.unit_name,
-            item_id: this.id,
-            price: this.price,
-            amount: this.amount,
-            balance: this.balance
-        };
-        this.items.push(item);
-        localStorage.setItem('purchaseItems', JSON.stringify(this.items));
-        this.viewCtrl.dismiss({ status: 'status', countItems: this.items.length });
+    ActionSheetLayout1.prototype.ngAfterViewInit = function () {
+        this.subscribeToIonScroll();
     };
-    PurchaseItemsModalPage = __decorate([
+    ActionSheetLayout1.prototype.isClassActive = function () {
+        return this.active;
+    };
+    ActionSheetLayout1.prototype.subscribeToIonScroll = function () {
+        var _this = this;
+        if (this.content != null && this.content.ionScroll != null) {
+            this.content.ionScroll.subscribe(function (d) {
+                if (d.scrollTop < 200) {
+                    _this.active = false;
+                    return;
+                }
+                _this.active = true;
+            });
+        }
+    };
+    ActionSheetLayout1.prototype.presentActionSheet = function (item, index) {
+        var that = this;
+        this.data.actionSheet.buttons.forEach(function (element) {
+            element["handler"] = function () {
+                that.onEvent("onItemClickActionSheet", { "button": element, "item": item }, null);
+            };
+        });
+        var actionSheet = this.actionSheetCtrl.create(this.data.actionSheet);
+        actionSheet.present();
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], ActionSheetLayout1.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], ActionSheetLayout1.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
+    ], ActionSheetLayout1.prototype, "content", void 0);
+    ActionSheetLayout1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-purchase-items-modal',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items-modal/purchase-items-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>PurchaseItemsModal</ion-title>\n    <ion-buttons end>\n      <button ion-button (click)="dismiss()">ปิด</button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n<!--- Theme Parallax Product -->\n<!--- Header Big Image-->\n<ion-content elastic-header>\n  <div padding background-size id="elastic-header" [ngStyle]="{\'background-image\': \'url(assets/images/background/7.jpg)\'}">\n    <div class="title">\n      <h2 parallax-title>{{name}}</h2>\n      <h1 parallax-subtitle>{{ price }}&nbsp;บาท&nbsp;/&nbsp;{{ unit_name }}</h1>\n    </div>\n  </div>\n  <!--Content-->\n  <ion-grid class="grid" no-padding>\n\n    <ion-row class="row">\n\n      <ion-col  col-7 col-lg-4 col-md-7 col-sm-7 col-xl-4>\n\n        <ion-card padding text-center class="card card-md">\n\n          <div card-content>\n\n            <img images-filter src="assets/images/background/0.jpg">\n\n            <div card-title>จำนวน</div>\n\n            <div  class="amount_input">\n                <ion-input required type="number" class="" [(ngModel)]="amount"></ion-input>            \n            </div>\n\n          </div>\n\n        </ion-card>\n\n      </ion-col>\n      <ion-col col-5 col-lg-4 col-md-5 col-sm-5 col-xl-4>\n\n        <ion-card padding text-center class="card card-md">\n\n          <div card-content>\n\n            <img images-filter src="assets/images/background/10.jpg">\n\n            <div card-title>เป็นเงิน</div>\n\n            <div>\n                <div class="total">{{ price * amount }}</div>\n                <div card-subtitle>บาท</div>\n            </div>\n\n          </div>\n\n        </ion-card>\n\n      </ion-col>\n\n\n    </ion-row>\n\n  </ion-grid>\n  <ion-grid no-padding>\n    <ion-item no-padding transparent>\n      <ion-label floating>จำนวน</ion-label>\n      \n    </ion-item>\n  </ion-grid>\n  <ion-col offset-4>\n      <button  ion-button large round color="twitter" (click)="addNewItem()" >\n            บันทึกข้อมูล\n        </button>\n  </ion-col>\n  \n</ion-content>\n\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items-modal/purchase-items-modal.html"*/,
+            selector: 'action-sheet-layout-1',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/action-sheet/layout-1/action-sheet.html"*/'<!--- Theme Parallax Basic -->\n\n<ion-header header-ios>\n\n    <ion-navbar transparent [ngClass]="{\'active\':isClassActive()}">\n\n        <button ion-button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title *ngIf="data != null" text-left>{{data.headerTitle}}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content elastic-header>\n\n    <ion-item no-lines background-size id="elastic-header" [ngStyle]="{\'background-image\': \'url(\' + headerImage + \')\'}">\n\n        <button ion-fixed ion-button default-button button-action-shit (click)="presentActionSheet(data)">\n\n                <ion-icon *ngIf="data != null" name="{{data.shareIcon}}"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n    <!--Content-->\n\n    <ion-grid no-padding>\n\n        <ion-row *ngIf="data != null">\n\n            <ion-col col-12>\n\n                <ion-list no-margin>\n\n                    <ion-item-group *ngFor="let item of data.items" (click)="onEvent(\'onItemClick\', item)">\n\n                        <ion-item-divider no-lines>\n\n                            <span new-category margin-top text-uppercase>{{item.category}}</span>\n\n                            <h2 parallax-title text-wrap>{{item.title}}</h2>\n\n                            <h3 parallax-subtitle text-wrap>{{item.subtitle}}</h3>\n\n                            <ion-badge transparent item-end text-uppercase class="badge-dark">{{item.button}}</ion-badge>\n\n                        </ion-item-divider>\n\n                        <ion-item no-lines no-margin>\n\n                            <p parallax-description text-wrap>{{item.description}}</p>\n\n                        </ion-item>\n\n                        <ion-item no-lines no-margin *ngFor="let productDescription of item.productDescriptions">\n\n                            <p parallax-description text-wrap>{{productDescription.description}}</p>\n\n                        </ion-item>\n\n                    </ion-item-group>\n\n                </ion-list>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/action-sheet/layout-1/action-sheet.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
-    ], PurchaseItemsModalPage);
-    return PurchaseItemsModalPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */]])
+    ], ActionSheetLayout1);
+    return ActionSheetLayout1;
 }());
 
-//# sourceMappingURL=purchase-items-modal.js.map
+//# sourceMappingURL=action-sheet-layout-1.js.map
 
 /***/ })
 

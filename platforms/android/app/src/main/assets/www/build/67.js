@@ -1,1 +1,126 @@
-webpackJsonp([67],{287:function(l,n,u){"use strict";function t(l){return a._20(0,[(l()(),a._0(0,0,null,null,22,"ion-col",[["class","col"],["col-6",""],["col-lg-4",""],["col-md-6",""],["col-sm-3",""],["col-xl-3",""],["no-margin",""],["no-padding",""]],null,null,null,null,null)),a.Z(1,16384,null,0,h.a,[],null,null),(l()(),a._19(-1,null,["\n            "])),(l()(),a._0(3,0,null,null,18,"ion-card",[["background-size",""],["no-margin",""]],null,[[null,"click"]],function(l,n,u){var t=!0,i=l.component;if("click"===n){t=!1!==i.openImageSlider(i.data,l.context.index)&&t}return t},null,null)),a.Z(4,278528,null,0,k.l,[a.q,a.j,a.B],{ngStyle:[0,"ngStyle"]},null),a._15(5,{"background-image":0}),a.Z(6,16384,null,0,b.a,[Z.a,a.j,a.A],null,null),(l()(),a._19(-1,null,["\n                "])),(l()(),a._0(8,0,null,null,12,"div",[["gallery-title",""]],null,null,null,null,null)),(l()(),a._19(-1,null,["\n                    "])),(l()(),a._0(10,0,null,null,1,"h2",[["float-left",""],["item-title",""]],null,null,null,null,null)),(l()(),a._19(11,null,["",""])),(l()(),a._19(-1,null,["\n                    "])),(l()(),a._0(13,0,null,null,6,"ion-icon",[["float-right",""],["role","img"],["white",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.onEvent("onFavorite",l.context.$implicit,u)&&t}return t},null,null)),a.Z(14,147456,null,0,x.a,[Z.a,a.j,a.A],null,null),(l()(),a._19(-1,null,["\n                        "])),(l()(),a._0(16,0,null,null,2,"i",[["class","icon"]],null,null,null,null,null)),a.Z(17,278528,null,0,k.g,[a.p,a.q,a.j,a.B],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a._15(18,{"icon-heart":0,"icon-heart-outline":1}),(l()(),a._19(-1,null,["\n                    "])),(l()(),a._19(-1,null,["\n                "])),(l()(),a._19(-1,null,["\n            "])),(l()(),a._19(-1,null,["\n        "]))],function(l,n){l(n,4,0,l(n,5,0,"url("+n.context.$implicit.image+")"));l(n,17,0,"icon",l(n,18,0,n.context.$implicit.favorite,!n.context.$implicit.favorite))},function(l,n){l(n,11,0,n.context.$implicit.title);l(n,13,0,a._14(n,14)._hidden)})}function i(l){return a._20(0,[(l()(),a._0(0,0,null,null,9,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),a.Z(1,16384,null,0,y.a,[],null,null),(l()(),a._19(-1,null,["\n    "])),(l()(),a._0(3,0,null,null,5,"ion-row",[["class","row"],["no-margin",""],["no-padding",""]],null,null,null,null,null)),a.Z(4,16384,null,0,j.a,[],null,null),(l()(),a._19(-1,null,["\n        "])),(l()(),a.V(16777216,null,null,1,null,t)),a.Z(7,802816,null,0,k.h,[a.J,a.G,a.p],{ngForOf:[0,"ngForOf"]},null),(l()(),a._19(-1,null,["\n    "])),(l()(),a._19(-1,null,["\n"]))],function(l,n){l(n,7,0,n.component.data.items)},null)}function o(l){return a._20(0,[(l()(),a._19(-1,null,["\n"])),(l()(),a.V(16777216,null,null,1,null,i)),a.Z(2,16384,null,0,k.i,[a.J,a.G],{ngIf:[0,"ngIf"]},null),(l()(),a._19(-1,null,["\n"]))],function(l,n){l(n,2,0,null!=n.component.data)},null)}Object.defineProperty(n,"__esModule",{value:!0});var a=u(0),e=(u(5),u(109),function(){return function(l,n){var u=this;this.navCtrl=l,this.onEvent=function(l,n,t){t&&t.stopPropagation(),u.events[l]&&u.events[l](n)},this.openImageSlider=function(l,n){u.navCtrl.push(l.fullscreen,{group:l.items,index:n})}}}()),c=function(){return function(){}}(),r=u(184),_=u(185),s=u(186),g=u(187),d=u(188),f=u(189),m=u(190),p=u(191),v=u(192),h=u(113),k=u(16),b=u(119),Z=u(1),x=u(38),y=u(111),j=u(112),I=u(20),S=u(10),$=a.Y({encapsulation:2,styles:[],data:{}}),w=a.W("sub-image-gallery",e,function(l){return a._20(0,[(l()(),a._0(0,0,null,null,1,"sub-image-gallery",[],null,null,null,o,$)),a.Z(1,49152,null,0,e,[I.a,S.a],null,null)],null,null)},{data:"data",events:"events"},{},[]),C=u(17),F=u(110),G=u(35);u.d(n,"SubImageGalleryModuleNgFactory",function(){return J});var J=a.X(c,[],function(l){return a._11([a._12(512,a.i,a.T,[[8,[r.a,_.a,s.a,g.a,d.a,f.a,m.a,p.a,v.a,w]],[3,a.i],a.s]),a._12(4608,k.k,k.j,[a.r,[2,k.s]]),a._12(4608,C.n,C.n,[]),a._12(4608,C.c,C.c,[]),a._12(512,k.b,k.b,[]),a._12(512,C.m,C.m,[]),a._12(512,C.d,C.d,[]),a._12(512,C.k,C.k,[]),a._12(512,F.a,F.a,[]),a._12(512,F.b,F.b,[]),a._12(512,c,c,[]),a._12(256,G.a,e,[])])})}});
+webpackJsonp([67],{
+
+/***/ 289:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppearanceAnimationLayout3Module", function() { return AppearanceAnimationLayout3Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_3__ = __webpack_require__(406);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var AppearanceAnimationLayout3Module = (function () {
+    function AppearanceAnimationLayout3Module() {
+    }
+    AppearanceAnimationLayout3Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_3__["a" /* AppearanceAnimationLayout3 */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_3__["a" /* AppearanceAnimationLayout3 */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_3__["a" /* AppearanceAnimationLayout3 */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], AppearanceAnimationLayout3Module);
+    return AppearanceAnimationLayout3Module;
+}());
+
+//# sourceMappingURL=appearance-animation-layout-3.module.js.map
+
+/***/ }),
+
+/***/ 406:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppearanceAnimationLayout3; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AppearanceAnimationLayout3 = (function () {
+    function AppearanceAnimationLayout3() {
+        this.animateItems = [];
+        this.animateClass = { 'fade-in-down-item': true };
+    }
+    AppearanceAnimationLayout3.prototype.onEvent = function (event, item, e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        if (this.events[event]) {
+            this.events[event](item);
+        }
+    };
+    AppearanceAnimationLayout3.prototype.ngOnChanges = function (changes) {
+        var that = this;
+        that.data = changes['data'].currentValue;
+        if (that.data && that.data.items) {
+            var _loop_1 = function (i) {
+                setTimeout(function () {
+                    that.animateItems.push(that.data.items[i]);
+                }, 200 * i);
+            };
+            for (var i = 0; i < that.data.items.length; i++) {
+                _loop_1(i);
+            }
+        }
+    };
+    AppearanceAnimationLayout3.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.content.ionScroll.subscribe(function (d) {
+            _this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AppearanceAnimationLayout3.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AppearanceAnimationLayout3.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
+    ], AppearanceAnimationLayout3.prototype, "content", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
+    ], AppearanceAnimationLayout3.prototype, "fabButton", void 0);
+    AppearanceAnimationLayout3 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'appearance-animation-layout-3',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/appearance-animation/layout-3/appearance-animation.html"*/'<!--Theme Appearance animation (Fade In Down)-->\n\n<ion-content has-header>\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <ion-row>\n\n            <ion-col col-12>\n\n                <ion-list no-margin>\n\n                    <ion-item no-lines [ngClass]="animateClass" *ngFor="let item of animateItems; let i = index;" (click)="onEvent(\'onItemClick\', item.title, $event)">\n\n                        <ion-avatar item-start>\n\n                            <img [src]="item.image" alt="{{item.title}}" />\n\n                        </ion-avatar>\n\n                        <h2 item-title padding-left>{{item.title}}</h2>\n\n                        <ion-icon icon-small item-right (click)="onEvent(\'onFavorite\', item, $event)">\n\n                            <i class="icon" [ngClass]="{\'icon-heart\': item.favorite, \'icon-heart-outline\': !item.favorite}"></i>\n\n                        </ion-icon>\n\n                    </ion-item>\n\n                </ion-list>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n<ion-fab #fab bottom right>\n\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n\n    <ion-icon name="add"></ion-icon>\n\n  </button>\n\n</ion-fab>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/appearance-animation/layout-3/appearance-animation.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], AppearanceAnimationLayout3);
+    return AppearanceAnimationLayout3;
+}());
+
+//# sourceMappingURL=appearance-animation-layout-3.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=67.js.map

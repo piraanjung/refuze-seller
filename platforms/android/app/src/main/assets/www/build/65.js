@@ -1,1 +1,126 @@
-webpackJsonp([65],{234:function(l,n,u){"use strict";function t(l){return i._20(0,[(l()(),i._0(0,0,null,null,20,"ion-item",[["class","item item-block"],["no-lines",""]],null,[[null,"tap"]],function(l,n,u){var t=!0;if("tap"===n){t=!1!==l.component.onEvent("onButton",l.context.$implicit)&&t}return t},p.b,p.a)),i.Z(1,1097728,null,3,h.a,[x.a,Z.a,i.j,i.A,[2,g.a]],null,null),i._17(335544320,1,{contentLabel:0}),i._17(603979776,2,{_buttons:1}),i._17(603979776,3,{_icons:1}),i.Z(5,16384,null,0,y.a,[],null,null),(l()(),i._19(-1,2,["\n                    "])),(l()(),i._0(7,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),i.Z(8,16384,null,0,j.a,[],null,null),(l()(),i._19(-1,null,["\n                        "])),(l()(),i._0(10,0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),i._19(-1,null,["\n                    "])),(l()(),i._19(-1,2,["\n                    "])),(l()(),i._0(13,0,null,1,2,"ion-label",[["item-title",""]],null,null,null,null,null)),i.Z(14,16384,[[1,4]],0,A.a,[Z.a,i.j,i.A,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),i._19(15,null,["",""])),(l()(),i._19(-1,2,["\n                    "])),(l()(),i._0(17,0,null,4,2,"ion-checkbox",[["item-right",""]],[[2,"checkbox-disabled",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==i._14(l,19)._click(u)&&t}return t},$.b,$.a)),i._16(5120,null,w.f,function(l){return[l]},[F.a]),i.Z(19,1228800,null,0,F.a,[Z.a,x.a,[2,h.a],i.j,i.A],{checked:[0,"checked"]},null),(l()(),i._19(-1,2,["\n                "]))],function(l,n){l(n,19,0,n.context.$implicit.favorite)},function(l,n){l(n,10,0,n.context.$implicit.image);l(n,15,0,n.context.$implicit.title);l(n,17,0,i._14(n,19)._disabled)})}function a(l){return i._20(0,[(l()(),i._0(0,0,null,null,17,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),i.Z(1,16384,null,0,I.a,[],null,null),(l()(),i._19(-1,null,["\n    "])),(l()(),i._0(3,0,null,null,13,"ion-row",[["class","row"]],null,null,null,null,null)),i.Z(4,16384,null,0,J.a,[],null,null),(l()(),i._19(-1,null,["\n        "])),(l()(),i._0(6,0,null,null,9,"ion-col",[["class","col"],["col-12",""],["no-padding",""]],null,null,null,null,null)),i.Z(7,16384,null,0,O.a,[],null,null),(l()(),i._19(-1,null,["\n            "])),(l()(),i._0(9,0,null,null,5,"ion-list",[],null,null,null,null,null)),i.Z(10,16384,null,0,B.a,[Z.a,i.j,i.A,E.a,G.l,L.a],null,null),(l()(),i._19(-1,null,["\n                "])),(l()(),i.V(16777216,null,null,1,null,t)),i.Z(13,802816,null,0,M.h,[i.J,i.G,i.p],{ngForOf:[0,"ngForOf"]},null),(l()(),i._19(-1,null,["\n            "])),(l()(),i._19(-1,null,["\n        "])),(l()(),i._19(-1,null,["\n    "])),(l()(),i._19(-1,null,["\n"]))],function(l,n){l(n,13,0,n.component.data)},null)}function e(l){return i._20(0,[(l()(),i._19(-1,null,["\n"])),(l()(),i.V(16777216,null,null,1,null,a)),i.Z(2,16384,null,0,M.i,[i.J,i.G],{ngIf:[0,"ngIf"]},null),(l()(),i._19(-1,null,["\n"]))],function(l,n){l(n,2,0,null!=n.component.data)},null)}Object.defineProperty(n,"__esModule",{value:!0});var i=u(0),c=(u(5),u(109),function(){return function(){var l=this;this.onEvent=function(n,u){l.events[n]&&l.events[n](u)}}}()),o=function(){return function(){}}(),_=u(184),r=u(185),s=u(186),d=u(187),b=u(188),f=u(189),v=u(190),k=u(191),m=u(192),p=u(193),h=u(18),x=u(14),Z=u(1),g=u(39),y=u(70),j=u(116),A=u(42),$=u(351),w=u(17),F=u(126),I=u(111),J=u(112),O=u(113),B=u(52),E=u(3),G=u(7),L=u(8),M=u(16),V=i.Y({encapsulation:2,styles:[],data:{}}),Y=i.W("check-box-layout-2",c,function(l){return i._20(0,[(l()(),i._0(0,0,null,null,1,"check-box-layout-2",[],null,null,null,e,V)),i.Z(1,49152,null,0,c,[],null,null)],null,null)},{data:"data",events:"events"},{},[]),C=u(110),N=u(35);u.d(n,"CheckBoxLayout2ModuleNgFactory",function(){return P});var P=i.X(o,[],function(l){return i._11([i._12(512,i.i,i.T,[[8,[_.a,r.a,s.a,d.a,b.a,f.a,v.a,k.a,m.a,Y]],[3,i.i],i.s]),i._12(4608,M.k,M.j,[i.r,[2,M.s]]),i._12(4608,w.n,w.n,[]),i._12(4608,w.c,w.c,[]),i._12(512,M.b,M.b,[]),i._12(512,w.m,w.m,[]),i._12(512,w.d,w.d,[]),i._12(512,w.k,w.k,[]),i._12(512,C.a,C.a,[]),i._12(512,C.b,C.b,[]),i._12(512,o,o,[]),i._12(256,N.a,c,[])])})},351:function(l,n,u){"use strict";function t(l){return a._20(0,[(l()(),a._0(0,0,null,null,1,"div",[["class","checkbox-icon"]],[[2,"checkbox-checked",null]],null,null,null,null)),(l()(),a._0(1,0,null,null,0,"div",[["class","checkbox-inner"]],null,null,null,null,null)),(l()(),a._0(2,0,null,null,2,"button",[["class","item-cover"],["ion-button","item-cover"],["role","checkbox"],["type","button"]],[[8,"id",0],[1,"aria-checked",0],[1,"aria-labelledby",0],[1,"aria-disabled",0]],null,null,e.b,e.a)),a.Z(3,1097728,null,0,i.a,[[8,"item-cover"],c.a,a.j,a.A],null,null),(l()(),a._19(-1,0,[" "]))],null,function(l,n){var u=n.component;l(n,0,0,u._value);l(n,2,0,u.id,u._value,u._labelId,u._disabled)})}u.d(n,"a",function(){return o}),n.b=t;var a=u(0),e=u(40),i=u(19),c=u(1),o=(u(14),a.Y({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([65],{
+
+/***/ 291:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppearanceAnimationLayout5Module", function() { return AppearanceAnimationLayout5Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_5__ = __webpack_require__(408);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var AppearanceAnimationLayout5Module = (function () {
+    function AppearanceAnimationLayout5Module() {
+    }
+    AppearanceAnimationLayout5Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_5__["a" /* AppearanceAnimationLayout5 */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_5__["a" /* AppearanceAnimationLayout5 */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_5__["a" /* AppearanceAnimationLayout5 */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], AppearanceAnimationLayout5Module);
+    return AppearanceAnimationLayout5Module;
+}());
+
+//# sourceMappingURL=appearance-animation-layout-5.module.js.map
+
+/***/ }),
+
+/***/ 408:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppearanceAnimationLayout5; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AppearanceAnimationLayout5 = (function () {
+    function AppearanceAnimationLayout5() {
+        this.animateItems = [];
+        this.animateClass = { 'zoom-in': true };
+    }
+    AppearanceAnimationLayout5.prototype.onEvent = function (event, item, e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        if (this.events[event]) {
+            this.events[event](item);
+        }
+    };
+    AppearanceAnimationLayout5.prototype.ngOnChanges = function (changes) {
+        var that = this;
+        that.data = changes['data'].currentValue;
+        if (that.data && that.data.items) {
+            var _loop_1 = function (i) {
+                setTimeout(function () {
+                    that.animateItems.push(that.data.items[i]);
+                }, 200 * i);
+            };
+            for (var i = 0; i < that.data.items.length; i++) {
+                _loop_1(i);
+            }
+        }
+    };
+    AppearanceAnimationLayout5.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.content.ionScroll.subscribe(function (d) {
+            _this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AppearanceAnimationLayout5.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AppearanceAnimationLayout5.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
+    ], AppearanceAnimationLayout5.prototype, "content", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
+    ], AppearanceAnimationLayout5.prototype, "fabButton", void 0);
+    AppearanceAnimationLayout5 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'appearance-animation-layout-5',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/appearance-animation/layout-5/appearance-animation.html"*/'<!--Theme Appearance animation (Zoom In)-->\n\n<ion-content has-header>\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <ion-row>\n\n            <ion-col col-12>\n\n                <ion-list no-margin>\n\n                    <ion-item no-lines [ngClass]="animateClass" *ngFor="let item of animateItems; let i = index;" (click)="onEvent(\'onItemClick\', item.title, $event)">\n\n                        <ion-avatar item-start>\n\n                            <img [src]="item.image" alt="{{item.title}}" />\n\n                        </ion-avatar>\n\n                        <h2 item-title padding-left>{{item.title}}</h2>\n\n                        <ion-icon icon-small item-right (click)="onEvent(\'onFavorite\', item, $event)">\n\n                            <i class="icon" [ngClass]="{\'icon-heart\': item.favorite, \'icon-heart-outline\': !item.favorite}"></i>\n\n                        </ion-icon>\n\n                    </ion-item>\n\n                </ion-list>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n<ion-fab #fab bottom right>\n\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n\n    <ion-icon name="add"></ion-icon>\n\n  </button>\n\n</ion-fab>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/appearance-animation/layout-5/appearance-animation.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], AppearanceAnimationLayout5);
+    return AppearanceAnimationLayout5;
+}());
+
+//# sourceMappingURL=appearance-animation-layout-5.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=65.js.map

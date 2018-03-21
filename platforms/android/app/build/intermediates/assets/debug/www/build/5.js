@@ -1,16 +1,16 @@
 webpackJsonp([5],{
 
-/***/ 343:
+/***/ 353:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FindSellerPageModule", function() { return FindSellerPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PurchaseHistoryPageModule", function() { return PurchaseHistoryPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(352);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__find_seller__ = __webpack_require__(458);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_find_sellers_find_sellers__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__purchase_history__ = __webpack_require__(470);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_purchase_items_purchase_items__ = __webpack_require__(392);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -22,29 +22,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FindSellerPageModule = (function () {
-    function FindSellerPageModule() {
+var PurchaseHistoryPageModule = (function () {
+    function PurchaseHistoryPageModule() {
     }
-    FindSellerPageModule = __decorate([
+    PurchaseHistoryPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__find_seller__["a" /* FindSellerPage */],
+                __WEBPACK_IMPORTED_MODULE_3__purchase_history__["a" /* PurchaseHistoryPage */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__find_seller__["a" /* FindSellerPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__purchase_history__["a" /* PurchaseHistoryPage */]),
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_4__providers_find_sellers_find_sellers__["a" /* FindSellersProvider */]]
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_4__providers_purchase_items_purchase_items__["a" /* PurchaseItemsProvider */]
+            ]
         })
-    ], FindSellerPageModule);
-    return FindSellerPageModule;
+    ], PurchaseHistoryPageModule);
+    return PurchaseHistoryPageModule;
 }());
 
-//# sourceMappingURL=find-seller.module.js.map
+//# sourceMappingURL=purchase-history.module.js.map
 
 /***/ }),
 
-/***/ 352:
+/***/ 357:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79,15 +81,15 @@ var FindSellerPageModule = (function () {
 /* unused harmony export ɵe */
 /* unused harmony export ɵf */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(372);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__);
@@ -2789,7 +2791,7 @@ var HttpClientJsonpModule = (function () {
 
 /***/ }),
 
-/***/ 370:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2803,7 +2805,7 @@ var API_URL = 'http://188.166.177.172/refuze-api/public/index.php';
 
 /***/ }),
 
-/***/ 371:
+/***/ 372:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2814,12 +2816,12 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 
 /***/ }),
 
-/***/ 372:
+/***/ 373:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var concatMap_1 = __webpack_require__(373);
+var concatMap_1 = __webpack_require__(374);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -2888,7 +2890,7 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 373:
+/***/ 374:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2962,12 +2964,12 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 374:
+/***/ 375:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var filter_1 = __webpack_require__(375);
+var filter_1 = __webpack_require__(376);
 /* tslint:enable:max-line-length */
 /**
  * Filter items emitted by the source Observable by only emitting those that
@@ -3016,7 +3018,7 @@ exports.filter = filter;
 
 /***/ }),
 
-/***/ 375:
+/***/ 376:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3117,14 +3119,14 @@ var FilterSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 382:
+/***/ 392:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FindSellersProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(352);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseItemsProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(371);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3137,117 +3139,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var FindSellersProvider = (function () {
-    function FindSellersProvider(http) {
+var PurchaseItemsProvider = (function () {
+    function PurchaseItemsProvider(http) {
         this.http = http;
-        this.getDataForLayout1 = function () {
-            return {
-                "title": "ค้นหาสมาชิกผู้ขายขยะ",
-                "description": "ทำการพิมพ์ชื่อสมาชิกเพื่อทำการค้นหา",
-                "shortDescription": "35:72",
-                "iconLike": "icon-thumb-up",
-                "iconFavorite": "icon-heart",
-                "iconShare": "icon-share-variant",
-                "iconPlay": "icon-play-circle-outline",
-                "items": [
-                    {
-                        "id": 1,
-                        "title": "Song Of Souls",
-                        "description": "Shawna Norman",
-                        "shortDescription": "3:42",
-                        "image": "assets/images/avatar/0.jpg",
-                        "iconDelate": "icon-delete",
-                        "iconUndo": "icon-undo-variant"
-                    },
-                    {
-                        "id": 2,
-                        "title": "Tune Of My Obsessions",
-                        "description": "Janice Wilder",
-                        "shortDescription": "3:42",
-                        "image": "assets/images/avatar/1.jpg",
-                        "iconDelate": "icon-delete",
-                        "iconUndo": "icon-undo-variant"
-                    },
-                    {
-                        "id": 3,
-                        "title": "Reject Her Tomorrow",
-                        "description": "Lucy Bender",
-                        "shortDescription": "3:42",
-                        "image": "assets/images/avatar/2.jpg",
-                        "iconDelate": "icon-delete",
-                        "iconUndo": "icon-undo-variant"
-                    },
-                    {
-                        "id": 4,
-                        "title": "Troubles Of My Blues",
-                        "description": "ouglas Burks",
-                        "shortDescription": "3:42",
-                        "image": "assets/images/avatar/3.jpg",
-                        "iconDelate": "icon-delete",
-                        "iconUndo": "icon-undo-variant"
-                    },
-                    {
-                        "id": 5,
-                        "title": "Broken Tonight",
-                        "description": "Sophia Cochran",
-                        "shortDescription": "3:42",
-                        "image": "assets/images/avatar/4.jpg",
-                        "iconDelate": "icon-delete",
-                        "iconUndo": "icon-undo-variant"
-                    },
-                    {
-                        "id": 6,
-                        "title": "Sure Choices",
-                        "description": "Lara Lynn",
-                        "shortDescription": "3:42",
-                        "image": "assets/images/avatar/5.jpg",
-                        "iconDelate": "icon-delete",
-                        "iconUndo": "icon-undo-variant"
-                    },
-                    {
-                        "id": 7,
-                        "title": "A Storm Is Coming",
-                        "description": "Juliette Medina",
-                        "shortDescription": "3:42",
-                        "image": "assets/images/avatar/6.jpg",
-                        "iconDelate": "icon-delete",
-                        "iconUndo": "icon-undo-variant"
-                    },
-                    {
-                        "id": 8,
-                        "title": "He Heard He's Crazy",
-                        "description": "Vanessa Ryan",
-                        "shortDescription": "3:42",
-                        "image": "assets/images/avatar/7.jpg",
-                        "iconDelate": "icon-delete",
-                        "iconUndo": "icon-undo-variant"
-                    }
-                ]
-            };
-        };
     }
-    FindSellersProvider.prototype.getSellers = function () {
-        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__api_urls__["a" /* API_URL */] + "/sellers");
+    PurchaseItemsProvider.prototype.createPurchaseProfile = function (params) {
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__api_urls__["a" /* API_URL */] + "/purchase-items/create", params);
     };
-    FindSellersProvider = __decorate([
+    PurchaseItemsProvider.prototype.getPurchaseTransactionsHistoryBySellerId = function (id) {
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__api_urls__["a" /* API_URL */] + "/purchases-items/history/seller/" + id);
+    };
+    PurchaseItemsProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["B" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
-    ], FindSellersProvider);
-    return FindSellersProvider;
+    ], PurchaseItemsProvider);
+    return PurchaseItemsProvider;
 }());
 
-//# sourceMappingURL=find-sellers.js.map
+//# sourceMappingURL=purchase-items.js.map
 
 /***/ }),
 
-/***/ 458:
+/***/ 470:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FindSellerPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseHistoryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_find_sellers_find_sellers__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_purchase_items_purchase_items__ = __webpack_require__(392);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3260,110 +3180,100 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-var FindSellerPage = (function () {
-    function FindSellerPage(navCtrl, navParams, findSeller) {
+/**
+ * Generated class for the PurchaseHistoryPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var PurchaseHistoryPage = (function () {
+    function PurchaseHistoryPage(navCtrl, navParams, purchaseItem) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.findSeller = findSeller;
-        this.animateItems = [];
-        this.FindItemsPage = 'find-items';
-        this.animateClass = { 'zoom-in': true };
+        this.purchaseItem = purchaseItem;
+        this.data = {
+            "items": [
+                {
+                    "title": "Where to go",
+                    "icon": "icon-map-marker-radius",
+                    "items": [
+                        "Monuments",
+                        "Sightseeing",
+                        "Historical",
+                        "Sport"
+                    ]
+                },
+                {
+                    "title": "Where to sleep",
+                    "icon": "icon-hotel",
+                    "items": [
+                        "Hotels",
+                        "Hostels",
+                        "Motels",
+                        "Rooms"
+                    ]
+                },
+                {
+                    "title": "Where to eat",
+                    "icon": "icon-silverware-variant",
+                    "items": [
+                        "Fast Food",
+                        "Restorants",
+                        "Pubs",
+                        "Hotels"
+                    ]
+                },
+                {
+                    "title": "Where to drink",
+                    "icon": "icon-martini",
+                    "items": [
+                        "Caffes",
+                        "Bars",
+                        "Pubs",
+                        "Clubs"
+                    ]
+                },
+                {
+                    "title": "Where to go",
+                    "icon": "icon-map-marker-radius",
+                    "items": [
+                        "Monuments",
+                        "Sightseeing",
+                        "Historical",
+                        "Sport"
+                    ]
+                }
+            ]
+        };
     }
-    FindSellerPage.prototype.ionViewDidLoad = function () {
-        localStorage.removeItem('purchaseItems');
-        localStorage.removeItem('sellerProfile');
-        this.getSellers();
-        this.data = this.findSeller.getDataForLayout1();
-    };
-    FindSellerPage.prototype.getSellers = function () {
+    PurchaseHistoryPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        this.findSeller.getSellers().subscribe(function (res) {
-            _this.sellers = res;
-            console.log(_this.sellers);
+        console.log('ionViewDidLoad PurchaseHistoryPage');
+        this.user = this.navParams.get('seller');
+        this.purchaseItem.getPurchaseTransactionsHistoryBySellerId(1)
+            .subscribe(function (res) {
+            _this.purchaseHisLists = res;
+            console.log(_this.purchaseHisLists);
         });
     };
-    FindSellerPage.prototype.goToProfileSeller = function (profile) {
-        localStorage.setItem('sellerProfile', JSON.stringify(profile));
-        this.navCtrl.push('ProfileSellerPage');
-    };
-    FindSellerPage.prototype.getItems = function (ev) {
-        var val = ev.target.value;
-        if (val && val.trim() != '') {
-            this.sellers = this.sellers.filter(function (seller) {
-                return (seller.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
-            });
-        }
-        else {
-            this.getSellers();
-        }
-    };
-    FindSellerPage.prototype.toggleGroup = function (group, profile) {
-        console.log(profile);
+    PurchaseHistoryPage.prototype.toggleGroup = function (group) {
         group.show = !group.show;
-        localStorage.setItem('sellerProfile', JSON.stringify(profile));
-        this.seller = JSON.parse(localStorage.getItem('sellerProfile'));
-        if (Object.keys(this.seller).length !== 0) {
-            this.id = this.id;
-            this.fullname = this.seller.name + " " + this.seller.last_name;
-            this.mobile = "\u0E40\u0E1A\u0E2D\u0E23\u0E4C\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D " + this.seller.mobile;
-            this.address = "\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E25\u0E02\u0E17\u0E35\u0E48 " + this.seller.address + " \u0E15\u0E33\u0E1A\u0E25 " + this.seller.DISTRICT_NAME + " \u0E2D\u0E33\u0E40\u0E20\u0E2D " + this.seller.AMPHUR_NAME + " \u0E08\u0E31\u0E07\u0E2B\u0E27\u0E31\u0E14 " + this.seller.PROVINCE_NAME + " " + this.seller.zipcode;
-        }
     };
-    FindSellerPage.prototype.isGroupShown = function (group) {
+    PurchaseHistoryPage.prototype.isGroupShown = function (group) {
         return group.show;
     };
-    FindSellerPage.prototype.ngOnChanges = function (changes) {
-        var that = this;
-        that.data = changes['data'].currentValue;
-        if (that.data && that.data.items) {
-            var _loop_1 = function (i) {
-                setTimeout(function () {
-                    that.animateItems.push(that.data.items[i]);
-                }, 200 * i);
-            };
-            for (var i = 0; i < that.data.items.length; i++) {
-                _loop_1(i);
-            }
-        }
-    };
-    FindSellerPage.prototype.onEvent = function (event, item, e) {
-        if (e) {
-            e.stopPropagation();
-        }
-        if (this.events[event]) {
-            this.events[event](item);
-        }
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
-        __metadata("design:type", Object)
-    ], FindSellerPage.prototype, "data", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
-        __metadata("design:type", Object)
-    ], FindSellerPage.prototype, "events", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
-    ], FindSellerPage.prototype, "content", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
-    ], FindSellerPage.prototype, "fabButton", void 0);
-    FindSellerPage = __decorate([
+    PurchaseHistoryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-find-seller',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/find-seller/find-seller.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>ค้นหาสมาชิกผู้ขายขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<!--Theme Small item + header-->\n<ion-content>\n  <ion-grid no-padding *ngIf="data != null">\n    <ion-row>\n      <ion-col col-12>\n        <ion-list no-margin>\n          <ion-list-header header-bcg no-padding no-lines>\n            <ion-icon white icon-large item-start>\n              <i class="icon {{data.iconPlay}}"></i>\n            </ion-icon>\n            <h1 header-title>{{data.title}}</h1>\n            <h2 header-subtitle>{{data.description}}</h2>\n          \n            <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>\n\n          </ion-list-header>\n          <!--Swipe To Dismiss -->\n          <!-- <ion-item-sliding *ngFor="let item of sellers" #slidingItem> -->\n          <ion-grid no-padding *ngIf="data != null">\n            <ion-row>\n              <ion-col col-12>\n                <ion-list no-margin>\n                  <ul no-margin no-padding class="collapsible">\n                    <li *ngFor="let seller of sellers" no-lines [ngClass]="animateClass">\n                      <!-- List big image Header -->\n                          <ion-list no-margin (click)="toggleGroup(seller,seller)"> \n                              <ion-item no-lines>\n                                  <ion-avatar item-start>\n                                      <img src="assets/images/avatar/1.jpg" />\n                                  </ion-avatar>\n                                  <h2 item-title padding-left>{{seller.name}}  {{seller.last_name}}</h2>\n                                  <h2 item-subtitle padding-left>{{seller.id_card}} </h2>\n                                      <ion-icon name="ios-arrow-dropdown-outline"  item-right></ion-icon>\n                              </ion-item>\n                          </ion-list>\n                      <!-- List big image Body -->\n                      <div class="item-accordion" [ngClass]="{\'active\': isGroupShown(seller) }" [hidden]="!isGroupShown(seller)">\n                        \n                        \n                                <ion-row>\n                                  <ion-col col-4>\n                                    <ion-img width="80" height="80" src="assets/imgs/f_logo.png"></ion-img>\n                                  </ion-col>\n                                  <ion-col col-8>\n                                    <h2 header-title>{{ fullname }}</h2>\n                                    <h5 header-title>{{ mobile }}</h5>\n                                    <h5 header-subtitle>{{ address }}</h5>\n                                  </ion-col>\n                                </ion-row>\n                        \n                        <ion-row> \n                            <ion-col col-12 col-sm-12 col-md-12 offset-2 offset-lg-2 col-lg-6 offset-xl-2 col-xl-6>\n                                <!---Facebook button-->\n                                <button ion-button round color="facebook"  [navPush]="FindItemsPage">รับซื้อขยะ</button>\n                                <!---Twitter button-->\n                                <button ion-button round  color="tweetter"   (click)="goToHistorySeller()">ประวัติรับซื้อขยะ</button>\n                            </ion-col>\n                        </ion-row>  \n                      </div>\n                      <!--end-->\n                    </li>\n                  </ul>\n                </ion-list>\n              </ion-col>\n            </ion-row>\n          </ion-grid>\n          <!-- </ion-item-sliding> -->\n        </ion-list>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n<!-- Fab Button -->\n\n\n<!-- <ion-content>\n  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>\n  <ion-list>\n    <ion-item *ngFor="let seller of sellers" (click)="goToProfileSeller(seller)">\n      {{ seller.name }}\n    </ion-item>\n  </ion-list>\n</ion-content> -->\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/find-seller/find-seller.html"*/,
+            selector: 'page-purchase-history',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-history/purchase-history.html"*/'<!--\n  Generated template for the PurchaseHistoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ประวัติการขายขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n    <ion-grid no-padding *ngIf="user != null">\n        <ion-row padding background-size container-hearder-image style="background-image: url(\'assets/images/background-small/10.jpg\');" >\n            <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>\n                <h1 header-title>{{user.address}}</h1>\n                <h2 header-subtitle>\n                  <div>อำเภอ {{user.DISTRICT_NAME}} </div>\n                  <div>จังหวัด{{ user.PROVINCE_NAME }}\n                    {{user.zipcode}}\n                  </div>\n                </h2>\n            </ion-col>\n            <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>\n                <span span-large>{{user.name}} {{user.last_name}}</span>\n                <button ion-button button-clear-outline round outline>\n                    <ion-icon name="phone-portrait"></ion-icon> {{ user.mobile}}\n          </button> \n            </ion-col>\n        </ion-row>\n        </ion-grid>\n        <ion-grid no-padding *ngIf="purchaseHisLists != null" id="purchase-his-list">\n            <ion-row>\n                <ion-col col-12 no-padding no-margin>\n                    <ion-list>\n                        <!--CONTENT-->\n                        <ul no-margin no-padding class="collapsible">\n                            <li no-margin *ngFor="let group of purchaseHisLists;">\n                                <!-- Expandable Centered with header Header-->\n                                <div class="collapsible-header" no-margin no-padding (click)="toggleGroup(group)">\n                                    <ion-item no-padding text-center no-lines>\n                                        <ion-icon icon-small>\n                                            <ion-icon name="cube"></ion-icon>\n                                          </ion-icon>\n                                        <h2  item-title >เลขที่ : {{group.invoice}}  <span  item-subtitle>[ {{group.bought_date}} ]</span> </h2>\n                                        <h2 text-center item-subtitle>{{group.balance}} บาท</h2>\n                                        <h1 item-end>   <ion-icon name="ios-arrow-dropdown-outline"></ion-icon></h1>\n                                    </ion-item>\n                                </div>\n                                <!-- Expandable Centered with header Body -->\n                                <div class="item-accordion" [ngClass]="{\'active\': isGroupShown(group) }" [hidden]="!isGroupShown(group)">\n                                        \n                                  \n                                  <ion-item no-lines transparent no-padding class="swipe" *ngFor="let _item of group.transactions;" >\n                                          <ion-row>\n                                            <ion-col col-6>\n                                              <h2 item-title>{{_item.item_name}}</h2>\n                                              <h2 item-subtitle style="padding-left:20px">{{_item.price}} /{{_item.unit_name}}</h2>\n                                            </ion-col>\n                                            <ion-col col-3>\n                                              <h2 item-subtitle text-center>{{_item.amount}}</h2>\n                                              <h2 item-subtitle text-center>{{_item.unit_name}}</h2>\n                                            </ion-col>\n                                            <ion-col col-3>\n                                                <h2 item-title text-right>{{_item.balance}}</h2>\n                                                <h2 item-subtitle text-right>บาท</h2>\n                                              </ion-col>\n                                          </ion-row>\n                                    </ion-item>\n                                </div>\n                                <!--end-->\n                            </li>\n                        </ul>\n                    </ion-list>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-history/purchase-history.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_find_sellers_find_sellers__["a" /* FindSellersProvider */]])
-    ], FindSellerPage);
-    return FindSellerPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_purchase_items_purchase_items__["a" /* PurchaseItemsProvider */]])
+    ], PurchaseHistoryPage);
+    return PurchaseHistoryPage;
 }());
 
-//# sourceMappingURL=find-seller.js.map
+//# sourceMappingURL=purchase-history.js.map
 
 /***/ })
 

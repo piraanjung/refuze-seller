@@ -1,16 +1,16 @@
 webpackJsonp([4],{
 
-/***/ 346:
+/***/ 355:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PurchaseItemsPageModule", function() { return PurchaseItemsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(352);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__purchase_items__ = __webpack_require__(461);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_purchase_items_purchase_items__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__purchase_items__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_purchase_items_purchase_items__ = __webpack_require__(392);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var PurchaseItemsPageModule = (function () {
 
 /***/ }),
 
-/***/ 352:
+/***/ 357:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79,15 +79,15 @@ var PurchaseItemsPageModule = (function () {
 /* unused harmony export ɵe */
 /* unused harmony export ɵf */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(372);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__);
@@ -2789,7 +2789,7 @@ var HttpClientJsonpModule = (function () {
 
 /***/ }),
 
-/***/ 370:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2803,7 +2803,7 @@ var API_URL = 'http://188.166.177.172/refuze-api/public/index.php';
 
 /***/ }),
 
-/***/ 371:
+/***/ 372:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2814,12 +2814,12 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 
 /***/ }),
 
-/***/ 372:
+/***/ 373:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var concatMap_1 = __webpack_require__(373);
+var concatMap_1 = __webpack_require__(374);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -2888,7 +2888,7 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 373:
+/***/ 374:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2962,12 +2962,12 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 374:
+/***/ 375:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var filter_1 = __webpack_require__(375);
+var filter_1 = __webpack_require__(376);
 /* tslint:enable:max-line-length */
 /**
  * Filter items emitted by the source Observable by only emitting those that
@@ -3016,7 +3016,7 @@ exports.filter = filter;
 
 /***/ }),
 
-/***/ 375:
+/***/ 376:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3117,14 +3117,14 @@ var FilterSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 385:
+/***/ 392:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseItemsProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(371);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3158,14 +3158,14 @@ var PurchaseItemsProvider = (function () {
 
 /***/ }),
 
-/***/ 461:
+/***/ 472:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseItemsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_purchase_items_purchase_items__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_purchase_items_purchase_items__ = __webpack_require__(392);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3255,10 +3255,10 @@ var PurchaseItemsPage = (function () {
     ], PurchaseItemsPage.prototype, "data", void 0);
     PurchaseItemsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-purchase-items',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items/purchase-items.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>บันทึกรายการซื้อขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-grid>\n\n    <ion-row header-bcg padding>\n      <ion-col col-2>\n        <ion-img width="40" height="40" src="./assets/imgs/f_logo.png"></ion-img>\n      </ion-col>\n      <ion-col col-5 text-left>\n        <h1 header-title no-margin text-wrap>{{ fullname }}</h1>\n        <h2 header-subtitle no-margin>{{ mobile }}</h2>\n      </ion-col>\n      <ion-col col-5 text-right>\n        <span header-subtitle no-margin>{{ address }}</span>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <ion-grid no-padding *ngIf="data != null">\n    <ion-row>\n      <ion-col col-12 col-md-12 col-lg-6 *ngFor="let item of items;let i = index">\n\n        <ion-card padding text-right class="card">\n          <div float-left class="card-img">\n            <img images-filter src="assets/images/avatar-small/0.jpg" />\n          </div>\n          <ion-icon name="close-circle" icon-del (click)="removeItem(i)" *ngIf="!isHide"> </ion-icon>\n          <!--Card-content-->\n          <ion-card-content>\n            <ion-card-title no-padding>\n              <h2 card-title>{{item.name}}</h2>\n            </ion-card-title>\n            <h3 card-subtitle>{{item.price}} : {{item.unit_name}}</h3>\n\n            <p card-body-text>จำนวน : {{item.amount}} {{item.unit_name}}</p>\n            <!---Social share-->\n            <div social>\n              เป็นเงิน {{item.price * item.amount}} บาท\n            </div>\n          </ion-card-content>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n\n  </ion-grid>\n\n  <ion-grid no-padding background-size container-hearder-image style="background-image: url(assets/images/background-small/10.jpg)">\n    <ion-row padding >\n      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>\n        <h1 header-title>รวมเป็นเงิน</h1>\n\n      </ion-col>\n      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>\n        <span span-large>{{total}} </span>\n        <h2 header-subtitle>บาท</h2>\n\n        <button ion-button button-clear-outline round outline (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>\n        \n      </ion-col>\n    </ion-row>\n    <ion-row>\n        <ion-col col-4>\n          <button ion-button button-clear-outline round outline *ngIf="isHide">ปริ้นใบเสร็จ</button>\n        </ion-col>\n        <ion-col col-4>\n          <button ion-button button-clear-outline round outline class="my-col-4" *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>\n        </ion-col>\n        <ion-col col-4>\n          <button ion-button button-clear-outline round outline *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>\n        </ion-col>\n\n      </ion-row>\n    <!--Content-->\n\n  </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n\n<!-- <ion-content padding>\n\n  <ion-card>\n\n    <ion-card-header>\n      ข้อมูลผู้ขาย\n    </ion-card-header>\n\n    <ion-card-content>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-4>\n            <ion-img width="80" height="80" src="./assets/imgs/f_logo.png"></ion-img>\n          </ion-col>\n          <ion-col col-8>\n            <p>{{ fullname }}</p>\n            <p>{{ mobile }}</p>\n            <p>{{ address }}</p>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-list *ngFor="let item of items; let i = index">\n    <ion-item>\n      <ion-thumbnail item-start>\n        <img src="./assets/imgs/f_logo.png">\n      </ion-thumbnail>\n      <h2>{{ item.name }}</h2>\n      <p>{{ item.amount }}&nbsp;X&nbsp;{{ item.price }}&nbsp;รวม&nbsp;{{ item.balance }}&nbsp;บาท</p>\n      <button ion-button clear item-end (click)="removeItem(i)" *ngIf="!isHide">\n        <ion-icon name="trash" style="font-size:30px; color:red;"></ion-icon>\n      </button>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-item>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-4>\n            <h1>รวม</h1>\n          </ion-col>\n          <ion-col col-4 style="text-align: right;">\n            <h1>{{total}}&nbsp;บาท</h1>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </ion-item>\n  </ion-list>\n\n  <button ion-button block large round (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>\n  <button ion-button block large round *ngIf="isHide">ปริ้นใบเสร็จ</button>\n  <button ion-button block large round *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>\n  <button ion-button block large round *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>\n\n</ion-content> -->\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items/purchase-items.html"*/,
+            selector: 'page-purchase-items',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items/purchase-items.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>บันทึกรายการซื้อขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-grid>\n\n    <ion-row header-bcg padding>\n      <ion-col col-2>\n        <ion-img width="40" height="40" src="./assets/imgs/f_logo.png"></ion-img>\n      </ion-col>\n      <ion-col col-5 text-left>\n        <h1 header-title no-margin text-wrap>{{ fullname }}</h1>\n        <h2 header-subtitle no-margin>{{ mobile }}</h2>\n      </ion-col>\n      <ion-col col-5 text-right>\n        <span header-subtitle no-margin address>{{ address }}</span>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <ion-grid no-padding *ngIf="data != null">\n    <ion-row>\n      <ion-col col-12 col-md-12 col-lg-6 *ngFor="let item of items;let i = index">\n\n        <ion-card padding text-right class="card">\n          <div float-left class="card-img">\n            <img images-filter src="assets/images/avatar-small/0.jpg" />\n          </div>\n          <ion-icon name="close-circle" icon-del (click)="removeItem(i)" *ngIf="!isHide"> </ion-icon>\n          <!--Card-content-->\n          <ion-card-content>\n            <ion-card-title no-padding>\n              <h2 card-title>{{item.name}}</h2>\n            </ion-card-title>\n            <h3 card-subtitle>{{item.price}} : {{item.unit_name}}</h3>\n\n            <p card-body-text>จำนวน : {{item.amount}} {{item.unit_name}}</p>\n            <!---Social share-->\n            <div social>\n              เป็นเงิน {{item.price * item.amount}} บาท\n            </div>\n          </ion-card-content>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n\n  </ion-grid>\n\n  <ion-grid no-padding background-size container-hearder-image style="background-image: url(assets/images/background-small/10.jpg)">\n    <ion-row padding >\n      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>\n        <h1 header-title>รวมเป็นเงิน</h1>\n\n      </ion-col>\n      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>\n        <span span-large>{{total}} </span>\n        <h2 header-subtitle>บาท</h2>\n\n        <button ion-button button-clear-outline round outline (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>\n        \n      </ion-col>\n    </ion-row>\n    <ion-row>\n        <ion-col col-4>\n          <button ion-button button-clear-outline round outline *ngIf="isHide">ปริ้นใบเสร็จ</button>\n        </ion-col>\n        <ion-col col-4>\n          <button ion-button button-clear-outline round outline class="my-col-4" *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>\n        </ion-col>\n        <ion-col col-4>\n          <button ion-button button-clear-outline round outline *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>\n        </ion-col>\n\n      </ion-row>\n    <!--Content-->\n\n  </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n\n<!-- <ion-content padding>\n\n  <ion-card>\n\n    <ion-card-header>\n      ข้อมูลผู้ขาย\n    </ion-card-header>\n\n    <ion-card-content>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-4>\n            <ion-img width="80" height="80" src="./assets/imgs/f_logo.png"></ion-img>\n          </ion-col>\n          <ion-col col-8>\n            <p>{{ fullname }}</p>\n            <p>{{ mobile }}</p>\n            <p>{{ address }}</p>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-list *ngFor="let item of items; let i = index">\n    <ion-item>\n      <ion-thumbnail item-start>\n        <img src="./assets/imgs/f_logo.png">\n      </ion-thumbnail>\n      <h2>{{ item.name }}</h2>\n      <p>{{ item.amount }}&nbsp;X&nbsp;{{ item.price }}&nbsp;รวม&nbsp;{{ item.balance }}&nbsp;บาท</p>\n      <button ion-button clear item-end (click)="removeItem(i)" *ngIf="!isHide">\n        <ion-icon name="trash" style="font-size:30px; color:red;"></ion-icon>\n      </button>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-item>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-4>\n            <h1>รวม</h1>\n          </ion-col>\n          <ion-col col-4 style="text-align: right;">\n            <h1>{{total}}&nbsp;บาท</h1>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </ion-item>\n  </ion-list>\n\n  <button ion-button block large round (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>\n  <button ion-button block large round *ngIf="isHide">ปริ้นใบเสร็จ</button>\n  <button ion-button block large round *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>\n  <button ion-button block large round *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>\n\n</ion-content> -->\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items/purchase-items.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2__providers_purchase_items_purchase_items__["a" /* PurchaseItemsProvider */]])
     ], PurchaseItemsPage);
     return PurchaseItemsPage;

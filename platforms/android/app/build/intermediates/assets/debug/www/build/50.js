@@ -1,14 +1,14 @@
 webpackJsonp([50],{
 
-/***/ 298:
+/***/ 314:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginLayout2Module", function() { return LoginLayout2Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QRcodeLayout1Module", function() { return QRcodeLayout1Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_layout_2__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__qrcode_layout_1__ = __webpack_require__(431);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,35 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LoginLayout2Module = (function () {
-    function LoginLayout2Module() {
+var QRcodeLayout1Module = (function () {
+    function QRcodeLayout1Module() {
     }
-    LoginLayout2Module = __decorate([
+    QRcodeLayout1Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login_layout_2__["a" /* LoginLayout2 */],
+                __WEBPACK_IMPORTED_MODULE_2__qrcode_layout_1__["a" /* QRcodeLayout1 */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_layout_2__["a" /* LoginLayout2 */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__qrcode_layout_1__["a" /* QRcodeLayout1 */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__login_layout_2__["a" /* LoginLayout2 */]
+                __WEBPACK_IMPORTED_MODULE_2__qrcode_layout_1__["a" /* QRcodeLayout1 */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
         })
-    ], LoginLayout2Module);
-    return LoginLayout2Module;
+    ], QRcodeLayout1Module);
+    return QRcodeLayout1Module;
 }());
 
-//# sourceMappingURL=login-layout-2.module.js.map
+//# sourceMappingURL=qrcode-layout-1.module.js.map
 
 /***/ }),
 
-/***/ 413:
+/***/ 431:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginLayout2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QRcodeLayout1; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -58,36 +58,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var LoginLayout2 = (function () {
-    function LoginLayout2() {
-        var _this = this;
-        this.onEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]({
-                    'username': _this.username,
-                    'password': _this.password
-                });
-            }
-        };
+var QRcodeLayout1 = (function () {
+    function QRcodeLayout1() {
     }
+    QRcodeLayout1.prototype.onEvent = function (event, result) {
+        if (this.events[event]) {
+            this.events[event](result);
+        }
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], LoginLayout2.prototype, "data", void 0);
+    ], QRcodeLayout1.prototype, "data", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], LoginLayout2.prototype, "events", void 0);
-    LoginLayout2 = __decorate([
+    ], QRcodeLayout1.prototype, "events", void 0);
+    QRcodeLayout1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'login-layout-2',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/login/layout-2/login.html"*/'<!-- Themes Login + logo -->\n\n<ion-content has-header white-background>\n\n    <ion-grid *ngIf="data != null">\n\n        <ion-row padding>\n\n            <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>\n\n                <!---Input field username-->\n\n                <ion-item no-padding transparent>\n\n                    <ion-label floating>{{data.username}}</ion-label>\n\n                    <ion-input required type="text" [(ngModel)]="username"></ion-input>\n\n                </ion-item>\n\n                <!---Input field password-->\n\n                <ion-item no-padding transparent>\n\n                    <ion-label floating>{{data.password}}</ion-label>\n\n                    <ion-input required type="password" [(ngModel)]="password"></ion-input>\n\n                </ion-item>\n\n                <!---Login button-->\n\n                <button ion-button button-clear clear float-right (click)="onEvent(\'onRegister\')">{{data.register}}</button>\n\n                <!---Register button-->\n\n                <button ion-button button-clear clear float-right (click)="onEvent(\'onLogin\')">{{data.login}}</button>\n\n            </ion-col>\n\n            <!---Share Section-->\n\n            <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 social>\n\n                <!---Facebook button-->\n\n                <button ion-button round outline color="facebook" (click)="onEvent(\'onFacebook\')">Facebook</button>\n\n                <!---Twitter button-->\n\n                <button ion-button round outline color="twitter" (click)="onEvent(\'onTwitter\')">Twitter</button>\n\n                <!---Google button-->\n\n                <button ion-button round outline color="google" (click)="onEvent(\'onGoogle\')">Google</button>\n\n                <!---Pinterest button-->\n\n                <button ion-button round outline color="pinterest" (click)="onEvent(\'onPinterest\')">Pinterest</button>\n\n            </ion-col>\n\n            <!---End Share Section-->\n\n            <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>\n\n                <!--LOGO-->\n\n                <img float-left [src]="data.logo" *ngIf="data.logo != null">\n\n                <!---Skip button-->\n\n                <button ion-button button-clear clear float-right margin-top (click)="onEvent(\'onSkip\')">{{data.skip}}</button>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/login/layout-2/login.html"*/
+            selector: 'qrcode-layout-1',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/qrcode/layout-1/qrcode.html"*/'<ion-content has-header>\n\n  <ion-grid no-padding>\n\n    <ion-row>\n\n      <ion-col col-12>\n\n        <ion-list no-margin>\n\n          <ion-item padding-right text-wrap>\n\n            <h1 item-title>{{data.format}}</h1>\n\n          </ion-item>\n\n          <ion-item no-lines padding-right text-wrap>\n\n            <p item-subtitle>{{data.text}}</p>\n\n          </ion-item>\n\n        </ion-list>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/qrcode/layout-1/qrcode.html"*/
         }),
         __metadata("design:paramtypes", [])
-    ], LoginLayout2);
-    return LoginLayout2;
+    ], QRcodeLayout1);
+    return QRcodeLayout1;
 }());
 
-//# sourceMappingURL=login-layout-2.js.map
+//# sourceMappingURL=qrcode-layout-1.js.map
 
 /***/ })
 

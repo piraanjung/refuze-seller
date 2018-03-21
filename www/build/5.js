@@ -1,16 +1,16 @@
 webpackJsonp([5],{
 
-/***/ 344:
+/***/ 353:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PurchaseHistoryPageModule", function() { return PurchaseHistoryPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__purchase_history__ = __webpack_require__(461);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_purchase_items_purchase_items__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__purchase_history__ = __webpack_require__(470);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_purchase_items_purchase_items__ = __webpack_require__(392);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -46,7 +46,7 @@ var PurchaseHistoryPageModule = (function () {
 
 /***/ }),
 
-/***/ 348:
+/***/ 357:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -81,15 +81,15 @@ var PurchaseHistoryPageModule = (function () {
 /* unused harmony export ɵe */
 /* unused harmony export ɵf */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(372);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__);
@@ -2791,7 +2791,7 @@ var HttpClientJsonpModule = (function () {
 
 /***/ }),
 
-/***/ 362:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2805,7 +2805,7 @@ var API_URL = 'http://188.166.177.172/refuze-api/public/index.php';
 
 /***/ }),
 
-/***/ 363:
+/***/ 372:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2816,12 +2816,12 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 
 /***/ }),
 
-/***/ 364:
+/***/ 373:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var concatMap_1 = __webpack_require__(365);
+var concatMap_1 = __webpack_require__(374);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -2890,7 +2890,7 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 365:
+/***/ 374:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2964,12 +2964,12 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 366:
+/***/ 375:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var filter_1 = __webpack_require__(367);
+var filter_1 = __webpack_require__(376);
 /* tslint:enable:max-line-length */
 /**
  * Filter items emitted by the source Observable by only emitting those that
@@ -3018,7 +3018,7 @@ exports.filter = filter;
 
 /***/ }),
 
-/***/ 367:
+/***/ 376:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3119,14 +3119,14 @@ var FilterSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 383:
+/***/ 392:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseItemsProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(371);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3160,14 +3160,14 @@ var PurchaseItemsProvider = (function () {
 
 /***/ }),
 
-/***/ 461:
+/***/ 470:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseHistoryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_purchase_items_purchase_items__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_purchase_items_purchase_items__ = __webpack_require__(392);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3264,7 +3264,7 @@ var PurchaseHistoryPage = (function () {
     };
     PurchaseHistoryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-purchase-history',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-history/purchase-history.html"*/'<!--\n  Generated template for the PurchaseHistoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ประวัติการขายขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n    <ion-grid no-padding *ngIf="user != null">\n        <ion-row padding background-size container-hearder-image style="background-image: url(\'assets/images/background-small/10.jpg\');" >\n            <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>\n                <h1 header-title>{{user.address}}</h1>\n                <h2 header-subtitle>\n                  <div>อำเภอ {{user.DISTRICT_NAME}} </div>\n                  <div>จังหวัด{{ user.PROVINCE_NAME }}\n                    {{user.zipcode}}\n                  </div>\n                </h2>\n            </ion-col>\n            <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>\n                <span span-large>{{user.name}} {{user.last_name}}</span>\n                <button ion-button button-clear-outline round outline>\n                    <ion-icon name="phone-portrait"></ion-icon> {{ user.mobile}}\n          </button> \n            </ion-col>\n        </ion-row>\n        </ion-grid>\n        <ion-grid no-padding *ngIf="user != null" id="purchase-his-list">\n            <ion-row>\n                <ion-col col-12 no-padding no-margin>\n                    <ion-list>\n                        <!--CONTENT-->\n                        <ul no-margin no-padding class="collapsible">\n                            <li no-margin *ngFor="let group of purchaseHisLists;">\n                                <!-- Expandable Centered with header Header-->\n                                <div class="collapsible-header" no-margin no-padding (click)="toggleGroup(group)">\n                                    <ion-item no-padding text-center no-lines>\n                                        <ion-icon icon-small>\n                                            <ion-icon name="cube"></ion-icon>\n                                          </ion-icon>\n                                        <h2  item-title >เลขที่ : {{group.invoice}}  <span  item-subtitle>[ {{group.bought_date}} ]</span> </h2>\n                                        <h2 text-center item-subtitle>{{group.balance}} บาท</h2>\n                                        <h1 item-end>   <ion-icon name="ios-arrow-dropdown-outline"></ion-icon></h1>\n                                    </ion-item>\n                                </div>\n                                <!-- Expandable Centered with header Body -->\n                                <div class="item-accordion" [ngClass]="{\'active\': isGroupShown(group) }" [hidden]="!isGroupShown(group)">\n                                        \n                                  \n                                  <ion-item no-lines transparent no-padding class="swipe" *ngFor="let _item of group.transactions;" >\n                                          <ion-row>\n                                            <ion-col col-6>\n                                              <h2 item-title>{{_item.item_name}}</h2>\n                                              <h2 item-subtitle style="padding-left:20px">{{_item.price}} /{{_item.unit_name}}</h2>\n                                            </ion-col>\n                                            <ion-col col-3>\n                                              <h2 item-subtitle text-center>{{_item.amount}}</h2>\n                                              <h2 item-subtitle text-center>{{_item.unit_name}}</h2>\n                                            </ion-col>\n                                            <ion-col col-3>\n                                                <h2 item-title text-right>{{_item.balance}}</h2>\n                                                <h2 item-subtitle text-right>บาท</h2>\n                                              </ion-col>\n                                          </ion-row>\n                                    </ion-item>\n                                </div>\n                                <!--end-->\n                            </li>\n                        </ul>\n                    </ion-list>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-history/purchase-history.html"*/,
+            selector: 'page-purchase-history',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-history/purchase-history.html"*/'<!--\n  Generated template for the PurchaseHistoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ประวัติการขายขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n    <ion-grid no-padding *ngIf="user != null">\n        <ion-row padding background-size container-hearder-image style="background-image: url(\'assets/images/background-small/10.jpg\');" >\n            <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>\n                <h1 header-title>{{user.address}}</h1>\n                <h2 header-subtitle>\n                  <div>อำเภอ {{user.DISTRICT_NAME}} </div>\n                  <div>จังหวัด{{ user.PROVINCE_NAME }}\n                    {{user.zipcode}}\n                  </div>\n                </h2>\n            </ion-col>\n            <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>\n                <span span-large>{{user.name}} {{user.last_name}}</span>\n                <button ion-button button-clear-outline round outline>\n                    <ion-icon name="phone-portrait"></ion-icon> {{ user.mobile}}\n          </button> \n            </ion-col>\n        </ion-row>\n        </ion-grid>\n        <ion-grid no-padding *ngIf="purchaseHisLists != null" id="purchase-his-list">\n            <ion-row>\n                <ion-col col-12 no-padding no-margin>\n                    <ion-list>\n                        <!--CONTENT-->\n                        <ul no-margin no-padding class="collapsible">\n                            <li no-margin *ngFor="let group of purchaseHisLists;">\n                                <!-- Expandable Centered with header Header-->\n                                <div class="collapsible-header" no-margin no-padding (click)="toggleGroup(group)">\n                                    <ion-item no-padding text-center no-lines>\n                                        <ion-icon icon-small>\n                                            <ion-icon name="cube"></ion-icon>\n                                          </ion-icon>\n                                        <h2  item-title >เลขที่ : {{group.invoice}}  <span  item-subtitle>[ {{group.bought_date}} ]</span> </h2>\n                                        <h2 text-center item-subtitle>{{group.balance}} บาท</h2>\n                                        <h1 item-end>   <ion-icon name="ios-arrow-dropdown-outline"></ion-icon></h1>\n                                    </ion-item>\n                                </div>\n                                <!-- Expandable Centered with header Body -->\n                                <div class="item-accordion" [ngClass]="{\'active\': isGroupShown(group) }" [hidden]="!isGroupShown(group)">\n                                        \n                                  \n                                  <ion-item no-lines transparent no-padding class="swipe" *ngFor="let _item of group.transactions;" >\n                                          <ion-row>\n                                            <ion-col col-6>\n                                              <h2 item-title>{{_item.item_name}}</h2>\n                                              <h2 item-subtitle style="padding-left:20px">{{_item.price}} /{{_item.unit_name}}</h2>\n                                            </ion-col>\n                                            <ion-col col-3>\n                                              <h2 item-subtitle text-center>{{_item.amount}}</h2>\n                                              <h2 item-subtitle text-center>{{_item.unit_name}}</h2>\n                                            </ion-col>\n                                            <ion-col col-3>\n                                                <h2 item-title text-right>{{_item.balance}}</h2>\n                                                <h2 item-subtitle text-right>บาท</h2>\n                                              </ion-col>\n                                          </ion-row>\n                                    </ion-item>\n                                </div>\n                                <!--end-->\n                            </li>\n                        </ul>\n                    </ion-list>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-history/purchase-history.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],

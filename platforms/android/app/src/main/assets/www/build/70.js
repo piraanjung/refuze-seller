@@ -1,1 +1,108 @@
-webpackJsonp([70],{284:function(n,l,t){"use strict";function u(n){return e._20(0,[(n()(),e._19(-1,null,["\n"])),(n()(),e._0(1,0,null,null,10,"ion-grid",[["class","grid"]],null,null,null,null,null)),e.Z(2,16384,null,0,h.a,[],null,null),(n()(),e._19(-1,null,["\n  "])),(n()(),e._0(4,0,null,null,6,"ion-row",[["class","row"],["id","splash-background-image"]],null,null,null,null,null)),e.Z(5,16384,null,0,v.a,[],null,null),(n()(),e._19(-1,null,["\n    "])),(n()(),e._0(7,0,null,null,0,"img",[["class","splash-screen"]],[[8,"src",4]],null,null,null,null)),(n()(),e._19(-1,null,["\n    "])),(n()(),e._0(9,0,null,null,0,"img",[["class","logo"]],[[8,"src",4]],null,null,null,null)),(n()(),e._19(-1,null,["\n  "])),(n()(),e._19(-1,null,["\n"])),(n()(),e._19(-1,null,["\n"]))],null,function(n,l){var t=l.component;n(l,7,0,t.data.backgroundImage);n(l,9,0,t.data.logo)})}Object.defineProperty(l,"__esModule",{value:!0});var e=t(0),a=(t(5),t(109),function(){function n(){}return n.prototype.ngOnChanges=function(n){clearInterval(this.timer),this.executeEvents()},n.prototype.getData=function(){return this.data},n.prototype.getEvents=function(){return this.events},n.prototype.executeEvents=function(){var n=this.getData()&&this.getData().duration?this.getData().duration:1e4,l=null;this.getEvents()&&(l=this.getEvents().onRedirect),this.timer=setTimeout(function(){l&&l()},n)},n.prototype.ngOnDestroy=function(){clearInterval(this.timer)},n}()),r=function(){return function(){}}(),s=t(184),o=t(185),i=t(186),c=t(187),_=t(188),g=t(189),d=t(190),p=t(191),f=t(192),h=t(111),v=t(112),y=e.Y({encapsulation:2,styles:[],data:{}}),m=e.W("splash-screen-layout-1",a,function(n){return e._20(0,[(n()(),e._0(0,0,null,null,1,"splash-screen-layout-1",[],null,null,null,u,y)),e.Z(1,704512,null,0,a,[],null,null)],null,null)},{data:"data",events:"events"},{},[]),b=t(16),k=t(17),D=t(110),E=t(35);t.d(l,"SplashScreenLayout1ModuleNgFactory",function(){return w});var w=e.X(r,[],function(n){return e._11([e._12(512,e.i,e.T,[[8,[s.a,o.a,i.a,c.a,_.a,g.a,d.a,p.a,f.a,m]],[3,e.i],e.s]),e._12(4608,b.k,b.j,[e.r,[2,b.s]]),e._12(4608,k.n,k.n,[]),e._12(4608,k.c,k.c,[]),e._12(512,b.b,b.b,[]),e._12(512,k.m,k.m,[]),e._12(512,k.d,k.d,[]),e._12(512,k.k,k.k,[]),e._12(512,D.a,D.a,[]),e._12(512,D.b,D.b,[]),e._12(512,r,r,[]),e._12(256,E.a,a,[])])})}});
+webpackJsonp([70],{
+
+/***/ 293:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImageGalleryLayout2Module", function() { return ImageGalleryLayout2Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__image_gallery_layout_2__ = __webpack_require__(410);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ImageGalleryLayout2Module = (function () {
+    function ImageGalleryLayout2Module() {
+    }
+    ImageGalleryLayout2Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__image_gallery_layout_2__["a" /* ImageGalleryLayout2 */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__image_gallery_layout_2__["a" /* ImageGalleryLayout2 */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__image_gallery_layout_2__["a" /* ImageGalleryLayout2 */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], ImageGalleryLayout2Module);
+    return ImageGalleryLayout2Module;
+}());
+
+//# sourceMappingURL=image-gallery-layout-2.module.js.map
+
+/***/ }),
+
+/***/ 410:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageGalleryLayout2; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ImageGalleryLayout2 = (function () {
+    function ImageGalleryLayout2(navCtrl, navParams) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.openSubGallery = function (group, index) {
+            _this.navCtrl.push(group.subGallery, {
+                'group': group.items[index],
+                'events': _this.events,
+                'layout': 1
+            });
+        };
+        this.onEvent = function (event, item, e) {
+            if (e) {
+                e.stopPropagation();
+            }
+            if (_this.events[event]) {
+                _this.events[event](item);
+            }
+        };
+    }
+    ImageGalleryLayout2.prototype.ngOnChanges = function (changes) {
+        this.data = changes['data'].currentValue;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], ImageGalleryLayout2.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], ImageGalleryLayout2.prototype, "events", void 0);
+    ImageGalleryLayout2 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'image-gallery-layout-2',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/image-gallery/layout-2/image-gallery-layout-2.html"*/'<!---Theme Category 2 (Music)-->\n\n<ion-grid card-background-page no-padding *ngIf="data != null">\n\n    <ion-row no-margin no-padding>\n\n        <ion-col col-6 col-sm-3 col-md-6 col-lg-4 col-xl-3 no-margin no-padding *ngFor="let group of data.items;let i = index;">\n\n            <ion-card background-size no-margin (click)="openSubGallery(data, i)" [ngStyle]="{\'background-image\': \'url(\' + group.image + \')\'}">\n\n                <ion-card-content>\n\n                    <div gallery-title>\n\n                        <h2 item-title>{{group.title}}</h2>\n\n                        <p item-subtitle>{{group.items.length}} image(s)</p>\n\n                        <ion-icon white (click)="onEvent(\'onFavorite\', group, $event)">\n\n                            <i class="icon" [ngClass]="{\'icon-heart\': group.favorite, \'icon-heart-outline\': !group.favorite}"></i>\n\n                        </ion-icon>\n\n                    </div>\n\n                </ion-card-content>\n\n            </ion-card>\n\n        </ion-col>\n\n    </ion-row>\n\n</ion-grid>'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/image-gallery/layout-2/image-gallery-layout-2.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
+    ], ImageGalleryLayout2);
+    return ImageGalleryLayout2;
+}());
+
+//# sourceMappingURL=image-gallery-layout-2.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=70.js.map

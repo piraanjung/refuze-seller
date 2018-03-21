@@ -1,1 +1,126 @@
-webpackJsonp([68],{288:function(l,n,u){"use strict";function t(l){return e._20(0,[(l()(),e._19(-1,null,["\n"])),(l()(),e._0(1,0,null,null,16,"ion-grid",[["class","grid"]],null,null,null,null,null)),e.Z(2,16384,null,0,h.a,[],null,null),(l()(),e._19(-1,null,["\n  "])),(l()(),e._0(4,0,null,null,12,"ion-row",[["class","row"],["id","splash-background-image"]],null,null,null,null,null)),e.Z(5,16384,null,0,v.a,[],null,null),(l()(),e._19(-1,null,["\n    "])),(l()(),e._0(7,0,null,null,0,"img",[["class","splash-screen"]],[[8,"src",4]],null,null,null,null)),(l()(),e._19(-1,null,["\n    "])),(l()(),e._0(9,0,null,null,6,"div",[["class","logo-title item-fade-in"]],null,null,null,null,null)),(l()(),e._19(-1,null,["\n      "])),(l()(),e._0(11,0,null,null,0,"img",[["class","logo"]],[[8,"src",4]],null,null,null,null)),(l()(),e._19(-1,null,["\n      "])),(l()(),e._0(13,0,null,null,1,"h2",[],null,null,null,null,null)),(l()(),e._19(14,null,["",""])),(l()(),e._19(-1,null,["\n    "])),(l()(),e._19(-1,null,["\n  "])),(l()(),e._19(-1,null,["\n"])),(l()(),e._19(-1,null,["\n"]))],null,function(l,n){var u=n.component;l(n,7,0,u.data.backgroundImage);l(n,11,0,u.data.logo);l(n,14,0,u.data.title)})}Object.defineProperty(n,"__esModule",{value:!0});var e=u(0),a=(u(5),u(109),function(){function l(){}return l.prototype.ngOnChanges=function(l){clearInterval(this.timer),this.executeEvents()},l.prototype.getData=function(){return this.data},l.prototype.getEvents=function(){return this.events},l.prototype.executeEvents=function(){var l=this.getData()&&this.getData().duration?this.getData().duration:1e4,n=null;this.getEvents()&&(n=this.getEvents().onRedirect),this.timer=setTimeout(function(){n&&n()},l)},l.prototype.ngOnDestroy=function(){clearInterval(this.timer)},l}()),s=function(){return function(){}}(),o=u(184),r=u(185),i=u(186),c=u(187),_=u(188),d=u(189),g=u(190),p=u(191),f=u(192),h=u(111),v=u(112),m=e.Y({encapsulation:2,styles:[],data:{}}),y=e.W("splash-screen-layout-3",a,function(l){return e._20(0,[(l()(),e._0(0,0,null,null,1,"splash-screen-layout-3",[],null,null,null,t,m)),e.Z(1,704512,null,0,a,[],null,null)],null,null)},{data:"data",events:"events"},{},[]),b=u(16),k=u(17),D=u(110),E=u(35);u.d(n,"SplashScreenLayout3ModuleNgFactory",function(){return w});var w=e.X(s,[],function(l){return e._11([e._12(512,e.i,e.T,[[8,[o.a,r.a,i.a,c.a,_.a,d.a,g.a,p.a,f.a,y]],[3,e.i],e.s]),e._12(4608,b.k,b.j,[e.r,[2,b.s]]),e._12(4608,k.n,k.n,[]),e._12(4608,k.c,k.c,[]),e._12(512,b.b,b.b,[]),e._12(512,k.m,k.m,[]),e._12(512,k.d,k.d,[]),e._12(512,k.k,k.k,[]),e._12(512,D.a,D.a,[]),e._12(512,D.b,D.b,[]),e._12(512,s,s,[]),e._12(256,E.a,a,[])])})}});
+webpackJsonp([68],{
+
+/***/ 288:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppearanceAnimationLayout2Module", function() { return AppearanceAnimationLayout2Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_2__ = __webpack_require__(405);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var AppearanceAnimationLayout2Module = (function () {
+    function AppearanceAnimationLayout2Module() {
+    }
+    AppearanceAnimationLayout2Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_2__["a" /* AppearanceAnimationLayout2 */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_2__["a" /* AppearanceAnimationLayout2 */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_2__["a" /* AppearanceAnimationLayout2 */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], AppearanceAnimationLayout2Module);
+    return AppearanceAnimationLayout2Module;
+}());
+
+//# sourceMappingURL=appearance-animation-layout-2.module.js.map
+
+/***/ }),
+
+/***/ 405:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppearanceAnimationLayout2; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AppearanceAnimationLayout2 = (function () {
+    function AppearanceAnimationLayout2() {
+        this.animateItems = [];
+        this.animateClass = { 'fade-in-right-item': true };
+    }
+    AppearanceAnimationLayout2.prototype.onEvent = function (event, item, e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        if (this.events[event]) {
+            this.events[event](item);
+        }
+    };
+    AppearanceAnimationLayout2.prototype.ngOnChanges = function (changes) {
+        var that = this;
+        that.data = changes['data'].currentValue;
+        if (that.data && that.data.items) {
+            var _loop_1 = function (i) {
+                setTimeout(function () {
+                    that.animateItems.push(that.data.items[i]);
+                }, 200 * i);
+            };
+            for (var i = 0; i < that.data.items.length; i++) {
+                _loop_1(i);
+            }
+        }
+    };
+    AppearanceAnimationLayout2.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.content.ionScroll.subscribe(function (d) {
+            _this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AppearanceAnimationLayout2.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AppearanceAnimationLayout2.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
+    ], AppearanceAnimationLayout2.prototype, "content", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
+    ], AppearanceAnimationLayout2.prototype, "fabButton", void 0);
+    AppearanceAnimationLayout2 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'appearance-animation-layout-2',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/appearance-animation/layout-2/appearance-animation.html"*/'<!--Theme Appearance animation (Fade In Right)-->\n\n<ion-content has-header>\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <ion-row>\n\n            <ion-col col-12>\n\n                <ion-list no-margin>\n\n                    <ion-item no-lines [ngClass]="animateClass" *ngFor="let item of animateItems; let i = index;" (click)="onEvent(\'onItemClick\', item.title, $event)">\n\n                        <ion-avatar item-start>\n\n                            <img [src]="item.image" alt="{{item.title}}" />\n\n                        </ion-avatar>\n\n                        <h2 item-title padding-left>{{item.title}}</h2>\n\n                        <ion-icon icon-small item-right (click)="onEvent(\'onFavorite\', item, $event)">\n\n                            <i class="icon" [ngClass]="{\'icon-heart\': item.favorite, \'icon-heart-outline\': !item.favorite}"></i>\n\n                        </ion-icon>\n\n                    </ion-item>\n\n                </ion-list>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n<ion-fab #fab bottom right>\n\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n\n    <ion-icon name="add"></ion-icon>\n\n  </button>\n\n</ion-fab>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/appearance-animation/layout-2/appearance-animation.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], AppearanceAnimationLayout2);
+    return AppearanceAnimationLayout2;
+}());
+
+//# sourceMappingURL=appearance-animation-layout-2.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=68.js.map

@@ -1,14 +1,14 @@
 webpackJsonp([57],{
 
-/***/ 291:
+/***/ 300:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GoogleCardLayout1Module", function() { return GoogleCardLayout1Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GoogleCardLayout2Module", function() { return GoogleCardLayout2Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__google_card_layout_1__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__google_card_layout_2__ = __webpack_require__(417);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,37 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var GoogleCardLayout1Module = (function () {
-    function GoogleCardLayout1Module() {
+var GoogleCardLayout2Module = (function () {
+    function GoogleCardLayout2Module() {
     }
-    GoogleCardLayout1Module = __decorate([
+    GoogleCardLayout2Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__google_card_layout_1__["a" /* GoogleCardLayout1 */],
+                __WEBPACK_IMPORTED_MODULE_2__google_card_layout_2__["a" /* GoogleCardLayout2 */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__google_card_layout_1__["a" /* GoogleCardLayout1 */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__google_card_layout_2__["a" /* GoogleCardLayout2 */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__google_card_layout_1__["a" /* GoogleCardLayout1 */]
+                __WEBPACK_IMPORTED_MODULE_2__google_card_layout_2__["a" /* GoogleCardLayout2 */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
         })
-    ], GoogleCardLayout1Module);
-    return GoogleCardLayout1Module;
+    ], GoogleCardLayout2Module);
+    return GoogleCardLayout2Module;
 }());
 
-//# sourceMappingURL=google-card-layout-1.module.js.map
+//# sourceMappingURL=google-card-layout-2.module.js.map
 
 /***/ }),
 
-/***/ 406:
+/***/ 417:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoogleCardLayout1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoogleCardLayout2; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,11 +60,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var GoogleCardLayout1 = (function () {
-    function GoogleCardLayout1() {
+var GoogleCardLayout2 = (function () {
+    function GoogleCardLayout2() {
         this.slider = {};
     }
-    GoogleCardLayout1.prototype.slideHasChanged = function (slider, index) {
+    GoogleCardLayout2.prototype.slideHasChanged = function (slider, index) {
         this.slider[index] = slider;
         if (2 == slider._activeIndex) {
             if (this.data.items) {
@@ -75,12 +75,12 @@ var GoogleCardLayout1 = (function () {
             }
         }
     };
-    GoogleCardLayout1.prototype.onClickEvent = function (index) {
+    GoogleCardLayout2.prototype.onClickEvent = function (index) {
         if (this.slider[index]) {
             this.slider[index].slidePrev(300);
         }
     };
-    GoogleCardLayout1.prototype.onEvent = function (event, item, e) {
+    GoogleCardLayout2.prototype.onEvent = function (event, item, e) {
         if (e) {
             e.stopPropagation();
         }
@@ -88,7 +88,7 @@ var GoogleCardLayout1 = (function () {
             this.events[event](item);
         }
     };
-    GoogleCardLayout1.prototype.ngAfterViewInit = function () {
+    GoogleCardLayout2.prototype.ngAfterViewInit = function () {
         var _this = this;
         this.content.ionScroll.subscribe(function (d) {
             _this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
@@ -97,29 +97,29 @@ var GoogleCardLayout1 = (function () {
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], GoogleCardLayout1.prototype, "data", void 0);
+    ], GoogleCardLayout2.prototype, "data", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], GoogleCardLayout1.prototype, "events", void 0);
+    ], GoogleCardLayout2.prototype, "events", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
-    ], GoogleCardLayout1.prototype, "content", void 0);
+    ], GoogleCardLayout2.prototype, "content", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
-    ], GoogleCardLayout1.prototype, "fabButton", void 0);
-    GoogleCardLayout1 = __decorate([
+    ], GoogleCardLayout2.prototype, "fabButton", void 0);
+    GoogleCardLayout2 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'google-card-layout-1',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/google-card/layout-1/google-card.html"*/'<!--Theme Styled cards-->\n\n<ion-content has-header>\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <ion-row>\n\n            <ion-col col-12 col-md-12 col-lg-6 *ngFor="let item of data.items;let i = index">\n\n                <ion-card padding text-right class="card" (click)="onEvent(\'onItemClick\', item.title, $event)">\n\n                    <div float-left class="card-img">\n\n                        <img images-filter src="{{item.image}}" />\n\n                    </div>\n\n                    <!--Card-content-->\n\n                    <ion-card-content>\n\n                        <ion-icon>\n\n                            <i class="icon {{item.iconSlider}}"></i>\n\n                        </ion-icon>\n\n                        <ion-card-title no-padding>\n\n                            <h2 card-title>{{item.title}}</h2>\n\n                        </ion-card-title>\n\n                        <h3 card-subtitle>{{item.description}}</h3>\n\n                        <h3 card-subtitle>{{item.shortDescription}}</h3>\n\n                        <p card-body-text>{{item.longDescription}}</p>\n\n                        <!---Social share-->\n\n                        <div social>\n\n                            <ion-icon>\n\n                                <i icon-small ng-if="group.iconLike" class="icon {{item.iconLike}}" (click)="onEvent(\'onLike\', item, $event)"></i>\n\n                            </ion-icon>\n\n                            <ion-icon>\n\n                                <i icon-small ng-if="item.iconFavorite" class="icon {{item.iconFavorite}}" (click)="onEvent(\'onFavorite\', item, $event)"></i>\n\n                            </ion-icon>\n\n                            <ion-icon>\n\n                                <i icon-small ng-if="item.iconShare" class="icon {{item.iconShare}}" (click)="onEvent(\'onShare\', item, $event)"></i>\n\n                            </ion-icon>\n\n                        </div>\n\n                    </ion-card-content>\n\n                </ion-card>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n<ion-fab #fab bottom right>\n\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n\n      <ion-icon name="add"></ion-icon>\n\n  </button>\n\n</ion-fab>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/google-card/layout-1/google-card.html"*/
+            selector: 'google-card-layout-2',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/google-card/layout-2/google-card.html"*/'<!--Theme Styled cards 2-->\n\n<ion-content has-header>\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <ion-row>\n\n            <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let item of data.items;let i = index">\n\n                <ion-card text-left (click)="onEvent(\'onItemClick\', item.title, $event)">\n\n                    <div card-image>\n\n                        <img images-filter src="{{item.image}}" />\n\n                        <h2 card-title>{{item.titleHeader}}</h2>\n\n                    </div>\n\n                    <ion-card-content>\n\n                        <ion-card-title>\n\n                            <h1 card-subtitle>{{item.title}}</h1>\n\n                        </ion-card-title>\n\n                        <p card-body-text>{{item.description}}</p>\n\n                    </ion-card-content>\n\n                    <button ion-button margin button-clear-outline round outline medium float-left (click)="onEvent(\'onShare\', item, $event)">\n\n            {{item.shareButton}}\n\n          </button>\n\n                    <button ion-button margin-bottom margin-top button-clear-outline round outline medium float-left (click)="onEvent(\'onExplore\', item, $event)">\n\n            {{item.button}}\n\n          </button>\n\n                </ion-card>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<!--Fab Button-->\n\n<ion-fab #fab bottom right>\n\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n\n    <ion-icon name="add"></ion-icon>\n\n  </button>\n\n</ion-fab>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/google-card/layout-2/google-card.html"*/
         }),
         __metadata("design:paramtypes", [])
-    ], GoogleCardLayout1);
-    return GoogleCardLayout1;
+    ], GoogleCardLayout2);
+    return GoogleCardLayout2;
 }());
 
-//# sourceMappingURL=google-card-layout-1.js.map
+//# sourceMappingURL=google-card-layout-2.js.map
 
 /***/ })
 

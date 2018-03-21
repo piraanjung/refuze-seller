@@ -1,14 +1,14 @@
 webpackJsonp([41],{
 
-/***/ 314:
+/***/ 323:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterLayout1Module", function() { return RegisterLayout1Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterLayout2Module", function() { return RegisterLayout2Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_layout_1__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_layout_2__ = __webpack_require__(440);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,35 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var RegisterLayout1Module = (function () {
-    function RegisterLayout1Module() {
+var RegisterLayout2Module = (function () {
+    function RegisterLayout2Module() {
     }
-    RegisterLayout1Module = __decorate([
+    RegisterLayout2Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__register_layout_1__["a" /* RegisterLayout1 */],
+                __WEBPACK_IMPORTED_MODULE_2__register_layout_2__["a" /* RegisterLayout2 */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__register_layout_1__["a" /* RegisterLayout1 */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__register_layout_2__["a" /* RegisterLayout2 */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__register_layout_1__["a" /* RegisterLayout1 */]
+                __WEBPACK_IMPORTED_MODULE_2__register_layout_2__["a" /* RegisterLayout2 */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
         })
-    ], RegisterLayout1Module);
-    return RegisterLayout1Module;
+    ], RegisterLayout2Module);
+    return RegisterLayout2Module;
 }());
 
-//# sourceMappingURL=register-layout-1.module.js.map
+//# sourceMappingURL=register-layout-2.module.js.map
 
 /***/ }),
 
-/***/ 429:
+/***/ 440:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterLayout1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterLayout2; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -58,8 +58,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var RegisterLayout1 = (function () {
-    function RegisterLayout1() {
+var RegisterLayout2 = (function () {
+    function RegisterLayout2() {
         var _this = this;
         this.onEvent = function (event) {
             if (_this.events[event]) {
@@ -76,21 +76,21 @@ var RegisterLayout1 = (function () {
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], RegisterLayout1.prototype, "data", void 0);
+    ], RegisterLayout2.prototype, "data", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], RegisterLayout1.prototype, "events", void 0);
-    RegisterLayout1 = __decorate([
+    ], RegisterLayout2.prototype, "events", void 0);
+    RegisterLayout2 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'register-layout-1',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/register/layout-1/register.html"*/'<!-- Themes Register + logo -->\n\n<ion-content has-header background-size default-background>\n\n    <ion-grid *ngIf="data != null">\n\n        <ion-row wrap padding>\n\n            <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>\n\n                <!--Form-->\n\n                <div class="form">\n\n                    <!--Form Title-->\n\n                    <h1 title text-right>{{data.register}}</h1>\n\n                    <!---Input field username-->\n\n                    <ion-item no-padding>\n\n                        <ion-label floating>{{data.username}}</ion-label>\n\n                        <ion-input required type="text" [(ngModel)]="username"></ion-input>\n\n                    </ion-item>\n\n                    <!---Input field password-->\n\n                    <ion-item no-padding>\n\n                        <ion-label floating>{{data.password}}</ion-label>\n\n                        <ion-input required type="password" [(ngModel)]="password"></ion-input>\n\n                    </ion-item>\n\n                    <!---Input field email-->\n\n                    <ion-item no-padding>\n\n                        <ion-label floating>{{data.email}}</ion-label>\n\n                        <ion-input required type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required [(ngModel)]="email"></ion-input>\n\n                    </ion-item>\n\n                    <!---Input field country-->\n\n                    <ion-item no-padding>\n\n                        <ion-label floating>{{data.country}}</ion-label>\n\n                        <ion-input required type="text" pattern="[a-zA-Z ]*" required [(ngModel)]="country"></ion-input>\n\n                    </ion-item>\n\n                    <!---Input field city-->\n\n                    <ion-item no-padding>\n\n                        <ion-label floating>{{data.city}}</ion-label>\n\n                        <ion-input required type="text" pattern="[a-zA-Z ]*" required [(ngModel)]="city"></ion-input>\n\n                    </ion-item>\n\n                    <!---Register button-->\n\n                    <button ion-button float-right clear button-clear (click)="onEvent(\'onRegister\')">{{data.register}}</button>\n\n                </div>\n\n                <div logo>\n\n                    <!---Logo-->\n\n                    <img float-left [src]="data.logo" *ngIf="data.logo != null" />\n\n                    <!---Skip button-->\n\n                    <button ion-button float-right clear button-clear (click)="onEvent(\'onSkip\')">{{data.skip}}</button>\n\n                </div>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/register/layout-1/register.html"*/
+            selector: 'register-layout-2',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/register/layout-2/register.html"*/'<!-- Themes Register + Image -->\n\n<ion-content has-header white-background>\n\n    <ion-grid *ngIf="data != null">\n\n        <ion-row wrap padding>\n\n            <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>\n\n                <!--Logo-->\n\n                <div logo>\n\n                    <img [src]="data.logo" *ngIf="data.logo != null" />\n\n                </div>\n\n                <!--End logo-->\n\n                <!--Form-->\n\n                <div class="form">\n\n                    <ion-item no-padding transparent>\n\n                        <!--Icon for username-->\n\n                        <ion-icon item-left>\n\n                            <i icon-small class="icon {{data.iconAccount}}"></i>\n\n                        </ion-icon>\n\n                        <!---Input field username-->\n\n                        <ion-label floating>{{data.username}}</ion-label>\n\n                        <ion-input required type="text" [(ngModel)]="username"></ion-input>\n\n                    </ion-item>\n\n                    <ion-item no-padding transparent>\n\n                        <!--Icon for password-->\n\n                        <ion-icon item-left>\n\n                            <i icon-small class="icon {{data.iconLock}}"></i>\n\n                        </ion-icon>\n\n                        <!---Input field password-->\n\n                        <ion-label floating>{{data.password}}</ion-label>\n\n                        <ion-input required type="password" [(ngModel)]="password"></ion-input>\n\n                    </ion-item>\n\n                    <ion-item no-padding transparent>\n\n                        <!--Icon for email-->\n\n                        <ion-icon item-left>\n\n                            <i icon-small class="icon {{data.iconEmail}}"></i>\n\n                        </ion-icon>\n\n                        <!---Input field email-->\n\n                        <ion-label floating>{{data.email}}</ion-label>\n\n                        <ion-input required type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required [(ngModel)]="email"></ion-input>\n\n                    </ion-item>\n\n                    <ion-item no-padding transparent>\n\n                        <!--Icon for country-->\n\n                        <ion-icon item-left>\n\n                            <i icon-small class="icon {{data.iconWeb}}"></i>\n\n                        </ion-icon>\n\n                        <!---Input field country-->\n\n                        <ion-label floating>{{data.country}}</ion-label>\n\n                        <ion-input required type="text" pattern="[a-zA-Z ]*" required [(ngModel)]="country"></ion-input>\n\n                    </ion-item>\n\n                    <ion-item no-padding transparent>\n\n                        <!--Icon for city-->\n\n                        <ion-icon item-left>\n\n                            <i icon-small class="icon {{data.iconCity}}"></i>\n\n                        </ion-icon>\n\n                        <!---Input field city-->\n\n                        <ion-label floating>{{data.city}}</ion-label>\n\n                        <ion-input required type="text" pattern="[a-zA-Z ]*" required [(ngModel)]="city"></ion-input>\n\n                    </ion-item>\n\n                    <!---Register button-->\n\n                    <button ion-button float-right clear button-clear (click)="onEvent(\'onRegister\')">{{data.submit}}</button>\n\n                </div>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/register/layout-2/register.html"*/
         }),
         __metadata("design:paramtypes", [])
-    ], RegisterLayout1);
-    return RegisterLayout1;
+    ], RegisterLayout2);
+    return RegisterLayout2;
 }());
 
-//# sourceMappingURL=register-layout-1.js.map
+//# sourceMappingURL=register-layout-2.js.map
 
 /***/ })
 

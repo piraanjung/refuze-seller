@@ -1,1 +1,3272 @@
-webpackJsonp([4],{300:function(n,e,l){"use strict";function t(n){return s._20(0,[(n()(),s._0(0,0,null,null,80,"li",[["no-lines",""]],null,null,null,null,null)),s.Z(1,278528,null,0,w.g,[s.p,s.q,s.j,s.B],{ngClass:[0,"ngClass"]},null),(n()(),s._19(-1,null,["\n                      "])),(n()(),s._19(-1,null,["\n                          "])),(n()(),s._0(4,0,null,null,25,"ion-list",[["no-margin",""]],null,[[null,"click"]],function(n,e,l){var t=!0;if("click"===e){t=!1!==n.component.toggleGroup(n.context.$implicit,n.context.$implicit)&&t}return t},null,null)),s.Z(5,16384,null,0,k.a,[C.a,s.j,s.A,T.a,j.l,S.a],null,null),(n()(),s._19(-1,null,[" \n                              "])),(n()(),s._0(7,0,null,null,21,"ion-item",[["class","item item-block"],["no-lines",""]],null,null,null,x.b,x.a)),s.Z(8,1097728,null,3,A.a,[P.a,C.a,s.j,s.A,[2,O.a]],null,null),s._17(335544320,6,{contentLabel:0}),s._17(603979776,7,{_buttons:1}),s._17(603979776,8,{_icons:1}),s.Z(12,16384,null,0,E.a,[],null,null),(n()(),s._19(-1,2,["\n                                  "])),(n()(),s._0(14,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),s.Z(15,16384,null,0,N.a,[],null,null),(n()(),s._19(-1,null,["\n                                      "])),(n()(),s._0(17,0,null,null,0,"img",[["src","assets/images/avatar/23.jpg"]],null,null,null,null,null)),(n()(),s._19(-1,null,["\n                                  "])),(n()(),s._19(-1,2,["\n                                  "])),(n()(),s._0(20,0,null,2,1,"h2",[["item-title",""],["padding-left",""]],null,null,null,null,null)),(n()(),s._19(21,null,["","  ",""])),(n()(),s._19(-1,2,["\n                                  "])),(n()(),s._0(23,0,null,2,1,"h2",[["item-subtitle",""],["padding-left",""]],null,null,null,null,null)),(n()(),s._19(24,null,[""," "])),(n()(),s._19(-1,2,["\n                                      "])),(n()(),s._0(26,0,null,4,1,"ion-icon",[["item-right",""],["name","ios-arrow-dropdown-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Z(27,147456,[[8,4]],0,I.a,[C.a,s.j,s.A],{name:[0,"name"]},null),(n()(),s._19(-1,2,["\n                              "])),(n()(),s._19(-1,null,["\n                          "])),(n()(),s._19(-1,null,["\n                      "])),(n()(),s._19(-1,null,["\n                      "])),(n()(),s._0(32,0,null,null,46,"div",[["class","item-accordion"]],[[8,"hidden",0]],null,null,null,null)),s.Z(33,278528,null,0,w.g,[s.p,s.q,s.j,s.B],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),s._15(34,{active:0}),(n()(),s._19(-1,null,["\n                        \n                        \n                                "])),(n()(),s._0(36,0,null,null,22,"ion-row",[["class","row"]],null,null,null,null,null)),s.Z(37,16384,null,0,Z.a,[],null,null),(n()(),s._19(-1,null,["\n                                  "])),(n()(),s._0(39,0,null,null,5,"ion-col",[["class","col"],["col-4",""]],null,null,null,null,null)),s.Z(40,16384,null,0,R.a,[],null,null),(n()(),s._19(-1,null,["\n                                    "])),(n()(),s._0(42,0,null,null,1,"ion-img",[["height","80"],["src","assets/imgs/f_logo.png"],["width","80"]],null,null,null,L.b,L.a)),s.Z(43,1228800,null,0,U.a,[s.j,s.A,T.a,[2,z.a],S.a],{src:[0,"src"],width:[1,"width"],height:[2,"height"]},null),(n()(),s._19(-1,null,["\n                                  "])),(n()(),s._19(-1,null,["\n                                  "])),(n()(),s._0(46,0,null,null,11,"ion-col",[["class","col"],["col-8",""]],null,null,null,null,null)),s.Z(47,16384,null,0,R.a,[],null,null),(n()(),s._19(-1,null,["\n                                    "])),(n()(),s._0(49,0,null,null,1,"h2",[["header-title",""]],null,null,null,null,null)),(n()(),s._19(50,null,["",""])),(n()(),s._19(-1,null,["\n                                    "])),(n()(),s._0(52,0,null,null,1,"h5",[["header-title",""]],null,null,null,null,null)),(n()(),s._19(53,null,["",""])),(n()(),s._19(-1,null,["\n                                    "])),(n()(),s._0(55,0,null,null,1,"h5",[["header-subtitle",""]],null,null,null,null,null)),(n()(),s._19(56,null,["",""])),(n()(),s._19(-1,null,["\n                                  "])),(n()(),s._19(-1,null,["\n                                "])),(n()(),s._19(-1,null,["\n                        \n                        "])),(n()(),s._0(60,0,null,null,17,"ion-row",[["class","row"]],null,null,null,null,null)),s.Z(61,16384,null,0,Z.a,[],null,null),(n()(),s._19(-1,null,[" \n                            "])),(n()(),s._0(63,0,null,null,13,"ion-col",[["class","col"],["col-12",""],["col-lg-6",""],["col-md-12",""],["col-sm-12",""],["col-xl-6",""],["offset-2",""],["offset-lg-2",""],["offset-xl-2",""]],null,null,null,null,null)),s.Z(64,16384,null,0,R.a,[],null,null),(n()(),s._19(-1,null,["\n                                "])),(n()(),s._19(-1,null,["\n                                "])),(n()(),s._0(67,0,null,null,3,"button",[["color","facebook"],["ion-button",""],["round",""]],null,[[null,"click"]],function(n,e,l){var t=!0;if("click"===e){t=!1!==s._14(n,69).onClick()&&t}return t},D.b,D.a)),s.Z(68,1097728,null,0,B.a,[[8,""],C.a,s.j,s.A],{color:[0,"color"],round:[1,"round"]},null),s.Z(69,16384,null,0,H.a,[[2,F.a]],{navPush:[0,"navPush"]},null),(n()(),s._19(-1,0,["รับซื้อขยะ"])),(n()(),s._19(-1,null,["\n                                "])),(n()(),s._19(-1,null,["\n                                "])),(n()(),s._0(73,0,null,null,2,"button",[["color","tweetter"],["ion-button",""],["round",""]],null,[[null,"click"]],function(n,e,l){var t=!0;if("click"===e){t=!1!==n.component.goToHistorySeller(n.context.$implicit)&&t}return t},D.b,D.a)),s.Z(74,1097728,null,0,B.a,[[8,""],C.a,s.j,s.A],{color:[0,"color"],round:[1,"round"]},null),(n()(),s._19(-1,0,["ประวัติรับซื้อขยะ"])),(n()(),s._19(-1,null,["\n                            "])),(n()(),s._19(-1,null,["\n                        "])),(n()(),s._19(-1,null,["  \n                      "])),(n()(),s._19(-1,null,["\n                      "])),(n()(),s._19(-1,null,["\n                    "]))],function(n,e){var l=e.component;n(e,1,0,l.animateClass);n(e,27,0,"ios-arrow-dropdown-outline");n(e,33,0,"item-accordion",n(e,34,0,l.isGroupShown(e.context.$implicit)));n(e,43,0,"assets/imgs/f_logo.png","80","80");n(e,68,0,"facebook","");n(e,69,0,l.FindItemsPage);n(e,74,0,"tweetter","")},function(n,e){var l=e.component;n(e,21,0,e.context.$implicit.name,e.context.$implicit.last_name);n(e,24,0,e.context.$implicit.id_card);n(e,26,0,s._14(e,27)._hidden);n(e,32,0,!l.isGroupShown(e.context.$implicit));n(e,50,0,l.fullname);n(e,53,0,l.mobile);n(e,56,0,l.address)})}function r(n){return s._20(0,[(n()(),s._0(0,0,null,null,20,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),s.Z(1,16384,null,0,M.a,[],null,null),(n()(),s._19(-1,null,["\n            "])),(n()(),s._0(3,0,null,null,16,"ion-row",[["class","row"]],null,null,null,null,null)),s.Z(4,16384,null,0,Z.a,[],null,null),(n()(),s._19(-1,null,["\n              "])),(n()(),s._0(6,0,null,null,12,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),s.Z(7,16384,null,0,R.a,[],null,null),(n()(),s._19(-1,null,["\n                "])),(n()(),s._0(9,0,null,null,8,"ion-list",[["no-margin",""]],null,null,null,null,null)),s.Z(10,16384,null,0,k.a,[C.a,s.j,s.A,T.a,j.l,S.a],null,null),(n()(),s._19(-1,null,["\n                  "])),(n()(),s._0(12,0,null,null,4,"ul",[["class","collapsible"],["no-margin",""],["no-padding",""]],null,null,null,null,null)),(n()(),s._19(-1,null,["\n                    "])),(n()(),s.V(16777216,null,null,1,null,t)),s.Z(15,802816,null,0,w.h,[s.J,s.G,s.p],{ngForOf:[0,"ngForOf"]},null),(n()(),s._19(-1,null,["\n                  "])),(n()(),s._19(-1,null,["\n                "])),(n()(),s._19(-1,null,["\n              "])),(n()(),s._19(-1,null,["\n            "])),(n()(),s._19(-1,null,["\n          "]))],function(n,e){n(e,15,0,e.component.sellers)},null)}function o(n){return s._20(0,[(n()(),s._0(0,0,null,null,43,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),s.Z(1,16384,null,0,M.a,[],null,null),(n()(),s._19(-1,null,["\n      \n    "])),(n()(),s._0(3,0,null,null,39,"ion-row",[["class","row"]],null,null,null,null,null)),s.Z(4,16384,null,0,Z.a,[],null,null),(n()(),s._19(-1,null,["\n      "])),(n()(),s._0(6,0,null,null,35,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),s.Z(7,16384,null,0,R.a,[],null,null),(n()(),s._19(-1,null,["\n        "])),(n()(),s._0(9,0,null,null,31,"ion-list",[["no-margin",""]],null,null,null,null,null)),s.Z(10,16384,null,0,k.a,[C.a,s.j,s.A,T.a,j.l,S.a],null,null),(n()(),s._19(-1,null,["\n          "])),(n()(),s._0(12,0,null,null,21,"ion-list-header",[["class","item"],["header-bcg",""],["no-lines",""],["no-padding",""]],null,null,null,x.b,x.a)),s.Z(13,1097728,null,3,A.a,[P.a,C.a,s.j,s.A,[2,O.a]],null,null),s._17(335544320,3,{contentLabel:0}),s._17(603979776,4,{_buttons:1}),s._17(603979776,5,{_icons:1}),s.Z(17,16384,null,0,q.a,[C.a,s.A,s.j,[8,null]],null,null),(n()(),s._19(-1,2,["\n            "])),(n()(),s._0(19,0,null,0,4,"ion-icon",[["icon-large",""],["item-start",""],["role","img"],["white",""]],[[2,"hide",null]],null,null,null,null)),s.Z(20,147456,[[5,4]],0,I.a,[C.a,s.j,s.A],null,null),(n()(),s._19(-1,null,["\n              "])),(n()(),s._0(22,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),s._19(-1,null,["\n            "])),(n()(),s._19(-1,2,["\n            "])),(n()(),s._0(25,0,null,2,1,"h1",[["header-title",""]],null,null,null,null,null)),(n()(),s._19(26,null,["",""])),(n()(),s._19(-1,2,["\n            "])),(n()(),s._0(28,0,null,2,1,"h2",[["header-subtitle",""]],null,null,null,null,null)),(n()(),s._19(29,null,["",""])),(n()(),s._19(-1,2,["\n          \n            "])),(n()(),s._0(31,0,null,2,1,"ion-searchbar",[],[[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null]],[[null,"ionInput"]],function(n,e,l){var t=!0;if("ionInput"===e){t=!1!==n.component.getItems(l)&&t}return t},J.b,J.a)),s.Z(32,1294336,null,0,V.a,[C.a,T.a,s.j,s.A,[2,G.g]],null,{ionInput:"ionInput"}),(n()(),s._19(-1,2,["\n\n          "])),(n()(),s._19(-1,null,["\n          "])),(n()(),s._19(-1,null,["\n          "])),(n()(),s._19(-1,null,["\n          "])),(n()(),s.V(16777216,null,null,1,null,r)),s.Z(38,16384,null,0,w.i,[s.J,s.G],{ngIf:[0,"ngIf"]},null),(n()(),s._19(-1,null,["\n          "])),(n()(),s._19(-1,null,["\n        "])),(n()(),s._19(-1,null,["\n      "])),(n()(),s._19(-1,null,["\n    "])),(n()(),s._19(-1,null,["\n  "]))],function(n,e){var l=e.component;n(e,32,0);n(e,38,0,null!=l.data)},function(n,e){var l=e.component;n(e,19,0,s._14(e,20)._hidden);n(e,22,0,s._3(1,"icon ",l.data.iconPlay,""));n(e,26,0,l.data.title);n(e,29,0,l.data.description);n(e,31,0,s._14(e,32)._animated,s._14(e,32)._value,s._14(e,32)._isActive,s._14(e,32)._showCancelButton,s._14(e,32)._shouldAlignLeft,s._14(e,32)._isFocus)})}function u(n){return s._20(0,[s._17(402653184,1,{content:0}),s._17(402653184,2,{fabButton:0}),(n()(),s._0(2,0,null,null,10,"ion-header",[],null,null,null,null,null)),s.Z(3,16384,null,0,K.a,[C.a,s.j,s.A,[2,X.a]],null,null),(n()(),s._19(-1,null,["\n\n  "])),(n()(),s._0(5,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,$.b,$.a)),s.Z(6,49152,null,0,W.a,[Y.a,[2,X.a],[2,F.a],C.a,s.j,s.A],null,null),(n()(),s._19(-1,3,["\n    "])),(n()(),s._0(8,0,null,3,2,"ion-title",[],null,null,null,Q.b,Q.a)),s.Z(9,49152,null,0,nn.a,[C.a,s.j,s.A,[2,en.a],[2,W.a]],null,null),(n()(),s._19(-1,0,["ค้นหาสมาชิกผู้ขายขยะ"])),(n()(),s._19(-1,3,["\n  "])),(n()(),s._19(-1,null,["\n\n"])),(n()(),s._19(-1,null,["\n\n"])),(n()(),s._19(-1,null,["\n"])),(n()(),s._0(15,0,null,null,5,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,ln.b,ln.a)),s.Z(16,4374528,[[1,4]],0,z.a,[C.a,T.a,S.a,s.j,s.A,Y.a,tn.a,s.u,[2,X.a],[2,F.a]],null,null),(n()(),s._19(-1,1,["\n    "])),(n()(),s.V(16777216,null,1,1,null,o)),s.Z(19,16384,null,0,w.i,[s.J,s.G],{ngIf:[0,"ngIf"]},null),(n()(),s._19(-1,1,["\n"])),(n()(),s._19(-1,null,["\n"])),(n()(),s._19(-1,null,["\n\n\n"])),(n()(),s._19(-1,null,["\n"]))],function(n,e){n(e,19,0,null!=e.component.data)},function(n,e){n(e,5,0,s._14(e,6)._hidden,s._14(e,6)._sbPadding);n(e,15,0,s._14(e,16).statusbarPadding,s._14(e,16)._hasRefresher)})}Object.defineProperty(e,"__esModule",{value:!0});var s=l(0),a=(l(5),l(109),l(318)),i=l(340),c=function(){function n(n,e,l,t){this.navCtrl=n,this.navParams=e,this.findSeller=l,this.loadingCtrl=t,this.animateItems=[],this.FindItemsPage="find-items",this.animateClass={"zoom-in":!0},this.path="assets/svg/bars.svg"}return n.prototype.ionViewDidLoad=function(){localStorage.removeItem("purchaseItems"),localStorage.removeItem("sellerProfile"),this.getSellers(),this.data=this.findSeller.getDataForLayout1()},n.prototype.getSellers=function(){var n=this,e=this.loadingCtrl.create({content:'<ion-spinner name="lines"></ion-spinner>'});e.present(),setTimeout(function(){e.dismiss()},2e3),this.findSeller.getSellers().subscribe(function(e){n.sellers=e,console.log(n.sellers)})},n.prototype.goToProfileSeller=function(n){localStorage.setItem("sellerProfile",JSON.stringify(n)),this.navCtrl.push("ProfileSellerPage")},n.prototype.getItems=function(n){var e=n.target.value;e&&""!=e.trim()?this.sellers=this.sellers.filter(function(n){return n.name.toLowerCase().indexOf(e.toLowerCase())>-1}):this.getSellers()},n.prototype.toggleGroup=function(n,e){console.log(e),n.show=!n.show,localStorage.setItem("sellerProfile",JSON.stringify(e)),this.seller=JSON.parse(localStorage.getItem("sellerProfile")),0!==Object.keys(this.seller).length&&(this.id=this.id,this.fullname=this.seller.name+" "+this.seller.last_name,this.mobile="เบอร์ติดต่อ "+this.seller.mobile,this.address="บ้านเลขที่ "+this.seller.address+" ตำบล "+this.seller.DISTRICT_NAME+" อำเภอ "+this.seller.AMPHUR_NAME+" จังหวัด "+this.seller.PROVINCE_NAME+" "+this.seller.zipcode)},n.prototype.isGroupShown=function(n){return n.show},n.prototype.ngOnChanges=function(n){var e=this;if(e.data=n.data.currentValue,e.data&&e.data.items)for(var l=function(n){setTimeout(function(){e.animateItems.push(e.data.items[n])},200*n)},t=0;t<e.data.items.length;t++)l(t)},n.prototype.goToHistorySeller=function(n){console.log(n),this.navCtrl.push("PurchaseHistoryPage",{seller:n})},n}(),d=function(){return function(){}}(),p=l(184),h=l(185),f=l(186),m=l(187),_=l(188),g=l(189),y=l(190),b=l(191),v=l(192),w=l(16),k=l(52),C=l(1),T=l(3),j=l(7),S=l(8),x=l(193),A=l(18),P=l(14),O=l(39),E=l(70),N=l(116),I=l(38),Z=l(112),R=l(113),L=l(359),U=l(127),z=l(21),D=l(40),B=l(19),H=l(75),F=l(20),M=l(111),q=l(71),J=l(334),V=l(121),G=l(17),K=l(120),X=l(4),$=l(314),W=l(41),Y=l(9),Q=l(313),nn=l(115),en=l(53),ln=l(308),tn=l(34),rn=l(10),on=l(80),un=s.Y({encapsulation:2,styles:[],data:{}}),sn=s.W("page-find-seller",c,function(n){return s._20(0,[(n()(),s._0(0,0,null,null,1,"page-find-seller",[],null,null,null,u,un)),s.Z(1,573440,null,0,c,[F.a,rn.a,i.a,on.a],null,null)],null,null)},{data:"data",events:"events"},{},[]),an=l(110),cn=l(35);l.d(e,"FindSellerPageModuleNgFactory",function(){return dn});var dn=s.X(d,[],function(n){return s._11([s._12(512,s.i,s.T,[[8,[p.a,h.a,f.a,m.a,_.a,g.a,y.a,b.a,v.a,sn]],[3,s.i],s.s]),s._12(4608,a.h,a.m,[w.c,s.w,a.k]),s._12(4608,a.n,a.n,[a.h,a.l]),s._12(5120,a.a,function(n){return[n]},[a.n]),s._12(4608,a.j,a.j,[]),s._12(6144,a.i,null,[a.j]),s._12(4608,a.g,a.g,[a.i]),s._12(6144,a.b,null,[a.g]),s._12(5120,a.f,a.o,[a.b,[2,a.a]]),s._12(4608,a.c,a.c,[a.f]),s._12(4608,w.k,w.j,[s.r,[2,w.s]]),s._12(4608,G.n,G.n,[]),s._12(4608,G.c,G.c,[]),s._12(4608,i.a,i.a,[a.c]),s._12(512,a.e,a.e,[]),s._12(512,a.d,a.d,[]),s._12(512,w.b,w.b,[]),s._12(512,G.m,G.m,[]),s._12(512,G.d,G.d,[]),s._12(512,G.k,G.k,[]),s._12(512,an.a,an.a,[]),s._12(512,an.b,an.b,[]),s._12(512,d,d,[]),s._12(256,a.k,"XSRF-TOKEN",[]),s._12(256,a.l,"X-XSRF-TOKEN",[]),s._12(256,cn.a,c,[])])})},308:function(n,e,l){"use strict";function t(n){return r._20(2,[r._17(402653184,1,{_fixedContent:0}),r._17(402653184,2,{_scrollContent:0}),(n()(),r._0(2,0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),r._13(null,0),(n()(),r._0(4,0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),r._13(null,1),r._13(null,2)],null,null)}l.d(e,"a",function(){return o}),e.b=t;var r=l(0),o=(l(1),l(3),l(8),l(34),l(4),l(20),r.Y({encapsulation:2,styles:[],data:{}}))},313:function(n,e,l){"use strict";function t(n){return r._20(2,[(n()(),r._0(0,0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),r.Z(1,278528,null,0,o.g,[r.p,r.q,r.j,r.B],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),r._13(null,0)],function(n,e){n(e,1,0,"toolbar-title","toolbar-title-"+e.component._mode)},null)}l.d(e,"a",function(){return u}),e.b=t;var r=l(0),o=l(16),u=(l(1),r.Y({encapsulation:2,styles:[],data:{}}))},314:function(n,e,l){"use strict";function t(n){return r._20(0,[(n()(),r._0(0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),r.Z(1,278528,null,0,o.g,[r.p,r.q,r.j,r.B],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),r._0(2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(n,e,l){var t=!0;if("click"===e){t=!1!==n.component.backButtonClick(l)&&t}return t},u.b,u.a)),r.Z(3,278528,null,0,o.g,[r.p,r.q,r.j,r.B],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),r.Z(4,1097728,null,0,s.a,[[8,"bar-button"],a.a,r.j,r.A],null,null),(n()(),r._0(5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),r.Z(6,278528,null,0,o.g,[r.p,r.q,r.j,r.B],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),r.Z(7,147456,null,0,i.a,[a.a,r.j,r.A],{name:[0,"name"]},null),(n()(),r._0(8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),r.Z(9,278528,null,0,o.g,[r.p,r.q,r.j,r.B],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),r._19(10,null,["",""])),r._13(null,0),r._13(null,1),r._13(null,2),(n()(),r._0(14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),r.Z(15,278528,null,0,o.g,[r.p,r.q,r.j,r.B],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),r._13(null,3)],function(n,e){var l=e.component;n(e,1,0,"toolbar-background","toolbar-background-"+l._mode);n(e,3,0,"back-button","back-button-"+l._mode);n(e,6,0,"back-button-icon","back-button-icon-"+l._mode);n(e,7,0,l._bbIcon);n(e,9,0,"back-button-text","back-button-text-"+l._mode);n(e,15,0,"toolbar-content","toolbar-content-"+l._mode)},function(n,e){var l=e.component;n(e,2,0,l._hideBb);n(e,5,0,r._14(e,7)._hidden);n(e,10,0,l._backText)})}l.d(e,"a",function(){return c}),e.b=t;var r=l(0),o=l(16),u=l(40),s=l(19),a=l(1),i=l(38),c=(l(4),l(20),r.Y({encapsulation:2,styles:[],data:{}}))},318:function(n,e,l){"use strict";function t(n){return encodeURIComponent(n).replace(/%40/gi,"@").replace(/%3A/gi,":").replace(/%24/gi,"$").replace(/%2C/gi,",").replace(/%3B/gi,";").replace(/%2B/gi,"+").replace(/%3D/gi,"=").replace(/%3F/gi,"?").replace(/%2F/gi,"/")}function r(n){return"undefined"!=typeof ArrayBuffer&&n instanceof ArrayBuffer}function o(n){return"undefined"!=typeof Blob&&n instanceof Blob}function u(n){return"undefined"!=typeof FormData&&n instanceof FormData}function s(n,e){return{body:e,headers:n.headers,observe:n.observe,params:n.params,reportProgress:n.reportProgress,responseType:n.responseType,withCredentials:n.withCredentials}}function a(n,e){return void 0===e&&(e=[]),e?e.reduceRight(function(n,e){return new P(n,e)},n):n}l.d(e,"b",function(){return y}),l.d(e,"f",function(){return g}),l.d(e,"c",function(){return A}),l.d(e,"a",function(){return O}),l.d(e,"d",function(){return F}),l.d(e,"e",function(){return H}),l.d(e,"o",function(){return a}),l.d(e,"g",function(){return R}),l.d(e,"i",function(){return I}),l.d(e,"h",function(){return z}),l.d(e,"j",function(){return Z}),l.d(e,"m",function(){return D}),l.d(e,"n",function(){return B}),l.d(e,"k",function(){return L}),l.d(e,"l",function(){return U});var i=l(0),c=l(335),d=l(336),p=l(338),h=l(196),f=l(5),m=l(16),_=l(11),g=function(){return function(){}}(),y=function(){return function(){}}(),b=function(){function n(n){var e=this;this.normalizedNames=new Map,this.lazyUpdate=null,n?this.lazyInit="string"==typeof n?function(){e.headers=new Map,n.split("\n").forEach(function(n){var l=n.indexOf(":");if(l>0){var t=n.slice(0,l),r=t.toLowerCase(),o=n.slice(l+1).trim();e.maybeSetNormalizedName(t,r),e.headers.has(r)?e.headers.get(r).push(o):e.headers.set(r,[o])}})}:function(){e.headers=new Map,Object.keys(n).forEach(function(l){var t=n[l],r=l.toLowerCase();"string"==typeof t&&(t=[t]),t.length>0&&(e.headers.set(r,t),e.maybeSetNormalizedName(l,r))})}:this.headers=new Map}return n.prototype.has=function(n){return this.init(),this.headers.has(n.toLowerCase())},n.prototype.get=function(n){this.init();var e=this.headers.get(n.toLowerCase());return e&&e.length>0?e[0]:null},n.prototype.keys=function(){return this.init(),Array.from(this.normalizedNames.values())},n.prototype.getAll=function(n){return this.init(),this.headers.get(n.toLowerCase())||null},n.prototype.append=function(n,e){return this.clone({name:n,value:e,op:"a"})},n.prototype.set=function(n,e){return this.clone({name:n,value:e,op:"s"})},n.prototype.delete=function(n,e){return this.clone({name:n,value:e,op:"d"})},n.prototype.maybeSetNormalizedName=function(n,e){this.normalizedNames.has(e)||this.normalizedNames.set(e,n)},n.prototype.init=function(){var e=this;this.lazyInit&&(this.lazyInit instanceof n?this.copyFrom(this.lazyInit):this.lazyInit(),this.lazyInit=null,this.lazyUpdate&&(this.lazyUpdate.forEach(function(n){return e.applyUpdate(n)}),this.lazyUpdate=null))},n.prototype.copyFrom=function(n){var e=this;n.init(),Array.from(n.headers.keys()).forEach(function(l){e.headers.set(l,n.headers.get(l)),e.normalizedNames.set(l,n.normalizedNames.get(l))})},n.prototype.clone=function(e){var l=new n;return l.lazyInit=this.lazyInit&&this.lazyInit instanceof n?this.lazyInit:this,l.lazyUpdate=(this.lazyUpdate||[]).concat([e]),l},n.prototype.applyUpdate=function(n){var e=n.name.toLowerCase();switch(n.op){case"a":case"s":var l=n.value;if("string"==typeof l&&(l=[l]),0===l.length)return;this.maybeSetNormalizedName(n.name,e);var t=("a"===n.op?this.headers.get(e):void 0)||[];t.push.apply(t,l),this.headers.set(e,t);break;case"d":var r=n.value;if(r){var o=this.headers.get(e);if(!o)return;0===(o=o.filter(function(n){return-1===r.indexOf(n)})).length?(this.headers.delete(e),this.normalizedNames.delete(e)):this.headers.set(e,o)}else this.headers.delete(e),this.normalizedNames.delete(e)}},n.prototype.forEach=function(n){var e=this;this.init(),Array.from(this.normalizedNames.keys()).forEach(function(l){return n(e.normalizedNames.get(l),e.headers.get(l))})},n}(),v=function(){function n(){}return n.prototype.encodeKey=function(n){return t(n)},n.prototype.encodeValue=function(n){return t(n)},n.prototype.decodeKey=function(n){return decodeURIComponent(n)},n.prototype.decodeValue=function(n){return decodeURIComponent(n)},n}(),w=function(){function n(n){void 0===n&&(n={});var e=this;if(this.updates=null,this.cloneFrom=null,this.encoder=n.encoder||new v,n.fromString){if(n.fromObject)throw new Error("Cannot specify both fromString and fromObject.");this.map=function(n,e){var l=new Map;n.length>0&&n.split("&").forEach(function(n){var t=n.indexOf("="),r=-1==t?[e.decodeKey(n),""]:[e.decodeKey(n.slice(0,t)),e.decodeValue(n.slice(t+1))],o=r[0],u=r[1],s=l.get(o)||[];s.push(u),l.set(o,s)});return l}(n.fromString,this.encoder)}else n.fromObject?(this.map=new Map,Object.keys(n.fromObject).forEach(function(l){var t=n.fromObject[l];e.map.set(l,Array.isArray(t)?t:[t])})):this.map=null}return n.prototype.has=function(n){return this.init(),this.map.has(n)},n.prototype.get=function(n){this.init();var e=this.map.get(n);return e?e[0]:null},n.prototype.getAll=function(n){return this.init(),this.map.get(n)||null},n.prototype.keys=function(){return this.init(),Array.from(this.map.keys())},n.prototype.append=function(n,e){return this.clone({param:n,value:e,op:"a"})},n.prototype.set=function(n,e){return this.clone({param:n,value:e,op:"s"})},n.prototype.delete=function(n,e){return this.clone({param:n,value:e,op:"d"})},n.prototype.toString=function(){var n=this;return this.init(),this.keys().map(function(e){var l=n.encoder.encodeKey(e);return n.map.get(e).map(function(e){return l+"="+n.encoder.encodeValue(e)}).join("&")}).join("&")},n.prototype.clone=function(e){var l=new n({encoder:this.encoder});return l.cloneFrom=this.cloneFrom||this,l.updates=(this.updates||[]).concat([e]),l},n.prototype.init=function(){var n=this;null===this.map&&(this.map=new Map),null!==this.cloneFrom&&(this.cloneFrom.init(),this.cloneFrom.keys().forEach(function(e){return n.map.set(e,n.cloneFrom.map.get(e))}),this.updates.forEach(function(e){switch(e.op){case"a":case"s":var l=("a"===e.op?n.map.get(e.param):void 0)||[];l.push(e.value),n.map.set(e.param,l);break;case"d":if(void 0===e.value){n.map.delete(e.param);break}var t=n.map.get(e.param)||[],r=t.indexOf(e.value);-1!==r&&t.splice(r,1),t.length>0?n.map.set(e.param,t):n.map.delete(e.param)}}),this.cloneFrom=null)},n}(),k=function(){function n(n,e,l,t){this.url=e,this.body=null,this.reportProgress=!1,this.withCredentials=!1,this.responseType="json",this.method=n.toUpperCase();var r;if(function(n){switch(n){case"DELETE":case"GET":case"HEAD":case"OPTIONS":case"JSONP":return!1;default:return!0}}(this.method)||t?(this.body=l||null,r=t):r=l,r&&(this.reportProgress=!!r.reportProgress,this.withCredentials=!!r.withCredentials,r.responseType&&(this.responseType=r.responseType),r.headers&&(this.headers=r.headers),r.params&&(this.params=r.params)),this.headers||(this.headers=new b),this.params){var o=this.params.toString();if(0===o.length)this.urlWithParams=e;else{var u=e.indexOf("?");this.urlWithParams=e+(-1===u?"?":u<e.length-1?"&":"")+o}}else this.params=new w,this.urlWithParams=e}return n.prototype.serializeBody=function(){return null===this.body?null:r(this.body)||o(this.body)||u(this.body)||"string"==typeof this.body?this.body:this.body instanceof w?this.body.toString():"object"==typeof this.body||"boolean"==typeof this.body||Array.isArray(this.body)?JSON.stringify(this.body):this.body.toString()},n.prototype.detectContentTypeHeader=function(){return null===this.body?null:u(this.body)?null:o(this.body)?this.body.type||null:r(this.body)?null:"string"==typeof this.body?"text/plain":this.body instanceof w?"application/x-www-form-urlencoded;charset=UTF-8":"object"==typeof this.body||"number"==typeof this.body||Array.isArray(this.body)?"application/json":null},n.prototype.clone=function(e){void 0===e&&(e={});var l=e.method||this.method,t=e.url||this.url,r=e.responseType||this.responseType,o=void 0!==e.body?e.body:this.body,u=void 0!==e.withCredentials?e.withCredentials:this.withCredentials,s=void 0!==e.reportProgress?e.reportProgress:this.reportProgress,a=e.headers||this.headers,i=e.params||this.params;return void 0!==e.setHeaders&&(a=Object.keys(e.setHeaders).reduce(function(n,l){return n.set(l,e.setHeaders[l])},a)),e.setParams&&(i=Object.keys(e.setParams).reduce(function(n,l){return n.set(l,e.setParams[l])},i)),new n(l,t,o,{params:i,headers:a,reportProgress:s,responseType:r,withCredentials:u})},n}(),C=function(){var n={Sent:0,UploadProgress:1,ResponseHeader:2,DownloadProgress:3,Response:4,User:5};return n[n.Sent]="Sent",n[n.UploadProgress]="UploadProgress",n[n.ResponseHeader]="ResponseHeader",n[n.DownloadProgress]="DownloadProgress",n[n.Response]="Response",n[n.User]="User",n}(),T=function(){return function(n,e,l){void 0===e&&(e=200),void 0===l&&(l="OK"),this.headers=n.headers||new b,this.status=void 0!==n.status?n.status:e,this.statusText=n.statusText||l,this.url=n.url||null,this.ok=this.status>=200&&this.status<300}}(),j=function(n){function e(e){void 0===e&&(e={});var l=n.call(this,e)||this;return l.type=C.ResponseHeader,l}return Object(f.__extends)(e,n),e.prototype.clone=function(n){return void 0===n&&(n={}),new e({headers:n.headers||this.headers,status:void 0!==n.status?n.status:this.status,statusText:n.statusText||this.statusText,url:n.url||this.url||void 0})},e}(T),S=function(n){function e(e){void 0===e&&(e={});var l=n.call(this,e)||this;return l.type=C.Response,l.body=e.body||null,l}return Object(f.__extends)(e,n),e.prototype.clone=function(n){return void 0===n&&(n={}),new e({body:void 0!==n.body?n.body:this.body,headers:n.headers||this.headers,status:void 0!==n.status?n.status:this.status,statusText:n.statusText||this.statusText,url:n.url||this.url||void 0})},e}(T),x=function(n){function e(e){var l=n.call(this,e,0,"Unknown Error")||this;return l.name="HttpErrorResponse",l.ok=!1,l.message=l.status>=200&&l.status<300?"Http failure during parsing for "+(e.url||"(unknown url)"):"Http failure response for "+(e.url||"(unknown url)")+": "+e.status+" "+e.statusText,l.error=e.error||null,l}return Object(f.__extends)(e,n),e}(T),A=function(){function n(n){this.handler=n}return n.prototype.request=function(n,e,l){var t=this;void 0===l&&(l={});var r;if(n instanceof k)r=n;else{var o=void 0;void 0!==!!l.headers&&(o=l.headers instanceof b?l.headers:new b(l.headers));var u=void 0;l.params&&(u=l.params instanceof w?l.params:new w({fromObject:l.params})),r=new k(n,e,l.body||null,{headers:o,params:u,reportProgress:l.reportProgress,responseType:l.responseType||"json",withCredentials:l.withCredentials})}var s=d.concatMap.call(Object(c.of)(r),function(n){return t.handler.handle(n)});if(n instanceof k||"events"===l.observe)return s;var a=p.filter.call(s,function(n){return n instanceof S});switch(l.observe||"body"){case"body":switch(r.responseType){case"arraybuffer":return h.map.call(a,function(n){if(null!==n.body&&!(n.body instanceof ArrayBuffer))throw new Error("Response is not an ArrayBuffer.");return n.body});case"blob":return h.map.call(a,function(n){if(null!==n.body&&!(n.body instanceof Blob))throw new Error("Response is not a Blob.");return n.body});case"text":return h.map.call(a,function(n){if(null!==n.body&&"string"!=typeof n.body)throw new Error("Response is not a string.");return n.body});case"json":default:return h.map.call(a,function(n){return n.body})}case"response":return a;default:throw new Error("Unreachable: unhandled observe type "+l.observe+"}")}},n.prototype.delete=function(n,e){return void 0===e&&(e={}),this.request("DELETE",n,e)},n.prototype.get=function(n,e){return void 0===e&&(e={}),this.request("GET",n,e)},n.prototype.head=function(n,e){return void 0===e&&(e={}),this.request("HEAD",n,e)},n.prototype.jsonp=function(n,e){return this.request("JSONP",n,{params:(new w).append(e,"JSONP_CALLBACK"),observe:"body",responseType:"json"})},n.prototype.options=function(n,e){return void 0===e&&(e={}),this.request("OPTIONS",n,e)},n.prototype.patch=function(n,e,l){return void 0===l&&(l={}),this.request("PATCH",n,s(l,e))},n.prototype.post=function(n,e,l){return void 0===l&&(l={}),this.request("POST",n,s(l,e))},n.prototype.put=function(n,e,l){return void 0===l&&(l={}),this.request("PUT",n,s(l,e))},n}(),P=function(){function n(n,e){this.next=n,this.interceptor=e}return n.prototype.handle=function(n){return this.interceptor.intercept(n,this.next)},n}(),O=new i.n("HTTP_INTERCEPTORS"),E=function(){function n(){}return n.prototype.intercept=function(n,e){return e.handle(n)},n}(),N=/^\)\]\}',?\n/,I=function(){return function(){}}(),Z=function(){function n(){}return n.prototype.build=function(){return new XMLHttpRequest},n}(),R=function(){function n(n){this.xhrFactory=n}return n.prototype.handle=function(n){var e=this;if("JSONP"===n.method)throw new Error("Attempted to construct Jsonp request without JsonpClientModule installed.");return new _.Observable(function(l){var t=e.xhrFactory.build();if(t.open(n.method,n.urlWithParams),n.withCredentials&&(t.withCredentials=!0),n.headers.forEach(function(n,e){return t.setRequestHeader(n,e.join(","))}),n.headers.has("Accept")||t.setRequestHeader("Accept","application/json, text/plain, */*"),!n.headers.has("Content-Type")){var r=n.detectContentTypeHeader();null!==r&&t.setRequestHeader("Content-Type",r)}if(n.responseType){var o=n.responseType.toLowerCase();t.responseType="json"!==o?o:"text"}var u=n.serializeBody(),s=null,a=function(){if(null!==s)return s;var e=1223===t.status?204:t.status,l=t.statusText||"OK",r=new b(t.getAllResponseHeaders()),o=function(n){return"responseURL"in n&&n.responseURL?n.responseURL:/^X-Request-URL:/m.test(n.getAllResponseHeaders())?n.getResponseHeader("X-Request-URL"):null}(t)||n.url;return s=new j({headers:r,status:e,statusText:l,url:o})},i=function(){var e=a(),r=e.headers,o=e.status,u=e.statusText,s=e.url,i=null;204!==o&&(i=void 0===t.response?t.responseText:t.response),0===o&&(o=i?200:0);var c=o>=200&&o<300;if(c&&"json"===n.responseType&&"string"==typeof i){i=i.replace(N,"");try{i=JSON.parse(i)}catch(n){c=!1,i={error:n,text:i}}}else if(!c&&"json"===n.responseType&&"string"==typeof i)try{i=JSON.parse(i)}catch(n){}c?(l.next(new S({body:i,headers:r,status:o,statusText:u,url:s||void 0})),l.complete()):l.error(new x({error:i,headers:r,status:o,statusText:u,url:s||void 0}))},c=function(n){var e=new x({error:n,status:t.status||0,statusText:t.statusText||"Unknown Error"});l.error(e)},d=!1,p=function(e){d||(l.next(a()),d=!0);var r={type:C.DownloadProgress,loaded:e.loaded};e.lengthComputable&&(r.total=e.total),"text"===n.responseType&&t.responseText&&(r.partialText=t.responseText),l.next(r)},h=function(n){var e={type:C.UploadProgress,loaded:n.loaded};n.lengthComputable&&(e.total=n.total),l.next(e)};return t.addEventListener("load",i),t.addEventListener("error",c),n.reportProgress&&(t.addEventListener("progress",p),null!==u&&t.upload&&t.upload.addEventListener("progress",h)),t.send(u),l.next({type:C.Sent}),function(){t.removeEventListener("error",c),t.removeEventListener("load",i),n.reportProgress&&(t.removeEventListener("progress",p),null!==u&&t.upload&&t.upload.removeEventListener("progress",h)),t.abort()}})},n}(),L=new i.n("XSRF_COOKIE_NAME"),U=new i.n("XSRF_HEADER_NAME"),z=function(){return function(){}}(),D=function(){function n(n,e,l){this.doc=n,this.platform=e,this.cookieName=l,this.lastCookieString="",this.lastToken=null,this.parseCount=0}return n.prototype.getToken=function(){if("server"===this.platform)return null;var n=this.doc.cookie||"";return n!==this.lastCookieString&&(this.parseCount++,this.lastToken=Object(m.t)(n,this.cookieName),this.lastCookieString=n),this.lastToken},n}(),B=function(){function n(n,e){this.tokenService=n,this.headerName=e}return n.prototype.intercept=function(n,e){var l=n.url.toLowerCase();if("GET"===n.method||"HEAD"===n.method||l.startsWith("http://")||l.startsWith("https://"))return e.handle(n);var t=this.tokenService.getToken();return null===t||n.headers.has(this.headerName)||(n=n.clone({headers:n.headers.set(this.headerName,t)})),e.handle(n)},n}(),H=function(){function n(){}return n.disable=function(){return{ngModule:n,providers:[{provide:B,useClass:E}]}},n.withOptions=function(e){return void 0===e&&(e={}),{ngModule:n,providers:[e.cookieName?{provide:L,useValue:e.cookieName}:[],e.headerName?{provide:U,useValue:e.headerName}:[]]}},n}(),F=function(){return function(){}}()},333:function(n,e,l){"use strict";l.d(e,"a",function(){return t});var t="http://188.166.177.172/refuze-api/public/index.php"},334:function(n,e,l){"use strict";function t(n){return r._20(0,[r._17(402653184,1,{_searchbarInput:0}),r._17(402653184,2,{_searchbarIcon:0}),r._17(402653184,3,{_cancelButton:0}),(n()(),r._0(3,0,null,null,8,"div",[["class","searchbar-input-container"]],null,null,null,null,null)),(n()(),r._0(4,0,null,null,3,"button",[["class","searchbar-md-cancel"],["clear",""],["color","dark"],["ion-button",""],["mode","md"],["type","button"]],null,[[null,"click"],[null,"mousedown"]],function(n,e,l){var t=!0,r=n.component;if("click"===e){t=!1!==r.cancelSearchbar(l)&&t}if("mousedown"===e){t=!1!==r.cancelSearchbar(l)&&t}return t},o.b,o.a)),r.Z(5,1097728,null,0,u.a,[[8,""],s.a,r.j,r.A],{color:[0,"color"],mode:[1,"mode"],clear:[2,"clear"]},null),(n()(),r._0(6,0,null,0,1,"ion-icon",[["name","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),r.Z(7,147456,null,0,a.a,[s.a,r.j,r.A],{name:[0,"name"]},null),(n()(),r._0(8,0,[[2,0],["searchbarIcon",1]],null,0,"div",[["class","searchbar-search-icon"]],null,null,null,null,null)),(n()(),r._0(9,0,[[1,0],["searchbarInput",1]],null,0,"input",[["class","searchbar-input"],["dir","auto"]],[[1,"placeholder",0],[1,"type",0],[1,"autocomplete",0],[1,"autocorrect",0],[1,"spellcheck",0]],[[null,"input"],[null,"blur"],[null,"focus"]],function(n,e,l){var t=!0,r=n.component;if("input"===e){t=!1!==r.inputChanged(l)&&t}if("blur"===e){t=!1!==r.inputBlurred()&&t}if("focus"===e){t=!1!==r.inputFocused()&&t}return t},null,null)),(n()(),r._0(10,0,null,null,1,"button",[["class","searchbar-clear-icon"],["clear",""],["ion-button",""],["type","button"]],null,[[null,"click"],[null,"mousedown"]],function(n,e,l){var t=!0,r=n.component;if("click"===e){t=!1!==r.clearInput(l)&&t}if("mousedown"===e){t=!1!==r.clearInput(l)&&t}return t},o.b,o.a)),r.Z(11,1097728,null,0,u.a,[[8,""],s.a,r.j,r.A],{mode:[0,"mode"],clear:[1,"clear"]},null),(n()(),r._0(12,0,[[3,0]],null,2,"button",[["class","searchbar-ios-cancel"],["clear",""],["ion-button",""],["mode","ios"],["type","button"]],[[8,"tabIndex",0]],[[null,"click"],[null,"mousedown"]],function(n,e,l){var t=!0,r=n.component;if("click"===e){t=!1!==r.cancelSearchbar(l)&&t}if("mousedown"===e){t=!1!==r.cancelSearchbar(l)&&t}return t},o.b,o.a)),r.Z(13,1097728,[["cancelButton",4]],0,u.a,[[8,""],s.a,r.j,r.A],{mode:[0,"mode"],clear:[1,"clear"]},null),(n()(),r._19(14,0,["",""]))],function(n,e){var l=e.component;n(e,5,0,"dark","md","");n(e,7,0,"md-arrow-back");n(e,11,0,l._mode,"");n(e,13,0,"ios","")},function(n,e){var l=e.component;n(e,6,0,r._14(e,7)._hidden);n(e,9,0,l.placeholder,l.type,l._autocomplete,l._autocorrect,l._spellcheck);n(e,12,0,l._isActive?1:-1);n(e,14,0,l.cancelButtonText)})}l.d(e,"a",function(){return i}),e.b=t;var r=l(0),o=l(40),u=l(19),s=l(1),a=l(38),i=(l(3),r.Y({encapsulation:2,styles:[],data:{}}))},335:function(n,e,l){"use strict";var t=l(194);e.of=t.ArrayObservable.of},336:function(n,e,l){"use strict";var t=l(337);e.concatMap=function(n,e){return t.concatMap(n,e)(this)}},337:function(n,e,l){"use strict";var t=l(195);e.concatMap=function(n,e){return t.mergeMap(n,e,1)}},338:function(n,e,l){"use strict";var t=l(339);e.filter=function(n,e){return t.filter(n,e)(this)}},339:function(n,e,l){"use strict";var t=l(5).__extends,r=l(31);e.filter=function(n,e){return function(l){return l.lift(new o(n,e))}};var o=function(){function n(n,e){this.predicate=n,this.thisArg=e}return n.prototype.call=function(n,e){return e.subscribe(new u(n,this.predicate,this.thisArg))},n}(),u=function(n){function e(e,l,t){n.call(this,e),this.predicate=l,this.thisArg=t,this.count=0}return t(e,n),e.prototype._next=function(n){var e;try{e=this.predicate.call(this.thisArg,n,this.count++)}catch(n){return void this.destination.error(n)}e&&this.destination.next(n)},e}(r.Subscriber)},340:function(n,e,l){"use strict";l.d(e,"a",function(){return r});var t=l(333),r=function(){function n(n){this.http=n,this.getDataForLayout1=function(){return{title:"ค้นหาสมาชิกผู้ขายขยะ",description:"ทำการพิมพ์ชื่อสมาชิกเพื่อทำการค้นหา",shortDescription:"35:72",iconLike:"icon-thumb-up",iconFavorite:"icon-heart",iconShare:"icon-share-variant",iconPlay:"icon-play-circle-outline",items:[{id:1,title:"Song Of Souls",description:"Shawna Norman",shortDescription:"3:42",image:"assets/images/avatar/0.jpg",iconDelate:"icon-delete",iconUndo:"icon-undo-variant"},{id:2,title:"Tune Of My Obsessions",description:"Janice Wilder",shortDescription:"3:42",image:"assets/images/avatar/1.jpg",iconDelate:"icon-delete",iconUndo:"icon-undo-variant"},{id:3,title:"Reject Her Tomorrow",description:"Lucy Bender",shortDescription:"3:42",image:"assets/images/avatar/2.jpg",iconDelate:"icon-delete",iconUndo:"icon-undo-variant"},{id:4,title:"Troubles Of My Blues",description:"ouglas Burks",shortDescription:"3:42",image:"assets/images/avatar/3.jpg",iconDelate:"icon-delete",iconUndo:"icon-undo-variant"},{id:5,title:"Broken Tonight",description:"Sophia Cochran",shortDescription:"3:42",image:"assets/images/avatar/4.jpg",iconDelate:"icon-delete",iconUndo:"icon-undo-variant"},{id:6,title:"Sure Choices",description:"Lara Lynn",shortDescription:"3:42",image:"assets/images/avatar/5.jpg",iconDelate:"icon-delete",iconUndo:"icon-undo-variant"},{id:7,title:"A Storm Is Coming",description:"Juliette Medina",shortDescription:"3:42",image:"assets/images/avatar/6.jpg",iconDelate:"icon-delete",iconUndo:"icon-undo-variant"},{id:8,title:"He Heard He's Crazy",description:"Vanessa Ryan",shortDescription:"3:42",image:"assets/images/avatar/7.jpg",iconDelate:"icon-delete",iconUndo:"icon-undo-variant"}]}}}return n.prototype.getSellers=function(){return this.http.get(t.a+"/sellers")},n}()},359:function(n,e,l){"use strict";function t(n){return r._20(2,[(n()(),r._0(0,0,null,null,0,"img",[],null,null,null,null,null))],null,null)}l.d(e,"a",function(){return o}),e.b=t;var r=l(0),o=(l(3),l(8),r.Y({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([4],{
+
+/***/ 355:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PurchaseItemsPageModule", function() { return PurchaseItemsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__purchase_items__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_purchase_items_purchase_items__ = __webpack_require__(392);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var PurchaseItemsPageModule = (function () {
+    function PurchaseItemsPageModule() {
+    }
+    PurchaseItemsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__purchase_items__["a" /* PurchaseItemsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__purchase_items__["a" /* PurchaseItemsPage */]),
+            ],
+            providers: [__WEBPACK_IMPORTED_MODULE_4__providers_purchase_items_purchase_items__["a" /* PurchaseItemsProvider */]]
+        })
+    ], PurchaseItemsPageModule);
+    return PurchaseItemsPageModule;
+}());
+
+//# sourceMappingURL=purchase-items.module.js.map
+
+/***/ }),
+
+/***/ 357:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export HttpBackend */
+/* unused harmony export HttpHandler */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpClient; });
+/* unused harmony export HttpHeaders */
+/* unused harmony export HTTP_INTERCEPTORS */
+/* unused harmony export JsonpClientBackend */
+/* unused harmony export JsonpInterceptor */
+/* unused harmony export HttpClientJsonpModule */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return HttpClientModule; });
+/* unused harmony export HttpClientXsrfModule */
+/* unused harmony export ɵinterceptingHandler */
+/* unused harmony export HttpParams */
+/* unused harmony export HttpUrlEncodingCodec */
+/* unused harmony export HttpRequest */
+/* unused harmony export HttpErrorResponse */
+/* unused harmony export HttpEventType */
+/* unused harmony export HttpHeaderResponse */
+/* unused harmony export HttpResponse */
+/* unused harmony export HttpResponseBase */
+/* unused harmony export HttpXhrBackend */
+/* unused harmony export XhrFactory */
+/* unused harmony export HttpXsrfTokenExtractor */
+/* unused harmony export ɵa */
+/* unused harmony export ɵb */
+/* unused harmony export ɵc */
+/* unused harmony export ɵd */
+/* unused harmony export ɵg */
+/* unused harmony export ɵh */
+/* unused harmony export ɵe */
+/* unused harmony export ɵf */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__);
+/**
+ * @license Angular v5.0.3
+ * (c) 2010-2017 Google, Inc. https://angular.io/
+ * License: MIT
+ */
+
+
+
+
+
+
+
+
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * Transforms an `HttpRequest` into a stream of `HttpEvent`s, one of which will likely be a
+ * `HttpResponse`.
+ *
+ * `HttpHandler` is injectable. When injected, the handler instance dispatches requests to the
+ * first interceptor in the chain, which dispatches to the second, etc, eventually reaching the
+ * `HttpBackend`.
+ *
+ * In an `HttpInterceptor`, the `HttpHandler` parameter is the next interceptor in the chain.
+ *
+ * \@stable
+ * @abstract
+ */
+var HttpHandler = (function () {
+    function HttpHandler() {
+    }
+    return HttpHandler;
+}());
+/**
+ * A final `HttpHandler` which will dispatch the request via browser HTTP APIs to a backend.
+ *
+ * Interceptors sit between the `HttpClient` interface and the `HttpBackend`.
+ *
+ * When injected, `HttpBackend` dispatches requests directly to the backend, without going
+ * through the interceptor chain.
+ *
+ * \@stable
+ * @abstract
+ */
+var HttpBackend = (function () {
+    function HttpBackend() {
+    }
+    return HttpBackend;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @record
+ */
+/**
+ * Immutable set of Http headers, with lazy parsing.
+ * \@stable
+ */
+var HttpHeaders = (function () {
+    function HttpHeaders(headers) {
+        var _this = this;
+        /**
+         * Internal map of lowercased header names to the normalized
+         * form of the name (the form seen first).
+         */
+        this.normalizedNames = new Map();
+        /**
+         * Queued updates to be materialized the next initialization.
+         */
+        this.lazyUpdate = null;
+        if (!headers) {
+            this.headers = new Map();
+        }
+        else if (typeof headers === 'string') {
+            this.lazyInit = function () {
+                _this.headers = new Map();
+                headers.split('\n').forEach(function (line) {
+                    var /** @type {?} */ index = line.indexOf(':');
+                    if (index > 0) {
+                        var /** @type {?} */ name_1 = line.slice(0, index);
+                        var /** @type {?} */ key = name_1.toLowerCase();
+                        var /** @type {?} */ value = line.slice(index + 1).trim();
+                        _this.maybeSetNormalizedName(name_1, key);
+                        if (_this.headers.has(key)) {
+                            /** @type {?} */ ((_this.headers.get(key))).push(value);
+                        }
+                        else {
+                            _this.headers.set(key, [value]);
+                        }
+                    }
+                });
+            };
+        }
+        else {
+            this.lazyInit = function () {
+                _this.headers = new Map();
+                Object.keys(headers).forEach(function (name) {
+                    var /** @type {?} */ values = headers[name];
+                    var /** @type {?} */ key = name.toLowerCase();
+                    if (typeof values === 'string') {
+                        values = [values];
+                    }
+                    if (values.length > 0) {
+                        _this.headers.set(key, values);
+                        _this.maybeSetNormalizedName(name, key);
+                    }
+                });
+            };
+        }
+    }
+    /**
+     * Checks for existence of header by given name.
+     */
+    /**
+     * Checks for existence of header by given name.
+     * @param {?} name
+     * @return {?}
+     */
+    HttpHeaders.prototype.has = /**
+     * Checks for existence of header by given name.
+     * @param {?} name
+     * @return {?}
+     */
+    function (name) {
+        this.init();
+        return this.headers.has(name.toLowerCase());
+    };
+    /**
+     * Returns first header that matches given name.
+     */
+    /**
+     * Returns first header that matches given name.
+     * @param {?} name
+     * @return {?}
+     */
+    HttpHeaders.prototype.get = /**
+     * Returns first header that matches given name.
+     * @param {?} name
+     * @return {?}
+     */
+    function (name) {
+        this.init();
+        var /** @type {?} */ values = this.headers.get(name.toLowerCase());
+        return values && values.length > 0 ? values[0] : null;
+    };
+    /**
+     * Returns the names of the headers
+     */
+    /**
+     * Returns the names of the headers
+     * @return {?}
+     */
+    HttpHeaders.prototype.keys = /**
+     * Returns the names of the headers
+     * @return {?}
+     */
+    function () {
+        this.init();
+        return Array.from(this.normalizedNames.values());
+    };
+    /**
+     * Returns list of header values for a given name.
+     */
+    /**
+     * Returns list of header values for a given name.
+     * @param {?} name
+     * @return {?}
+     */
+    HttpHeaders.prototype.getAll = /**
+     * Returns list of header values for a given name.
+     * @param {?} name
+     * @return {?}
+     */
+    function (name) {
+        this.init();
+        return this.headers.get(name.toLowerCase()) || null;
+    };
+    /**
+     * @param {?} name
+     * @param {?} value
+     * @return {?}
+     */
+    HttpHeaders.prototype.append = /**
+     * @param {?} name
+     * @param {?} value
+     * @return {?}
+     */
+    function (name, value) {
+        return this.clone({ name: name, value: value, op: 'a' });
+    };
+    /**
+     * @param {?} name
+     * @param {?} value
+     * @return {?}
+     */
+    HttpHeaders.prototype.set = /**
+     * @param {?} name
+     * @param {?} value
+     * @return {?}
+     */
+    function (name, value) {
+        return this.clone({ name: name, value: value, op: 's' });
+    };
+    /**
+     * @param {?} name
+     * @param {?=} value
+     * @return {?}
+     */
+    HttpHeaders.prototype.delete = /**
+     * @param {?} name
+     * @param {?=} value
+     * @return {?}
+     */
+    function (name, value) {
+        return this.clone({ name: name, value: value, op: 'd' });
+    };
+    /**
+     * @param {?} name
+     * @param {?} lcName
+     * @return {?}
+     */
+    HttpHeaders.prototype.maybeSetNormalizedName = /**
+     * @param {?} name
+     * @param {?} lcName
+     * @return {?}
+     */
+    function (name, lcName) {
+        if (!this.normalizedNames.has(lcName)) {
+            this.normalizedNames.set(lcName, name);
+        }
+    };
+    /**
+     * @return {?}
+     */
+    HttpHeaders.prototype.init = /**
+     * @return {?}
+     */
+    function () {
+        var _this = this;
+        if (!!this.lazyInit) {
+            if (this.lazyInit instanceof HttpHeaders) {
+                this.copyFrom(this.lazyInit);
+            }
+            else {
+                this.lazyInit();
+            }
+            this.lazyInit = null;
+            if (!!this.lazyUpdate) {
+                this.lazyUpdate.forEach(function (update) { return _this.applyUpdate(update); });
+                this.lazyUpdate = null;
+            }
+        }
+    };
+    /**
+     * @param {?} other
+     * @return {?}
+     */
+    HttpHeaders.prototype.copyFrom = /**
+     * @param {?} other
+     * @return {?}
+     */
+    function (other) {
+        var _this = this;
+        other.init();
+        Array.from(other.headers.keys()).forEach(function (key) {
+            _this.headers.set(key, /** @type {?} */ ((other.headers.get(key))));
+            _this.normalizedNames.set(key, /** @type {?} */ ((other.normalizedNames.get(key))));
+        });
+    };
+    /**
+     * @param {?} update
+     * @return {?}
+     */
+    HttpHeaders.prototype.clone = /**
+     * @param {?} update
+     * @return {?}
+     */
+    function (update) {
+        var /** @type {?} */ clone = new HttpHeaders();
+        clone.lazyInit =
+            (!!this.lazyInit && this.lazyInit instanceof HttpHeaders) ? this.lazyInit : this;
+        clone.lazyUpdate = (this.lazyUpdate || []).concat([update]);
+        return clone;
+    };
+    /**
+     * @param {?} update
+     * @return {?}
+     */
+    HttpHeaders.prototype.applyUpdate = /**
+     * @param {?} update
+     * @return {?}
+     */
+    function (update) {
+        var /** @type {?} */ key = update.name.toLowerCase();
+        switch (update.op) {
+            case 'a':
+            case 's':
+                var /** @type {?} */ value = /** @type {?} */ ((update.value));
+                if (typeof value === 'string') {
+                    value = [value];
+                }
+                if (value.length === 0) {
+                    return;
+                }
+                this.maybeSetNormalizedName(update.name, key);
+                var /** @type {?} */ base = (update.op === 'a' ? this.headers.get(key) : undefined) || [];
+                base.push.apply(base, value);
+                this.headers.set(key, base);
+                break;
+            case 'd':
+                var /** @type {?} */ toDelete_1 = /** @type {?} */ (update.value);
+                if (!toDelete_1) {
+                    this.headers.delete(key);
+                    this.normalizedNames.delete(key);
+                }
+                else {
+                    var /** @type {?} */ existing = this.headers.get(key);
+                    if (!existing) {
+                        return;
+                    }
+                    existing = existing.filter(function (value) { return toDelete_1.indexOf(value) === -1; });
+                    if (existing.length === 0) {
+                        this.headers.delete(key);
+                        this.normalizedNames.delete(key);
+                    }
+                    else {
+                        this.headers.set(key, existing);
+                    }
+                }
+                break;
+        }
+    };
+    /**
+     * @internal
+     */
+    /**
+     * \@internal
+     * @param {?} fn
+     * @return {?}
+     */
+    HttpHeaders.prototype.forEach = /**
+     * \@internal
+     * @param {?} fn
+     * @return {?}
+     */
+    function (fn) {
+        var _this = this;
+        this.init();
+        Array.from(this.normalizedNames.keys())
+            .forEach(function (key) { return fn(/** @type {?} */ ((_this.normalizedNames.get(key))), /** @type {?} */ ((_this.headers.get(key)))); });
+    };
+    return HttpHeaders;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * A codec for encoding and decoding parameters in URLs.
+ *
+ * Used by `HttpParams`.
+ *
+ * \@stable
+ *
+ * @record
+ */
+
+/**
+ * A `HttpParameterCodec` that uses `encodeURIComponent` and `decodeURIComponent` to
+ * serialize and parse URL parameter keys and values.
+ *
+ * \@stable
+ */
+var HttpUrlEncodingCodec = (function () {
+    function HttpUrlEncodingCodec() {
+    }
+    /**
+     * @param {?} k
+     * @return {?}
+     */
+    HttpUrlEncodingCodec.prototype.encodeKey = /**
+     * @param {?} k
+     * @return {?}
+     */
+    function (k) { return standardEncoding(k); };
+    /**
+     * @param {?} v
+     * @return {?}
+     */
+    HttpUrlEncodingCodec.prototype.encodeValue = /**
+     * @param {?} v
+     * @return {?}
+     */
+    function (v) { return standardEncoding(v); };
+    /**
+     * @param {?} k
+     * @return {?}
+     */
+    HttpUrlEncodingCodec.prototype.decodeKey = /**
+     * @param {?} k
+     * @return {?}
+     */
+    function (k) { return decodeURIComponent(k); };
+    /**
+     * @param {?} v
+     * @return {?}
+     */
+    HttpUrlEncodingCodec.prototype.decodeValue = /**
+     * @param {?} v
+     * @return {?}
+     */
+    function (v) { return decodeURIComponent(v); };
+    return HttpUrlEncodingCodec;
+}());
+/**
+ * @param {?} rawParams
+ * @param {?} codec
+ * @return {?}
+ */
+function paramParser(rawParams, codec) {
+    var /** @type {?} */ map$$1 = new Map();
+    if (rawParams.length > 0) {
+        var /** @type {?} */ params = rawParams.split('&');
+        params.forEach(function (param) {
+            var /** @type {?} */ eqIdx = param.indexOf('=');
+            var _a = eqIdx == -1 ?
+                [codec.decodeKey(param), ''] :
+                [codec.decodeKey(param.slice(0, eqIdx)), codec.decodeValue(param.slice(eqIdx + 1))], key = _a[0], val = _a[1];
+            var /** @type {?} */ list = map$$1.get(key) || [];
+            list.push(val);
+            map$$1.set(key, list);
+        });
+    }
+    return map$$1;
+}
+/**
+ * @param {?} v
+ * @return {?}
+ */
+function standardEncoding(v) {
+    return encodeURIComponent(v)
+        .replace(/%40/gi, '@')
+        .replace(/%3A/gi, ':')
+        .replace(/%24/gi, '$')
+        .replace(/%2C/gi, ',')
+        .replace(/%3B/gi, ';')
+        .replace(/%2B/gi, '+')
+        .replace(/%3D/gi, '=')
+        .replace(/%3F/gi, '?')
+        .replace(/%2F/gi, '/');
+}
+/**
+ * Options used to construct an `HttpParams` instance.
+ * @record
+ */
+
+/**
+ * An HTTP request/response body that represents serialized parameters,
+ * per the MIME type `application/x-www-form-urlencoded`.
+ *
+ * This class is immutable - all mutation operations return a new instance.
+ *
+ * \@stable
+ */
+var HttpParams = (function () {
+    function HttpParams(options) {
+        if (options === void 0) { options = /** @type {?} */ ({}); }
+        var _this = this;
+        this.updates = null;
+        this.cloneFrom = null;
+        this.encoder = options.encoder || new HttpUrlEncodingCodec();
+        if (!!options.fromString) {
+            if (!!options.fromObject) {
+                throw new Error("Cannot specify both fromString and fromObject.");
+            }
+            this.map = paramParser(options.fromString, this.encoder);
+        }
+        else if (!!options.fromObject) {
+            this.map = new Map();
+            Object.keys(options.fromObject).forEach(function (key) {
+                var /** @type {?} */ value = (/** @type {?} */ (options.fromObject))[key]; /** @type {?} */
+                ((_this.map)).set(key, Array.isArray(value) ? value : [value]);
+            });
+        }
+        else {
+            this.map = null;
+        }
+    }
+    /**
+     * Check whether the body has one or more values for the given parameter name.
+     */
+    /**
+     * Check whether the body has one or more values for the given parameter name.
+     * @param {?} param
+     * @return {?}
+     */
+    HttpParams.prototype.has = /**
+     * Check whether the body has one or more values for the given parameter name.
+     * @param {?} param
+     * @return {?}
+     */
+    function (param) {
+        this.init();
+        return /** @type {?} */ ((this.map)).has(param);
+    };
+    /**
+     * Get the first value for the given parameter name, or `null` if it's not present.
+     */
+    /**
+     * Get the first value for the given parameter name, or `null` if it's not present.
+     * @param {?} param
+     * @return {?}
+     */
+    HttpParams.prototype.get = /**
+     * Get the first value for the given parameter name, or `null` if it's not present.
+     * @param {?} param
+     * @return {?}
+     */
+    function (param) {
+        this.init();
+        var /** @type {?} */ res = /** @type {?} */ ((this.map)).get(param);
+        return !!res ? res[0] : null;
+    };
+    /**
+     * Get all values for the given parameter name, or `null` if it's not present.
+     */
+    /**
+     * Get all values for the given parameter name, or `null` if it's not present.
+     * @param {?} param
+     * @return {?}
+     */
+    HttpParams.prototype.getAll = /**
+     * Get all values for the given parameter name, or `null` if it's not present.
+     * @param {?} param
+     * @return {?}
+     */
+    function (param) {
+        this.init();
+        return /** @type {?} */ ((this.map)).get(param) || null;
+    };
+    /**
+     * Get all the parameter names for this body.
+     */
+    /**
+     * Get all the parameter names for this body.
+     * @return {?}
+     */
+    HttpParams.prototype.keys = /**
+     * Get all the parameter names for this body.
+     * @return {?}
+     */
+    function () {
+        this.init();
+        return Array.from(/** @type {?} */ ((this.map)).keys());
+    };
+    /**
+     * Construct a new body with an appended value for the given parameter name.
+     */
+    /**
+     * Construct a new body with an appended value for the given parameter name.
+     * @param {?} param
+     * @param {?} value
+     * @return {?}
+     */
+    HttpParams.prototype.append = /**
+     * Construct a new body with an appended value for the given parameter name.
+     * @param {?} param
+     * @param {?} value
+     * @return {?}
+     */
+    function (param, value) { return this.clone({ param: param, value: value, op: 'a' }); };
+    /**
+     * Construct a new body with a new value for the given parameter name.
+     */
+    /**
+     * Construct a new body with a new value for the given parameter name.
+     * @param {?} param
+     * @param {?} value
+     * @return {?}
+     */
+    HttpParams.prototype.set = /**
+     * Construct a new body with a new value for the given parameter name.
+     * @param {?} param
+     * @param {?} value
+     * @return {?}
+     */
+    function (param, value) { return this.clone({ param: param, value: value, op: 's' }); };
+    /**
+     * Construct a new body with either the given value for the given parameter
+     * removed, if a value is given, or all values for the given parameter removed
+     * if not.
+     */
+    /**
+     * Construct a new body with either the given value for the given parameter
+     * removed, if a value is given, or all values for the given parameter removed
+     * if not.
+     * @param {?} param
+     * @param {?=} value
+     * @return {?}
+     */
+    HttpParams.prototype.delete = /**
+     * Construct a new body with either the given value for the given parameter
+     * removed, if a value is given, or all values for the given parameter removed
+     * if not.
+     * @param {?} param
+     * @param {?=} value
+     * @return {?}
+     */
+    function (param, value) { return this.clone({ param: param, value: value, op: 'd' }); };
+    /**
+     * Serialize the body to an encoded string, where key-value pairs (separated by `=`) are
+     * separated by `&`s.
+     */
+    /**
+     * Serialize the body to an encoded string, where key-value pairs (separated by `=`) are
+     * separated by `&`s.
+     * @return {?}
+     */
+    HttpParams.prototype.toString = /**
+     * Serialize the body to an encoded string, where key-value pairs (separated by `=`) are
+     * separated by `&`s.
+     * @return {?}
+     */
+    function () {
+        var _this = this;
+        this.init();
+        return this.keys()
+            .map(function (key) {
+            var /** @type {?} */ eKey = _this.encoder.encodeKey(key);
+            return /** @type {?} */ ((/** @type {?} */ ((_this.map)).get(key))).map(function (value) { return eKey + '=' + _this.encoder.encodeValue(value); }).join('&');
+        })
+            .join('&');
+    };
+    /**
+     * @param {?} update
+     * @return {?}
+     */
+    HttpParams.prototype.clone = /**
+     * @param {?} update
+     * @return {?}
+     */
+    function (update) {
+        var /** @type {?} */ clone = new HttpParams(/** @type {?} */ ({ encoder: this.encoder }));
+        clone.cloneFrom = this.cloneFrom || this;
+        clone.updates = (this.updates || []).concat([update]);
+        return clone;
+    };
+    /**
+     * @return {?}
+     */
+    HttpParams.prototype.init = /**
+     * @return {?}
+     */
+    function () {
+        var _this = this;
+        if (this.map === null) {
+            this.map = new Map();
+        }
+        if (this.cloneFrom !== null) {
+            this.cloneFrom.init();
+            this.cloneFrom.keys().forEach(function (key) { return /** @type {?} */ ((_this.map)).set(key, /** @type {?} */ ((/** @type {?} */ ((/** @type {?} */ ((_this.cloneFrom)).map)).get(key)))); }); /** @type {?} */
+            ((this.updates)).forEach(function (update) {
+                switch (update.op) {
+                    case 'a':
+                    case 's':
+                        var /** @type {?} */ base = (update.op === 'a' ? /** @type {?} */ ((_this.map)).get(update.param) : undefined) || [];
+                        base.push(/** @type {?} */ ((update.value))); /** @type {?} */
+                        ((_this.map)).set(update.param, base);
+                        break;
+                    case 'd':
+                        if (update.value !== undefined) {
+                            var /** @type {?} */ base_1 = /** @type {?} */ ((_this.map)).get(update.param) || [];
+                            var /** @type {?} */ idx = base_1.indexOf(update.value);
+                            if (idx !== -1) {
+                                base_1.splice(idx, 1);
+                            }
+                            if (base_1.length > 0) {
+                                /** @type {?} */ ((_this.map)).set(update.param, base_1);
+                            }
+                            else {
+                                /** @type {?} */ ((_this.map)).delete(update.param);
+                            }
+                        }
+                        else {
+                            /** @type {?} */ ((_this.map)).delete(update.param);
+                            break;
+                        }
+                }
+            });
+            this.cloneFrom = null;
+        }
+    };
+    return HttpParams;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Determine whether the given HTTP method may include a body.
+ * @param {?} method
+ * @return {?}
+ */
+function mightHaveBody(method) {
+    switch (method) {
+        case 'DELETE':
+        case 'GET':
+        case 'HEAD':
+        case 'OPTIONS':
+        case 'JSONP':
+            return false;
+        default:
+            return true;
+    }
+}
+/**
+ * Safely assert whether the given value is an ArrayBuffer.
+ *
+ * In some execution environments ArrayBuffer is not defined.
+ * @param {?} value
+ * @return {?}
+ */
+function isArrayBuffer(value) {
+    return typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer;
+}
+/**
+ * Safely assert whether the given value is a Blob.
+ *
+ * In some execution environments Blob is not defined.
+ * @param {?} value
+ * @return {?}
+ */
+function isBlob(value) {
+    return typeof Blob !== 'undefined' && value instanceof Blob;
+}
+/**
+ * Safely assert whether the given value is a FormData instance.
+ *
+ * In some execution environments FormData is not defined.
+ * @param {?} value
+ * @return {?}
+ */
+function isFormData(value) {
+    return typeof FormData !== 'undefined' && value instanceof FormData;
+}
+/**
+ * An outgoing HTTP request with an optional typed body.
+ *
+ * `HttpRequest` represents an outgoing request, including URL, method,
+ * headers, body, and other request configuration options. Instances should be
+ * assumed to be immutable. To modify a `HttpRequest`, the `clone`
+ * method should be used.
+ *
+ * \@stable
+ */
+var HttpRequest = (function () {
+    function HttpRequest(method, url, third, fourth) {
+        this.url = url;
+        /**
+         * The request body, or `null` if one isn't set.
+         *
+         * Bodies are not enforced to be immutable, as they can include a reference to any
+         * user-defined data type. However, interceptors should take care to preserve
+         * idempotence by treating them as such.
+         */
+        this.body = null;
+        /**
+         * Whether this request should be made in a way that exposes progress events.
+         *
+         * Progress events are expensive (change detection runs on each event) and so
+         * they should only be requested if the consumer intends to monitor them.
+         */
+        this.reportProgress = false;
+        /**
+         * Whether this request should be sent with outgoing credentials (cookies).
+         */
+        this.withCredentials = false;
+        /**
+         * The expected response type of the server.
+         *
+         * This is used to parse the response appropriately before returning it to
+         * the requestee.
+         */
+        this.responseType = 'json';
+        this.method = method.toUpperCase();
+        // Next, need to figure out which argument holds the HttpRequestInit
+        // options, if any.
+        var /** @type {?} */ options;
+        // Check whether a body argument is expected. The only valid way to omit
+        // the body argument is to use a known no-body method like GET.
+        if (mightHaveBody(this.method) || !!fourth) {
+            // Body is the third argument, options are the fourth.
+            this.body = /** @type {?} */ (third) || null;
+            options = fourth;
+        }
+        else {
+            // No body required, options are the third argument. The body stays null.
+            options = /** @type {?} */ (third);
+        }
+        // If options have been passed, interpret them.
+        if (options) {
+            // Normalize reportProgress and withCredentials.
+            this.reportProgress = !!options.reportProgress;
+            this.withCredentials = !!options.withCredentials;
+            // Override default response type of 'json' if one is provided.
+            if (!!options.responseType) {
+                this.responseType = options.responseType;
+            }
+            // Override headers if they're provided.
+            if (!!options.headers) {
+                this.headers = options.headers;
+            }
+            if (!!options.params) {
+                this.params = options.params;
+            }
+        }
+        // If no headers have been passed in, construct a new HttpHeaders instance.
+        if (!this.headers) {
+            this.headers = new HttpHeaders();
+        }
+        // If no parameters have been passed in, construct a new HttpUrlEncodedParams instance.
+        if (!this.params) {
+            this.params = new HttpParams();
+            this.urlWithParams = url;
+        }
+        else {
+            // Encode the parameters to a string in preparation for inclusion in the URL.
+            var /** @type {?} */ params = this.params.toString();
+            if (params.length === 0) {
+                // No parameters, the visible URL is just the URL given at creation time.
+                this.urlWithParams = url;
+            }
+            else {
+                // Does the URL already have query parameters? Look for '?'.
+                var /** @type {?} */ qIdx = url.indexOf('?');
+                // There are 3 cases to handle:
+                // 1) No existing parameters -> append '?' followed by params.
+                // 2) '?' exists and is followed by existing query string ->
+                //    append '&' followed by params.
+                // 3) '?' exists at the end of the url -> append params directly.
+                // This basically amounts to determining the character, if any, with
+                // which to join the URL and parameters.
+                var /** @type {?} */ sep = qIdx === -1 ? '?' : (qIdx < url.length - 1 ? '&' : '');
+                this.urlWithParams = url + sep + params;
+            }
+        }
+    }
+    /**
+     * Transform the free-form body into a serialized format suitable for
+     * transmission to the server.
+     */
+    /**
+     * Transform the free-form body into a serialized format suitable for
+     * transmission to the server.
+     * @return {?}
+     */
+    HttpRequest.prototype.serializeBody = /**
+     * Transform the free-form body into a serialized format suitable for
+     * transmission to the server.
+     * @return {?}
+     */
+    function () {
+        // If no body is present, no need to serialize it.
+        if (this.body === null) {
+            return null;
+        }
+        // Check whether the body is already in a serialized form. If so,
+        // it can just be returned directly.
+        if (isArrayBuffer(this.body) || isBlob(this.body) || isFormData(this.body) ||
+            typeof this.body === 'string') {
+            return this.body;
+        }
+        // Check whether the body is an instance of HttpUrlEncodedParams.
+        if (this.body instanceof HttpParams) {
+            return this.body.toString();
+        }
+        // Check whether the body is an object or array, and serialize with JSON if so.
+        if (typeof this.body === 'object' || typeof this.body === 'boolean' ||
+            Array.isArray(this.body)) {
+            return JSON.stringify(this.body);
+        }
+        // Fall back on toString() for everything else.
+        return (/** @type {?} */ (this.body)).toString();
+    };
+    /**
+     * Examine the body and attempt to infer an appropriate MIME type
+     * for it.
+     *
+     * If no such type can be inferred, this method will return `null`.
+     */
+    /**
+     * Examine the body and attempt to infer an appropriate MIME type
+     * for it.
+     *
+     * If no such type can be inferred, this method will return `null`.
+     * @return {?}
+     */
+    HttpRequest.prototype.detectContentTypeHeader = /**
+     * Examine the body and attempt to infer an appropriate MIME type
+     * for it.
+     *
+     * If no such type can be inferred, this method will return `null`.
+     * @return {?}
+     */
+    function () {
+        // An empty body has no content type.
+        if (this.body === null) {
+            return null;
+        }
+        // FormData bodies rely on the browser's content type assignment.
+        if (isFormData(this.body)) {
+            return null;
+        }
+        // Blobs usually have their own content type. If it doesn't, then
+        // no type can be inferred.
+        if (isBlob(this.body)) {
+            return this.body.type || null;
+        }
+        // Array buffers have unknown contents and thus no type can be inferred.
+        if (isArrayBuffer(this.body)) {
+            return null;
+        }
+        // Technically, strings could be a form of JSON data, but it's safe enough
+        // to assume they're plain strings.
+        if (typeof this.body === 'string') {
+            return 'text/plain';
+        }
+        // `HttpUrlEncodedParams` has its own content-type.
+        if (this.body instanceof HttpParams) {
+            return 'application/x-www-form-urlencoded;charset=UTF-8';
+        }
+        // Arrays, objects, and numbers will be encoded as JSON.
+        if (typeof this.body === 'object' || typeof this.body === 'number' ||
+            Array.isArray(this.body)) {
+            return 'application/json';
+        }
+        // No type could be inferred.
+        return null;
+    };
+    /**
+     * @param {?=} update
+     * @return {?}
+     */
+    HttpRequest.prototype.clone = /**
+     * @param {?=} update
+     * @return {?}
+     */
+    function (update) {
+        if (update === void 0) { update = {}; }
+        // For method, url, and responseType, take the current value unless
+        // it is overridden in the update hash.
+        var /** @type {?} */ method = update.method || this.method;
+        var /** @type {?} */ url = update.url || this.url;
+        var /** @type {?} */ responseType = update.responseType || this.responseType;
+        // The body is somewhat special - a `null` value in update.body means
+        // whatever current body is present is being overridden with an empty
+        // body, whereas an `undefined` value in update.body implies no
+        // override.
+        var /** @type {?} */ body = (update.body !== undefined) ? update.body : this.body;
+        // Carefully handle the boolean options to differentiate between
+        // `false` and `undefined` in the update args.
+        var /** @type {?} */ withCredentials = (update.withCredentials !== undefined) ? update.withCredentials : this.withCredentials;
+        var /** @type {?} */ reportProgress = (update.reportProgress !== undefined) ? update.reportProgress : this.reportProgress;
+        // Headers and params may be appended to if `setHeaders` or
+        // `setParams` are used.
+        var /** @type {?} */ headers = update.headers || this.headers;
+        var /** @type {?} */ params = update.params || this.params;
+        // Check whether the caller has asked to add headers.
+        if (update.setHeaders !== undefined) {
+            // Set every requested header.
+            headers =
+                Object.keys(update.setHeaders)
+                    .reduce(function (headers, name) { return headers.set(name, /** @type {?} */ ((update.setHeaders))[name]); }, headers);
+        }
+        // Check whether the caller has asked to set params.
+        if (update.setParams) {
+            // Set every requested param.
+            params = Object.keys(update.setParams)
+                .reduce(function (params, param) { return params.set(param, /** @type {?} */ ((update.setParams))[param]); }, params);
+        }
+        // Finally, construct the new HttpRequest using the pieces from above.
+        return new HttpRequest(method, url, body, {
+            params: params, headers: headers, reportProgress: reportProgress, responseType: responseType, withCredentials: withCredentials,
+        });
+    };
+    return HttpRequest;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/** @enum {number} */
+var HttpEventType = {
+    /**
+       * The request was sent out over the wire.
+       */
+    Sent: 0,
+    /**
+       * An upload progress event was received.
+       */
+    UploadProgress: 1,
+    /**
+       * The response status code and headers were received.
+       */
+    ResponseHeader: 2,
+    /**
+       * A download progress event was received.
+       */
+    DownloadProgress: 3,
+    /**
+       * The full response including the body was received.
+       */
+    Response: 4,
+    /**
+       * A custom event from an interceptor or a backend.
+       */
+    User: 5,
+};
+HttpEventType[HttpEventType.Sent] = "Sent";
+HttpEventType[HttpEventType.UploadProgress] = "UploadProgress";
+HttpEventType[HttpEventType.ResponseHeader] = "ResponseHeader";
+HttpEventType[HttpEventType.DownloadProgress] = "DownloadProgress";
+HttpEventType[HttpEventType.Response] = "Response";
+HttpEventType[HttpEventType.User] = "User";
+/**
+ * Base interface for progress events.
+ *
+ * \@stable
+ * @record
+ */
+
+/**
+ * A download progress event.
+ *
+ * \@stable
+ * @record
+ */
+
+/**
+ * An upload progress event.
+ *
+ * \@stable
+ * @record
+ */
+
+/**
+ * An event indicating that the request was sent to the server. Useful
+ * when a request may be retried multiple times, to distinguish between
+ * retries on the final event stream.
+ *
+ * \@stable
+ * @record
+ */
+
+/**
+ * A user-defined event.
+ *
+ * Grouping all custom events under this type ensures they will be handled
+ * and forwarded by all implementations of interceptors.
+ *
+ * \@stable
+ * @record
+ */
+
+/**
+ * An error that represents a failed attempt to JSON.parse text coming back
+ * from the server.
+ *
+ * It bundles the Error object with the actual response body that failed to parse.
+ *
+ * \@stable
+ * @record
+ */
+
+/**
+ * Base class for both `HttpResponse` and `HttpHeaderResponse`.
+ *
+ * \@stable
+ * @abstract
+ */
+var HttpResponseBase = (function () {
+    /**
+     * Super-constructor for all responses.
+     *
+     * The single parameter accepted is an initialization hash. Any properties
+     * of the response passed there will override the default values.
+     */
+    function HttpResponseBase(init, defaultStatus, defaultStatusText) {
+        if (defaultStatus === void 0) { defaultStatus = 200; }
+        if (defaultStatusText === void 0) { defaultStatusText = 'OK'; }
+        // If the hash has values passed, use them to initialize the response.
+        // Otherwise use the default values.
+        this.headers = init.headers || new HttpHeaders();
+        this.status = init.status !== undefined ? init.status : defaultStatus;
+        this.statusText = init.statusText || defaultStatusText;
+        this.url = init.url || null;
+        // Cache the ok value to avoid defining a getter.
+        this.ok = this.status >= 200 && this.status < 300;
+    }
+    return HttpResponseBase;
+}());
+/**
+ * A partial HTTP response which only includes the status and header data,
+ * but no response body.
+ *
+ * `HttpHeaderResponse` is a `HttpEvent` available on the response
+ * event stream, only when progress events are requested.
+ *
+ * \@stable
+ */
+var HttpHeaderResponse = (function (_super) {
+    Object(__WEBPACK_IMPORTED_MODULE_5_tslib__["b" /* __extends */])(HttpHeaderResponse, _super);
+    /**
+     * Create a new `HttpHeaderResponse` with the given parameters.
+     */
+    function HttpHeaderResponse(init) {
+        if (init === void 0) { init = {}; }
+        var _this = _super.call(this, init) || this;
+        _this.type = HttpEventType.ResponseHeader;
+        return _this;
+    }
+    /**
+     * Copy this `HttpHeaderResponse`, overriding its contents with the
+     * given parameter hash.
+     */
+    /**
+     * Copy this `HttpHeaderResponse`, overriding its contents with the
+     * given parameter hash.
+     * @param {?=} update
+     * @return {?}
+     */
+    HttpHeaderResponse.prototype.clone = /**
+     * Copy this `HttpHeaderResponse`, overriding its contents with the
+     * given parameter hash.
+     * @param {?=} update
+     * @return {?}
+     */
+    function (update) {
+        if (update === void 0) { update = {}; }
+        // Perform a straightforward initialization of the new HttpHeaderResponse,
+        // overriding the current parameters with new ones if given.
+        return new HttpHeaderResponse({
+            headers: update.headers || this.headers,
+            status: update.status !== undefined ? update.status : this.status,
+            statusText: update.statusText || this.statusText,
+            url: update.url || this.url || undefined,
+        });
+    };
+    return HttpHeaderResponse;
+}(HttpResponseBase));
+/**
+ * A full HTTP response, including a typed response body (which may be `null`
+ * if one was not returned).
+ *
+ * `HttpResponse` is a `HttpEvent` available on the response event
+ * stream.
+ *
+ * \@stable
+ */
+var HttpResponse = (function (_super) {
+    Object(__WEBPACK_IMPORTED_MODULE_5_tslib__["b" /* __extends */])(HttpResponse, _super);
+    /**
+     * Construct a new `HttpResponse`.
+     */
+    function HttpResponse(init) {
+        if (init === void 0) { init = {}; }
+        var _this = _super.call(this, init) || this;
+        _this.type = HttpEventType.Response;
+        _this.body = init.body || null;
+        return _this;
+    }
+    /**
+     * @param {?=} update
+     * @return {?}
+     */
+    HttpResponse.prototype.clone = /**
+     * @param {?=} update
+     * @return {?}
+     */
+    function (update) {
+        if (update === void 0) { update = {}; }
+        return new HttpResponse({
+            body: (update.body !== undefined) ? update.body : this.body,
+            headers: update.headers || this.headers,
+            status: (update.status !== undefined) ? update.status : this.status,
+            statusText: update.statusText || this.statusText,
+            url: update.url || this.url || undefined,
+        });
+    };
+    return HttpResponse;
+}(HttpResponseBase));
+/**
+ * A response that represents an error or failure, either from a
+ * non-successful HTTP status, an error while executing the request,
+ * or some other failure which occurred during the parsing of the response.
+ *
+ * Any error returned on the `Observable` response stream will be
+ * wrapped in an `HttpErrorResponse` to provide additional context about
+ * the state of the HTTP layer when the error occurred. The error property
+ * will contain either a wrapped Error object or the error response returned
+ * from the server.
+ *
+ * \@stable
+ */
+var HttpErrorResponse = (function (_super) {
+    Object(__WEBPACK_IMPORTED_MODULE_5_tslib__["b" /* __extends */])(HttpErrorResponse, _super);
+    function HttpErrorResponse(init) {
+        var _this = 
+        // Initialize with a default status of 0 / Unknown Error.
+        _super.call(this, init, 0, 'Unknown Error') || this;
+        _this.name = 'HttpErrorResponse';
+        /**
+         * Errors are never okay, even when the status code is in the 2xx success range.
+         */
+        _this.ok = false;
+        // If the response was successful, then this was a parse error. Otherwise, it was
+        // a protocol-level failure of some sort. Either the request failed in transit
+        // or the server returned an unsuccessful status code.
+        if (_this.status >= 200 && _this.status < 300) {
+            _this.message = "Http failure during parsing for " + (init.url || '(unknown url)');
+        }
+        else {
+            _this.message =
+                "Http failure response for " + (init.url || '(unknown url)') + ": " + init.status + " " + init.statusText;
+        }
+        _this.error = init.error || null;
+        return _this;
+    }
+    return HttpErrorResponse;
+}(HttpResponseBase));
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Construct an instance of `HttpRequestOptions<T>` from a source `HttpMethodOptions` and
+ * the given `body`. Basically, this clones the object and adds the body.
+ * @template T
+ * @param {?} options
+ * @param {?} body
+ * @return {?}
+ */
+function addBody(options, body) {
+    return {
+        body: body,
+        headers: options.headers,
+        observe: options.observe,
+        params: options.params,
+        reportProgress: options.reportProgress,
+        responseType: options.responseType,
+        withCredentials: options.withCredentials,
+    };
+}
+/**
+ * Perform HTTP requests.
+ *
+ * `HttpClient` is available as an injectable class, with methods to perform HTTP requests.
+ * Each request method has multiple signatures, and the return type varies according to which
+ * signature is called (mainly the values of `observe` and `responseType`).
+ *
+ * \@stable
+ */
+var HttpClient = (function () {
+    function HttpClient(handler) {
+        this.handler = handler;
+    }
+    /**
+     * Constructs an `Observable` for a particular HTTP request that, when subscribed,
+     * fires the request through the chain of registered interceptors and on to the
+     * server.
+     *
+     * This method can be called in one of two ways. Either an `HttpRequest`
+     * instance can be passed directly as the only parameter, or a method can be
+     * passed as the first parameter, a string URL as the second, and an
+     * options hash as the third.
+     *
+     * If a `HttpRequest` object is passed directly, an `Observable` of the
+     * raw `HttpEvent` stream will be returned.
+     *
+     * If a request is instead built by providing a URL, the options object
+     * determines the return type of `request()`. In addition to configuring
+     * request parameters such as the outgoing headers and/or the body, the options
+     * hash specifies two key pieces of information about the request: the
+     * `responseType` and what to `observe`.
+     *
+     * The `responseType` value determines how a successful response body will be
+     * parsed. If `responseType` is the default `json`, a type interface for the
+     * resulting object may be passed as a type parameter to `request()`.
+     *
+     * The `observe` value determines the return type of `request()`, based on what
+     * the consumer is interested in observing. A value of `events` will return an
+     * `Observable<HttpEvent>` representing the raw `HttpEvent` stream,
+     * including progress events by default. A value of `response` will return an
+     * `Observable<HttpResponse<T>>` where the `T` parameter of `HttpResponse`
+     * depends on the `responseType` and any optionally provided type parameter.
+     * A value of `body` will return an `Observable<T>` with the same `T` body type.
+     */
+    /**
+     * Constructs an `Observable` for a particular HTTP request that, when subscribed,
+     * fires the request through the chain of registered interceptors and on to the
+     * server.
+     *
+     * This method can be called in one of two ways. Either an `HttpRequest`
+     * instance can be passed directly as the only parameter, or a method can be
+     * passed as the first parameter, a string URL as the second, and an
+     * options hash as the third.
+     *
+     * If a `HttpRequest` object is passed directly, an `Observable` of the
+     * raw `HttpEvent` stream will be returned.
+     *
+     * If a request is instead built by providing a URL, the options object
+     * determines the return type of `request()`. In addition to configuring
+     * request parameters such as the outgoing headers and/or the body, the options
+     * hash specifies two key pieces of information about the request: the
+     * `responseType` and what to `observe`.
+     *
+     * The `responseType` value determines how a successful response body will be
+     * parsed. If `responseType` is the default `json`, a type interface for the
+     * resulting object may be passed as a type parameter to `request()`.
+     *
+     * The `observe` value determines the return type of `request()`, based on what
+     * the consumer is interested in observing. A value of `events` will return an
+     * `Observable<HttpEvent>` representing the raw `HttpEvent` stream,
+     * including progress events by default. A value of `response` will return an
+     * `Observable<HttpResponse<T>>` where the `T` parameter of `HttpResponse`
+     * depends on the `responseType` and any optionally provided type parameter.
+     * A value of `body` will return an `Observable<T>` with the same `T` body type.
+     * @param {?} first
+     * @param {?=} url
+     * @param {?=} options
+     * @return {?}
+     */
+    HttpClient.prototype.request = /**
+     * Constructs an `Observable` for a particular HTTP request that, when subscribed,
+     * fires the request through the chain of registered interceptors and on to the
+     * server.
+     *
+     * This method can be called in one of two ways. Either an `HttpRequest`
+     * instance can be passed directly as the only parameter, or a method can be
+     * passed as the first parameter, a string URL as the second, and an
+     * options hash as the third.
+     *
+     * If a `HttpRequest` object is passed directly, an `Observable` of the
+     * raw `HttpEvent` stream will be returned.
+     *
+     * If a request is instead built by providing a URL, the options object
+     * determines the return type of `request()`. In addition to configuring
+     * request parameters such as the outgoing headers and/or the body, the options
+     * hash specifies two key pieces of information about the request: the
+     * `responseType` and what to `observe`.
+     *
+     * The `responseType` value determines how a successful response body will be
+     * parsed. If `responseType` is the default `json`, a type interface for the
+     * resulting object may be passed as a type parameter to `request()`.
+     *
+     * The `observe` value determines the return type of `request()`, based on what
+     * the consumer is interested in observing. A value of `events` will return an
+     * `Observable<HttpEvent>` representing the raw `HttpEvent` stream,
+     * including progress events by default. A value of `response` will return an
+     * `Observable<HttpResponse<T>>` where the `T` parameter of `HttpResponse`
+     * depends on the `responseType` and any optionally provided type parameter.
+     * A value of `body` will return an `Observable<T>` with the same `T` body type.
+     * @param {?} first
+     * @param {?=} url
+     * @param {?=} options
+     * @return {?}
+     */
+    function (first, url, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        var /** @type {?} */ req;
+        // Firstly, check whether the primary argument is an instance of `HttpRequest`.
+        if (first instanceof HttpRequest) {
+            // It is. The other arguments must be undefined (per the signatures) and can be
+            // ignored.
+            req = /** @type {?} */ (first);
+        }
+        else {
+            // It's a string, so it represents a URL. Construct a request based on it,
+            // and incorporate the remaining arguments (assuming GET unless a method is
+            // provided.
+            // Figure out the headers.
+            var /** @type {?} */ headers = undefined;
+            if (!!options.headers !== undefined) {
+                if (options.headers instanceof HttpHeaders) {
+                    headers = options.headers;
+                }
+                else {
+                    headers = new HttpHeaders(options.headers);
+                }
+            }
+            // Sort out parameters.
+            var /** @type {?} */ params = undefined;
+            if (!!options.params) {
+                if (options.params instanceof HttpParams) {
+                    params = options.params;
+                }
+                else {
+                    params = new HttpParams(/** @type {?} */ ({ fromObject: options.params }));
+                }
+            }
+            // Construct the request.
+            req = new HttpRequest(first, /** @type {?} */ ((url)), options.body || null, {
+                headers: headers,
+                params: params,
+                reportProgress: options.reportProgress,
+                // By default, JSON is assumed to be returned for all calls.
+                responseType: options.responseType || 'json',
+                withCredentials: options.withCredentials,
+            });
+        }
+        // Start with an Observable.of() the initial request, and run the handler (which
+        // includes all interceptors) inside a concatMap(). This way, the handler runs
+        // inside an Observable chain, which causes interceptors to be re-run on every
+        // subscription (this also makes retries re-run the handler, including interceptors).
+        var /** @type {?} */ events$ = __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__["concatMap"].call(Object(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__["of"])(req), function (req) { return _this.handler.handle(req); });
+        // If coming via the API signature which accepts a previously constructed HttpRequest,
+        // the only option is to get the event stream. Otherwise, return the event stream if
+        // that is what was requested.
+        if (first instanceof HttpRequest || options.observe === 'events') {
+            return events$;
+        }
+        // The requested stream contains either the full response or the body. In either
+        // case, the first step is to filter the event stream to extract a stream of
+        // responses(s).
+        var /** @type {?} */ res$ = __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__["filter"].call(events$, function (event) { return event instanceof HttpResponse; });
+        // Decide which stream to return.
+        switch (options.observe || 'body') {
+            case 'body':
+                // The requested stream is the body. Map the response stream to the response
+                // body. This could be done more simply, but a misbehaving interceptor might
+                // transform the response body into a different format and ignore the requested
+                // responseType. Guard against this by validating that the response is of the
+                // requested type.
+                switch (req.responseType) {
+                    case 'arraybuffer':
+                        return __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__["map"].call(res$, function (res) {
+                            // Validate that the body is an ArrayBuffer.
+                            if (res.body !== null && !(res.body instanceof ArrayBuffer)) {
+                                throw new Error('Response is not an ArrayBuffer.');
+                            }
+                            return res.body;
+                        });
+                    case 'blob':
+                        return __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__["map"].call(res$, function (res) {
+                            // Validate that the body is a Blob.
+                            if (res.body !== null && !(res.body instanceof Blob)) {
+                                throw new Error('Response is not a Blob.');
+                            }
+                            return res.body;
+                        });
+                    case 'text':
+                        return __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__["map"].call(res$, function (res) {
+                            // Validate that the body is a string.
+                            if (res.body !== null && typeof res.body !== 'string') {
+                                throw new Error('Response is not a string.');
+                            }
+                            return res.body;
+                        });
+                    case 'json':
+                    default:
+                        // No validation needed for JSON responses, as they can be of any type.
+                        return __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__["map"].call(res$, function (res) { return res.body; });
+                }
+            case 'response':
+                // The response stream was requested directly, so return it.
+                return res$;
+            default:
+                // Guard against new future observe types being added.
+                throw new Error("Unreachable: unhandled observe type " + options.observe + "}");
+        }
+    };
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * DELETE request to be executed on the server. See the individual overloads for
+     * details of `delete()`'s return type based on the provided options.
+     */
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * DELETE request to be executed on the server. See the individual overloads for
+     * details of `delete()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    HttpClient.prototype.delete = /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * DELETE request to be executed on the server. See the individual overloads for
+     * details of `delete()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    function (url, options) {
+        if (options === void 0) { options = {}; }
+        return this.request('DELETE', url, /** @type {?} */ (options));
+    };
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * GET request to be executed on the server. See the individual overloads for
+     * details of `get()`'s return type based on the provided options.
+     */
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * GET request to be executed on the server. See the individual overloads for
+     * details of `get()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    HttpClient.prototype.get = /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * GET request to be executed on the server. See the individual overloads for
+     * details of `get()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    function (url, options) {
+        if (options === void 0) { options = {}; }
+        return this.request('GET', url, /** @type {?} */ (options));
+    };
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * HEAD request to be executed on the server. See the individual overloads for
+     * details of `head()`'s return type based on the provided options.
+     */
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * HEAD request to be executed on the server. See the individual overloads for
+     * details of `head()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    HttpClient.prototype.head = /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * HEAD request to be executed on the server. See the individual overloads for
+     * details of `head()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    function (url, options) {
+        if (options === void 0) { options = {}; }
+        return this.request('HEAD', url, /** @type {?} */ (options));
+    };
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause a request
+     * with the special method `JSONP` to be dispatched via the interceptor pipeline.
+     *
+     * A suitable interceptor must be installed (e.g. via the `HttpClientJsonpModule`).
+     * If no such interceptor is reached, then the `JSONP` request will likely be
+     * rejected by the configured backend.
+     */
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause a request
+     * with the special method `JSONP` to be dispatched via the interceptor pipeline.
+     *
+     * A suitable interceptor must be installed (e.g. via the `HttpClientJsonpModule`).
+     * If no such interceptor is reached, then the `JSONP` request will likely be
+     * rejected by the configured backend.
+     * @template T
+     * @param {?} url
+     * @param {?} callbackParam
+     * @return {?}
+     */
+    HttpClient.prototype.jsonp = /**
+     * Constructs an `Observable` which, when subscribed, will cause a request
+     * with the special method `JSONP` to be dispatched via the interceptor pipeline.
+     *
+     * A suitable interceptor must be installed (e.g. via the `HttpClientJsonpModule`).
+     * If no such interceptor is reached, then the `JSONP` request will likely be
+     * rejected by the configured backend.
+     * @template T
+     * @param {?} url
+     * @param {?} callbackParam
+     * @return {?}
+     */
+    function (url, callbackParam) {
+        return this.request('JSONP', url, {
+            params: new HttpParams().append(callbackParam, 'JSONP_CALLBACK'),
+            observe: 'body',
+            responseType: 'json',
+        });
+    };
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * OPTIONS request to be executed on the server. See the individual overloads for
+     * details of `options()`'s return type based on the provided options.
+     */
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * OPTIONS request to be executed on the server. See the individual overloads for
+     * details of `options()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    HttpClient.prototype.options = /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * OPTIONS request to be executed on the server. See the individual overloads for
+     * details of `options()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    function (url, options) {
+        if (options === void 0) { options = {}; }
+        return this.request('OPTIONS', url, /** @type {?} */ (options));
+    };
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * PATCH request to be executed on the server. See the individual overloads for
+     * details of `patch()`'s return type based on the provided options.
+     */
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * PATCH request to be executed on the server. See the individual overloads for
+     * details of `patch()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    HttpClient.prototype.patch = /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * PATCH request to be executed on the server. See the individual overloads for
+     * details of `patch()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    function (url, body, options) {
+        if (options === void 0) { options = {}; }
+        return this.request('PATCH', url, addBody(options, body));
+    };
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * POST request to be executed on the server. See the individual overloads for
+     * details of `post()`'s return type based on the provided options.
+     */
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * POST request to be executed on the server. See the individual overloads for
+     * details of `post()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    HttpClient.prototype.post = /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * POST request to be executed on the server. See the individual overloads for
+     * details of `post()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    function (url, body, options) {
+        if (options === void 0) { options = {}; }
+        return this.request('POST', url, addBody(options, body));
+    };
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * POST request to be executed on the server. See the individual overloads for
+     * details of `post()`'s return type based on the provided options.
+     */
+    /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * POST request to be executed on the server. See the individual overloads for
+     * details of `post()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    HttpClient.prototype.put = /**
+     * Constructs an `Observable` which, when subscribed, will cause the configured
+     * POST request to be executed on the server. See the individual overloads for
+     * details of `post()`'s return type based on the provided options.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    function (url, body, options) {
+        if (options === void 0) { options = {}; }
+        return this.request('PUT', url, addBody(options, body));
+    };
+    HttpClient.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    HttpClient.ctorParameters = function () { return [
+        { type: HttpHandler, },
+    ]; };
+    return HttpClient;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Intercepts `HttpRequest` and handles them.
+ *
+ * Most interceptors will transform the outgoing request before passing it to the
+ * next interceptor in the chain, by calling `next.handle(transformedReq)`.
+ *
+ * In rare cases, interceptors may wish to completely handle a request themselves,
+ * and not delegate to the remainder of the chain. This behavior is allowed.
+ *
+ * \@stable
+ * @record
+ */
+
+/**
+ * `HttpHandler` which applies an `HttpInterceptor` to an `HttpRequest`.
+ *
+ * \@stable
+ */
+var HttpInterceptorHandler = (function () {
+    function HttpInterceptorHandler(next, interceptor) {
+        this.next = next;
+        this.interceptor = interceptor;
+    }
+    /**
+     * @param {?} req
+     * @return {?}
+     */
+    HttpInterceptorHandler.prototype.handle = /**
+     * @param {?} req
+     * @return {?}
+     */
+    function (req) {
+        return this.interceptor.intercept(req, this.next);
+    };
+    return HttpInterceptorHandler;
+}());
+/**
+ * A multi-provider token which represents the array of `HttpInterceptor`s that
+ * are registered.
+ *
+ * \@stable
+ */
+var HTTP_INTERCEPTORS = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* InjectionToken */]('HTTP_INTERCEPTORS');
+var NoopInterceptor = (function () {
+    function NoopInterceptor() {
+    }
+    /**
+     * @param {?} req
+     * @param {?} next
+     * @return {?}
+     */
+    NoopInterceptor.prototype.intercept = /**
+     * @param {?} req
+     * @param {?} next
+     * @return {?}
+     */
+    function (req, next) {
+        return next.handle(req);
+    };
+    NoopInterceptor.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    NoopInterceptor.ctorParameters = function () { return []; };
+    return NoopInterceptor;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+// Every request made through JSONP needs a callback name that's unique across the
+// whole page. Each request is assigned an id and the callback name is constructed
+// from that. The next id to be assigned is tracked in a global variable here that
+// is shared among all applications on the page.
+var nextRequestId = 0;
+// Error text given when a JSONP script is injected, but doesn't invoke the callback
+// passed in its URL.
+var JSONP_ERR_NO_CALLBACK = 'JSONP injected script did not invoke callback.';
+// Error text given when a request is passed to the JsonpClientBackend that doesn't
+// have a request method JSONP.
+var JSONP_ERR_WRONG_METHOD = 'JSONP requests must use JSONP request method.';
+var JSONP_ERR_WRONG_RESPONSE_TYPE = 'JSONP requests must use Json response type.';
+/**
+ * DI token/abstract type representing a map of JSONP callbacks.
+ *
+ * In the browser, this should always be the `window` object.
+ *
+ * \@stable
+ * @abstract
+ */
+var JsonpCallbackContext = (function () {
+    function JsonpCallbackContext() {
+    }
+    return JsonpCallbackContext;
+}());
+/**
+ * `HttpBackend` that only processes `HttpRequest` with the JSONP method,
+ * by performing JSONP style requests.
+ *
+ * \@stable
+ */
+var JsonpClientBackend = (function () {
+    function JsonpClientBackend(callbackMap, document) {
+        this.callbackMap = callbackMap;
+        this.document = document;
+    }
+    /**
+     * Get the name of the next callback method, by incrementing the global `nextRequestId`.
+     * @return {?}
+     */
+    JsonpClientBackend.prototype.nextCallback = /**
+     * Get the name of the next callback method, by incrementing the global `nextRequestId`.
+     * @return {?}
+     */
+    function () { return "ng_jsonp_callback_" + nextRequestId++; };
+    /**
+     * Process a JSONP request and return an event stream of the results.
+     */
+    /**
+     * Process a JSONP request and return an event stream of the results.
+     * @param {?} req
+     * @return {?}
+     */
+    JsonpClientBackend.prototype.handle = /**
+     * Process a JSONP request and return an event stream of the results.
+     * @param {?} req
+     * @return {?}
+     */
+    function (req) {
+        var _this = this;
+        // Firstly, check both the method and response type. If either doesn't match
+        // then the request was improperly routed here and cannot be handled.
+        if (req.method !== 'JSONP') {
+            throw new Error(JSONP_ERR_WRONG_METHOD);
+        }
+        else if (req.responseType !== 'json') {
+            throw new Error(JSONP_ERR_WRONG_RESPONSE_TYPE);
+        }
+        // Everything else happens inside the Observable boundary.
+        return new __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__["Observable"](function (observer) {
+            // The first step to make a request is to generate the callback name, and replace the
+            // callback placeholder in the URL with the name. Care has to be taken here to ensure
+            // a trailing &, if matched, gets inserted back into the URL in the correct place.
+            var /** @type {?} */ callback = _this.nextCallback();
+            var /** @type {?} */ url = req.urlWithParams.replace(/=JSONP_CALLBACK(&|$)/, "=" + callback + "$1");
+            // Construct the <script> tag and point it at the URL.
+            var /** @type {?} */ node = _this.document.createElement('script');
+            node.src = url;
+            // A JSONP request requires waiting for multiple callbacks. These variables
+            // are closed over and track state across those callbacks.
+            // The response object, if one has been received, or null otherwise.
+            var /** @type {?} */ body = null;
+            // Whether the response callback has been called.
+            var /** @type {?} */ finished = false;
+            // Whether the request has been cancelled (and thus any other callbacks)
+            // should be ignored.
+            var /** @type {?} */ cancelled = false;
+            // Set the response callback in this.callbackMap (which will be the window
+            // object in the browser. The script being loaded via the <script> tag will
+            // eventually call this callback.
+            // Set the response callback in this.callbackMap (which will be the window
+            // object in the browser. The script being loaded via the <script> tag will
+            // eventually call this callback.
+            _this.callbackMap[callback] = function (data) {
+                // Data has been received from the JSONP script. Firstly, delete this callback.
+                delete _this.callbackMap[callback];
+                // Next, make sure the request wasn't cancelled in the meantime.
+                if (cancelled) {
+                    return;
+                }
+                // Set state to indicate data was received.
+                body = data;
+                finished = true;
+            };
+            // cleanup() is a utility closure that removes the <script> from the page and
+            // the response callback from the window. This logic is used in both the
+            // success, error, and cancellation paths, so it's extracted out for convenience.
+            var /** @type {?} */ cleanup = function () {
+                // Remove the <script> tag if it's still on the page.
+                if (node.parentNode) {
+                    node.parentNode.removeChild(node);
+                }
+                // Remove the response callback from the callbackMap (window object in the
+                // browser).
+                delete _this.callbackMap[callback];
+            };
+            // onLoad() is the success callback which runs after the response callback
+            // if the JSONP script loads successfully. The event itself is unimportant.
+            // If something went wrong, onLoad() may run without the response callback
+            // having been invoked.
+            var /** @type {?} */ onLoad = function (event) {
+                // Do nothing if the request has been cancelled.
+                if (cancelled) {
+                    return;
+                }
+                // Cleanup the page.
+                cleanup();
+                // Check whether the response callback has run.
+                if (!finished) {
+                    // It hasn't, something went wrong with the request. Return an error via
+                    // the Observable error path. All JSONP errors have status 0.
+                    observer.error(new HttpErrorResponse({
+                        url: url,
+                        status: 0,
+                        statusText: 'JSONP Error',
+                        error: new Error(JSONP_ERR_NO_CALLBACK),
+                    }));
+                    return;
+                }
+                // Success. body either contains the response body or null if none was
+                // returned.
+                observer.next(new HttpResponse({
+                    body: body,
+                    status: 200,
+                    statusText: 'OK', url: url,
+                }));
+                // Complete the stream, the resposne is over.
+                observer.complete();
+            };
+            // onError() is the error callback, which runs if the script returned generates
+            // a Javascript error. It emits the error via the Observable error channel as
+            // a HttpErrorResponse.
+            var /** @type {?} */ onError = function (error) {
+                // If the request was already cancelled, no need to emit anything.
+                if (cancelled) {
+                    return;
+                }
+                cleanup();
+                // Wrap the error in a HttpErrorResponse.
+                observer.error(new HttpErrorResponse({
+                    error: error,
+                    status: 0,
+                    statusText: 'JSONP Error', url: url,
+                }));
+            };
+            // Subscribe to both the success (load) and error events on the <script> tag,
+            // and add it to the page.
+            node.addEventListener('load', onLoad);
+            node.addEventListener('error', onError);
+            _this.document.body.appendChild(node);
+            // The request has now been successfully sent.
+            observer.next({ type: HttpEventType.Sent });
+            // Cancellation handler.
+            return function () {
+                // Track the cancellation so event listeners won't do anything even if already scheduled.
+                cancelled = true;
+                // Remove the event listeners so they won't run if the events later fire.
+                node.removeEventListener('load', onLoad);
+                node.removeEventListener('error', onError);
+                // And finally, clean up the page.
+                cleanup();
+            };
+        });
+    };
+    JsonpClientBackend.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    JsonpClientBackend.ctorParameters = function () { return [
+        { type: JsonpCallbackContext, },
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_6__angular_common__["c" /* DOCUMENT */],] },] },
+    ]; };
+    return JsonpClientBackend;
+}());
+/**
+ * An `HttpInterceptor` which identifies requests with the method JSONP and
+ * shifts them to the `JsonpClientBackend`.
+ *
+ * \@stable
+ */
+var JsonpInterceptor = (function () {
+    function JsonpInterceptor(jsonp) {
+        this.jsonp = jsonp;
+    }
+    /**
+     * @param {?} req
+     * @param {?} next
+     * @return {?}
+     */
+    JsonpInterceptor.prototype.intercept = /**
+     * @param {?} req
+     * @param {?} next
+     * @return {?}
+     */
+    function (req, next) {
+        if (req.method === 'JSONP') {
+            return this.jsonp.handle(/** @type {?} */ (req));
+        }
+        // Fall through for normal HTTP requests.
+        return next.handle(req);
+    };
+    JsonpInterceptor.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    JsonpInterceptor.ctorParameters = function () { return [
+        { type: JsonpClientBackend, },
+    ]; };
+    return JsonpInterceptor;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var XSSI_PREFIX = /^\)\]\}',?\n/;
+/**
+ * Determine an appropriate URL for the response, by checking either
+ * XMLHttpRequest.responseURL or the X-Request-URL header.
+ * @param {?} xhr
+ * @return {?}
+ */
+function getResponseUrl(xhr) {
+    if ('responseURL' in xhr && xhr.responseURL) {
+        return xhr.responseURL;
+    }
+    if (/^X-Request-URL:/m.test(xhr.getAllResponseHeaders())) {
+        return xhr.getResponseHeader('X-Request-URL');
+    }
+    return null;
+}
+/**
+ * A wrapper around the `XMLHttpRequest` constructor.
+ *
+ * \@stable
+ * @abstract
+ */
+var XhrFactory = (function () {
+    function XhrFactory() {
+    }
+    return XhrFactory;
+}());
+/**
+ * A factory for \@{link HttpXhrBackend} that uses the `XMLHttpRequest` browser API.
+ *
+ * \@stable
+ */
+var BrowserXhr = (function () {
+    function BrowserXhr() {
+    }
+    /**
+     * @return {?}
+     */
+    BrowserXhr.prototype.build = /**
+     * @return {?}
+     */
+    function () { return /** @type {?} */ ((new XMLHttpRequest())); };
+    BrowserXhr.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    BrowserXhr.ctorParameters = function () { return []; };
+    return BrowserXhr;
+}());
+/**
+ * An `HttpBackend` which uses the XMLHttpRequest API to send
+ * requests to a backend server.
+ *
+ * \@stable
+ */
+var HttpXhrBackend = (function () {
+    function HttpXhrBackend(xhrFactory) {
+        this.xhrFactory = xhrFactory;
+    }
+    /**
+     * Process a request and return a stream of response events.
+     */
+    /**
+     * Process a request and return a stream of response events.
+     * @param {?} req
+     * @return {?}
+     */
+    HttpXhrBackend.prototype.handle = /**
+     * Process a request and return a stream of response events.
+     * @param {?} req
+     * @return {?}
+     */
+    function (req) {
+        var _this = this;
+        // Quick check to give a better error message when a user attempts to use
+        // HttpClient.jsonp() without installing the JsonpClientModule
+        if (req.method === 'JSONP') {
+            throw new Error("Attempted to construct Jsonp request without JsonpClientModule installed.");
+        }
+        // Everything happens on Observable subscription.
+        return new __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__["Observable"](function (observer) {
+            // Start by setting up the XHR object with request method, URL, and withCredentials flag.
+            var /** @type {?} */ xhr = _this.xhrFactory.build();
+            xhr.open(req.method, req.urlWithParams);
+            if (!!req.withCredentials) {
+                xhr.withCredentials = true;
+            }
+            // Add all the requested headers.
+            req.headers.forEach(function (name, values) { return xhr.setRequestHeader(name, values.join(',')); });
+            // Add an Accept header if one isn't present already.
+            if (!req.headers.has('Accept')) {
+                xhr.setRequestHeader('Accept', 'application/json, text/plain, */*');
+            }
+            // Auto-detect the Content-Type header if one isn't present already.
+            if (!req.headers.has('Content-Type')) {
+                var /** @type {?} */ detectedType = req.detectContentTypeHeader();
+                // Sometimes Content-Type detection fails.
+                if (detectedType !== null) {
+                    xhr.setRequestHeader('Content-Type', detectedType);
+                }
+            }
+            // Set the responseType if one was requested.
+            if (req.responseType) {
+                var /** @type {?} */ responseType = req.responseType.toLowerCase();
+                // JSON responses need to be processed as text. This is because if the server
+                // returns an XSSI-prefixed JSON response, the browser will fail to parse it,
+                // xhr.response will be null, and xhr.responseText cannot be accessed to
+                // retrieve the prefixed JSON data in order to strip the prefix. Thus, all JSON
+                // is parsed by first requesting text and then applying JSON.parse.
+                xhr.responseType = /** @type {?} */ (((responseType !== 'json') ? responseType : 'text'));
+            }
+            // Serialize the request body if one is present. If not, this will be set to null.
+            var /** @type {?} */ reqBody = req.serializeBody();
+            // If progress events are enabled, response headers will be delivered
+            // in two events - the HttpHeaderResponse event and the full HttpResponse
+            // event. However, since response headers don't change in between these
+            // two events, it doesn't make sense to parse them twice. So headerResponse
+            // caches the data extracted from the response whenever it's first parsed,
+            // to ensure parsing isn't duplicated.
+            var /** @type {?} */ headerResponse = null;
+            // partialFromXhr extracts the HttpHeaderResponse from the current XMLHttpRequest
+            // state, and memoizes it into headerResponse.
+            var /** @type {?} */ partialFromXhr = function () {
+                if (headerResponse !== null) {
+                    return headerResponse;
+                }
+                // Read status and normalize an IE9 bug (http://bugs.jquery.com/ticket/1450).
+                var /** @type {?} */ status = xhr.status === 1223 ? 204 : xhr.status;
+                var /** @type {?} */ statusText = xhr.statusText || 'OK';
+                // Parse headers from XMLHttpRequest - this step is lazy.
+                var /** @type {?} */ headers = new HttpHeaders(xhr.getAllResponseHeaders());
+                // Read the response URL from the XMLHttpResponse instance and fall back on the
+                // request URL.
+                var /** @type {?} */ url = getResponseUrl(xhr) || req.url;
+                // Construct the HttpHeaderResponse and memoize it.
+                headerResponse = new HttpHeaderResponse({ headers: headers, status: status, statusText: statusText, url: url });
+                return headerResponse;
+            };
+            // Next, a few closures are defined for the various events which XMLHttpRequest can
+            // emit. This allows them to be unregistered as event listeners later.
+            // First up is the load event, which represents a response being fully available.
+            var /** @type {?} */ onLoad = function () {
+                // Read response state from the memoized partial data.
+                var _a = partialFromXhr(), headers = _a.headers, status = _a.status, statusText = _a.statusText, url = _a.url;
+                // The body will be read out if present.
+                var /** @type {?} */ body = null;
+                if (status !== 204) {
+                    // Use XMLHttpRequest.response if set, responseText otherwise.
+                    body = (typeof xhr.response === 'undefined') ? xhr.responseText : xhr.response;
+                }
+                // Normalize another potential bug (this one comes from CORS).
+                if (status === 0) {
+                    status = !!body ? 200 : 0;
+                }
+                // ok determines whether the response will be transmitted on the event or
+                // error channel. Unsuccessful status codes (not 2xx) will always be errors,
+                // but a successful status code can still result in an error if the user
+                // asked for JSON data and the body cannot be parsed as such.
+                var /** @type {?} */ ok = status >= 200 && status < 300;
+                // Check whether the body needs to be parsed as JSON (in many cases the browser
+                // will have done that already).
+                if (ok && req.responseType === 'json' && typeof body === 'string') {
+                    // Attempt the parse. If it fails, a parse error should be delivered to the user.
+                    body = body.replace(XSSI_PREFIX, '');
+                    try {
+                        body = JSON.parse(body);
+                    }
+                    catch (/** @type {?} */ error) {
+                        // Even though the response status was 2xx, this is still an error.
+                        ok = false;
+                        // The parse error contains the text of the body that failed to parse.
+                        body = /** @type {?} */ ({ error: error, text: body });
+                    }
+                }
+                else if (!ok && req.responseType === 'json' && typeof body === 'string') {
+                    try {
+                        // Attempt to parse the body as JSON.
+                        body = JSON.parse(body);
+                    }
+                    catch (/** @type {?} */ error) {
+                        // Cannot be certain that the body was meant to be parsed as JSON.
+                        // Leave the body as a string.
+                    }
+                }
+                if (ok) {
+                    // A successful response is delivered on the event stream.
+                    observer.next(new HttpResponse({
+                        body: body,
+                        headers: headers,
+                        status: status,
+                        statusText: statusText,
+                        url: url || undefined,
+                    }));
+                    // The full body has been received and delivered, no further events
+                    // are possible. This request is complete.
+                    observer.complete();
+                }
+                else {
+                    // An unsuccessful request is delivered on the error channel.
+                    observer.error(new HttpErrorResponse({
+                        // The error in this case is the response body (error from the server).
+                        error: body,
+                        headers: headers,
+                        status: status,
+                        statusText: statusText,
+                        url: url || undefined,
+                    }));
+                }
+            };
+            // The onError callback is called when something goes wrong at the network level.
+            // Connection timeout, DNS error, offline, etc. These are actual errors, and are
+            // transmitted on the error channel.
+            var /** @type {?} */ onError = function (error) {
+                var /** @type {?} */ res = new HttpErrorResponse({
+                    error: error,
+                    status: xhr.status || 0,
+                    statusText: xhr.statusText || 'Unknown Error',
+                });
+                observer.error(res);
+            };
+            // The sentHeaders flag tracks whether the HttpResponseHeaders event
+            // has been sent on the stream. This is necessary to track if progress
+            // is enabled since the event will be sent on only the first download
+            // progerss event.
+            var /** @type {?} */ sentHeaders = false;
+            // The download progress event handler, which is only registered if
+            // progress events are enabled.
+            var /** @type {?} */ onDownProgress = function (event) {
+                // Send the HttpResponseHeaders event if it hasn't been sent already.
+                if (!sentHeaders) {
+                    observer.next(partialFromXhr());
+                    sentHeaders = true;
+                }
+                // Start building the download progress event to deliver on the response
+                // event stream.
+                var /** @type {?} */ progressEvent = {
+                    type: HttpEventType.DownloadProgress,
+                    loaded: event.loaded,
+                };
+                // Set the total number of bytes in the event if it's available.
+                if (event.lengthComputable) {
+                    progressEvent.total = event.total;
+                }
+                // If the request was for text content and a partial response is
+                // available on XMLHttpRequest, include it in the progress event
+                // to allow for streaming reads.
+                if (req.responseType === 'text' && !!xhr.responseText) {
+                    progressEvent.partialText = xhr.responseText;
+                }
+                // Finally, fire the event.
+                observer.next(progressEvent);
+            };
+            // The upload progress event handler, which is only registered if
+            // progress events are enabled.
+            var /** @type {?} */ onUpProgress = function (event) {
+                // Upload progress events are simpler. Begin building the progress
+                // event.
+                var /** @type {?} */ progress = {
+                    type: HttpEventType.UploadProgress,
+                    loaded: event.loaded,
+                };
+                // If the total number of bytes being uploaded is available, include
+                // it.
+                if (event.lengthComputable) {
+                    progress.total = event.total;
+                }
+                // Send the event.
+                observer.next(progress);
+            };
+            // By default, register for load and error events.
+            xhr.addEventListener('load', onLoad);
+            xhr.addEventListener('error', onError);
+            // Progress events are only enabled if requested.
+            if (req.reportProgress) {
+                // Download progress is always enabled if requested.
+                xhr.addEventListener('progress', onDownProgress);
+                // Upload progress depends on whether there is a body to upload.
+                if (reqBody !== null && xhr.upload) {
+                    xhr.upload.addEventListener('progress', onUpProgress);
+                }
+            }
+            // Fire the request, and notify the event stream that it was fired.
+            xhr.send(reqBody);
+            observer.next({ type: HttpEventType.Sent });
+            // This is the return from the Observable function, which is the
+            // request cancellation handler.
+            return function () {
+                // On a cancellation, remove all registered event listeners.
+                xhr.removeEventListener('error', onError);
+                xhr.removeEventListener('load', onLoad);
+                if (req.reportProgress) {
+                    xhr.removeEventListener('progress', onDownProgress);
+                    if (reqBody !== null && xhr.upload) {
+                        xhr.upload.removeEventListener('progress', onUpProgress);
+                    }
+                }
+                // Finally, abort the in-flight request.
+                xhr.abort();
+            };
+        });
+    };
+    HttpXhrBackend.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    HttpXhrBackend.ctorParameters = function () { return [
+        { type: XhrFactory, },
+    ]; };
+    return HttpXhrBackend;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var XSRF_COOKIE_NAME = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* InjectionToken */]('XSRF_COOKIE_NAME');
+var XSRF_HEADER_NAME = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* InjectionToken */]('XSRF_HEADER_NAME');
+/**
+ * Retrieves the current XSRF token to use with the next outgoing request.
+ *
+ * \@stable
+ * @abstract
+ */
+var HttpXsrfTokenExtractor = (function () {
+    function HttpXsrfTokenExtractor() {
+    }
+    return HttpXsrfTokenExtractor;
+}());
+/**
+ * `HttpXsrfTokenExtractor` which retrieves the token from a cookie.
+ */
+var HttpXsrfCookieExtractor = (function () {
+    function HttpXsrfCookieExtractor(doc, platform, cookieName) {
+        this.doc = doc;
+        this.platform = platform;
+        this.cookieName = cookieName;
+        this.lastCookieString = '';
+        this.lastToken = null;
+        /**
+         * \@internal for testing
+         */
+        this.parseCount = 0;
+    }
+    /**
+     * @return {?}
+     */
+    HttpXsrfCookieExtractor.prototype.getToken = /**
+     * @return {?}
+     */
+    function () {
+        if (this.platform === 'server') {
+            return null;
+        }
+        var /** @type {?} */ cookieString = this.doc.cookie || '';
+        if (cookieString !== this.lastCookieString) {
+            this.parseCount++;
+            this.lastToken = Object(__WEBPACK_IMPORTED_MODULE_6__angular_common__["j" /* ɵparseCookieValue */])(cookieString, this.cookieName);
+            this.lastCookieString = cookieString;
+        }
+        return this.lastToken;
+    };
+    HttpXsrfCookieExtractor.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    HttpXsrfCookieExtractor.ctorParameters = function () { return [
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_6__angular_common__["c" /* DOCUMENT */],] },] },
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* PLATFORM_ID */],] },] },
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */], args: [XSRF_COOKIE_NAME,] },] },
+    ]; };
+    return HttpXsrfCookieExtractor;
+}());
+/**
+ * `HttpInterceptor` which adds an XSRF token to eligible outgoing requests.
+ */
+var HttpXsrfInterceptor = (function () {
+    function HttpXsrfInterceptor(tokenService, headerName) {
+        this.tokenService = tokenService;
+        this.headerName = headerName;
+    }
+    /**
+     * @param {?} req
+     * @param {?} next
+     * @return {?}
+     */
+    HttpXsrfInterceptor.prototype.intercept = /**
+     * @param {?} req
+     * @param {?} next
+     * @return {?}
+     */
+    function (req, next) {
+        var /** @type {?} */ lcUrl = req.url.toLowerCase();
+        // Skip both non-mutating requests and absolute URLs.
+        // Non-mutating requests don't require a token, and absolute URLs require special handling
+        // anyway as the cookie set
+        // on our origin is not the same as the token expected by another origin.
+        if (req.method === 'GET' || req.method === 'HEAD' || lcUrl.startsWith('http://') ||
+            lcUrl.startsWith('https://')) {
+            return next.handle(req);
+        }
+        var /** @type {?} */ token = this.tokenService.getToken();
+        // Be careful not to overwrite an existing header of the same name.
+        if (token !== null && !req.headers.has(this.headerName)) {
+            req = req.clone({ headers: req.headers.set(this.headerName, token) });
+        }
+        return next.handle(req);
+    };
+    HttpXsrfInterceptor.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    HttpXsrfInterceptor.ctorParameters = function () { return [
+        { type: HttpXsrfTokenExtractor, },
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */], args: [XSRF_HEADER_NAME,] },] },
+    ]; };
+    return HttpXsrfInterceptor;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Constructs an `HttpHandler` that applies a bunch of `HttpInterceptor`s
+ * to a request before passing it to the given `HttpBackend`.
+ *
+ * Meant to be used as a factory function within `HttpClientModule`.
+ *
+ * \@stable
+ * @param {?} backend
+ * @param {?=} interceptors
+ * @return {?}
+ */
+function interceptingHandler(backend, interceptors) {
+    if (interceptors === void 0) { interceptors = []; }
+    if (!interceptors) {
+        return backend;
+    }
+    return interceptors.reduceRight(function (next, interceptor) { return new HttpInterceptorHandler(next, interceptor); }, backend);
+}
+/**
+ * Factory function that determines where to store JSONP callbacks.
+ *
+ * Ordinarily JSONP callbacks are stored on the `window` object, but this may not exist
+ * in test environments. In that case, callbacks are stored on an anonymous object instead.
+ *
+ * \@stable
+ * @return {?}
+ */
+function jsonpCallbackContext() {
+    if (typeof window === 'object') {
+        return window;
+    }
+    return {};
+}
+/**
+ * `NgModule` which adds XSRF protection support to outgoing requests.
+ *
+ * Provided the server supports a cookie-based XSRF protection system, this
+ * module can be used directly to configure XSRF protection with the correct
+ * cookie and header names.
+ *
+ * If no such names are provided, the default is to use `X-XSRF-TOKEN` for
+ * the header name and `XSRF-TOKEN` for the cookie name.
+ *
+ * \@stable
+ */
+var HttpClientXsrfModule = (function () {
+    function HttpClientXsrfModule() {
+    }
+    /**
+     * Disable the default XSRF protection.
+     */
+    /**
+     * Disable the default XSRF protection.
+     * @return {?}
+     */
+    HttpClientXsrfModule.disable = /**
+     * Disable the default XSRF protection.
+     * @return {?}
+     */
+    function () {
+        return {
+            ngModule: HttpClientXsrfModule,
+            providers: [
+                { provide: HttpXsrfInterceptor, useClass: NoopInterceptor },
+            ],
+        };
+    };
+    /**
+     * Configure XSRF protection to use the given cookie name or header name,
+     * or the default names (as described above) if not provided.
+     */
+    /**
+     * Configure XSRF protection to use the given cookie name or header name,
+     * or the default names (as described above) if not provided.
+     * @param {?=} options
+     * @return {?}
+     */
+    HttpClientXsrfModule.withOptions = /**
+     * Configure XSRF protection to use the given cookie name or header name,
+     * or the default names (as described above) if not provided.
+     * @param {?=} options
+     * @return {?}
+     */
+    function (options) {
+        if (options === void 0) { options = {}; }
+        return {
+            ngModule: HttpClientXsrfModule,
+            providers: [
+                options.cookieName ? { provide: XSRF_COOKIE_NAME, useValue: options.cookieName } : [],
+                options.headerName ? { provide: XSRF_HEADER_NAME, useValue: options.headerName } : [],
+            ],
+        };
+    };
+    HttpClientXsrfModule.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */], args: [{
+                    providers: [
+                        HttpXsrfInterceptor,
+                        { provide: HTTP_INTERCEPTORS, useExisting: HttpXsrfInterceptor, multi: true },
+                        { provide: HttpXsrfTokenExtractor, useClass: HttpXsrfCookieExtractor },
+                        { provide: XSRF_COOKIE_NAME, useValue: 'XSRF-TOKEN' },
+                        { provide: XSRF_HEADER_NAME, useValue: 'X-XSRF-TOKEN' },
+                    ],
+                },] },
+    ];
+    /** @nocollapse */
+    HttpClientXsrfModule.ctorParameters = function () { return []; };
+    return HttpClientXsrfModule;
+}());
+/**
+ * `NgModule` which provides the `HttpClient` and associated services.
+ *
+ * Interceptors can be added to the chain behind `HttpClient` by binding them
+ * to the multiprovider for `HTTP_INTERCEPTORS`.
+ *
+ * \@stable
+ */
+var HttpClientModule = (function () {
+    function HttpClientModule() {
+    }
+    HttpClientModule.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */], args: [{
+                    imports: [
+                        HttpClientXsrfModule.withOptions({
+                            cookieName: 'XSRF-TOKEN',
+                            headerName: 'X-XSRF-TOKEN',
+                        }),
+                    ],
+                    providers: [
+                        HttpClient,
+                        // HttpHandler is the backend + interceptors and is constructed
+                        // using the interceptingHandler factory function.
+                        {
+                            provide: HttpHandler,
+                            useFactory: interceptingHandler,
+                            deps: [HttpBackend, [new __WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* Optional */](), new __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */](HTTP_INTERCEPTORS)]],
+                        },
+                        HttpXhrBackend,
+                        { provide: HttpBackend, useExisting: HttpXhrBackend },
+                        BrowserXhr,
+                        { provide: XhrFactory, useExisting: BrowserXhr },
+                    ],
+                },] },
+    ];
+    /** @nocollapse */
+    HttpClientModule.ctorParameters = function () { return []; };
+    return HttpClientModule;
+}());
+/**
+ * `NgModule` which enables JSONP support in `HttpClient`.
+ *
+ * Without this module, Jsonp requests will reach the backend
+ * with method JSONP, where they'll be rejected.
+ *
+ * \@stable
+ */
+var HttpClientJsonpModule = (function () {
+    function HttpClientJsonpModule() {
+    }
+    HttpClientJsonpModule.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */], args: [{
+                    providers: [
+                        JsonpClientBackend,
+                        { provide: JsonpCallbackContext, useFactory: jsonpCallbackContext },
+                        { provide: HTTP_INTERCEPTORS, useClass: JsonpInterceptor, multi: true },
+                    ],
+                },] },
+    ];
+    /** @nocollapse */
+    HttpClientJsonpModule.ctorParameters = function () { return []; };
+    return HttpClientJsonpModule;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+//# sourceMappingURL=http.js.map
+
+
+/***/ }),
+
+/***/ 371:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export API_HEADERS */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return API_URL; });
+var API_HEADERS = {};
+var API_URL = 'http://188.166.177.172/refuze-api/public/index.php';
+// export const API_URL = 'http://localhost:9000';
+// export const API_URL = 'api-production';
+//# sourceMappingURL=api-urls.js.map
+
+/***/ }),
+
+/***/ 372:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var ArrayObservable_1 = __webpack_require__(194);
+exports.of = ArrayObservable_1.ArrayObservable.of;
+//# sourceMappingURL=of.js.map
+
+/***/ }),
+
+/***/ 373:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var concatMap_1 = __webpack_require__(374);
+/* tslint:enable:max-line-length */
+/**
+ * Projects each source value to an Observable which is merged in the output
+ * Observable, in a serialized fashion waiting for each one to complete before
+ * merging the next.
+ *
+ * <span class="informal">Maps each value to an Observable, then flattens all of
+ * these inner Observables using {@link concatAll}.</span>
+ *
+ * <img src="./img/concatMap.png" width="100%">
+ *
+ * Returns an Observable that emits items based on applying a function that you
+ * supply to each item emitted by the source Observable, where that function
+ * returns an (so-called "inner") Observable. Each new inner Observable is
+ * concatenated with the previous inner Observable.
+ *
+ * __Warning:__ if source values arrive endlessly and faster than their
+ * corresponding inner Observables can complete, it will result in memory issues
+ * as inner Observables amass in an unbounded buffer waiting for their turn to
+ * be subscribed to.
+ *
+ * Note: `concatMap` is equivalent to `mergeMap` with concurrency parameter set
+ * to `1`.
+ *
+ * @example <caption>For each click event, tick every second from 0 to 3, with no concurrency</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var result = clicks.concatMap(ev => Rx.Observable.interval(1000).take(4));
+ * result.subscribe(x => console.log(x));
+ *
+ * // Results in the following:
+ * // (results are not concurrent)
+ * // For every click on the "document" it will emit values 0 to 3 spaced
+ * // on a 1000ms interval
+ * // one click = 1000ms-> 0 -1000ms-> 1 -1000ms-> 2 -1000ms-> 3
+ *
+ * @see {@link concat}
+ * @see {@link concatAll}
+ * @see {@link concatMapTo}
+ * @see {@link exhaustMap}
+ * @see {@link mergeMap}
+ * @see {@link switchMap}
+ *
+ * @param {function(value: T, ?index: number): ObservableInput} project A function
+ * that, when applied to an item emitted by the source Observable, returns an
+ * Observable.
+ * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
+ * A function to produce the value on the output Observable based on the values
+ * and the indices of the source (outer) emission and the inner Observable
+ * emission. The arguments passed to this function are:
+ * - `outerValue`: the value that came from the source
+ * - `innerValue`: the value that came from the projected Observable
+ * - `outerIndex`: the "index" of the value that came from the source
+ * - `innerIndex`: the "index" of the value from the projected Observable
+ * @return {Observable} An Observable that emits the result of applying the
+ * projection function (and the optional `resultSelector`) to each item emitted
+ * by the source Observable and taking values from each projected inner
+ * Observable sequentially.
+ * @method concatMap
+ * @owner Observable
+ */
+function concatMap(project, resultSelector) {
+    return concatMap_1.concatMap(project, resultSelector)(this);
+}
+exports.concatMap = concatMap;
+//# sourceMappingURL=concatMap.js.map
+
+/***/ }),
+
+/***/ 374:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var mergeMap_1 = __webpack_require__(195);
+/* tslint:enable:max-line-length */
+/**
+ * Projects each source value to an Observable which is merged in the output
+ * Observable, in a serialized fashion waiting for each one to complete before
+ * merging the next.
+ *
+ * <span class="informal">Maps each value to an Observable, then flattens all of
+ * these inner Observables using {@link concatAll}.</span>
+ *
+ * <img src="./img/concatMap.png" width="100%">
+ *
+ * Returns an Observable that emits items based on applying a function that you
+ * supply to each item emitted by the source Observable, where that function
+ * returns an (so-called "inner") Observable. Each new inner Observable is
+ * concatenated with the previous inner Observable.
+ *
+ * __Warning:__ if source values arrive endlessly and faster than their
+ * corresponding inner Observables can complete, it will result in memory issues
+ * as inner Observables amass in an unbounded buffer waiting for their turn to
+ * be subscribed to.
+ *
+ * Note: `concatMap` is equivalent to `mergeMap` with concurrency parameter set
+ * to `1`.
+ *
+ * @example <caption>For each click event, tick every second from 0 to 3, with no concurrency</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var result = clicks.concatMap(ev => Rx.Observable.interval(1000).take(4));
+ * result.subscribe(x => console.log(x));
+ *
+ * // Results in the following:
+ * // (results are not concurrent)
+ * // For every click on the "document" it will emit values 0 to 3 spaced
+ * // on a 1000ms interval
+ * // one click = 1000ms-> 0 -1000ms-> 1 -1000ms-> 2 -1000ms-> 3
+ *
+ * @see {@link concat}
+ * @see {@link concatAll}
+ * @see {@link concatMapTo}
+ * @see {@link exhaustMap}
+ * @see {@link mergeMap}
+ * @see {@link switchMap}
+ *
+ * @param {function(value: T, ?index: number): ObservableInput} project A function
+ * that, when applied to an item emitted by the source Observable, returns an
+ * Observable.
+ * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
+ * A function to produce the value on the output Observable based on the values
+ * and the indices of the source (outer) emission and the inner Observable
+ * emission. The arguments passed to this function are:
+ * - `outerValue`: the value that came from the source
+ * - `innerValue`: the value that came from the projected Observable
+ * - `outerIndex`: the "index" of the value that came from the source
+ * - `innerIndex`: the "index" of the value from the projected Observable
+ * @return {Observable} An Observable that emits the result of applying the
+ * projection function (and the optional `resultSelector`) to each item emitted
+ * by the source Observable and taking values from each projected inner
+ * Observable sequentially.
+ * @method concatMap
+ * @owner Observable
+ */
+function concatMap(project, resultSelector) {
+    return mergeMap_1.mergeMap(project, resultSelector, 1);
+}
+exports.concatMap = concatMap;
+//# sourceMappingURL=concatMap.js.map
+
+/***/ }),
+
+/***/ 375:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var filter_1 = __webpack_require__(376);
+/* tslint:enable:max-line-length */
+/**
+ * Filter items emitted by the source Observable by only emitting those that
+ * satisfy a specified predicate.
+ *
+ * <span class="informal">Like
+ * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),
+ * it only emits a value from the source if it passes a criterion function.</span>
+ *
+ * <img src="./img/filter.png" width="100%">
+ *
+ * Similar to the well-known `Array.prototype.filter` method, this operator
+ * takes values from the source Observable, passes them through a `predicate`
+ * function and only emits those values that yielded `true`.
+ *
+ * @example <caption>Emit only click events whose target was a DIV element</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var clicksOnDivs = clicks.filter(ev => ev.target.tagName === 'DIV');
+ * clicksOnDivs.subscribe(x => console.log(x));
+ *
+ * @see {@link distinct}
+ * @see {@link distinctUntilChanged}
+ * @see {@link distinctUntilKeyChanged}
+ * @see {@link ignoreElements}
+ * @see {@link partition}
+ * @see {@link skip}
+ *
+ * @param {function(value: T, index: number): boolean} predicate A function that
+ * evaluates each value emitted by the source Observable. If it returns `true`,
+ * the value is emitted, if `false` the value is not passed to the output
+ * Observable. The `index` parameter is the number `i` for the i-th source
+ * emission that has happened since the subscription, starting from the number
+ * `0`.
+ * @param {any} [thisArg] An optional argument to determine the value of `this`
+ * in the `predicate` function.
+ * @return {Observable} An Observable of values from the source that were
+ * allowed by the `predicate` function.
+ * @method filter
+ * @owner Observable
+ */
+function filter(predicate, thisArg) {
+    return filter_1.filter(predicate, thisArg)(this);
+}
+exports.filter = filter;
+//# sourceMappingURL=filter.js.map
+
+/***/ }),
+
+/***/ 376:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscriber_1 = __webpack_require__(24);
+/* tslint:enable:max-line-length */
+/**
+ * Filter items emitted by the source Observable by only emitting those that
+ * satisfy a specified predicate.
+ *
+ * <span class="informal">Like
+ * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),
+ * it only emits a value from the source if it passes a criterion function.</span>
+ *
+ * <img src="./img/filter.png" width="100%">
+ *
+ * Similar to the well-known `Array.prototype.filter` method, this operator
+ * takes values from the source Observable, passes them through a `predicate`
+ * function and only emits those values that yielded `true`.
+ *
+ * @example <caption>Emit only click events whose target was a DIV element</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var clicksOnDivs = clicks.filter(ev => ev.target.tagName === 'DIV');
+ * clicksOnDivs.subscribe(x => console.log(x));
+ *
+ * @see {@link distinct}
+ * @see {@link distinctUntilChanged}
+ * @see {@link distinctUntilKeyChanged}
+ * @see {@link ignoreElements}
+ * @see {@link partition}
+ * @see {@link skip}
+ *
+ * @param {function(value: T, index: number): boolean} predicate A function that
+ * evaluates each value emitted by the source Observable. If it returns `true`,
+ * the value is emitted, if `false` the value is not passed to the output
+ * Observable. The `index` parameter is the number `i` for the i-th source
+ * emission that has happened since the subscription, starting from the number
+ * `0`.
+ * @param {any} [thisArg] An optional argument to determine the value of `this`
+ * in the `predicate` function.
+ * @return {Observable} An Observable of values from the source that were
+ * allowed by the `predicate` function.
+ * @method filter
+ * @owner Observable
+ */
+function filter(predicate, thisArg) {
+    return function filterOperatorFunction(source) {
+        return source.lift(new FilterOperator(predicate, thisArg));
+    };
+}
+exports.filter = filter;
+var FilterOperator = (function () {
+    function FilterOperator(predicate, thisArg) {
+        this.predicate = predicate;
+        this.thisArg = thisArg;
+    }
+    FilterOperator.prototype.call = function (subscriber, source) {
+        return source.subscribe(new FilterSubscriber(subscriber, this.predicate, this.thisArg));
+    };
+    return FilterOperator;
+}());
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var FilterSubscriber = (function (_super) {
+    __extends(FilterSubscriber, _super);
+    function FilterSubscriber(destination, predicate, thisArg) {
+        _super.call(this, destination);
+        this.predicate = predicate;
+        this.thisArg = thisArg;
+        this.count = 0;
+    }
+    // the try catch block below is left specifically for
+    // optimization and perf reasons. a tryCatcher is not necessary here.
+    FilterSubscriber.prototype._next = function (value) {
+        var result;
+        try {
+            result = this.predicate.call(this.thisArg, value, this.count++);
+        }
+        catch (err) {
+            this.destination.error(err);
+            return;
+        }
+        if (result) {
+            this.destination.next(value);
+        }
+    };
+    return FilterSubscriber;
+}(Subscriber_1.Subscriber));
+//# sourceMappingURL=filter.js.map
+
+/***/ }),
+
+/***/ 392:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseItemsProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(371);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PurchaseItemsProvider = (function () {
+    function PurchaseItemsProvider(http) {
+        this.http = http;
+    }
+    PurchaseItemsProvider.prototype.createPurchaseProfile = function (params) {
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__api_urls__["a" /* API_URL */] + "/purchase-items/create", params);
+    };
+    PurchaseItemsProvider.prototype.getPurchaseTransactionsHistoryBySellerId = function (id) {
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__api_urls__["a" /* API_URL */] + "/purchases-items/history/seller/" + id);
+    };
+    PurchaseItemsProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+    ], PurchaseItemsProvider);
+    return PurchaseItemsProvider;
+}());
+
+//# sourceMappingURL=purchase-items.js.map
+
+/***/ }),
+
+/***/ 472:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseItemsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_purchase_items_purchase_items__ = __webpack_require__(392);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PurchaseItemsPage = (function () {
+    function PurchaseItemsPage(navCtrl, navParams, purchaseItemsProvider) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.purchaseItemsProvider = purchaseItemsProvider;
+        this.data = {
+            'test': {
+                'name': 'ddd'
+            }
+        };
+        this.animateItems = [];
+        this.total = 0;
+        this.isHide = false;
+        this.isDisabled = true;
+        this.FindSellerPage = 'find-seller';
+        this.MainMenuPage = 'main-menu-purchase-items';
+        this.animateClass = { 'zoom-in': true };
+    }
+    PurchaseItemsPage.prototype.ionViewDidLoad = function () {
+        console.log(this.data);
+        this.seller = JSON.parse(localStorage.getItem('sellerProfile'));
+        this.buyer = JSON.parse(localStorage.getItem('BuyerProfile'));
+        this.items = JSON.parse(localStorage.getItem('purchaseItems')) || [];
+        console.log(this.items);
+        this.total = this.calTotal(this.items);
+        this.DisabledPurchaseButton(this.total);
+        if (Object.keys(this.seller).length !== 0 && Object.keys(this.items).length) {
+            this.id = this.id;
+            this.fullname = this.seller.name + " " + this.seller.last_name;
+            this.mobile = "\u0E40\u0E1A\u0E2D\u0E23\u0E4C\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D " + this.seller.mobile;
+            this.address = "\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E25\u0E02\u0E17\u0E35\u0E48 " + this.seller.address + " \u0E15\u0E33\u0E1A\u0E25 " + this.seller.DISTRICT_NAME + " \u0E2D\u0E33\u0E40\u0E20\u0E2D " + this.seller.AMPHUR_NAME + " \u0E08\u0E31\u0E07\u0E2B\u0E27\u0E31\u0E14 " + this.seller.PROVINCE_NAME + " " + this.seller.zipcode;
+        }
+    };
+    PurchaseItemsPage.prototype.removeItem = function (index) {
+        this.items.splice(index, 1);
+        this.total = this.calTotal(this.items);
+        this.DisabledPurchaseButton(this.total);
+    };
+    PurchaseItemsPage.prototype.calTotal = function (items) {
+        return this.items.reduce(function (pre, cur) { return pre += cur.balance; }, 0);
+    };
+    PurchaseItemsPage.prototype.createPurchaseProfile = function () {
+        var _this = this;
+        var params = {
+            buyer_id: this.buyer.id,
+            seller_id: this.seller.id,
+            account_saving_id: this.seller.account_saving_id,
+            balance: this.total,
+            items: this.items
+        };
+        this.purchaseItemsProvider.createPurchaseProfile(params)
+            .subscribe(function (res) {
+            _this.isHide = true;
+        });
+    };
+    PurchaseItemsPage.prototype.DisabledPurchaseButton = function (total) {
+        if (total <= 0)
+            this.isDisabled = false;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], PurchaseItemsPage.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
+    ], PurchaseItemsPage.prototype, "content", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
+    ], PurchaseItemsPage.prototype, "fabButton", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], PurchaseItemsPage.prototype, "data", void 0);
+    PurchaseItemsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-purchase-items',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items/purchase-items.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>บันทึกรายการซื้อขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-grid>\n\n    <ion-row header-bcg padding>\n      <ion-col col-2>\n        <ion-img width="40" height="40" src="./assets/imgs/f_logo.png"></ion-img>\n      </ion-col>\n      <ion-col col-5 text-left>\n        <h1 header-title no-margin text-wrap>{{ fullname }}</h1>\n        <h2 header-subtitle no-margin>{{ mobile }}</h2>\n      </ion-col>\n      <ion-col col-5 text-right>\n        <span header-subtitle no-margin address>{{ address }}</span>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <ion-grid no-padding *ngIf="data != null">\n    <ion-row>\n      <ion-col col-12 col-md-12 col-lg-6 *ngFor="let item of items;let i = index">\n\n        <ion-card padding text-right class="card">\n          <div float-left class="card-img">\n            <img images-filter src="assets/images/avatar-small/0.jpg" />\n          </div>\n          <ion-icon name="close-circle" icon-del (click)="removeItem(i)" *ngIf="!isHide"> </ion-icon>\n          <!--Card-content-->\n          <ion-card-content>\n            <ion-card-title no-padding>\n              <h2 card-title>{{item.name}}</h2>\n            </ion-card-title>\n            <h3 card-subtitle>{{item.price}} : {{item.unit_name}}</h3>\n\n            <p card-body-text>จำนวน : {{item.amount}} {{item.unit_name}}</p>\n            <!---Social share-->\n            <div social>\n              เป็นเงิน {{item.price * item.amount}} บาท\n            </div>\n          </ion-card-content>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n\n  </ion-grid>\n\n  <ion-grid no-padding background-size container-hearder-image style="background-image: url(assets/images/background-small/10.jpg)">\n    <ion-row padding >\n      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>\n        <h1 header-title>รวมเป็นเงิน</h1>\n\n      </ion-col>\n      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>\n        <span span-large>{{total}} </span>\n        <h2 header-subtitle>บาท</h2>\n\n        <button ion-button button-clear-outline round outline (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>\n        \n      </ion-col>\n    </ion-row>\n    <ion-row>\n        <ion-col col-4>\n          <button ion-button button-clear-outline round outline *ngIf="isHide">ปริ้นใบเสร็จ</button>\n        </ion-col>\n        <ion-col col-4>\n          <button ion-button button-clear-outline round outline class="my-col-4" *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>\n        </ion-col>\n        <ion-col col-4>\n          <button ion-button button-clear-outline round outline *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>\n        </ion-col>\n\n      </ion-row>\n    <!--Content-->\n\n  </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n\n<!-- <ion-content padding>\n\n  <ion-card>\n\n    <ion-card-header>\n      ข้อมูลผู้ขาย\n    </ion-card-header>\n\n    <ion-card-content>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-4>\n            <ion-img width="80" height="80" src="./assets/imgs/f_logo.png"></ion-img>\n          </ion-col>\n          <ion-col col-8>\n            <p>{{ fullname }}</p>\n            <p>{{ mobile }}</p>\n            <p>{{ address }}</p>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-list *ngFor="let item of items; let i = index">\n    <ion-item>\n      <ion-thumbnail item-start>\n        <img src="./assets/imgs/f_logo.png">\n      </ion-thumbnail>\n      <h2>{{ item.name }}</h2>\n      <p>{{ item.amount }}&nbsp;X&nbsp;{{ item.price }}&nbsp;รวม&nbsp;{{ item.balance }}&nbsp;บาท</p>\n      <button ion-button clear item-end (click)="removeItem(i)" *ngIf="!isHide">\n        <ion-icon name="trash" style="font-size:30px; color:red;"></ion-icon>\n      </button>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-item>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-4>\n            <h1>รวม</h1>\n          </ion-col>\n          <ion-col col-4 style="text-align: right;">\n            <h1>{{total}}&nbsp;บาท</h1>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </ion-item>\n  </ion-list>\n\n  <button ion-button block large round (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>\n  <button ion-button block large round *ngIf="isHide">ปริ้นใบเสร็จ</button>\n  <button ion-button block large round *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>\n  <button ion-button block large round *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>\n\n</ion-content> -->\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items/purchase-items.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_purchase_items_purchase_items__["a" /* PurchaseItemsProvider */]])
+    ], PurchaseItemsPage);
+    return PurchaseItemsPage;
+}());
+
+//# sourceMappingURL=purchase-items.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=4.js.map

@@ -52860,6 +52860,26 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.splash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: blue;
+}
+
 .circle {
   border-radius: 50%;
   width: 120px;
@@ -52936,6 +52956,94 @@ ion-img {
 .segment-md .segment-button.segment-activated {
   border-color: #2CC66C;
   opacity: 1;
+}
+
+#splash-screen-layout-2 #splash-background-image .splash-screen {
+  animation: splashScreen 40s ease infinite;
+  -ms-animation: splashScreen 40s ease infinite;
+  -webkit-animation: splashScreen 40s ease infinite;
+  -o-animation: splashScreen 40s ease infinite;
+  -moz-animation: splashScreen 40s ease infinite;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+@-webkit-keyframes splashScreen {
+  0%,
+  100% {
+    -webkit-transform: scale(1.5, 1.5) translate(20px, 20px);
+    transform: scale(1.5, 1.5) translate(20px, 20px);
+  }
+  25% {
+    -webkit-transform: scale(1.8, 1.8) translate(50px, 50px);
+    transform: scale(1.8, 1.8) translate(50px, 50px);
+  }
+  50% {
+    -webkit-transform: scale(1.6, 1.6) translate(60px, 90px);
+    transform: scale(1.6, 1.6) translate(60px, 90px);
+  }
+  75% {
+    -webkit-transform: scale(2, 2) translate(10px, 10px);
+    transform: scale(2, 2) translate(10px, 10px);
+  }
+}
+
+@keyframes splashScreen {
+  0%,
+  100% {
+    -webkit-transform: scale(1.5, 1.5) translate(20px, 20px);
+    transform: scale(1.5, 1.5) translate(20px, 20px);
+  }
+  25% {
+    -webkit-transform: scale(1.8, 1.8) translate(50px, 50px);
+    transform: scale(1.8, 1.8) translate(50px, 50px);
+  }
+  50% {
+    -webkit-transform: scale(1.6, 1.6) translate(60px, 90px);
+    transform: scale(1.6, 1.6) translate(60px, 90px);
+  }
+  75% {
+    -webkit-transform: scale(2, 2) translate(10px, 10px);
+    transform: scale(2, 2) translate(10px, 10px);
+  }
+}
+
+#splash-screen-layout-2 .logo-title {
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  min-width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  -webkit-animation: fadeInDown 5s;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: fadeInDown 5s;
+  /* IE 10+, Fx 29+ */
+}
+
+#splash-screen-layout-2 .logo-title h2 {
+  color: white !important;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  animation: zoomIn 5s;
+  -webkit-animation: zoomIn 5s;
+}
+
+#splash-screen-layout-2 .logo-title .logo {
+  animation: zoomIn 5s;
+  -webkit-animation: zoomIn 5s;
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
 }
 
 action-sheet-layout-1 .header-md::after, action-sheet-layout-1 .tabs-md[tabsPlacement="top"] > .tabbar::after, action-sheet-layout-1 .footer-md::before, action-sheet-layout-1 .tabs-md[tabsPlacement="bottom"] > .tabbar::before,
@@ -54508,26 +54616,6 @@ splash-screen-layout-1 .splash-screen {
   top: 0;
 }
 
-@-webkit-keyframes splashScreen {
-  0%,
-  100% {
-    -webkit-transform: scale(1.5, 1.5) translate(20px, 20px);
-    transform: scale(1.5, 1.5) translate(20px, 20px);
-  }
-  25% {
-    -webkit-transform: scale(1.8, 1.8) translate(50px, 50px);
-    transform: scale(1.8, 1.8) translate(50px, 50px);
-  }
-  50% {
-    -webkit-transform: scale(1.6, 1.6) translate(60px, 90px);
-    transform: scale(1.6, 1.6) translate(60px, 90px);
-  }
-  75% {
-    -webkit-transform: scale(2, 2) translate(10px, 10px);
-    transform: scale(2, 2) translate(10px, 10px);
-  }
-}
-
 @keyframes splashScreen {
   0%,
   100% {
@@ -55395,6 +55483,182 @@ page-main-menu-purchase-items .zoom-in {
   animation: zoomIn 500ms;
 }
 
+page-purchase-history [container-hearder-image] {
+  position: relative;
+  background-color: white;
+  background-blend-mode: luminosity;
+  height: 140px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+page-purchase-history [container-hearder-image] ion-col {
+  z-index: 9999;
+  position: relative;
+}
+
+page-purchase-history [container-hearder-image] ion-col [span-large] {
+  display: block;
+  margin-bottom: 20px;
+}
+
+page-purchase-history [container-hearder-image] [header-title] {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+page-purchase-history [container-hearder-image] [header-subtitle] {
+  color: #f7f7f7;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+}
+
+page-purchase-history ion-item [span-medium] {
+  text-align: right;
+  margin-top: 5px;
+}
+
+page-purchase-history ion-item .label-md {
+  margin: 0;
+}
+
+page-purchase-history ion-item [span-medium] {
+  font-size: 14px;
+  margin: 0;
+}
+
+page-purchase-history ion-item .input-wrapper {
+  position: relative;
+}
+
+page-purchase-history ion-item .input-wrapper [item-top] {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+
+page-purchase-history ion-item .input-wrapper [item-bottom] {
+  overflow: hidden;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+page-purchase-history ion-item [span-small] {
+  text-decoration: line-through;
+  font-weight: 300;
+}
+
+page-purchase-history ion-item img {
+  min-width: 144px !important;
+  min-height: 144px !important;
+  margin-bottom: 1px;
+}
+
+page-purchase-history #purchase-his-list .label-md {
+  margin: 15px 8px 25px 2px !important;
+}
+
+page-purchase-history #purchase-his-list ul li {
+  list-style-type: none;
+}
+
+page-purchase-history #purchase-his-list ul li:last-child ion-item:before {
+  border-bottom: 1px solid transparent !important;
+}
+
+page-purchase-history #purchase-his-list ion-list-header[background-size] {
+  height: 200px;
+  width: 100%;
+}
+
+page-purchase-history #purchase-his-list ion-list-header [item-title] {
+  z-index: 5;
+  position: relative;
+}
+
+page-purchase-history #purchase-his-list .item-accordion {
+  height: 0;
+  background: #00bee4;
+  background: -webkit-gradient(linear, right top, left top, from(#00bee4), to(#0091d2));
+  background: linear-gradient(to left, #00bee4 0%, #0091d2 100%);
+  display: block !important;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  overflow: hidden;
+}
+
+page-purchase-history #purchase-his-list .item-accordion.active {
+  height: 550px !important;
+  background: #00bee4 !important;
+}
+
+page-purchase-history #purchase-his-list .item-accordion .label-md {
+  margin: 2px  !important;
+  margin-left: 10px !important;
+  background: #ffffff !important;
+  background: -webkit-gradient(linear, right top, left top, color-stop(!important, #00bee4), color-stop(!important, #0091d2));
+  background: linear-gradient(to left, #00bee4 !important 0%, #0091d2 !important 100%);
+  color: #000000 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  border-radius: 5px 5px;
+}
+
+page-purchase-history .collapsible-header .item-md.item-block .item-inner {
+  padding-right: 0 !important;
+}
+
+page-purchase-history .collapsible-header ion-icon {
+  display: block;
+  text-align: center;
+}
+
+page-purchase-history swipe-to-dismiss-layout-1 [header-bcg] {
+  position: fixed !important;
+  top: 56px;
+  z-index: 9999;
+}
+
+page-purchase-history swipe-to-dismiss-layout-1 [header-bcg] [header-subtitle] {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+page-purchase-history swipe-to-dismiss-layout-1 [header-bcg] .item-inner {
+  margin-left: 0 !important;
+}
+
+page-purchase-history swipe-to-dismiss-layout-1 [header-bcg] .label-ios,
+page-purchase-history swipe-to-dismiss-layout-1 [header-bcg] [social] {
+  margin-top: 7px;
+}
+
+page-purchase-history swipe-to-dismiss-layout-1 [header-subtitle],
+page-purchase-history swipe-to-dismiss-layout-1 [header-title] {
+  color: white !important;
+}
+
+page-purchase-history swipe-to-dismiss-layout-1 ion-item-options {
+  border-bottom: 1px solid #f7f7f7 !important;
+}
+
+page-purchase-history .swipe h2 {
+  color: #000000 !important;
+}
+
 page-purchase-items .zoom-in {
   -webkit-animation: zoomIn 500ms;
   animation: zoomIn 500ms;
@@ -55405,6 +55669,10 @@ page-purchase-items .card-img {
   height: 160px;
   position: relative;
   margin-right: 10px;
+}
+
+page-purchase-items [address] {
+  font-size: 11px !important;
 }
 
 page-purchase-items [social] {

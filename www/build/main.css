@@ -52860,6 +52860,26 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.splash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: blue;
+}
+
 .circle {
   border-radius: 50%;
   width: 120px;
@@ -52936,6 +52956,94 @@ ion-img {
 .segment-md .segment-button.segment-activated {
   border-color: #2CC66C;
   opacity: 1;
+}
+
+#splash-screen-layout-2 #splash-background-image .splash-screen {
+  animation: splashScreen 40s ease infinite;
+  -ms-animation: splashScreen 40s ease infinite;
+  -webkit-animation: splashScreen 40s ease infinite;
+  -o-animation: splashScreen 40s ease infinite;
+  -moz-animation: splashScreen 40s ease infinite;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+@-webkit-keyframes splashScreen {
+  0%,
+  100% {
+    -webkit-transform: scale(1.5, 1.5) translate(20px, 20px);
+    transform: scale(1.5, 1.5) translate(20px, 20px);
+  }
+  25% {
+    -webkit-transform: scale(1.8, 1.8) translate(50px, 50px);
+    transform: scale(1.8, 1.8) translate(50px, 50px);
+  }
+  50% {
+    -webkit-transform: scale(1.6, 1.6) translate(60px, 90px);
+    transform: scale(1.6, 1.6) translate(60px, 90px);
+  }
+  75% {
+    -webkit-transform: scale(2, 2) translate(10px, 10px);
+    transform: scale(2, 2) translate(10px, 10px);
+  }
+}
+
+@keyframes splashScreen {
+  0%,
+  100% {
+    -webkit-transform: scale(1.5, 1.5) translate(20px, 20px);
+    transform: scale(1.5, 1.5) translate(20px, 20px);
+  }
+  25% {
+    -webkit-transform: scale(1.8, 1.8) translate(50px, 50px);
+    transform: scale(1.8, 1.8) translate(50px, 50px);
+  }
+  50% {
+    -webkit-transform: scale(1.6, 1.6) translate(60px, 90px);
+    transform: scale(1.6, 1.6) translate(60px, 90px);
+  }
+  75% {
+    -webkit-transform: scale(2, 2) translate(10px, 10px);
+    transform: scale(2, 2) translate(10px, 10px);
+  }
+}
+
+#splash-screen-layout-2 .logo-title {
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  min-width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  -webkit-animation: fadeInDown 5s;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: fadeInDown 5s;
+  /* IE 10+, Fx 29+ */
+}
+
+#splash-screen-layout-2 .logo-title h2 {
+  color: white !important;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  animation: zoomIn 5s;
+  -webkit-animation: zoomIn 5s;
+}
+
+#splash-screen-layout-2 .logo-title .logo {
+  animation: zoomIn 5s;
+  -webkit-animation: zoomIn 5s;
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
 }
 
 action-sheet-layout-1 .header-md::after, action-sheet-layout-1 .tabs-md[tabsPlacement="top"] > .tabbar::after, action-sheet-layout-1 .footer-md::before, action-sheet-layout-1 .tabs-md[tabsPlacement="bottom"] > .tabbar::before,
@@ -54506,26 +54614,6 @@ splash-screen-layout-1 .splash-screen {
   position: fixed;
   left: 0;
   top: 0;
-}
-
-@-webkit-keyframes splashScreen {
-  0%,
-  100% {
-    -webkit-transform: scale(1.5, 1.5) translate(20px, 20px);
-    transform: scale(1.5, 1.5) translate(20px, 20px);
-  }
-  25% {
-    -webkit-transform: scale(1.8, 1.8) translate(50px, 50px);
-    transform: scale(1.8, 1.8) translate(50px, 50px);
-  }
-  50% {
-    -webkit-transform: scale(1.6, 1.6) translate(60px, 90px);
-    transform: scale(1.6, 1.6) translate(60px, 90px);
-  }
-  75% {
-    -webkit-transform: scale(2, 2) translate(10px, 10px);
-    transform: scale(2, 2) translate(10px, 10px);
-  }
 }
 
 @keyframes splashScreen {

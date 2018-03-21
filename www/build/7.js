@@ -1,16 +1,16 @@
 webpackJsonp([7],{
 
-/***/ 339:
+/***/ 347:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthenticationPageModule", function() { return AuthenticationPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__authentication__ = __webpack_require__(456);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_authen_authen__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__authentication__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_authen_authen__ = __webpack_require__(393);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var AuthenticationPageModule = (function () {
 
 /***/ }),
 
-/***/ 348:
+/***/ 357:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79,15 +79,15 @@ var AuthenticationPageModule = (function () {
 /* unused harmony export ɵe */
 /* unused harmony export ɵf */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(372);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__);
@@ -2789,7 +2789,7 @@ var HttpClientJsonpModule = (function () {
 
 /***/ }),
 
-/***/ 362:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2803,7 +2803,7 @@ var API_URL = 'http://188.166.177.172/refuze-api/public/index.php';
 
 /***/ }),
 
-/***/ 363:
+/***/ 372:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2814,12 +2814,12 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 
 /***/ }),
 
-/***/ 364:
+/***/ 373:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var concatMap_1 = __webpack_require__(365);
+var concatMap_1 = __webpack_require__(374);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -2888,7 +2888,7 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 365:
+/***/ 374:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2962,12 +2962,12 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 366:
+/***/ 375:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var filter_1 = __webpack_require__(367);
+var filter_1 = __webpack_require__(376);
 /* tslint:enable:max-line-length */
 /**
  * Filter items emitted by the source Observable by only emitting those that
@@ -3016,7 +3016,7 @@ exports.filter = filter;
 
 /***/ }),
 
-/***/ 367:
+/***/ 376:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3117,14 +3117,14 @@ var FilterSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 384:
+/***/ 393:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(371);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3155,14 +3155,14 @@ var AuthenProvider = (function () {
 
 /***/ }),
 
-/***/ 456:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenticationPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_authen_authen__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_authen_authen__ = __webpack_require__(393);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3220,7 +3220,7 @@ var AuthenticationPage = (function () {
     };
     AuthenticationPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-authentication',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/authentication/authentication.html"*/'<ion-content has-header white-background>\n    <ion-grid *ngIf="data != null">\n        <ion-row wrap padding>\n            <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>\n                <!---Logo-->\n                <img [src]="data.logo" *ngIf="data.logo != null">\n                <!---Input field username-->\n                <ion-item no-padding transparent>\n                    <ion-label floating>{{data.username}}</ion-label>\n                    <ion-input required type="text" [(ngModel)]="login.username"></ion-input>\n                </ion-item>\n                <!---Input field password-->\n                <ion-item no-padding transparent>\n                    <ion-label floating>{{data.password}}</ion-label>\n                    <ion-input required type="password" [(ngModel)]="login.passwords"></ion-input>\n                </ion-item>\n                <!---Login button-->\n                <button ion-button float-left button-clear-outline round outline (click)="onLogin()">{{data.login}}</button>\n                <!---Register button-->\n                <button ion-button float-left button-clear-outline round outline >{{data.register}}</button>\n            </ion-col>\n           \n        </ion-row>\n    </ion-grid>\n</ion-content>\n\n<!-- <ion-content padding>\n  <ion-grid id="logo">\n    <ion-row>\n      <ion-col col-3></ion-col>\n      <ion-col col-6 style="text-align:center">\n         <ion-img src="./assets/imgs/f_logo.png" style="width: 150px; height:180px"></ion-img>\n      </ion-col>\n      <ion-col col-3></ion-col>\n    </ion-row>\n  </ion-grid>\n\n \n  <form (ngSubmit)="onLogin()">\n      <ion-list>\n        \n        <ion-item class="round-input">\n          <ion-input type="text"  name="username" [(ngModel)]="login.username" required placeholder="ชื่อผู้ใช้งาน"></ion-input>\n        </ion-item>\n      \n        <ion-item class="round-input">\n          <ion-input type="password"  name="password" [(ngModel)]="login.passwords" required placeholder="รหัสผ่าน"></ion-input>\n        </ion-item>\n      </ion-list>\n\n    \n    <button ion-button block large round color="shamrock"  class ="_button" type="submit">เข้าสู่ระบบ</button>\n   \n  </form>\n  <button ion-button  large  block clear color="shamrock" (click)="register()">สมัครสมาชิก</button>\n</ion-content> -->\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/authentication/authentication.html"*/,
+            selector: 'page-authentication',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/authentication/authentication.html"*/'\n<ion-content has-header white-background>\n    <ion-grid *ngIf="data != null">\n        <ion-row wrap padding>\n            <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>\n                <!---Logo-->\n                <img [src]="data.logo" *ngIf="data.logo != null">\n                <!---Input field username-->\n                <ion-item no-padding transparent>\n                    <ion-label floating>{{data.username}}</ion-label>\n                    <ion-input required type="text" [(ngModel)]="login.username"></ion-input>\n                </ion-item>\n                <!---Input field password-->\n                <ion-item no-padding transparent>\n                    <ion-label floating>{{data.password}}</ion-label>\n                    <ion-input required type="password" [(ngModel)]="login.passwords"></ion-input>\n                </ion-item>\n                <!---Login button-->\n                <button ion-button float-left button-clear-outline round outline (click)="onLogin()">{{data.login}}</button>\n                <!---Register button-->\n                <button ion-button float-left button-clear-outline round outline >{{data.register}}</button>\n            </ion-col>\n           \n        </ion-row>\n    </ion-grid>\n</ion-content>\n\n<!-- <ion-content padding>\n  <ion-grid id="logo">\n    <ion-row>\n      <ion-col col-3></ion-col>\n      <ion-col col-6 style="text-align:center">\n         <ion-img src="./assets/imgs/f_logo.png" style="width: 150px; height:180px"></ion-img>\n      </ion-col>\n      <ion-col col-3></ion-col>\n    </ion-row>\n  </ion-grid>\n\n \n  <form (ngSubmit)="onLogin()">\n      <ion-list>\n        \n        <ion-item class="round-input">\n          <ion-input type="text"  name="username" [(ngModel)]="login.username" required placeholder="ชื่อผู้ใช้งาน"></ion-input>\n        </ion-item>\n      \n        <ion-item class="round-input">\n          <ion-input type="password"  name="password" [(ngModel)]="login.passwords" required placeholder="รหัสผ่าน"></ion-input>\n        </ion-item>\n      </ion-list>\n\n    \n    <button ion-button block large round color="shamrock"  class ="_button" type="submit">เข้าสู่ระบบ</button>\n   \n  </form>\n  <button ion-button  large  block clear color="shamrock" (click)="register()">สมัครสมาชิก</button>\n</ion-content> -->\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/authentication/authentication.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],

@@ -1,14 +1,14 @@
 webpackJsonp([27],{
 
-/***/ 328:
+/***/ 337:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SplashScreenLayout3Module", function() { return SplashScreenLayout3Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubImageGalleryModule", function() { return SubImageGalleryModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__splash_screen_layout_3__ = __webpack_require__(443);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sub_image_gallery__ = __webpack_require__(454);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,36 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SplashScreenLayout3Module = (function () {
-    function SplashScreenLayout3Module() {
+var SubImageGalleryModule = (function () {
+    function SubImageGalleryModule() {
     }
-    SplashScreenLayout3Module = __decorate([
+    SubImageGalleryModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__splash_screen_layout_3__["a" /* SplashScreenLayout3 */],
+                __WEBPACK_IMPORTED_MODULE_2__sub_image_gallery__["a" /* SubImageGallery */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__splash_screen_layout_3__["a" /* SplashScreenLayout3 */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sub_image_gallery__["a" /* SubImageGallery */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__splash_screen_layout_3__["a" /* SplashScreenLayout3 */]
+                __WEBPACK_IMPORTED_MODULE_2__sub_image_gallery__["a" /* SubImageGallery */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
         })
-    ], SplashScreenLayout3Module);
-    return SplashScreenLayout3Module;
+    ], SubImageGalleryModule);
+    return SubImageGalleryModule;
 }());
 
-//# sourceMappingURL=splash-screen-layout-3.module.js.map
+//# sourceMappingURL=sub-image-gallery.module.js.map
 
 /***/ }),
 
-/***/ 443:
+/***/ 454:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SplashScreenLayout3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SubImageGallery; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,52 +59,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var SplashScreenLayout3 = (function () {
-    function SplashScreenLayout3() {
-    }
-    SplashScreenLayout3.prototype.ngOnChanges = function (changes) {
-        clearInterval(this.timer);
-        this.executeEvents();
-    };
-    SplashScreenLayout3.prototype.getData = function () {
-        return this.data;
-    };
-    SplashScreenLayout3.prototype.getEvents = function () {
-        return this.events;
-    };
-    SplashScreenLayout3.prototype.executeEvents = function () {
-        var duration = (this.getData() && this.getData().duration) ? this.getData().duration : 10000;
-        var events = null;
-        if (this.getEvents()) {
-            events = this.getEvents()['onRedirect'];
-        }
-        this.timer = setTimeout(function () {
-            if (events) {
-                events();
+
+var SubImageGallery = (function () {
+    function SubImageGallery(navCtrl, navParams) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.onEvent = function (event, item, e) {
+            if (e) {
+                e.stopPropagation();
             }
-        }, duration);
-    };
-    SplashScreenLayout3.prototype.ngOnDestroy = function () {
-        clearInterval(this.timer);
-    };
+            if (_this.events[event]) {
+                _this.events[event](item);
+            }
+        };
+        this.openImageSlider = function (group, index) {
+            _this.navCtrl.push(group.fullscreen, {
+                'group': group.items,
+                'index': index
+            });
+        };
+    }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])('data'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], SplashScreenLayout3.prototype, "data", void 0);
+    ], SubImageGallery.prototype, "data", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])('events'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], SplashScreenLayout3.prototype, "events", void 0);
-    SplashScreenLayout3 = __decorate([
+    ], SubImageGallery.prototype, "events", void 0);
+    SubImageGallery = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'splash-screen-layout-3',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/splash-screen/layout-3/splash-screen.html"*/'<!--Theme Down + Ken Burns-->\n\n<ion-grid>\n\n  <ion-row id="splash-background-image">\n\n    <img class="splash-screen" [src]="data.backgroundImage" />\n\n    <div class="logo-title item-fade-in">\n\n      <img class="logo" [src]="data.logo" />\n\n      <h2>{{data.title}}</h2>\n\n    </div>\n\n  </ion-row>\n\n</ion-grid>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/splash-screen/layout-3/splash-screen.html"*/
+            selector: 'sub-image-gallery',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/sub-image-gallery/sub-image-gallery.html"*/'<!-- Theme Image Sub-Gallery for Category 1 -->\n\n<ion-grid no-padding *ngIf="data != null">\n\n    <ion-row no-margin no-padding>\n\n        <ion-col col-6 col-sm-3 col-md-6 col-lg-4 col-xl-3 no-margin no-padding *ngFor="let item of data.items;let i = index;">\n\n            <ion-card no-margin background-size (click)="openImageSlider(data, i)" [ngStyle]="{\'background-image\': \'url(\' + item.image + \')\'}">\n\n                <div gallery-title>\n\n                    <h2 item-title float-left>{{item.title}}</h2>\n\n                    <ion-icon white float-right (click)="onEvent(\'onFavorite\', item, $event)">\n\n                        <i class="icon" [ngClass]="{\'icon-heart\': item.favorite, \'icon-heart-outline\': !item.favorite}"></i>\n\n                    </ion-icon>\n\n                </div>\n\n            </ion-card>\n\n        </ion-col>\n\n    </ion-row>\n\n</ion-grid>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/sub-image-gallery/sub-image-gallery.html"*/
         }),
-        __metadata("design:paramtypes", [])
-    ], SplashScreenLayout3);
-    return SplashScreenLayout3;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
+    ], SubImageGallery);
+    return SubImageGallery;
 }());
 
-//# sourceMappingURL=splash-screen-layout-3.js.map
+//# sourceMappingURL=sub-image-gallery.js.map
 
 /***/ })
 

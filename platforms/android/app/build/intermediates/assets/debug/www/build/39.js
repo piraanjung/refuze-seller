@@ -1,14 +1,14 @@
 webpackJsonp([39],{
 
-/***/ 316:
+/***/ 325:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchBarLayout1Module", function() { return SearchBarLayout1Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchBarLayout2Module", function() { return SearchBarLayout2Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_bar_layout_1__ = __webpack_require__(431);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_bar_layout_2__ = __webpack_require__(442);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,35 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SearchBarLayout1Module = (function () {
-    function SearchBarLayout1Module() {
+var SearchBarLayout2Module = (function () {
+    function SearchBarLayout2Module() {
     }
-    SearchBarLayout1Module = __decorate([
+    SearchBarLayout2Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__search_bar_layout_1__["a" /* SearchBarLayout1 */],
+                __WEBPACK_IMPORTED_MODULE_2__search_bar_layout_2__["a" /* SearchBarLayout2 */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__search_bar_layout_1__["a" /* SearchBarLayout1 */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__search_bar_layout_2__["a" /* SearchBarLayout2 */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__search_bar_layout_1__["a" /* SearchBarLayout1 */]
+                __WEBPACK_IMPORTED_MODULE_2__search_bar_layout_2__["a" /* SearchBarLayout2 */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
         })
-    ], SearchBarLayout1Module);
-    return SearchBarLayout1Module;
+    ], SearchBarLayout2Module);
+    return SearchBarLayout2Module;
 }());
 
-//# sourceMappingURL=search-bar-layout-1.module.js.map
+//# sourceMappingURL=search-bar-layout-2.module.js.map
 
 /***/ }),
 
-/***/ 431:
+/***/ 442:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchBarLayout1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchBarLayout2; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -58,11 +58,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var SearchBarLayout1 = (function () {
-    function SearchBarLayout1() {
+var SearchBarLayout2 = (function () {
+    function SearchBarLayout2() {
         this.searchTerm = "";
     }
-    SearchBarLayout1.prototype.getItems = function (event) {
+    SearchBarLayout2.prototype.getItems = function (event) {
         var _this = this;
         if (!this.allItems) {
             this.allItems = this.data.items;
@@ -71,7 +71,7 @@ var SearchBarLayout1 = (function () {
             return item.title.toLowerCase().indexOf(_this.searchTerm.toLowerCase()) > -1;
         });
     };
-    SearchBarLayout1.prototype.onEvent = function (event, item) {
+    SearchBarLayout2.prototype.onEvent = function (event, item) {
         if (this.events[event]) {
             if ('onTextChange' === event) {
                 this.getItems(item);
@@ -86,21 +86,21 @@ var SearchBarLayout1 = (function () {
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], SearchBarLayout1.prototype, "data", void 0);
+    ], SearchBarLayout2.prototype, "data", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], SearchBarLayout1.prototype, "events", void 0);
-    SearchBarLayout1 = __decorate([
+    ], SearchBarLayout2.prototype, "events", void 0);
+    SearchBarLayout2 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'search-bar-layout-1',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/search-bar/layout-1/search-bar.html"*/'<!-- Theme Search bars Simple -->\n\n<ion-grid no-padding>\n\n    <ion-row *ngIf="data != null">\n\n        <ion-col col-12>\n\n            <ion-searchbar [(ngModel)]="searchTerm" search-bar-bcg (ionInput)="onEvent(\'onTextChange\', $event)"></ion-searchbar>\n\n        </ion-col>\n\n        <!-- List -->\n\n        <ion-col col-12>\n\n            <ion-list no-margin>\n\n                <ion-item no-lines *ngFor="let item of data.items;" (click)="onEvent(\'onItemClick\', item)">\n\n                    <ion-icon item-end icon-small>\n\n                        <i class="icon {{item.icon}}"></i>\n\n                    </ion-icon>\n\n                    <h2 item-title>{{item.title}}</h2>\n\n                    <h2 item-subtitle>{{item.description}}</h2>\n\n                </ion-item>\n\n            </ion-list>\n\n        </ion-col>\n\n    </ion-row>\n\n</ion-grid>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/search-bar/layout-1/search-bar.html"*/
+            selector: 'search-bar-layout-2',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/search-bar/layout-2/search-bar.html"*/'<!-- Theme Search bars Field + header -->\n\n<ion-grid no-padding>\n\n    <ion-row *ngIf="data != null">\n\n        <ion-col col-12>\n\n            <div background-size no-padding [ngStyle]="{\'background-image\': \'url(\' + data.headerImage + \')\'}" *ngIf=" data.headerImage != null">\n\n                <div search-bar-bcg>\n\n                    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="onEvent(\'onTextChange\', $event)"></ion-searchbar>\n\n                </div>\n\n            </div>\n\n        </ion-col>\n\n        <!-- List -->\n\n        <ion-col col-12>\n\n            <ion-list no-margin>\n\n                <ion-item no-margin no-lines *ngFor="let item of data.items;" (click)="onEvent(\'onItemClick\', item)">\n\n                    <ion-icon icon-small item-start>\n\n                        <i class="icon {{item.icon}}"></i>\n\n                    </ion-icon>\n\n                    <h2 item-title>{{item.title}}</h2>\n\n                </ion-item>\n\n            </ion-list>\n\n        </ion-col>\n\n    </ion-row>\n\n</ion-grid>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/search-bar/layout-2/search-bar.html"*/
         }),
         __metadata("design:paramtypes", [])
-    ], SearchBarLayout1);
-    return SearchBarLayout1;
+    ], SearchBarLayout2);
+    return SearchBarLayout2;
 }());
 
-//# sourceMappingURL=search-bar-layout-1.js.map
+//# sourceMappingURL=search-bar-layout-2.js.map
 
 /***/ })
 

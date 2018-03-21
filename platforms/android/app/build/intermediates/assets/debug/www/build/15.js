@@ -1,15 +1,14 @@
 webpackJsonp([15],{
 
-/***/ 342:
+/***/ 354:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainMenuPurchaseItemsPageModule", function() { return MainMenuPurchaseItemsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PurchaseItemsModalPageModule", function() { return PurchaseItemsModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__main_menu_purchase_items__ = __webpack_require__(457);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_main_menu_purchase_item_main_menu_purchase_item__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__purchase_items_modal__ = __webpack_require__(471);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,38 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var MainMenuPurchaseItemsPageModule = (function () {
-    function MainMenuPurchaseItemsPageModule() {
+var PurchaseItemsModalPageModule = (function () {
+    function PurchaseItemsModalPageModule() {
     }
-    MainMenuPurchaseItemsPageModule = __decorate([
+    PurchaseItemsModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__main_menu_purchase_items__["a" /* MainMenuPurchaseItemsPage */],
+                __WEBPACK_IMPORTED_MODULE_2__purchase_items_modal__["a" /* PurchaseItemsModalPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__main_menu_purchase_items__["a" /* MainMenuPurchaseItemsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__purchase_items_modal__["a" /* PurchaseItemsModalPage */]),
             ],
-            providers: [
-                __WEBPACK_IMPORTED_MODULE_3__providers_main_menu_purchase_item_main_menu_purchase_item__["a" /* MainMenuPurchaseItemProvider */]
-            ]
         })
-    ], MainMenuPurchaseItemsPageModule);
-    return MainMenuPurchaseItemsPageModule;
+    ], PurchaseItemsModalPageModule);
+    return PurchaseItemsModalPageModule;
 }());
 
-//# sourceMappingURL=main-menu-purchase-items.module.js.map
+//# sourceMappingURL=purchase-items-modal.module.js.map
 
 /***/ }),
 
-/***/ 457:
+/***/ 471:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainMenuPurchaseItemsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchaseItemsModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_main_menu_purchase_item_main_menu_purchase_item__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -62,56 +56,49 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-
-var MainMenuPurchaseItemsPage = (function () {
-    function MainMenuPurchaseItemsPage(navCtrl, navParams, mainMenuPurchaseItemProvider) {
-        this.navCtrl = navCtrl;
+var PurchaseItemsModalPage = (function () {
+    function PurchaseItemsModalPage(viewCtrl, navParams) {
+        this.viewCtrl = viewCtrl;
         this.navParams = navParams;
-        this.mainMenuPurchaseItemProvider = mainMenuPurchaseItemProvider;
-        this.animateItems = [];
-        this.animateClass = { 'fade-in-left-item': true };
-        this.data = mainMenuPurchaseItemProvider.data();
+        this.amount = 1;
     }
-    MainMenuPurchaseItemsPage.prototype.ionViewDidLoad = function () {
-        localStorage.removeItem('purchaseItems');
-        localStorage.removeItem('sellerProfile');
+    PurchaseItemsModalPage.prototype.ionViewWillLoad = function () {
+        this.item = this.navParams.get('item');
+        this.id = this.item.id;
+        this.name = this.item.name;
+        this.unit_name = this.item.unit_name;
+        this.price = this.item.price;
+        this.balance = (this.amount * this.price);
+        var items = JSON.parse(localStorage.getItem('purchaseItems')) || [];
+        this.items = items;
     };
-    MainMenuPurchaseItemsPage.prototype.onEvent = function (event, item, e) {
-        if (e) {
-            e.stopPropagation();
-        }
-        if (item != "#") {
-            this.navCtrl.push(item);
-        }
+    PurchaseItemsModalPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss('close');
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
-        __metadata("design:type", Object)
-    ], MainMenuPurchaseItemsPage.prototype, "data", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
-        __metadata("design:type", Object)
-    ], MainMenuPurchaseItemsPage.prototype, "events", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
-    ], MainMenuPurchaseItemsPage.prototype, "content", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
-    ], MainMenuPurchaseItemsPage.prototype, "fabButton", void 0);
-    MainMenuPurchaseItemsPage = __decorate([
+    PurchaseItemsModalPage.prototype.addNewItem = function () {
+        this.balance = (this.amount * this.price);
+        var item = {
+            name: this.name,
+            unit_name: this.unit_name,
+            item_id: this.id,
+            price: this.price,
+            amount: this.amount,
+            balance: this.balance
+        };
+        this.items.push(item);
+        localStorage.setItem('purchaseItems', JSON.stringify(this.items));
+        this.viewCtrl.dismiss({ status: 'status', countItems: this.items.length });
+    };
+    PurchaseItemsModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-main-menu-purchase-items',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/main-menu-purchase-items/main-menu-purchase-items.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>หน้าหลักผู้รับซื้อขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<!--Theme Full Image Cards-->\n<ion-content>\n        <ion-grid no-padding *ngIf="data != null">\n            <ion-row>\n                <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let item of data.items;let i = index">\n                    <ion-card padding text-center (click)="onEvent(\'onItemClick\', item.link, $event)">\n                        <div card-content>\n                            <img images-filter src="{{item.image}}" />\n                            <div card-title>{{item.title}}</div>\n                            <div card-subtitle>{{item.subtitle}}</div>\n                        </div>\n                    </ion-card>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n    </ion-content>\n    <!--Fab Button-->\n    <ion-fab #fab bottom right>\n        <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-fab>\n<!-- <ion-content class="card-background-page">\n  <ion-card *ngFor="let card of cards" [navPush]="card.link">\n    <img src="{{ card.img }}" />\n    <div class="card-title">{{ card.name }}</div>\n  </ion-card>\n</ion-content> -->\n<!--Theme Appearance animation (Zoom In)-->\n<!-- <ion-content has-header>\n    <ion-grid no-padding *ngIf="data == null">\n        <ion-row>\n            <ion-col col-12>\n                <ion-list no-margin>\n                    <ion-item no-lines [ngClass]="animateClass" *ngFor="let item of animateItems; let i = index;" (click)="onEvent(\'onItemClick\', item.title, $event)">\n                        <ion-avatar item-start>\n                            <img [src]="item.image" alt="{{item.title}}" />\n                        </ion-avatar>\n                        <h2 item-title padding-left>{{item.title}}</h2>\n                        <ion-icon icon-small item-right (click)="onEvent(\'onFavorite\', item, $event)">\n                            <i class="icon" [ngClass]="{\'icon-heart\': item.favorite, \'icon-heart-outline\': !item.favorite}"></i>\n                        </ion-icon>\n                    </ion-item>\n                </ion-list>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>\n<!-- Fab Button \n<ion-fab #fab bottom right>\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n    <ion-icon name="add"></ion-icon>\n  </button>\n</ion-fab> -->\n<!-- Theme List big image -->\n<!-- <ion-content has-header>\n    <ion-grid no-padding *ngIf="data != null">\n        <ion-row>\n            <ion-col col-12>\n                <ion-list no-margin>\n                    <ul no-margin no-padding class="collapsible">\n                        <li *ngFor="let group of data.items">\n                            <!-- List big image Header \n                            <div class="collapsible-header" (click)="toggleGroup(group)">\n                                <ion-item no-padding no-lines>\n                                    <ion-thumbnail item-start no-margin>\n                                        <img [src]="group.image" alt="{{group.title}}" />\n                                    </ion-thumbnail>\n                                    <div title-block>\n                                        <h2 padding-left item-title>{{group.title}}</h2>\n                                        <h3 padding-left item-subtitle>{{group.description}}</h3>\n                                    </div>\n                                    <div social>\n                                        <ion-icon>\n                                            <i ng-if="group.iconLike" class="icon {{group.iconLike}}" (click)="onEvent(\'onLike\', group, $event)"></i>\n                                        </ion-icon>\n                                        <ion-icon>\n                                            <i ng-if="group.iconFavorite" class="icon {{group.iconFavorite}}" (click)="onEvent(\'onFavorite\', group, $event)"></i>\n                                        </ion-icon>\n                                        <ion-icon>\n                                            <i ng-if="group.iconShare" class="icon {{group.iconShare}}" (click)="onEvent(\'onShare\', group, $event)"></i>\n                                        </ion-icon>\n                                    </div>\n                                </ion-item>\n                            </div>\n                            <!-- List big image Body -\n                            <div class="item-accordion" [ngClass]="{\'active\': isGroupShown(group) }" [hidden]="!isGroupShown(group)">\n                                <ion-item transparent no-lines *ngFor="let item of group.items;" (click)="onEvent(\'onItemClick\', item.title, $event)">\n                                    <ion-thumbnail item-left>\n                                        <img [src]="item.image" alt="{{item.title}}" />\n                                    </ion-thumbnail>\n                                    <h2 subitem-title>{{item.title}}</h2>\n                                    <h3 subitem-subtitle>{{item.description}}</h3>\n                                    <ion-icon white item-right><i class="icon {{item.iconPlay}}"></i></ion-icon>\n                                </ion-item>\n                            </div>\n                            <!--end-\n                        </li>\n                    </ul>\n                </ion-list>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>\n<!-- Fab Button \n<ion-fab #fab bottom right>\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', group, $event)">\n    <ion-icon name="add"></ion-icon>\n  </button>\n</ion-fab> -->\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/main-menu-purchase-items/main-menu-purchase-items.html"*/,
+            selector: 'page-purchase-items-modal',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items-modal/purchase-items-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>PurchaseItemsModal</ion-title>\n    <ion-buttons end>\n      <button ion-button (click)="dismiss()">ปิด</button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n<!--- Theme Parallax Product -->\n<!--- Header Big Image-->\n<ion-content elastic-header>\n  <div padding background-size id="elastic-header" [ngStyle]="{\'background-image\': \'url(assets/images/background/7.jpg)\'}">\n    <div class="title">\n      <h2 parallax-title>{{name}}</h2>\n      <h1 parallax-subtitle>{{ price }}&nbsp;บาท&nbsp;/&nbsp;{{ unit_name }}</h1>\n    </div>\n  </div>\n  <!--Content-->\n  <ion-grid class="grid" no-padding>\n\n    <ion-row class="row">\n\n      <ion-col  col-7 col-lg-4 col-md-7 col-sm-7 col-xl-4>\n\n        <ion-card padding text-center class="card card-md">\n\n          <div card-content>\n\n            <img images-filter src="assets/images/background/0.jpg">\n\n            <div card-title>จำนวน</div>\n\n            <div  class="amount_input">\n                <ion-input required type="number" class="" [(ngModel)]="amount"></ion-input>            \n            </div>\n\n          </div>\n\n        </ion-card>\n\n      </ion-col>\n      <ion-col col-5 col-lg-4 col-md-5 col-sm-5 col-xl-4>\n\n        <ion-card padding text-center class="card card-md">\n\n          <div card-content>\n\n            <img images-filter src="assets/images/background/10.jpg">\n\n            <div card-title>เป็นเงิน</div>\n\n            <div>\n                <div class="total">{{ price * amount }}</div>\n                <div card-subtitle>บาท</div>\n            </div>\n\n          </div>\n\n        </ion-card>\n\n      </ion-col>\n\n\n    </ion-row>\n\n  </ion-grid>\n  <ion-grid no-padding>\n    <ion-item no-padding transparent>\n      <ion-label floating>จำนวน</ion-label>\n      \n    </ion-item>\n  </ion-grid>\n  <ion-col offset-4>\n      <button  ion-button large round color="twitter" (click)="addNewItem()" >\n            บันทึกข้อมูล\n        </button>\n  </ion-col>\n  \n</ion-content>\n\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/purchase-items-modal/purchase-items-modal.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_main_menu_purchase_item_main_menu_purchase_item__["a" /* MainMenuPurchaseItemProvider */]])
-    ], MainMenuPurchaseItemsPage);
-    return MainMenuPurchaseItemsPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
+    ], PurchaseItemsModalPage);
+    return PurchaseItemsModalPage;
 }());
 
-//# sourceMappingURL=main-menu-purchase-items.js.map
+//# sourceMappingURL=purchase-items-modal.js.map
 
 /***/ })
 

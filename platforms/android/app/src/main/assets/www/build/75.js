@@ -1,1 +1,92 @@
-webpackJsonp([75],{239:function(l,n,u){"use strict";function t(l){return o._20(0,[(l()(),o._0(0,0,null,null,29,"ion-col",[["class","col"],["col-6",""],["col-lg-4",""],["col-md-6",""],["col-sm-3",""],["col-xl-3",""],["no-margin",""],["no-padding",""]],null,null,null,null,null)),o.Z(1,16384,null,0,y.a,[],null,null),(l()(),o._19(-1,null,["\n            "])),(l()(),o._0(3,0,null,null,25,"ion-card",[["background-size",""],["no-margin",""]],null,[[null,"click"]],function(l,n,u){var t=!0,i=l.component;if("click"===n){t=!1!==i.openSubGallery(i.data,l.context.index)&&t}return t},null,null)),o.Z(4,278528,null,0,h.l,[o.q,o.j,o.B],{ngStyle:[0,"ngStyle"]},null),o._15(5,{"background-image":0}),o.Z(6,16384,null,0,b.a,[k.a,o.j,o.A],null,null),(l()(),o._19(-1,null,["\n                "])),(l()(),o._0(8,0,null,null,19,"ion-card-content",[],null,null,null,null,null)),o.Z(9,16384,null,0,Z.a,[k.a,o.j,o.A],null,null),(l()(),o._19(-1,null,["\n                    "])),(l()(),o._0(11,0,null,null,15,"div",[["gallery-title",""]],null,null,null,null,null)),(l()(),o._19(-1,null,["\n                        "])),(l()(),o._0(13,0,null,null,1,"h2",[["item-title",""]],null,null,null,null,null)),(l()(),o._19(14,null,["",""])),(l()(),o._19(-1,null,["\n                        "])),(l()(),o._0(16,0,null,null,1,"p",[["item-subtitle",""]],null,null,null,null,null)),(l()(),o._19(17,null,[""," image(s)"])),(l()(),o._19(-1,null,["\n                        "])),(l()(),o._0(19,0,null,null,6,"ion-icon",[["role","img"],["white",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.onEvent("onFavorite",l.context.$implicit,u)&&t}return t},null,null)),o.Z(20,147456,null,0,x.a,[k.a,o.j,o.A],null,null),(l()(),o._19(-1,null,["\n                            "])),(l()(),o._0(22,0,null,null,2,"i",[["class","icon"]],null,null,null,null,null)),o.Z(23,278528,null,0,h.g,[o.p,o.q,o.j,o.B],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),o._15(24,{"icon-heart":0,"icon-heart-outline":1}),(l()(),o._19(-1,null,["\n                        "])),(l()(),o._19(-1,null,["\n                    "])),(l()(),o._19(-1,null,["\n                "])),(l()(),o._19(-1,null,["\n            "])),(l()(),o._19(-1,null,["\n        "]))],function(l,n){l(n,4,0,l(n,5,0,"url("+n.context.$implicit.image+")"));l(n,23,0,"icon",l(n,24,0,n.context.$implicit.favorite,!n.context.$implicit.favorite))},function(l,n){l(n,14,0,n.context.$implicit.title);l(n,17,0,n.context.$implicit.items.length);l(n,19,0,o._14(n,20)._hidden)})}function i(l){return o._20(0,[(l()(),o._0(0,0,null,null,9,"ion-grid",[["card-background-page",""],["class","grid"],["no-padding",""]],null,null,null,null,null)),o.Z(1,16384,null,0,j.a,[],null,null),(l()(),o._19(-1,null,["\n    "])),(l()(),o._0(3,0,null,null,5,"ion-row",[["class","row"],["no-margin",""],["no-padding",""]],null,null,null,null,null)),o.Z(4,16384,null,0,G.a,[],null,null),(l()(),o._19(-1,null,["\n        "])),(l()(),o.V(16777216,null,null,1,null,t)),o.Z(7,802816,null,0,h.h,[o.J,o.G,o.p],{ngForOf:[0,"ngForOf"]},null),(l()(),o._19(-1,null,["\n    "])),(l()(),o._19(-1,null,["\n"]))],function(l,n){l(n,7,0,n.component.data.items)},null)}function a(l){return o._20(0,[(l()(),o._19(-1,null,["\n"])),(l()(),o.V(16777216,null,null,1,null,i)),o.Z(2,16384,null,0,h.i,[o.J,o.G],{ngIf:[0,"ngIf"]},null)],function(l,n){l(n,2,0,null!=n.component.data)},null)}Object.defineProperty(n,"__esModule",{value:!0});var o=u(0),e=(u(5),u(109),function(){function l(l,n){var u=this;this.navCtrl=l,this.openSubGallery=function(l,n){u.navCtrl.push(l.subGallery,{group:l.items[n],events:u.events,layout:1})},this.onEvent=function(l,n,t){t&&t.stopPropagation(),u.events[l]&&u.events[l](n)}}return l.prototype.ngOnChanges=function(l){this.data=l.data.currentValue},l}()),c=function(){return function(){}}(),r=u(184),_=u(185),s=u(186),g=u(187),d=u(188),f=u(189),m=u(190),p=u(191),v=u(192),y=u(113),h=u(16),b=u(119),k=u(1),Z=u(132),x=u(38),j=u(111),G=u(112),$=u(20),C=u(10),w=o.Y({encapsulation:2,styles:[],data:{}}),F=o.W("image-gallery-layout-2",e,function(l){return o._20(0,[(l()(),o._0(0,0,null,null,1,"image-gallery-layout-2",[],null,null,null,a,w)),o.Z(1,573440,null,0,e,[$.a,C.a],null,null)],null,null)},{data:"data",events:"events"},{},[]),O=u(17),S=u(110),A=u(35);u.d(n,"ImageGalleryLayout2ModuleNgFactory",function(){return I});var I=o.X(c,[],function(l){return o._11([o._12(512,o.i,o.T,[[8,[r.a,_.a,s.a,g.a,d.a,f.a,m.a,p.a,v.a,F]],[3,o.i],o.s]),o._12(4608,h.k,h.j,[o.r,[2,h.s]]),o._12(4608,O.n,O.n,[]),o._12(4608,O.c,O.c,[]),o._12(512,h.b,h.b,[]),o._12(512,O.m,O.m,[]),o._12(512,O.d,O.d,[]),o._12(512,O.k,O.k,[]),o._12(512,S.a,S.a,[]),o._12(512,S.b,S.b,[]),o._12(512,c,c,[]),o._12(256,A.a,e,[])])})}});
+webpackJsonp([75],{
+
+/***/ 282:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckBoxLayout1Module", function() { return CheckBoxLayout1Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__check_box_layout_1__ = __webpack_require__(399);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var CheckBoxLayout1Module = (function () {
+    function CheckBoxLayout1Module() {
+    }
+    CheckBoxLayout1Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__check_box_layout_1__["a" /* CheckBoxLayout1 */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__check_box_layout_1__["a" /* CheckBoxLayout1 */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__check_box_layout_1__["a" /* CheckBoxLayout1 */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], CheckBoxLayout1Module);
+    return CheckBoxLayout1Module;
+}());
+
+//# sourceMappingURL=check-box-layout-1.module.js.map
+
+/***/ }),
+
+/***/ 399:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckBoxLayout1; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CheckBoxLayout1 = (function () {
+    function CheckBoxLayout1() {
+        var _this = this;
+        this.onEvent = function (event, item) {
+            if (_this.events[event]) {
+                _this.events[event](item);
+            }
+        };
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])('data'),
+        __metadata("design:type", Object)
+    ], CheckBoxLayout1.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])('events'),
+        __metadata("design:type", Object)
+    ], CheckBoxLayout1.prototype, "events", void 0);
+    CheckBoxLayout1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'check-box-layout-1',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/check-box/layout-1/check-box.html"*/'<!--Themes Simple -->\n\n<ion-grid no-padding *ngIf="data != null">\n\n    <ion-row>\n\n        <ion-col col-12 no-padding>\n\n            <ion-list>\n\n                <ion-item no-lines *ngFor="let item of data" (tap)="onEvent(\'onButton\', item)">\n\n                    <ion-label item-title>{{item.title}}</ion-label>\n\n                    <ion-checkbox [checked]="item.favorite"></ion-checkbox>\n\n                </ion-item>\n\n            </ion-list>\n\n        </ion-col>\n\n    </ion-row>\n\n</ion-grid>'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/check-box/layout-1/check-box.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], CheckBoxLayout1);
+    return CheckBoxLayout1;
+}());
+
+//# sourceMappingURL=check-box-layout-1.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=75.js.map

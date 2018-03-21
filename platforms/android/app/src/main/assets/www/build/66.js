@@ -1,1 +1,126 @@
-webpackJsonp([66],{235:function(l,n,u){"use strict";function t(l){return c._20(0,[(l()(),c._0(0,0,null,null,14,"ion-item",[["class","item item-block"],["no-lines",""]],null,[[null,"tap"]],function(l,n,u){var t=!0;if("tap"===n){t=!1!==l.component.onEvent("onButton",l.context.$implicit)&&t}return t},h.b,h.a)),c.Z(1,1097728,null,3,m.a,[x.a,Z.a,c.j,c.A,[2,g.a]],null,null),c._17(335544320,1,{contentLabel:0}),c._17(603979776,2,{_buttons:1}),c._17(603979776,3,{_icons:1}),c.Z(5,16384,null,0,y.a,[],null,null),(l()(),c._19(-1,2,["\n                    "])),(l()(),c._0(7,0,null,1,2,"ion-label",[["item-title",""]],null,null,null,null,null)),c.Z(8,16384,[[1,4]],0,j.a,[Z.a,c.j,c.A,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),c._19(9,null,["",""])),(l()(),c._19(-1,2,["\n                    "])),(l()(),c._0(11,0,null,0,2,"ion-checkbox",[],[[2,"checkbox-disabled",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==c._14(l,13)._click(u)&&t}return t},A.b,A.a)),c._16(5120,null,w.f,function(l){return[l]},[F.a]),c.Z(13,1228800,null,0,F.a,[Z.a,x.a,[2,m.a],c.j,c.A],{checked:[0,"checked"]},null),(l()(),c._19(-1,2,["\n                "]))],function(l,n){l(n,13,0,n.context.$implicit.favorite)},function(l,n){l(n,9,0,n.context.$implicit.title);l(n,11,0,c._14(n,13)._disabled)})}function a(l){return c._20(0,[(l()(),c._0(0,0,null,null,17,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),c.Z(1,16384,null,0,I.a,[],null,null),(l()(),c._19(-1,null,["\n    "])),(l()(),c._0(3,0,null,null,13,"ion-row",[["class","row"]],null,null,null,null,null)),c.Z(4,16384,null,0,J.a,[],null,null),(l()(),c._19(-1,null,["\n        "])),(l()(),c._0(6,0,null,null,9,"ion-col",[["class","col"],["col-12",""],["no-padding",""]],null,null,null,null,null)),c.Z(7,16384,null,0,O.a,[],null,null),(l()(),c._19(-1,null,["\n            "])),(l()(),c._0(9,0,null,null,5,"ion-list",[],null,null,null,null,null)),c.Z(10,16384,null,0,$.a,[Z.a,c.j,c.A,B.a,E.l,G.a],null,null),(l()(),c._19(-1,null,["\n                "])),(l()(),c.V(16777216,null,null,1,null,t)),c.Z(13,802816,null,0,L.h,[c.J,c.G,c.p],{ngForOf:[0,"ngForOf"]},null),(l()(),c._19(-1,null,["\n            "])),(l()(),c._19(-1,null,["\n        "])),(l()(),c._19(-1,null,["\n    "])),(l()(),c._19(-1,null,["\n"]))],function(l,n){l(n,13,0,n.component.data)},null)}function e(l){return c._20(0,[(l()(),c._19(-1,null,["\n"])),(l()(),c.V(16777216,null,null,1,null,a)),c.Z(2,16384,null,0,L.i,[c.J,c.G],{ngIf:[0,"ngIf"]},null)],function(l,n){l(n,2,0,null!=n.component.data)},null)}Object.defineProperty(n,"__esModule",{value:!0});var c=u(0),o=(u(5),u(109),function(){return function(){var l=this;this.onEvent=function(n,u){l.events[n]&&l.events[n](u)}}}()),i=function(){return function(){}}(),_=u(184),r=u(185),s=u(186),d=u(187),b=u(188),f=u(189),v=u(190),k=u(191),p=u(192),h=u(193),m=u(18),x=u(14),Z=u(1),g=u(39),y=u(70),j=u(42),A=u(351),w=u(17),F=u(126),I=u(111),J=u(112),O=u(113),$=u(52),B=u(3),E=u(7),G=u(8),L=u(16),M=c.Y({encapsulation:2,styles:[],data:{}}),V=c.W("check-box-layout-1",o,function(l){return c._20(0,[(l()(),c._0(0,0,null,null,1,"check-box-layout-1",[],null,null,null,e,M)),c.Z(1,49152,null,0,o,[],null,null)],null,null)},{data:"data",events:"events"},{},[]),Y=u(110),C=u(35);u.d(n,"CheckBoxLayout1ModuleNgFactory",function(){return N});var N=c.X(i,[],function(l){return c._11([c._12(512,c.i,c.T,[[8,[_.a,r.a,s.a,d.a,b.a,f.a,v.a,k.a,p.a,V]],[3,c.i],c.s]),c._12(4608,L.k,L.j,[c.r,[2,L.s]]),c._12(4608,w.n,w.n,[]),c._12(4608,w.c,w.c,[]),c._12(512,L.b,L.b,[]),c._12(512,w.m,w.m,[]),c._12(512,w.d,w.d,[]),c._12(512,w.k,w.k,[]),c._12(512,Y.a,Y.a,[]),c._12(512,Y.b,Y.b,[]),c._12(512,i,i,[]),c._12(256,C.a,o,[])])})},351:function(l,n,u){"use strict";function t(l){return a._20(0,[(l()(),a._0(0,0,null,null,1,"div",[["class","checkbox-icon"]],[[2,"checkbox-checked",null]],null,null,null,null)),(l()(),a._0(1,0,null,null,0,"div",[["class","checkbox-inner"]],null,null,null,null,null)),(l()(),a._0(2,0,null,null,2,"button",[["class","item-cover"],["ion-button","item-cover"],["role","checkbox"],["type","button"]],[[8,"id",0],[1,"aria-checked",0],[1,"aria-labelledby",0],[1,"aria-disabled",0]],null,null,e.b,e.a)),a.Z(3,1097728,null,0,c.a,[[8,"item-cover"],o.a,a.j,a.A],null,null),(l()(),a._19(-1,0,[" "]))],null,function(l,n){var u=n.component;l(n,0,0,u._value);l(n,2,0,u.id,u._value,u._labelId,u._disabled)})}u.d(n,"a",function(){return i}),n.b=t;var a=u(0),e=u(40),c=u(19),o=u(1),i=(u(14),a.Y({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([66],{
+
+/***/ 290:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppearanceAnimationLayout4Module", function() { return AppearanceAnimationLayout4Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_4__ = __webpack_require__(407);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var AppearanceAnimationLayout4Module = (function () {
+    function AppearanceAnimationLayout4Module() {
+    }
+    AppearanceAnimationLayout4Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_4__["a" /* AppearanceAnimationLayout4 */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_4__["a" /* AppearanceAnimationLayout4 */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__appearance_animation_layout_4__["a" /* AppearanceAnimationLayout4 */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], AppearanceAnimationLayout4Module);
+    return AppearanceAnimationLayout4Module;
+}());
+
+//# sourceMappingURL=appearance-animation-layout-4.module.js.map
+
+/***/ }),
+
+/***/ 407:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppearanceAnimationLayout4; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AppearanceAnimationLayout4 = (function () {
+    function AppearanceAnimationLayout4() {
+        this.animateItems = [];
+        this.animateClass = { 'fade-in-item': true };
+    }
+    AppearanceAnimationLayout4.prototype.onEvent = function (event, item, e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        if (this.events[event]) {
+            this.events[event](item);
+        }
+    };
+    AppearanceAnimationLayout4.prototype.ngOnChanges = function (changes) {
+        var that = this;
+        that.data = changes['data'].currentValue;
+        if (that.data && that.data.items) {
+            var _loop_1 = function (i) {
+                setTimeout(function () {
+                    that.animateItems.push(that.data.items[i]);
+                }, 200 * i);
+            };
+            for (var i = 0; i < that.data.items.length; i++) {
+                _loop_1(i);
+            }
+        }
+    };
+    AppearanceAnimationLayout4.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.content.ionScroll.subscribe(function (d) {
+            _this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AppearanceAnimationLayout4.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AppearanceAnimationLayout4.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
+    ], AppearanceAnimationLayout4.prototype, "content", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
+    ], AppearanceAnimationLayout4.prototype, "fabButton", void 0);
+    AppearanceAnimationLayout4 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'appearance-animation-layout-4',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/appearance-animation/layout-4/appearance-animation.html"*/'<!--Theme Appearance animation (Fade In)-->\n\n<ion-content has-header>\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <ion-row>\n\n            <ion-col col-12>\n\n                <ion-list no-margin>\n\n                    <ion-item no-lines [ngClass]="animateClass" *ngFor="let item of animateItems; let i = index;" (click)="onEvent(\'onItemClick\', item.title, $event)">\n\n                        <ion-avatar item-start>\n\n                            <img [src]="item.image" alt="{{item.title}}" />\n\n                        </ion-avatar>\n\n                        <h2 item-title padding-left>{{item.title}}</h2>\n\n                        <ion-icon icon-small item-right (click)="onEvent(\'onFavorite\', item, $event)">\n\n                            <i class="icon" [ngClass]="{\'icon-heart\': item.favorite, \'icon-heart-outline\': !item.favorite}"></i>\n\n                        </ion-icon>\n\n                    </ion-item>\n\n                </ion-list>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n<ion-fab #fab bottom right>\n\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n\n    <ion-icon name="add"></ion-icon>\n\n  </button>\n\n</ion-fab>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/appearance-animation/layout-4/appearance-animation.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], AppearanceAnimationLayout4);
+    return AppearanceAnimationLayout4;
+}());
+
+//# sourceMappingURL=appearance-animation-layout-4.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=66.js.map

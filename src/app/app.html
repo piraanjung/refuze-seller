@@ -1,1 +1,16 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<!-- <div *ngIf="showSplash" class="splash">
+    <div class="spinner">sss</div>
+  </div>
+  
+<ion-nav [root]="rootPage"></ion-nav> -->
+<div id="splash-screen-layout-2">
+        <ion-row id="splash-background-image">
+                <img class="splash-screen" [src]="data.backgroundImage" />
+                <div class="logo-title item-fade-in">
+                  <img class="logo" [src]="data.logo" />
+                  <h2>{{data.title}}</h2>
+                </div>
+              </ion-row>
+</div>
+
+<ion-nav [root]="rootPage"  *ngIf="!showSplash"></ion-nav>

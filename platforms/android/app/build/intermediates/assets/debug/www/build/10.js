@@ -1,15 +1,15 @@
 webpackJsonp([10],{
 
-/***/ 302:
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParallaxLayout1Module", function() { return ParallaxLayout1Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParallaxLayout2Module", function() { return ParallaxLayout2Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__parallax_layout_1__ = __webpack_require__(417);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__elastic_header_elastic_header_module__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__parallax_layout_2__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__elastic_header_elastic_header_module__ = __webpack_require__(360);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,38 +20,38 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ParallaxLayout1Module = (function () {
-    function ParallaxLayout1Module() {
+var ParallaxLayout2Module = (function () {
+    function ParallaxLayout2Module() {
     }
-    ParallaxLayout1Module = __decorate([
+    ParallaxLayout2Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__parallax_layout_1__["a" /* ParallaxLayout1 */],
+                __WEBPACK_IMPORTED_MODULE_2__parallax_layout_2__["a" /* ParallaxLayout2 */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__parallax_layout_1__["a" /* ParallaxLayout1 */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__parallax_layout_2__["a" /* ParallaxLayout2 */]),
                 __WEBPACK_IMPORTED_MODULE_3__elastic_header_elastic_header_module__["a" /* ElasticHeaderModule */]
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__parallax_layout_1__["a" /* ParallaxLayout1 */]
+                __WEBPACK_IMPORTED_MODULE_2__parallax_layout_2__["a" /* ParallaxLayout2 */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
         })
-    ], ParallaxLayout1Module);
-    return ParallaxLayout1Module;
+    ], ParallaxLayout2Module);
+    return ParallaxLayout2Module;
 }());
 
-//# sourceMappingURL=parallax-layout-1.module.js.map
+//# sourceMappingURL=parallax-layout-2.module.js.map
 
 /***/ }),
 
-/***/ 350:
+/***/ 360:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElasticHeaderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__elastic_header__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__elastic_header__ = __webpack_require__(361);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81,7 +81,7 @@ var ElasticHeaderModule = (function () {
 
 /***/ }),
 
-/***/ 351:
+/***/ 361:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -147,13 +147,13 @@ var ElasticHeader = (function () {
 
 /***/ }),
 
-/***/ 417:
+/***/ 428:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ParallaxLayout1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ParallaxLayout2; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -165,10 +165,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var ParallaxLayout1 = (function () {
-    function ParallaxLayout1() {
+var ParallaxLayout2 = (function () {
+    function ParallaxLayout2() {
     }
-    ParallaxLayout1.prototype.onEvent = function (event, item, e) {
+    ParallaxLayout2.prototype.onEvent = function (event, item, e) {
         if (e) {
             e.stopPropagation();
         }
@@ -176,13 +176,13 @@ var ParallaxLayout1 = (function () {
             this.events[event](item);
         }
     };
-    ParallaxLayout1.prototype.ngOnChanges = function (changes) {
+    ParallaxLayout2.prototype.ngOnChanges = function (changes) {
         this.subscribeToIonScroll();
     };
-    ParallaxLayout1.prototype.ngAfterViewInit = function () {
+    ParallaxLayout2.prototype.ngAfterViewInit = function () {
         this.subscribeToIonScroll();
     };
-    ParallaxLayout1.prototype.subscribeToIonScroll = function () {
+    ParallaxLayout2.prototype.subscribeToIonScroll = function () {
         var _this = this;
         if (this.content != null && this.content.ionScroll != null) {
             this.content.ionScroll.subscribe(function (d) {
@@ -193,29 +193,29 @@ var ParallaxLayout1 = (function () {
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], ParallaxLayout1.prototype, "data", void 0);
+    ], ParallaxLayout2.prototype, "data", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Object)
-    ], ParallaxLayout1.prototype, "events", void 0);
+    ], ParallaxLayout2.prototype, "events", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
-    ], ParallaxLayout1.prototype, "content", void 0);
+    ], ParallaxLayout2.prototype, "content", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
-    ], ParallaxLayout1.prototype, "fabButton", void 0);
-    ParallaxLayout1 = __decorate([
+    ], ParallaxLayout2.prototype, "fabButton", void 0);
+    ParallaxLayout2 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'parallax-layout-1',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/parallax/layout-1/parallax.html"*/'<!--- Theme Parallax Frends -->\n\n<ion-content elastic-header has-header *ngIf="data != null">\n\n    <div background-size id="elastic-header" [ngStyle]="{\'background-image\': \'url(\' + data.headerImage + \')\'}">\n\n        <!--Social Shere-->\n\n        <div float-right social>\n\n            <ion-icon icon-small (click)="onEvent(\'onLike\', data)">\n\n                <i class="icon {{data.iconLike}}"></i>\n\n            </ion-icon>\n\n            <ion-icon icon-small (click)="onEvent(\'onFavorite\', data)">\n\n                <i class="icon {{data.iconFavorite}}"></i>\n\n            </ion-icon>\n\n            <ion-icon icon-small (click)="onEvent(\'onShare\', data)">\n\n                <i class="icon {{data.iconShare}}"></i>\n\n            </ion-icon>\n\n        </div>\n\n        <!--Title parallax-->\n\n        <h2 parallax-title *ngIf="data != null" text-center>{{data.title}}</h2>\n\n    </div>\n\n    <!--Content-->\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <ion-row>\n\n            <ion-col col-12>\n\n                <ion-list no-margin>\n\n                    <ion-item no-lines *ngFor="let item of data.items;let i = index" (click)="onEvent(\'onItemClick\', item)">\n\n                        <ion-avatar item-start>\n\n                            <img [src]="item.image">\n\n                        </ion-avatar>\n\n                        <h2 item-title>{{item.title}}</h2>\n\n                        <h3 item-subtitle>{{item.description}}</h3>\n\n                        <ion-icon icon-medium item-end>\n\n                            <i class="icon {{item.icon}}"></i>\n\n                        </ion-icon>\n\n                    </ion-item>\n\n                </ion-list>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n<ion-fab #fab bottom right>\n\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n\n    <ion-icon name="add"></ion-icon>\n\n  </button>\n\n</ion-fab>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/parallax/layout-1/parallax.html"*/
+            selector: 'parallax-layout-2',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/parallax/layout-2/parallax.html"*/'<!--- Theme Parallax Product -->\n\n<!--- Header Big Image-->\n\n<ion-content elastic-header has-header *ngIf="data != null">\n\n    <div padding background-size id="elastic-header" [ngStyle]="{\'background-image\': \'url(\' + data.headerImage + \')\'}">\n\n        <div class="title">\n\n            <h2 *ngIf="data != null" parallax-subtitle>{{data.title}}</h2>\n\n            <h1 *ngIf="data != null" parallax-title>{{data.description}}</h1>\n\n        </div>\n\n        <div social *ngIf="data != null">\n\n            <ion-icon (click)="onEvent(\'onLike\', data)">\n\n                <i class="icon {{data.iconLike}}"></i>\n\n            </ion-icon>\n\n            <ion-icon (click)="onEvent(\'onFavorite\', data)">\n\n                <i class="icon {{data.iconFavorite}}"></i>\n\n            </ion-icon>\n\n            <ion-icon (click)="onEvent(\'onShare\', data)">\n\n                <i class="icon {{data.iconShare}}"></i>\n\n            </ion-icon>\n\n        </div>\n\n    </div>\n\n    <!--Content-->\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <ion-row>\n\n            <ion-col col-12>\n\n                <ion-list no-margin>\n\n                    <ion-item no-lines *ngFor="let item of data.items;let i = index" (click)="onEvent(\'onItemClick\', item)">\n\n                        <ion-avatar item-start>\n\n                            <img src="{{item.image}}">\n\n                        </ion-avatar>\n\n                        <h2 item-title>{{item.title}}</h2>\n\n                        <h3 item-subtitle text-wrap>{{item.description}}</h3>\n\n                    </ion-item>\n\n                </ion-list>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n<ion-fab #fab bottom right>\n\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n\n    <ion-icon name="add"></ion-icon>\n\n  </button>\n\n</ion-fab>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/parallax/layout-2/parallax.html"*/
         }),
         __metadata("design:paramtypes", [])
-    ], ParallaxLayout1);
-    return ParallaxLayout1;
+    ], ParallaxLayout2);
+    return ParallaxLayout2;
 }());
 
-//# sourceMappingURL=parallax-layout-1.js.map
+//# sourceMappingURL=parallax-layout-2.js.map
 
 /***/ })
 

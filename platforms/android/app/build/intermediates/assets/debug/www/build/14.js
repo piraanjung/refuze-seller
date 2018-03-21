@@ -1,14 +1,15 @@
 webpackJsonp([14],{
 
-/***/ 344:
+/***/ 351:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileSellerPageModule", function() { return ProfileSellerPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainMenuPurchaseItemsPageModule", function() { return MainMenuPurchaseItemsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_seller__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__main_menu_purchase_items__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_main_menu_purchase_item_main_menu_purchase_item__ = __webpack_require__(395);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +19,97 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ProfileSellerPageModule = (function () {
-    function ProfileSellerPageModule() {
+
+var MainMenuPurchaseItemsPageModule = (function () {
+    function MainMenuPurchaseItemsPageModule() {
     }
-    ProfileSellerPageModule = __decorate([
+    MainMenuPurchaseItemsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__profile_seller__["a" /* ProfileSellerPage */],
+                __WEBPACK_IMPORTED_MODULE_2__main_menu_purchase_items__["a" /* MainMenuPurchaseItemsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__profile_seller__["a" /* ProfileSellerPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__main_menu_purchase_items__["a" /* MainMenuPurchaseItemsPage */]),
             ],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_3__providers_main_menu_purchase_item_main_menu_purchase_item__["a" /* MainMenuPurchaseItemProvider */]
+            ]
         })
-    ], ProfileSellerPageModule);
-    return ProfileSellerPageModule;
+    ], MainMenuPurchaseItemsPageModule);
+    return MainMenuPurchaseItemsPageModule;
 }());
 
-//# sourceMappingURL=profile-seller.module.js.map
+//# sourceMappingURL=main-menu-purchase-items.module.js.map
 
 /***/ }),
 
-/***/ 459:
+/***/ 395:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileSellerPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainMenuPurchaseItemProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+// import { HttpClient } from '@angular/common/http';
+
+/*
+  Generated class for the MainMenuPurchaseItemProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var MainMenuPurchaseItemProvider = (function () {
+    function MainMenuPurchaseItemProvider() {
+        this.data = function () {
+            return {
+                "refreshMessage": "Pull to refresh...",
+                "items": [
+                    {
+                        "id": 1,
+                        "image": "assets/images/background/0.jpg",
+                        "title": "ค้นหาผู้ขายขยะ",
+                        "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        "link": 'find-seller'
+                    },
+                    {
+                        "id": 2,
+                        "image": "assets/images/background/9.jpg",
+                        "title": "ประวัติรับซื้อขยะ",
+                        "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        "link": '#'
+                    },
+                ]
+            };
+        };
+        console.log('Hello MainMenuPurchaseItemProvider Provider');
+    }
+    MainMenuPurchaseItemProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], MainMenuPurchaseItemProvider);
+    return MainMenuPurchaseItemProvider;
+}());
+
+//# sourceMappingURL=main-menu-purchase-item.js.map
+
+/***/ }),
+
+/***/ 468:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainMenuPurchaseItemsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_main_menu_purchase_item_main_menu_purchase_item__ = __webpack_require__(395);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,32 +121,56 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var ProfileSellerPage = (function () {
-    function ProfileSellerPage(navCtrl, navParams) {
+
+
+var MainMenuPurchaseItemsPage = (function () {
+    function MainMenuPurchaseItemsPage(navCtrl, navParams, mainMenuPurchaseItemProvider) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.FindItemsPage = 'find-items';
+        this.mainMenuPurchaseItemProvider = mainMenuPurchaseItemProvider;
+        this.animateItems = [];
+        this.animateClass = { 'fade-in-left-item': true };
+        this.data = mainMenuPurchaseItemProvider.data();
     }
-    ProfileSellerPage.prototype.ionViewDidLoad = function () {
+    MainMenuPurchaseItemsPage.prototype.ionViewDidLoad = function () {
         localStorage.removeItem('purchaseItems');
-        this.seller = JSON.parse(localStorage.getItem('sellerProfile'));
-        if (Object.keys(this.seller).length !== 0) {
-            this.id = this.id;
-            this.fullname = this.seller.name + " " + this.seller.last_name;
-            this.mobile = "\u0E40\u0E1A\u0E2D\u0E23\u0E4C\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D " + this.seller.mobile;
-            this.address = "\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E25\u0E02\u0E17\u0E35\u0E48 " + this.seller.address + " \u0E15\u0E33\u0E1A\u0E25 " + this.seller.DISTRICT_NAME + " \u0E2D\u0E33\u0E40\u0E20\u0E2D " + this.seller.AMPHUR_NAME + " \u0E08\u0E31\u0E07\u0E2B\u0E27\u0E31\u0E14 " + this.seller.PROVINCE_NAME + " " + this.seller.zipcode;
+        localStorage.removeItem('sellerProfile');
+    };
+    MainMenuPurchaseItemsPage.prototype.onEvent = function (event, item, e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        if (item != "#") {
+            this.navCtrl.push(item);
         }
     };
-    ProfileSellerPage = __decorate([
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], MainMenuPurchaseItemsPage.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], MainMenuPurchaseItemsPage.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
+    ], MainMenuPurchaseItemsPage.prototype, "content", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
+    ], MainMenuPurchaseItemsPage.prototype, "fabButton", void 0);
+    MainMenuPurchaseItemsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-profile-seller',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/profile-seller/profile-seller.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>ProfileSeller</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n\n    <ion-card-header>\n      ข้อมูลผู้ขาย\n    </ion-card-header>\n\n    <ion-card-content>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-4>\n            <ion-img width="80" height="80" src="./assets/imgs/f_logo.png"></ion-img>\n          </ion-col>\n          <ion-col col-8>\n            <p>{{ fullname }}</p>\n            <p>{{ mobile }}</p>\n            <p>{{ address }}</p>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </ion-card-content>\n  </ion-card>\n\n  <br>\n  <button ion-button block round [navPush]="FindItemsPage">รับซื้อขยะ</button>\n  <br>\n  <button ion-button block round (click)="goToHistorySeller()">ประวัติรับซื้อขยะ</button>\n</ion-content>\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/profile-seller/profile-seller.html"*/,
+            selector: 'page-main-menu-purchase-items',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/main-menu-purchase-items/main-menu-purchase-items.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>หน้าหลักผู้รับซื้อขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<!--Theme Full Image Cards-->\n<ion-content>\n        <ion-grid no-padding *ngIf="data != null">\n            <ion-row>\n                <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let item of data.items;let i = index">\n                    <ion-card padding text-center (click)="onEvent(\'onItemClick\', item.link, $event)">\n                        <div card-content>\n                            <img images-filter src="{{item.image}}" />\n                            <div card-title>{{item.title}}</div>\n                            <!-- <div card-subtitle>{{item.subtitle}}</div> -->\n                        </div>\n                    </ion-card>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n    </ion-content>\n\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/main-menu-purchase-items/main-menu-purchase-items.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
-    ], ProfileSellerPage);
-    return ProfileSellerPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_main_menu_purchase_item_main_menu_purchase_item__["a" /* MainMenuPurchaseItemProvider */]])
+    ], MainMenuPurchaseItemsPage);
+    return MainMenuPurchaseItemsPage;
 }());
 
-//# sourceMappingURL=profile-seller.js.map
+//# sourceMappingURL=main-menu-purchase-items.js.map
 
 /***/ })
 

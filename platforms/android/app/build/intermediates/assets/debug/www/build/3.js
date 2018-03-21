@@ -1,17 +1,17 @@
 webpackJsonp([3],{
 
-/***/ 340:
+/***/ 349:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FindItemsPageModule", function() { return FindItemsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(352);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__find_items__ = __webpack_require__(455);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_items_items__ = __webpack_require__(384);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_find_sellers_find_sellers__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__find_items__ = __webpack_require__(466);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_items_items__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_find_sellers_find_sellers__ = __webpack_require__(391);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -46,7 +46,7 @@ var FindItemsPageModule = (function () {
 
 /***/ }),
 
-/***/ 352:
+/***/ 357:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -81,15 +81,15 @@ var FindItemsPageModule = (function () {
 /* unused harmony export ɵe */
 /* unused harmony export ɵf */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(372);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_tslib__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__);
@@ -2791,7 +2791,7 @@ var HttpClientJsonpModule = (function () {
 
 /***/ }),
 
-/***/ 370:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2805,7 +2805,7 @@ var API_URL = 'http://188.166.177.172/refuze-api/public/index.php';
 
 /***/ }),
 
-/***/ 371:
+/***/ 372:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2816,12 +2816,12 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 
 /***/ }),
 
-/***/ 372:
+/***/ 373:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var concatMap_1 = __webpack_require__(373);
+var concatMap_1 = __webpack_require__(374);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -2890,7 +2890,7 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 373:
+/***/ 374:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2964,12 +2964,12 @@ exports.concatMap = concatMap;
 
 /***/ }),
 
-/***/ 374:
+/***/ 375:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var filter_1 = __webpack_require__(375);
+var filter_1 = __webpack_require__(376);
 /* tslint:enable:max-line-length */
 /**
  * Filter items emitted by the source Observable by only emitting those that
@@ -3018,7 +3018,7 @@ exports.filter = filter;
 
 /***/ }),
 
-/***/ 375:
+/***/ 376:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3119,14 +3119,14 @@ var FilterSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 382:
+/***/ 391:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FindSellersProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(371);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3242,14 +3242,14 @@ var FindSellersProvider = (function () {
 
 /***/ }),
 
-/***/ 384:
+/***/ 394:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemsProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_urls__ = __webpack_require__(371);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3283,15 +3283,15 @@ var ItemsProvider = (function () {
 
 /***/ }),
 
-/***/ 455:
+/***/ 466:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FindItemsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_items_items__ = __webpack_require__(384);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_find_sellers_find_sellers__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_items_items__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_find_sellers_find_sellers__ = __webpack_require__(391);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3367,11 +3367,11 @@ var FindItemsPage = (function () {
     ], FindItemsPage.prototype, "data", void 0);
     FindItemsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-find-items',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/find-items/find-items.html"*/'<ion-header>\n\n  <ion-navbar>\n          <ion-title>ค้นหารายการขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content>\n  <ion-grid no-padding *ngIf="data != null">\n    <ion-row>\n      <ion-col col-12>\n        <ion-list no-margin>\n          <ion-list-header header-bcg no-padding no-lines>\n            <ion-icon white icon-large item-start>\n              <i class="icon {{data.iconPlay}}"></i>\n            </ion-icon>\n            <h1 header-title>{{data.title}}</h1>\n            <h2 header-subtitle>{{data.description}}</h2>\n\n            <ion-searchbar (ionInput)="filterItems($event)"></ion-searchbar>\n\n          </ion-list-header>\n\n          <ion-grid no-padding *ngIf="data != null">\n            <ion-row>\n              <ion-col col-12>\n                <ion-list no-margin>\n                    <li *ngFor="let item of items">\n                      <!-- List big image Header -->\n                      <div class="collapsible-header" (click)="presentaddModalItem(item)">\n                        <ion-item padding no-lines margin-top>\n                          <ion-avatar item-start no-margin>\n                            <img src="assets/images/logo/login.png"/>\n                          </ion-avatar>\n                            <h2 padding-left item-title>{{item.name}}</h2>\n                            <h3 padding-left item-subtitle>{{item.name}}</h3>\n                            <h2 item-end item-unit> \n                              <div>{{item.price}} บาท</div><div>{{ item.unit_name }}</div> \n                            </h2>\n\n                        </ion-item>\n                      </div>\n                     \n                    </li>\n                </ion-list>\n              </ion-col>\n            </ion-row>\n          </ion-grid>\n          <!-- </ion-item-sliding> -->\n        </ion-list>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n \n  <ion-fab #fab bottom right [navPush]=\'PurchaseItems\'>\n    <button ion-fab color="twitter">\n      <!-- <ion-icon name="add"></ion-icon> -->\n      {{ countItems }}\n    </button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/find-items/find-items.html"*/,
+            selector: 'page-find-items',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/find-items/find-items.html"*/'<ion-header>\n\n  <ion-navbar>\n          <ion-title>ค้นหารายการขยะ</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content>\n  <ion-grid no-padding *ngIf="data != null">\n    <ion-row>\n      <ion-col col-12>\n        <ion-list no-margin>\n          <ion-list-header header-bcg no-padding no-lines>\n            <ion-icon white icon-large item-start>\n              <i class="icon {{data.iconPlay}}"></i>\n            </ion-icon>\n            <h1 header-title>{{data.title}}</h1>\n            <h2 header-subtitle>{{data.description}}</h2>\n\n            <ion-searchbar (ionInput)="filterItems($event)"></ion-searchbar>\n\n          </ion-list-header>\n\n          <ion-grid no-padding *ngIf="data != null">\n            <ion-row>\n              <ion-col col-12>\n                <ion-list no-margin>\n                    <li *ngFor="let item of items">\n                      <!-- List big image Header -->\n                      <div class="collapsible-header" (click)="presentaddModalItem(item)">\n                        <ion-item padding no-lines margin-top>\n                          <ion-avatar item-start no-margin>\n                            <img src="assets/images/logo/login.png"/>\n                          </ion-avatar>\n                            <h2 padding-left item-title>{{item.name}}</h2>\n                            <h3 padding-left item-subtitle>{{item.item_categories_name}}</h3>\n                            <h2 item-end item-unit> \n                              <div>{{item.price}} บาท</div><div>{{ item.unit_name }}</div> \n                            </h2>\n\n                        </ion-item>\n                      </div>\n                     \n                    </li>\n                </ion-list>\n              </ion-col>\n            </ion-row>\n          </ion-grid>\n          <!-- </ion-item-sliding> -->\n        </ion-list>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n \n  <ion-fab #fab bottom right [navPush]=\'PurchaseItems\'>\n    <button ion-fab color="twitter">\n      <!-- <ion-icon name="add"></ion-icon> -->\n      {{ countItems }}\n    </button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/pages/find-items/find-items.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_items_items__["a" /* ItemsProvider */],
             __WEBPACK_IMPORTED_MODULE_3__providers_find_sellers_find_sellers__["a" /* FindSellersProvider */]])
     ], FindItemsPage);

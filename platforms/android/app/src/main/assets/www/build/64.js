@@ -1,1 +1,114 @@
-webpackJsonp([64],{307:function(l,n,u){"use strict";function t(l){return e._20(0,[(l()(),e._0(0,0,null,null,19,"ion-item",[["class","item item-block"],["margin-top",""],["no-lines",""]],null,[[null,"tap"]],function(l,n,u){var t=!0;if("tap"===n){t=!1!==l.component.onEvent("onButton",l.context.$implicit)&&t}return t},p.b,p.a)),e.Z(1,1097728,null,3,h.a,[g.a,x.a,e.j,e.A,[2,Z.a]],null,null),e._17(335544320,1,{contentLabel:0}),e._17(603979776,2,{_buttons:1}),e._17(603979776,3,{_icons:1}),e.Z(5,16384,null,0,y.a,[],null,null),(l()(),e._19(-1,2,["\n                    "])),(l()(),e._0(7,0,null,0,3,"ion-icon",[["icon-small",""],["item-start",""],["no-adding",""],["no-margina",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),e.Z(8,147456,[[3,4]],0,j.a,[x.a,e.j,e.A],null,null),(l()(),e._19(-1,null,["\n                        "])),(l()(),e._0(10,0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(l()(),e._19(-1,2,["\n                    "])),(l()(),e._0(12,0,null,1,2,"ion-label",[["item-title",""]],null,null,null,null,null)),e.Z(13,16384,[[1,4]],0,A.a,[x.a,e.j,e.A,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),e._19(14,null,["",""])),(l()(),e._19(-1,2,["\n                    "])),(l()(),e._0(16,0,null,4,2,"ion-checkbox",[["item-end",""]],[[2,"checkbox-disabled",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==e._14(l,18)._click(u)&&t}return t},$.b,$.a)),e._16(5120,null,w.f,function(l){return[l]},[F.a]),e.Z(18,1228800,null,0,F.a,[x.a,g.a,[2,h.a],e.j,e.A],{checked:[0,"checked"]},null),(l()(),e._19(-1,2,["\n                "]))],function(l,n){l(n,18,0,n.context.$implicit.favorite)},function(l,n){l(n,7,0,e._14(n,8)._hidden);l(n,10,0,e._3(1,"icon ",n.context.$implicit.icon,""));l(n,14,0,n.context.$implicit.title);l(n,16,0,e._14(n,18)._disabled)})}function a(l){return e._20(0,[(l()(),e._0(0,0,null,null,17,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),e.Z(1,16384,null,0,I.a,[],null,null),(l()(),e._19(-1,null,["\n    "])),(l()(),e._0(3,0,null,null,13,"ion-row",[["class","row"]],null,null,null,null,null)),e.Z(4,16384,null,0,J.a,[],null,null),(l()(),e._19(-1,null,["\n        "])),(l()(),e._0(6,0,null,null,9,"ion-col",[["class","col"],["col-12",""],["no-padding",""]],null,null,null,null,null)),e.Z(7,16384,null,0,O.a,[],null,null),(l()(),e._19(-1,null,["\n            "])),(l()(),e._0(9,0,null,null,5,"ion-list",[["margin",""]],null,null,null,null,null)),e.Z(10,16384,null,0,B.a,[x.a,e.j,e.A,E.a,G.l,L.a],null,null),(l()(),e._19(-1,null,["\n                "])),(l()(),e.V(16777216,null,null,1,null,t)),e.Z(13,802816,null,0,M.h,[e.J,e.G,e.p],{ngForOf:[0,"ngForOf"]},null),(l()(),e._19(-1,null,["\n            "])),(l()(),e._19(-1,null,["\n        "])),(l()(),e._19(-1,null,["\n    "])),(l()(),e._19(-1,null,["\n"]))],function(l,n){l(n,13,0,n.component.data)},null)}function i(l){return e._20(0,[(l()(),e._19(-1,null,["\n"])),(l()(),e.V(16777216,null,null,1,null,a)),e.Z(2,16384,null,0,M.i,[e.J,e.G],{ngIf:[0,"ngIf"]},null),(l()(),e._19(-1,null,["\n"]))],function(l,n){l(n,2,0,null!=n.component.data)},null)}Object.defineProperty(n,"__esModule",{value:!0});var e=u(0),o=(u(5),u(109),function(){return function(){var l=this;this.onEvent=function(n,u){l.events[n]&&l.events[n](u)}}}()),c=function(){return function(){}}(),_=u(184),r=u(185),s=u(186),d=u(187),b=u(188),f=u(189),m=u(190),v=u(191),k=u(192),p=u(193),h=u(18),g=u(14),x=u(1),Z=u(39),y=u(70),j=u(38),A=u(42),$=u(351),w=u(17),F=u(126),I=u(111),J=u(112),O=u(113),B=u(52),E=u(3),G=u(7),L=u(8),M=u(16),N=e.Y({encapsulation:2,styles:[],data:{}}),V=e.W("check-box-layout-3",o,function(l){return e._20(0,[(l()(),e._0(0,0,null,null,1,"check-box-layout-3",[],null,null,null,i,N)),e.Z(1,49152,null,0,o,[],null,null)],null,null)},{data:"data",events:"events"},{},[]),Y=u(110),C=u(35);u.d(n,"CheckBoxLayout3ModuleNgFactory",function(){return P});var P=e.X(c,[],function(l){return e._11([e._12(512,e.i,e.T,[[8,[_.a,r.a,s.a,d.a,b.a,f.a,m.a,v.a,k.a,V]],[3,e.i],e.s]),e._12(4608,M.k,M.j,[e.r,[2,M.s]]),e._12(4608,w.n,w.n,[]),e._12(4608,w.c,w.c,[]),e._12(512,M.b,M.b,[]),e._12(512,w.m,w.m,[]),e._12(512,w.d,w.d,[]),e._12(512,w.k,w.k,[]),e._12(512,Y.a,Y.a,[]),e._12(512,Y.b,Y.b,[]),e._12(512,c,c,[]),e._12(256,C.a,o,[])])})},351:function(l,n,u){"use strict";function t(l){return a._20(0,[(l()(),a._0(0,0,null,null,1,"div",[["class","checkbox-icon"]],[[2,"checkbox-checked",null]],null,null,null,null)),(l()(),a._0(1,0,null,null,0,"div",[["class","checkbox-inner"]],null,null,null,null,null)),(l()(),a._0(2,0,null,null,2,"button",[["class","item-cover"],["ion-button","item-cover"],["role","checkbox"],["type","button"]],[[8,"id",0],[1,"aria-checked",0],[1,"aria-labelledby",0],[1,"aria-disabled",0]],null,null,i.b,i.a)),a.Z(3,1097728,null,0,e.a,[[8,"item-cover"],o.a,a.j,a.A],null,null),(l()(),a._19(-1,0,[" "]))],null,function(l,n){var u=n.component;l(n,0,0,u._value);l(n,2,0,u.id,u._value,u._labelId,u._disabled)})}u.d(n,"a",function(){return c}),n.b=t;var a=u(0),i=u(40),e=u(19),o=u(1),c=(u(14),a.Y({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([64],{
+
+/***/ 292:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DragAndDropLayout1Module", function() { return DragAndDropLayout1Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__drag_and_drop_layout_1__ = __webpack_require__(409);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var DragAndDropLayout1Module = (function () {
+    function DragAndDropLayout1Module() {
+    }
+    DragAndDropLayout1Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__drag_and_drop_layout_1__["a" /* DragAndDropLayout1 */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__drag_and_drop_layout_1__["a" /* DragAndDropLayout1 */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__drag_and_drop_layout_1__["a" /* DragAndDropLayout1 */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
+        })
+    ], DragAndDropLayout1Module);
+    return DragAndDropLayout1Module;
+}());
+
+//# sourceMappingURL=drag-and-drop-layout-1.module.js.map
+
+/***/ }),
+
+/***/ 409:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DragAndDropLayout1; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DragAndDropLayout1 = (function () {
+    function DragAndDropLayout1() {
+        var _this = this;
+        this.reorderItems = function (indexes) {
+            _this.data.items = Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* reorderArray */])(_this.data.items, indexes);
+        };
+    }
+    DragAndDropLayout1.prototype.onEvent = function (event, item, e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        if (this.events[event]) {
+            this.events[event](item);
+        }
+    };
+    DragAndDropLayout1.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.content.ionScroll.subscribe(function (d) {
+            _this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], DragAndDropLayout1.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], DragAndDropLayout1.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
+    ], DragAndDropLayout1.prototype, "content", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* FabButton */])
+    ], DragAndDropLayout1.prototype, "fabButton", void 0);
+    DragAndDropLayout1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'drag-and-drop-layout-1',template:/*ion-inline-start:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/drag-and-drop/layout-1/drag-and-drop.html"*/'<!-- Themes Small item + header -->\n\n<ion-content has-header>\n\n    <ion-grid no-padding *ngIf="data != null">\n\n        <!-- Header -->\n\n        <ion-row header-bcg padding>\n\n            <ion-col col-6 text-left>\n\n                <h1 header-title no-margin text-wrap>{{data.title}}</h1>\n\n                <h2 header-subtitle no-margin>{{data.description}}</h2>\n\n            </ion-col>\n\n            <ion-col col-6 text-right>\n\n                <span span-medium>{{data.duration}}</span>\n\n                <ion-icon>\n\n                    <i icon-medium class="icon {{data.icon}}"></i>\n\n                </ion-icon>\n\n            </ion-col>\n\n        </ion-row>\n\n        <!--Content-->\n\n        <ion-row>\n\n            <ion-col col-12>\n\n                <ion-list reorder="true" (ionItemReorder)="reorderItems($event)">\n\n                    <ion-item no-lines padding-left *ngFor="let item of data.items; let i = index;" (click)="onEvent(\'onItemClick\', item.title, $event)">\n\n                        <ion-icon item-start icon-medium><i class="icon {{item.leftIcon}}"></i></ion-icon>\n\n                        <h2 no-padding item-title>{{item.title}}</h2>\n\n                        <h3 no-padding item-subtitle>{{item.author}}</h3>\n\n                    </ion-item>\n\n                </ion-list>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<!-- Fab Button -->\n\n<ion-fab #fab bottom right>\n\n    <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n\n    <ion-icon name="add"></ion-icon>\n\n  </button>\n\n</ion-fab>\n\n'/*ion-inline-end:"/Users/piraan/Desktop/refuze-app/refuze-app/src/components/list-view/drag-and-drop/layout-1/drag-and-drop.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], DragAndDropLayout1);
+    return DragAndDropLayout1;
+}());
+
+//# sourceMappingURL=drag-and-drop-layout-1.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=64.js.map
