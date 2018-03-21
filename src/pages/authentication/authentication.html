@@ -2,55 +2,23 @@
     <ion-grid *ngIf="data != null">
         <ion-row wrap padding>
             <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
-                <!---Logo-->
+
                 <img [src]="data.logo" *ngIf="data.logo != null">
-                <!---Input field username-->
+
                 <ion-item no-padding transparent>
                     <ion-label floating>{{data.username}}</ion-label>
                     <ion-input required type="text" [(ngModel)]="login.username"></ion-input>
                 </ion-item>
-                <!---Input field password-->
+
                 <ion-item no-padding transparent>
                     <ion-label floating>{{data.password}}</ion-label>
                     <ion-input required type="password" [(ngModel)]="login.passwords"></ion-input>
                 </ion-item>
-                <!---Login button-->
+
                 <button ion-button float-left button-clear-outline round outline (click)="onLogin()">{{data.login}}</button>
-                <!---Register button-->
                 <button ion-button float-left button-clear-outline round outline >{{data.register}}</button>
             </ion-col>
            
         </ion-row>
     </ion-grid>
 </ion-content>
-
-<!-- <ion-content padding>
-  <ion-grid id="logo">
-    <ion-row>
-      <ion-col col-3></ion-col>
-      <ion-col col-6 style="text-align:center">
-         <ion-img src="./assets/imgs/f_logo.png" style="width: 150px; height:180px"></ion-img>
-      </ion-col>
-      <ion-col col-3></ion-col>
-    </ion-row>
-  </ion-grid>
-
- 
-  <form (ngSubmit)="onLogin()">
-      <ion-list>
-        
-        <ion-item class="round-input">
-          <ion-input type="text"  name="username" [(ngModel)]="login.username" required placeholder="ชื่อผู้ใช้งาน"></ion-input>
-        </ion-item>
-      
-        <ion-item class="round-input">
-          <ion-input type="password"  name="password" [(ngModel)]="login.passwords" required placeholder="รหัสผ่าน"></ion-input>
-        </ion-item>
-      </ion-list>
-
-    
-    <button ion-button block large round color="shamrock"  class ="_button" type="submit">เข้าสู่ระบบ</button>
-   
-  </form>
-  <button ion-button  large  block clear color="shamrock" (click)="register()">สมัครสมาชิก</button>
-</ion-content> -->
