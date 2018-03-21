@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { MainMenuPurchaseItemProvider } from '../providers/main-menu-purchase-item/main-menu-purchase-item';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import { MainMenuPurchaseItemProvider } from '../providers/main-menu-purchase-it
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MainMenuPurchaseItemProvider,    
   ]
 })
 export class AppModule {}

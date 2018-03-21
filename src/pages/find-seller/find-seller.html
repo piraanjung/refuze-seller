@@ -8,7 +8,8 @@
 
 <!--Theme Small item + header-->
 <ion-content>
-  <ion-grid no-padding *ngIf="data != null">
+    <ion-grid no-padding *ngIf="data != null">
+      
     <ion-row>
       <ion-col col-12>
         <ion-list no-margin>
@@ -34,7 +35,7 @@
                           <ion-list no-margin (click)="toggleGroup(seller,seller)"> 
                               <ion-item no-lines>
                                   <ion-avatar item-start>
-                                      <img src="assets/images/avatar/1.jpg" />
+                                      <img src="assets/images/avatar/23.jpg" />
                                   </ion-avatar>
                                   <h2 item-title padding-left>{{seller.name}}  {{seller.last_name}}</h2>
                                   <h2 item-subtitle padding-left>{{seller.id_card}} </h2>
@@ -61,7 +62,7 @@
                                 <!---Facebook button-->
                                 <button ion-button round color="facebook"  [navPush]="FindItemsPage">รับซื้อขยะ</button>
                                 <!---Twitter button-->
-                                <button ion-button round  color="tweetter"   (click)="goToHistorySeller()">ประวัติรับซื้อขยะ</button>
+                                <button ion-button round  color="tweetter"   (click)="goToHistorySeller(seller)">ประวัติรับซื้อขยะ</button>
                             </ion-col>
                         </ion-row>  
                       </div>
