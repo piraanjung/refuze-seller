@@ -32,8 +32,6 @@ export class AuthenticationPage {
   }
 
   onLogin() {
-    console.log(this.login)
-
     if (this.login.username === '' || this.login.passwords === '') {
       this.presentAlert('', 'กรุณาใส่ Username และ Password');
       return;
