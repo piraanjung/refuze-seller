@@ -13,11 +13,12 @@ import { Sellers } from '../../models/sellers';
   templateUrl: 'find-items.html',
 })
 export class FindItemsPage {
-  items: any
+  items: Item[]
   countItems: number
   PurchaseItems: string
   seller: Sellers
   data: any
+
   constructor(
     private modalCtrl: ModalController,
     private itemsProvider: ItemsProvider,

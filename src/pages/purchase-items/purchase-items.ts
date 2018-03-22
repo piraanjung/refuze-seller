@@ -1,5 +1,5 @@
-import { Component, Input,ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams,Content, FabButton } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { Buyer } from '../../models/buyer';
 import { Item } from '../../models/item';
@@ -14,17 +14,7 @@ import { PurchaseItemsProvider } from '../../providers/purchase-items/purchase-i
   templateUrl: 'purchase-items.html',
 })
 export class PurchaseItemsPage {
-  @Input() events: any;
-  @ViewChild(Content)
-  content: Content;
-  @ViewChild(FabButton)
-  fabButton: FabButton;
-  @Input() data: any={
-    'test' :{
-        'name' : 'ddd'
-    }
 
-  };
   seller: Sellers
   buyer: Buyer
   items: Item[]
@@ -48,13 +38,12 @@ export class PurchaseItemsPage {
     this.total = 0
     this.isHide = false
     this.isDisabled = true
-    this.FindSellerPage ='find-seller'
-    this.MainMenuPage ='main-menu-purchase-items'
+    this.FindSellerPage = 'find-seller'
+    this.MainMenuPage = 'main-menu-purchase-items'
     this.animateClass = { 'zoom-in': true };
   }
 
   ionViewDidLoad() {
-    console.log(this.data)
     this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
     this.buyer = JSON.parse(localStorage.getItem('BuyerProfile'))
     this.items = JSON.parse(localStorage.getItem('purchaseItems')) || []
@@ -100,18 +89,18 @@ export class PurchaseItemsPage {
   DisabledPurchaseButton(total) {
     if (total <= 0) this.isDisabled = false
   }
-//   onEvent(event: string, item: any, e: any) {
-//     if (e) {
-//         e.stopPropagation();
-//     }
-//     if (this.events[event]) {
-//         this.events[event](item);
-//     }
-// }
-    // ngAfterViewInit() {
-    //     this.content.ionScroll.subscribe((d) => {
-    //         this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
-    //     });
-    // }
+  //   onEvent(event: string, item: any, e: any) {
+  //     if (e) {
+  //         e.stopPropagation();
+  //     }
+  //     if (this.events[event]) {
+  //         this.events[event](item);
+  //     }
+  // }
+  // ngAfterViewInit() {
+  //     this.content.ionScroll.subscribe((d) => {
+  //         this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
+  //     });
+  // }
 
 }

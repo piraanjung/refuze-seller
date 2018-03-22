@@ -1,38 +1,38 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>บันทึกรายการซื้อขยะ</ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content>
   <ion-grid>
-
     <ion-row header-bcg padding>
       <ion-col col-2>
-        <ion-img width="40" height="40" src="./assets/imgs/f_logo.png"></ion-img>
+        <ion-avatar item-start>
+          <img src="assets/images/avatar/23.jpg" />
+        </ion-avatar>
       </ion-col>
+
       <ion-col col-5 text-left>
         <h1 header-title no-margin text-wrap>{{ fullname }}</h1>
         <h2 header-subtitle no-margin>{{ mobile }}</h2>
       </ion-col>
+
       <ion-col col-5 text-right>
         <span header-subtitle no-margin address>{{ address }}</span>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <ion-grid no-padding *ngIf="data != null">
+
+  <ion-grid no-padding>
     <ion-row>
       <ion-col col-12 col-md-12 col-lg-6 *ngFor="let item of items;let i = index">
 
         <ion-card padding text-right class="card">
           <div float-left class="card-img">
-            <img images-filter src="assets/images/avatar-small/0.jpg" />
+            <img images-filter src="./assets/imgs/f_logo.png" />
           </div>
           <ion-icon name="close-circle" icon-del (click)="removeItem(i)" *ngIf="!isHide"> </ion-icon>
-          <!--Card-content-->
           <ion-card-content>
             <ion-card-title no-padding>
               <h2 card-title>{{item.name}}</h2>
@@ -40,7 +40,6 @@
             <h3 card-subtitle>{{item.price}} : {{item.unit_name}}</h3>
 
             <p card-body-text>จำนวน : {{item.amount}} {{item.unit_name}}</p>
-            <!---Social share-->
             <div social>
               เป็นเงิน {{item.price * item.amount}} บาท
             </div>
