@@ -65,6 +65,7 @@ export class PurchaseItemsPage {
     this.items.splice(index, 1)
     this.total = this.calTotal(this.items)
     this.DisabledPurchaseButton(this.total)
+    localStorage.setItem('purchaseItems', JSON.stringify(this.items))
   }
 
   calTotal(items) {
@@ -89,18 +90,4 @@ export class PurchaseItemsPage {
   DisabledPurchaseButton(total) {
     if (total <= 0) this.isDisabled = false
   }
-  //   onEvent(event: string, item: any, e: any) {
-  //     if (e) {
-  //         e.stopPropagation();
-  //     }
-  //     if (this.events[event]) {
-  //         this.events[event](item);
-  //     }
-  // }
-  // ngAfterViewInit() {
-  //     this.content.ionScroll.subscribe((d) => {
-  //         this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
-  //     });
-  // }
-
 }

@@ -38,8 +38,10 @@ export class FindItemsPage {
     }
   }
 
-  ionViewDidLoad() {
+  ionViewWillEnter() {
     this.getFavorite()
+    this.items = JSON.parse(localStorage.getItem('purchaseItems'))
+    this.countItems = Object.keys(this.items).length
   }
 
   getFavorite() {
