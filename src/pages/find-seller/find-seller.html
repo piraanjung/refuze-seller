@@ -1,15 +1,11 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>ค้นหาสมาชิกผู้ขายขยะ</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-<!--Theme Small item + header-->
 <ion-content>
-    <ion-grid no-padding *ngIf="data != null">
-      
+  <ion-grid no-padding *ngIf="sellers != null">
     <ion-row>
       <ion-col col-12>
         <ion-list no-margin>
@@ -19,74 +15,55 @@
             </ion-icon>
             <h1 header-title>{{data.title}}</h1>
             <h2 header-subtitle>{{data.description}}</h2>
-          
             <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-
           </ion-list-header>
-          <!--Swipe To Dismiss -->
-          <!-- <ion-item-sliding *ngFor="let item of sellers" #slidingItem> -->
+
           <ion-grid no-padding *ngIf="data != null">
             <ion-row>
               <ion-col col-12>
                 <ion-list no-margin>
                   <ul no-margin no-padding class="collapsible">
                     <li *ngFor="let seller of sellers" no-lines [ngClass]="animateClass">
-                      <!-- List big image Header -->
-                          <ion-list no-margin (click)="toggleGroup(seller,seller)"> 
-                              <ion-item no-lines>
-                                  <ion-avatar item-start>
-                                      <img src="assets/images/avatar/23.jpg" />
-                                  </ion-avatar>
-                                  <h2 item-title padding-left>{{seller.name}}  {{seller.last_name}}</h2>
-                                  <h2 item-subtitle padding-left>{{seller.id_card}} </h2>
-                                      <ion-icon name="ios-arrow-dropdown-outline"  item-right></ion-icon>
-                              </ion-item>
-                          </ion-list>
-                      <!-- List big image Body -->
+                      <ion-list no-margin (click)="toggleGroup(seller,seller)">
+                        <ion-item no-lines>
+                          <ion-avatar item-start>
+                            <img src="assets/images/avatar/23.jpg" />
+                          </ion-avatar>
+
+                          <h2 item-title padding-left>{{seller.name}} {{seller.last_name}}</h2>
+                          <h2 item-subtitle padding-left>{{seller.id_card}} </h2>
+                          <ion-icon name="ios-arrow-dropdown-outline" item-right></ion-icon>
+                        </ion-item>
+                      </ion-list>
+
                       <div class="item-accordion" [ngClass]="{'active': isGroupShown(seller) }" [hidden]="!isGroupShown(seller)">
-                        
-                        
-                                <ion-row>
-                                  <ion-col col-4>
-                                    <ion-img width="80" height="80" src="assets/imgs/f_logo.png"></ion-img>
-                                  </ion-col>
-                                  <ion-col col-8>
-                                    <h2 header-title>{{ fullname }}</h2>
-                                    <h5 header-title>{{ mobile }}</h5>
-                                    <h5 header-subtitle>{{ address }}</h5>
-                                  </ion-col>
-                                </ion-row>
-                        
-                        <ion-row> 
-                            <ion-col col-12 col-sm-12 col-md-12 offset-2 offset-lg-2 col-lg-6 offset-xl-2 col-xl-6>
-                                <!---Facebook button-->
-                                <button ion-button round color="facebook"  [navPush]="FindItemsPage">รับซื้อขยะ</button>
-                                <!---Twitter button-->
-                                <button ion-button round  color="tweetter"   (click)="goToHistorySeller(seller)">ประวัติรับซื้อขยะ</button>
-                            </ion-col>
-                        </ion-row>  
+                        <ion-row>
+                          <ion-col col-4>
+                            <img src="assets/images/avatar/23.jpg" />
+                          </ion-col>
+                          <ion-col col-8>
+                            <h2 header-title>{{ fullname }}</h2>
+                            <h5 header-title>{{ mobile }}</h5>
+                            <h5 header-subtitle>{{ address }}</h5>
+                          </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                          <ion-col col-12 col-sm-12 col-md-12 offset-2 offset-lg-2 col-lg-6 offset-xl-2 col-xl-6>
+                            <button ion-button round color="facebook" [navPush]="FindItemsPage">รับซื้อขยะ</button>
+                            <button ion-button round color="tweetter" (click)="goToHistorySeller(seller)">ประวัติรับซื้อขยะ</button>
+                          </ion-col>
+                        </ion-row>
+
                       </div>
-                      <!--end-->
                     </li>
                   </ul>
                 </ion-list>
               </ion-col>
             </ion-row>
           </ion-grid>
-          <!-- </ion-item-sliding> -->
         </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
-<!-- Fab Button -->
-
-
-<!-- <ion-content>
-  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-  <ion-list>
-    <ion-item *ngFor="let seller of sellers" (click)="goToProfileSeller(seller)">
-      {{ seller.name }}
-    </ion-item>
-  </ion-list>
-</ion-content> -->

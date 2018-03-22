@@ -1,33 +1,9 @@
-import {
-  Component
-} from '@angular/core';
-import {
-  IonicPage,
-  NavController,
-  NavParams,
-  LoadingController
-} from 'ionic-angular';
-import {
-  Input,
-  ViewChild
-} from '@angular/core';
-import {
-  Content,
-  FabButton,
-  ItemSliding
-} from 'ionic-angular';
-import {
-  Sellers
-} from '../../models/sellers';
-import {
-  FindSellersProvider
-} from '../../providers/find-sellers/find-sellers';
-import {
-  ProfileSellerPage
-} from '../profile-seller/profile-seller';
-import{
-  PurchaseHistoryPage
-} from '../purchase-history/purchase-history';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, LoadingController } from 'ionic-angular';
+import { Sellers } from '../../models/sellers';
+import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
+import { ProfileSellerPage } from '../profile-seller/profile-seller';
+import { PurchaseHistoryPage } from '../purchase-history/purchase-history';
 
 @IonicPage({
   name: 'find-seller'
@@ -37,16 +13,7 @@ import{
   templateUrl: 'find-seller.html',
 })
 export class FindSellerPage {
-  @Input() data: any;
-  @Input() events: any;
-  @ViewChild(Content)
-  content: Content;
-  @ViewChild(FabButton)
-  fabButton: FabButton;
-  path: string;
-
-
-  items;
+  data: any
   sellers: Sellers[];
   seller: Sellers
   id: number
@@ -59,43 +26,32 @@ export class FindSellerPage {
   animateClass: any;
 
   constructor(
-    public navCtrl: NavController,
-    public navParams: NavParams,
+    private navCtrl: NavController,
     private findSeller: FindSellersProvider,
-    public loadingCtrl: LoadingController
+    private loadingCtrl: LoadingController
   ) {
+    localStorage.removeItem('purchaseItems')
+    localStorage.removeItem('sellerProfile')
     this.FindItemsPage = 'find-items'
-    this.animateClass = {
-      'zoom-in': true
-    };
-    this.path = "assets/svg/bars.svg";
-
+    this.animateClass = { 'zoom-in': true };
   }
 
   ionViewDidLoad() {
-    localStorage.removeItem('purchaseItems')
-    localStorage.removeItem('sellerProfile')
     this.getSellers()
     this.data = this.findSeller.getDataForLayout1()
-
   }
 
   getSellers() {
     let loading = this.loadingCtrl.create({
-      content: '<ion-spinner name="lines"></ion-spinner>',
+      content: 'กำลังดำเนินการ...',
+      spinner: 'crescent',
     });
 
     loading.present();
 
-    setTimeout(() => {
-
-      loading.dismiss();
-    }, 2000);
-
     this.findSeller.getSellers().subscribe((res) => {
+      loading.dismiss();
       this.sellers = res
-      console.log(this.sellers)
-
     })
   }
 
@@ -108,19 +64,17 @@ export class FindSellerPage {
     let val = ev.target.value;
 
     if (val && val.trim() != '') {
-      this.sellers = this.sellers.filter((seller) => {
-        return (seller.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      })
+      this.sellers = this.sellers.filter((seller) => (seller.name.toLowerCase().indexOf(val.toLowerCase()) > -1))
     } else {
       this.getSellers()
     }
   }
 
   toggleGroup(group: any, profile) {
-    console.log(profile)
     group.show = !group.show;
     localStorage.setItem('sellerProfile', JSON.stringify(profile))
-    this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
+    this.seller = profile
+
     if (Object.keys(this.seller).length !== 0) {
       this.id = this.id
       this.fullname = `${this.seller.name} ${this.seller.last_name}`
@@ -132,9 +86,8 @@ export class FindSellerPage {
   isGroupShown(group: any) {
     return group.show;
   }
-  ngOnChanges(changes: {
-    [propKey: string]: any
-  }) {
+
+  ngOnChanges(changes: { [propKey: string]: any }) {
     let that = this;
     that.data = changes['data'].currentValue;
     if (that.data && that.data.items) {
@@ -145,10 +98,10 @@ export class FindSellerPage {
       }
     }
   }
+
   goToHistorySeller(seller) {
-    console.log(seller)
-    this.navCtrl.push('PurchaseHistoryPage',{
-      seller : seller
+    this.navCtrl.push('PurchaseHistoryPage', {
+      seller: seller
     })
   }
 

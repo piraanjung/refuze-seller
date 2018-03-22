@@ -23,6 +23,7 @@ export class ProfileSellerPage {
   ionViewDidLoad() {
     localStorage.removeItem('purchaseItems')
     this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
+    console.log(this.seller)
     if (Object.keys(this.seller).length !== 0) {
       this.id = this.id
       this.fullname = `${this.seller.name} ${this.seller.last_name}`
