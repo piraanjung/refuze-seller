@@ -1,0 +1,14 @@
+export const MAIN_MENU_PURCHASE_ITEMS = {
+  "items": [
+    {
+      "image": "assets/images/background/0.jpg",
+      "title": "ค้นหาผู้ขายขยะ",
+      "link": 'find-seller'
+    },
+    {
+      "image": "assets/images/background/9.jpg",
+      "title": "ประวัติรับซื้อขยะ",
+      "link": '#'
+    },
+  ]
+}

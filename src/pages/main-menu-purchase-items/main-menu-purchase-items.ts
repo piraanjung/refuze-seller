@@ -1,8 +1,7 @@
-import { Component, Input, ViewChild } from '@angular/core';
-import { Content, FabButton } from 'ionic-angular';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PurchaseItemsMenu } from "../../models/purchase-items-menu";
-import {MainMenuPurchaseItemProvider } from "../../providers/main-menu-purchase-item/main-menu-purchase-item"
+import { Component } from '@angular/core';
+import { IonicPage, NavController } from 'ionic-angular';
+import { MAIN_MENU_PURCHASE_ITEMS } from '../../providers/_main-menu-purchase-items';
+
 @IonicPage({
   name: 'main-menu-purchase-items',
   segment: 'main-menu-purchase-items'
@@ -12,36 +11,23 @@ import {MainMenuPurchaseItemProvider } from "../../providers/main-menu-purchase-
   templateUrl: 'main-menu-purchase-items.html',
 })
 export class MainMenuPurchaseItemsPage {
-    @Input() data;
-    @Input() events: any;
-    @ViewChild(Content)
-    content: Content;
-    @ViewChild(FabButton)
-    fabButton: FabButton;
+  data: any
 
-    animateItems = [];
-    animateClass: any;
-    
-
-  cards: PurchaseItemsMenu[];
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-  private mainMenuPurchaseItemProvider : MainMenuPurchaseItemProvider ) {
-    this.animateClass = { 'fade-in-left-item': true };
-    this.data = mainMenuPurchaseItemProvider.data();
-  }
-
-  ionViewDidLoad() {
-    localStorage.removeItem('purchaseItems')
+  constructor(
+    private navCtrl: NavController) {
     localStorage.removeItem('sellerProfile')
+    localStorage.removeItem('purchaseItems')
+    this.data = MAIN_MENU_PURCHASE_ITEMS
   }
 
   onEvent(event: string, item: any, e: any) {
     if (e) {
-        e.stopPropagation();
+      e.stopPropagation();
     }
-    if (item !="#") {
-        this.navCtrl.push(item);
+
+    if (item != "#") {
+      this.navCtrl.push(item);
     }
-}
+  }
 
 }
