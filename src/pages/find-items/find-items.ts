@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, ModalController } from 'ionic-angular';
+import { IonicPage, ModalController, LoadingController } from 'ionic-angular';
 import { ItemsProvider } from '../../providers/items/items';
 import { Item } from '../../models/item';
 import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
 import { Sellers } from '../../models/sellers';
-
 
 @IonicPage({
   name: 'find-items'
@@ -22,7 +21,9 @@ export class FindItemsPage {
   constructor(
     private modalCtrl: ModalController,
     private itemsProvider: ItemsProvider,
-    private findSeller: FindSellersProvider) {
+    private findSeller: FindSellersProvider,
+    private loadingCtrl: LoadingController
+  ) {
     this.countItems = 0
     this.PurchaseItems = 'purchase-items'
     this.data = {
@@ -41,7 +42,16 @@ export class FindItemsPage {
   }
 
   getFavorite() {
-    this.itemsProvider.getFavorite().subscribe((res) => this.items = res)
+    let loading = this.loadingCtrl.create({
+      content: 'กำลังดำเนินการ...',
+      spinner: 'crescent',
+    });
+
+    loading.present();
+    this.itemsProvider.getFavorite().subscribe((res) => {
+      loading.dismiss();
+      this.items = res
+    })
   }
 
   filterItems(ev) {

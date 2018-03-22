@@ -1,10 +1,9 @@
 <ion-header>
-
   <ion-navbar>
-          <ion-title>ค้นหารายการขยะ</ion-title>
+    <ion-title>ค้นหารายการขยะ</ion-title>
   </ion-navbar>
-
 </ion-header>
+
 <ion-content>
   <ion-grid no-padding *ngIf="data != null">
     <ion-row>
@@ -18,44 +17,40 @@
             <h2 header-subtitle>{{data.description}}</h2>
 
             <ion-searchbar (ionInput)="filterItems($event)"></ion-searchbar>
-
           </ion-list-header>
 
           <ion-grid no-padding *ngIf="data != null">
             <ion-row>
               <ion-col col-12>
                 <ion-list no-margin>
-                    <li *ngFor="let item of items">
-                      <!-- List big image Header -->
-                      <div class="collapsible-header" (click)="presentaddModalItem(item)">
-                        <ion-item padding no-lines margin-top>
-                          <ion-avatar item-start no-margin>
-                            <img src="assets/images/logo/login.png"/>
-                          </ion-avatar>
-                            <h2 padding-left item-title>{{item.name}}</h2>
-                            <h3 padding-left item-subtitle>{{item.item_categories_name}}</h3>
-                            <h2 item-end item-unit> 
-                              <div>{{item.price}} บาท</div><div>{{ item.unit_name }}</div> 
-                            </h2>
+                  <li *ngFor="let item of items">
+                    <div class="collapsible-header" (click)="presentaddModalItem(item)">
+                      <ion-item padding no-lines margin-top>
+                        <ion-avatar item-start no-margin>
+                          <img src="assets/images/logo/login.png" />
+                        </ion-avatar>
+                        <h2 padding-left item-title>{{item.name}}</h2>
+                        <h3 padding-left item-subtitle>{{item.item_categories_name}}</h3>
+                        <h2 item-end item-unit>
+                          <div>{{item.price}} บาท</div>
+                          <div>{{ item.unit_name }}</div>
+                        </h2>
 
-                        </ion-item>
-                      </div>
-                     
-                    </li>
+                      </ion-item>
+                    </div>
+                  </li>
+                  
                 </ion-list>
               </ion-col>
             </ion-row>
           </ion-grid>
-          <!-- </ion-item-sliding> -->
         </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
 
- 
   <ion-fab #fab bottom right [navPush]='PurchaseItems'>
     <button ion-fab color="twitter">
-      <!-- <ion-icon name="add"></ion-icon> -->
       {{ countItems }}
     </button>
   </ion-fab>
