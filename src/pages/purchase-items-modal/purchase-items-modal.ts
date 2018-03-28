@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavParams, ViewController } from 'ionic-angular';
 import { Item, addNewItem } from '../../models/item';
+import { ItemsProvider } from '../../providers/items/items';
 
 @IonicPage({
   name: 'purchase-items-modal'
@@ -19,10 +20,14 @@ export class PurchaseItemsModalPage {
   amount: number
   unit_name: string
   balance: number
-  _img : './assets/images/background/7.jpg'
+  _img: string
 
-  constructor(private viewCtrl: ViewController, public navParams: NavParams) {
+  constructor(
+    private viewCtrl: ViewController,
+    private navParams: NavParams,
+    private itemsProvider: ItemsProvider) {
     this.amount = 1
+    this._img = './assets/images/background/7.jpg'
   }
 
   ionViewWillLoad() {
@@ -43,7 +48,7 @@ export class PurchaseItemsModalPage {
 
   addNewItem() {
     this.balance = (this.amount * this.price)
-    
+
     let item = {
       name: this.name,
       unit_name: this.unit_name,
