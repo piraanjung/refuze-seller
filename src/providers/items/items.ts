@@ -18,6 +18,6 @@ export class ItemsProvider {
   }
 
   setItemPrice(params: ItemPrice) {
-    return this.http.put(`${API_URL}/update-item-price`, params)
+    return this.http.put(`${API_URL}/items-update-price`, params)
   }
 }
