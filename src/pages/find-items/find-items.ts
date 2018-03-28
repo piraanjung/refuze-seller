@@ -78,6 +78,7 @@ export class FindItemsPage {
   presentaddModalItem(item) {
     let profileModal = this.modalCtrl.create('purchase-items-modal', { item: item });
     profileModal.onDidDismiss(data => {
+      this.getFavorite()
       this.countItems = data['countItems']
     });
 

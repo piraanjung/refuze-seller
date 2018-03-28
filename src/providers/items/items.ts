@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { API_URL } from '../api-urls';
 import { Observable } from 'rxjs/Observable';
-import { Item } from '../../models/item';
+import { Item, ItemPrice } from '../../models/item';
 
 @Injectable()
 export class ItemsProvider {
@@ -15,5 +15,9 @@ export class ItemsProvider {
 
   getItems() {
     return this.http.get<Item[]>(`${API_URL}/items`)
+  }
+
+  setItemPrice(params: ItemPrice) {
+    return this.http.put(`${API_URL}/items-update-price`, params)
   }
 }
