@@ -16,3 +16,8 @@ export interface addNewItem {
   amount: number
   balance: number
 }
+
+export interface ItemPrice {
+  id: number
+  price: number
+}

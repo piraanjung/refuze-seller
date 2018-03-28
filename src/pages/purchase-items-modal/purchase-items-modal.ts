@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavParams, ViewController } from 'ionic-angular';
-import { Item, addNewItem } from '../../models/item';
+import { Item, addNewItem, ItemPrice } from '../../models/item';
 import { ItemsProvider } from '../../providers/items/items';
 
 @IonicPage({
@@ -13,6 +13,7 @@ import { ItemsProvider } from '../../providers/items/items';
 export class PurchaseItemsModalPage {
   item: Item
   items: addNewItem[]
+  item_price: ItemPrice
   id: number
   name: string
   price: number
@@ -25,7 +26,8 @@ export class PurchaseItemsModalPage {
   constructor(
     private viewCtrl: ViewController,
     private navParams: NavParams,
-    private itemsProvider: ItemsProvider) {
+    private itemsProvider: ItemsProvider
+  ) {
     this.amount = 1
     this._img = './assets/images/background/7.jpg'
   }
@@ -40,6 +42,10 @@ export class PurchaseItemsModalPage {
     this.balance = (this.amount * this.price)
     let items = JSON.parse(localStorage.getItem('purchaseItems')) || []
     this.items = items
+    this.item_price = {
+      id: this.item.id,
+      price: this.item.price
+    }
   }
 
   dismiss() {
@@ -47,6 +53,18 @@ export class PurchaseItemsModalPage {
   }
 
   addNewItem() {
+    if (this.price != this.old_price) {
+      this.item_price.price = this.price
+      this.itemsProvider.setItemPrice(this.item_price).subscribe(res => {
+        console.log(res)
+        this.pushNewItem()
+      }, error => console.log(error))
+    } else {
+      this.pushNewItem()
+    }
+  }
+
+  pushNewItem() {
     this.balance = (this.amount * this.price)
 
     let item = {
