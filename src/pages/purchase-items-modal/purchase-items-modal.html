@@ -17,43 +17,50 @@
 
   <ion-grid class="grid" no-padding>
     <ion-row class="row">
-      <ion-col col-7 col-lg-4 col-md-7 col-sm-7 col-xl-4>
+      <ion-col col-12>
         <ion-card padding text-center class="card card-md">
           <div card-content>
-            <img images-filter src="assets/images/background/0.jpg">
-            <div card-title>จำนวน</div>
+            <h2 text-left>ราคา</h2>
             <div class="amount_input">
-              <ion-input required type="number" [(ngModel)]="amount"></ion-input>
-            </div>
-          </div>
-        </ion-card>
-      </ion-col>
-
-      <ion-col col-5 col-lg-4 col-md-5 col-sm-5 col-xl-4>
-        <ion-card padding text-center class="card card-md">
-          <div card-content>
-            <img images-filter src="assets/images/background/10.jpg">
-            <div card-title>เป็นเงิน</div>
-            <div>
-              <div class="total">{{ price * amount }}</div>
-              <div card-subtitle>บาท</div>
+              <ion-input required type="number" [(ngModel)]="price"></ion-input>
             </div>
           </div>
         </ion-card>
       </ion-col>
     </ion-row>
 
-  </ion-grid>
-  <ion-grid no-padding>
-    <ion-item no-padding transparent>
-      <ion-label floating>จำนวน</ion-label>
-    </ion-item>
+    <ion-row class="row">
+      <ion-col col-12>
+        <ion-card padding text-center class="card card-md">
+          <div card-content>
+            <h2 text-left>จำนวน</h2>
+            <div class="amount_input">
+              <ion-input required type="number" [(ngModel)]="amount"></ion-input>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row">
+      <ion-col col-12>
+        <ion-card padding text-center class="card card-md">
+          <div card-content>
+            <ion-col col-12>
+              <h2 text-center class="total">ยอมรวม&nbsp;{{ price * amount }}&nbsp;บาท</h2>
+            </ion-col>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 
-  <ion-col offset-4>
-    <button ion-button large round color="twitter" (click)="addNewItem()">
-      บันทึกข้อมูล
-    </button>
-  </ion-col>
-
+  <ion-row class="row">
+    <ion-col col-12>
+      <button ion-button block large button-clear-outline round outline (click)="addNewItem()" style="height: 50px;">
+        บันทึกข้อมูล
+      </button>
+    </ion-col>
+  </ion-row>
+  
 </ion-content>
