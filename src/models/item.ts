@@ -6,6 +6,7 @@ export interface Item {
   unit_name: string
   item_categories_name: string
   image_url: string
+  updated_at_th?: string
 }
 
 export interface addNewItem {
