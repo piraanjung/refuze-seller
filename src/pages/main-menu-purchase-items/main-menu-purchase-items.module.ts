@@ -7,7 +7,6 @@ import { MainMenuPurchaseItemsPage } from './main-menu-purchase-items';
   ],
   imports: [
     IonicPageModule.forChild(MainMenuPurchaseItemsPage),
-  ],
-  
+  ]
 })
 export class MainMenuPurchaseItemsPageModule {}

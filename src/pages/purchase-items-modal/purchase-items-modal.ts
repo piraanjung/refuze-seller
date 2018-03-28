@@ -15,6 +15,7 @@ export class PurchaseItemsModalPage {
   id: number
   name: string
   price: number
+  old_price: number
   amount: number
   unit_name: string
   balance: number
@@ -30,10 +31,10 @@ export class PurchaseItemsModalPage {
     this.name = this.item.name
     this.unit_name = this.item.unit_name
     this.price = this.item.price
+    this.old_price = this.item.price
     this.balance = (this.amount * this.price)
     let items = JSON.parse(localStorage.getItem('purchaseItems')) || []
     this.items = items
-
   }
 
   dismiss() {
@@ -54,7 +55,7 @@ export class PurchaseItemsModalPage {
 
     this.items.push(item)
     localStorage.setItem('purchaseItems', JSON.stringify(this.items))
-    this.viewCtrl.dismiss({ status: 'status', countItems: this.items.length });
+    this.viewCtrl.dismiss({ status: 'status', countItems: this.items.length })
   }
 
 }
