@@ -1,9 +1,7 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>หน้าหลักผู้รับซื้อขยะ</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 <ion-content>
@@ -12,8 +10,8 @@
       <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let item of data.items; let i = index">
         <ion-card padding text-center btn  (click)="onEvent('onItemClick', item.link, $event)">
           <div card-content>
-            <img images-filter src="{{item.image}}" />
-            <div card-title>{{item.title}}</div>
+            <img images-filter src="{{ item.image }}" />
+            <div card-title>{{ item.title }}</div>
           </div>
         </ion-card>
       </ion-col>
