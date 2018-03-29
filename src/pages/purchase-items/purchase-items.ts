@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { Buyer } from '../../models/buyer';
 import { Item } from '../../models/item';
@@ -33,6 +33,7 @@ export class PurchaseItemsPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
+    private loadingCtrl: LoadingController,
     private purchaseItemsProvider: PurchaseItemsProvider
   ) {
     this.total = 0
@@ -47,18 +48,16 @@ export class PurchaseItemsPage {
     this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
     this.buyer = JSON.parse(localStorage.getItem('BuyerProfile'))
     this.items = JSON.parse(localStorage.getItem('purchaseItems')) || []
-    console.log(this.items)
 
     this.total = this.calTotal(this.items)
     this.DisabledPurchaseButton(this.total)
 
-    if (Object.keys(this.seller).length !== 0 && Object.keys(this.items).length) {
+    if (Object.keys(this.seller).length !== 0) {
       this.id = this.id
       this.fullname = `${this.seller.name} ${this.seller.last_name}`
       this.mobile = `เบอร์ติดต่อ ${this.seller.mobile}`
       this.address = `บ้านเลขที่ ${this.seller.address} ตำบล ${this.seller.DISTRICT_NAME} อำเภอ ${this.seller.AMPHUR_NAME} จังหวัด ${this.seller.PROVINCE_NAME} ${this.seller.zipcode}`
     }
-
   }
 
   removeItem(index) {
@@ -73,6 +72,13 @@ export class PurchaseItemsPage {
   }
 
   createPurchaseProfile() {
+    let loading = this.loadingCtrl.create({
+      content: 'กำลังดำเนินการ...',
+      spinner: 'crescent',
+    });
+
+    loading.present();
+
     let params = {
       buyer_id: this.buyer.id,
       seller_id: this.seller.id,
@@ -83,6 +89,7 @@ export class PurchaseItemsPage {
 
     this.purchaseItemsProvider.createPurchaseProfile(params)
       .subscribe((res) => {
+        loading.dismiss();
         this.isHide = true
       })
   }

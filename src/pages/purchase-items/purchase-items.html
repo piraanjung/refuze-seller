@@ -27,119 +27,52 @@
   <ion-grid no-padding>
     <ion-row>
       <ion-col col-12 col-md-12 col-lg-6 *ngFor="let item of items;let i = index">
-
         <ion-card padding text-right class="card">
           <div float-left class="card-img">
             <img images-filter src="./assets/imgs/f_logo.png" />
           </div>
+
           <ion-icon name="close-circle" icon-del (click)="removeItem(i)" *ngIf="!isHide"> </ion-icon>
           <ion-card-content>
             <ion-card-title no-padding>
-              <h2 card-title>{{item.name}}</h2>
+              <h2 card-title>{{ item.name }}</h2>
             </ion-card-title>
-            <h3 card-subtitle>{{item.price}} : {{item.unit_name}}</h3>
+            <h3 card-subtitle>{{ item.price }} : {{ item.unit_name }}</h3>
 
-            <p card-body-text>จำนวน : {{item.amount}} {{item.unit_name}}</p>
+            <p card-body-text>จำนวน : {{ item.amount }} {{ item.unit_name }}</p>
             <div social>
-              เป็นเงิน {{item.price * item.amount}} บาท
+              เป็นเงิน {{ item.price * item.amount }} บาท
             </div>
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
-
   </ion-grid>
 
   <ion-grid no-padding background-size container-hearder-image style="background-image: url(assets/images/background-small/10.jpg)">
-    <ion-row padding >
+    <ion-row padding>
       <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>
         <h1 header-title>รวมเป็นเงิน</h1>
-
       </ion-col>
       <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>
-        <span span-large>{{total}} </span>
+        <span span-large>{{ total }} </span>
         <h2 header-subtitle>บาท</h2>
-
         <button ion-button button-clear-outline round outline (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>
-        
       </ion-col>
     </ion-row>
-    <ion-row>
-        <ion-col col-4>
-          <button ion-button button-clear-outline round outline *ngIf="isHide">ปริ้นใบเสร็จ</button>
-        </ion-col>
-        <ion-col col-4>
-          <button ion-button button-clear-outline round outline class="my-col-4" *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>
-        </ion-col>
-        <ion-col col-4>
-          <button ion-button button-clear-outline round outline *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>
-        </ion-col>
 
-      </ion-row>
-    <!--Content-->
+    <ion-row>
+      <!-- <ion-col col-4>
+        <button ion-button button-clear-outline round outline *ngIf="isHide">ปริ้นใบเสร็จ</button>
+      </ion-col> -->
+      <ion-col col-6>
+        <button ion-button button-clear-outline round outline class="my-col-4" *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button button-clear-outline round outline *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>
+      </ion-col>
+    </ion-row>
 
   </ion-grid>
 
 </ion-content>
-
-<!-- Fab Button -->
-
-
-<!-- <ion-content padding>
-
-  <ion-card>
-
-    <ion-card-header>
-      ข้อมูลผู้ขาย
-    </ion-card-header>
-
-    <ion-card-content>
-      <ion-grid>
-        <ion-row>
-          <ion-col col-4>
-            <ion-img width="80" height="80" src="./assets/imgs/f_logo.png"></ion-img>
-          </ion-col>
-          <ion-col col-8>
-            <p>{{ fullname }}</p>
-            <p>{{ mobile }}</p>
-            <p>{{ address }}</p>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-list *ngFor="let item of items; let i = index">
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="./assets/imgs/f_logo.png">
-      </ion-thumbnail>
-      <h2>{{ item.name }}</h2>
-      <p>{{ item.amount }}&nbsp;X&nbsp;{{ item.price }}&nbsp;รวม&nbsp;{{ item.balance }}&nbsp;บาท</p>
-      <button ion-button clear item-end (click)="removeItem(i)" *ngIf="!isHide">
-        <ion-icon name="trash" style="font-size:30px; color:red;"></ion-icon>
-      </button>
-    </ion-item>
-  </ion-list>
-
-  <ion-list>
-    <ion-item>
-      <ion-grid>
-        <ion-row>
-          <ion-col col-4>
-            <h1>รวม</h1>
-          </ion-col>
-          <ion-col col-4 style="text-align: right;">
-            <h1>{{total}}&nbsp;บาท</h1>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item>
-  </ion-list>
-
-  <button ion-button block large round (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>
-  <button ion-button block large round *ngIf="isHide">ปริ้นใบเสร็จ</button>
-  <button ion-button block large round *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>
-  <button ion-button block large round *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>
-
-</ion-content> -->
