@@ -52,7 +52,7 @@ export class PurchaseItemsPage {
     this.total = this.calTotal(this.items)
     this.DisabledPurchaseButton(this.total)
 
-    if (Object.keys(this.seller).length !== 0 && Object.keys(this.items).length) {
+    if (Object.keys(this.seller).length !== 0) {
       this.id = this.id
       this.fullname = `${this.seller.name} ${this.seller.last_name}`
       this.mobile = `เบอร์ติดต่อ ${this.seller.mobile}`
