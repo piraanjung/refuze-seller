@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
-import { MAIN_MENU_PURCHASE_ITEMS } from '../../providers/_main-menu-purchase-items';
+import { Component } from '@angular/core'
+import { IonicPage, NavController } from 'ionic-angular'
+import { MAIN_MENU_PURCHASE_ITEMS } from '../../providers/_main-menu-purchase-items'
 
 @IonicPage({
   name: 'main-menu-purchase-items',
@@ -22,11 +22,11 @@ export class MainMenuPurchaseItemsPage {
 
   onEvent(event: string, item: any, e: any) {
     if (e) {
-      e.stopPropagation();
+      e.stopPropagation()
     }
 
     if (item != "#") {
-      this.navCtrl.push(item);
+      this.navCtrl.push(item)
     }
   }
 
