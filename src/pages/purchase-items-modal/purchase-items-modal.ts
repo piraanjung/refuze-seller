@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavParams, ViewController } from 'ionic-angular';
+import { IonicPage, NavParams, ViewController, LoadingController } from 'ionic-angular';
 import { Item, addNewItem, ItemPrice } from '../../models/item';
 import { ItemsProvider } from '../../providers/items/items';
 
@@ -26,6 +26,7 @@ export class PurchaseItemsModalPage {
   constructor(
     private viewCtrl: ViewController,
     private navParams: NavParams,
+    private loadingCtrl: LoadingController,
     private itemsProvider: ItemsProvider
   ) {
     this.amount = 1
@@ -49,15 +50,21 @@ export class PurchaseItemsModalPage {
   }
 
   dismiss() {
-    this.viewCtrl.dismiss('close');
+    this.viewCtrl.dismiss({ status: 'status', countItems: this.items.length })
   }
 
   addNewItem() {
     if (this.price != this.old_price) {
+      let loading = this.loadingCtrl.create({
+        content: 'กำลังดำเนินการ...',
+        spinner: 'crescent',
+      });
+      loading.present();
+
       this.item_price.price = this.price
       this.itemsProvider.setItemPrice(this.item_price).subscribe(res => {
-        console.log(res)
         this.pushNewItem()
+        loading.dismiss();
       }, error => console.log(error))
     } else {
       this.pushNewItem()
