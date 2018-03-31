@@ -46,7 +46,7 @@ export class PurchaseItemsPage {
 
   ionViewDidLoad() {
     this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {}
-    this.buyer = JSON.parse(localStorage.getItem('BuyerProfile')) || {}
+    this.buyer = JSON.parse(localStorage.getItem('buyerProfile')) || {}
     this.items = JSON.parse(localStorage.getItem('purchaseItems')) || []
 
     this.total = this.calTotal(this.items)

@@ -28,7 +28,7 @@ export class AuthenticationPage {
     private loadingCtrl: LoadingController,
     private app: App,
     private authen: AuthenProvider) {
-    localStorage.removeItem('BuyerProfile')
+    localStorage.removeItem('buyerProfile')
   }
 
   onLogin() {
@@ -49,7 +49,7 @@ export class AuthenticationPage {
       res => {
         if (res.logged === true) {
           this.BuyerProfile = res
-          localStorage.setItem('BuyerProfile', JSON.stringify(this.BuyerProfile))
+          localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
           this.app.getRootNav().setRoot('main-menu-purchase-items');
         } else {
           this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
