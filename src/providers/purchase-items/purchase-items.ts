@@ -11,7 +11,7 @@ export class PurchaseItemsProvider {
   constructor(private http: HttpClient) {
     let buyerProfile: Buyer = JSON.parse(localStorage.getItem('buyerProfile'))
     this.API_HEADERS = {
-      Authorization: buyerProfile.remember_token
+      token: buyerProfile.remember_token
     }
   }
 
