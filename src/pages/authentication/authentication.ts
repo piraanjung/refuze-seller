@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, LoadingController, AlertController, App } from 'ionic-angular';
 import { AuthenProvider } from '../../providers/authen/authen';
 import { Buyer } from '../../models/buyer';
+import { NgForm } from '@angular/forms';
 
 @IonicPage()
 @Component({
@@ -26,44 +27,38 @@ export class AuthenticationPage {
     private authen: AuthenProvider) {
     localStorage.removeItem('buyerProfile')
     this.params = {
-      name: '',
-      lastname: ''
+      username: '',
+      passwords: ''
     }
   }
 
-  onSubmit(myform) {
-    console.log(myform.value)
-    // if (this.params.username === '' || this.params.passwords === '') {
-    //   this.presentAlert('', 'กรุณาใส่ Username และ Password');
-    //   return;
-    // }
+  onSubmit(myform: NgForm) {
+    let loader = this.loadingCtrl.create({
+      content: 'กำลังดำเนินการ...',
+      spinner: 'crescent',
+      dismissOnPageChange: true,
+    });
 
-    // let loader = this.loadingCtrl.create({
-    //   content: 'กำลังดำเนินการ...',
-    //   spinner: 'crescent',
-    //   dismissOnPageChange: true,
-    // });
+    loader.present();
 
-    // loader.present();
-
-    // this.authen.resAuthen(this.params).subscribe(
-    //   res => {
-    //     if (res.logged === true) {
-    //       this.BuyerProfile = res
-    //       localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
-    //       this.app.getRootNav().setRoot('main-menu-purchase-items');
-    //     } else {
-    //       this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-    //       loader.dismiss();
-    //     }
-    //   },
-    //   error => {
-    //     this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-    //     loader.dismiss();
-    //   }
-    // );
+    this.authen.resAuthen(this.params).subscribe(
+      res => {
+        if (res.logged === true) {
+          this.BuyerProfile = res
+          localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
+          this.app.getRootNav().setRoot('main-menu-purchase-items');
+        } else {
+          this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+          this.params.passwords = ''
+          loader.dismiss();
+        }
+      },
+      error => {
+        this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+        loader.dismiss();
+      }
+    );
   }
-
 
   presentAlert(title, subtitle) {
     let alert = this.alertCtrl.create({
