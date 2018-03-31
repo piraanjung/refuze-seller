@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, LoadingController, AlertController, App } from 'ionic-angular';
 import { AuthenProvider } from '../../providers/authen/authen';
 import { Buyer } from '../../models/buyer';
+import { NgForm } from '@angular/forms';
 
 @IonicPage()
 @Component({
@@ -9,11 +10,7 @@ import { Buyer } from '../../models/buyer';
   templateUrl: 'authentication.html',
 })
 export class AuthenticationPage {
-  login = {
-    username: '',
-    passwords: ''
-  }
-
+  params: any
   BuyerProfile: Buyer;
   data: any = {
     logo: 'assets/images/logo/login.png',
@@ -28,15 +25,14 @@ export class AuthenticationPage {
     private loadingCtrl: LoadingController,
     private app: App,
     private authen: AuthenProvider) {
-    localStorage.removeItem('BuyerProfile')
+    localStorage.removeItem('buyerProfile')
+    this.params = {
+      username: '',
+      passwords: ''
+    }
   }
 
-  onLogin() {
-    if (this.login.username === '' || this.login.passwords === '') {
-      this.presentAlert('', 'กรุณาใส่ Username และ Password');
-      return;
-    }
-
+  onSubmit(myform: NgForm) {
     let loader = this.loadingCtrl.create({
       content: 'กำลังดำเนินการ...',
       spinner: 'crescent',
@@ -45,14 +41,15 @@ export class AuthenticationPage {
 
     loader.present();
 
-    this.authen.resAuthen(this.login).subscribe(
+    this.authen.resAuthen(this.params).subscribe(
       res => {
         if (res.logged === true) {
           this.BuyerProfile = res
-          localStorage.setItem('BuyerProfile', JSON.stringify(this.BuyerProfile))
+          localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
           this.app.getRootNav().setRoot('main-menu-purchase-items');
         } else {
           this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+          this.params.passwords = ''
           loader.dismiss();
         }
       },
@@ -62,7 +59,6 @@ export class AuthenticationPage {
       }
     );
   }
-
 
   presentAlert(title, subtitle) {
     let alert = this.alertCtrl.create({
