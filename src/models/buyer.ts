@@ -10,4 +10,5 @@ export interface Buyer {
   user_cate_name: string
   status: number
   logged: boolean
+  token: string
 }
