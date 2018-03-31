@@ -65,6 +65,8 @@ export class FindSellerPage {
       }, 200 * i++);
       }); 
     
+    }, error=> {
+      loading.dismiss();      
     })
   }
 

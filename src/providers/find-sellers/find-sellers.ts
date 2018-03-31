@@ -1,16 +1,22 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from "rxjs/Observable";
 import { Sellers } from '../../models/sellers';
-import { API_URL, API_HEADERS } from '../api-urls';
+import { API_URL } from '../api-urls';
+import { Buyer } from '../../models/buyer';
 
 @Injectable()
 export class FindSellersProvider {
 
-  constructor(private http: HttpClient) { }
+  API_HEADERS: any
+  constructor(private http: HttpClient) {
+    let buyerProfile: Buyer = JSON.parse(localStorage.getItem('buyerProfile'))
+    this.API_HEADERS = {
+      token: buyerProfile.remember_token
+    }
+  }
 
-  getSellers() {
-    return this.http.get<Sellers[]>(`${API_URL}/sellers`, { headers: API_HEADERS })
+  getSellers(): any {
+    return this.http.get<Sellers[]>(`${API_URL}/sellers`, { headers: this.API_HEADERS })
   }
 
 }
