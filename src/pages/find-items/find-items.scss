@@ -8,7 +8,7 @@ page-find-items {
   }
   ion-grid {
     padding: 0;
-    margin-top: 80px !important;
+    margin-top: 35px !important;
   }
   [item-title] {
     font-size: 18px !important;
@@ -18,6 +18,12 @@ page-find-items {
     text-align: center !important;
     
   }
+  ion-app.md [margin-top], ion-app.md [margin-top] .scroll-content {
+    margin-top: 7px !important;
+  }
+  ion-app.md [padding] {
+    padding: 2px !important;
+}
 
   [padding-left]{
     padding: 10px !important
@@ -106,4 +112,5 @@ page-find-items {
     font-size: 18px;
     font-weight: bold
   }
+
 }

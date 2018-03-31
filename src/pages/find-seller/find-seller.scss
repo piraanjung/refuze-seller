@@ -7,7 +7,7 @@ page-find-seller {
 }
 ion-grid {
     padding: 0;
-    margin-top: 70px !important;
+    margin-top: 40px !important;
 }
     [header-bcg] {
       position: fixed !important;
@@ -89,7 +89,7 @@ ion-grid {
         }
     
         &.active {
-          height: 250px !important;
+          height:auto;
         }
       }
   

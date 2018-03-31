@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content elastic-header>
-  <div padding background-size id="elastic-header" [ngStyle]="{'background-image': 'url(assets/images/background/7.jpg)'}">
+  <div padding  id="elastic-header">
     <div class="title">
       <h2 parallax-title>{{ name }}</h2>
       <h1 parallax-subtitle>{{ price }}&nbsp;บาท&nbsp;/&nbsp;{{ unit_name }}</h1>
@@ -17,7 +17,7 @@
 
   <ion-grid class="grid" no-padding>
     <ion-row class="row">
-      <ion-col col-12>
+      <ion-col col-4>
         <ion-card padding text-center class="card card-md">
           <div card-content>
             <h2 text-left>ราคา</h2>
@@ -27,10 +27,8 @@
           </div>
         </ion-card>
       </ion-col>
-    </ion-row>
-
-    <ion-row class="row">
-      <ion-col col-12>
+    
+      <ion-col col-4>
         <ion-card padding text-center class="card card-md">
           <div card-content>
             <h2 text-left>จำนวน</h2>
@@ -40,15 +38,15 @@
           </div>
         </ion-card>
       </ion-col>
-    </ion-row>
-
-    <ion-row class="row">
-      <ion-col col-12>
+    
+      <ion-col col-4>
         <ion-card padding text-center class="card card-md">
           <div card-content>
-            <ion-col col-12>
-              <h2 text-center class="total">ยอมรวม&nbsp;{{ price * amount }}&nbsp;บาท</h2>
-            </ion-col>
+            <h2 text-left>ยอมรวม</h2>
+            <div class="amount_input">
+                <h2 text-center class="total">&nbsp;{{ price * amount }}&nbsp;บาท</h2>
+            </div>
+
           </div>
         </ion-card>
       </ion-col>

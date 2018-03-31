@@ -13,8 +13,9 @@ import { PurchaseHistoryPage } from '../purchase-history/purchase-history';
   templateUrl: 'find-seller.html',
 })
 export class FindSellerPage {
-  data: any
+  data: any = {}
   sellers: Sellers[];
+  // sellers = [];
   seller: Sellers
   id: number
   address: string
@@ -34,11 +35,15 @@ export class FindSellerPage {
     localStorage.removeItem('sellerProfile')
     this.FindItemsPage = 'find-items'
     this.animateClass = { 'zoom-in': true };
+    this.data.iconPlay = ''
+    this.data.title = ''
+    this.data.description = ''
+    this.sellers = []
   }
 
   ionViewDidLoad() {
     this.getSellers()
-    this.data = this.findSeller.getDataForLayout1()
+    // this.data = this.findSeller.getDataForLayout1()
   }
 
   getSellers() {
@@ -51,7 +56,15 @@ export class FindSellerPage {
 
     this.findSeller.getSellers().subscribe((res) => {
       loading.dismiss();
-      this.sellers = res
+      let i = 0
+      let that = this
+      let arr = []
+      res.forEach(function (value) {
+        setTimeout(function () {
+          that.sellers.push(value)
+      }, 200 * i++);
+      }); 
+    
     })
   }
 
@@ -70,7 +83,7 @@ export class FindSellerPage {
     }
   }
 
-  toggleGroup(group: any, profile) {
+  toggleGroup(group: any, profile) { 
     group.show = !group.show;
     localStorage.setItem('sellerProfile', JSON.stringify(profile))
     this.seller = profile
@@ -87,17 +100,6 @@ export class FindSellerPage {
     return group.show;
   }
 
-  ngOnChanges(changes: { [propKey: string]: any }) {
-    let that = this;
-    that.data = changes['data'].currentValue;
-    if (that.data && that.data.items) {
-      for (let i = 0; i < that.data.items.length; i++) {
-        setTimeout(function () {
-          that.animateItems.push(that.data.items[i]);
-        }, 200 * i);
-      }
-    }
-  }
 
   goToHistorySeller(seller) {
     this.navCtrl.push('PurchaseHistoryPage', {
