@@ -81,7 +81,8 @@ export class PurchaseHistoryPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PurchaseHistoryPage');
     this.user = this.navParams.get('seller');
-    this.purchaseItem.getPurchaseTransactionsHistoryBySellerId(1)
+    console.log(this.user.id)
+    this.purchaseItem.getPurchaseTransactionsHistoryBySellerId(this.user.id)
     .subscribe((res) => {
       this.purchaseHisLists = res
       console.log(this.purchaseHisLists)

@@ -11,7 +11,9 @@ import { PurchaseHistoryPage } from '../purchase-history/purchase-history';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  name : "search-purchase-history"
+})
 @Component({
   selector: 'page-search-purchase-history',
   templateUrl: 'search-purchase-history.html',

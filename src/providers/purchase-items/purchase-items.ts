@@ -20,7 +20,7 @@ export class PurchaseItemsProvider {
   }
 
   getPurchaseTransactionsHistoryBySellerId(id): any {
-    return this.http.get<PurchaseTransactionHistory[]>(`${API_URL}/purchases-items/history/seller/${id}`, { headers: this.API_HEADERS })
+    return this.http.get<PurchaseTransactionHistory[]>(`${API_URL}/purchase-items/seller-id/${id}`, { headers: this.API_HEADERS })
   }
 
 }

@@ -45,8 +45,8 @@
   </ion-grid>
 
   <ion-fab #fab bottom right [navPush]='PurchaseItems'>
-    <button ion-fab color="twitter">
-      {{ countItems }}
+    <button ion-fab color="twitter"><ion-icon name="cart"></ion-icon>
+      <ion-badge color="google">{{ countItems }}</ion-badge>
     </button>
   </ion-fab>
 </ion-content>

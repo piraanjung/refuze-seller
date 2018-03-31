@@ -112,5 +112,24 @@ page-find-items {
     font-size: 18px;
     font-weight: bold
   }
-
+  .badge-md-google {
+    color: #fff;
+    background-color: #bf360c;
+    text-align: center;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+ion-badge {
+  padding: 3px 8px;
+  text-align: center;
+  display: inline-block;
+  min-width: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: baseline;
+  margin-top: -14px;
+    margin-left: -6px;
+}
 }

@@ -85,7 +85,7 @@ export class FindSellerPage {
     }
   }
 
-  toggleGroup(group: any, profile) { 
+  toggleGroup(group: any, profile) {
     group.show = !group.show;
     localStorage.setItem('sellerProfile', JSON.stringify(profile))
     this.seller = profile
@@ -99,6 +99,7 @@ export class FindSellerPage {
   }
 
   isGroupShown(group: any) {
+    // console.log(group)
     return group.show;
   }
 
