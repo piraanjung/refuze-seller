@@ -39,9 +39,18 @@
                             <img src="assets/images/avatar/23.jpg" />
                           </ion-col>
                           <ion-col col-8>
-                            <h2 header-title>{{ fullname }}</h2>
+                            <!-- <h2 header-title>{{ fullname }}</h2>
                             <h5 header-title>{{ mobile }}</h5>
-                            <h5 header-subtitle>{{ address }}</h5>
+                            <h5 header-subtitle>{{ address }}</h5> -->
+                             <h2 header-title>{{seller.name}} {{seller.last_name}}</h2>
+                            <h5 header-title>{{ seller.mobile }}</h5>
+                            <h5 header-subtitle>
+                              {{ seller.address }}
+                              ต. {{seller.DISTRICT_NAME}}
+                              อ. {{seller.AMPHUR_NAME}}
+                              จ. {{seller.PROVINCE_NAME}}
+                              {{seller.zipcode}}
+                            </h5>
                           </ion-col>
                         </ion-row>
 

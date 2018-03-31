@@ -86,6 +86,7 @@ export class FindSellerPage {
   }
 
   toggleGroup(group: any, profile) {
+    console.log(group)
     group.show = !group.show;
     localStorage.setItem('sellerProfile', JSON.stringify(profile))
     this.seller = profile
