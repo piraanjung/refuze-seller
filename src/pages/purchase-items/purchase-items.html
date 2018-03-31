@@ -14,8 +14,8 @@
       </ion-col>
 
       <ion-col col-5 text-left>
-        <h1 header-title no-margin text-wrap>{{ fullname }}</h1>
-        <h2 header-subtitle no-margin>{{ mobile }}</h2>
+        <h2 header-title no-margin text-wrap>{{ fullname }}</h2>
+        <h3 header-subtitle no-margin>{{ mobile }}</h3>
       </ion-col>
 
       <ion-col col-5 text-right>
@@ -27,22 +27,34 @@
   <ion-grid no-padding>
     <ion-row>
       <ion-col col-12 col-md-12 col-lg-6 *ngFor="let item of items;let i = index">
-        <ion-card padding text-right class="card">
-          <div float-left class="card-img">
+        <ion-card padding  class="card">
+          <!-- <div float-left class="card-img">
             <img images-filter src="./assets/imgs/f_logo.png" />
-          </div>
+          </div> -->
 
-          <ion-icon name="close-circle" icon-del (click)="removeItem(i)" *ngIf="!isHide"> </ion-icon>
           <ion-card-content>
-            <ion-card-title no-padding>
-              <h2 card-title>{{ item.name }}</h2>
-            </ion-card-title>
-            <h3 card-subtitle>{{ item.price }} : {{ item.unit_name }}</h3>
+              <ion-item style="padding-left:0; padding-right:0">
+                <h1 item-start>{{ item.name }} <small>{{ item.price }} บาท :{{ item.unit_name }}</small></h1>
+                <ion-icon item-end text-right name="close-circle" icon-del (click)="removeItem(i)" *ngIf="!isHide"> </ion-icon>
 
-            <p card-body-text>จำนวน : {{ item.amount }} {{ item.unit_name }}</p>
-            <div social>
-              เป็นเงิน {{ item.price * item.amount }} บาท
-            </div>
+              </ion-item>
+         
+
+            <ion-card-title no-padding>
+              <ion-row>
+                
+                <ion-col col-6>
+                    <h2 card-title>จำนวน</h2>
+                    <h3 card-subtitle>{{ item.amount }} {{ item.unit_name }}</h3>
+                </ion-col>
+                <ion-col col-6 text-right>
+                    <h2 card-title>เป็นเงิน</h2>
+                    <h3 card-subtitle>{{ item.price * item.amount }} บาท</h3>
+                </ion-col>
+              </ion-row>
+
+            </ion-card-title>
+
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -57,19 +69,19 @@
       <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>
         <span span-large>{{ total }} </span>
         <h2 header-subtitle>บาท</h2>
-        <button ion-button button-clear-outline round outline (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>
+        <button ion-button color="facebook" block round (click)="createPurchaseProfile()" *ngIf="!isHide" [disabled]="!isDisabled">บันทึกรายการซื้อขยะ</button>
       </ion-col>
     </ion-row>
 
     <ion-row>
       <!-- <ion-col col-4>
-        <button ion-button button-clear-outline round outline *ngIf="isHide">ปริ้นใบเสร็จ</button>
+        <button ion-button color="" round *ngIf="isHide">ปริ้นใบเสร็จ</button>
       </ion-col> -->
       <ion-col col-6>
-        <button ion-button button-clear-outline round outline class="my-col-4" *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>
+        <button ion-button color="twitter" block round class="my-col-4" *ngIf="isHide" [navPush]="FindSellerPage">ค้นหาผู้ขายขยะ</button>
       </ion-col>
       <ion-col col-6>
-        <button ion-button button-clear-outline round outline *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>
+        <button ion-button color="google" block round *ngIf="isHide" [navPush]="MainMenuPage">กลับหน้าหลัก</button>
       </ion-col>
     </ion-row>
 
