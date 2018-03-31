@@ -1,24 +1,27 @@
 <ion-content has-header white-background>
-  <ion-grid *ngIf="data != null">
-    <ion-row wrap padding>
-      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+  <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+    <ion-grid *ngIf="data != null">
+      <ion-row wrap padding>
+        <ion-col col-12>
+          <img [src]="data.logo" *ngIf="data.logo != null">
+          <ion-item no-padding transparent>
+            <ion-label floating>{{ data.username }}</ion-label>
+            <ion-input type="text" name="username" [(ngModel)]="params.username" required></ion-input>
+          </ion-item>
 
-        <img [src]="data.logo" *ngIf="data.logo != null">
+          <ion-item no-padding transparent>
+            <ion-label floating>{{ data.password }}</ion-label>
+            <ion-input type="password" name="passwords" [(ngModel)]="params.passwords" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
 
-        <ion-item no-padding transparent>
-          <ion-label floating>{{data.username}}</ion-label>
-          <ion-input required type="text" [(ngModel)]="login.username"></ion-input>
-        </ion-item>
+      <ion-row>
+        <ion-col col-12 text-centerr>
+          <button type="submit" ion-button block button-clear-outline round outline [disabled]="!myform.valid">{{ data.login }}</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
 
-        <ion-item no-padding transparent>
-          <ion-label floating>{{data.password}}</ion-label>
-          <ion-input required type="password" [(ngModel)]="login.passwords"></ion-input>
-        </ion-item>
-
-        <button ion-button float-left button-clear-outline round outline (click)="onLogin()">{{data.login}}</button>
-        <!-- <button ion-button float-left button-clear-outline round outline>{{data.register}}</button> -->
-      </ion-col>
-
-    </ion-row>
-  </ion-grid>
 </ion-content>

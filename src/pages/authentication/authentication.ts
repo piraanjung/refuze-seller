@@ -9,11 +9,7 @@ import { Buyer } from '../../models/buyer';
   templateUrl: 'authentication.html',
 })
 export class AuthenticationPage {
-  login = {
-    username: '',
-    passwords: ''
-  }
-
+  params: any
   BuyerProfile: Buyer;
   data: any = {
     logo: 'assets/images/logo/login.png',
@@ -29,38 +25,43 @@ export class AuthenticationPage {
     private app: App,
     private authen: AuthenProvider) {
     localStorage.removeItem('buyerProfile')
+    this.params = {
+      name: '',
+      lastname: ''
+    }
   }
 
-  onLogin() {
-    if (this.login.username === '' || this.login.passwords === '') {
-      this.presentAlert('', 'กรุณาใส่ Username และ Password');
-      return;
-    }
+  onSubmit(myform) {
+    console.log(myform.value)
+    // if (this.params.username === '' || this.params.passwords === '') {
+    //   this.presentAlert('', 'กรุณาใส่ Username และ Password');
+    //   return;
+    // }
 
-    let loader = this.loadingCtrl.create({
-      content: 'กำลังดำเนินการ...',
-      spinner: 'crescent',
-      dismissOnPageChange: true,
-    });
+    // let loader = this.loadingCtrl.create({
+    //   content: 'กำลังดำเนินการ...',
+    //   spinner: 'crescent',
+    //   dismissOnPageChange: true,
+    // });
 
-    loader.present();
+    // loader.present();
 
-    this.authen.resAuthen(this.login).subscribe(
-      res => {
-        if (res.logged === true) {
-          this.BuyerProfile = res
-          localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
-          this.app.getRootNav().setRoot('main-menu-purchase-items');
-        } else {
-          this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-          loader.dismiss();
-        }
-      },
-      error => {
-        this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-        loader.dismiss();
-      }
-    );
+    // this.authen.resAuthen(this.params).subscribe(
+    //   res => {
+    //     if (res.logged === true) {
+    //       this.BuyerProfile = res
+    //       localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
+    //       this.app.getRootNav().setRoot('main-menu-purchase-items');
+    //     } else {
+    //       this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+    //       loader.dismiss();
+    //     }
+    //   },
+    //   error => {
+    //     this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+    //     loader.dismiss();
+    //   }
+    // );
   }
 
 
