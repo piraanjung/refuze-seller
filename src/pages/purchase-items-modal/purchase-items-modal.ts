@@ -22,6 +22,13 @@ export class PurchaseItemsModalPage {
   unit_name: string
   balance: number
   _img: string
+  data={
+    price: 'ราคา',
+    amount : 'จำนวน',
+    register : 'บันทึกข้อมูล',
+    logo : 'assets/images/logo/login-2.png'
+  }
+   
 
   constructor(
     private viewCtrl: ViewController,

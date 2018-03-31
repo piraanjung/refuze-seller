@@ -48,4 +48,27 @@ page-purchase-items-modal {
         font-weight: bold !important;
         font-size: 35px !important; 
     }
+    img{
+        max-width: 50px;
+        display: block;
+        text-align: right;
+        float: right;
+    }
+    .form {
+        background: #fff;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow-z2;
+        padding: 15px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    
+        .item-inner {
+          border-bottom-color: theme-colors('mainColors', 'primary') !important;
+          box-shadow: none !important;
+        }
+    }
+    [default-background] {
+        background-image: url("../assets/images/background/29.jpg");
+        @include darkening-blend-mode;
+      }
 }
