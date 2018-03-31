@@ -1,5 +1,18 @@
 
+import { Buyer } from '../models/buyer'
+let buyerProfile: Buyer
+buyerProfile = {
+  id: 0,
+  remember_token: ''
+}
+
+if (localStorage.getItem('buyerProfile') != null) {
+  let buyerLocalStorage: Buyer = JSON.parse(localStorage.getItem('buyerProfile'));
+  buyerProfile.remember_token = buyerLocalStorage.remember_token
+}
+
 export const API_HEADERS = {
+  Authorization: buyerProfile.remember_token
   // 'Authorization': 'SXZHRlpESlR1dGZEU09kVFJoWkVpMU1HMzV1UlZJakU1NkZoeTlFNw=='
 }
 
