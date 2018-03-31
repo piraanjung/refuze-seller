@@ -15,12 +15,14 @@ page-purchase-history {
           [span-large] {
             display: block;
             margin-bottom: 20px;
+            font-size: 24px !important;
           }
         }
     
         [header-title] {
           margin: 0;
-          text-transform: uppercase;
+          font-size: 18px;
+          font-weight: bold
         }
     
         [header-subtitle] {
@@ -111,8 +113,10 @@ page-purchase-history {
             overflow: hidden;
         
             &.active {
-              height: 550px !important;
-              background: #00bee4 !important
+              height: auto !important;
+              background: #00bee4 !important;
+              padding-top: 6px;
+              padding-bottom: 6px;
             }
 
             .label-md {

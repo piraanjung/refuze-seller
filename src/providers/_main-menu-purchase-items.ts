@@ -10,7 +10,7 @@ export const MAIN_MENU_PURCHASE_ITEMS = {
       "image": "assets/images/background/9.jpg",
       "title": "ประวัติรับซื้อขยะ",
       "title_button" :"ดูประวัติรับซื้อขยะ",
-      "link": '#'
+      "link": 'main-menu-purchase-items'
     },
   ]
 }
