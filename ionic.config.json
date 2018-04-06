@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "refuze-app",
   "app_id": "3f857611",
+=======
+  "name": "refuze-seller",
+  "app_id": "c562b759",
+>>>>>>> 1e2f290fa89dc76314c37742aaa0a2b5c3c0cf01
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
