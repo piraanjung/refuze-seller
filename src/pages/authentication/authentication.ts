@@ -1,19 +1,8 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { IonicPage, LoadingController, AlertController, App } from 'ionic-angular';
 import { AuthenProvider } from '../../providers/authen/authen';
 import { Buyer } from '../../models/buyer';
 import { NgForm } from '@angular/forms';
-=======
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the AuthenticationPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
->>>>>>> 1e2f290fa89dc76314c37742aaa0a2b5c3c0cf01
 
 @IonicPage()
 @Component({
@@ -21,7 +10,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'authentication.html',
 })
 export class AuthenticationPage {
-<<<<<<< HEAD
   params: any
   BuyerProfile: Buyer;
   data: any = {
@@ -58,7 +46,7 @@ export class AuthenticationPage {
         if (res.logged === true) {
           this.BuyerProfile = res
           localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
-          this.app.getRootNav().setRoot('main-seller-menu');
+          this.app.getRootNav().setRoot('main-menu-purchase-items');
         } else {
           this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
           this.params.passwords = ''
@@ -79,14 +67,6 @@ export class AuthenticationPage {
       buttons: ['ปิด']
     });
     alert.present();
-=======
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AuthenticationPage');
->>>>>>> 1e2f290fa89dc76314c37742aaa0a2b5c3c0cf01
   }
 
 }
