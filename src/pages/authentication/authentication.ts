@@ -46,7 +46,7 @@ export class AuthenticationPage {
         if (res.logged === true) {
           this.BuyerProfile = res
           localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
-          this.app.getRootNav().setRoot('main-menu-purchase-items');
+          this.app.getRootNav().setRoot('main-seller-menu');
         } else {
           this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
           this.params.passwords = ''
