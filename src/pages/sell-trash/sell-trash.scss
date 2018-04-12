@@ -1,3 +1,25 @@
 page-sell-trash {
+    $text-font-size : 15px;
+    [qrcode]{
+        margin-top: 2%;
+    }
 
+    [header-title] {
+        margin: 0;
+        text-align: center;
+        font-size: 18px !important
+      }
+  
+      [header-subtitle] {
+        color: theme-colors('mainColors', 'secondary');
+        font-size: $text-font-size;
+        text-align: center;
+        font-weight: 300;
+        margin: 0;
+        margin-bottom: 10px !important
+      }
+
+      i{
+          font-size: 90px !important
+      }
 }
