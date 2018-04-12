@@ -39,25 +39,25 @@ export class AuthenticationPage {
       dismissOnPageChange: true,
     });
 
-    loader.present();
-
-    this.authen.resAuthen(this.params).subscribe(
-      res => {
-        if (res.logged === true) {
-          this.BuyerProfile = res
-          localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
-          this.app.getRootNav().setRoot('main-menu-purchase-items');
-        } else {
-          this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-          this.params.passwords = ''
-          loader.dismiss();
-        }
-      },
-      error => {
-        this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-        loader.dismiss();
-      }
-    );
+    // loader.present();
+    localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
+    // this.authen.resAuthen(this.params).subscribe(
+    //   res => {
+    //     if (res.logged === true) {
+    //       this.BuyerProfile = res
+    //       localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
+          this.app.getRootNav().setRoot('main-menu-seller');
+    //     } else {
+    //       this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+    //       this.params.passwords = ''
+    //       loader.dismiss();
+    //     }
+    //   },
+    //   error => {
+    //     this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+    //     loader.dismiss();
+    //   }
+    // );
   }
 
   presentAlert(title, subtitle) {
