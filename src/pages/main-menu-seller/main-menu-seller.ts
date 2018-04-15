@@ -65,7 +65,7 @@ export class MainMenuSellerPage {
         "buttonText": "PROCEED",
         "headerImage": "assets/images/background/17.jpg",
         "title": "ค้นหาผู้รับซื้อขยะ",
-        "navCtrl" : "",
+        "navCtrl" : "find-buyers",
       },
       {
         "title_description": "Order No. 1",
