@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {  } from '../shopping-cart-menu/shopping-cart-menu';
 
 /**
  * Generated class for the ShoppingCartMainPage page.
@@ -43,7 +44,8 @@ export class ShoppingCartMainPage {
   }
 
   goToShoppingCart(){
-    this.navCtrl.push("shopping-cart");
+    // this.navCtrl.push("shopping-cart");
+    this.navCtrl.setRoot('shopping-cart-menu')
   }
 
 }

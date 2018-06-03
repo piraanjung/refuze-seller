@@ -5,13 +5,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { CartPage } from '../pages/cart/cart';
 import { IonicStorageModule } from '@ionic/storage';
-
+// import { ShoppingCartMenuPage } from '../pages/shopping-cart-menu/shopping-cart-menu';
 import { MyApp } from './app.component';
 
 @NgModule({
   declarations: [
     MyApp,
-    CartPage
+    CartPage,
+    // ShoppingCartMenuPage
   ],
   imports: [
     BrowserModule,
@@ -21,7 +22,8 @@ import { MyApp } from './app.component';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    CartPage
+    CartPage,
+    // ShoppingCartMenuPage
   ],
   providers: [
     StatusBar,

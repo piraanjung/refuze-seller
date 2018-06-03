@@ -11,7 +11,9 @@ import * as WC from 'woocommerce-api';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  name : 'shopping-cart-menu'
+})
 @Component({
   selector: 'page-shopping-cart-menu',
   templateUrl: 'shopping-cart-menu.html',
@@ -24,7 +26,7 @@ export class ShoppingCartMenuPage {
   @ViewChild('content') chlidNavCtrl : NavController;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.homePage = 'HomePage';
+    this.homePage = 'shopping-cart';
     this.categories =[]
 
     this.Woocommerce = WC({
