@@ -9,5 +9,8 @@ import { ShoppingCartProductByCategoryPage } from './shopping-cart-product-by-ca
   imports: [
     IonicPageModule.forChild(ShoppingCartProductByCategoryPage),
   ],
+  exports: [
+    ShoppingCartProductByCategoryPage
+]
 })
 export class ShoppingCartProductByCategoryPageModule {}

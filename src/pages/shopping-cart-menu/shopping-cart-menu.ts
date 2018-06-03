@@ -65,7 +65,7 @@ export class ShoppingCartMenuPage {
   }
 
   openCategoryPage(category){
-    this.chlidNavCtrl.setRoot('ProductsByCategoryPage', {
+    this.chlidNavCtrl.setRoot('shopping-cart-product-by-category', {
       'category' : category
     })
   }
