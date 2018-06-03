@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { Storage } from '@ionic/storage';
 // import { HomePage } from '../home/home';
 import * as WC from 'woocommerce-api';
 
@@ -25,7 +25,7 @@ export class ShoppingCartMenuPage {
   categories : any[];
   @ViewChild('content') chlidNavCtrl : NavController;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage:Storage) {
     this.homePage = 'shopping-cart';
     this.categories =[]
 
@@ -68,6 +68,10 @@ export class ShoppingCartMenuPage {
     this.chlidNavCtrl.setRoot('shopping-cart-product-by-category', {
       'category' : category
     })
+  }
+
+  logOutShopingCart(){
+    this.navCtrl.setRoot('main-menu-seller');
   }
 
   ionViewDidLoad() {

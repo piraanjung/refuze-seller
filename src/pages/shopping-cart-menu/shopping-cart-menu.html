@@ -8,7 +8,7 @@
   <ion-content class="card-background-page">
     <ion-card>
       <img src="./assets/images/eCommerce.png"/>
-      <div class="card-title">WooIonic</div>
+      <div class="card-title">Shoping Cart</div>
       <div class="card-subtitle">Keep Shoping</div>
     </ion-card>
     <ion-list>
@@ -16,6 +16,11 @@
         <ion-icon [name]="category.icon" item-left large></ion-icon>
         <h2>{{ category.name }}</h2>
         <p>{{ category.description }}</p>
+      </ion-item>
+      <ion-item (click)="logOutShopingCart()">
+        <ion-icon name="exit" item-left large></ion-icon>
+        <h2>ออกจาก Shoping Cart</h2>
+        <p>ไปหน้าหลักผู้ขายขยะ</p>
       </ion-item>
     </ion-list>
   </ion-content>

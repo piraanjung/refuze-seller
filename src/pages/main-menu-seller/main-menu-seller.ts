@@ -40,7 +40,7 @@ export class MainMenuSellerPage {
         "description": "Will be shipped: 15.5.2016.",
         "buttonText": "PROCEED",
         "headerImage": "assets/images/background/17.jpg",
-        "title": "Shopping Cart",
+        "title": "Shoping Cart",
         "navCtrl" : "shopping-cart-main",
       },
       {
