@@ -9,5 +9,6 @@ import { ShoppingCartPage } from './shopping-cart';
   imports: [
     IonicPageModule.forChild(ShoppingCartPage),
   ],
+  
 })
 export class ShoppingCartPageModule {}

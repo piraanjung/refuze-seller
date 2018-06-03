@@ -1,12 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, Slides, ToastController } from 'ionic-angular';
 import * as WC from 'Woocommerce-api';
-/**
- * Generated class for the ShoppingCartPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage({
   name : "shopping-cart"
@@ -84,7 +79,7 @@ export class ShoppingCartPage {
 
   onSearch(event){
     if(this.searchQuery.length > 0){
-      this.navCtrl.push('SearchPage', {
+      this.navCtrl.push('search', {
         "searchQuery": this.searchQuery
       })
     }
