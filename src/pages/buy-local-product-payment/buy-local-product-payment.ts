@@ -23,6 +23,8 @@ export class BuyLocalProductPaymentPage {
     phone: '0984342341',
     addr : 'ต.ในเมือง อ.เมือง จ.อุบลราชะานี'
   };
+  transferAmount:number =0.0
+
   constructor(public navCtrl: NavController, public navParams: NavParams, 
       public alertCtrl: AlertController) {
     // this.user = this.navParams.get('localUser');
@@ -35,41 +37,64 @@ export class BuyLocalProductPaymentPage {
   }
 
   confirmPayment(){
-    let alert = this.alertCtrl.create({
-      title: 'รหัส PIN',
-      inputs: [
-        {
-          name: 'pincode',
-        },
-      ],
-      buttons: [
-        {
-          text: 'ยืนยัน',
-          handler: data => {
-            // if (User.isValid(data.username, data.password)) {
-            if(data.pincode=="1234"){
-              console.log(data.pincode)
-            } else {
-              // invalid login
-              return false;
+    if(this.transferAmount <=0){
+      let alert = this.alertCtrl.create({
+        title: 'กรุณาใส่จำนวนเงินที่ต้องการโอน',
+        // subTitle: '10% of battery remaining',
+        buttons: ['ตกลง']
+      });
+      alert.present();
+      this.transferAmount =0
+    }else{
+      let alert = this.alertCtrl.create({
+        title: 'รหัส PIN',
+        inputs: [
+          {
+            name: 'pincode',
+          },
+        ],
+        buttons: [
+          {
+            text: 'ยืนยัน',
+            handler: data => {
+              // if (User.isValid(data.username, data.password)) {
+              if(data.pincode=="1234"){
+                //1. ทำการ update ข้อมูลของผู้ขาย เพิ่มจำนวนเงินที่โอนจากผู้ซื้อ
+                //2. ทำการ update  ข้อมูลผู้ซื้อสินค้า ลดจำนวนเงิน
+                //3. ทำการส่ง message ไปยังผู้ขายสินค้าว่าได้มีการโอนเงินเข้าบัญชีจากผู้ซื้อสินค้ามายังผู้ขายสินค้าแล้ว
+                //4. ไปหน้าแสดงผลการซื้อสินค้าของผู้ซื้อสินค้า
+                this.navCtrl.push('buy-local-product-result',{
+                  'localProductSeller' : this.user,
+                  'transferAmount' : this.transferAmount
+      })
+              } else {
+                // invalid login
+                return false;
+              }
             }
           }
-        }
-      ]
-    });
-    alert.present();
+        ]
+      });
+      alert.present();
+    }
+    
   }
 
-  onEvent(event:string, item:any) {//ITEM [EVENT OR SELECTED ITEM]
-    //1. ทำการ update ข้อมูลของผู้ขาย เพิ่มจำนวนเงินที่โอนจากผู้ซื้อ
-    //2. ทำการ update  ข้อมูลผู้ซื้อสินค้า ลดจำนวนเงิน
-    //3. ทำการส่ง message ไปยังผู้ขายสินค้าว่าได้มีการโอนเงินเข้าบัญชีจากผู้ซื้อสินค้ามายังผู้ขายสินค้าแล้ว
-    //4. ไปหน้าแสดงผลการซื้อสินค้าของผู้ซื้อสินค้า
-    this.navCtrl.push('buy-local-product-result',{
-      'localProductSeller' : this.user,
-      'transferAmount' : item
-    })
-    console.log(item);
+  onChange(item:any) {//ITEM [EVENT OR SELECTED ITEM]
+    if(this.transferAmount>240){
+        let alert = this.alertCtrl.create({
+          title: 'ยอดเงินของคุณไม่พอสำหรับการโอน',
+          // subTitle: '10% of battery remaining',
+          buttons: ['ตกลง']
+        });
+        alert.present();
+        this.transferAmount = 0
+    }
+    console.log(this.transferAmount);
+  }
+
+  backToScanQrCode(){
+    this.navCtrl.push('main-menu-seller')
   }
 
 }

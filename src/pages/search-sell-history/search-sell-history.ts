@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-an
 import { Sellers } from '../../models/sellers';
 import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
 import { ProfileSellerPage } from '../profile-seller/profile-seller';
-import { PurchaseHistoryPage } from '../purchase-history/purchase-history';
+import { SellHistoryPage } from '../sell-history/sell-history';
 /**
  * Generated class for the SearchPurchaseHistoryPage page.
  *
@@ -12,13 +12,13 @@ import { PurchaseHistoryPage } from '../purchase-history/purchase-history';
  */
 
 @IonicPage({
-  name : "search-purchase-history"
+  name : "search-sell-history"
 })
 @Component({
-  selector: 'page-search-purchase-history',
-  templateUrl: 'search-purchase-history.html',
+  selector: 'page-search-sell-history',
+  templateUrl: 'search-sell-history.html',
 })
-export class SearchPurchaseHistoryPage {
+export class SearchSellHistoryPage {
   data: any = {}
   sellers: Sellers[];
   // sellers = [];

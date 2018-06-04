@@ -66,8 +66,8 @@
             </ion-icon>
             <!---Input field username-->
             <ion-label floating>ใส่จำนวนเงินที่ต้องการโอน</ion-label>
-            <ion-input required type="number" [(ngModel)]="transfer_amount" 
-            (ionInput)="onEvent('onTextChange', $event)"></ion-input>
+            <ion-input required type="number" [(ngModel)]="transferAmount" 
+            (keyup)="onChange()"></ion-input>
           </ion-item>
         </div>
       </ion-col>

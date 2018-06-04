@@ -8,12 +8,14 @@ import { PurchaseItemsProvider } from "../../providers/purchase-items/purchase-i
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+    name: 'sell-history'
+})
 @Component({
   selector: 'page-purchase-history',
   templateUrl: 'purchase-history.html',
 })
-export class PurchaseHistoryPage {
+export class SellHistoryPage {
 
   user : any
   purchaseHisLists : any
