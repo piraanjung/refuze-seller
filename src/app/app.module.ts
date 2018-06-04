@@ -5,6 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { CartPage } from '../pages/cart/cart';
 import { IonicStorageModule } from '@ionic/storage';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+
 // import { ShoppingCartMenuPage } from '../pages/shopping-cart-menu/shopping-cart-menu';
 import { MyApp } from './app.component';
 
@@ -29,6 +31,7 @@ import { MyApp } from './app.component';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    BarcodeScanner
     
   ]
 })

@@ -51,14 +51,14 @@ export class MainMenuSellerPage {
         "title": "ราคากลางขยะ",
         "navCtrl" : "",
       },
-      // {
-      //   "title_description": "Order No. 1",
-      //   "description": "Will be shipped: 15.5.2016.",
-      //   "buttonText": "PROCEED",
-      //   "headerImage": "assets/images/background/17.jpg",
-      //   "title": "ตลาดประชารัฐ",
-      //   "navCtrl" : "",
-      // },
+      {
+        "title_description": "Order No. 1",
+        "description": "Will be shipped: 15.5.2016.",
+        "buttonText": "PROCEED",
+        "headerImage": "assets/images/background/17.jpg",
+        "title": "ตลาดประชารัฐ",
+        "navCtrl" : "buy-local-product",
+      },
       // {
       //   "title_description": "Order No. 1",
       //   "description": "Will be shipped: 15.5.2016.",
