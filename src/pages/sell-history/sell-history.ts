@@ -1,24 +1,18 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PurchaseItemsProvider } from "../../providers/purchase-items/purchase-items"
-/**
- * Generated class for the PurchaseHistoryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage({
-    name: 'sell-history'
+  name : 'sell-history'
 })
 @Component({
-  selector: 'page-purchase-history',
-  templateUrl: 'purchase-history.html',
+  selector: 'page-sell-history',
+  templateUrl: 'sell-history.html',
 })
 export class SellHistoryPage {
-
   user : any
-  purchaseHisLists : any
+  sellHisLists : any
   data :any = {
     "items": [
       {
@@ -86,8 +80,8 @@ export class SellHistoryPage {
     console.log(this.user.id)
     this.purchaseItem.getPurchaseTransactionsHistoryBySellerId(this.user.id)
     .subscribe((res) => {
-      this.purchaseHisLists = res
-      console.log(this.purchaseHisLists)
+      this.sellHisLists = res
+      console.log(this.sellHisLists)
     })
   }
 
@@ -100,3 +94,4 @@ export class SellHistoryPage {
   }
 
 }
+

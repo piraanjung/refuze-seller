@@ -81,7 +81,7 @@ export class MainMenuSellerPage {
         "buttonText": "PROCEED",
         "headerImage": "assets/images/background/17.jpg",
         "title": "ประวัติการขายขยะ",
-        "navCtrl" : "",
+        "navCtrl" : "sell-history",
       }
     ]
   
