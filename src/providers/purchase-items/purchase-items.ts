@@ -9,9 +9,9 @@ export class PurchaseItemsProvider {
 
   API_HEADERS: any
   constructor(private http: HttpClient) {
-    let buyerProfile: Buyer = JSON.parse(localStorage.getItem('buyerProfile'))
+    let sellerProfile: Buyer = JSON.parse(localStorage.getItem('sellerProfile'))
     this.API_HEADERS = {
-      token: buyerProfile.remember_token
+      token: sellerProfile.remember_token
     }
   }
 

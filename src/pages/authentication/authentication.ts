@@ -11,7 +11,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AuthenticationPage {
   params: any
-  BuyerProfile: Buyer;
+  SellerProfile: Buyer;
   data: any = {
     logo: 'assets/images/logo/login.png',
     username: 'Username',
@@ -25,7 +25,7 @@ export class AuthenticationPage {
     private loadingCtrl: LoadingController,
     private app: App,
     private authen: AuthenProvider) {
-    localStorage.removeItem('buyerProfile')
+    localStorage.removeItem('sellerProfile')
     this.params = {
       username: '',
       passwords: ''
@@ -39,25 +39,26 @@ export class AuthenticationPage {
       dismissOnPageChange: true,
     });
 
-    // loader.present();
-    localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
-    // this.authen.resAuthen(this.params).subscribe(
-    //   res => {
-    //     if (res.logged === true) {
-    //       this.BuyerProfile = res
-    //       localStorage.setItem('buyerProfile', JSON.stringify(this.BuyerProfile))
+    loader.present();
+    localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile))
+    this.authen.resAuthen(this.params).subscribe(
+      res => {
+        if (res.logged === true) {
+          this.SellerProfile = res
+          localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile))
+          console.log(this.SellerProfile)
           this.app.getRootNav().setRoot('main-menu-seller');
-    //     } else {
-    //       this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-    //       this.params.passwords = ''
-    //       loader.dismiss();
-    //     }
-    //   },
-    //   error => {
-    //     this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-    //     loader.dismiss();
-    //   }
-    // );
+        } else {
+          this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+          this.params.passwords = ''
+          loader.dismiss();
+        }
+      },
+      error => {
+        this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+        loader.dismiss();
+      }
+    );
   }
 
   presentAlert(title, subtitle) {

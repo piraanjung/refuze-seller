@@ -9,14 +9,18 @@ export class FindSellersProvider {
 
   API_HEADERS: any
   constructor(private http: HttpClient) {
-    let buyerProfile: Buyer = JSON.parse(localStorage.getItem('buyerProfile'))
+    let sellerProfile: Buyer = JSON.parse(localStorage.getItem('sellerProfile'))
     this.API_HEADERS = {
-      token: buyerProfile.remember_token
+      // token: buyerProfile.remember_token
     }
   }
 
   getSellers(): any {
     return this.http.get<Sellers[]>(`${API_URL}/sellers`, { headers: this.API_HEADERS })
+  }
+
+  getSeller(id_card) :any{
+    return this.http.get<Sellers[]>(`${API_URL}/users/find-by-id-card/`+ id_card, { headers: this.API_HEADERS })
   }
 
 }

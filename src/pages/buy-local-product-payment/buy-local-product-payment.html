@@ -23,21 +23,20 @@
         </div>
       </ion-col>
     </ion-row>
-    <ion-row no-padding>
-      <ion-col col-12>
-        <ion-list no-margin>
-          <ion-list-header header-bcg no-padding no-lines>
-            <ion-icon white icon-large item-start>
-              <i class="icon icon-play-circle-outline"></i>
-            </ion-icon>
-            <h1 header-title style="text-align: right">โอนเงินให้ :</h1>
-            <h2>คุณ {{user.name}}</h2>
-            <h3>รหัส : {{user.phone}}</h3>
+  
+        <ion-list>
+          <ion-list-header header-bcg  no-lines>
+             <ion-item>
+              <ion-avatar item-start>
+                <img src="{{localBuyer.image_url}}">
+              </ion-avatar>
+              <h2 item-title>{{localBuyer.name}}  {{localBuyer.last_name}}</h2>
+              <h3 item-subtitle>{{localBuyer.mobile}}</h3>
+              <span item-end span-small>ผู้ขายสินค้า</span>
+            </ion-item>
           </ion-list-header>
         </ion-list>
-      </ion-col>
-    </ion-row>
-  
+
   
     <!--End logo-->
     <!--Form-->

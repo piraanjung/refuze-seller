@@ -3,6 +3,7 @@ import { IonicPageModule } from 'ionic-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { SellHistoryPage } from './sell-history';
 import { PurchaseItemsProvider } from "../../providers/purchase-items/purchase-items"
+import { FindSellersProvider } from '../../providers/find-sellers/find-sellers'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PurchaseItemsProvider } from "../../providers/purchase-items/purchase-i
     IonicPageModule.forChild(SellHistoryPage),
   ],
   providers:[
-    PurchaseItemsProvider
+    PurchaseItemsProvider,
+    FindSellersProvider
   ]
 })
 export class SellHistoryPageModule {}

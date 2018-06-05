@@ -3,7 +3,6 @@ import { IonicPage, NavController, LoadingController } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
 import { ProfileSellerPage } from '../profile-seller/profile-seller';
-import { PurchaseHistoryPage } from '../purchase-history/purchase-history';
 
 @IonicPage({
   name: 'find-seller'
@@ -106,8 +105,8 @@ export class FindSellerPage {
 
 
   goToHistorySeller(seller) {
-    this.navCtrl.push('PurchaseHistoryPage', {
-      seller: seller
+    this.navCtrl.push('sell-history', {
+      // seller: seller
     })
   }
 

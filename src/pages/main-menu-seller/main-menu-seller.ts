@@ -49,7 +49,7 @@ export class MainMenuSellerPage {
         "buttonText": "PROCEED",
         "headerImage": "assets/images/background/17.jpg",
         "title": "ราคากลางขยะ",
-        "navCtrl" : "",
+        "navCtrl" : "find-items",
       },
       {
         "title_description": "Order No. 1",

@@ -1,12 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
-/**
- * Generated class for the BuyLocalProductPaymentPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage({
   name : 'buy-local-product-payment'
@@ -18,18 +12,14 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 export class BuyLocalProductPaymentPage {
   @Input() events: any;
 
-  user : {}={
-    name:'การค้า ดีงาน',
-    phone: '0984342341',
-    addr : 'ต.ในเมือง อ.เมือง จ.อุบลราชะานี'
-  };
+  localBuyer : any;
   transferAmount:number =0.0
 
   constructor(public navCtrl: NavController, public navParams: NavParams, 
       public alertCtrl: AlertController) {
-    // this.user = this.navParams.get('localUser');
+    this.localBuyer = this.navParams.get('localBuyer');
 
-        console.log(this.user)
+        console.log(this.localBuyer)
   }
 
   ionViewDidLoad() {
@@ -64,7 +54,7 @@ export class BuyLocalProductPaymentPage {
                 //3. ทำการส่ง message ไปยังผู้ขายสินค้าว่าได้มีการโอนเงินเข้าบัญชีจากผู้ซื้อสินค้ามายังผู้ขายสินค้าแล้ว
                 //4. ไปหน้าแสดงผลการซื้อสินค้าของผู้ซื้อสินค้า
                 this.navCtrl.push('buy-local-product-result',{
-                  'localProductSeller' : this.user,
+                  'localProductSeller' : this.localBuyer,
                   'transferAmount' : this.transferAmount
       })
               } else {

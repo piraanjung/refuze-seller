@@ -17,7 +17,9 @@ export class FindItemsPage {
   countItems: number
   PurchaseItems: string
   seller: Sellers
-  data: any
+  data: any;
+  _class:any;
+
 
   constructor(
     private modalCtrl: ModalController,
@@ -42,6 +44,8 @@ export class FindItemsPage {
     this.getFavorite()
     this.items = JSON.parse(localStorage.getItem('purchaseItems')) || []
     this.countItems = Object.keys(this.items).length
+    this.seller = JSON.parse(localStorage.getItem('sellerProfile'))
+    console.log(this.seller)
   }
 
   getFavorite() {
@@ -83,6 +87,23 @@ export class FindItemsPage {
     });
 
     profileModal.present();
+  }
+
+  _items(){
+    for(let i =0; i < this.items.length; i++){
+      this._class = i%2 == 0 ? "odd" : "even" 
+    }
+  }
+
+  testdate(date){
+    let curmonth = new Date().getMonth() < 10 ? "0"+new Date().getMonth() : new Date().getMonth()
+    let curyear = new Date().getFullYear()+543
+    let curhour = new Date().getHours();
+    let curminute = new Date().getMinutes() < 10 ? "0"+new Date().getMinutes() : new Date().getMinutes();
+    let cursecond = new Date().getSeconds()
+    let cur_date = new Date().getDate()+"/"+curmonth+"/"+curyear+" "+curhour+":"+curminute+":"+cursecond;
+
+    return date == cur_date ? true : false;
   }
 
 }

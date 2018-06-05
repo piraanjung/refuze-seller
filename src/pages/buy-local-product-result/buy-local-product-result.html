@@ -22,7 +22,21 @@
       </ion-row>
       <ion-row no-padding>
         <ion-col col-12>
-          <ion-list no-margin>
+            <ion-list>
+                <ion-list-header header-bcg  no-lines>
+                   <ion-item>
+                    <ion-avatar item-start>
+                      <img [src]="localProductSeller.image_url">
+                    </ion-avatar>
+                    <h2 item-title>{{localProductSeller.name}}  {{localProductSeller.last_name}}</h2>
+                    <h3 item-subtitle>{{localProductSeller.mobile}}</h3>
+                    <h3 item-subtitle>จำนวน : {{transferAmount}} บาท</h3>
+                    <span item-end span-small>ผู้ขายสินค้า</span>
+                  </ion-item>
+                </ion-list-header>
+              </ion-list>
+      
+          <!-- <ion-list no-margin>
             <ion-list-header header-bcg no-padding no-lines>
               <ion-icon white icon-large item-start>
                 <i class="icon icon-play-circle-outline"></i>
@@ -32,7 +46,7 @@
               <h3>รหัส : {{localProductSeller.phone}}</h3>
               <h3>จำนวน : {{transferAmount}} บาท</h3>
             </ion-list-header>
-          </ion-list>
+          </ion-list> -->
         </ion-col>
       </ion-row>
     

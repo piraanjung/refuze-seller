@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 import { Storage } from '@ionic/storage';
+import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
 
-/**
- * Generated class for the BuyLocalProductPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage({
   name : "buy-local-product"
@@ -21,11 +16,14 @@ export class BuyLocalProductPage {
 
   data = {}
   option: BarcodeScannerOptions;
+  localBuyer:any;
+  has_user :boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private barcodeScanner: BarcodeScanner,
-    private storage: Storage) {
-  }
+    private storage: Storage, public alertCtrl : AlertController,
+    private findSeller: FindSellersProvider,
+  ) {  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BuyLocalProductPage');
@@ -36,20 +34,10 @@ export class BuyLocalProductPage {
     //   preferFrontCamera: false,
     //   prompt: "สแกน QR CODE"
     // }
-   // this.barcodeScanner.scan(this.option).then((barcodeData) => {
-      // this.data = barcodeData.text
-      // this.search_user(this.data)
-      if(1==1){
-        let localUser ={
-            name:'การค้า ดีงาน',
-            phone: '0984342341',
-            addr : 'ต.ในเมือง อ.เมือง จ.อุบลราชะานี'
-          }
-
-        this.navCtrl.push('buy-local-product-payment',{
-          'localUser' : localUser
-        })
-      }
+    // this.barcodeScanner.scan(this.option).then((barcodeData) => {
+        // this.data = barcodeData.text
+        this.search_user(this.data)
+        
     // }, (err) => {
     //   // An error occurred
     //   console.log(err)
@@ -57,5 +45,36 @@ export class BuyLocalProductPage {
 
   }
 
+  search_user(sellercode) {
+    sellercode = '34593724345125'
+    this.findSeller.getSeller(sellercode).subscribe(res => {
 
+    this.localBuyer = res
+    console.log(this.localBuyer)
+    // if(sellercode != '122222'){
+      if (JSON.stringify(this.localBuyer) == '{}') {
+        this.presentAlert("ผลการค้นหา","ไม่พบข้อมูล");
+        this.has_user = false
+        this.Scanqrcode()
+      } else {
+        // localStorage.setItem('sellerProfile', JSON.stringify( this.seller))
+        this.has_user = true
+        this.navCtrl.push('buy-local-product-payment',{
+          'localBuyer' : this.localBuyer
+        })
+      }
+    }, (error: any) => {
+      this.presentAlert("ผลการค้นหา","ไม่พบข้อมูล");
+      this.has_user = false
+    })
+  }
+
+  presentAlert(title, subtitle) {
+    let alert = this.alertCtrl.create({
+      title: title,
+      subTitle: subtitle,
+      buttons: ['ปิด']
+    });
+    alert.present();
+  }
 }

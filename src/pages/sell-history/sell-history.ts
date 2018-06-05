@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PurchaseItemsProvider } from "../../providers/purchase-items/purchase-items"
-
+import { FindSellersProvider } from '../../providers/find-sellers/find-sellers'
 
 @IonicPage({
   name : 'sell-history'
@@ -70,15 +70,21 @@ export class SellHistoryPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    private purchaseItem : PurchaseItemsProvider
+    private purchaseItem : PurchaseItemsProvider,
+    private findSeller : FindSellersProvider
   ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PurchaseHistoryPage');
-    this.user = this.navParams.get('seller');
-    console.log(this.user.id)
-    this.purchaseItem.getPurchaseTransactionsHistoryBySellerId(this.user.id)
+    // this.user = this.navParams.get('seller');
+    this.findSeller.getSeller(34593724345123).subscribe((res)=>{
+        this.user = res
+        console.log(this.user)
+    })
+    // this.user.id =1
+    // console.log(this.user.id)
+    this.purchaseItem.getPurchaseTransactionsHistoryBySellerId(1)
     .subscribe((res) => {
       this.sellHisLists = res
       console.log(this.sellHisLists)
