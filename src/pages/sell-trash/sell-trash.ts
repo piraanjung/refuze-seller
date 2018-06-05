@@ -29,6 +29,7 @@ export class SellTrashPage {
     }
   ]
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.generate_qrcode()
   }
 
   ionViewDidLoad() {

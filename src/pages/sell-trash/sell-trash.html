@@ -14,16 +14,17 @@
 
 
 <ion-content padding>
-        <h2 header-title>สร้าง QR CODE ขายขยะ</h2>
+        <!-- <h2 header-title>สร้าง QR CODE ขายขยะ</h2> -->
+        <h2 header-title>นำ QR CODE สแกนกับเครื่องผู้รับซื้อขยะ</h2>
         <ion-card *ngIf="createCode" qrcode>
           <ngx-qrcode [qrc-value]="createCode" (click)="gotoAfterMatching()"></ngx-qrcode>
           <!-- <ion-card-content>{{ createCode }}</ion-card-content> -->
-          <h5 header-subtitle>นำ QR CODE สแกนกับเครื่องผู้รับซื้อขยะ</h5>
+          <!-- <h5 header-subtitle>นำ QR CODE สแกนกับเครื่องผู้รับซื้อขยะ</h5> -->
         </ion-card>
         
 
 </ion-content>
-<ion-footer style="text-align:center; border-top:none">
-    <!-- <img src="./assets/imgs/qrcodBtn.png" (click)="generate_qrcode()"> -->
+<!-- <ion-footer style="text-align:center; border-top:none">
+    <!-- <img src="./assets/imgs/qrcodBtn.png" (click)="generate_qrcode()"> 
     <i class="icon icon-qrcode"  (click)="generate_qrcode()"></i>  
-  </ion-footer>
+  </ion-footer> -->

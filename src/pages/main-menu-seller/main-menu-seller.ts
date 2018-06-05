@@ -48,17 +48,18 @@ export class MainMenuSellerPage {
         "description": "Will be shipped: 15.5.2016.",
         "buttonText": "PROCEED",
         "headerImage": "assets/images/background/17.jpg",
-        "title": "ราคากลางขยะ",
-        "navCtrl" : "find-items",
+        "title": "ซื้อสินค้าในโรงเรียน",
+        "navCtrl" : "buy-local-product",
       },
       {
         "title_description": "Order No. 1",
         "description": "Will be shipped: 15.5.2016.",
         "buttonText": "PROCEED",
         "headerImage": "assets/images/background/17.jpg",
-        "title": "ตลาดประชารัฐ",
-        "navCtrl" : "buy-local-product",
+        "title": "ราคากลางขยะ",
+        "navCtrl" : "find-items",
       },
+      
       // {
       //   "title_description": "Order No. 1",
       //   "description": "Will be shipped: 15.5.2016.",

@@ -78,13 +78,9 @@ export class SellHistoryPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PurchaseHistoryPage');
     // this.user = this.navParams.get('seller');
-    this.findSeller.getSeller(34593724345123).subscribe((res)=>{
-        this.user = res
-        console.log(this.user)
-    })
-    // this.user.id =1
-    // console.log(this.user.id)
-    this.purchaseItem.getPurchaseTransactionsHistoryBySellerId(1)
+    this.user = JSON.parse(localStorage.getItem('sellerProfile'))
+    
+    this.purchaseItem.getPurchaseTransactionsHistoryBySellerId(this.user.id)
     .subscribe((res) => {
       this.sellHisLists = res
       console.log(this.sellHisLists)

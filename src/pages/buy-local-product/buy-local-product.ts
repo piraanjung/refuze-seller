@@ -30,23 +30,23 @@ export class BuyLocalProductPage {
   }
 
   Scanqrcode() {
-    // this.option = {
-    //   preferFrontCamera: false,
-    //   prompt: "สแกน QR CODE"
-    // }
-    // this.barcodeScanner.scan(this.option).then((barcodeData) => {
-        // this.data = barcodeData.text
+    this.option = {
+      preferFrontCamera: false,
+      prompt: "สแกน QR CODE"
+    }
+    this.barcodeScanner.scan(this.option).then((barcodeData) => {
+        this.data = barcodeData.text
         this.search_user(this.data)
         
-    // }, (err) => {
-    //   // An error occurred
-    //   console.log(err)
-    // });
+    }, (err) => {
+      // An error occurred
+      console.log(err)
+    });
 
   }
 
   search_user(sellercode) {
-    sellercode = '34593724345125'
+    // sellercode = '34593724345125'
     this.findSeller.getSeller(sellercode).subscribe(res => {
 
     this.localBuyer = res

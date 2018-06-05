@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, ModalController, LoadingController } from 'ionic-angular';
+import { IonicPage, LoadingController } from 'ionic-angular';
 import { ItemsProvider } from '../../providers/items/items';
 import { Item } from '../../models/item';
 import { FindSellersProvider } from '../../providers/find-sellers/find-sellers';
@@ -22,7 +22,6 @@ export class FindItemsPage {
 
 
   constructor(
-    private modalCtrl: ModalController,
     private itemsProvider: ItemsProvider,
     private findSeller: FindSellersProvider,
     private loadingCtrl: LoadingController
@@ -79,15 +78,7 @@ export class FindItemsPage {
     }, (err) => console.log(err))
   }
 
-  presentaddModalItem(item) {
-    let profileModal = this.modalCtrl.create('purchase-items-modal', { item: item });
-    profileModal.onDidDismiss(data => {
-      this.getFavorite()
-      this.countItems = data['countItems']
-    });
 
-    profileModal.present();
-  }
 
   _items(){
     for(let i =0; i < this.items.length; i++){
