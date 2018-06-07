@@ -10,7 +10,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AccountBalancePage {
 
+  AccountPerform: string
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.AccountPerform ='account-perform'
   }
 
   ionViewDidLoad() {
