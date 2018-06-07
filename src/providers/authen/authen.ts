@@ -8,6 +8,7 @@ export class AuthenProvider {
   constructor(private http: HttpClient) { }
 
   resAuthen(params): any {
+    console.log(params)
     return this.http.post<Buyer>(`${API_URL}/authen`, params);
   }
 

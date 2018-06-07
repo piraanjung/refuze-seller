@@ -47,7 +47,7 @@ export class SellTrashPage {
     //   this.user =res
     //   console.log(this.user.mobile)
     //   if(this.user.mobile != ""){
-        this.createCode = '3459324345165';//this.user.mobile
+        this.createCode = '34593724345123';//this.user.mobile
         this.show_qr_code = true
     //   }
       
