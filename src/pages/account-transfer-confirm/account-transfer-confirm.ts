@@ -10,7 +10,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AccountTransferConfirmPage {
 
+  CancelTransfer: string
+  ConfirmTransfer: string
+  BackPage: string
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.CancelTransfer ='account-balance'
+    this.ConfirmTransfer =''
+    this.BackPage ='account-transfer'
   }
 
   ionViewDidLoad() {
