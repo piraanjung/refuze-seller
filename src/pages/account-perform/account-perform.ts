@@ -9,8 +9,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'account-perform.html',
 })
 export class AccountPerformPage {
-
+  AccountTransfer: string
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.AccountTransfer = 'account-transfer'
   }
 
   ionViewDidLoad() {

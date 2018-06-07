@@ -23,7 +23,7 @@
   <br>
 
   <ion-list no-margin>
-    <ion-item no-lines [navPush]="AccountPerform">
+    <ion-item no-lines>
       <ion-avatar item-start>
         <img src="assets/images/logo/login.png" alt="" />
       </ion-avatar>
@@ -37,7 +37,7 @@
     </ion-item>
   </ion-list>
 
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding">โอนเงิน</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="AccountTransfer">โอนเงิน</button>
   <button type="button" ion-button block button-clear-outline round outline class="btn-padding">ถอนเงิน</button>
   <button type="button" ion-button block button-clear-outline round outline class="btn-padding">ธุรกรรมทางการเงิน</button>
 
