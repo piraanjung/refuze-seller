@@ -1,0 +1,27 @@
+page-account-transfer-confirm {
+  .card-img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-right: 10px;
+}
+[social] {
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
+}
+[card-title] {
+    line-height: normal !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+}
+[card-subtitle] {
+    margin: 0;
+    text-align: left;
+}
+[card-body-text] {
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+}

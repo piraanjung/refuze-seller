@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ยืนยันการโอนเงิน</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card padding>
+    <div float-left class="card-img">
+      <img images-filter src="assets/images/logo/login.png" />
+    </div>
+    <!--Card-content-->
+    <ion-card-content>
+      <h3 card-subtitle text-center>ผู้โอน</h3>
+      <ion-card-title no-padding>
+        <h2 card-title>GEIDTIPHONG SINGSEEWO</h2>
+      </ion-card-title>
+      <h3 card-subtitle>089-4915453</h3>
+      <h3 card-subtitle text-center>ยอดโอน : 300 B</h3>
+    </ion-card-content>
+  </ion-card>
+
+  <br>
+
+  <ion-card padding>
+    <div float-left class="card-img">
+      <img images-filter src="assets/images/logo/login.png" />
+    </div>
+    <!--Card-content-->
+    <ion-card-content>
+      <h3 card-subtitle text-center>ผู้รับโอน</h3>
+      <ion-card-title no-padding>
+        <h2 card-title>KANITHA SINGSEEWO</h2>
+      </ion-card-title>
+      <h3 card-subtitle>089-4919999</h3>
+      <!-- <h3 card-subtitle text-center>ยอดโอน : 300 B</h3> -->
+    </ion-card-content>
+  </ion-card>
+
+  <br>
+
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="CancelTransfer">ยกเลิกการโอน</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="ConfirmTransfer">ยืนยันการโอน</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="BackPage">กลับไปก่อนหน้านี้</button>
+
+</ion-content>

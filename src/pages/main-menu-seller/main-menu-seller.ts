@@ -1,15 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the MainMenuSellerPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Sellers } from '../../models/sellers';
 
 @IonicPage({
-  name : 'main-menu-seller'
+  name: 'main-menu-seller'
 })
 @Component({
   selector: 'page-main-menu-seller',
@@ -17,90 +11,88 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MainMenuSellerPage {
 
-  cur_user:any= []
-  data:any =[
-      {
-        "title_description": "Order No. 1",
-        "description": "Will be shipped: 15.5.2016.",
-        "buttonText": "PROCEED",
-        "headerImage": "assets/images/background/17.jpg",
-        "title": "ขายขยะ",
-        "navCtrl" : "sell-trash",
-      },
-      {
-        "title_description": "Order No. 1",
-        "description": "Will be shipped: 15.5.2016.",
-        "buttonText": "PROCEED",
-        "headerImage": "assets/images/background/17.jpg",
-        "title": "ธนาคารขยะ",
-        "navCtrl" : "",
-      },
-      {
-        "title_description": "Order No. 1",
-        "description": "Will be shipped: 15.5.2016.",
-        "buttonText": "PROCEED",
-        "headerImage": "assets/images/background/17.jpg",
-        "title": "Shoping Cart",
-        "navCtrl" : "shopping-cart-main",
-      },
-      {
-        "title_description": "Order No. 1",
-        "description": "Will be shipped: 15.5.2016.",
-        "buttonText": "PROCEED",
-        "headerImage": "assets/images/background/17.jpg",
-        "title": "ซื้อสินค้าในโรงเรียน",
-        "navCtrl" : "buy-local-product",
-      },
-      {
-        "title_description": "Order No. 1",
-        "description": "Will be shipped: 15.5.2016.",
-        "buttonText": "PROCEED",
-        "headerImage": "assets/images/background/17.jpg",
-        "title": "ราคากลางขยะ",
-        "navCtrl" : "find-items",
-      },
-      
-      // {
-      //   "title_description": "Order No. 1",
-      //   "description": "Will be shipped: 15.5.2016.",
-      //   "buttonText": "PROCEED",
-      //   "headerImage": "assets/images/background/17.jpg",
-      //   "title": "ค้นหาผู้รับซื้อขยะ",
-      //   "navCtrl" : "find-buyers",
-      // },
-      // {
-      //   "title_description": "Order No. 1",
-      //   "description": "Will be shipped: 15.5.2016.",
-      //   "buttonText": "PROCEED",
-      //   "headerImage": "assets/images/background/17.jpg",
-      //   "title": "วิธีคัดแยกขยะเพิ่มมูลค่า",
-      //   "navCtrl" : "",
-      // },
-      {
-        "title_description": "Order No. 1",
-        "description": "Will be shipped: 15.5.2016.",
-        "buttonText": "PROCEED",
-        "headerImage": "assets/images/background/17.jpg",
-        "title": "ประวัติการขายขยะ",
-        "navCtrl" : "sell-history",
-      }
-    ]
-  
+  user: Sellers
+  data: any = [
+    {
+      "title_description": "Order No. 1",
+      "description": "Will be shipped: 15.5.2016.",
+      "buttonText": "PROCEED",
+      "headerImage": "assets/images/background/17.jpg",
+      "title": "ขายขยะ",
+      "navCtrl": "sell-trash",
+    },
+    {
+      "title_description": "",
+      "description": "",
+      "buttonText": "Click",
+      "headerImage": "assets/images/background/17.jpg",
+      "title": "ธนาคารขยะ",
+      "navCtrl": "account-balance",
+    },
+    {
+      "title_description": "Order No. 1",
+      "description": "Will be shipped: 15.5.2016.",
+      "buttonText": "PROCEED",
+      "headerImage": "assets/images/background/17.jpg",
+      "title": "Shoping Cart",
+      "navCtrl": "shopping-cart-main",
+    },
+    {
+      "title_description": "Order No. 1",
+      "description": "Will be shipped: 15.5.2016.",
+      "buttonText": "PROCEED",
+      "headerImage": "assets/images/background/17.jpg",
+      "title": "ซื้อสินค้าในโรงเรียน",
+      "navCtrl": "buy-local-product",
+    },
+    {
+      "title_description": "Order No. 1",
+      "description": "Will be shipped: 15.5.2016.",
+      "buttonText": "PROCEED",
+      "headerImage": "assets/images/background/17.jpg",
+      "title": "ราคากลางขยะ",
+      "navCtrl": "find-items",
+    },
+
+    // {
+    //   "title_description": "Order No. 1",
+    //   "description": "Will be shipped: 15.5.2016.",
+    //   "buttonText": "PROCEED",
+    //   "headerImage": "assets/images/background/17.jpg",
+    //   "title": "ค้นหาผู้รับซื้อขยะ",
+    //   "navCtrl" : "find-buyers",
+    // },
+    // {
+    //   "title_description": "Order No. 1",
+    //   "description": "Will be shipped: 15.5.2016.",
+    //   "buttonText": "PROCEED",
+    //   "headerImage": "assets/images/background/17.jpg",
+    //   "title": "วิธีคัดแยกขยะเพิ่มมูลค่า",
+    //   "navCtrl" : "",
+    // },
+    {
+      "title_description": "Order No. 1",
+      "description": "Will be shipped: 15.5.2016.",
+      "buttonText": "PROCEED",
+      "headerImage": "assets/images/background/17.jpg",
+      "title": "ประวัติการขายขยะ",
+      "navCtrl": "sell-history",
+    }
+  ]
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.user = JSON.parse(localStorage.getItem('sellerProfile'));
   }
 
   ionViewDidLoad() {
-    this.cur_user = this.navParams.get('buyerProfile');
-    console.log(this.cur_user)
-
-    console.log('ionViewDidLoad MainMenuSellerPage');
+    console.log(this.user)
   }
 
   onEvent(event: string, item: any, e: any) {
     if (e) {
-        e.stopPropagation();
+      e.stopPropagation();
     }
     this.navCtrl.push(item.navCtrl)
-}
+  }
 
 }
