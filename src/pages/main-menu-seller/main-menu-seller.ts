@@ -22,12 +22,12 @@ export class MainMenuSellerPage {
       "navCtrl": "sell-trash",
     },
     {
-      "title_description": "Order No. 1",
-      "description": "Will be shipped: 15.5.2016.",
-      "buttonText": "PROCEED",
+      "title_description": "",
+      "description": "",
+      "buttonText": "Click",
       "headerImage": "assets/images/background/17.jpg",
       "title": "ธนาคารขยะ",
-      "navCtrl": "",
+      "navCtrl": "account-balance",
     },
     {
       "title_description": "Order No. 1",
