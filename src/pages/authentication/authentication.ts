@@ -46,7 +46,6 @@ export class AuthenticationPage {
         if (res.logged === true) {
           this.SellerProfile = res
           localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile))
-          console.log(this.SellerProfile)
           this.app.getRootNav().setRoot('main-menu-seller');
         } else {
           this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');

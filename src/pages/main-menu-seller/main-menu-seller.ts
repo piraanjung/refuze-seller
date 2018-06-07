@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Sellers } from '../../models/sellers';
 
 @IonicPage({
   name: 'main-menu-seller'
@@ -10,7 +11,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MainMenuSellerPage {
 
-  cur_user: any = []
+  user: Sellers
   data: any = [
     {
       "title_description": "Order No. 1",
@@ -80,13 +81,11 @@ export class MainMenuSellerPage {
   ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.user = JSON.parse(localStorage.getItem('sellerProfile'));
   }
 
   ionViewDidLoad() {
-    this.cur_user = this.navParams.get('buyerProfile');
-    console.log(this.cur_user)
-
-    console.log('ionViewDidLoad MainMenuSellerPage');
+    console.log(this.user)
   }
 
   onEvent(event: string, item: any, e: any) {
