@@ -22,7 +22,6 @@ export class AccountBalancePage {
 
   ionViewDidLoad() {
     this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {};
-    console.log(this.seller)
     this.seller_name = `${this.seller.name} ${this.seller.last_name}`
     this.mobile = this.seller.mobile
     this.image = this.seller.image_url
