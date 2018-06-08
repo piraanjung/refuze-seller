@@ -5,11 +5,6 @@ page-account-transfer {
     position: relative;
     margin-right: 10px;
 }
-[social] {
-    position: absolute;
-    right: 40px;
-    bottom: 15px;
-}
 [card-title] {
     line-height: normal !important;
     margin-bottom: 0;
@@ -24,5 +19,8 @@ page-account-transfer {
     padding-top: 30px;
     margin-bottom: 25px;
 }
-
+.icon-img {
+    width: 80px;
+    height: 80px;
+}
 }
