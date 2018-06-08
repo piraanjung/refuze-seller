@@ -41,12 +41,11 @@ export class AuthenticationPage {
 
     loader.present();
     localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile));
-    console.log(this.params.passwords)
     this.authen.resAuthen(this.params).subscribe(
       res => {
-        // if (res.logged === true) {
-        //เป็นผู้ขายขยะ
-        if(res.status ===1 && res.user_cate_id ===1){
+        console.log(res)
+        // เป็นผู้ขายขยะ
+        if (res.logged === true && res.status === 1 && res.user_cate_id === 1) {
           this.SellerProfile = res
           localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile))
           this.app.getRootNav().setRoot('main-menu-seller');

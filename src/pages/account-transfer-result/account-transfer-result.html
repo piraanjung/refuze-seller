@@ -1,12 +1,13 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>ยืนยันการโอนเงิน</ion-title>
+    <ion-title>ผลการโอนเงิน</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content>
+  <h2 text-center>ทําการโอนเงินเสร็จสิ้น</h2>
   <ion-card padding>
     <div float-left class="card-img">
       <img images-filter src="assets/images/logo/login.png" />
@@ -41,8 +42,6 @@
 
   <br>
 
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="CancelTransfer">ยกเลิกการโอน</button>
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" (click)="presentPrompt()">ยืนยันการโอน</button>
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="BackPage">กลับไปก่อนหน้านี้</button>
-
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="AccountTransfer">โอนอีกครั้ง</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="AccountBalance">กลับไปหน้าหลัก</button>
 </ion-content>

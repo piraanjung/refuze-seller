@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 @IonicPage({
   name: 'account-transfer-confirm'
@@ -13,14 +13,41 @@ export class AccountTransferConfirmPage {
   CancelTransfer: string
   ConfirmTransfer: string
   BackPage: string
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.CancelTransfer ='account-balance'
-    this.ConfirmTransfer =''
-    this.BackPage ='account-transfer'
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
+    this.CancelTransfer = 'account-balance'
+    this.BackPage = 'account-transfer'
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AccountTransferConfirmPage');
+  }
+
+  presentPrompt() {
+    let alert = this.alertCtrl.create({
+      title: 'กรอกหมายเลขรหัสลับ',
+      inputs: [
+        {
+          name: 'username',
+          placeholder: 'กรอกหมายเลขรหัสลับ'
+        }
+      ],
+      buttons: [
+        {
+          text: 'ปิด',
+          role: 'cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'ยืนยัน',
+          handler: data => {
+            this.navCtrl.push('account-transfer-result')
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
 }
