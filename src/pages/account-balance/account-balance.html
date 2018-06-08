@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>ธนาคารขยะ</ion-title>
+    <ion-title text-center>ธนาคารขยะ</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -24,23 +24,25 @@
 
   <ion-list no-margin>
     <ion-item no-lines [navPush]="AccountPerform">
-      <ion-img style="width: 80px; height: 80px;" src="assets/images/cash.png" item-start></ion-img>
+      <ion-img class="icon-img" src="assets/images/cash.png" item-start></ion-img>
       <ion-grid>
         <ion-row>
           <ion-col col-6 item-title padding-left>เงินสะสม</ion-col>
           <ion-col col-6 text-right item-title>900 B</ion-col>
         </ion-row>
       </ion-grid>
+      <ion-icon name="arrow-forward" item-end></ion-icon>
     </ion-item>
 
     <ion-item no-lines>
-      <ion-img style="width: 80px; height: 80px;" src="assets/images/star.png" item-start></ion-img>
+      <ion-img class="icon-img" src="assets/images/star.png" item-start></ion-img>
       <ion-grid>
         <ion-row>
           <ion-col col-6 item-title padding-left>คะแนนสะสม</ion-col>
           <ion-col col-6 text-right item-title>900 P</ion-col>
         </ion-row>
       </ion-grid>
+      <ion-icon name="arrow-forward" item-end></ion-icon>
     </ion-item>
   </ion-list>
 </ion-content>
