@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Sellers } from '../../models/sellers';
 
 @IonicPage({
   name: 'account-balance'
@@ -11,12 +12,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class AccountBalancePage {
 
   AccountPerform: string
+  seller: Sellers
+  seller_name:string
+  mobile:string
+  image:string
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.AccountPerform ='account-perform'
+    this.AccountPerform = 'account-perform'
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AccountBalancePage');
+    this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {};
+    console.log(this.seller)
+    this.seller_name = `${this.seller.name} ${this.seller.last_name}`
+    this.mobile = this.seller.mobile
+    this.image = this.seller.image_url
   }
 
 }
