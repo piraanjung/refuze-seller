@@ -42,7 +42,7 @@ export class AccountTransferConfirmPage {
         {
           text: 'ยืนยัน',
           handler: data => {
-            // do something...
+            this.navCtrl.push('account-transfer-result')
           }
         }
       ]
