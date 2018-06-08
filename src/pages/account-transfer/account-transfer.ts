@@ -15,12 +15,15 @@ export class AccountTransferPage {
   mobile: string
   image: string
   cash: number
+  cash_input: number
+  params: Object
   BackPage: string
   NextPage: string
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.BackPage = 'account-perform'
     this.NextPage = 'account-transfer-confirm'
     this.cash = 900
+    this.params = { cash_input: this.cash_input }
   }
 
   ionViewDidLoad() {
@@ -28,6 +31,7 @@ export class AccountTransferPage {
     this.seller_name = `${this.seller.name} ${this.seller.last_name}`
     this.mobile = this.seller.mobile
     this.image = this.seller.image_url
+    this.cash_input = 0
   }
 
 }

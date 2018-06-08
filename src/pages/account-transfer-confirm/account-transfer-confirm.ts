@@ -13,13 +13,15 @@ export class AccountTransferConfirmPage {
   CancelTransfer: string
   ConfirmTransfer: string
   BackPage: string
+  params: Object
   constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
     this.CancelTransfer = 'account-balance'
     this.BackPage = 'account-transfer'
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AccountTransferConfirmPage');
+    this.params = this.navParams.get('params')
+    console.log(this.params)
   }
 
   presentPrompt() {
