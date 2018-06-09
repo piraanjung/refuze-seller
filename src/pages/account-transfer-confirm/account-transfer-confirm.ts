@@ -65,7 +65,6 @@ export class AccountTransferConfirmPage {
         {
           text: 'ยืนยัน',
           handler: data => {
-            // this.navCtrl.push('account-transfer-result')
             this.validateTransferConfirm(data)
           }
         }
@@ -77,7 +76,11 @@ export class AccountTransferConfirmPage {
   private validateTransferConfirm(data) {
     this.accountSaving.validateTransferConfirm({ user_id: this.user_id_transfer, transfer_passwords: data.transfer_passwords })
       .subscribe(res => {
-        console.log(res)
+        if (res.status == 200 && res.body == 1) {
+          // this.navCtrl.push('account-transfer-result')
+        } else {
+          alert(2)
+        }
       }, err => {
         console.log(err)
       })

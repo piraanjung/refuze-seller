@@ -14,4 +14,4 @@ import { AccountSavingProvider } from '../../providers/account-saving/account-sa
   ],
   providers: [AccountSavingProvider]
 })
-export class AccountTransferPageModule {}
+export class AccountTransferPageModule { }
