@@ -18,6 +18,7 @@ export class AccountTransferPage {
   cash_input: number
   balance: number
   balance_less_than: number
+  mobile_receive_transfer: string
   params: Object
   BackPage: string
   NextPage: string
@@ -26,6 +27,7 @@ export class AccountTransferPage {
     this.NextPage = 'account-transfer-confirm'
     this.balance = 0
     this.params = { cash_input: this.cash_input }
+    this.mobile_receive_transfer =''
   }
 
   ionViewDidLoad() {

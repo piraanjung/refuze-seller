@@ -39,7 +39,7 @@
 
   <ion-list padding>
     <ion-item>
-      <ion-input type="number" placeholder="หมายเลขโทรศัพท์ผู้รับโอน"></ion-input>
+      <ion-input type="number" placeholder="หมายเลขโทรศัพท์ผู้รับโอน" [(ngModel)]="mobile_receive_transfer"></ion-input>
     </ion-item>
     <ion-item>
       <ion-input type="number" placeholder="จำนวนเงิน" [(ngModel)]="cash_input"></ion-input>
@@ -54,7 +54,7 @@
         <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="BackPage">กลับ</button>
       </ion-col>
       <ion-col col-6 item-title padding-left>
-        <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="NextPage" [navParams]="params" [disabled]="cash_input == 0 || (balance - cash_input) <= balance_less_than">ถัดไป</button>
+        <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="NextPage" [navParams]="params" [disabled]="mobile_receive_transfer == '' || cash_input == 0 || (balance - cash_input) <= balance_less_than">ถัดไป</button>
       </ion-col>
     </ion-row>
   </ion-grid>
