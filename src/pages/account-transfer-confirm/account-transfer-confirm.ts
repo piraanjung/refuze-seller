@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { AccountReceiveTransfer } from '../../models/account-receive-transfer';
+import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 
 @IonicPage({
   name: 'account-transfer-confirm'
@@ -17,14 +18,15 @@ export class AccountTransferConfirmPage {
   ConfirmTransfer: string
   BackPage: string
   transferAmount: number
+  user_id_transfer: number
   name_transfer: string
   mobile_transfer: string
   image_transfer: string
   name_receive_transfer: string
   mobile_receive_transfer: string
-  image_receive_transfer: string  
+  image_receive_transfer: string
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController, private accountSaving: AccountSavingProvider) {
     this.CancelTransfer = 'account-balance'
     this.BackPage = 'account-transfer'
     this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {}
@@ -33,6 +35,7 @@ export class AccountTransferConfirmPage {
   }
 
   ionViewDidLoad() {
+    this.user_id_transfer = this.seller.id
     this.name_transfer = `${this.seller.name} ${this.seller.last_name}`
     this.mobile_transfer = this.seller.mobile
     this.image_transfer = this.seller.image_url
@@ -46,7 +49,8 @@ export class AccountTransferConfirmPage {
       title: 'กรอกหมายเลขรหัสลับ',
       inputs: [
         {
-          name: 'username',
+          name: 'transfer_passwords',
+          type: 'password',
           placeholder: 'กรอกหมายเลขรหัสลับ'
         }
       ],
@@ -61,12 +65,22 @@ export class AccountTransferConfirmPage {
         {
           text: 'ยืนยัน',
           handler: data => {
-            this.navCtrl.push('account-transfer-result')
+            // this.navCtrl.push('account-transfer-result')
+            this.validateTransferConfirm(data)
           }
         }
       ]
     });
     alert.present();
+  }
+
+  private validateTransferConfirm(data) {
+    this.accountSaving.validateTransferConfirm({ user_id: this.user_id_transfer, transfer_passwords: data.transfer_passwords })
+      .subscribe(res => {
+        console.log(res)
+      }, err => {
+        console.log(err)
+      })
   }
 
 }
