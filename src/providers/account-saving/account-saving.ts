@@ -6,8 +6,7 @@ import { AccountSavingBalance } from '../../models/account-saving-balance';
 @Injectable()
 export class AccountSavingProvider {
 
-  constructor(public http: HttpClient) {
-    console.log('Hello AccountSavingProvider Provider');
+  constructor(private http: HttpClient) {
   }
 
   getAccountSavingBalance(user_id: number) {

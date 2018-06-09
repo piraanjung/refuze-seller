@@ -17,8 +17,10 @@ export class AccountBalancePage {
   seller_name: string
   mobile: string
   image: string
+  balance: number
   constructor(public navCtrl: NavController, public navParams: NavParams, private accountSaving: AccountSavingProvider) {
     this.AccountPerform = 'account-perform'
+    this.balance = 0
   }
 
   ionViewDidLoad() {
@@ -33,6 +35,7 @@ export class AccountBalancePage {
     let user_id = this.seller.id || 0
     this.accountSaving.getAccountSavingBalance(user_id).subscribe(res => {
       console.log(res)
+      this.balance = res.balance
     }, err => {
       console.log(err)
     })
