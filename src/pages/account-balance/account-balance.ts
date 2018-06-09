@@ -32,6 +32,10 @@ export class AccountBalancePage {
     this.seller_name = `${this.seller.name} ${this.seller.last_name}`
     this.mobile = this.seller.mobile
     this.image = this.seller.image_url
+    
+    localStorage.removeItem('AccountReceiveTransfer')
+    localStorage.removeItem('CashInput')
+    
     this.getAccountSaving()
   }
 

@@ -21,6 +21,7 @@ export class AccountTransferConfirmPage {
   BackPage: string
   transferAmount: number
   user_id_transfer: number
+  user_receive_id: number
   name_transfer: string
   mobile_transfer: string
   image_transfer: string
@@ -47,6 +48,8 @@ export class AccountTransferConfirmPage {
     this.name_transfer = `${this.seller.name} ${this.seller.last_name}`
     this.mobile_transfer = this.seller.mobile
     this.image_transfer = this.seller.image_url
+
+    this.user_receive_id = this.accountReceiveTransfer.id
     this.name_receive_transfer = `${this.accountReceiveTransfer.name} ${this.accountReceiveTransfer.last_name}`
     this.mobile_receive_transfer = this.accountReceiveTransfer.mobile
     this.image_receive_transfer = this.accountReceiveTransfer.image_url
@@ -84,7 +87,7 @@ export class AccountTransferConfirmPage {
   private validateTransferConfirm(data) {
     let loading = this.loading.loading()
     loading.present()
-    this.accountSaving.validateTransferConfirm({ user_id: this.user_id_transfer, transfer_passwords: data.transfer_passwords, amount: this.transferAmount })
+    this.accountSaving.validateTransferConfirm({ user_transfer_id: this.user_id_transfer, user_recieve_id: this.user_receive_id, transfer_passwords: data.transfer_passwords, amount: this.transferAmount })
       .subscribe(res => {
         if (res.status == 200 && res.body == 1) {
           this.navCtrl.push('account-transfer-result')
