@@ -34,7 +34,6 @@ export class AccountBalancePage {
   getAccountSaving() {
     let user_id = this.seller.id || 0
     this.accountSaving.getAccountSavingBalance(user_id).subscribe(res => {
-      console.log(res)
       this.balance = res.balance
     }, err => {
       console.log(err)
