@@ -29,7 +29,7 @@
       <ion-grid>
         <ion-row>
           <ion-col col-6 item-title padding-left>เงินสะสม</ion-col>
-          <ion-col col-6 text-right item-title>{{ cash }} B</ion-col>
+          <ion-col col-6 text-right item-title>{{ balance }} B</ion-col>
         </ion-row>
       </ion-grid>
     </ion-item>
@@ -54,7 +54,7 @@
         <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="BackPage">กลับ</button>
       </ion-col>
       <ion-col col-6 item-title padding-left>
-        <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="NextPage" [navParams]="params" [disabled]="cash_input == 0 || (cash - cash_input) <= 100">ถัดไป</button>
+        <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="NextPage" [navParams]="params" [disabled]="cash_input == 0 || (balance - cash_input) <= balance_less_than">ถัดไป</button>
       </ion-col>
     </ion-row>
   </ion-grid>
