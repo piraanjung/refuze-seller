@@ -33,7 +33,7 @@ import { AccountSavingProvider } from '../providers/account-saving/account-savin
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     BarcodeScanner,
-    AccountSavingProvider
+    AccountSavingProvider,
     
   ]
 })
