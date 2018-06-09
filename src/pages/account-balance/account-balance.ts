@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
+import { LoadingPageProvider } from '../../providers/loading-page';
 
 @IonicPage({
   name: 'account-balance'
@@ -18,7 +19,11 @@ export class AccountBalancePage {
   mobile: string
   image: string
   balance: number
-  constructor(public navCtrl: NavController, public navParams: NavParams, private accountSaving: AccountSavingProvider) {
+  constructor(
+    private accountSaving: AccountSavingProvider,
+    private loading: LoadingPageProvider,
+    private loadingCtrl: LoadingController
+  ) {
     this.AccountPerform = 'account-perform'
     this.balance = 0
   }
@@ -32,11 +37,15 @@ export class AccountBalancePage {
   }
 
   getAccountSaving() {
+    let loading = this.loading.loading()
     let user_id = this.seller.id || 0
+    loading.present()
     this.accountSaving.getAccountSavingBalance(user_id).subscribe(res => {
       this.balance = res.balance
+      loading.dismiss()
     }, err => {
       console.log(err)
+      loading.dismiss()
     })
   }
 
