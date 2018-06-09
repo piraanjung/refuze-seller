@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 import { Sellers } from '../../models/sellers';
 import { AccountReceiveTransfer } from '../../models/account-receive-transfer';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
+import { LoadingPageProvider } from '../../providers/loading-page';
+import { AlertBoxProvider } from '../../providers/alert-box';
 
 @IonicPage({
   name: 'account-transfer-confirm'
@@ -26,7 +28,13 @@ export class AccountTransferConfirmPage {
   mobile_receive_transfer: string
   image_receive_transfer: string
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController, private accountSaving: AccountSavingProvider) {
+  constructor(
+    private navCtrl: NavController,
+    private alertCtrl: AlertController,
+    private loading: LoadingPageProvider,
+    private alertBox: AlertBoxProvider,
+    private accountSaving: AccountSavingProvider
+  ) {
     this.CancelTransfer = 'account-balance'
     this.BackPage = 'account-transfer'
     this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {}
@@ -74,16 +82,23 @@ export class AccountTransferConfirmPage {
   }
 
   private validateTransferConfirm(data) {
+    let loading = this.loading.loading()
+    loading.present()
     this.accountSaving.validateTransferConfirm({ user_id: this.user_id_transfer, transfer_passwords: data.transfer_passwords, amount: this.transferAmount })
       .subscribe(res => {
         if (res.status == 200 && res.body == 1) {
           this.navCtrl.push('account-transfer-result')
-        } else {
-          alert(2)
+        } else if (res.status == 204 && res.body == 0) {
+          this.alertBox.showAlert('ไม่พบข้อมูลของผู้รับโอนค่ะ')
+        }else {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
         }
+        loading.dismiss()
       }, err => {
         console.log(err)
+        loading.dismiss()
       })
   }
+
 
 }
