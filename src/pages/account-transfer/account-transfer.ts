@@ -42,6 +42,7 @@ export class AccountTransferPage {
 
   getAccountSaving() {
     let user_id = this.seller.id || 0
+    console.log(user_id)
     this.accountSaving.getAccountSavingBalance(user_id).subscribe(res => {
       this.balance = res.balance
     }, err => {
