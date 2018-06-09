@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 import { LoadingPageProvider } from '../../providers/loading-page';
@@ -22,7 +22,6 @@ export class AccountBalancePage {
   constructor(
     private accountSaving: AccountSavingProvider,
     private loading: LoadingPageProvider,
-    private loadingCtrl: LoadingController
   ) {
     this.AccountPerform = 'account-perform'
     this.balance = 0
