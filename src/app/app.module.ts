@@ -10,6 +10,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { ShoppingCartMenuPage } from '../pages/shopping-cart-menu/shopping-cart-menu';
 import { MyApp } from './app.component';
 import { AccountSavingProvider } from '../providers/account-saving/account-saving';
+import { SellerMenuProvider } from '../providers/seller-menu/seller-menu';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AccountSavingProvider } from '../providers/account-saving/account-savin
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     BarcodeScanner,
-    AccountSavingProvider
+    AccountSavingProvider,
+    SellerMenuProvider
     
   ]
 })
