@@ -74,10 +74,10 @@ export class AccountTransferConfirmPage {
   }
 
   private validateTransferConfirm(data) {
-    this.accountSaving.validateTransferConfirm({ user_id: this.user_id_transfer, transfer_passwords: data.transfer_passwords })
+    this.accountSaving.validateTransferConfirm({ user_id: this.user_id_transfer, transfer_passwords: data.transfer_passwords, amount: this.transferAmount })
       .subscribe(res => {
         if (res.status == 200 && res.body == 1) {
-          // this.navCtrl.push('account-transfer-result')
+          this.navCtrl.push('account-transfer-result')
         } else {
           alert(2)
         }
