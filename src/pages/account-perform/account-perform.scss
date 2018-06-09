@@ -5,11 +5,6 @@ page-account-perform {
     position: relative;
     margin-right: 10px;
 }
-[social] {
-    position: absolute;
-    right: 40px;
-    bottom: 15px;
-}
 [card-title] {
     line-height: normal !important;
     margin-bottom: 0;
@@ -27,4 +22,8 @@ page-account-perform {
 .btn-padding {
     height: 40px;
 }
+.icon-img {
+    width: 80px;
+    height: 80px;
+  }
 }

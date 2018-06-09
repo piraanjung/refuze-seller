@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>ธนาคารขยะ</ion-title>
+    <ion-title text-center>ธนาคารขยะ</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -9,14 +9,14 @@
 <ion-content>
   <ion-card padding>
     <div float-left class="card-img">
-      <img images-filter src="assets/images/logo/login.png" />
+      <img images-filter src="{{ image }}" />
     </div>
-    <!--Card-content-->
+    
     <ion-card-content>
       <ion-card-title no-padding>
-        <h2 card-title>GEIDTIPHONG SINGSEEWO</h2>
+        <h2 card-title>{{ seller_name }}</h2>
       </ion-card-title>
-      <h3 card-subtitle>089-4915453</h3>
+      <h3 card-subtitle>{{ mobile }}</h3>
     </ion-card-content>
   </ion-card>
 
@@ -24,29 +24,25 @@
 
   <ion-list no-margin>
     <ion-item no-lines [navPush]="AccountPerform">
-      <ion-avatar item-start>
-        <img src="assets/images/logo/login.png" alt="" />
-      </ion-avatar>
-      <h2 item-title padding-left>ยอดเงินสะสม</h2>
+      <ion-img class="icon-img" src="assets/images/cash.png" item-start></ion-img>
       <ion-grid>
         <ion-row>
-          <ion-col col-6 item-title padding-left>ยอดเงินคงเหลือ</ion-col>
-          <ion-col col-6 text-right item-title>900 B</ion-col>
+          <ion-col col-6 item-title padding-left>เงินสะสม</ion-col>
+          <ion-col col-6 text-right item-title>{{ balance }} B</ion-col>
         </ion-row>
       </ion-grid>
+      <ion-icon name="arrow-forward" item-end></ion-icon>
     </ion-item>
 
-    <ion-item no-lines>
-      <ion-avatar item-start>
-        <img src="assets/images/logo/login.png" alt="" />
-      </ion-avatar>
-      <h2 item-title padding-left>ยอดคะแนนสะสม</h2>
+    <!-- <ion-item no-lines>
+      <ion-img class="icon-img" src="assets/images/star.png" item-start></ion-img>
       <ion-grid>
         <ion-row>
-          <ion-col col-6 item-title padding-left>ยอดคะแนนคงเหลือ</ion-col>
+          <ion-col col-6 item-title padding-left>คะแนนสะสม</ion-col>
           <ion-col col-6 text-right item-title>900 P</ion-col>
         </ion-row>
       </ion-grid>
-    </ion-item>
+      <ion-icon name="arrow-forward" item-end></ion-icon>
+    </ion-item> -->
   </ion-list>
 </ion-content>

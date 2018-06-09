@@ -1,14 +1,9 @@
 page-account-balance {
-  .card-img {
+.card-img {
     width: 100px;
     height: 100px;
     position: relative;
     margin-right: 10px;
-}
-[social] {
-    position: absolute;
-    right: 40px;
-    bottom: 15px;
 }
 [card-title] {
     line-height: normal !important;
@@ -24,13 +19,8 @@ page-account-balance {
     padding-top: 30px;
     margin-bottom: 25px;
 }
-.swiper-slide {
-    display: table;
-}
-.slide-zoom {
-    height: 220px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+.icon-img {
+    width: 80px;
+    height: 80px;
 }
 }

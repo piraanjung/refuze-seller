@@ -12,13 +12,14 @@ export class AccountTransferResultPage {
 
   AccountTransfer: string
   AccountBalance: string
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.AccountTransfer = 'account-transfer'
     this.AccountBalance = 'account-balance'
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AccountTransferResultPage');
+    
   }
 
 }

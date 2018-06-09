@@ -9,16 +9,16 @@
 <ion-content>
   <ion-card padding>
     <div float-left class="card-img">
-      <img images-filter src="assets/images/logo/login.png" />
+      <img images-filter src="{{ image_transfer }}" />
     </div>
     <!--Card-content-->
     <ion-card-content>
       <h3 card-subtitle text-center>ผู้โอน</h3>
       <ion-card-title no-padding>
-        <h2 card-title>GEIDTIPHONG SINGSEEWO</h2>
+        <h2 card-title>{{ name_transfer }}</h2>
       </ion-card-title>
-      <h3 card-subtitle>089-4915453</h3>
-      <h3 card-subtitle text-center>ยอดโอน : 300 B</h3>
+      <h3 card-subtitle>{{ mobile_transfer }}</h3>
+      <h3 card-subtitle text-center>ยอดโอน : {{ transferAmount }} B</h3>
     </ion-card-content>
   </ion-card>
 
@@ -26,16 +26,15 @@
 
   <ion-card padding>
     <div float-left class="card-img">
-      <img images-filter src="assets/images/logo/login.png" />
+      <img images-filter src="{{ image_receive_transfer }}" />
     </div>
     <!--Card-content-->
     <ion-card-content>
       <h3 card-subtitle text-center>ผู้รับโอน</h3>
       <ion-card-title no-padding>
-        <h2 card-title>KANITHA SINGSEEWO</h2>
+        <h2 card-title>{{ name_receive_transfer }}</h2>
       </ion-card-title>
-      <h3 card-subtitle>089-4919999</h3>
-      <!-- <h3 card-subtitle text-center>ยอดโอน : 300 B</h3> -->
+      <h3 card-subtitle>{{ mobile_receive_transfer }}</h3>
     </ion-card-content>
   </ion-card>
 
