@@ -49,4 +49,9 @@ export class AccountTransferPage {
     })
   }
 
+  getUserInformationReceiveTransfer() {
+    
+  }
+
+
 }
