@@ -49,9 +49,19 @@ export class AccountTransferPage {
     })
   }
 
-  getUserInformationReceiveTransfer() {
-    
-  }
+  getUserProfileReceiveTransfer() {
+    let mobile_receive_transfer = this.mobile_receive_transfer || ''
+    this.accountSaving.getUserProfileReceiveTransfer(mobile_receive_transfer).subscribe(res => {
+      console.log(res)
 
+      let count = Object.keys(res).length
+      if (count > 0) {
+        localStorage.setItem('UserProfileReceiveTransfer', JSON.stringify(res))
+        this.navCtrl.push(this.NextPage)
+      }
+    }, err => {
+      console.log(err)
+    })
+  }
 
 }

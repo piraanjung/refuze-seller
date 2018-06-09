@@ -14,7 +14,7 @@ export class AccountSavingProvider {
     return this.http.get<AccountSavingBalance>(`${API_URL}/account/find-account-saving-by-user-id/${user_id}`);
   }
 
-  getUserInformationReceiveTransfer(mobile: number) {
+  getUserProfileReceiveTransfer(mobile: string) {
     return this.http.get<AccountReceiveTransfer>(`${API_URL}/users/find-by-mobile/${mobile}`);
   }
 
