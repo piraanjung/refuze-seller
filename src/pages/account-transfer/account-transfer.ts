@@ -31,7 +31,7 @@ export class AccountTransferPage {
   }
 
   ionViewDidLoad() {
-    this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {};
+    this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {}
     this.seller_name = `${this.seller.name} ${this.seller.last_name}`
     this.mobile = this.seller.mobile
     this.image = this.seller.image_url
@@ -56,7 +56,8 @@ export class AccountTransferPage {
 
       let count = Object.keys(res).length
       if (count > 0) {
-        localStorage.setItem('UserProfileReceiveTransfer', JSON.stringify(res))
+        localStorage.setItem('AccountReceiveTransfer', JSON.stringify(res))
+        localStorage.setItem('CashInput', JSON.stringify(this.cash_input))
         this.navCtrl.push(this.NextPage)
       }
     }, err => {
