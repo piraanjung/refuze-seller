@@ -43,7 +43,6 @@ export class AuthenticationPage {
     localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile));
     this.authen.resAuthen(this.params).subscribe(
       res => {
-        console.log(res)
         // เป็นผู้ขายขยะ
         if (res.logged === true && res.status === 1 && res.user_cate_id === 1) {
           this.SellerProfile = res
