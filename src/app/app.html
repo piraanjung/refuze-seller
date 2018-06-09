@@ -22,10 +22,10 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item *ngFor="let item of items" (click)="openPage(item)">
+      <button ion-item *ngFor="let item of items" (click)="openPage(item)">
         <ion-icon name="{{item.icon}}"></ion-icon>
         {{item.title}}
-      </ion-item>
+      </button>
     </ion-list>
   </ion-content>
 </ion-menu>
