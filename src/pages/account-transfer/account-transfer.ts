@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 import { LoadingPageProvider } from '../../providers/loading-page';
+import { AlertBoxProvider } from '../../providers/alert-box';
 
 @IonicPage({
   name: 'account-transfer'
@@ -27,6 +28,7 @@ export class AccountTransferPage {
 
   constructor(
     private navCtrl: NavController,
+    private alertBox: AlertBoxProvider,
     private loading: LoadingPageProvider,
     private accountSaving: AccountSavingProvider
   ) {
@@ -75,6 +77,8 @@ export class AccountTransferPage {
           localStorage.setItem('AccountReceiveTransfer', JSON.stringify(res))
           localStorage.setItem('CashInput', JSON.stringify(this.cash_input))
           this.navCtrl.push(this.NextPage)
+        }else {
+          this.alertBox.showAlert('ไม่พบข้อมูลผู้รับโอน กรุณาลองใหม่')
         }
         loading.dismiss()
       }, err => {
