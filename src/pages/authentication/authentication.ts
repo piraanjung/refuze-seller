@@ -44,7 +44,6 @@ export class AuthenticationPage {
       .subscribe(
         res => {
           // Seller ONLY
-          console.log(res)
           if (res.status == 204) {
             this.alertBox.showAlert('ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่')
             this.params.passwords = ''

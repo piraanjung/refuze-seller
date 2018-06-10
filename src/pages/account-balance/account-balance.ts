@@ -19,6 +19,7 @@ export class AccountBalancePage {
   mobile: string
   image: string
   balance: number
+  account_saving_id: number
   
   constructor(
     private accountSaving: AccountSavingProvider,
@@ -33,7 +34,8 @@ export class AccountBalancePage {
     this.seller_name = `${this.seller.name} ${this.seller.last_name}`
     this.mobile = this.seller.mobile
     this.image = this.seller.image_url
-
+    this.account_saving_id = this.seller.account_saving_id
+    
     localStorage.removeItem('AccountReceiveTransfer')
     localStorage.removeItem('CashInput')
 

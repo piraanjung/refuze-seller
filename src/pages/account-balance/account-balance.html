@@ -23,7 +23,7 @@
   <br>
 
   <ion-list no-margin>
-    <ion-item no-lines [navPush]="AccountPerform">
+    <ion-item no-lines [navPush]="AccountPerform" *ngIf="account_saving_id != null">
       <ion-img class="icon-img" src="assets/images/cash.png" item-start></ion-img>
       <ion-grid>
         <ion-row>
