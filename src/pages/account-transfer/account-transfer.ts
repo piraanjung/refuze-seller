@@ -18,11 +18,13 @@ export class AccountTransferPage {
   image: string
   cash_input: number
   balance: number
+  label_balance: number
   balance_less_than: number
   mobile_receive_transfer: string
   params: Object
   BackPage: string
   NextPage: string
+
   constructor(
     private navCtrl: NavController,
     private loading: LoadingPageProvider,
@@ -31,6 +33,7 @@ export class AccountTransferPage {
     this.BackPage = 'account-perform'
     this.NextPage = 'account-transfer-confirm'
     this.balance = 0
+    this.label_balance = 0
     this.params = { cash_input: this.cash_input }
     this.mobile_receive_transfer = ''
   }
@@ -42,6 +45,7 @@ export class AccountTransferPage {
     this.image = this.seller.image_url
     this.cash_input = 0
     this.balance_less_than = 100
+
     this.getAccountSaving()
   }
 
@@ -51,6 +55,7 @@ export class AccountTransferPage {
     loading.present()
     this.accountSaving.getAccountSavingBalance(user_id).subscribe(res => {
       this.balance = res.balance
+      this.label_balance = res.balance
       loading.dismiss()
     }, err => {
       console.log(err)
@@ -62,19 +67,20 @@ export class AccountTransferPage {
     let loading = this.loading.loading()
     let mobile_receive_transfer = this.mobile_receive_transfer || ''
     loading.present()
-    this.accountSaving.getUserProfileReceiveTransfer(mobile_receive_transfer).subscribe(res => {
-      
-      let count = Object.keys(res).length
-      if (count > 0) {
-        localStorage.setItem('AccountReceiveTransfer', JSON.stringify(res))
-        localStorage.setItem('CashInput', JSON.stringify(this.cash_input))
-        this.navCtrl.push(this.NextPage)
-      }
-      loading.dismiss()
-    }, err => {
-      console.log(err)
-      loading.dismiss()
-    })
+    this.accountSaving.getUserProfileReceiveTransfer(mobile_receive_transfer)
+      .subscribe(res => {
+
+        let count = Object.keys(res).length
+        if (count > 0) {
+          localStorage.setItem('AccountReceiveTransfer', JSON.stringify(res))
+          localStorage.setItem('CashInput', JSON.stringify(this.cash_input))
+          this.navCtrl.push(this.NextPage)
+        }
+        loading.dismiss()
+      }, err => {
+        console.log(err)
+        loading.dismiss()
+      })
   }
 
 }
