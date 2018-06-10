@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Sellers } from '../../models/sellers';
 
 @IonicPage({
   name: 'main-menu-seller'
@@ -11,11 +10,8 @@ import { Sellers } from '../../models/sellers';
 })
 export class MainMenuSellerPage {
 
-  user: Sellers
   data: any = [
     {
-      // "title_description": "Order No. 1",
-      // "description": "Will be shipped: 15.5.2016.",
       "title_description": "",
       "description": "",
       "buttonText": "",
@@ -55,23 +51,6 @@ export class MainMenuSellerPage {
       "title": "ราคากลางขยะ",
       "navCtrl": "find-items",
     },
-
-    // {
-    //   "title_description": "Order No. 1",
-    //   "description": "Will be shipped: 15.5.2016.",
-    //   "buttonText": "PROCEED",
-    //   "headerImage": "assets/images/background/17.jpg",
-    //   "title": "ค้นหาผู้รับซื้อขยะ",
-    //   "navCtrl" : "find-buyers",
-    // },
-    // {
-    //   "title_description": "Order No. 1",
-    //   "description": "Will be shipped: 15.5.2016.",
-    //   "buttonText": "PROCEED",
-    //   "headerImage": "assets/images/background/17.jpg",
-    //   "title": "วิธีคัดแยกขยะเพิ่มมูลค่า",
-    //   "navCtrl" : "",
-    // },
     {
       "title_description": "",
       "description": "",
@@ -82,12 +61,10 @@ export class MainMenuSellerPage {
     }
   ]
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.user = JSON.parse(localStorage.getItem('sellerProfile'));
+  constructor(public navCtrl: NavController) {
   }
 
   ionViewDidLoad() {
-    console.log(this.user)
   }
 
   onEvent(event: string, item: any, e: any) {
