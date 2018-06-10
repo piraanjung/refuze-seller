@@ -73,13 +73,14 @@ export class AccountTransferPage {
       .subscribe(res => {
 
         let count = Object.keys(res).length
-        if (count > 0) {
+        if (count > 0 && res.account_saving_id != null) {
           localStorage.setItem('AccountReceiveTransfer', JSON.stringify(res))
           localStorage.setItem('CashInput', JSON.stringify(this.cash_input))
           this.navCtrl.push(this.NextPage)
         }else {
           this.alertBox.showAlert('ไม่พบข้อมูลผู้รับโอน กรุณาลองใหม่')
         }
+        
         loading.dismiss()
       }, err => {
         console.log(err)
