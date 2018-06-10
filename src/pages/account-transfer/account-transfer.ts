@@ -25,6 +25,7 @@ export class AccountTransferPage {
   params: Object
   BackPage: string
   NextPage: string
+  account_saving_id: number
 
   constructor(
     private navCtrl: NavController,
@@ -47,22 +48,31 @@ export class AccountTransferPage {
     this.image = this.seller.image_url
     this.cash_input = 0
     this.balance_less_than = 100
-
+    this.account_saving_id = this.seller.account_saving_id || 0
+    
     this.getAccountSaving()
   }
 
   getAccountSaving() {
     let loading = this.loading.loading()
-    let user_id = this.seller.id || 0
     loading.present()
-    this.accountSaving.getAccountSavingBalance(user_id).subscribe(res => {
-      this.balance = res.balance
-      this.label_balance = res.balance
-      loading.dismiss()
-    }, err => {
-      console.log(err)
-      loading.dismiss()
-    })
+    this.accountSaving.getAccountSavingBalanceByAccountId(this.account_saving_id)
+      .subscribe(res => {
+        if (res.status == 200) {
+          this.label_balance = res.body.balance
+          this.balance = res.body.balance
+        } else if (res.status == 204) {
+          this.alertBox.showAlert('ไม่พบข้อมูลรายการของบัญชีของคุณ')
+        } else {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
+        }
+
+        loading.dismiss()
+      }, err => {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
+        console.log(err)
+        loading.dismiss()
+      })
   }
 
   getUserProfileReceiveTransfer() {
@@ -77,10 +87,10 @@ export class AccountTransferPage {
           localStorage.setItem('AccountReceiveTransfer', JSON.stringify(res))
           localStorage.setItem('CashInput', JSON.stringify(this.cash_input))
           this.navCtrl.push(this.NextPage)
-        }else {
+        } else {
           this.alertBox.showAlert('ไม่พบข้อมูลผู้รับโอน กรุณาลองใหม่')
         }
-        
+
         loading.dismiss()
       }, err => {
         console.log(err)
