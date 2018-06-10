@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, LoadingController, AlertController, App } from 'ionic-angular';
-import { AuthenProvider } from '../../providers/authen/authen';
-import { Buyer } from '../../models/buyer';
+import { IonicPage, App } from 'ionic-angular';
 import { NgForm } from '@angular/forms';
+import { AuthenProvider } from '../../providers/authen/authen';
+import { LoadingPageProvider } from '../../providers/loading-page';
+import { AlertBoxProvider } from '../../providers/alert-box';
+import { Sellers } from '../../models/sellers';
 
 @IonicPage()
 @Component({
@@ -11,7 +13,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AuthenticationPage {
   params: any
-  SellerProfile: Buyer;
+  SellerProfile: Sellers;
   data: any = {
     logo: 'assets/images/logo/login.png',
     username: 'Username',
@@ -21,10 +23,11 @@ export class AuthenticationPage {
   }
 
   constructor(
-    private alertCtrl: AlertController,
-    private loadingCtrl: LoadingController,
     private app: App,
-    private authen: AuthenProvider) {
+    private alertBox: AlertBoxProvider,
+    private loading: LoadingPageProvider,
+    private authen: AuthenProvider
+  ) {
     localStorage.removeItem('sellerProfile')
     this.params = {
       username: '',
@@ -33,41 +36,29 @@ export class AuthenticationPage {
   }
 
   onSubmit(myform: NgForm) {
-    let loader = this.loadingCtrl.create({
-      content: 'กำลังดำเนินการ...',
-      spinner: 'crescent',
-      dismissOnPageChange: true,
-    });
+    let loading = this.loading.loading()
 
-    loader.present();
+    loading.present()
     localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile));
     this.authen.resAuthen(this.params).subscribe(
       res => {
-        // เป็นผู้ขายขยะ
+        // Seller ONLY
         if (res.logged === true && res.status === 1 && res.user_cate_id === 1) {
           this.SellerProfile = res
           localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile))
-          this.app.getRootNav().setRoot('main-menu-seller');
+          this.app.getRootNav().setRoot('main-menu-seller')
+          loading.dismiss()
         } else {
-          this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
+          this.alertBox.showAlert('ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่')
           this.params.passwords = ''
-          loader.dismiss();
+          loading.dismiss()
         }
       },
       error => {
-        this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-        loader.dismiss();
+        this.alertBox.showAlert('ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่')        
+        loading.dismiss();
       }
     );
-  }
-
-  presentAlert(title, subtitle) {
-    let alert = this.alertCtrl.create({
-      title: title,
-      subTitle: subtitle,
-      buttons: ['ปิด']
-    });
-    alert.present();
   }
 
 }

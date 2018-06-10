@@ -4,7 +4,8 @@ import { IonicPageModule } from 'ionic-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthenticationPage } from './authentication';
 import { AuthenProvider } from '../../providers/authen/authen';
-
+import { LoadingPageProvider } from '../../providers/loading-page';
+import { AlertBoxProvider } from '../../providers/alert-box';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,6 @@ import { AuthenProvider } from '../../providers/authen/authen';
     FormsModule,
     IonicPageModule.forChild(AuthenticationPage),
   ],
-  providers: [AuthenProvider]
+  providers: [AuthenProvider, LoadingPageProvider, AlertBoxProvider]
 })
 export class AuthenticationPageModule { }
