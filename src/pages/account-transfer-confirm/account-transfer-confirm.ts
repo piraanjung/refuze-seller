@@ -113,6 +113,7 @@ export class AccountTransferConfirmPage {
         }
         loading.dismiss()
       }, err => {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
         console.log(err)
         loading.dismiss()
       })

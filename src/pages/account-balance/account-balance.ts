@@ -3,6 +3,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 import { LoadingPageProvider } from '../../providers/loading-page';
+import { AlertBoxProvider } from '../../providers/alert-box';
 
 @IonicPage({
   name: 'account-balance'
@@ -23,6 +24,7 @@ export class AccountBalancePage {
   
   constructor(
     private accountSaving: AccountSavingProvider,
+    private alertBox: AlertBoxProvider,
     private loading: LoadingPageProvider,
   ) {
     this.AccountPerform = 'account-perform'
@@ -34,8 +36,8 @@ export class AccountBalancePage {
     this.seller_name = `${this.seller.name} ${this.seller.last_name}`
     this.mobile = this.seller.mobile
     this.image = this.seller.image_url
-    this.account_saving_id = this.seller.account_saving_id
-    
+    this.account_saving_id = this.seller.account_saving_id || 0
+
     localStorage.removeItem('AccountReceiveTransfer')
     localStorage.removeItem('CashInput')
 
@@ -44,13 +46,21 @@ export class AccountBalancePage {
 
   getAccountSaving() {
     let loading = this.loading.loading()
-    let user_id = this.seller.id || 0
     loading.present()
-    this.accountSaving.getAccountSavingBalance(user_id)
+    this.accountSaving.getAccountSavingBalanceByAccountId(this.account_saving_id)
       .subscribe(res => {
-        this.balance = res.balance
+        console.log(res)
+        if (res.status == 200) {
+          this.balance = res.body.balance
+        }else if (res.status == 204) {
+          this.alertBox.showAlert('ไม่พบข้อมูลรายการของบัญชีของคุณ')
+        }else {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
+        }
+
         loading.dismiss()
       }, err => {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
         console.log(err)
         loading.dismiss()
       })

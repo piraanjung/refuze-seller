@@ -33,8 +33,8 @@
     </ion-item>
   </ion-list>
 
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="AccountTransfer">โอนเงิน</button>
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding">ถอนเงิน</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [disabled]="account_saving_id != null || balance == 0" [navPush]="AccountTransfer">โอนเงิน</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [disabled]="account_saving_id != null || balance == 0">ถอนเงิน</button>
   <button type="button" ion-button block button-clear-outline round outline class="btn-padding">ธุรกรรมทางการเงิน</button>
 
 </ion-content>
