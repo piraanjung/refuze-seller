@@ -49,7 +49,6 @@ export class AccountBalancePage {
     loading.present()
     this.accountSaving.getAccountSavingBalanceByAccountId(this.account_saving_id)
       .subscribe(res => {
-        console.log(res)
         if (res.status == 200) {
           this.balance = res.body.balance
         }else if (res.status == 204) {
