@@ -23,12 +23,12 @@
   <br>
 
   <ion-list no-margin>
-    <ion-item no-lines [navPush]="AccountPerform">
+    <ion-item no-lines [navPush]="AccountPerform" *ngIf="account_saving_id != null || balance == 0">
       <ion-img class="icon-img" src="assets/images/cash.png" item-start></ion-img>
       <ion-grid>
         <ion-row>
           <ion-col col-6 item-title padding-left>เงินสะสม</ion-col>
-          <ion-col col-6 text-right item-title>{{ balance }} B</ion-col>
+          <ion-col col-6 text-right item-title>{{ balance | number:'1.2-2' }} B</ion-col>
         </ion-row>
       </ion-grid>
       <ion-icon name="arrow-forward" item-end></ion-icon>

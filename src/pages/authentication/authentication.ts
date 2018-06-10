@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, LoadingController, AlertController, App } from 'ionic-angular';
-import { AuthenProvider } from '../../providers/authen/authen';
-import { Buyer } from '../../models/buyer';
+import { IonicPage, App } from 'ionic-angular';
 import { NgForm } from '@angular/forms';
+import { AuthenProvider } from '../../providers/authen/authen';
+import { LoadingPageProvider } from '../../providers/loading-page';
+import { AlertBoxProvider } from '../../providers/alert-box';
+import { Sellers } from '../../models/sellers';
 
 @IonicPage()
 @Component({
@@ -11,7 +13,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AuthenticationPage {
   params: any
-  SellerProfile: Buyer;
+  SellerProfile: Sellers;
   data: any = {
     logo: 'assets/images/logo/login.png',
     username: 'Username',
@@ -21,11 +23,12 @@ export class AuthenticationPage {
   }
 
   constructor(
-    private alertCtrl: AlertController,
-    private loadingCtrl: LoadingController,
     private app: App,
-    private authen: AuthenProvider) {
-    localStorage.removeItem('sellerProfile')
+    private alertBox: AlertBoxProvider,
+    private loading: LoadingPageProvider,
+    private authen: AuthenProvider
+  ) {
+    localStorage.clear()
     this.params = {
       username: '',
       passwords: ''
@@ -33,41 +36,38 @@ export class AuthenticationPage {
   }
 
   onSubmit(myform: NgForm) {
-    let loader = this.loadingCtrl.create({
-      content: 'กำลังดำเนินการ...',
-      spinner: 'crescent',
-      dismissOnPageChange: true,
-    });
+    let loading = this.loading.loading()
 
-    loader.present();
-    localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile));
-    this.authen.resAuthen(this.params).subscribe(
-      res => {
-        // เป็นผู้ขายขยะ
-        if (res.logged === true && res.status === 1 && res.user_cate_id === 1) {
-          this.SellerProfile = res
-          localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile))
-          this.app.getRootNav().setRoot('main-menu-seller');
-        } else {
-          this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-          this.params.passwords = ''
-          loader.dismiss();
+    loading.present()
+
+    this.authen.Authen(this.params)
+      .subscribe(
+        res => {
+          // Seller ONLY
+          if (res.status == 204) {
+            this.alertBox.showAlert('ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่')
+            this.params.passwords = ''
+            loading.dismiss()
+          } else if (res.status == 200 && res.body.logged === false && res.body.rows === 0) {
+            this.alertBox.showAlert('ชื่อเข้าใช้หรือรหัสผ่านไม่ถูกต้อง')
+            this.params.passwords = ''
+            loading.dismiss()
+          } else if (res.status == 200 && res.body.logged === true && res.body.status === 1 && res.body.user_cate_id === 1) {
+            this.SellerProfile = res.body
+            localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile))
+            this.app.getRootNav().setRoot('main-menu-seller')
+            loading.dismiss()
+          } else {
+            this.alertBox.showAlert('ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่')
+            this.params.passwords = ''
+            loading.dismiss()
+          }
+        },
+        error => {
+          this.alertBox.showAlert('เกิดข้อผิดพลาด กรุณาลองใหม่')
+          loading.dismiss();
         }
-      },
-      error => {
-        this.presentAlert('', 'ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่');
-        loader.dismiss();
-      }
-    );
-  }
-
-  presentAlert(title, subtitle) {
-    let alert = this.alertCtrl.create({
-      title: title,
-      subTitle: subtitle,
-      buttons: ['ปิด']
-    });
-    alert.present();
+      );
   }
 
 }

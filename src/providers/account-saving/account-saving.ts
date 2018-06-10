@@ -11,8 +11,12 @@ export class AccountSavingProvider {
   constructor(private http: HttpClient) {
   }
 
-  getAccountSavingBalance(user_id: number) {
+  getAccountSavingBalanceByUserId(user_id: number) {
     return this.http.get<AccountSavingBalance>(`${API_URL}/account/find-account-saving-by-user-id/${user_id}`);
+  }
+
+  getAccountSavingBalanceByAccountId(account_id: number) {
+    return this.http.get<AccountSavingBalance>(`${API_URL}/account/find-account-saving-by-account-id/${account_id}`, { observe: 'response' });
   }
 
   getUserProfileReceiveTransfer(mobile: string) {
