@@ -93,7 +93,7 @@ export class AccountTransferConfirmPage {
     this.accountSaving.validateTransferConfirm({
       user_transfer_id: this.user_id_transfer,
       user_recieve_id: this.user_receive_id,
-      account_saving_transfer_id: 1,
+      account_saving_transfer_id: this.seller.account_saving_id,
       account_saving_receive_id: this.accountReceiveTransfer.account_saving_id,
       transfer_passwords: data.transfer_passwords,
       amount: this.transferAmount
@@ -112,6 +112,5 @@ export class AccountTransferConfirmPage {
         loading.dismiss()
       })
   }
-
 
 }
