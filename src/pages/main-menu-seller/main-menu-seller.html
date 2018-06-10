@@ -17,7 +17,6 @@
 
 </ion-header>
 
-
 <!-- Themes Products + CTA header -->
 <ion-content>
   <ion-grid no-padding *ngIf="data != null">
@@ -26,16 +25,15 @@
       <ion-col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-right>
         <span style="float: right;top:0;">{{item.title}}</span>
       </ion-col>
-      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>
+      <!-- <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left>
         <h1 header-title>{{item.title_description}}</h1>
         <h2 header-subtitle>{{item.description}}</h2>
       </ion-col>
       <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right>
-
-        <!-- <button ion-button button-clear-outline round outline>
+        <button ion-button button-clear-outline round outline>
           {{item.buttonText}}
-        </button> -->
-      </ion-col>
+        </button>
+      </ion-col> -->
     </ion-row>
 
   </ion-grid>
