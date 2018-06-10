@@ -18,18 +18,21 @@ export class AccountPerformPage {
   mobile: string
   image: string
   balance: number
+
   constructor(
     private loading: LoadingPageProvider,
-    private accountSaving: AccountSavingProvider) {
+    private accountSaving: AccountSavingProvider
+  ) {
     this.AccountTransfer = 'account-transfer'
     this.balance = 0
   }
 
   ionViewDidLoad() {
-    this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {};
+    this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {}
     this.seller_name = `${this.seller.name} ${this.seller.last_name}`
     this.mobile = this.seller.mobile
     this.image = this.seller.image_url
+    
     this.getAccountSaving()
   }
 

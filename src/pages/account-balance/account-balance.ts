@@ -19,6 +19,7 @@ export class AccountBalancePage {
   mobile: string
   image: string
   balance: number
+  
   constructor(
     private accountSaving: AccountSavingProvider,
     private loading: LoadingPageProvider,
