@@ -55,7 +55,7 @@ export class AuthenticationPage {
         }
       },
       error => {
-        this.alertBox.showAlert('ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่')        
+        this.alertBox.showAlert('ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่')
         loading.dismiss();
       }
     );
