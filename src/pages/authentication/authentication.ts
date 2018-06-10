@@ -28,7 +28,7 @@ export class AuthenticationPage {
     private loading: LoadingPageProvider,
     private authen: AuthenProvider
   ) {
-    localStorage.removeItem('sellerProfile')
+    localStorage.clear()
     this.params = {
       username: '',
       passwords: ''
@@ -39,12 +39,21 @@ export class AuthenticationPage {
     let loading = this.loading.loading()
 
     loading.present()
-    localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile));
+    
     this.authen.resAuthen(this.params).subscribe(
       res => {
         // Seller ONLY
-        if (res.logged === true && res.status === 1 && res.user_cate_id === 1) {
-          this.SellerProfile = res
+        console.log(res)
+        if (res.status == 204) {
+          this.alertBox.showAlert('ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่')
+          this.params.passwords = ''
+          loading.dismiss()
+        }else if (res.status == 200 && res.body.logged === false && res.body.rows === 0) {
+          this.alertBox.showAlert('ชื่อเข้าใช้หรือรหัสผ่านไม่ถูกต้อง')
+          this.params.passwords = ''
+          loading.dismiss()
+        }else if (res.status == 200 && res.body.logged === true && res.body.status === 1 && res.body.user_cate_id === 1) {
+          this.SellerProfile = res.body
           localStorage.setItem('sellerProfile', JSON.stringify(this.SellerProfile))
           this.app.getRootNav().setRoot('main-menu-seller')
           loading.dismiss()
@@ -55,7 +64,7 @@ export class AuthenticationPage {
         }
       },
       error => {
-        this.alertBox.showAlert('ไม่พบข้อมูลผู้ใช้ กรุณาลองใหม่')
+        this.alertBox.showAlert('เกิดข้อผิดพลาด กรุณาลองใหม่')
         loading.dismiss();
       }
     );

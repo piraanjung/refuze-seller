@@ -19,7 +19,7 @@
 
       <ion-row>
         <ion-col col-12 text-center>
-          <button type="submit" ion-button block button-clear-outline round outline >{{ data.login }}</button>
+          <button type="submit" ion-button block button-clear-outline round outline [disabled]="params.username =='' || params.passwords ==''">{{ data.login }}</button>
         </ion-col>
       </ion-row>
     </ion-grid>
