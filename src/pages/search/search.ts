@@ -21,7 +21,8 @@ export class SearchPage {
     this.searchQuery = this.navParams.get('searchQuery');
 
     this.WooCommerce = WC({
-      url : "http://119.59.103.60/~web/wordpress/",
+      // url : "http://119.59.103.60/~web/wordpress/",
+      url : "http://localhost/wordpress",
       consumerKey : "ck_34dadcc1e5889f956eb53c58d25e1705859742af",
       consumerSecret : "cs_ac5ab442e936cfaf94f0b2746e8b5da59d337342"
     });
@@ -38,6 +39,11 @@ export class SearchPage {
   }
 
   loadMoreProducts(event){
+    this.WooCommerce.getAsync('ajax_api_handle_request?user_id=1').then((data)=>{
+      console.log(data);
+    },(err)=>{
+      console.log(err)
+    })
     this.WooCommerce.getAsync('products?filter[q]='+ this.searchQuery + "&page="+this.page).then((searchData)=>{
       this.products = this.products.concat(JSON.parse(searchData.body).products);
 

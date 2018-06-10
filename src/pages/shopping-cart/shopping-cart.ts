@@ -21,7 +21,8 @@ export class ShoppingCartPage {
   constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
     this.page =2;
     this.WooCommerce = WC({
-      url : "http://119.59.103.60/~web/wordpress/",
+      // url : "http://119.59.103.60/~web/wordpress/",
+      url : "http://localhost/wordpress",
       consumerKey : "ck_34dadcc1e5889f956eb53c58d25e1705859742af",
       consumerSecret : "cs_ac5ab442e936cfaf94f0b2746e8b5da59d337342"
     });
