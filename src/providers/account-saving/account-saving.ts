@@ -29,12 +29,12 @@ export class AccountSavingProvider {
     return this.http.get<AccountReceiveTransfer>(`${API_URL}/users/find-by-mobile/${mobile}`)
   }
 
-  validateTransferConfirm(transfer_passwords: number) {
+  validateTransferPasswords(transfer_passwords: number) {
     return this.http.get(`${API_URL}/account/validate-transfer-passwords/${transfer_passwords}`, { headers: this.API_HEADERS, observe: 'response' })
   }
 
   transferMoney(params: TransferMoney) {
-    return this.http.post(`${API_URL}`, params, { headers: this.API_HEADERS, observe: 'response' })
+    return this.http.post(`${API_URL}/account/transfer-money`, params, { headers: this.API_HEADERS, observe: 'response' })
   }
 
 }
