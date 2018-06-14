@@ -23,8 +23,8 @@ export class AccountSavingProvider {
     return this.http.get<AccountReceiveTransfer>(`${API_URL}/users/find-by-mobile/${mobile}`);
   }
 
-  validateTransferConfirm(params: ValidateTransferConfirm) {
-    return this.http.post(`${API_URL}/account/validate-transfer-confirm`, params, { observe: 'response' });
+  validateTransferConfirm(transfer_passwords: number) {
+    return this.http.get(`${API_URL}/account/validate-transfer-confirm/${transfer_passwords}`, { observe: 'response' });
   }
 
 }
