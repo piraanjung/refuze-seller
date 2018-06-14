@@ -14,6 +14,7 @@ import { AlertBoxProvider } from '../../providers/alert-box';
 })
 export class AccountPerformPage {
   AccountTransfer: string
+  AccountWithdraw: string
   seller: Sellers
   seller_name: string
   mobile: string
@@ -27,6 +28,7 @@ export class AccountPerformPage {
     private accountSaving: AccountSavingProvider
   ) {
     this.AccountTransfer = 'account-transfer'
+    this.AccountWithdraw = 'account-withdraw'
     this.balance = 0
   }
 
