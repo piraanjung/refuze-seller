@@ -40,7 +40,7 @@ export class AccountSavingProvider {
 
   withDrawMoney(params: AccountWithdraw)
   {
-    return this.http.post(`${API_URL}/account/withdraw-money`, params, { headers: this.API_HEADERS, observe: 'response' }) 
+    return this.http.post(`${API_URL}/account/withdraw-money`, params, { headers: this.API_HEADERS, observe: 'response' })
   }
 
 }
