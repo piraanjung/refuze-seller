@@ -5,6 +5,7 @@ import { AccountSavingBalance } from '../../models/account-saving-balance';
 import { AccountReceiveTransfer } from '../../models/account-receive-transfer';
 import { TransferMoney } from '../../models/transfer-money';
 import { Sellers } from '../../models/sellers';
+import { AccountWithdraw } from '../../models/account-withdraw';
 
 @Injectable()
 export class AccountSavingProvider {
@@ -35,6 +36,11 @@ export class AccountSavingProvider {
 
   transferMoney(params: TransferMoney) {
     return this.http.post(`${API_URL}/account/transfer-money`, params, { headers: this.API_HEADERS, observe: 'response' })
+  }
+
+  withDrawMoney(params: AccountWithdraw)
+  {
+    return this.http.post(`${API_URL}/account/withdraw-money`, params, { headers: this.API_HEADERS, observe: 'response' }) 
   }
 
 }

@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the AccountWithdrawResultPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
+@IonicPage({
+  name: 'account--withdraw-result'
+})
 @Component({
   selector: 'page-account-withdraw-result',
   templateUrl: 'account-withdraw-result.html',

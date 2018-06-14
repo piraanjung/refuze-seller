@@ -109,7 +109,6 @@ export class AccountWithdrawPage {
 
     this.accountSaving.validateTransferPasswords(transfer_passwords)
       .subscribe(res => {
-        console.log(res)
         if (res.status == 200 && res.body['status'] == 1) {
           this.withDrawMoney()
         } else if (res.status == 200 && res.body['status'] == 0) {
@@ -128,7 +127,26 @@ export class AccountWithdrawPage {
   }
 
   private withDrawMoney() {
+    let loading = this.loading.loading()
+    loading.present()
 
+    this.accountSaving.withDrawMoney({ account_saving_id: this.account_saving_id, amount: this.cash_input })
+    .subscribe(res => {
+      if (res.status == 200 && res.body['status'] == 1) {
+        this.navCtrl.push('account--withdraw-result')
+      } else if (res.status == 200 && res.body['status'] == 0) {
+        this.alertBox.showAlert('หมายเลขรหัสลับไม่ถูกต้อง กรุณาลองใหม่ภายหลัง')
+      } else if (res.status == 204) {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+      } else {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+      }
+      loading.dismiss()
+    }, err => {
+      this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+      console.log(err)
+      loading.dismiss()
+    })
   }
 
 
