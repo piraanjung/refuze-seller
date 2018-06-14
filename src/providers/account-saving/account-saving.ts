@@ -30,7 +30,7 @@ export class AccountSavingProvider {
   }
 
   validateTransferConfirm(transfer_passwords: number) {
-    return this.http.get(`${API_URL}/account/validate-transfer-confirm/${transfer_passwords}`, { headers: this.API_HEADERS, observe: 'response' });
+    return this.http.get(`${API_URL}/account/validate-transfer-passwords/${transfer_passwords}`, { headers: this.API_HEADERS, observe: 'response' });
   }
 
 }
