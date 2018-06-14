@@ -99,6 +99,7 @@ export class AccountTransferConfirmPage {
 
     this.accountSaving.validateTransferConfirm(transfer_passwords)
     .subscribe(res => {
+      console.log(res)
       if (res.status == 200) {
         // this.navCtrl.push('account-transfer-result')
       } else if (res.status == 204) {

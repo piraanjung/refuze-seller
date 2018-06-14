@@ -4,11 +4,17 @@ import { API_URL } from '../api-urls';
 import { AccountSavingBalance } from '../../models/account-saving-balance';
 import { AccountReceiveTransfer } from '../../models/account-receive-transfer';
 import { ValidateTransferConfirm } from '../../models/validate-transfer-confirm';
+import { Sellers } from '../../models/sellers';
 
 @Injectable()
 export class AccountSavingProvider {
 
+  API_HEADERS: any
   constructor(private http: HttpClient) {
+    let sellerProfile: Sellers = JSON.parse(localStorage.getItem('sellerProfile'))
+    this.API_HEADERS = {
+      token: sellerProfile.remember_token
+    }
   }
 
   getAccountSavingBalanceByUserId(user_id: number) {
@@ -24,7 +30,7 @@ export class AccountSavingProvider {
   }
 
   validateTransferConfirm(transfer_passwords: number) {
-    return this.http.get(`${API_URL}/account/validate-transfer-confirm/${transfer_passwords}`, { observe: 'response' });
+    return this.http.get(`${API_URL}/account/validate-transfer-confirm/${transfer_passwords}`, { headers: this.API_HEADERS, observe: 'response' });
   }
 
 }
