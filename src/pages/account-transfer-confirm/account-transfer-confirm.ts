@@ -98,21 +98,48 @@ export class AccountTransferConfirmPage {
     loading.present()
 
     this.accountSaving.validateTransferConfirm(transfer_passwords)
-    .subscribe(res => {
-      console.log(res)
-      if (res.status == 200 && res.body['status'] == 1) {
-        // this.navCtrl.push('account-transfer-result')
-      } else if (res.status == 204) {
+      .subscribe(res => {
+        console.log(res)
+        if (res.status == 200 && res.body['status'] == 1) {
+          this.transferMoney()
+        } else if (res.status == 204) {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        } else {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        }
+        loading.dismiss()
+      }, err => {
         this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
-      } else {
-        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
-      }
-      loading.dismiss()
-    }, err => {
-      this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
-      console.log(err)
-      loading.dismiss()
+        console.log(err)
+        loading.dismiss()
+      })
+  }
+
+  private transferMoney() {
+    let loading = this.loading.loading()
+    loading.present()
+
+    this.accountSaving.transferMoney({
+      user_transfer_id: this.user_id_transfer,
+      user_recieve_id: this.user_receive_id,
+      account_saving_transfer_id: this.account_saving_transfer,
+      account_saving_receive_id: this.account_saving_receive_id,
+      amount: this.transferAmount
     })
+      .subscribe(res => {
+        if (res.status == 200) {
+          // this.navCtrl.push('account-transfer-result')
+        } else if (res.status == 204) {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        } else {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        }
+        loading.dismiss()
+      }, err => {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        console.log(err)
+        loading.dismiss()
+      })
   }
 
 }
