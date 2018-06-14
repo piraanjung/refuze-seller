@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, AlertController } from 'ionic-angular';
 import { AlertBoxProvider } from '../../providers/alert-box';
 import { LoadingPageProvider } from '../../providers/loading-page';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
@@ -28,6 +28,7 @@ export class AccountWithdrawPage {
 
   constructor(
     private navCtrl: NavController,
+    private alertCtrl: AlertController,
     private alertBox: AlertBoxProvider,
     private loading: LoadingPageProvider,
     private accountSaving: AccountSavingProvider
@@ -46,7 +47,7 @@ export class AccountWithdrawPage {
     this.cash_input = 0
     this.balance_less_than = 100
     this.account_saving_id = this.seller.account_saving_id || 0
-    
+
     this.getAccountSaving()
   }
 
@@ -72,8 +73,63 @@ export class AccountWithdrawPage {
       })
   }
 
-  private withDrawMoney() {
-    
+  presentPrompt() {
+    let alert = this.alertCtrl.create({
+      title: 'กรอกหมายเลขรหัสลับ',
+      inputs: [
+        {
+          name: 'transfer_passwords',
+          type: 'password',
+          placeholder: 'กรอกหมายเลขรหัสลับ'
+        }
+      ],
+      buttons: [
+        {
+          text: 'ปิด',
+          role: 'cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'ยืนยัน',
+          handler: data => {
+            this.validateTransferPasswords(data)
+          }
+        }
+      ]
+    });
+    alert.present();
   }
+
+  private validateTransferPasswords(data) {
+    let loading = this.loading.loading()
+    let transfer_passwords = data.transfer_passwords
+    loading.present()
+
+    this.accountSaving.validateTransferPasswords(transfer_passwords)
+      .subscribe(res => {
+        console.log(res)
+        if (res.status == 200 && res.body['status'] == 1) {
+          this.withDrawMoney()
+        } else if (res.status == 200 && res.body['status'] == 0) {
+          this.alertBox.showAlert('หมายเลขรหัสลับไม่ถูกต้อง กรุณาลองใหม่ภายหลัง')
+        } else if (res.status == 204) {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        } else {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        }
+        loading.dismiss()
+      }, err => {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        console.log(err)
+        loading.dismiss()
+      })
+  }
+
+  private withDrawMoney() {
+
+  }
+
 
 }
