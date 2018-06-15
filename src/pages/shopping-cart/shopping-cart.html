@@ -37,12 +37,12 @@
 <ion-list>
   <ion-item *ngFor="let product of moreProducts" text-wrap (click)="openProductPage(product)"> 
     <ion-thumbnail item-left>
-      <img [src]="product.featured_src"/>
+      <!-- <img [src]="product.featured_src"/> -->
     </ion-thumbnail>
     <h1>{{ product.title }}</h1>
     <p>
-      <span [innerHtml]="product.short_description.substr(0,50)+ '...'"></span>
-      <span [innerHtml]="product.price_html"></span>
+      <!-- <span [innerHtml]="product.short_description.substr(0,50)+ '...'"></span>
+      <span [innerHtml]="product.price_html"></span> -->
     </p>
     <button ion-button clear icon item-right>
       <ion-icon name="arrow-forward"></ion-icon>
