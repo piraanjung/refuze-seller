@@ -6,6 +6,7 @@ import { AccountReceiveTransfer } from '../../models/account-receive-transfer';
 import { TransferMoney } from '../../models/transfer-money';
 import { Sellers } from '../../models/sellers';
 import { AccountWithdraw } from '../../models/account-withdraw';
+import { AccountStatements } from '../../models/account-statements';
 
 @Injectable()
 export class AccountSavingProvider {
@@ -45,7 +46,7 @@ export class AccountSavingProvider {
 
   getAccountStatements(user_id: number)
   {
-    return this.http.get(`${API_URL}/aaccount/statements/me`, { headers: this.API_HEADERS, observe: 'response' })
+    return this.http.get<AccountStatements[]>(`${API_URL}/aaccount/statements/me`, { headers: this.API_HEADERS, observe: 'response' })
   }
 
 }
