@@ -3,6 +3,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 import { LoadingPageProvider } from '../../providers/loading-page';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 import { Sellers } from '../../models/sellers';
+import { AccountStatements } from '../../models/account-statements';
 
 @IonicPage({
   name: 'account-statements'
@@ -13,8 +14,9 @@ import { Sellers } from '../../models/sellers';
 })
 export class AccountStatementsPage {
 
-  seller: Sellers
   private user_id: number
+  seller: Sellers
+  statements: AccountStatements[]
 
   constructor(
     private navCtrl: NavController,
@@ -32,10 +34,11 @@ export class AccountStatementsPage {
     console.log(this.user_id)
     let loading = this.loading.loading()
     loading.present()
-    
+
     this.accountSaving.getAccountStatements()
     .subscribe(res => {
       console.log(res)
+      this.statements = res.body
       loading.dismiss()
     }, err => {
       console.log(err)
