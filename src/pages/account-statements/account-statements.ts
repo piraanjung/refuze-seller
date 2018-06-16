@@ -33,13 +33,12 @@ export class AccountStatementsPage {
 
   private getAccountStatements()
   {
-    console.log(this.user_id)
     let loading = this.loading.loading()
     loading.present()
 
     this.accountSaving.getAccountStatements()
     .subscribe(res => {
-      console.log(res)
+      console.log(res.body)
       this.statements = res.body
       loading.dismiss()
     }, err => {
