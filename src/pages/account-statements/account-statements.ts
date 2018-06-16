@@ -23,8 +23,6 @@ export class AccountStatementsPage {
   ) { }
 
   ionViewDidLoad() {
-    this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {}
-    this.user_id = this.seller.id
 
     this.getAccountStatements()
   }
@@ -32,5 +30,16 @@ export class AccountStatementsPage {
   private getAccountStatements()
   {
     console.log(this.user_id)
+    let loading = this.loading.loading()
+    loading.present()
+    
+    this.accountSaving.getAccountStatements()
+    .subscribe(res => {
+      console.log(res)
+      loading.dismiss()
+    }, err => {
+      console.log(err)
+      loading.dismiss()
+    })
   }
 }

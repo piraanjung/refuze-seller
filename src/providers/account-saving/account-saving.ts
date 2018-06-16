@@ -44,9 +44,9 @@ export class AccountSavingProvider {
     return this.http.post(`${API_URL}/account/withdraw-money`, params, { headers: this.API_HEADERS, observe: 'response' })
   }
 
-  getAccountStatements(user_id: number)
+  getAccountStatements()
   {
-    return this.http.get<AccountStatements[]>(`${API_URL}/aaccount/statements/me`, { headers: this.API_HEADERS, observe: 'response' })
+    return this.http.get<AccountStatements[]>(`${API_URL}/account/statements/me`, { headers: this.API_HEADERS, observe: 'response' })
   }
 
 }
