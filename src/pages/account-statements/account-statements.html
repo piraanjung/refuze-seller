@@ -1,4 +1,3 @@
-
 <ion-header>
 
   <ion-navbar>
@@ -9,5 +8,10 @@
 
 
 <ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let statement of statements">
+      {{ statement.amount }}
+    </button>
+  </ion-list>
 
 </ion-content>
