@@ -38,7 +38,6 @@ export class AccountStatementsPage {
 
     this.accountSaving.getAccountStatements()
     .subscribe(res => {
-      console.log(res.body)
       this.statements = res.body
       loading.dismiss()
     }, err => {
