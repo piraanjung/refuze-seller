@@ -4,6 +4,7 @@ import { LoadingPageProvider } from '../../providers/loading-page';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 import { Sellers } from '../../models/sellers';
 import { AccountStatements } from '../../models/account-statements';
+import { AlertBoxProvider } from '../../providers/alert-box';
 
 @IonicPage({
   name: 'account-statements'
@@ -21,6 +22,7 @@ export class AccountStatementsPage {
   constructor(
     private navCtrl: NavController,
     private loading: LoadingPageProvider,
+    private alertBox: AlertBoxProvider,
     private accountSaving: AccountSavingProvider
   ) { }
 
@@ -41,6 +43,7 @@ export class AccountStatementsPage {
       this.statements = res.body
       loading.dismiss()
     }, err => {
+      this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
       console.log(err)
       loading.dismiss()
     })

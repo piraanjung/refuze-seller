@@ -54,12 +54,12 @@ export class AccountPerformPage {
         }else if (res.status == 204) {
           this.alertBox.showAlert('ไม่พบข้อมูลรายการของบัญชีของคุณ')
         }else {
-          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
         }
 
         loading.dismiss()
       }, err => {
-        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
         console.log(err)
         loading.dismiss()
       })
