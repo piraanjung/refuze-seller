@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
+import { LoadingPageProvider } from '../../providers/loading-page';
+import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 
 @IonicPage({
   name: 'account-statements'
@@ -10,11 +12,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AccountStatementsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(
+    private navCtrl: NavController,
+    private loading: LoadingPageProvider,
+    private accountSaving: AccountSavingProvider
+  ) { }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AccountStatementsPage');
+
   }
 
 }
