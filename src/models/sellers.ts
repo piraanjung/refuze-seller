@@ -14,4 +14,5 @@ export interface Sellers {
   DISTRICT_NAME: string
   zipcode: string
   account_saving_id: number
+  remember_token: string
 }

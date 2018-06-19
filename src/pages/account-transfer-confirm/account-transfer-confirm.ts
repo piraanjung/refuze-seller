@@ -84,7 +84,7 @@ export class AccountTransferConfirmPage {
         {
           text: 'ยืนยัน',
           handler: data => {
-            this.validateTransferConfirm(data)
+            this.validateTransferPasswords(data)
           }
         }
       ]
@@ -92,19 +92,43 @@ export class AccountTransferConfirmPage {
     alert.present();
   }
 
-  private validateTransferConfirm(data) {
+  private validateTransferPasswords(data) {
+    let loading = this.loading.loading()
+    let transfer_passwords = data.transfer_passwords
+    loading.present()
+
+    this.accountSaving.validateTransferPasswords(transfer_passwords)
+      .subscribe(res => {
+        if (res.status == 200 && res.body['status'] == 1) {
+          this.transferMoney()
+        } else if (res.status == 200 && res.body['status'] == 0) {
+          this.alertBox.showAlert('หมายเลขรหัสลับไม่ถูกต้อง กรุณาลองใหม่ภายหลัง')
+        } else if (res.status == 204) {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        } else {
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        }
+        loading.dismiss()
+      }, err => {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        console.log(err)
+        loading.dismiss()
+      })
+  }
+
+  private transferMoney() {
     let loading = this.loading.loading()
     loading.present()
-    this.accountSaving.validateTransferConfirm({
+
+    this.accountSaving.transferMoney({
       user_transfer_id: this.user_id_transfer,
       user_recieve_id: this.user_receive_id,
       account_saving_transfer_id: this.account_saving_transfer,
       account_saving_receive_id: this.account_saving_receive_id,
-      transfer_passwords: data.transfer_passwords,
       amount: this.transferAmount
     })
       .subscribe(res => {
-        if (res.status == 200) {
+        if (res.status == 200 && res.body['status'] == 1) {
           this.navCtrl.push('account-transfer-result')
         } else if (res.status == 204) {
           this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
