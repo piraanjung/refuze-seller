@@ -15,6 +15,7 @@ import { AlertBoxProvider } from '../../providers/alert-box';
 export class AccountPerformPage {
   AccountTransfer: string
   AccountWithdraw: string
+  AccountStatements: string
   seller: Sellers
   seller_name: string
   mobile: string
@@ -29,6 +30,7 @@ export class AccountPerformPage {
   ) {
     this.AccountTransfer = 'account-transfer'
     this.AccountWithdraw = 'account-withdraw'
+    this.AccountStatements = 'account-statements'
     this.balance = 0
   }
 
@@ -52,12 +54,12 @@ export class AccountPerformPage {
         }else if (res.status == 204) {
           this.alertBox.showAlert('ไม่พบข้อมูลรายการของบัญชีของคุณ')
         }else {
-          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
+          this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
         }
 
         loading.dismiss()
       }, err => {
-        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลังต่ะ')
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
         console.log(err)
         loading.dismiss()
       })

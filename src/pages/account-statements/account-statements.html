@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ธุรกรรมทางการเงิน</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let statement of statements">
+      <p>{{ statement.statement_categories_label }}</p>
+      <p>{{ statement.amount }}</p>
+      <p>{{ statement.updated_at_th }}</p>
+      
+    </button>
+  </ion-list>
+
+</ion-content>
