@@ -33,16 +33,16 @@ items=  [
     "headerImage": "assets/images/background/17.jpg",
     "title": "ธนาคารขยะ",
     "navCtrl": "account-balance",
-    "icon" : "cart"
+    "icon" : "logo-bitcoin"
   },
   {
     "title_description": "Order No. 1",
     "description": "Will be shipped: 15.5.2016.",
     "buttonText": "PROCEED",
     "headerImage": "assets/images/background/17.jpg",
-    "title": "Shoping Cart",
+    "title": "ซื้อสินค้าออนไลน์",
     "navCtrl": "shopping-cart-main",
-    "icon" : "cart"
+    "icon" : "cloud"
   },
   {
     "title_description": "Order No. 1",
@@ -51,7 +51,7 @@ items=  [
     "headerImage": "assets/images/background/17.jpg",
     "title": "ซื้อสินค้าในโรงเรียน",
     "navCtrl": "buy-local-product",
-    "icon" : "cart"
+    "icon" : "home"
   },
   {
     "title_description": "Order No. 1",
@@ -60,7 +60,7 @@ items=  [
     "headerImage": "assets/images/background/17.jpg",
     "title": "ราคากลางขยะ",
     "navCtrl": "find-items",
-    "icon" : "cart"
+    "icon" : "stats"
   },
 
   // {
@@ -86,7 +86,16 @@ items=  [
     "headerImage": "assets/images/background/17.jpg",
     "title": "ประวัติการขายขยะ",
     "navCtrl": "sell-history",
-    "icon" : "cart"
+    "icon" : "recording"
+  },
+  {
+    "title_description": "Order No. 1",
+    "description": "Will be shipped: 15.5.2016.",
+    "buttonText": "PROCEED",
+    "headerImage": "assets/images/background/17.jpg",
+    "title": "ออกจากระบบ",
+    "navCtrl": "AuthenticationPage",
+    "icon" : "exit"
   }
 ]
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, 
