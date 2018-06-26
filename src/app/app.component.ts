@@ -22,6 +22,15 @@ items=  [
     "description": "Will be shipped: 15.5.2016.",
     "buttonText": "PROCEED",
     "headerImage": "assets/images/background/17.jpg",
+    "title": "หน้่าหลัก",
+    "navCtrl": "main-menu-seller",
+    "icon" : "appstore"
+  },
+  {
+    "title_description": "Order No. 1",
+    "description": "Will be shipped: 15.5.2016.",
+    "buttonText": "PROCEED",
+    "headerImage": "assets/images/background/17.jpg",
     "title": "ขายขยะ",
     "navCtrl": "sell-trash",
     "icon" : "cart"
