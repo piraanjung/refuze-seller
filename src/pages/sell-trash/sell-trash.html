@@ -18,8 +18,6 @@
         <h2 header-title>นำ QR CODE สแกนกับเครื่องผู้รับซื้อขยะ</h2>
         <ion-card *ngIf="createCode" qrcode>
           <ngx-qrcode [qrc-value]="createCode" (click)="gotoAfterMatching()"></ngx-qrcode>
-          <!-- <ion-card-content>{{ createCode }}</ion-card-content> -->
-          <!-- <h5 header-subtitle>นำ QR CODE สแกนกับเครื่องผู้รับซื้อขยะ</h5> -->
         </ion-card>
         
 

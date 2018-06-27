@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Storage } from '@ionic/storage';
 
-/**
- * Generated class for the SellTrashPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage({
   name:"sell-trash"
@@ -43,15 +37,9 @@ export class SellTrashPage {
   }
 
   generate_qrcode(){
-    // this.storage.get('currentUser').then(res =>{
-    //   this.user =res
-    //   console.log(this.user.mobile)
-    //   if(this.user.mobile != ""){
-        this.createCode = '34593724345123';//this.user.mobile
-        this.show_qr_code = true
-    //   }
-      
-    // })
+    let sellerProfile = JSON.parse(localStorage.getItem('sellerProfile'));
+    console.log(sellerProfile);
+    this.createCode = sellerProfile.id_card;
   }
 
   gotoAfterMatching(){
