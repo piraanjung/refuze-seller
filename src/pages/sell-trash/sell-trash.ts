@@ -38,7 +38,6 @@ export class SellTrashPage {
 
   generate_qrcode(){
     let sellerProfile = JSON.parse(localStorage.getItem('sellerProfile'));
-    console.log(sellerProfile);
     this.createCode = sellerProfile.id_card;
   }
 
