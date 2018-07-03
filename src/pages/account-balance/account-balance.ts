@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, Content } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 import { LoadingPageProvider } from '../../providers/loading-page';
@@ -21,6 +21,25 @@ export class AccountBalancePage {
   image: string
   balance: number
   account_saving_id: number
+  content: Content;
+  @ViewChild(Content)
+
+
+  data = {
+        "items": [
+            {
+                "id": 1,
+                "title": "Product 1",
+                "backgroundImage": "assets/images/background/22.jpg",
+                "button": "BUY",
+                "items": [
+                    "PAY WITH PAYPAL",
+                    "PAY WITH VISA CARD",
+                    "PAY WITH MAESTRO CARD"
+                ]
+            },
+          ]
+      }
   
   constructor(
     private accountSaving: AccountSavingProvider,
@@ -64,5 +83,28 @@ export class AccountBalancePage {
         loading.dismiss()
       })
   }
+
+  // onEvent(event: string, item: any, e: any) {
+  //   if (e) {
+  //     e.stopPropagation();
+  //   }
+  //   if (this.events[event]) {
+  //     this.events[event](item);
+  //   }
+  // }
+
+  toggleGroup(group: any) {
+    group.show = !group.show;
+  }
+
+  isGroupShown(group: any) {
+    return group.show;
+  }
+
+  // ngAfterViewInit() {
+  //   this.content.ionScroll.subscribe((d) => {
+  //     this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
+  //   });
+  // }
 
 }
