@@ -79,6 +79,7 @@ export class AccountTransferPage {
     let loading = this.loading.loading()
     let mobile_receive_transfer = this.mobile_receive_transfer || ''
     loading.present()
+    console.log(mobile_receive_transfer)
     this.accountSaving.getUserProfileReceiveTransfer(mobile_receive_transfer)
       .subscribe(res => {
 
