@@ -1,6 +1,11 @@
 <ion-header>
 
   <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="openPage(BackPage)">
+        <ion-icon color="light" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>ยืนยันการโอนเงิน</ion-title>
   </ion-navbar>
 
@@ -38,8 +43,7 @@
 
   <br>
 
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="CancelTransfer">ยกเลิกการโอน</button>
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [disabled]="account_saving_transfer == null || account_saving_receive_id == null" (click)="presentPrompt()">ยืนยันการโอน</button>
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="BackPage">กลับไปก่อนหน้านี้</button>
-
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" (click)="openPage(CancelTransfer)">ยกเลิกการโอน</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [disabled]="account_saving_transfer == null || account_saving_receive_id == null"
+    (click)="presentPrompt()">ยืนยันการโอน</button>
 </ion-content>
