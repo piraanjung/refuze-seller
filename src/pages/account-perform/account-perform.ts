@@ -35,11 +35,10 @@ export class AccountPerformPage {
     this.AccountWithdraw = 'account-withdraw';
     this.AccountStatements = 'account-statements';
     this.balance = 0;
-    
+    this.menuCtrl.enable(false, 'menu-side-bar');
   }
 
   ionViewDidLoad() {
-    this.menuCtrl.enable(false, 'menu-side-bar');
     this.seller = JSON.parse(localStorage.getItem('sellerProfile')) || {};
     this.seller_name = `${this.seller.name} ${this.seller.last_name}`;
     this.mobile = this.seller.mobile;
@@ -70,8 +69,8 @@ export class AccountPerformPage {
       })
   }
 
-  openPage() {
-    this.navCtrl.setRoot('account-perform', {}, { animate: true, direction: 'forward' });
+  openPage(page) {
+    this.navCtrl.setRoot(page, {}, { animate: true, direction: 'forward' });
   }
 
 }
