@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, MenuController } from 'ionic-angular';
 import { LoadingPageProvider } from '../../providers/loading-page';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 import { Sellers } from '../../models/sellers';
@@ -19,31 +19,32 @@ export class AccountStatementsPage {
   statements: AccountStatements[];
 
   constructor(
+    private menuCtrl: MenuController,
     private navCtrl: NavController,
     private loading: LoadingPageProvider,
     private alertBox: AlertBoxProvider,
     private accountSaving: AccountSavingProvider
-  ) { }
+  ) {
+    this.menuCtrl.enable(false, 'menu-side-bar');
+  }
 
   ionViewDidLoad() {
-
     this.getAccountStatements();
   }
 
-  private getAccountStatements()
-  {
+  private getAccountStatements() {
     let loading = this.loading.loading();
     loading.present();
 
     this.accountSaving.getAccountStatements()
-    .subscribe(res => {
-      this.statements = res.body;
-      loading.dismiss();
-    }, err => {
-      this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
-      console.log(err);
-      loading.dismiss();
-    })
+      .subscribe(res => {
+        this.statements = res.body;
+        loading.dismiss();
+      }, err => {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        console.log(err);
+        loading.dismiss();
+      })
   }
 
   openPage(page) {
