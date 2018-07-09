@@ -4,7 +4,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    
+
     <ion-title text-center>ธนาคารขยะ</ion-title>
   </ion-navbar>
 
@@ -28,7 +28,7 @@
   <br>
 
   <ion-list no-margin>
-    <ion-item no-lines [navPush]="AccountPerform" *ngIf="account_saving_id != null || balance == 0">
+    <ion-item no-lines (click)="openPage()" *ngIf="account_saving_id != null || balance == 0">
       <ion-img class="icon-img" src="assets/images/cash.png" item-start></ion-img>
       <ion-grid>
         <ion-row>
