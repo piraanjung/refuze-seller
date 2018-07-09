@@ -136,7 +136,8 @@ export class AccountWithdrawPage {
     this.accountSaving.withDrawMoney({ account_saving_id: this.account_saving_id, amount: this.cash_input })
       .subscribe(res => {
         if (res.status == 200 && res.body['status'] == 1) {
-          this.openPage('account--withdraw-result');
+          localStorage.setItem('CashInput', JSON.stringify(this.cash_input));
+          this.openPage('account-withdraw-result');
         } else if (res.status == 200 && res.body['status'] == 0) {
           this.alertBox.showAlert('หมายเลขรหัสลับไม่ถูกต้อง กรุณาลองใหม่ภายหลัง');
         } else if (res.status == 204) {
