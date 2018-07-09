@@ -13,19 +13,20 @@ import { AlertBoxProvider } from '../../providers/alert-box';
   templateUrl: 'account-transfer.html',
 })
 export class AccountTransferPage {
-  seller: Sellers
-  seller_name: string
-  mobile: string
-  image: string
-  cash_input: number
-  balance: number
-  label_balance: number
-  balance_less_than: number
-  mobile_receive_transfer: string
-  params: Object
-  BackPage: string
-  NextPage: string
-  account_saving_id: number
+
+  seller: Sellers;
+  seller_name: string;
+  mobile: string;
+  image: string;
+  cash_input: number;
+  balance: number;
+  label_balance: number;
+  balance_less_than: number;
+  mobile_receive_transfer: string;
+  params: Object;
+  BackPage: string;
+  NextPage: string;
+  account_saving_id: number;
 
   constructor(
     private menuCtrl: MenuController,
