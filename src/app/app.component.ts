@@ -12,6 +12,7 @@ export class MyApp {
   rootPage: any = 'AuthenticationPage';
 
   pages: any = []
+  headerSideBar: string;
 
   constructor(
     platform: Platform,
@@ -21,7 +22,8 @@ export class MyApp {
     private events: Events
   ) {
     this.events.subscribe('pages', (pages) => this.pages = pages);
-
+    this.events.subscribe('header-side-bar', headerSideBar => this.headerSideBar = headerSideBar);
+    
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.

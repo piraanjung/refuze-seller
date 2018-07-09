@@ -12,11 +12,14 @@ import { MAIN_MENU_SELLER } from '../../providers/main-menu-seller';
 export class MainMenuSellerPage {
 
   pages: any = [];
+  headerSideBar: string;
 
   constructor(
     private navCtrl: NavController,
     private events: Events
   ) {
+    this.headerSideBar = 'ขายขยะ';
+    this.events.publish('header-side-bar', this.headerSideBar);
     this.events.publish('pages', MAIN_MENU_SELLER);
     this.pages = MAIN_MENU_SELLER.filter(menu => menu.icon != 'exit');
   }
