@@ -18,8 +18,7 @@ export class MainMenuSellerPage {
     private events: Events
   ) {
     this.events.publish('pages', MAIN_MENU_SELLER);
-    MAIN_MENU_SELLER.splice((MAIN_MENU_SELLER.length - 1), 1)
-    this.pages = MAIN_MENU_SELLER;
+    this.pages = MAIN_MENU_SELLER.filter(menu => menu.icon != 'exit');
   }
 
   ionViewDidLoad() {
@@ -30,7 +29,7 @@ export class MainMenuSellerPage {
       e.stopPropagation();
     }
 
-    this.navCtrl.setRoot(item.navCtrl, {}, { animate: true, direction: 'forward' })
+    this.navCtrl.setRoot(item.navCtrl, {}, { animate: true, direction: 'forward' });
   }
 
 }

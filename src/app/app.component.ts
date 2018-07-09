@@ -20,10 +20,7 @@ export class MyApp {
     private menuCtrl: MenuController,
     private events: Events
   ) {
-    this.events.subscribe('pages', (pages) => {
-      console.log(pages)
-      this.pages = pages;
-    });
+    this.events.subscribe('pages', (pages) => this.pages = pages);
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
