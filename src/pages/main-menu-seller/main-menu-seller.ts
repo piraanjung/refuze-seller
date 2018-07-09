@@ -14,7 +14,7 @@ export class MainMenuSellerPage {
   menu: any = [];
 
   constructor(private navCtrl: NavController) {
-    console.log(MAIN_MENU_SELLER.length)
+    MAIN_MENU_SELLER.splice((MAIN_MENU_SELLER.length - 1), 1)
     this.menu = MAIN_MENU_SELLER;
   }
 
