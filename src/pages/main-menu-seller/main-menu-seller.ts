@@ -53,7 +53,8 @@ export class MainMenuSellerPage {
     if (e) {
       e.stopPropagation();
     }
-    this.navCtrl.push(item.navCtrl)
+    console.log(item)
+    this.navCtrl.setRoot(item.navCtrl, {}, { animate: true, direction: 'forward' })
   }
 
 }
