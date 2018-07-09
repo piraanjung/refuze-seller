@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, Events } from 'ionic-angular';
 import { MAIN_MENU_SELLER } from '../../providers/main-menu-seller';
 
 @IonicPage({
@@ -11,11 +11,15 @@ import { MAIN_MENU_SELLER } from '../../providers/main-menu-seller';
 })
 export class MainMenuSellerPage {
 
-  menu: any = [];
+  pages: any = [];
 
-  constructor(private navCtrl: NavController) {
+  constructor(
+    private navCtrl: NavController,
+    private events: Events
+  ) {
+    this.events.publish('pages', MAIN_MENU_SELLER);
     MAIN_MENU_SELLER.splice((MAIN_MENU_SELLER.length - 1), 1)
-    this.menu = MAIN_MENU_SELLER;
+    this.pages = MAIN_MENU_SELLER;
   }
 
   ionViewDidLoad() {

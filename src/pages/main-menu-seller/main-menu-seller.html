@@ -14,8 +14,8 @@
 
 <!-- Themes Products + CTA header -->
 <ion-content class="card-background-page">
-  <ion-card *ngFor="let menu of menu" (click)="onEvent('onProceed', menu, $event)">
-    <img [src]="menu.headerImage" />
-    <div class="card-title">{{ menu.title }}</div>
+  <ion-card *ngFor="let page of pages" (click)="onEvent('onProceed', page, $event)">
+    <img [src]="page.headerImage" />
+    <div class="card-title">{{ page.title }}</div>
   </ion-card>
 </ion-content>
