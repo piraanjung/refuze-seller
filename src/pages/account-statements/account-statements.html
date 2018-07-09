@@ -1,6 +1,11 @@
 <ion-header>
 
   <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="openPage('account-perform')">
+        <ion-icon color="light" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>ธุรกรรมทางการเงิน</ion-title>
   </ion-navbar>
 
@@ -13,7 +18,7 @@
       <p>{{ statement.statement_categories_label }}</p>
       <p>{{ statement.amount }}</p>
       <p>{{ statement.updated_at_th }}</p>
-      
+
     </button>
   </ion-list>
 

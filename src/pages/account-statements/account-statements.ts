@@ -15,9 +15,8 @@ import { AlertBoxProvider } from '../../providers/alert-box';
 })
 export class AccountStatementsPage {
 
-  private user_id: number
-  seller: Sellers
-  statements: AccountStatements[]
+  seller: Sellers;
+  statements: AccountStatements[];
 
   constructor(
     private navCtrl: NavController,
@@ -28,22 +27,26 @@ export class AccountStatementsPage {
 
   ionViewDidLoad() {
 
-    this.getAccountStatements()
+    this.getAccountStatements();
   }
 
   private getAccountStatements()
   {
-    let loading = this.loading.loading()
-    loading.present()
+    let loading = this.loading.loading();
+    loading.present();
 
     this.accountSaving.getAccountStatements()
     .subscribe(res => {
-      this.statements = res.body
-      loading.dismiss()
+      this.statements = res.body;
+      loading.dismiss();
     }, err => {
       this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
-      console.log(err)
-      loading.dismiss()
+      console.log(err);
+      loading.dismiss();
     })
+  }
+
+  openPage(page) {
+    this.navCtrl.setRoot(page, {}, { animate: true, direction: 'forward' });
   }
 }

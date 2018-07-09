@@ -43,6 +43,6 @@
     [navPush]="AccountTransfer">โอนเงิน</button>
   <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [disabled]="account_saving_id == null || balance == 0"
     [navPush]="AccountWithdraw">ถอนเงิน</button>
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="AccountStatements">ธุรกรรมทางการเงิน</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" (click)="openPage(AccountStatements)">ธุรกรรมทางการเงิน</button>
 
 </ion-content>
