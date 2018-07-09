@@ -41,6 +41,6 @@
 
   <br>
 
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="AccountTransfer">โอนอีกครั้ง</button>
-  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="AccountBalance">กลับไปหน้าหลัก</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" (click)="openPage(AccountTransfer)">โอนอีกครั้ง</button>
+  <button type="button" ion-button block button-clear-outline round outline class="btn-padding" (click)="openPage(AccountBalance)">กลับไปหน้าหลัก</button>
 </ion-content>
