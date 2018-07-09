@@ -1,9 +1,10 @@
-import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, Content } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, Events, MenuController } from 'ionic-angular';
 import { Sellers } from '../../models/sellers';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 import { LoadingPageProvider } from '../../providers/loading-page';
 import { AlertBoxProvider } from '../../providers/alert-box';
+import { MAIN_MENU_ACCOUNT } from '../../providers/main-menu-account';
 
 @IonicPage({
   name: 'account-balance'
@@ -21,33 +22,23 @@ export class AccountBalancePage {
   image: string
   balance: number
   account_saving_id: number
-  content: Content;
-  @ViewChild(Content)
+  headerSideBar: string
 
-
-  data = {
-        "items": [
-            {
-                "id": 1,
-                "title": "Product 1",
-                "backgroundImage": "assets/images/background/22.jpg",
-                "button": "BUY",
-                "items": [
-                    "PAY WITH PAYPAL",
-                    "PAY WITH VISA CARD",
-                    "PAY WITH MAESTRO CARD"
-                ]
-            },
-          ]
-      }
-  
   constructor(
     private accountSaving: AccountSavingProvider,
     private alertBox: AlertBoxProvider,
     private loading: LoadingPageProvider,
+    private events: Events,
+    private menuCtrl: MenuController
   ) {
+    this.headerSideBar = 'ธนาคารขยะ';
+    this.events.publish('header-side-bar', this.headerSideBar);
+    this.events.publish('pages', MAIN_MENU_ACCOUNT);
+    this.menuCtrl.enable(true, 'menu-side-bar');
     this.AccountPerform = 'account-perform'
     this.balance = 0
+
+    
   }
 
   ionViewDidLoad() {
@@ -83,28 +74,5 @@ export class AccountBalancePage {
         loading.dismiss()
       })
   }
-
-  // onEvent(event: string, item: any, e: any) {
-  //   if (e) {
-  //     e.stopPropagation();
-  //   }
-  //   if (this.events[event]) {
-  //     this.events[event](item);
-  //   }
-  // }
-
-  toggleGroup(group: any) {
-    group.show = !group.show;
-  }
-
-  isGroupShown(group: any) {
-    return group.show;
-  }
-
-  // ngAfterViewInit() {
-  //   this.content.ionScroll.subscribe((d) => {
-  //     this.fabButton.setElementClass("fab-button-out", d.directionY == "down");
-  //   });
-  // }
 
 }
