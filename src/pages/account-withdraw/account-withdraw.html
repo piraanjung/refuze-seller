@@ -1,6 +1,11 @@
 <ion-header>
 
   <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="openPage(BackPage)">
+        <ion-icon color="light" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>AccountWithdraw</ion-title>
   </ion-navbar>
 
@@ -48,7 +53,7 @@
   <ion-grid>
     <ion-row>
       <ion-col col-6 item-title padding-left>
-        <button type="button" ion-button block button-clear-outline round outline class="btn-padding" [navPush]="BackPage">กลับ</button>
+        <button type="button" ion-button block button-clear-outline round outline class="btn-padding" (click)="openPage(BackPage)">กลับ</button>
       </ion-col>
       <ion-col col-6 item-title padding-left>
         <button type="button" ion-button block button-clear-outline round outline class="btn-padding" (click)="presentPrompt()" [disabled]="cash_input == 0 || (balance - cash_input) <= balance_less_than">โอนเงิน</button>

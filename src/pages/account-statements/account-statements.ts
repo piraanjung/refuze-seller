@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, MenuController } from 'ionic-angular';
 import { LoadingPageProvider } from '../../providers/loading-page';
 import { AccountSavingProvider } from '../../providers/account-saving/account-saving';
 import { Sellers } from '../../models/sellers';
@@ -15,35 +15,39 @@ import { AlertBoxProvider } from '../../providers/alert-box';
 })
 export class AccountStatementsPage {
 
-  private user_id: number
-  seller: Sellers
-  statements: AccountStatements[]
+  seller: Sellers;
+  statements: AccountStatements[];
 
   constructor(
+    private menuCtrl: MenuController,
     private navCtrl: NavController,
     private loading: LoadingPageProvider,
     private alertBox: AlertBoxProvider,
     private accountSaving: AccountSavingProvider
-  ) { }
-
-  ionViewDidLoad() {
-
-    this.getAccountStatements()
+  ) {
+    this.menuCtrl.enable(false, 'menu-side-bar');
   }
 
-  private getAccountStatements()
-  {
-    let loading = this.loading.loading()
-    loading.present()
+  ionViewDidLoad() {
+    this.getAccountStatements();
+  }
+
+  private getAccountStatements() {
+    let loading = this.loading.loading();
+    loading.present();
 
     this.accountSaving.getAccountStatements()
-    .subscribe(res => {
-      this.statements = res.body
-      loading.dismiss()
-    }, err => {
-      this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
-      console.log(err)
-      loading.dismiss()
-    })
+      .subscribe(res => {
+        this.statements = res.body;
+        loading.dismiss();
+      }, err => {
+        this.alertBox.showAlert('ไม่สามารถดำเนินรายการได้ กรุณาลองใหม่ภายหลัง')
+        console.log(err);
+        loading.dismiss();
+      })
+  }
+
+  openPage(page) {
+    this.navCtrl.setRoot(page, {}, { animate: true, direction: 'forward' });
   }
 }

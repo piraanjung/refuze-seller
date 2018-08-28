@@ -1,32 +1,18 @@
-<!-- <div *ngIf="showSplash" class="splash">
-    <div class="spinner">sss</div>
-  </div>
-  
-<ion-nav [root]="rootPage"></ion-nav> -->
-<!-- <div id="splash-screen-layout-2">
-        <ion-row id="splash-background-image">
-                <img class="splash-screen" [src]="data.backgroundImage" />
-                <div class="logo-title item-fade-in">
-                  <img class="logo" [src]="data.logo" />
-                  <h2>{{data.title}}</h2>
-                </div>
-              </ion-row>
-</div> -->
-
-<!-- <ion-nav [root]="rootPage"  *ngIf="!showSplash"></ion-nav> -->
-<ion-menu [content]="mycontent">
+<ion-menu [content]="mycontent" side="left" id="menu-side-bar">
   <ion-header>
     <ion-toolbar color="danger">
-      <ion-title>ขายขยะ</ion-title>
+      <ion-title>{{ headerSideBar }}</ion-title>
     </ion-toolbar>
   </ion-header>
+
   <ion-content>
-    <ion-list>
-      <button ion-item *ngFor="let item of items" (click)="openPage(item)">
-        <ion-icon name="{{item.icon}}"></ion-icon>
-        {{item.title}}
+    <ion-list id="menu-side-bar">
+      <button ion-item *ngFor="let page of pages" (click)="openPage(page)">
+        <ion-icon name="{{ page.icon }}"></ion-icon>
+        {{ page.title }}
       </button>
     </ion-list>
   </ion-content>
 </ion-menu>
+
 <ion-nav #mycontent [root]="rootPage"></ion-nav>

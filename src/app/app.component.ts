@@ -1,127 +1,41 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, App, MenuController, Nav } from 'ionic-angular';
+import { Platform, MenuController, Nav, Events } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { timer } from 'rxjs/observable/timer';
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = 'AuthenticationPage';
-  @ViewChild(Nav) nav:Nav;
-  showSplash  = true
-  seller_menu:any[];
-  data :any={
-    "backgroundImage": 'assets/images/background/31.jpg',
-    "logo": 'assets/images/logo/login-3.png',
-    "title": "REFUZE"
-}
-items=  [
-  {
-    "title_description": "Order No. 1",
-    "description": "Will be shipped: 15.5.2016.",
-    "buttonText": "PROCEED",
-    "headerImage": "assets/images/background/17.jpg",
-    "title": "หน้่าหลัก",
-    "navCtrl": "main-menu-seller",
-    "icon" : "appstore"
-  },
-  {
-    "title_description": "Order No. 1",
-    "description": "Will be shipped: 15.5.2016.",
-    "buttonText": "PROCEED",
-    "headerImage": "assets/images/background/17.jpg",
-    "title": "ขายขยะ",
-    "navCtrl": "sell-trash",
-    "icon" : "cart"
-  },
-  {
-    "title_description": "",
-    "description": "",
-    "buttonText": "Click",
-    "headerImage": "assets/images/background/17.jpg",
-    "title": "ธนาคารขยะ",
-    "navCtrl": "account-balance",
-    "icon" : "logo-bitcoin"
-  },
-  {
-    "title_description": "Order No. 1",
-    "description": "Will be shipped: 15.5.2016.",
-    "buttonText": "PROCEED",
-    "headerImage": "assets/images/background/17.jpg",
-    "title": "ซื้อสินค้าออนไลน์",
-    "navCtrl": "shopping-cart-main",
-    "icon" : "cloud"
-  },
-  {
-    "title_description": "Order No. 1",
-    "description": "Will be shipped: 15.5.2016.",
-    "buttonText": "PROCEED",
-    "headerImage": "assets/images/background/17.jpg",
-    "title": "ซื้อสินค้าในโรงเรียน",
-    "navCtrl": "buy-local-product",
-    "icon" : "home"
-  },
-  {
-    "title_description": "Order No. 1",
-    "description": "Will be shipped: 15.5.2016.",
-    "buttonText": "PROCEED",
-    "headerImage": "assets/images/background/17.jpg",
-    "title": "ราคากลางขยะ",
-    "navCtrl": "find-items",
-    "icon" : "stats"
-  },
+  @ViewChild(Nav) nav: Nav;
 
-  // {
-  //   "title_description": "Order No. 1",
-  //   "description": "Will be shipped: 15.5.2016.",
-  //   "buttonText": "PROCEED",
-  //   "headerImage": "assets/images/background/17.jpg",
-  //   "title": "ค้นหาผู้รับซื้อขยะ",
-  //   "navCtrl" : "find-buyers",
-  // },
-  // {
-  //   "title_description": "Order No. 1",
-  //   "description": "Will be shipped: 15.5.2016.",
-  //   "buttonText": "PROCEED",
-  //   "headerImage": "assets/images/background/17.jpg",
-  //   "title": "วิธีคัดแยกขยะเพิ่มมูลค่า",
-  //   "navCtrl" : "",
-  // },
-  {
-    "title_description": "Order No. 1",
-    "description": "Will be shipped: 15.5.2016.",
-    "buttonText": "PROCEED",
-    "headerImage": "assets/images/background/17.jpg",
-    "title": "ประวัติการขายขยะ",
-    "navCtrl": "sell-history",
-    "icon" : "recording"
-  },
-  {
-    "title_description": "Order No. 1",
-    "description": "Will be shipped: 15.5.2016.",
-    "buttonText": "PROCEED",
-    "headerImage": "assets/images/background/17.jpg",
-    "title": "ออกจากระบบ",
-    "navCtrl": "AuthenticationPage",
-    "icon" : "exit"
-  }
-]
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, 
-              private app:App, private menu:MenuController) {
+  rootPage: any = 'AuthenticationPage';
+
+  pages: any = []
+  headerSideBar: string;
+
+  constructor(
+    platform: Platform,
+    statusBar: StatusBar,
+    splashScreen: SplashScreen,
+    private menuCtrl: MenuController,
+    private events: Events
+  ) {
+    this.events.subscribe('pages', (pages) => this.pages = pages);
+    this.events.subscribe('header-side-bar', headerSideBar => this.headerSideBar = headerSideBar);
+    
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-      // timer(7000).subscribe(() =>this.showSplash = false)
     });
   }
 
-  openPage(page){
-    this.nav.setRoot(page.navCtrl)
-    this.menu.toggle()
+  openPage(page) {
+    this.nav.setRoot(page.navCtrl, {}, { animate: true, direction: 'forward' });
+    this.menuCtrl.toggle();
   }
-  
+
 }
 
