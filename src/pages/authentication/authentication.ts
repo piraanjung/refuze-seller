@@ -13,6 +13,7 @@ import { Sellers } from '../../models/sellers';
 })
 export class AuthenticationPage {
   params: any
+  title:string = "GamponG"
   SellerProfile: Sellers;
   data: any = {
     logo: 'assets/images/logo/login.png',

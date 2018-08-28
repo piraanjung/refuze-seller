@@ -1,8 +1,8 @@
 {
   "name": "refuze-seller",
-  "app_id": "c562b759",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "pro_id": "c562b759"
 }

@@ -10,7 +10,6 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { ShoppingCartMenuPage } from '../pages/shopping-cart-menu/shopping-cart-menu';
 import { MyApp } from './app.component';
 import { AccountSavingProvider } from '../providers/account-saving/account-saving';
-
 @NgModule({
   declarations: [
     MyApp,

@@ -23,24 +23,29 @@ export class MainMenuSellerPage {
     },
     {
       "headerImage": "assets/images/background/shoppingcart.png",
-      "title": "ซื้อสินค้า ออนไลน์",
+      "title": "แก้มป่อง ออนไลน์",
       "navCtrl": "shopping-cart-main",
     },
     {
       "headerImage": "assets/images/background/localproduct.png",
-      "title": "ซื้อสินค้าในโรงเรียน",
+      "title": "สินค้าในโรงเรียน",
       "navCtrl": "buy-local-product",
     },
     {
       "headerImage": "assets/images/background/estimated_cost.png",
-      "title": "ราคากลางขยะ",
+      "title": "ราคาขยะวันนี้",
       "navCtrl": "find-items",
     },
     {
       "headerImage": "assets/images/background/sellhistory.png",
       "title": "ประวัติการขายขยะ",
       "navCtrl": "sell-history",
-    }
+    },
+    {
+      "headerImage": "assets/images/background/estimated_cost.png",
+      "title": "TestComponent",
+      "navCtrl": "find-items",
+    },
   ]
 
   constructor(private navCtrl: NavController) {
@@ -53,7 +58,12 @@ export class MainMenuSellerPage {
     if (e) {
       e.stopPropagation();
     }
-    this.navCtrl.push(item.navCtrl)
+    if(item.title == "TestComponent"){
+      this.navCtrl.setRoot('TestcomponentPage')
+    }else{
+      this.navCtrl.push(item.navCtrl)
+    }
+    
   }
 
 }
