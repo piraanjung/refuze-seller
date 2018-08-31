@@ -7,11 +7,13 @@ import { AngularFireModule } from "angularfire2";
 import { AngularFirestoreModule } from "angularfire2/firestore";
 import { appconfig } from '../../providers/app.config' ;
 
-import { ChatService } from '../../app/app.service'
+import { ChatService } from '../../app/app.service';
+// import { MainMenuSellerPage } from '../../pages/main-menu-seller/main-menu-seller';
 
 @NgModule({
   declarations: [
     SellTrashPage,
+    // MainMenuSellerPage
   ],
   imports: [
     IonicPageModule.forChild(SellTrashPage),
