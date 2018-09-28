@@ -42,19 +42,45 @@
   "phonegap-plugin-barcodescanner": {
     "source": {
       "type": "registry",
-      "id": "phonegap-plugin-barcodescanner@7.1.1"
+      "id": "phonegap-plugin-barcodescanner@^7.1.2"
     },
     "is_top_level": true,
-    "variables": {}
+    "variables": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+"
+    }
   },
   "cordova-plugin-geolocation": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-geolocation@4.0.1"
+      "id": "cordova-plugin-geolocation@^4.0.1"
     },
     "is_top_level": true,
     "variables": {
       "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
     }
+  },
+  "cordova-plugin-firebase": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-firebase@^1.1.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-local-notification": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-local-notification@^0.9.0-beta.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-badge": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-badge@>=0.8.5"
+    },
+    "is_top_level": false,
+    "variables": {}
   }
 }

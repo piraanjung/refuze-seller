@@ -10,13 +10,15 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { ShoppingCartMenuPage } from '../pages/shopping-cart-menu/shopping-cart-menu';
 import { MyApp } from './app.component';
 import { AccountSavingProvider } from '../providers/account-saving/account-saving';
-import { MainMenuSellerPage } from '../pages/main-menu-seller/main-menu-seller';
-
+// import { MainMenuSellerPage } from '../pages/main-menu-seller/main-menu-seller';
+import { FcmProvider } from '../providers/fcm/fcm';
+import { Firebase } from '@ionic-native/firebase';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 @NgModule({
   declarations: [
     MyApp,
     CartPage,
-    MainMenuSellerPage
+    // MainMenuSellerPage
     // ShoppingCartMenuPage
   ],
   imports: [
@@ -28,7 +30,7 @@ import { MainMenuSellerPage } from '../pages/main-menu-seller/main-menu-seller';
   entryComponents: [
     MyApp,
     CartPage,
-    MainMenuSellerPage
+    // MainMenuSellerPage
     // ShoppingCartMenuPage
   ],
   providers: [
@@ -37,7 +39,9 @@ import { MainMenuSellerPage } from '../pages/main-menu-seller/main-menu-seller';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     BarcodeScanner,
     AccountSavingProvider,
-    
+    FcmProvider,
+    Firebase,
+    LocalNotifications
   ]
 })
 export class AppModule {}

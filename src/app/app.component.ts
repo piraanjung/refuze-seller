@@ -1,7 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, MenuController, Nav, Events } from 'ionic-angular';
+import { Platform, MenuController, Nav, Events, AlertController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,7 +20,9 @@ export class MyApp {
     statusBar: StatusBar,
     splashScreen: SplashScreen,
     private menuCtrl: MenuController,
-    private events: Events
+    private events: Events,
+    private alertCtrl: AlertController,
+    private localNotifications: LocalNotifications
   ) {
     this.events.subscribe('pages', (pages) => this.pages = pages);
     this.events.subscribe('header-side-bar', headerSideBar => this.headerSideBar = headerSideBar);
@@ -29,6 +32,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+     
     });
   }
 

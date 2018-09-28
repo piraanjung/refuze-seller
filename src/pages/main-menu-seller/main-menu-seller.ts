@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, Events, MenuController } from 'ionic-angular';
 import { MAIN_MENU_SELLER } from '../../providers/main-menu-seller';
+import { LocalNotifications } from '@ionic-native/local-notifications';
+import { tap } from 'rxjs/operators';
+import { ToastController } from 'ionic-angular'
+// import { FcmProvider } from '../../providers/fcm/fcm';
 
 @IonicPage({
   name: 'main-menu-seller'
@@ -17,7 +21,11 @@ export class MainMenuSellerPage {
   constructor(
     private navCtrl: NavController,
     private events: Events,
-    private menuCtrl: MenuController
+    private menuCtrl: MenuController,
+    private localNotifications: LocalNotifications,
+    // public fcm: FcmProvider,
+    public toastCtrl: ToastController 
+
   ) {
     this.headerSideBar = 'ขายขยะ';
     this.events.publish('header-side-bar', this.headerSideBar);
@@ -27,6 +35,23 @@ export class MainMenuSellerPage {
   }
 
   ionViewDidLoad() {
+  //   console.log('dfdf')
+  //   this.localNotifications.schedule({
+  //     text: 'Delayed ILocalNotification',
+  //     trigger: {at: new Date(new Date().getTime() + 3600)},
+  //     led: 'FF0000',
+  //     sound: null
+  //  });
+    // this.fcm.getToken();
+    // this.fcm.listenToNotifications().pipe(
+    //   tap(msg =>{
+    //     const toast = this.toastCtrl.create({
+    //       message: msg.body,
+    //       duration: 3000
+    //     });
+    //     toast.present();
+    //   })
+    // ).subscribe()
   }
 
   onEvent(event: string, item: any, e: any) {

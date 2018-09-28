@@ -22,12 +22,11 @@ export class ShoppingCartPage {
     this.page =2;
     this.WooCommerce = WC({
       url : "http://119.59.103.60/~web/wordpress/",
-      // url : "http://localhost/wordpress",
-      consumerKey : "ck_34dadcc1e5889f956eb53c58d25e1705859742af",
-      consumerSecret : "cs_ac5ab442e936cfaf94f0b2746e8b5da59d337342"
+      // url : "http://127.0.0.1/wordpress",
+      consumerKey : "ck_3530726d634b3a5710e968666df20098563fe199",
+      consumerSecret : "cs_6413cbe754e6eab1c51514e7e247d4b4862a0c9a"
     });
     this.WooCommerce.getAsync("products").then((data) => {
-      // console.log(JSON.parse(data.body.products))
       this.products = JSON.parse(data.body).products
     }, (error) => {
       console.log(error)

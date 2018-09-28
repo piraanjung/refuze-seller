@@ -24,6 +24,7 @@ export class ShoppingCartMenuPage {
   homePage : any;
   categories : any[];
   @ViewChild('content') chlidNavCtrl : NavController;
+  products: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage:Storage) {
     this.homePage = 'shopping-cart';
@@ -31,12 +32,13 @@ export class ShoppingCartMenuPage {
 
     this.Woocommerce = WC({
       url : "http://119.59.103.60/~web/wordpress/",
-      consumerKey : "ck_34dadcc1e5889f956eb53c58d25e1705859742af",
-      consumerSecret : "cs_ac5ab442e936cfaf94f0b2746e8b5da59d337342"
-    });
 
+      // url : "http://127.0.0.1/wordpress/index.php",
+     consumerKey : "ck_3530726d634b3a5710e968666df20098563fe199",
+      consumerSecret : "cs_6413cbe754e6eab1c51514e7e247d4b4862a0c9a",
+    });
     this.Woocommerce.getAsync("products/categories").then((data) => {
-      console.log(JSON.parse(data.body).product_categories)
+      console.log(data.body)
       let temp : any[] = JSON.parse(data.body).product_categories
 
       for(let i=0; i < temp.length; i++){
@@ -58,9 +60,11 @@ export class ShoppingCartMenuPage {
           }
         }
       }
-      // this.products = JSON.parse(data.body).products
+      console.log(this.categories)
+      this.products = JSON.parse(data.body).products
     }, (error) => {
-      console.log(error)
+      console.log('ERROR TAG');
+      console.log(error);
     })
   }
 

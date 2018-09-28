@@ -32,7 +32,7 @@ export class ShoppingCartMainPage {
     {
       title: "หรือ ใช้แต้มสะสมแลกสินค้า",
       description: "<b>ท่านสามารถนำแต้มสะสมมาแลกซื้อสินค้า<br>โดยไม่ต้องจ่ายเงิน</b> ",
-      image: "./assets/imgs/shopping-cart/shopping-cart_slide3.png",
+      image: "./assets/imgs/shopping-cart/shopping-cart_slide4.png",
     }
   ];
 
