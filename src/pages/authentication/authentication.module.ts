@@ -6,7 +6,7 @@ import { AuthenticationPage } from './authentication';
 import { AuthenProvider } from '../../providers/authen/authen';
 import { LoadingPageProvider } from '../../providers/loading-page';
 import { AlertBoxProvider } from '../../providers/alert-box';
-
+import { Sim} from '@ionic-native/sim'
 @NgModule({
   declarations: [
     AuthenticationPage,
@@ -16,6 +16,6 @@ import { AlertBoxProvider } from '../../providers/alert-box';
     FormsModule,
     IonicPageModule.forChild(AuthenticationPage),
   ],
-  providers: [AuthenProvider, LoadingPageProvider, AlertBoxProvider]
+  providers: [AuthenProvider, LoadingPageProvider, AlertBoxProvider, Sim]
 })
 export class AuthenticationPageModule { }

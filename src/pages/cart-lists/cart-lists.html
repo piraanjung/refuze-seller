@@ -1,0 +1,35 @@
+<!--
+  Generated template for the CartListsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>cart-lists</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div *ngIf="purchaseItems != ''">
+    <ion-list>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="{{purchaseItems.image}}">
+          </ion-avatar>
+          <h2>{{purchaseItems.product_name}} {{purchaseItems.volume}} มล .</h2>
+          <p>0.17 บาท/ ขวด</p>
+          <p item-end> 1 ขวด</p>
+        </ion-item>
+      </ion-list>
+  </div>
+  <ion-grid>
+      <ion-row>
+        <ion-col col-6><button ion-button round>ยกเลิกรายการ</button></ion-col>
+        <ion-col col-6><button ion-button color="secondary" round (click)="savePurchaseItems()">บันทึกข้อมูล</button></ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

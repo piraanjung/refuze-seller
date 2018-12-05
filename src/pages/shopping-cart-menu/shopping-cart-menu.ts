@@ -31,9 +31,9 @@ export class ShoppingCartMenuPage {
     this.categories =[]
 
     this.Woocommerce = WC({
-      url : "http://119.59.103.60/~web/wordpress/",
+      // url : "http://119.59.103.60/~web/wordpress/",
 
-      // url : "http://127.0.0.1/wordpress/index.php",
+      url : "http://127.0.0.1/wordpress/",
      consumerKey : "ck_3530726d634b3a5710e968666df20098563fe199",
       consumerSecret : "cs_6413cbe754e6eab1c51514e7e247d4b4862a0c9a",
     });

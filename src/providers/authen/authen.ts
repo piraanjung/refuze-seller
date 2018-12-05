@@ -11,4 +11,8 @@ export class AuthenProvider {
     return this.http.post<Buyer>(`${API_URL}/authen`, params, { observe: 'response' });
   }
 
+  AuthenByPasswordAndPhonNumber(params): any{
+    return this.http.post(`${API_URL}/authen-by-password-and-phone`, params,{ observe: 'response' });
+  }
+
 }
